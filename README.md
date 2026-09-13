@@ -1,21 +1,29 @@
 # Study Hub – Quiz Infermieristici
 
-Web app per simulazioni d'esame universitarie.
+Web app per simulazioni d'esame universitarie di infermieristica.
 
-## Disponibile ora
+## Esami disponibili
 - **Scienze della Salute** — 459 domande
-- 4 macroargomenti
-- modalità casuale e simulazioni da 20/30/50/100/tutte
-- spiegazioni dopo ogni risposta
+- **Anatomia Patologica** — 300 domande, con Microbiologia, Eziologia, Immunologia e Anatomia Patologica
+- **Infermieristica nel Materno** — 300 domande, con Infermieristica Pediatrica, Pediatria, Ostetricia e Ginecologia
+
+**Totale attivo: 1.059 domande.**
+
+## Funzioni
+- mix dell'intero esame oppure focus su una singola sezione
+- simulazioni da 20/30/50/100 domande oppure banca completa
+- ordine casuale delle domande e delle alternative quando appropriato
+- spiegazione del perché dopo ogni risposta
 - ripasso degli errori
-- progresso salvato nel browser
+- punteggio, accuratezza e progressi salvati nel browser
 
-## Pubblicazione GitHub Pages
-Il sito è pronto per essere pubblicato dalla radice del branch `main`.
-Vai in **Settings → Pages → Deploy from a branch → main → / (root)**.
+## Pubblicazione
+Il sito è pubblicato con GitHub Pages dalla radice del branch `main`.
 
-## Struttura
-- `index.html` — homepage e interfaccia
-- `assets/style.css` — stile Apple-like terracotta/pesca/turchese/acquamarina
-- `assets/app.js` — motore del quiz
-- `data/manifest.json` e `data/chunks/` — banca delle 459 domande
+## Struttura principale
+- `index.html` — homepage Study Hub
+- `scienze-salute.html` / `scienze-salute-app.html` — Scienze della Salute
+- `anatomia-patologica.html` — Anatomia Patologica
+- `infermieristica-materno.html` — Infermieristica nel Materno
+- `studyhub.css` — stile condiviso
+- `data/` — banche dati degli esami
