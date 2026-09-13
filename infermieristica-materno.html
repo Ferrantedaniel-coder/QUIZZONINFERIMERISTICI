@@ -8,7 +8,7 @@
 <section id="result" class="result-card hidden"><h2>QUIZ COMPLETATO</h2><p id="resultText"></p><div id="breakdown" class="breakdown"></div><div class="action-line" style="justify-content:center"><button class="button primary" onclick="startQuiz()">Nuovo quiz</button><button class="button terracotta" id="retryBtn" onclick="retryErrors()">Ripassa errori</button><button class="button peach" onclick="location.href='index.html'">Torna alla Home</button></div></section>
 </main>
 <script>
-const DATA_FILES=["data/materno-infermieristica-pediatrica.json.gz","data/materno-pediatria.json.gz","data/materno-ostetricia.json.gz","data/materno-ginecologia.json.gz"];
+const DATA_FILES=["data/materno-infermieristica-pediatrica-1.json.gz","data/materno-infermieristica-pediatrica-2.json.gz","data/materno-infermieristica-pediatrica-3.json.gz","data/materno-pediatria.json.gz","data/materno-ostetricia.json.gz","data/materno-ginecologia.json.gz"];
 const STORAGE_KEY="studyhub_infermieristica_materno_v1";
 let QUESTIONS=[],randomOrder=true,session=[],index=0,wrongIds=[],currentStats={answered:0,correct:0},persisted=loadPersisted();
 function loadPersisted(){try{const raw=localStorage.getItem(STORAGE_KEY);return raw?JSON.parse(raw):{answered:0,correct:0,byTopic:{},lastWrong:[]};}catch(e){return {answered:0,correct:0,byTopic:{},lastWrong:[]}}}
