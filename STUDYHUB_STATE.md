@@ -89,70 +89,66 @@ Lo standard desiderato per **Scienze della Salute** e **Paziente chirurgico** è
 
 Le spiegazioni avanzate vengono caricate **solo dopo** che il quiz è già avviabile. Il caricamento usa `Promise.allSettled`; un file mancante o non valido non può bloccare avvio, svolgimento o completamento dell'esame. Quando una spiegazione avanzata non è disponibile viene usato automaticamente il campo base `why`.
 
-#### Copertura attiva
+Copertura attiva:
 
-- **Diagnostica: `di1–di76` = 76/76**;
-- **Educazione terapeutica: `ed1–ed54` = 54/54**;
-- **Psicologia: `ps1–ps66` = 66/66**;
-- **Terapia: `te1–te266` = 266/266**;
-- **Totale avanzato opzionale attivo: 462/462**.
+- Diagnostica `di1–di76` = 76/76;
+- Educazione terapeutica `ed1–ed54` = 54/54;
+- Psicologia `ps1–ps66` = 66/66;
+- Terapia `te1–te266` = 266/266;
+- **totale 462/462**.
 
-File collegati:
-
-- `data/paziente-chirurgico-explanations-001.json` → `029.json`.
-
-Il runtime supporta sia il formato storico con `entry.options[opzione]` sia il formato con `entry.reasons[]`. Nel secondo caso la motivazione viene ricondotta all'indice dell'opzione originale in `q.options`, quindi segue correttamente la risposta anche dopo il rimescolamento A/B/C/D.
-
-Per una entry valida il feedback mostra esito, risposta corretta, concetto chiave e quattro motivazioni separate con etichetta `CORRETTA` / `ERRATA`.
+File collegati: `data/paziente-chirurgico-explanations-001.json` → `029.json`.
 
 Checkpoint dettagliato: `PAZIENTE_CHIRURGICO_PROGRESS.md`.
 
-### Scienze della Salute — spiegazioni avanzate 241/459
+### Scienze della Salute — spiegazioni avanzate 281/459
 
 L'implementazione attiva è:
 
 - `index.html` apre `scienze-salute.html`;
-- `scienze-salute.html` è un wrapper che carica `scienze-salute-app.html` in iframe;
-- `scienze-salute-app.html` è il motore originale e contiene inline l'intera banca di **459 domande**.
+- `scienze-salute.html` è il wrapper che carica `scienze-salute-app.html` in iframe;
+- `scienze-salute-app.html` è il motore originale con l'intera banca di **459 domande** e non viene modificato durante il lavoro sulle spiegazioni;
+- `scienze-salute-explanations.js` è l'enhancer opzionale fail-safe.
 
-Per ridurre il rischio di regressione, `scienze-salute-app.html` **non viene modificato** durante il lavoro sulle spiegazioni.
+File avanzati collegati:
 
-È attivo un enhancer esterno opzionale:
+- `001.json` → `1–40`
+- `002.json` → `41–80`
+- `003.json` → `81–100`
+- `004.json` → `101–120`
+- `005.json` → `121`
+- `006.json` → `122–161`
+- `007.json` → `162–201`
+- `008.json` → `202–241`
+- `009.json` → `242–281`
 
-- `scienze-salute-explanations.js`;
-- `data/scienze-salute-explanations-001.json` → domande banca **1–40**;
-- `data/scienze-salute-explanations-002.json` → domande banca **41–80**;
-- `data/scienze-salute-explanations-003.json` → domande banca **81–100**;
-- `data/scienze-salute-explanations-004.json` → domande banca **101–120**;
-- `data/scienze-salute-explanations-005.json` → domanda banca **121**;
-- `data/scienze-salute-explanations-006.json` → domande banca **122–161**;
-- `data/scienze-salute-explanations-007.json` → domande banca **162–201**;
-- `data/scienze-salute-explanations-008.json` → domande banca **202–241**.
+Percorsi completi: `data/scienze-salute-explanations-XXX.json`.
 
-Il wrapper inietta l'enhancer nello stesso iframe dopo che l'app originale è già stata caricata. L'enhancer:
+#### Copertura progressiva per ID banca
+
+- `1–121` → Infermieristica nell'evoluzione storica;
+- `122–176` → Epidemiologia;
+- `177–220` → Igiene e medicina preventiva;
+- `221–270` → Storia della medicina;
+- `271–281` → Igiene e medicina preventiva;
+- **totale continuo coperto: `1–281` = 281/459**.
+
+**Importante:** dalla parte centrale/finale della banca i macroargomenti non restano sempre in intervalli unici e contigui. Alcune materie ricompaiono più avanti. Lo stato va quindi registrato per ID effettivamente completati, senza dichiarare una materia globalmente completa solo perché termina un tratto consecutivo.
+
+L'enhancer:
 
 - non è necessario all'avvio o allo svolgimento del quiz;
 - carica i dati avanzati con `Promise.allSettled`;
-- valida `summary` e quattro motivazioni per ciascuna domanda;
-- associa ogni motivazione all'opzione originale tramite il testo dell'alternativa, quindi segue la stessa risposta anche dopo il rimescolamento A/B/C/D;
-- usa `MutationObserver` per arricchire il feedback già prodotto dal motore originale;
-- se enhancer, JSON o singola entry falliscono, il feedback base `q.e` resta disponibile e il quiz non viene bloccato.
+- valida `summary` e quattro motivazioni;
+- associa le motivazioni alle opzioni originali tramite il testo, mantenendole corrette dopo lo shuffle A/B/C/D;
+- arricchisce il feedback già prodotto dal motore originale;
+- se enhancer, JSON o singola entry falliscono, mantiene il feedback base `q.e` e non blocca il quiz.
 
-#### Copertura Scienze attiva
+Per una entry valida il feedback mostra esito, risposta corretta nella posizione effettiva, concetto chiave e quattro motivazioni separate con etichetta `CORRETTA` / `ERRATA`.
 
-- **Infermieristica nell'evoluzione storica: domande 1–121 = 121/121, COMPLETO**;
-- **Epidemiologia: domande 122–176 = 55/55, COMPLETO**;
-- **Igiene e medicina preventiva: domande 177–220 completate nel tratto corrente**;
-- **Storia della medicina: domande 221–241 completate nel tratto corrente**;
-- **Totale avanzato opzionale attivo: 241/459**.
-
-Per una entry valida il feedback mostra esito corretto/errato, risposta corretta nella posizione effettiva, concetto chiave e quattro motivazioni separate con etichetta `CORRETTA` / `ERRATA`.
-
-Le spiegazioni `1–241` sono state costruite sul contenuto già presente nella banca, senza modificare o correggere silenziosamente domande e soluzioni.
+**Regola fondamentale: nessun problema delle spiegazioni avanzate deve mai impedire avvio, svolgimento o completamento del quiz.**
 
 Checkpoint dettagliato: `SCIENZE_SALUTE_PROGRESS.md`.
-
-**Regola fondamentale per entrambi gli esami: nessun problema delle spiegazioni avanzate deve mai impedire avvio, svolgimento o completamento del quiz.**
 
 ---
 
@@ -162,24 +158,16 @@ File principali:
 
 - `index.html` — homepage;
 - `studyhub.css` — stile condiviso;
-- `scienze-salute.html` — wrapper attivo di Scienze della Salute e loader fail-safe dell'enhancer;
-- `scienze-salute-app.html` — motore originale Scienze della Salute con banca inline da 459 domande, non modificato durante il lavoro sulle spiegazioni;
-- `scienze-salute-explanations.js` — enhancer opzionale delle spiegazioni di Scienze;
-- `data/scienze-salute-explanations-001.json` — spiegazioni avanzate Scienze domande 1–40;
-- `data/scienze-salute-explanations-002.json` — spiegazioni avanzate Scienze domande 41–80;
-- `data/scienze-salute-explanations-003.json` — spiegazioni avanzate Scienze domande 81–100;
-- `data/scienze-salute-explanations-004.json` — spiegazioni avanzate Scienze domande 101–120;
-- `data/scienze-salute-explanations-005.json` — spiegazione avanzata Scienze domanda 121;
-- `data/scienze-salute-explanations-006.json` — spiegazioni avanzate Scienze domande 122–161;
-- `data/scienze-salute-explanations-007.json` — spiegazioni avanzate Scienze domande 162–201;
-- `data/scienze-salute-explanations-008.json` — spiegazioni avanzate Scienze domande 202–241;
+- `scienze-salute.html` — wrapper attivo di Scienze della Salute;
+- `scienze-salute-app.html` — motore originale e banca inline da 459 domande;
+- `scienze-salute-explanations.js` — enhancer opzionale;
+- `data/scienze-salute-explanations-001.json` → `009.json` — spiegazioni avanzate `1–281`;
 - `SCIENZE_SALUTE_PROGRESS.md` — checkpoint specifico Scienze;
 - `anatomia-patologica.html`;
 - `infermieristica-materno.html`;
-- `paziente-chirurgico.html` — runtime stabile + spiegazioni avanzate opzionali complete;
-- `paziente-chirurgico-explanations.js` — file legacy, non caricato dal runtime attivo;
-- `data/paziente-chirurgico-explanations-manifest.json` e `001`→`029` — archivio completo, tutto collegato al runtime;
-- `PAZIENTE_CHIRURGICO_PROGRESS.md` — checkpoint specifico Paziente chirurgico;
+- `paziente-chirurgico.html` — runtime stabile + spiegazioni avanzate complete;
+- `data/paziente-chirurgico-explanations-manifest.json` e `001`→`029`;
+- `PAZIENTE_CHIRURGICO_PROGRESS.md`;
 - `data/` — banche domande e spiegazioni;
 - `.nojekyll` — pubblicazione statica.
 
@@ -202,23 +190,16 @@ I progressi sono locali al browser; non ci sono account, database remoto o sync 
 
 ### Lavoro a blocchi
 
-Per revisione estesa di banche o spiegazioni lavorare in **blocchi controllati di circa 40–60 domande**, con checkpoint GitHub tra i blocchi. Il checkpoint deve indicare esame, intervallo completato, ultima domanda, file modificati, commit e punto di ripresa.
+Per revisione estesa di banche o spiegazioni lavorare in **blocchi controllati di circa 40–60 domande**, con checkpoint GitHub tra i blocchi.
 
 - Paziente chirurgico: spiegazioni complete **462/462**.
-- Scienze della Salute: completate spiegazioni **1–241**; punto di ripresa **domanda 242**.
+- Scienze della Salute: spiegazioni complete in sequenza **1–281**; punto di ripresa **282**.
 
-Macroargomenti Scienze già coperti nel tratto progressivo corrente:
-
-- **Infermieristica nell'evoluzione storica: 1–121, completo**;
-- **Epidemiologia: 122–176, completo**;
-- **Igiene e medicina preventiva: 177–220 completate**;
-- **Storia della medicina: 221–241 completate; riprendere da 242**.
-
-Nota: più avanti nella banca alcuni macroargomenti ricompaiono in ulteriori intervalli; la dicitura “completate” sopra riguarda quindi il tratto progressivo già lavorato, salvo i macroargomenti esplicitamente indicati come completi.
+Per Scienze continuare nell'ordine reale della banca e annotare gli intervalli dei macroargomenti quando cambiano. Non presumere che un macroargomento occupi un unico intervallo continuo.
 
 ### Continuità tra chat
 
-Se la conversazione diventa molto lunga, segnalare proattivamente che conviene aprire una nuova chat. Prima dell'handoff salvare il lavoro nel `main` o in un checkpoint affidabile e registrare il punto esatto da cui riprendere. Non promettere un contatore preciso dei token residui.
+Se la conversazione diventa molto lunga, segnalare proattivamente che conviene aprire una nuova chat. Prima dell'handoff salvare il lavoro nel `main` o in un checkpoint affidabile e registrare il punto esatto da cui riprendere.
 
 ---
 
@@ -236,9 +217,9 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 ## 9. Roadmap immediata
 
 1. **Paziente chirurgico: spiegazioni avanzate complete 462/462 con architettura fail-safe.**
-2. **Scienze della Salute: spiegazioni avanzate attive 1–241 con enhancer opzionale fail-safe.**
-3. Proseguire Scienze della Salute dalla **domanda 242**, continuando il lavoro nell'ordine della banca in blocchi controllati.
+2. **Scienze della Salute: spiegazioni avanzate attive 1–281 con enhancer opzionale fail-safe.**
+3. Proseguire Scienze della Salute dalla **domanda 282**, seguendo l'ordine reale della banca.
 4. Mantenere le banche originali inalterate durante il lavoro sulle spiegazioni.
-5. QA separato dei quesiti già segnalati, solo con autorizzazione esplicita a modificare la banca.
+5. QA separato dei quesiti dubbi o obsoleti, solo con autorizzazione esplicita a modificare la banca.
 
 Farmacologia resta una futura banca in preparazione.
