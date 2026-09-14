@@ -60,15 +60,16 @@ Se il task riguarda UI, logica, spiegazioni o infrastruttura:
 
 Se emerge un quesito probabilmente errato, ambiguo, obsoleto o discordante, **non correggerlo di nascosto**: segnalarlo come QA e modificarlo solo con autorizzazione esplicita.
 
-Per contenuti medici/infermieristici dare priorità ai materiali universitari dell'utente; quando serve verifica esterna usare fonti autorevoli.
+Per contenuti medici/infermieristici dare priorità ai materiali universitari dell'utente; quando serve verifica esterna usare fonti autorevoli, incluse PubMed/PMC, NCBI/NIH, WHO, CDC e linee guida pertinenti.
 
 ## 5. Spiegazioni: standard concordato e stato reale
 
-Per **Scienze della Salute** e **Paziente chirurgico** lo standard è:
+Per **Scienze della Salute**, **Paziente chirurgico** e ora **Anatomia Patologica** lo standard è:
 
 - spiegare perché la risposta corretta è giusta;
 - spiegare perché ciascuna delle altre tre è sbagliata;
-- non limitarsi a ripetere la risposta corretta.
+- non limitarsi a ripetere la risposta corretta;
+- usare il materiale universitario dell'utente come base primaria e verificare i punti scientifici con fonti autorevoli quando necessario.
 
 ### Paziente chirurgico — COMPLETO 462/462
 
@@ -132,20 +133,40 @@ Percorsi completi: `data/scienze-salute-explanations-XXX.json`.
 - `451–459` → Storia della medicina;
 - **totale continuo coperto: `1–459` = 459/459**.
 
-L'enhancer:
-
-- non è necessario all'avvio o allo svolgimento del quiz;
-- carica i JSON con `Promise.allSettled`;
-- valida `summary` e quattro motivazioni;
-- associa le motivazioni alle opzioni originali tramite il testo, mantenendole corrette dopo lo shuffle A/B/C/D;
-- arricchisce il feedback già prodotto dal motore originale;
-- se enhancer, JSON o singola entry falliscono, mantiene il feedback base `q.e` e non blocca il quiz.
-
-Per una entry valida il feedback mostra esito, risposta corretta nella posizione effettiva, concetto chiave e quattro motivazioni separate con etichetta `CORRETTA` / `ERRATA`.
-
-**Regola fondamentale: nessun problema delle spiegazioni avanzate deve mai impedire avvio, svolgimento o completamento del quiz.**
-
 Checkpoint dettagliato: `SCIENZE_SALUTE_PROGRESS.md`.
+
+### Anatomia Patologica — IN CORSO 40/300
+
+Il lavoro sulle spiegazioni avanzate è iniziato in blocchi controllati da **40 domande**.
+
+Implementazione attiva:
+
+- `anatomia-patologica.html` resta il motore originale e continua a caricare le 12 banche JSON dell'esame;
+- `anatomia-patologica-explanations.js` è un enhancer opzionale fail-safe;
+- `data/anatomia-patologica-explanations-001.json` contiene le spiegazioni avanzate del primo blocco;
+- il rilascio attivo è `pilot1`.
+
+Copertura:
+
+- `m1–m40` → Microbiologia;
+- **totale coperto: 40/300**.
+
+Il primo blocco è stato costruito usando come base primaria `Microbiologia.pdf` e `Microbiologia compendio.pdf`, con verifica esterna di punti selezionati mediante fonti autorevoli (PubMed/PMC, NCBI/NIH, CDC e letteratura microbiologica pertinente).
+
+Nel blocco `m1–m40` non sono state modificate domande, opzioni, risposte corrette, ID o topic. Non sono emersi nel controllo preliminare quesiti con risposta corretta chiaramente incompatibile con il materiale universitario e con le fonti autorevoli consultate.
+
+L'enhancer Anatomia Patologica:
+
+- attende il caricamento della banca originale di 300 domande;
+- carica i file di spiegazione separatamente;
+- valida `summary` e quattro motivazioni;
+- associa le motivazioni alle opzioni originali tramite il testo, mantenendole corrette dopo il rimescolamento A/B/C/D;
+- arricchisce il feedback soltanto dopo la correzione;
+- se enhancer o dati esplicativi non sono disponibili, mantiene il feedback base `why` senza bloccare il quiz.
+
+**Punto di ripresa Anatomia Patologica: `m41–m80`, 40 domande di Microbiologia.**
+
+Checkpoint dettagliato: `ANATOMIA_PATOLOGICA_PROGRESS.md`.
 
 ## 6. Architettura corrente
 
@@ -158,7 +179,10 @@ File principali:
 - `scienze-salute-explanations.js` — enhancer opzionale;
 - `data/scienze-salute-explanations-001.json` → `013.json` — spiegazioni avanzate complete `1–459`;
 - `SCIENZE_SALUTE_PROGRESS.md` — checkpoint specifico Scienze;
-- `anatomia-patologica.html`;
+- `anatomia-patologica.html` — runtime Anatomia Patologica e caricamento banca 300 domande;
+- `anatomia-patologica-explanations.js` — enhancer opzionale Anatomia Patologica;
+- `data/anatomia-patologica-explanations-001.json` — spiegazioni avanzate `m1–m40`;
+- `ANATOMIA_PATOLOGICA_PROGRESS.md` — checkpoint specifico Anatomia Patologica;
 - `infermieristica-materno.html`;
 - `paziente-chirurgico.html` — runtime stabile + spiegazioni complete;
 - `data/paziente-chirurgico-explanations-manifest.json` e `001`→`029`;
@@ -183,12 +207,13 @@ I progressi sono locali al browser; non ci sono account, database remoto o sync 
 
 ### Lavoro a blocchi
 
-Per revisioni estese di banche o spiegazioni lavorare in **blocchi controllati di circa 40–60 domande**, con checkpoint GitHub tra i blocchi.
+Per revisioni estese di banche o spiegazioni lavorare in **blocchi controllati da 40 domande** quando concordato, con checkpoint GitHub tra i blocchi.
 
 - Paziente chirurgico: spiegazioni complete **462/462**.
 - Scienze della Salute: spiegazioni complete **459/459**.
+- Anatomia Patologica: spiegazioni avanzate **40/300**, completato `m1–m40`, prossimo `m41–m80`.
 
-Per eventuali nuove banche mantenere lo stesso principio di checkpoint, non regressione e separazione tra banca originale e dati esplicativi quando possibile.
+Per Anatomia Patologica mantenere la dimensione di 40 quesiti per blocco seguendo l'ordine reale della banca; l'ultimo blocco può contenere il residuo finale inferiore a 40.
 
 ### Continuità tra chat
 
@@ -207,8 +232,8 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 
 1. **Paziente chirurgico: spiegazioni avanzate complete 462/462 con architettura fail-safe.**
 2. **Scienze della Salute: spiegazioni avanzate complete 459/459 con enhancer opzionale fail-safe.**
-3. Mantenere le banche originali inalterate salvo autorizzazione esplicita.
-4. Gestire eventuali quesiti dubbi o obsoleti come QA separato.
-5. Proseguire con nuove funzionalità o nuove banche solo su richiesta, preservando il comportamento stabile degli esami esistenti.
+3. **Anatomia Patologica: spiegazioni avanzate 40/300; proseguire da `m41` in blocchi da 40.**
+4. Mantenere le banche originali inalterate salvo autorizzazione esplicita.
+5. Gestire eventuali quesiti dubbi o obsoleti come QA separato.
 
 Farmacologia resta una futura banca in preparazione.
