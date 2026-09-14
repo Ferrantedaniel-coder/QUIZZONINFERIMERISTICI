@@ -15,6 +15,7 @@ Portare tutte le **462 domande** di **Paziente chirurgico** al nuovo standard St
 - [x] **Psicologia: 66/66** (`ps1`-`ps66`).
 - [x] **Terapia: 266/266** (`te1`-`te266`).
 - [x] **Totale: 462/462 spiegazioni avanzate complete**.
+- [x] **Runtime fix 14/09/2026:** caricamento spiegazioni reso fail-safe, controllo obbligatorio 462/462, cache-busting e protezione delle opzioni dipendenti dall'ordine.
 
 ## File spiegazioni
 
@@ -42,6 +43,21 @@ Dopo la conferma della risposta, il quiz mostra:
 
 Il motore associa le spiegazioni alle opzioni originali anche dopo il rimescolamento della posizione A/B/C/D.
 
+### Correzione runtime del 14/09/2026
+
+È stata individuata e corretta una regressione che poteva far ricadere il quiz sul vecchio campo generico `why`.
+
+La versione corretta del motore ora:
+
+- carica il manifest e i 29 file di spiegazione con richieste non servite dalla cache;
+- verifica che siano presenti **esattamente 462 spiegazioni** prima di avviare il quiz;
+- non usa più un fallback silenzioso alla vecchia spiegazione generica in caso di errore;
+- mostra un errore esplicito se il pacchetto delle spiegazioni è incompleto;
+- usa una versione cache-busted (`20260914-fix2`) per evitare che il browser continui a eseguire una vecchia copia dello script;
+- preserva l'ordine delle domande con alternative semanticamente dipendenti dalla posizione, tra cui `Tutte le precedenti`, `Tutte vere` e `Tutte corrette`.
+
+Le normali domande continuano a usare il rimescolamento A/B/C/D bilanciato.
+
 ## Integrità della banca
 
 Durante questo lavoro sono rimasti invariati:
@@ -53,7 +69,7 @@ Durante questo lavoro sono rimasti invariati:
 - sezioni e conteggi;
 - logica mix/focus;
 - sessioni 20/30/50/100/tutte;
-- bilanciamento A/B/C/D;
+- bilanciamento A/B/C/D, fatta eccezione per le domande che richiedono ordine bloccato per conservarne il significato;
 - punteggio, accuratezza, progressi e ripasso errori;
 - `localStorage`.
 
