@@ -1,13 +1,13 @@
 (function(){
 'use strict';
-const OPTIONAL_EXPLANATION_FILES=['data/scienze-salute-explanations-001.json','data/scienze-salute-explanations-002.json','data/scienze-salute-explanations-003.json','data/scienze-salute-explanations-004.json','data/scienze-salute-explanations-005.json','data/scienze-salute-explanations-006.json','data/scienze-salute-explanations-007.json','data/scienze-salute-explanations-008.json','data/scienze-salute-explanations-009.json'];
-const EXPECTED_ADVANCED=281;
+const OPTIONAL_EXPLANATION_FILES=['data/scienze-salute-explanations-001.json','data/scienze-salute-explanations-002.json','data/scienze-salute-explanations-003.json','data/scienze-salute-explanations-004.json','data/scienze-salute-explanations-005.json','data/scienze-salute-explanations-006.json','data/scienze-salute-explanations-007.json','data/scienze-salute-explanations-008.json','data/scienze-salute-explanations-009.json','data/scienze-salute-explanations-010.json'];
+const EXPECTED_ADVANCED=321;
 const ADVANCED_EXPLANATIONS={};
 let feedbackObserver=null;
 
 function escapeHtml(value){
   return String(value??'').replace(/[&<>"']/g,ch=>({
-    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#039;'
   }[ch]));
 }
 
