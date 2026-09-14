@@ -1,0 +1,92 @@
+{
+  "di11": {
+    "summary": "Quando si parla di contaminazione da materiale radioattivo, l'ingresso o il contatto può avvenire attraverso più vie, tra cui contatto, ingestione e inalazione.",
+    "options": {
+      "Solo contatto": "Errata: il contatto è una possibile modalità di contaminazione, ma l'avverbio 'solo' esclude impropriamente altre vie riconosciute dal materiale, come ingestione e inalazione.",
+      "Solo ingestione": "Errata: l'ingestione può determinare contaminazione interna, ma non è l'unica modalità possibile.",
+      "Tutte le precedenti": "Corretta: il quesito considera valide le diverse vie indicate, cioè contatto, ingestione e inalazione, per cui la risposta comprensiva è quella corretta.",
+      "Solo inalazione": "Errata: l'inalazione è una via possibile di contaminazione interna, ma non esclude contatto o ingestione."
+    }
+  },
+  "di12": {
+    "summary": "TAC, RM ed ecografia sono metodiche di diagnostica per immagini; la colonscopia è invece un esame endoscopico che visualizza direttamente il lume del colon.",
+    "options": {
+      "TAC": "Errata come risposta al 'NON': la TAC è una metodica di diagnostica per immagini e utilizza raggi X per produrre immagini tomografiche.",
+      "RM": "Errata come risposta al 'NON': la risonanza magnetica appartiene pienamente alla diagnostica per immagini e utilizza campi magnetici e radiofrequenze.",
+      "Ecografia": "Errata come risposta al 'NON': l'ecografia produce immagini mediante ultrasuoni ed è una delle principali metodiche di imaging.",
+      "Colonscopia": "Corretta: è una procedura endoscopica con visualizzazione diretta della mucosa del colon e non una metodica radiologica di diagnostica per immagini nel senso richiesto dal quesito."
+    }
+  },
+  "di13": {
+    "summary": "Il solfato di bario è un contrasto insolubile destinato soprattutto allo studio del tubo digerente e non viene somministrato per via endovenosa.",
+    "options": {
+      "Mezzo iodato": "Errata: i mezzi di contrasto iodati idrosolubili possono essere somministrati per via endovenosa, ad esempio negli studi TC contrastografici.",
+      "Gadolino": "Errata: i composti a base di gadolinio sono i principali mezzi di contrasto paramagnetici della RM e, quando indicati, vengono somministrati per via endovenosa.",
+      "Bario": "Corretta: il solfato di bario è insolubile e viene utilizzato per opacizzare il tubo digerente per via enterale, non per iniezione endovenosa.",
+      "Mezzo paramagnetico": "Errata: nella RM il mezzo paramagnetico, tipicamente a base di gadolinio, può essere somministrato per via endovenosa."
+    }
+  },
+  "di14": {
+    "summary": "L'ecografia forma le immagini grazie alla trasmissione e alla riflessione di onde acustiche ad alta frequenza, cioè ultrasuoni.",
+    "options": {
+      "Raggi gamma": "Errata: i raggi gamma sono associati alla medicina nucleare, per esempio alla scintigrafia, non al principio fisico dell'ecografia.",
+      "Onde acustiche ad alta frequenza (ultrasuoni)": "Corretta: la sonda ecografica emette ultrasuoni e registra gli echi riflessi dai tessuti, trasformandoli in immagine.",
+      "Raggi X": "Errata: i raggi X sono impiegati nella radiografia e nella TAC, mentre l'ecografia non usa radiazioni ionizzanti.",
+      "Microonde": "Errata: le microonde non costituiscono la sorgente utilizzata dall'ecografo per generare immagini diagnostiche."
+    }
+  },
+  "di15": {
+    "summary": "I raggi X sono alla base della radiografia convenzionale e vengono utilizzati anche nella TAC, mentre RM, ecografia e scintigrafia si basano su principi differenti.",
+    "options": {
+      "Risonanza magnetica": "Errata: la RM utilizza un campo magnetico e impulsi di radiofrequenza, non raggi X.",
+      "Radiografie mediche": "Corretta: la radiografia nasce proprio dall'impiego diagnostico dei raggi X, che attraversano i tessuti con attenuazione differente.",
+      "Ecografie": "Errata: l'ecografia impiega ultrasuoni, cioè onde acustiche ad alta frequenza.",
+      "Scintigrafia": "Errata: la scintigrafia appartiene alla medicina nucleare e rileva radiazioni emesse da radiofarmaci, non utilizza raggi X come principio principale."
+    }
+  },
+  "di16": {
+    "summary": "Gli ultrasuoni sono il fondamento fisico dell'ecografia: vengono emessi dalla sonda e riflessi in modo differente dai vari tessuti.",
+    "options": {
+      "TAC": "Errata: la TAC ricostruisce immagini a partire dall'attenuazione di raggi X.",
+      "RM": "Errata: la RM sfrutta campi magnetici e radiofrequenze, non ultrasuoni.",
+      "Ecografia": "Corretta: è la metodica che utilizza onde ultrasonore per ottenere immagini in tempo reale dei tessuti e degli organi.",
+      "PET": "Errata: la PET utilizza radiofarmaci emettitori di positroni e rilevazione di fotoni, non onde ultrasonore."
+    }
+  },
+  "di17": {
+    "summary": "La radiosensibilità indica quanto un tessuto o una cellula sia suscettibile agli effetti biologici e al danno provocato dalle radiazioni.",
+    "options": {
+      "Capacità di emettere radiazioni": "Errata: l'emissione di radiazioni riguarda una sorgente radioattiva; la radiosensibilità descrive invece la risposta biologica del tessuto esposto.",
+      "Vulnerabilità dei tessuti al danno da radiazioni": "Corretta: esprime la diversa suscettibilità dei tessuti alle radiazioni, particolarmente elevata nelle cellule con intensa attività proliferativa.",
+      "Valutazione della densità ossea": "Errata: la densità minerale ossea viene misurata con metodiche come la MOC/DEXA e non definisce il concetto di radiosensibilità.",
+      "Capacità di assorbire ferro": "Errata: il metabolismo del ferro non ha relazione con la definizione radiobiologica richiesta dal quesito."
+    }
+  },
+  "di18": {
+    "summary": "La valutazione di un nodulo polmonare indeterminato considera più elementi radiologici, tra cui caratteristiche della crescita e morfologia: non si basa su un solo criterio isolato.",
+    "options": {
+      "Nessuno": "Errata: esistono criteri radiologici e temporali che contribuiscono a stimare la probabilità di malignità di un nodulo.",
+      "Solo la crescita rapida": "Errata: la variazione dimensionale nel tempo è importante, ma non rappresenta l'unico elemento valutato.",
+      "Tutti i criteri indicati": "Corretta: nel modo in cui il quesito è costruito, crescita e caratteristiche morfologiche vanno considerate insieme e nessun singolo criterio esaurisce da solo la valutazione.",
+      "Solo la forma irregolare": "Errata: una morfologia irregolare può aumentare il sospetto, ma deve essere interpretata insieme agli altri dati e non come unico criterio."
+    }
+  },
+  "di19": {
+    "summary": "I tofi sono depositi di cristalli di urato che compaiono tipicamente nella gotta cronica e possono interessare articolazioni e tessuti periarticolari.",
+    "options": {
+      "Artrite reumatoide": "Errata: l'artrite reumatoide è una malattia infiammatoria autoimmune e non è caratterizzata dai depositi di urato chiamati tofi.",
+      "Artropatia cronica della gotta": "Corretta: nella gotta cronica l'accumulo di cristalli di urato può formare tofi, segno caratteristico della malattia di lunga durata.",
+      "Artrosi": "Errata: l'artrosi è una patologia degenerativa della cartilagine articolare e non produce tofi uratici.",
+      "Spondilite anchilosante": "Errata: è una spondiloartrite infiammatoria che interessa soprattutto lo scheletro assiale e non è definita dalla presenza di tofi."
+    }
+  },
+  "di20": {
+    "summary": "Nel materiale d'esame il broncogramma aereo è descritto come la visualizzazione dell'albero bronchiale fino alle diramazioni periferiche.",
+    "options": {
+      "Studio del diaframma": "Errata: il diaframma è una struttura muscolare toraco-addominale e il suo studio non definisce il broncogramma aereo.",
+      "Visualizzazione dell'albero bronchiale fino alle diramazioni periferiche": "Corretta secondo il materiale d'esame: il termine viene associato alla visualizzazione dei bronchi e delle loro diramazioni nel contesto dell'imaging toracico.",
+      "Studio dei seni paranasali": "Errata: i seni paranasali appartengono al massiccio facciale e non all'albero bronchiale.",
+      "Studio dell'esofago": "Errata: l'esofago appartiene al tubo digerente e viene studiato con metodiche dedicate, non con il broncogramma."
+    }
+  }
+}
