@@ -65,7 +65,7 @@ Le seguenti funzioni costituiscono il comportamento base del progetto e **non de
 
 ### Eccezione importante: opzioni vincolate
 
-Quando una domanda contiene alternative semanticamente vincolate alla posizione, ad esempio **“Tutte le precedenti”**, l'ordine non deve essere alterato in modo da rendere la domanda logicamente errata. Il sistema del Materno usa già una logica di `lockOrder` per questi casi e tale principio va preservato.
+Quando una domanda contiene alternative semanticamente vincolate alla posizione, ad esempio **“Tutte le precedenti”**, l'ordine non deve essere alterato in modo da rendere la domanda logicamente errata. Il sistema del Materno usa già una logica di `lockOrder` per questi casi e tale principio va preservato. **Paziente chirurgico applica ora lo stesso principio direttamente nel proprio motore**, riconoscendo anche formulazioni equivalenti come “nessuna delle precedenti”, “tutte vere” e “tutte corrette”.
 
 ---
 
@@ -143,15 +143,22 @@ Per questa attività è tassativamente richiesto mantenere invariati:
 
 ### Stato tecnico al 14/09/2026
 
-**Paziente chirurgico è stato completato.**
+**Paziente chirurgico è stato completato ed è ora protetto da verifica runtime integrata.**
 
-Il quiz utilizza:
+Il quiz attivo utilizza direttamente `paziente-chirurgico.html` come motore unico per:
 
-- `paziente-chirurgico-explanations.js` per il rendering del feedback avanzato;
-- `data/paziente-chirurgico-explanations-manifest.json` per caricare i file delle spiegazioni;
-- `data/paziente-chirurgico-explanations-001.json` → `029.json` per coprire l'intera banca da `di1` a `te266`.
+- caricamento delle 462 domande;
+- caricamento del manifest `data/paziente-chirurgico-explanations-manifest.json`;
+- caricamento dei file `data/paziente-chirurgico-explanations-001.json` → `029.json`;
+- verifica preventiva che siano presenti **462/462 spiegazioni**;
+- verifica che **ogni singola opzione di ogni domanda** abbia una motivazione specifica;
+- rendering del concetto chiave e dei quattro riquadri `CORRETTA` / `ERRATA` dopo la conferma;
+- mantenimento dell'associazione fra alternativa originale e spiegazione dopo il rimescolamento A/B/C/D;
+- blocco dell'avvio del quiz se banca o spiegazioni risultano incomplete.
 
-Il motore mantiene la motivazione associata alla corretta alternativa originale anche dopo il rimescolamento A/B/C/D.
+Il precedente file `paziente-chirurgico-explanations.js` può restare nel repository come artefatto storico, ma **non è più il motore attivo della pagina**. La pagina non dipende più da un monkey-patch esterno o da un fallback silenzioso sul vecchio campo `why`.
+
+Per evitare versioni obsolete in cache, la homepage apre Paziente chirurgico con un parametro di versione e i file JSON vengono richiesti con cache disabilitata/versionata.
 
 Durante il lavoro sono stati marcati con `ATTENZIONE QA` alcuni quesiti potenzialmente discordanti, datati o ambigui; il dettaglio si trova in `PAZIENTE_CHIRURGICO_PROGRESS.md`. Le risposte registrate nella banca non sono state modificate.
 
@@ -170,8 +177,8 @@ Elementi principali attuali:
 - `scienze-salute.html` / `scienze-salute-app.html` — Scienze della Salute;
 - `anatomia-patologica.html` — Anatomia Patologica;
 - `infermieristica-materno.html` — Infermieristica nel Materno;
-- `paziente-chirurgico.html` — Paziente chirurgico;
-- `paziente-chirurgico-explanations.js` — motore feedback avanzato del Paziente chirurgico;
+- `paziente-chirurgico.html` — Paziente chirurgico e **motore attivo integrato delle spiegazioni avanzate**;
+- `paziente-chirurgico-explanations.js` — file legacy non più caricato dalla pagina attiva;
 - `data/paziente-chirurgico-explanations-manifest.json` — manifest delle spiegazioni avanzate;
 - `data/paziente-chirurgico-explanations-001.json` → `029.json` — spiegazioni per tutte le 462 domande di Paziente chirurgico;
 - `PAZIENTE_CHIRURGICO_PROGRESS.md` — checkpoint e QA dell'esame;
@@ -275,7 +282,7 @@ I permessi tecnici del connettore **non vanno interpretati come autorizzazione a
 
 ### Priorità immediata
 
-**Paziente chirurgico: completato 462/462 per il nuovo standard di spiegazione.**
+**Paziente chirurgico: completato 462/462 per il nuovo standard di spiegazione e runtime integrato con verifica completa prima dell'avvio.**
 
 La priorità rimanente è portare **Scienze della Salute** allo stesso standard:
 
@@ -331,6 +338,7 @@ Chiunque lavori successivamente sul progetto deve assumere che:
 - lavori estesi gestiti in **blocchi controllati da 40–60 domande**;
 - checkpoint e handoff preventivo tra chat per proteggere qualità e continuità;
 - **Paziente chirurgico completo 462/462 con spiegazione della corretta + spiegazione specifica delle tre errate**;
+- Paziente chirurgico usa **verifica runtime 462/462 integrata nella pagina**, senza fallback silenzioso al vecchio `why`;
 - punti clinico-scientifici dubbi di Paziente chirurgico preservati e marcati come QA senza modificare di nascosto la banca.
 
 **Prossimo vincolo prioritario:** completare **Scienze della Salute** con lo stesso standard di spiegazione, procedendo per blocchi controllati e senza alterare la banca salvo task QA separato.
