@@ -60,7 +60,7 @@ Se il task riguarda UI, logica, spiegazioni o infrastruttura:
 
 Se emerge un quesito probabilmente errato, ambiguo, obsoleto o discordante, **non correggerlo di nascosto**: segnalarlo come QA e modificarlo solo con autorizzazione esplicita.
 
-Per contenuti medici/infermieristici dare priorità ai materiali universitari dell'utente. Quando serve verifica, aggiornamento o disambiguazione utilizzare fonti autorevoli, incluse **PubMed/PMC, NCBI/NIH, WHO, CDC, fonti normative ufficiali e linee guida pertinenti**. Le fonti esterne servono a verificare o precisare il contenuto, non autorizzano modifiche silenziose della banca.
+Per contenuti medici/infermieristici dare priorità ai materiali universitari dell'utente. Quando serve verifica, aggiornamento o disambiguazione usare fonti autorevoli, incluse **PubMed/PMC, NCBI/NIH, WHO, CDC, fonti normative ufficiali e linee guida pertinenti**. Le fonti esterne servono a verificare o precisare il contenuto, non autorizzano modifiche silenziose della banca.
 
 ## 5. Standard delle spiegazioni
 
@@ -70,7 +70,7 @@ Per **Scienze della Salute**, **Paziente chirurgico** e **Anatomia Patologica** 
 - spiegare perché ciascuna delle altre tre è sbagliata;
 - non limitarsi a ripetere la risposta corretta;
 - mantenere le motivazioni agganciate al testo originale delle opzioni, così da seguirne correttamente lo shuffle A/B/C/D;
-- mantenere un fallback fail-safe: un problema nelle spiegazioni avanzate non deve mai impedire avvio, svolgimento o completamento del quiz.
+- mantenere un fallback fail-safe: un problema nelle spiegazioni avanzate non deve impedire avvio, svolgimento o completamento del quiz.
 
 ### Paziente chirurgico — COMPLETO 462/462
 
@@ -95,55 +95,36 @@ Implementazione attiva:
 - `scienze-salute-explanations.js` è l'enhancer opzionale fail-safe;
 - `data/scienze-salute-explanations-001.json` → `013.json` coprono `1–459`.
 
-Copertura completa per ID banca:
-
-- `1–121` Infermieristica nell'evoluzione storica;
-- `122–176` Epidemiologia;
-- `177–220` Igiene e medicina preventiva;
-- `221–270` Storia della medicina;
-- `271–320` Igiene e medicina preventiva;
-- `321–370` Storia della medicina;
-- `371–379` Infermieristica nell'evoluzione storica;
-- `380–392` Storia della medicina;
-- `393–394` Infermieristica nell'evoluzione storica;
-- `395–399` Storia della medicina;
-- `400–402` Infermieristica nell'evoluzione storica;
-- `403–407` Storia della medicina;
-- `408` Infermieristica nell'evoluzione storica;
-- `409–447` Storia della medicina;
-- `448–450` Infermieristica nell'evoluzione storica;
-- `451–459` Storia della medicina;
-- **totale 459/459**.
-
 Checkpoint: `SCIENZE_SALUTE_PROGRESS.md`.
 
-### Anatomia Patologica — IN CORSO 240/300
+### Anatomia Patologica — IN CORSO 280/300
 
-Il lavoro procede in **blocchi da 40 domande** seguendo l'ordine reale complessivo della banca.
+Il lavoro procede in blocchi controllati seguendo l'ordine reale complessivo della banca.
 
 Implementazione attiva:
 
 - `anatomia-patologica.html` resta il motore originale e continua a caricare le 12 banche JSON;
 - `anatomia-patologica-explanations.js` è un enhancer opzionale fail-safe;
-- rilascio attivo: **`pilot6`**;
-- `EXPECTED_ADVANCED=240`;
+- rilascio attivo: **`pilot7`**;
+- `EXPECTED_ADVANCED=280`;
 - file spiegazioni:
   - `data/anatomia-patologica-explanations-001.json` → `m1–m40`;
   - `data/anatomia-patologica-explanations-002.json` → `m41–m80`;
   - `data/anatomia-patologica-explanations-003.json` → `m81–m100` + `e1–e20`;
   - `data/anatomia-patologica-explanations-004.json` → `e21–e50` + `i1–i10`;
   - `data/anatomia-patologica-explanations-005.json` → `i11–i50`;
-  - `data/anatomia-patologica-explanations-006.json` → `a1–a40`.
+  - `data/anatomia-patologica-explanations-006.json` → `a1–a40`;
+  - `data/anatomia-patologica-explanations-007.json` → `a41–a80`.
 
 Copertura:
 
 - Microbiologia `m1–m100` = **100/100 COMPLETA**;
 - Eziologia `e1–e50` = **50/50 COMPLETA**;
 - Immunologia `i1–i50` = **50/50 COMPLETA**;
-- Anatomia Patologica `a1–a40` = **40/100**;
-- **totale 240/300**.
+- Anatomia Patologica `a1–a80` = **80/100**;
+- **totale 280/300**.
 
-Materiale universitario primario fornito dall'utente:
+Materiale universitario primario:
 
 - `Microbiologia.pdf`;
 - `Microbiologia compendio.pdf`;
@@ -151,30 +132,35 @@ Materiale universitario primario fornito dall'utente:
 - `Eziologia generale STAMPATO.pdf`;
 - `Immunologia STAMPATO.pdf`;
 - `ANATOMIA PATOLOGICA.pdf`;
-- `Domande anatomia patologica.pdf` come ulteriore riferimento per terminologia e impostazione didattica della sezione.
+- `Domande anatomia patologica.pdf` come riferimento didattico aggiuntivo.
 
-Nel blocco 006 sono stati verificati: ruolo dell'anatomopatologo; istologia/citologia; formalina tamponata, fissazione e fase pre-analitica; identificazione e richiesta del campione; processazione e paraffina; H&E, Perls, Rosso Congo, PAS; immunoistochimica, ISH, microscopia elettronica e Ki-67; campionamento macroscopico, orientamento e artefatti; autopsia clinico-patologica e medico-legale; fenomeni cadaverici, rigor mortis, ipostasi, autolisi, autodigestione, putrefazione, epicrisi ed esame interno.
+Nel blocco 007 sono stati verificati: autopsia e tanatologia; citologia e suoi limiti; citologia urinaria e respiratoria; versamenti; agoaspirato; Pap test; criteri citomorfologici di malignità; biopsie incisionale, escissionale, core e stereotassica; biopsia polmonare transparietale; frozen section e invio a fresco.
 
 ### Precisazioni scientifiche registrate
 
-Nei quesiti coperti finora non sono state modificate domande, opzioni, risposte corrette, ID o topic. Non sono emerse risposte corrette da cambiare nel blocco `a1–a40`.
+Nei quesiti coperti non sono state modificate domande, opzioni, risposte corrette, ID o topic.
 
 Precisazioni applicate **solo nelle spiegazioni**:
 
 - corretta denominazione **via lectinica del complemento** con **mannose-binding lectin (MBL)**;
 - cellule dendritiche come APC più efficienti nell'attivazione dei T vergini, evitando l'assoluto “uniche APC costimolatorie”;
 - MHC I espresso sulla grande maggioranza delle cellule nucleate;
-- citotossicità perforina/granzimi di NK e T CD8 descritta principalmente come induzione di apoptosi;
-- formalina al 10% precisata come formalina neutra tamponata contenente circa il 4% di formaldeide;
-- ritardo alla fissazione trattato come variabile pre-analitica che può alterare morfologia, antigenicità e biomarcatori;
-- Rosso Congo associato all'amiloide e alla caratteristica birifrangenza verde mela in luce polarizzata, con attenzione agli artefatti;
-- Ki-67 descritto come marcatore nucleare della frazione proliferante con interpretazione dipendente dal contesto tumorale.
+- citotossicità perforina/granzimi descritta principalmente come induzione di apoptosi;
+- formalina al 10% precisata come formalina neutra tamponata con circa il 4% di formaldeide;
+- ritardo alla fissazione trattato come variabile pre-analitica rilevante;
+- Rosso Congo associato all'amiloide e alla birifrangenza verde mela;
+- Ki-67 descritto come marcatore nucleare della frazione proliferante con significato dipendente dal contesto;
+- `a39–a40` verificati sulla normativa ufficiale italiana, D.P.R. 285/1990, artt. 8–9;
+- `a54–a55`: seconda minzione e tre campioni consecutivi mantenuti come **protocollo del corso**, precisando che numero e tempistica possono variare tra laboratori;
+- `a64–a65`: washing e Pap test come “citologia abrasiva” mantenuti secondo la classificazione didattica degli appunti;
+- `a67`: spiegazione aggiornata alle indicazioni WHO, con HPV DNA test come metodo primario preferito in molti programmi moderni di screening cervicale;
+- `a70`: fondo necrotico considerato suggestivo in alcuni contesti ma non specifico da solo per malignità;
+- `a75`: “agobiopsia a cielo coperto” mantenuta come terminologia del corso per patologie diffuse, con nota che l'uso moderno dipende dal distretto e dall'imaging;
+- `a79–a80`: frozen section descritta come consulenza intraoperatoria per quesiti selezionati, con limiti di campionamento e artefatti; invio del tessuto a fresco senza fissativo.
 
-Per `a39–a40` è stata verificata direttamente la normativa ufficiale italiana: **D.P.R. 10 settembre 1990, n. 285, artt. 8–9**. Il periodo ordinario è 24 ore; in caso di morte improvvisa o dubbio di morte apparente l'osservazione è protratta fino a 48 ore, salvo accertamento anticipato della morte secondo le modalità previste.
+Le verifiche del blocco 007 hanno utilizzato `ANATOMIA PATOLOGICA.pdf` e `Domande anatomia patologica.pdf` come base primaria, WHO per lo screening cervicale e PubMed per citologia urinaria e frozen section.
 
-Le verifiche del blocco 006 hanno utilizzato `ANATOMIA PATOLOGICA.pdf` come fonte primaria, `Domande anatomia patologica.pdf` come riferimento didattico, PubMed/PMC per fissazione, immunoistochimica e biomarcatori, e Gazzetta Ufficiale per i quesiti normativi.
-
-**Punto di ripresa Anatomia Patologica:** prossimo blocco da 40 = `a41–a80`, con copertura attesa **280/300**.
+**Punto di ripresa Anatomia Patologica:** ultimo blocco `a81–a100` (**20 domande**), con copertura attesa **300/300 COMPLETA**.
 
 Checkpoint dettagliato: `ANATOMIA_PATOLOGICA_PROGRESS.md`.
 
@@ -190,7 +176,7 @@ File principali:
 - `SCIENZE_SALUTE_PROGRESS.md`;
 - `anatomia-patologica.html`;
 - `anatomia-patologica-explanations.js`;
-- `data/anatomia-patologica-explanations-001.json` → `006.json`;
+- `data/anatomia-patologica-explanations-001.json` → `007.json`;
 - `ANATOMIA_PATOLOGICA_PROGRESS.md`;
 - `infermieristica-materno.html`;
 - `paziente-chirurgico.html`;
@@ -218,9 +204,7 @@ I progressi utente restano locali al browser; non ci sono account, database remo
 
 - Paziente chirurgico: **462/462** completo.
 - Scienze della Salute: **459/459** completo.
-- Anatomia Patologica: **240/300**, blocchi da 40; prossimo `a41–a80`.
-
-Per Anatomia Patologica restano 60 domande: `a41–a80`, poi residuo finale `a81–a100`.
+- Anatomia Patologica: **280/300**; resta il residuo finale `a81–a100`.
 
 ## 8. GitHub e autorizzazioni
 
@@ -235,7 +219,7 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 
 1. Paziente chirurgico: spiegazioni complete 462/462.
 2. Scienze della Salute: spiegazioni complete 459/459.
-3. Anatomia Patologica: spiegazioni avanzate **240/300**; proseguire con `a41–a80`.
+3. Anatomia Patologica: spiegazioni avanzate **280/300**; completare `a81–a100`.
 4. Mantenere le banche originali inalterate salvo autorizzazione esplicita.
 5. Gestire quesiti dubbi o obsoleti come QA separato.
 6. Farmacologia resta una futura banca in preparazione.
