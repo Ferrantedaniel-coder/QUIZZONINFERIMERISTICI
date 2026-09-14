@@ -107,20 +107,21 @@ Per una entry valida il feedback mostra esito, risposta corretta, concetto chiav
 
 Checkpoint dettagliato: `PAZIENTE_CHIRURGICO_PROGRESS.md`.
 
-### Scienze della Salute — pilot avanzato 40/459
+### Scienze della Salute — spiegazioni avanzate 80/459
 
-L'implementazione attiva è ora chiarita:
+L'implementazione attiva è:
 
 - `index.html` apre `scienze-salute.html`;
 - `scienze-salute.html` è un wrapper che carica `scienze-salute-app.html` in iframe;
 - `scienze-salute-app.html` è il motore originale e contiene inline l'intera banca di **459 domande**.
 
-Per ridurre il rischio di regressione, `scienze-salute-app.html` **non è stato modificato** nel pilot.
+Per ridurre il rischio di regressione, `scienze-salute-app.html` **non viene modificato** durante il lavoro sulle spiegazioni.
 
-È stato aggiunto un enhancer esterno opzionale:
+È attivo un enhancer esterno opzionale:
 
 - `scienze-salute-explanations.js`;
-- `data/scienze-salute-explanations-001.json` → domande banca **1–40** di Infermieristica nell'evoluzione storica.
+- `data/scienze-salute-explanations-001.json` → domande banca **1–40**;
+- `data/scienze-salute-explanations-002.json` → domande banca **41–80**.
 
 Il wrapper inietta l'enhancer nello stesso iframe dopo che l'app originale è già stata caricata. L'enhancer:
 
@@ -133,12 +134,12 @@ Il wrapper inietta l'enhancer nello stesso iframe dopo che l'app originale è gi
 
 #### Copertura Scienze attiva
 
-- **Infermieristica nell'evoluzione storica: domande 1–40**;
-- **Totale avanzato opzionale attivo: 40/459**.
+- **Infermieristica nell'evoluzione storica: domande 1–80**;
+- **Totale avanzato opzionale attivo: 80/459**.
 
 Per una entry valida il feedback mostra esito corretto/errato, risposta corretta nella posizione effettiva, concetto chiave e quattro motivazioni separate con etichetta `CORRETTA` / `ERRATA`.
 
-Le spiegazioni del pilot sono state costruite sul contenuto già presente nella banca, senza modificare o correggere silenziosamente domande e soluzioni.
+Le spiegazioni `1–80` sono state costruite sul contenuto già presente nella banca, senza modificare o correggere silenziosamente domande e soluzioni.
 
 Checkpoint dettagliato: `SCIENZE_SALUTE_PROGRESS.md`.
 
@@ -153,9 +154,10 @@ File principali:
 - `index.html` — homepage;
 - `studyhub.css` — stile condiviso;
 - `scienze-salute.html` — wrapper attivo di Scienze della Salute e loader fail-safe dell'enhancer;
-- `scienze-salute-app.html` — motore originale Scienze della Salute con banca inline da 459 domande, non modificato nel pilot;
+- `scienze-salute-app.html` — motore originale Scienze della Salute con banca inline da 459 domande, non modificato durante il lavoro sulle spiegazioni;
 - `scienze-salute-explanations.js` — enhancer opzionale delle spiegazioni di Scienze;
 - `data/scienze-salute-explanations-001.json` — spiegazioni avanzate Scienze domande 1–40;
+- `data/scienze-salute-explanations-002.json` — spiegazioni avanzate Scienze domande 41–80;
 - `SCIENZE_SALUTE_PROGRESS.md` — checkpoint specifico Scienze;
 - `anatomia-patologica.html`;
 - `infermieristica-materno.html`;
@@ -188,7 +190,7 @@ I progressi sono locali al browser; non ci sono account, database remoto o sync 
 Per revisione estesa di banche o spiegazioni lavorare in **blocchi controllati di circa 40–60 domande**, con checkpoint GitHub tra i blocchi. Il checkpoint deve indicare esame, intervallo completato, ultima domanda, file modificati, commit e punto di ripresa.
 
 - Paziente chirurgico: spiegazioni complete **462/462**.
-- Scienze della Salute: completato pilot **1–40**; punto di ripresa **domanda 41**.
+- Scienze della Salute: completate spiegazioni **1–80**; punto di ripresa **domanda 81**.
 
 ### Continuità tra chat
 
@@ -210,8 +212,8 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 ## 9. Roadmap immediata
 
 1. **Paziente chirurgico: spiegazioni avanzate complete 462/462 con architettura fail-safe.**
-2. **Scienze della Salute: pilot domande 1–40 attivo con enhancer opzionale fail-safe.**
-3. Verificare stabilità del pilot e proseguire Scienze della Salute dalla **domanda 41**, in blocchi controllati.
+2. **Scienze della Salute: spiegazioni avanzate attive 1–80 con enhancer opzionale fail-safe.**
+3. Proseguire Scienze della Salute dalla **domanda 81**, in blocchi controllati.
 4. Mantenere le banche originali inalterate durante il lavoro sulle spiegazioni.
 5. QA separato dei quesiti già segnalati, solo con autorizzazione esplicita a modificare la banca.
 
