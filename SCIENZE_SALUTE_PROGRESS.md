@@ -21,7 +21,7 @@ La Home apre `scienze-salute.html`, wrapper che carica `scienze-salute-app.html`
 
 Restano invariati motore del quiz, banca, quattro opzioni, risposte corrette, modalità di sessione, rimescolamento A/B/C/D, punteggio, navigazione, risultato, ripasso errori e `localStorage`.
 
-## Spiegazioni avanzate opzionali - 361/459
+## Spiegazioni avanzate opzionali - 401/459
 
 Copertura progressiva attiva per ID banca:
 
@@ -30,8 +30,13 @@ Copertura progressiva attiva per ID banca:
 - `177–220` → Igiene e medicina preventiva
 - `221–270` → Storia della medicina
 - `271–320` → Igiene e medicina preventiva
-- `321–361` → Storia della medicina
-- **Copertura avanzata totale continua: `1–361` = 361/459**
+- `321–370` → Storia della medicina
+- `371–379` → Infermieristica nell'evoluzione storica
+- `380–392` → Storia della medicina
+- `393–394` → Infermieristica nell'evoluzione storica
+- `395–399` → Storia della medicina
+- `400–401` → Infermieristica nell'evoluzione storica
+- **Copertura avanzata totale continua: `1–401` = 401/459**
 
 I macroargomenti possono ricomparire più avanti nella banca; non si deve dedurre la completezza globale di una materia soltanto dalla fine di un singolo intervallo.
 
@@ -48,6 +53,7 @@ I macroargomenti possono ricomparire più avanti nella banca; non si deve dedurr
 - `data/scienze-salute-explanations-009.json` → `242–281`
 - `data/scienze-salute-explanations-010.json` → `282–321`
 - `data/scienze-salute-explanations-011.json` → `322–361`
+- `data/scienze-salute-explanations-012.json` → `362–401`
 
 Ogni entry contiene `summary` e `reasons[4]`, con una motivazione per ciascuna alternativa nell'ordine originale della banca.
 
@@ -80,16 +86,9 @@ Non sono stati modificati:
 - risposte corrette;
 - ID o macroargomenti.
 
-Le spiegazioni `1–361` sono dati aggiuntivi esterni alla banca originale.
+Le spiegazioni `1–401` sono dati aggiuntivi esterni alla banca originale.
 
 ## Commit recenti
-
-Pilot9 — domande `282–321`:
-
-- dati `010`: `48a3cdb09fbf952d3594e3d27100f9ae94ef213c`
-- enhancer finale: `aa4ec1ab5cca0874cd9af999adff8019c8d3b092`
-- wrapper: `3ff18a54028d35fab0d2c1104603e75b2924590d`
-- Home: `870a32a28e9b1c053542789bdade4d38a4ecf428`
 
 Pilot10 — domande `322–361`:
 
@@ -98,8 +97,15 @@ Pilot10 — domande `322–361`:
 - wrapper/cache enhancer `pilot10`: `019e6f233f3f7b3eb4c14f8d2ac91081c93d3a87`
 - Home/cache-busting `pilot10`: `850d2965a1bfe2eb99cd5b8026164fbc867c44b6`
 
+Pilot11 — domande `362–401`:
+
+- dati `012`: `6972eafd97c0a5c49b00d44aa0afb9c9e1d8e890`
+- enhancer esteso a `401`: `30374e186ade4baa28b286604eb7c3f0e0456596`
+- wrapper/cache enhancer `pilot11`: `208e908037486d1985b54227da3ad558a96e24fe`
+- Home/cache-busting `pilot11`: `a53754a8139d2aa3ab728c095a2683c6b1edf4b2`
+
 ## Punto di ripresa
 
-La copertura avanzata è continua dalla domanda **1 alla 361**.
+La copertura avanzata è continua dalla domanda **1 alla 401**.
 
-Il prossimo blocco parte dalla **domanda 362**. Continuare nell'ordine reale della banca e registrare gli intervalli dei macroargomenti senza assumere che siano globalmente contigui.
+Il prossimo blocco parte dalla **domanda 402**, che prosegue in **Infermieristica nell'evoluzione storica**. Continuare nell'ordine reale della banca e registrare gli intervalli dei macroargomenti senza assumere che siano globalmente contigui.
