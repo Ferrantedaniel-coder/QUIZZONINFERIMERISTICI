@@ -7,9 +7,11 @@
     "data/materno-explanations-003.json.gz.b64",
     "data/materno-explanations-004.json.gz.b64",
     "data/materno-explanations-005.json.gz.b64",
-    "data/materno-explanations-006.json.gz.b64"
+    "data/materno-explanations-006.json.gz.b64",
+    "data/materno-explanations-007.json.gz.b64"
   ];
-  const EXPECTED_ADVANCED = 240;
+  const EXPECTED_ADVANCED = 280;
+  const TOTAL_QUESTIONS = 300;
   const BY_INDEX = new Map();
   const BY_ID = new Map();
 
@@ -47,6 +49,13 @@
       entry.reasons.every(reason => typeof reason === "string" && reason.trim().length > 0);
   }
 
+  function updateAdvancedCounter(count) {
+    const el = document.getElementById("advancedInfo");
+    if (!el) return;
+    const complete = count === TOTAL_QUESTIONS;
+    el.textContent = `Spiegazioni avanzate: ${count}/${TOTAL_QUESTIONS}${complete ? " ✓" : ""}`;
+  }
+
   async function loadAdvanced() {
     const results = await Promise.allSettled(ADVANCED_FILES.map(unpack));
     for (const result of results) {
@@ -58,6 +67,7 @@
         }
       }
     }
+    updateAdvancedCounter(BY_INDEX.size);
     if (BY_INDEX.size !== EXPECTED_ADVANCED) {
       console.warn(`[Materno] spiegazioni avanzate caricate: ${BY_INDEX.size}/${EXPECTED_ADVANCED}. Il quiz resta operativo con i perché originali.`);
     }
@@ -178,6 +188,7 @@
       await loadAdvanced();
       await waitForBank();
       if (!buildIdMap()) return;
+      updateAdvancedCounter(BY_ID.size);
       observeFeedback();
       console.info(`[Materno] spiegazioni avanzate attive: ${BY_ID.size}/${EXPECTED_ADVANCED}.`);
     } catch (error) {
