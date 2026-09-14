@@ -72,15 +72,15 @@ Per contenuti medici/infermieristici dare priorità ai materiali universitari fo
 
 ## 5. Spiegazioni: standard concordato e stato reale
 
-Lo standard desiderato per **Scienze della Salute** e **Paziente chirurgico** resta:
+Lo standard desiderato per **Scienze della Salute** e **Paziente chirurgico** è:
 
 - spiegare perché la risposta corretta è giusta;
 - spiegare perché ciascuna delle altre tre è sbagliata;
 - non limitarsi a ripetere la risposta corretta.
 
-### Paziente chirurgico — runtime stabile + spiegazioni opzionali
+### Paziente chirurgico — COMPLETO 462/462
 
-L'esame resta basato sul runtime stabile di `paziente-chirurgico.html`:
+`paziente-chirurgico.html` usa il runtime stabile:
 
 - carica i 13 file della banca domande;
 - verifica il totale di **462**;
@@ -94,12 +94,12 @@ Le spiegazioni avanzate vengono caricate **solo dopo** che il quiz è già avvia
 - **Diagnostica: `di1–di76` = 76/76**;
 - **Educazione terapeutica: `ed1–ed54` = 54/54**;
 - **Psicologia: `ps1–ps66` = 66/66**;
-- **Terapia: `te1–te220` = 220/266**;
-- **Totale avanzato opzionale attivo: 416/462**.
+- **Terapia: `te1–te266` = 266/266**;
+- **Totale avanzato opzionale attivo: 462/462**.
 
-File attualmente collegati:
+File collegati:
 
-- `data/paziente-chirurgico-explanations-001.json` → `028.json`.
+- `data/paziente-chirurgico-explanations-001.json` → `029.json`.
 
 Il runtime supporta sia il formato storico con `entry.options[opzione]` sia il formato con `entry.reasons[]`. Nel secondo caso la motivazione viene ricondotta all'indice dell'opzione originale in `q.options`, quindi segue correttamente la risposta anche dopo il rimescolamento A/B/C/D.
 
@@ -111,15 +111,13 @@ Per una entry valida il feedback mostra:
 - quattro motivazioni separate;
 - etichetta `CORRETTA` / `ERRATA` per ogni alternativa.
 
-Per Terapia da `te221` in poi resta per ora il feedback base `why`.
-
 **Regola fondamentale: nessun problema delle spiegazioni avanzate deve mai impedire avvio, svolgimento o completamento dell'esame.**
 
 Checkpoint dettagliato: `PAZIENTE_CHIRURGICO_PROGRESS.md`.
 
 ### Scienze della Salute
 
-Resta da portare allo standard superiore delle spiegazioni, ma solo dopo il completamento progressivo e stabile di Paziente chirurgico.
+Resta il prossimo esame da portare allo stesso standard superiore delle spiegazioni. Prima di modificarlo, verificare quale tra `scienze-salute.html` e `scienze-salute-app.html` è realmente attivo e lavorare in blocchi controllati.
 
 ---
 
@@ -132,9 +130,9 @@ File principali:
 - `scienze-salute.html` / `scienze-salute-app.html`;
 - `anatomia-patologica.html`;
 - `infermieristica-materno.html`;
-- `paziente-chirurgico.html` — runtime stabile + spiegazioni avanzate opzionali;
+- `paziente-chirurgico.html` — runtime stabile + spiegazioni avanzate opzionali complete;
 - `paziente-chirurgico-explanations.js` — file legacy, non caricato dal runtime attivo;
-- `data/paziente-chirurgico-explanations-manifest.json` e `001`→`029` — archivio completo delle spiegazioni; `001`→`028` sono attualmente collegati al runtime;
+- `data/paziente-chirurgico-explanations-manifest.json` e `001`→`029` — archivio completo, tutto collegato al runtime;
 - `PAZIENTE_CHIRURGICO_PROGRESS.md` — checkpoint specifico;
 - `data/` — banche domande;
 - `.nojekyll` — pubblicazione statica.
@@ -160,7 +158,7 @@ I progressi sono locali al browser; non ci sono account, database remoto o sync 
 
 Per revisione estesa di banche o spiegazioni lavorare in **blocchi controllati di circa 40–60 domande**, con checkpoint GitHub tra i blocchi. Il checkpoint deve indicare esame, intervallo completato, ultima domanda, file modificati, commit e punto di ripresa.
 
-Punto di ripresa attuale per Paziente chirurgico: **Terapia `te221`**.
+Paziente chirurgico non ha più un blocco spiegazioni da completare: è **462/462**.
 
 ### Continuità tra chat
 
@@ -181,11 +179,9 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 
 ## 9. Roadmap immediata
 
-1. **Diagnostica Paziente chirurgico: completa 76/76 con spiegazioni avanzate opzionali fail-safe.**
-2. **Educazione terapeutica: completa 54/54 con spiegazioni avanzate opzionali fail-safe.**
-3. **Psicologia: completa 66/66 con spiegazioni avanzate opzionali fail-safe.**
-4. **Terapia: completato `te1–te220`; proseguire da `te221`** con la stessa architettura non bloccante.
-5. Dopo Paziente chirurgico, completare Scienze della Salute allo stesso standard superiore.
-6. QA separato dei quesiti di Paziente chirurgico già segnalati, solo con autorizzazione esplicita a modificare la banca.
+1. **Paziente chirurgico: spiegazioni avanzate complete 462/462 con architettura fail-safe.**
+2. Mantenere Paziente chirurgico stabile e non cambiare la banca durante eventuali interventi UI/infrastrutturali.
+3. Portare **Scienze della Salute** allo stesso standard superiore, in blocchi controllati.
+4. QA separato dei quesiti di Paziente chirurgico già segnalati, solo con autorizzazione esplicita a modificare la banca.
 
 Farmacologia resta una futura banca in preparazione.
