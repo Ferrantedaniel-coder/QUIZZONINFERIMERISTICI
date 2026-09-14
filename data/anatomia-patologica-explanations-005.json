@@ -1,0 +1,362 @@
+{
+  "i11": {
+    "summary": "Dopo l'attivazione antigenica, i linfociti B possono differenziarsi in plasmacellule secernenti anticorpi e in cellule B memoria, responsabili di una risposta secondaria più rapida ed efficace.",
+    "reasons": [
+      "Errata: i neutrofili appartengono alla linea mieloide e non derivano dalla differenziazione di un linfocita B attivato.",
+      "Errata: eritrociti e piastrine derivano da precursori emopoietici distinti e non rappresentano l'esito dell'attivazione dei linfociti B.",
+      "Corretta: i linfociti B attivati possono diventare plasmacellule, che producono immunoglobuline, e cellule B memoria, che persistono a lungo e facilitano risposte successive.",
+      "Errata: i macrofagi appartengono alla linea monocito-macrofagica e non sono il prodotto della differenziazione dei linfociti B."
+    ]
+  },
+  "i12": {
+    "summary": "I linfociti T helper esprimono tipicamente il corecettore CD4, che coopera con il TCR nel riconoscimento dei peptidi presentati da MHC di classe II.",
+    "reasons": [
+      "Errata: CD8 caratterizza soprattutto i linfociti T citotossici e si associa al riconoscimento di MHC di classe I.",
+      "Errata: IgM di membrana è una componente del BCR dei linfociti B vergini, non il marcatore tipico dei T helper.",
+      "Errata: CD16 è un recettore Fc espresso in modo importante da cellule NK e da altre cellule effettrici, non il marcatore distintivo dei T helper.",
+      "Corretta: CD4 è il corecettore caratteristico dei linfociti T helper e interagisce con regioni non polimorfiche delle molecole MHC di classe II."
+    ]
+  },
+  "i13": {
+    "summary": "I linfociti T CD8 citotossici riconoscono peptidi presentati da MHC I e possono eliminare cellule infettate, soprattutto da virus, o cellule trasformate.",
+    "reasons": [
+      "Corretta: i CD8 citotossici riconoscono cellule che espongono peptidi anomali su MHC I e ne possono indurre apoptosi mediante meccanismi citotossici.",
+      "Errata: la secrezione massiva di immunoglobuline è funzione delle plasmacellule derivate dai linfociti B.",
+      "Errata: la produzione di eritrociti avviene nell'eritropoiesi midollare e non è una funzione dei linfociti T CD8.",
+      "Errata: la secrezione di muco è una funzione delle cellule epiteliali mucipare e può essere modulata da citochine, ma non è l'attività principale dei CD8."
+    ]
+  },
+  "i14": {
+    "summary": "La selezione clonale indica l'attivazione e l'espansione dei soli linfociti il cui recettore riconosce in modo specifico l'antigene incontrato.",
+    "reasons": [
+      "Errata: l'eliminazione casuale dei linfociti non descrive la selezione clonale, che è guidata dalla specificità recettoriale.",
+      "Corretta: l'antigene seleziona il clone di linfociti che possiede il recettore adatto, inducendone proliferazione e differenziazione.",
+      "Errata: la produzione contemporanea di tutte le classi anticorpali non definisce la selezione clonale e il cambio di classe è un processo successivo regolato.",
+      "Errata: i macrofagi non vengono eliminati come parte del processo di selezione clonale dei linfociti."
+    ]
+  },
+  "i15": {
+    "summary": "Il BCR può riconoscere antigeni nella loro forma nativa, mentre il TCR riconosce soprattutto peptidi processati esposti sulla superficie cellulare in associazione a molecole MHC.",
+    "reasons": [
+      "Corretta: i linfociti B possono legare direttamente antigeni conformazionali o lineari, mentre i linfociti T convenzionali riconoscono peptidi presentati da MHC.",
+      "Errata: i linfociti T non riconoscono normalmente qualsiasi antigene libero; il loro TCR necessita della presentazione nel contesto MHC.",
+      "Errata: i linfociti B non dipendono dalla presentazione su MHC per il primo riconoscimento dell'antigene tramite BCR.",
+      "Errata: la modalità di riconoscimento dei B e dei T è profondamente diversa e costituisce un principio fondamentale dell'immunità adattativa."
+    ]
+  },
+  "i16": {
+    "summary": "Nell'infiammazione acuta i neutrofili sono tra i leucociti più precocemente reclutati dal sangue verso il focolaio lesivo.",
+    "reasons": [
+      "Errata: i linfociti B memoria appartengono all'immunità adattativa e non sono la popolazione tipicamente dominante nelle prime ore dell'infiammazione acuta.",
+      "Corretta: i neutrofili rispondono rapidamente a chemochine e altri segnali, extravasano e svolgono fagocitosi e attività microbicida nel sito infiammatorio.",
+      "Errata: le plasmacellule sono specializzate nella secrezione di anticorpi e non rappresentano i primi leucociti reclutati nell'infiammazione acuta.",
+      "Errata: i fibroblasti partecipano soprattutto alla riparazione tissutale e alla deposizione di matrice, non al reclutamento leucocitario iniziale."
+    ]
+  },
+  "i17": {
+    "summary": "Gli eosinofili sono particolarmente importanti nelle difese contro parassiti multicellulari, soprattutto elminti, e nelle risposte allergiche.",
+    "reasons": [
+      "Errata: gli eritrociti normali non sono il bersaglio fisiologico principale dell'attività eosinofila.",
+      "Errata: le cellule epiteliali normali non rappresentano il bersaglio tipico dell'azione citotossica degli eosinofili.",
+      "Errata: la risposta antivirale dipende soprattutto da interferoni, cellule NK e linfociti T citotossici, non esclusivamente dagli eosinofili.",
+      "Corretta: gli eosinofili possono degranulare contro parassiti troppo grandi per essere fagocitati, liberando proteine cationiche e altri mediatori tossici."
+    ]
+  },
+  "i18": {
+    "summary": "Mastociti e basofili contengono granuli ricchi di istamina, mediatore importante della vasodilatazione, dell'aumento di permeabilità e delle reazioni di ipersensibilità immediata.",
+    "reasons": [
+      "Errata: l'emoglobina è la proteina di trasporto dell'ossigeno degli eritrociti e non il principale mediatore liberato da mastociti e basofili.",
+      "Errata: il collagene è una proteina strutturale della matrice extracellulare e non un mediatore preformato tipico dei granuli mastocitari.",
+      "Corretta: l'istamina viene liberata rapidamente durante la degranulazione di mastociti e basofili e contribuisce alle modificazioni vascolari dell'infiammazione e dell'allergia.",
+      "Errata: l'insulina è un ormone pancreatico e non il mediatore caratteristico della degranulazione di mastociti e basofili."
+    ]
+  },
+  "i19": {
+    "summary": "Le cellule NK appartengono all'immunità innata e non utilizzano recettori antigenici clonotipici BCR o TCR; integrano invece segnali provenienti da recettori attivatori e inibitori.",
+    "reasons": [
+      "Errata: le NK non sono cellule specializzate nella produzione di IgG; gli anticorpi vengono secreti dalle plasmacellule.",
+      "Corretta: le NK non esprimono BCR o TCR riarrangiati come linfociti B e T e possono riconoscere cellule alterate senza precedente sensibilizzazione antigenica specifica.",
+      "Errata: le NK sono linfociti e non granulociti.",
+      "Errata: le NK sono cellule citotossiche capaci di uccidere cellule infettate o trasformate, anche mediante perforine e granzimi."
+    ]
+  },
+  "i20": {
+    "summary": "La riduzione dell'espressione di MHC I può rendere una cellula più suscettibile all'attacco NK perché diminuiscono i segnali inibitori di riconoscimento del self.",
+    "reasons": [
+      "Errata: un'adeguata espressione di MHC I tende a fornire segnali inibitori alle NK e quindi generalmente protegge la cellula sana dall'uccisione.",
+      "Errata: gli eritrociti normali non rappresentano il bersaglio tipico della citotossicità NK in condizioni fisiologiche.",
+      "Errata: le plasmacellule non sono selettivamente il bersaglio caratteristico delle NK.",
+      "Corretta: molte cellule tumorali o infettate riducono MHC I; la perdita del segnale inibitorio, insieme a segnali attivatori, può favorire la risposta NK secondo il principio del missing-self."
+    ]
+  },
+  "i21": {
+    "summary": "Le cellule NK uccidono molti bersagli liberando granuli citotossici contenenti perforina e granzimi, che favoriscono l'attivazione dell'apoptosi.",
+    "reasons": [
+      "Corretta: la perforina facilita l'accesso dei granzimi alla cellula bersaglio e i granzimi attivano vie intracellulari che portano alla morte programmata.",
+      "Errata: insulina e glucagone sono ormoni metabolici pancreatici e non molecole citotossiche delle NK.",
+      "Errata: emoglobina e albumina svolgono funzioni di trasporto e omeostasi e non costituiscono l'armamentario citotossico NK.",
+      "Errata: fibrina e fibrinogeno appartengono al sistema coagulativo e non sono i mediatori principali dell'uccisione da parte delle NK."
+    ]
+  },
+  "i22": {
+    "summary": "Gli organi linfoidi primari sono midollo osseo e timo: nel midollo avvengono emopoiesi e maturazione dei B, mentre nel timo maturano e vengono selezionati i linfociti T.",
+    "reasons": [
+      "Errata: milza e linfonodi sono organi linfoidi secondari, sedi d'incontro tra antigeni e linfociti maturi.",
+      "Corretta: midollo osseo e timo costituiscono le principali sedi di sviluppo e maturazione dei linfociti prima dell'incontro con l'antigene.",
+      "Errata: MALT e tonsille sono tessuti/strutture linfoidi secondarie associate alle mucose.",
+      "Errata: fegato e pancreas non sono classificati come i principali organi linfoidi primari dell'adulto."
+    ]
+  },
+  "i23": {
+    "summary": "I precursori dei linfociti T originano dal midollo osseo ma completano la maturazione e la selezione prevalentemente nel timo.",
+    "reasons": [
+      "Errata: la milza è un organo linfoide secondario importante per la risposta agli antigeni presenti nel sangue, non la sede principale di maturazione dei T.",
+      "Errata: i linfonodi sono sedi di attivazione dei linfociti maturi, non la principale sede della loro maturazione iniziale.",
+      "Corretta: nel timo i timociti subiscono processi di selezione che favoriscono il riconoscimento appropriato dell'MHC e la tolleranza verso il self.",
+      "Errata: il MALT è tessuto linfoide secondario associato alle mucose e non sostituisce il ruolo del timo nella maturazione dei T."
+    ]
+  },
+  "i24": {
+    "summary": "Gli organi linfoidi secondari organizzano l'incontro tra antigeni, cellule presentanti l'antigene e linfociti maturi vergini, permettendo attivazione ed espansione clonale.",
+    "reasons": [
+      "Errata: la produzione degli eritrociti avviene soprattutto nel midollo osseo e non è la funzione caratteristica degli organi linfoidi secondari.",
+      "Errata: questi organi non hanno lo scopo di distruggere tutti i linfociti maturi, ma di facilitarne l'attivazione quando riconoscono l'antigene appropriato.",
+      "Errata: la bile viene prodotta dal fegato e non dagli organi linfoidi secondari.",
+      "Corretta: linfonodi, milza e tessuti linfoidi mucosali concentrano antigeni e linfociti maturi, favorendo l'avvio della risposta adattativa."
+    ]
+  },
+  "i25": {
+    "summary": "Nei linfonodi i linfociti B sono concentrati soprattutto nei follicoli della corteccia, mentre la paracorteccia è prevalentemente una zona T-dipendente.",
+    "reasons": [
+      "Corretta: i follicoli corticali costituiscono le principali aree B del linfonodo e, dopo attivazione, possono formare centri germinativi.",
+      "Errata: i seni midollari partecipano al drenaggio linfatico e possono contenere plasmacellule e macrofagi, ma non sono la sede prevalente dei linfociti B vergini.",
+      "Errata: la capsula è tessuto connettivo di rivestimento e non costituisce il compartimento linfocitario B principale.",
+      "Errata: la zona paracorticale è prevalentemente T-dipendente, quindi non rappresenta la principale sede dei follicoli B."
+    ]
+  },
+  "i26": {
+    "summary": "La polpa rossa della milza filtra il sangue e partecipa alla rimozione di eritrociti senescenti o danneggiati mediante la sua rete di sinusoidi e macrofagi.",
+    "reasons": [
+      "Errata: la maturazione dei linfociti T avviene principalmente nel timo, non nella polpa rossa splenica.",
+      "Errata: la produzione di IgE dipende da linfociti B/plasmacellule dopo appropriati segnali di attivazione e cambio di classe, non è la funzione della polpa rossa.",
+      "Errata: l'attivazione esclusiva dei neutrofili non descrive il ruolo anatomofunzionale della polpa rossa.",
+      "Corretta: la polpa rossa è fondamentale per la filtrazione ematica e la rimozione di eritrociti invecchiati, alterati o poco deformabili."
+    ]
+  },
+  "i27": {
+    "summary": "La struttura di base di una immunoglobulina è formata da due catene pesanti identiche e due catene leggere identiche, unite da legami disolfuro.",
+    "reasons": [
+      "Corretta: l'anticorpo monomerico presenta quattro catene principali, due pesanti e due leggere, organizzate in una struttura a Y.",
+      "Errata: una catena pesante e tre leggere non corrispondono alla struttura canonica delle immunoglobuline.",
+      "Errata: quattro catene pesanti senza catene leggere non formano la struttura anticorpale tipica.",
+      "Errata: due sole catene leggere sono insufficienti a costituire una immunoglobulina completa."
+    ]
+  },
+  "i28": {
+    "summary": "La specificità antigenica dipende principalmente dalle regioni variabili delle catene pesanti e leggere, che insieme formano il sito di legame per l'epitopo.",
+    "reasons": [
+      "Errata: la regione costante della catena pesante determina soprattutto classe e funzioni effettrici dell'anticorpo, non la specificità fine per l'antigene.",
+      "Errata: la regione Fc media interazioni con recettori cellulari e complemento ma non costituisce il principale sito di legame dell'antigene.",
+      "Corretta: le porzioni variabili di catena pesante e leggera contribuiscono insieme alla superficie di riconoscimento dell'epitopo.",
+      "Errata: i ponti disolfuro stabilizzano la struttura dell'immunoglobulina ma non determinano da soli quale antigene venga riconosciuto."
+    ]
+  },
+  "i29": {
+    "summary": "Nella risposta umorale primaria le IgM sono in genere la prima classe anticorpale secreta, prima del successivo eventuale class switching.",
+    "reasons": [
+      "Errata: le IgE richiedono tipicamente segnali di cambio di classe e sono specializzate nelle risposte antiparassitarie e allergiche.",
+      "Corretta: i linfociti B vergini iniziano generalmente la risposta secernendo IgM, che compaiono precocemente nella risposta primaria.",
+      "Errata: le IgA sono importanti soprattutto nelle secrezioni mucosali e derivano da cambio di classe, quindi non rappresentano la prima risposta anticorpale generale.",
+      "Errata: le IgD sono espresse soprattutto sulla superficie dei linfociti B vergini e non sono la principale immunoglobulina secreta per prima nella risposta primaria."
+    ]
+  },
+  "i30": {
+    "summary": "Le IgG materne attraversano la placenta mediante trasporto recettore-mediato e costituiscono una componente fondamentale dell'immunità passiva del neonato.",
+    "reasons": [
+      "Corretta: le IgG sono la principale classe di immunoglobuline trasferita attraverso la placenta e proteggono il neonato nei primi mesi di vita.",
+      "Errata: le IgM, per le loro dimensioni pentameriche, non attraversano normalmente la placenta in modo significativo.",
+      "Errata: le IgD non rappresentano la classe deputata al trasferimento transplacentare.",
+      "Errata: le IgE non sono la principale immunoglobulina trasportata dalla madre al feto attraverso la placenta."
+    ]
+  },
+  "i31": {
+    "summary": "Le IgA, soprattutto in forma secretoria, sono centrali nella difesa delle superfici mucose e sono presenti in secrezioni come saliva, lacrime, muco e latte.",
+    "reasons": [
+      "Errata: le IgD sono espresse soprattutto sui linfociti B vergini e hanno un ruolo molto più limitato nelle secrezioni mucosali.",
+      "Errata: le IgM possono contribuire alla risposta umorale, ma non sono la principale immunoglobulina specializzata nella protezione delle mucose.",
+      "Errata: le IgG sono molto abbondanti nel siero e importanti nell'opsonizzazione e nell'immunità sistemica, ma non sono la classe secretoria mucosale predominante.",
+      "Corretta: le IgA secretorie neutralizzano patogeni e tossine sulle superfici mucosali limitandone adesione e penetrazione."
+    ]
+  },
+  "i32": {
+    "summary": "Le IgE mediano le reazioni di ipersensibilità immediata legandosi ad alta affinità a mastociti e basofili, che degranulano dopo il cross-linking da parte dell'allergene.",
+    "reasons": [
+      "Errata: le IgA sono soprattutto immunoglobuline mucosali e non la classe principale delle allergie immediate.",
+      "Corretta: le IgE sensibilizzano mastociti e basofili; una successiva esposizione all'allergene può indurre degranulazione e rilascio di istamina e altri mediatori.",
+      "Errata: le IgD sono soprattutto recettori di membrana dei linfociti B vergini e non sono i principali mediatori dell'ipersensibilità immediata.",
+      "Errata: le IgM possono attivare efficacemente il complemento ma non sono la classe caratteristica dell'allergia di tipo I."
+    ]
+  },
+  "i33": {
+    "summary": "Un epitopo è la porzione molecolare specifica di un antigene direttamente riconosciuta da un anticorpo, BCR o, dopo processamento, dal TCR nel contesto appropriato.",
+    "reasons": [
+      "Corretta: l'epitopo è il determinante antigenico, cioè la regione precisa dell'antigene verso cui è diretta la specificità del recettore immunitario.",
+      "Errata: un organo linfoide è una struttura anatomica e non una porzione riconoscibile di un antigene.",
+      "Errata: un granulocita è una cellula immunitaria e non una regione molecolare dell'antigene.",
+      "Errata: una proteina del complemento è un mediatore dell'immunità innata e non coincide con la definizione di epitopo."
+    ]
+  },
+  "i34": {
+    "summary": "MHC di classe I presenta prevalentemente peptidi endogeni ai linfociti T CD8 citotossici.",
+    "reasons": [
+      "Corretta: il corecettore CD8 interagisce con MHC I e consente ai T citotossici di controllare cellule che presentano peptidi intracellulari anomali o virali.",
+      "Errata: i linfociti B riconoscono direttamente antigeni tramite BCR e non costituiscono il principale bersaglio della presentazione MHC I.",
+      "Errata: gli eosinofili non utilizzano il TCR per riconoscere complessi peptide-MHC I.",
+      "Errata: gli eritrociti maturi non sono linfociti T e inoltre non esprimono il normale apparato MHC I delle cellule nucleate."
+    ]
+  },
+  "i35": {
+    "summary": "MHC di classe II è espresso soprattutto dalle cellule presentanti l'antigene professionali e presenta peptidi ai linfociti T CD4 helper.",
+    "reasons": [
+      "Errata: i linfociti T CD8 riconoscono principalmente peptidi su MHC di classe I.",
+      "Errata: i neutrofili non rappresentano il principale sottotipo cellulare che riconosce peptide-MHC II tramite TCR.",
+      "Corretta: il corecettore CD4 interagisce con MHC II e consente ai T helper di rispondere a peptidi presentati dalle APC.",
+      "Errata: gli eritrociti non sono cellule T e non svolgono questo tipo di riconoscimento antigenico."
+    ]
+  },
+  "i36": {
+    "summary": "La via MHC I presenta soprattutto peptidi derivati da proteine sintetizzate nel citosol, inclusi prodotti virali o proteine cellulari alterate.",
+    "reasons": [
+      "Corretta: proteine intracellulari vengono degradate, i peptidi sono trasferiti nel reticolo endoplasmatico e caricati su MHC I per il controllo da parte dei CD8.",
+      "Errata: polisaccaridi extracellulari non seguono il classico percorso peptide-MHC I e spesso non sono riconosciuti dal TCR convenzionale.",
+      "Errata: lipidi alimentari non costituiscono il tipico antigene proteico citosolico processato per MHC I.",
+      "Errata: gli anticorpi circolanti sono molecole effettrici umorali e non rappresentano il principale materiale antigenico caricato su MHC I."
+    ]
+  },
+  "i37": {
+    "summary": "Nella via MHC II le proteine extracellulari vengono internalizzate dalle APC e degradate in compartimenti endosomiali/ lisosomiali, dove i peptidi vengono caricati su MHC II.",
+    "reasons": [
+      "Errata: la degradazione esclusivamente nucleare non descrive la via di processamento per MHC II.",
+      "Corretta: antigeni esogeni endocitati vengono frammentati in vescicole acide e successivamente associati a MHC II per la presentazione ai CD4.",
+      "Errata: gli anticorpi vengono sintetizzati nel reticolo endoplasmatico rugoso e non sono tradotti nel nucleo.",
+      "Errata: l'eritropoiesi non è parte del processo di presentazione antigenica MHC II."
+    ]
+  },
+  "i38": {
+    "summary": "TAP1/TAP2 trasportano peptidi generati nel citosol nel lume del reticolo endoplasmatico, dove possono essere caricati su MHC I.",
+    "reasons": [
+      "Errata: TAP non produce immunoglobuline; gli anticorpi sono prodotti dalle plasmacellule.",
+      "Errata: TAP non è un attivatore diretto dei neutrofili.",
+      "Corretta: il trasportatore associato alla processazione antigenica trasferisce peptidi citosolici nel reticolo endoplasmatico, passaggio chiave della via MHC I.",
+      "Errata: la membrana del fagosoma deriva dalla membrana cellulare durante la fagocitosi e non viene formata dalle proteine TAP."
+    ]
+  },
+  "i39": {
+    "summary": "Per la piena attivazione di un linfocita T vergine servono il riconoscimento specifico peptide-MHC tramite TCR e un appropriato segnale costimolatorio fornito dall'APC.",
+    "reasons": [
+      "Errata: gli anticorpi circolanti non sostituiscono i segnali di attivazione del TCR e di costimolazione del linfocita T vergine.",
+      "Errata: IL-2 sostiene la proliferazione dopo l'attivazione, ma da sola non sostituisce il riconoscimento antigenico e la costimolazione.",
+      "Errata: il TCR non riconosce normalmente il patogeno libero; riconosce peptidi presentati su MHC.",
+      "Corretta: il primo segnale deriva dal complesso TCR-peptide-MHC e il secondo da molecole costimolatorie, essenziali soprattutto per i T vergini."
+    ]
+  },
+  "i40": {
+    "summary": "L'interleuchina 2 è un importante fattore di crescita dei linfociti T attivati e può agire in modo autocrino favorendo espansione clonale e sopravvivenza.",
+    "reasons": [
+      "Corretta: IL-2 prodotta dopo l'attivazione dei T si lega ai recettori per IL-2 espressi dagli stessi linfociti e ne sostiene la proliferazione.",
+      "Errata: l'istamina è un mediatore vasoattivo principalmente associato a mastociti e basofili e non il fattore autocrino classico dell'espansione T.",
+      "Errata: IgG è un anticorpo e non una citochina proliferativa per i linfociti T.",
+      "Errata: il fibrinogeno è una proteina plasmatica della coagulazione e non regola l'espansione clonale T come IL-2."
+    ]
+  },
+  "i41": {
+    "summary": "I linfociti TH1 sostengono soprattutto l'immunità contro microrganismi intracellulari mediante citochine come IFN-γ, che potenziano l'attività microbicida dei macrofagi.",
+    "reasons": [
+      "Corretta: la risposta TH1 è particolarmente importante contro patogeni intracellulari, perché IFN-γ attiva i macrofagi e favorisce una risposta cellulare efficace.",
+      "Errata: gli elminti sono associati soprattutto a risposte TH2, IgE ed eosinofili.",
+      "Errata: le reazioni allergiche immediate sono più strettamente correlate a risposte TH2 e IgE che a TH1.",
+      "Errata: gli eritrociti normali non costituiscono il bersaglio fisiologico della risposta TH1."
+    ]
+  },
+  "i42": {
+    "summary": "I TH2 promuovono risposte contro elminti e partecipano all'allergia attraverso citochine come IL-4, IL-5 e IL-13, favorendo IgE, eosinofili e risposte mucosali.",
+    "reasons": [
+      "Errata: l'eliminazione diretta degli eritrociti non è una funzione caratteristica della risposta TH2.",
+      "Errata: TH2 non agisce esclusivamente attivando CD8; il suo ruolo principale è coordinare risposte umorali ed eosinofile.",
+      "Corretta: IL-4 favorisce il cambio verso IgE e IL-5 sostiene gli eosinofili, elementi tipici della difesa antiparassitaria e delle reazioni allergiche.",
+      "Errata: TH2 può aiutare l'attivazione e la differenziazione dei linfociti B, non ne inibisce completamente la risposta."
+    ]
+  },
+  "i43": {
+    "summary": "I linfociti TH17 producono citochine, tra cui IL-17, che favoriscono il reclutamento e l'attivazione dei neutrofili nelle difese contro batteri extracellulari e funghi.",
+    "reasons": [
+      "Errata: gli anticorpi sono prodotti dalle plasmacellule, non direttamente dai TH17.",
+      "Errata: la distruzione degli eritrociti non è la funzione fisiologica caratteristica dei TH17.",
+      "Errata: l'emoglobina viene sintetizzata nella linea eritroide e non dai linfociti TH17.",
+      "Corretta: IL-17 induce segnali infiammatori e chemiochinici che reclutano neutrofili, utili contro batteri e funghi extracellulari."
+    ]
+  },
+  "i44": {
+    "summary": "I linfociti T CD8 citotossici possono indurre apoptosi della cellula bersaglio mediante il rilascio polarizzato di perforina e granzimi.",
+    "reasons": [
+      "Errata: le IgA secretorie proteggono soprattutto le superfici mucosali e non sono il meccanismo citotossico principale dei CD8.",
+      "Errata: la coagulazione non rappresenta il meccanismo con cui i T citotossici eliminano selettivamente cellule infettate.",
+      "Corretta: la perforina favorisce l'accesso dei granzimi, che attivano vie pro-apoptotiche nella cellula riconosciuta dal T CD8.",
+      "Errata: il fibrinogeno appartiene al sistema emostatico e non è il mediatore dell'uccisione cellulare da parte dei T citotossici."
+    ]
+  },
+  "i45": {
+    "summary": "La risposta dei linfociti B follicolari può maturare attraverso cambio di classe e maturazione dell'affinità, soprattutto nelle reazioni del centro germinativo.",
+    "reasons": [
+      "Errata: con la maturazione della risposta non si passa esclusivamente verso IgM a minore affinità; in genere vengono selezionati anticorpi con affinità progressivamente maggiore.",
+      "Corretta: ricombinazione di cambio di classe e ipermutazione somatica con selezione dei cloni ad alta affinità rendono la risposta umorale più efficace e specializzata.",
+      "Errata: la risposta del centro germinativo genera anche cellule B memoria, quindi non ne comporta la scomparsa totale.",
+      "Errata: i linfociti B non si trasformano in neutrofili; appartengono a linee emopoietiche e programmi differenziativi distinti."
+    ]
+  },
+  "i46": {
+    "summary": "La via classica del complemento è tipicamente attivata da anticorpi, soprattutto IgM e alcune sottoclassi IgG, legati agli antigeni sulla superficie del bersaglio.",
+    "reasons": [
+      "Errata: la via endocitica riguarda l'internalizzazione e il processamento di antigeni, non è una delle tre vie di attivazione del complemento.",
+      "Corretta: il complesso C1 può riconoscere regioni Fc di anticorpi legati all'antigene e avviare la cascata classica del complemento.",
+      "Errata: 'via citosolica' non è una delle vie classica, lectinica o alternativa del sistema del complemento.",
+      "Errata: la fagocitosi può essere facilitata dal complemento, ma 'via fagocitica' non è il nome di una via di attivazione complementare."
+    ]
+  },
+  "i47": {
+    "summary": "L'opsonizzazione da complemento, soprattutto tramite C3b e frammenti correlati, riveste la superficie microbica e ne facilita il riconoscimento da parte dei fagociti.",
+    "reasons": [
+      "Errata: il complemento non ha come funzione quella di produrre eritrociti.",
+      "Errata: il complemento generalmente potenzia la fagocitosi e l'infiammazione; non inibisce indiscriminatamente tutti i macrofagi.",
+      "Errata: la degradazione delle IgG non è l'effetto principale mediante cui il complemento facilita la fagocitosi.",
+      "Corretta: il deposito di opsonine complementari sul patogeno permette ai recettori del complemento presenti sui fagociti di legarlo e ingerirlo più efficacemente."
+    ]
+  },
+  "i48": {
+    "summary": "Una citochina svolge azione autocrina quando agisce sulla stessa cellula che l'ha secreta; l'IL-2 dei linfociti T attivati è un esempio classico.",
+    "reasons": [
+      "Errata: l'azione endocrina implica il raggiungimento di bersagli distanti tramite la circolazione.",
+      "Errata: l'azione paracrina interessa cellule vicine alla cellula produttrice ma non necessariamente la stessa cellula.",
+      "Corretta: nell'azione autocrina la cellula che produce la citochina esprime anche il relativo recettore e risponde al proprio segnale.",
+      "Errata: 'esocrina' descrive secrezioni verso superfici o dotti e non è la classificazione usata per la segnalazione delle citochine."
+    ]
+  },
+  "i49": {
+    "summary": "L'ipersensibilità di tipo I è una risposta immediata mediata da IgE, mastociti e basofili, che dopo riesposizione all'allergene liberano rapidamente mediatori come istamina.",
+    "reasons": [
+      "Errata: anticorpi contro antigeni eritrocitari sono più coerenti con reazioni citotossiche di tipo II, non con il tipo I.",
+      "Errata: la deposizione di immunocomplessi è il meccanismo caratteristico dell'ipersensibilità di tipo III.",
+      "Errata: l'ipersensibilità di tipo I non è sostenuta dai soli linfociti CD8.",
+      "Corretta: l'allergene cross-linka IgE già legate ai recettori Fcε dei mastociti e basofili, inducendo degranulazione e risposta immediata."
+    ]
+  },
+  "i50": {
+    "summary": "Nella classificazione di Gell e Coombs: tipo II è anticorpo-mediata contro antigeni cellulari o di matrice, tipo III è da immunocomplessi, tipo IV è prevalentemente T-cellulare e ritardata.",
+    "reasons": [
+      "Corretta: questa associazione riassume correttamente i meccanismi fondamentali delle ipersensibilità II, III e IV; il tipo I è invece mediato soprattutto da IgE e mastociti.",
+      "Errata: il tipo II non è mediato soltanto da IgE, il tipo III richiede immunocomplessi antigene-anticorpo e il tipo IV non è una risposta IgM.",
+      "Errata: fagocitosi fisiologica, risposta NK e IgA secretorie non definiscono rispettivamente i tipi II, III e IV.",
+      "Errata: soltanto il tipo I è classicamente IgE-mediato; gli altri tipi utilizzano meccanismi immunologici differenti."
+    ]
+  }
+}
