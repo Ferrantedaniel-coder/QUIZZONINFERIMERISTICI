@@ -1,0 +1,92 @@
+{
+  "di1": {
+    "summary": "In TAC il mezzo di contrasto può essere introdotto per via orale per opacizzare il tubo digerente e per via endovenosa per aumentare il contrasto di vasi e tessuti.",
+    "options": {
+      "Solo per via orale": "Errata: la via orale è possibile, ma non è l'unica; in TAC si impiega anche la somministrazione endovenosa, soprattutto per lo studio vascolare e parenchimale.",
+      "Per via orale e per via endovenosa": "Corretta: il materiale d'esame contempla entrambe le vie, scelte in funzione del distretto anatomico e dell'informazione diagnostica ricercata.",
+      "Solo per via endovenosa": "Errata: la via endovenosa è molto utilizzata, ma esclude impropriamente l'uso orale del contrasto nello studio del tratto gastrointestinale.",
+      "Solo per via rettale": "Errata: la somministrazione rettale può appartenere a specifici studi contrastografici del colon, ma non rappresenta la modalità generale indicata per la TAC in questa domanda."
+    }
+  },
+  "di2": {
+    "summary": "Gonadi e midollo osseo sono tra i tessuti più radiosensibili perché contengono cellule con elevata attività proliferativa.",
+    "options": {
+      "Fegato": "Errata: il fegato può subire danno da radiazioni, ma nel confronto proposto non è il tessuto indicato come maggiormente radiosensibile.",
+      "Testicolo / midollo osseo": "Corretta: il materiale sottolinea l'elevata radiosensibilità delle gonadi e degli organi emopoietici, nei quali le radiazioni possono compromettere cellule germinali e produzione midollare.",
+      "Polmoni": "Errata: il polmone può sviluppare danno da radiazioni, come polmonite interstiziale o fibrosi, ma non è l'opzione più radiosensibile fra quelle proposte.",
+      "Rene": "Errata: anche il rene può essere danneggiato dalle radiazioni, ma la sua sensibilità è inferiore a quella di gonadi e midollo nel contesto del quesito."
+    }
+  },
+  "di3": {
+    "summary": "La RM consente di ottenere immagini secondo piani diversi senza dover riposizionare il paziente ed è particolarmente efficace nel contrasto dei tessuti molli.",
+    "options": {
+      "Minor costo": "Errata: la RM non è generalmente scelta perché costa meno; apparecchiatura, tempi e gestione rendono spesso l'esame più oneroso rispetto a metodiche di base.",
+      "Tempo di esecuzione più rapido": "Errata: la RM non è caratterizzata principalmente da rapidità e, rispetto a molte acquisizioni TC, può richiedere tempi più lunghi.",
+      "Pluriplanarità di acquisizione delle immagini": "Corretta: è uno dei principali vantaggi della RM, che permette acquisizioni e ricostruzioni nei diversi piani anatomici con ottima rappresentazione dei tessuti molli.",
+      "Usa radiazioni ionizzanti": "Errata: la RM utilizza campi magnetici e radiofrequenze, non raggi X o altre radiazioni ionizzanti."
+    }
+  },
+  "di4": {
+    "summary": "La biopsia epatica percutanea permette il prelievo di tessuto epatico per una valutazione istologica, utile quando si deve caratterizzare una sospetta neoplasia.",
+    "options": {
+      "Calcoli biliari": "Errata: la litiasi biliare viene studiata soprattutto con metodiche di imaging delle vie biliari, non mediante prelievo bioptico del parenchima epatico.",
+      "Diagnosi di HCC (neoplasia epatica)": "Corretta: il prelievo percutaneo di tessuto può fornire la conferma istologica di una lesione epatica sospetta, come riportato nel materiale d'esame per l'HCC.",
+      "Pancreatite": "Errata: la pancreatite interessa il pancreas e viene valutata con quadro clinico, laboratorio e imaging; una biopsia del fegato non è l'esame indicato dalla domanda.",
+      "Varici esofagee": "Errata: le varici sono dilatazioni venose dell'esofago e si valutano con metodiche dedicate, in particolare endoscopiche, non con biopsia epatica percutanea."
+    }
+  },
+  "di5": {
+    "summary": "Nel materiale d'esame la colangio-RM è associata al gadolinio endovenoso come mezzo di contrasto della risonanza magnetica.",
+    "options": {
+      "Si somministra per via orale": "Errata: la via orale è tipica di alcuni studi del tubo digerente, mentre la risposta prevista per il contrasto RM in questa domanda è la via endovenosa.",
+      "Gadolino per via endovenosa": "Corretta: il gadolinio è il mezzo di contrasto paramagnetico associato alla RM e viene somministrato per via endovenosa quando previsto dal protocollo.",
+      "Mezzi iodati per via rettale": "Errata: i mezzi iodati appartengono soprattutto alla diagnostica radiologica/TC e la via rettale non è quella indicata per la colangio-RM.",
+      "Bario per via orale": "Errata: il solfato di bario è un contrasto radiopaco insolubile utilizzato nello studio del tubo digerente, non come contrasto della RM delle vie biliari."
+    }
+  },
+  "di6": {
+    "summary": "Il gadolinio modifica il segnale RM e aumenta la differenziazione di strutture vascolarizzate e tessuti che captano il contrasto.",
+    "options": {
+      "Colorare organi": "Errata: il gadolinio non 'colora' fisicamente gli organi; modifica le proprietà di rilassamento e quindi il segnale visualizzato nelle immagini RM.",
+      "Evidenziare tessuti e vasi sanguigni": "Corretta: l'aumento di contrasto rende più riconoscibili strutture vascolari e aree tissutali con diversa perfusione o captazione.",
+      "Valutare solo vie biliari": "Errata: l'impiego del gadolinio non è limitato alle vie biliari; viene utilizzato in numerosi distretti e protocolli RM.",
+      "Valutare solo muscolo scheletrico": "Errata: anche questa formulazione è troppo restrittiva; il gadolinio trova impiego in molti organi e apparati, non solo nel sistema muscolo-scheletrico."
+    }
+  },
+  "di7": {
+    "summary": "La duttogalattografia, o galattografia, è uno studio contrastografico dei dotti galattofori della mammella.",
+    "options": {
+      "Tiroide": "Errata: la tiroide viene studiata con ecografia, scintigrafia e altre metodiche dedicate; non possiede dotti galattofori.",
+      "Mammella": "Corretta: l'esame opacizza i dotti mammari, per esempio nello studio di una secrezione dal capezzolo proveniente da un dotto.",
+      "Pancreas": "Errata: i dotti pancreatici vengono studiati con metodiche pancreatico-biliari dedicate, non con duttogalattografia.",
+      "Rene": "Errata: il sistema urinario viene studiato con ecografia, TC, urografia e metodiche correlate, non con galattografia."
+    }
+  },
+  "di8": {
+    "summary": "L'assistenza infermieristica in diagnostica comprende il supporto alla persona durante esami e procedure diagnostico-terapeutiche, non una singola mansione isolata.",
+    "options": {
+      "Solo consegna referti": "Errata: la consegna del referto non esaurisce le responsabilità infermieristiche connesse alla preparazione, assistenza, sorveglianza e sicurezza del paziente.",
+      "Assistenza a esami e prestazioni diagnostico-terapeutiche (tutte le precedenti)": "Corretta: è l'opzione che esprime il ruolo assistenziale complessivo richiesto dal quesito, esteso alla preparazione e al supporto nelle procedure.",
+      "Solo preparazione sale": "Errata: la preparazione dell'ambiente può rientrare nell'organizzazione, ma il ruolo infermieristico non si limita a questa attività.",
+      "Solo gestione liste d'attesa": "Errata: la gestione organizzativa non sostituisce l'assistenza clinico-assistenziale durante le prestazioni diagnostiche."
+    }
+  },
+  "di9": {
+    "summary": "Gli indumenti schermanti impiegati in radioprotezione contengono materiale ad elevato potere attenuante nei confronti dei raggi X, tradizionalmente piombo o equivalenti.",
+    "options": {
+      "Alluminio": "Errata: l'alluminio può essere impiegato come materiale filtrante in radiologia, ma non è il materiale schermante indicato dal quesito per gli indumenti protettivi.",
+      "Piombo": "Corretta: l'elevata densità e il numero atomico del piombo consentono di attenuare efficacemente i raggi X, motivo del suo impiego tradizionale nei dispositivi di radioprotezione.",
+      "Rame": "Errata: il rame non è il materiale indicato nel materiale d'esame per grembiuli e indumenti schermanti.",
+      "Titanio": "Errata: il titanio è molto utilizzato in ambito protesico e implantologico, ma non è la risposta prevista per la schermatura radiologica degli indumenti."
+    }
+  },
+  "di10": {
+    "summary": "L'angiografia visualizza il sistema vascolare mediante opacizzazione dei vasi e comprende studi sia del comparto arterioso sia di quello venoso.",
+    "options": {
+      "Solo arterie": "Errata: lo studio delle arterie è una parte dell'angiografia, ma esistono anche studi del circolo venoso; il termine non è limitato alle sole arterie.",
+      "Solo vene": "Errata: analogamente, la venografia riguarda le vene ma non esaurisce l'intero ambito dello studio angiografico.",
+      "Arterie e vene": "Corretta: il sistema vascolare comprende entrambi i comparti e le tecniche angiografiche possono essere indirizzate all'uno o all'altro in base all'indicazione.",
+      "Solo cuore": "Errata: l'angiografia può riguardare i vasi di numerosi distretti; lo studio del cuore è solo uno degli ambiti possibili e non definisce da solo la metodica."
+    }
+  }
+}
