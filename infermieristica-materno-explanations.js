@@ -8,9 +8,10 @@
     "data/materno-explanations-004.json.gz.b64",
     "data/materno-explanations-005.json.gz.b64",
     "data/materno-explanations-006.json.gz.b64",
-    "data/materno-explanations-007.json.gz.b64"
+    "data/materno-explanations-007.json.gz.b64",
+    "data/materno-explanations-008.json.gz.b64"
   ];
-  const EXPECTED_ADVANCED = 280;
+  const EXPECTED_ADVANCED = 300;
   const TOTAL_QUESTIONS = 300;
   const BY_INDEX = new Map();
   const BY_ID = new Map();
