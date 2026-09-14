@@ -91,13 +91,15 @@ Le spiegazioni avanzate vengono caricate **solo dopo** che il quiz è già avvia
 
 #### Copertura attiva
 
-**Diagnostica è completa: `di1–di76` = 76/76 spiegazioni avanzate opzionali attive.**
+- **Diagnostica: `di1–di76` = 76/76**;
+- **Educazione terapeutica: `ed1–ed54` = 54/54**;
+- **Totale avanzato opzionale attivo: 130/462**.
 
-File attualmente caricati:
+File attualmente collegati:
 
-- `data/paziente-chirurgico-explanations-001.json` → `007.json`.
+- `data/paziente-chirurgico-explanations-001.json` → `013.json`.
 
-Il runtime supporta sia il formato storico con `entry.options[opzione]` sia il formato successivo con `entry.reasons[]`. Nel secondo caso la motivazione viene ricondotta all'indice dell'opzione originale in `q.options`, quindi segue correttamente la risposta anche dopo il rimescolamento A/B/C/D.
+Il runtime supporta sia il formato storico con `entry.options[opzione]` sia il formato con `entry.reasons[]`. Nel secondo caso la motivazione viene ricondotta all'indice dell'opzione originale in `q.options`, quindi segue correttamente la risposta anche dopo il rimescolamento A/B/C/D.
 
 Per una entry valida il feedback mostra:
 
@@ -107,7 +109,7 @@ Per una entry valida il feedback mostra:
 - quattro motivazioni separate;
 - etichetta `CORRETTA` / `ERRATA` per ogni alternativa.
 
-Per Educazione terapeutica, Psicologia e Terapia resta per ora il feedback base `why`.
+Per Psicologia e Terapia resta per ora il feedback base `why`.
 
 **Regola fondamentale: nessun problema delle spiegazioni avanzate deve mai impedire avvio, svolgimento o completamento dell'esame.**
 
@@ -130,7 +132,7 @@ File principali:
 - `infermieristica-materno.html`;
 - `paziente-chirurgico.html` — runtime stabile + spiegazioni avanzate opzionali;
 - `paziente-chirurgico-explanations.js` — file legacy, non caricato dal runtime attivo;
-- `data/paziente-chirurgico-explanations-manifest.json` e `001`→`029` — archivio completo delle spiegazioni; `001`→`007` sono attualmente collegati al runtime;
+- `data/paziente-chirurgico-explanations-manifest.json` e `001`→`029` — archivio completo delle spiegazioni; `001`→`013` sono attualmente collegati al runtime;
 - `PAZIENTE_CHIRURGICO_PROGRESS.md` — checkpoint specifico;
 - `data/` — banche domande;
 - `.nojekyll` — pubblicazione statica.
@@ -156,7 +158,7 @@ I progressi sono locali al browser; non ci sono account, database remoto o sync 
 
 Per revisione estesa di banche o spiegazioni lavorare in **blocchi controllati di circa 40–60 domande**, con checkpoint GitHub tra i blocchi. Il checkpoint deve indicare esame, intervallo completato, ultima domanda, file modificati, commit e punto di ripresa.
 
-Punto di ripresa attuale per Paziente chirurgico: **Educazione terapeutica `ed1`**.
+Punto di ripresa attuale per Paziente chirurgico: **Psicologia `ps1`**.
 
 ### Continuità tra chat
 
@@ -178,9 +180,10 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 ## 9. Roadmap immediata
 
 1. **Diagnostica Paziente chirurgico: completa 76/76 con spiegazioni avanzate opzionali fail-safe.**
-2. Proseguire da **Educazione terapeutica `ed1`**, sempre mantenendo il runtime indipendente dalle spiegazioni.
-3. Successivamente Psicologia e Terapia.
-4. Dopo Paziente chirurgico, completare Scienze della Salute allo stesso standard superiore.
-5. QA separato dei quesiti di Paziente chirurgico già segnalati, solo con autorizzazione esplicita a modificare la banca.
+2. **Educazione terapeutica: completa 54/54 con spiegazioni avanzate opzionali fail-safe.**
+3. Proseguire da **Psicologia `ps1`**, sempre mantenendo il runtime indipendente dalle spiegazioni.
+4. Successivamente Terapia.
+5. Dopo Paziente chirurgico, completare Scienze della Salute allo stesso standard superiore.
+6. QA separato dei quesiti di Paziente chirurgico già segnalati, solo con autorizzazione esplicita a modificare la banca.
 
 Farmacologia resta una futura banca in preparazione.
