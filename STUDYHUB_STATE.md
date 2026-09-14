@@ -8,7 +8,7 @@
 
 ## 1. Regola primaria
 
-Prima di qualsiasi modifica a StudyHub leggere questo file e il `main` aggiornato. Il repository GitHub è la fonte tecnica primaria; vecchi export o copie locali non vanno considerati automaticamente correnti.
+Prima di qualsiasi modifica a StudyHub leggere questo file e il `main` aggiornato. Il repository GitHub è la fonte tecnica primaria.
 
 La priorità generale è la **non regressione**: una modifica puntuale non autorizza a cambiare domande, opzioni, risposte corrette, grafica, progressi o logica non coinvolti dal task.
 
@@ -60,20 +60,19 @@ Se il task riguarda UI, logica, spiegazioni o infrastruttura:
 
 Se emerge un quesito probabilmente errato, ambiguo, obsoleto o discordante, **non correggerlo di nascosto**: segnalarlo come QA e modificarlo solo con autorizzazione esplicita.
 
-Per contenuti medici/infermieristici dare priorità ai materiali universitari dell'utente; quando serve verifica esterna usare fonti autorevoli, incluse PubMed/PMC, NCBI/NIH, WHO, CDC e linee guida pertinenti.
+Per contenuti medici/infermieristici dare priorità ai materiali universitari dell'utente. Quando serve verifica, aggiornamento o disambiguazione utilizzare fonti autorevoli, incluse **PubMed/PMC, NCBI/NIH, WHO, CDC e linee guida pertinenti**. Le fonti esterne servono a verificare o precisare il contenuto, non autorizzano modifiche silenziose della banca.
 
-## 5. Spiegazioni: standard concordato e stato reale
+## 5. Standard delle spiegazioni
 
 Per **Scienze della Salute**, **Paziente chirurgico** e **Anatomia Patologica** lo standard è:
 
 - spiegare perché la risposta corretta è giusta;
 - spiegare perché ciascuna delle altre tre è sbagliata;
 - non limitarsi a ripetere la risposta corretta;
-- usare il materiale universitario dell'utente come base primaria e verificare i punti scientifici con fonti autorevoli quando necessario.
+- mantenere le motivazioni agganciate al testo originale delle opzioni, così da seguirne correttamente lo shuffle A/B/C/D;
+- mantenere un fallback fail-safe: un problema nelle spiegazioni avanzate non deve mai impedire avvio, svolgimento o completamento del quiz.
 
 ### Paziente chirurgico — COMPLETO 462/462
-
-`paziente-chirurgico.html` usa il runtime stabile e carica le banche verificando totale, ID, quattro opzioni e indice corretto. Le spiegazioni avanzate sono opzionali e vengono caricate in modalità fail-safe con `Promise.allSettled`; in caso di problema resta disponibile il campo base `why` e il quiz non viene bloccato.
 
 Copertura:
 
@@ -83,7 +82,7 @@ Copertura:
 - Terapia `te1–te266` = 266/266;
 - **totale 462/462**.
 
-File: `data/paziente-chirurgico-explanations-001.json` → `029.json`.
+File: `data/paziente-chirurgico-explanations-001.json` → `029.json`.  
 Checkpoint: `PAZIENTE_CHIRURGICO_PROGRESS.md`.
 
 ### Scienze della Salute — COMPLETO 459/459
@@ -92,83 +91,71 @@ Implementazione attiva:
 
 - `index.html` apre `scienze-salute.html`;
 - `scienze-salute.html` carica `scienze-salute-app.html` in iframe;
-- `scienze-salute-app.html` è il motore originale con l'intera banca di **459 domande** e non è stato modificato durante il lavoro sulle spiegazioni;
-- `scienze-salute-explanations.js` è l'enhancer opzionale fail-safe.
+- `scienze-salute-app.html` è il motore originale con l'intera banca di 459 domande;
+- `scienze-salute-explanations.js` è l'enhancer opzionale fail-safe;
+- `data/scienze-salute-explanations-001.json` → `013.json` coprono `1–459`.
 
-File avanzati collegati:
+Copertura completa per ID banca:
 
-- `001.json` → `1–40`
-- `002.json` → `41–80`
-- `003.json` → `81–100`
-- `004.json` → `101–120`
-- `005.json` → `121`
-- `006.json` → `122–161`
-- `007.json` → `162–201`
-- `008.json` → `202–241`
-- `009.json` → `242–281`
-- `010.json` → `282–321`
-- `011.json` → `322–361`
-- `012.json` → `362–401`
-- `013.json` → `402–459`
+- `1–121` Infermieristica nell'evoluzione storica;
+- `122–176` Epidemiologia;
+- `177–220` Igiene e medicina preventiva;
+- `221–270` Storia della medicina;
+- `271–320` Igiene e medicina preventiva;
+- `321–370` Storia della medicina;
+- `371–379` Infermieristica nell'evoluzione storica;
+- `380–392` Storia della medicina;
+- `393–394` Infermieristica nell'evoluzione storica;
+- `395–399` Storia della medicina;
+- `400–402` Infermieristica nell'evoluzione storica;
+- `403–407` Storia della medicina;
+- `408` Infermieristica nell'evoluzione storica;
+- `409–447` Storia della medicina;
+- `448–450` Infermieristica nell'evoluzione storica;
+- `451–459` Storia della medicina;
+- **totale 459/459**.
 
-Percorsi completi: `data/scienze-salute-explanations-XXX.json`.
+Checkpoint: `SCIENZE_SALUTE_PROGRESS.md`.
 
-#### Copertura progressiva per ID banca
+### Anatomia Patologica — IN CORSO 120/300
 
-- `1–121` → Infermieristica nell'evoluzione storica;
-- `122–176` → Epidemiologia;
-- `177–220` → Igiene e medicina preventiva;
-- `221–270` → Storia della medicina;
-- `271–320` → Igiene e medicina preventiva;
-- `321–370` → Storia della medicina;
-- `371–379` → Infermieristica nell'evoluzione storica;
-- `380–392` → Storia della medicina;
-- `393–394` → Infermieristica nell'evoluzione storica;
-- `395–399` → Storia della medicina;
-- `400–402` → Infermieristica nell'evoluzione storica;
-- `403–407` → Storia della medicina;
-- `408` → Infermieristica nell'evoluzione storica;
-- `409–447` → Storia della medicina;
-- `448–450` → Infermieristica nell'evoluzione storica;
-- `451–459` → Storia della medicina;
-- **totale continuo coperto: `1–459` = 459/459**.
-
-Checkpoint dettagliato: `SCIENZE_SALUTE_PROGRESS.md`.
-
-### Anatomia Patologica — IN CORSO 80/300
-
-Il lavoro sulle spiegazioni avanzate procede in blocchi controllati da **40 domande**.
+Il lavoro procede in **blocchi da 40 domande** seguendo l'ordine reale complessivo della banca.
 
 Implementazione attiva:
 
-- `anatomia-patologica.html` resta il motore originale e continua a caricare le 12 banche JSON dell'esame;
+- `anatomia-patologica.html` resta il motore originale e continua a caricare le 12 banche JSON;
 - `anatomia-patologica-explanations.js` è un enhancer opzionale fail-safe;
-- `data/anatomia-patologica-explanations-001.json` contiene `m1–m40`;
-- `data/anatomia-patologica-explanations-002.json` contiene `m41–m80`;
-- il rilascio attivo è `pilot2`.
+- rilascio attivo: **`pilot3`**;
+- `EXPECTED_ADVANCED=120`;
+- file spiegazioni:
+  - `data/anatomia-patologica-explanations-001.json` → `m1–m40`;
+  - `data/anatomia-patologica-explanations-002.json` → `m41–m80`;
+  - `data/anatomia-patologica-explanations-003.json` → `m81–m100` + `e1–e20`.
 
 Copertura:
 
-- `m1–m40` → Microbiologia;
-- `m41–m80` → Microbiologia;
-- **totale coperto: 80/300**.
+- Microbiologia `m1–m100` = **100/100 COMPLETA**;
+- Eziologia `e1–e20` = **20/50**;
+- Immunologia = 0/50;
+- Anatomia Patologica = 0/100;
+- **totale 120/300**.
 
-I blocchi sono costruiti usando come base primaria i documenti universitari caricati dall'utente. Per Microbiologia la base principale è costituita da `Microbiologia.pdf` e `Microbiologia compendio.pdf`; i punti sensibili vengono verificati con fonti autorevoli come PubMed/PMC, NCBI/NIH e CDC.
+Materiale universitario primario fornito dall'utente:
 
-Nel blocco `m41–m80` sono stati verificati in particolare struttura e metabolismo batterico, endospore, farmacocinetica, meccanismi di resistenza, beta-lattamici/PBP, macrolidi, fluorochinoloni, rifampicina, aminoglicosidi, Gram, Ziehl-Neelsen, micobatteri, Chlamydia, terreni di coltura, raccolta di campioni, emocolture, diagnostica indiretta e sieroconversione.
+- `Microbiologia.pdf`;
+- `Microbiologia compendio.pdf`;
+- `PATOLOGIA GENERALE definitivo.pdf`;
+- `Eziologia generale STAMPATO.pdf`;
+- `Immunologia STAMPATO.pdf`;
+- `ANATOMIA PATOLOGICA.pdf`.
 
-Nei blocchi `m1–m80` non sono state modificate domande, opzioni, risposte corrette, ID o topic. Non sono emersi quesiti con risposta corretta chiaramente incompatibile con il materiale universitario e con le fonti autorevoli consultate.
+Nel blocco 003 sono stati verificati: antibiotico-resistenza e beta-lattamasi, anaerobiosi, trasferimento genico, peptidoglicano e membrana dei Gram-negativi, protozoi e miceti, Candida, Aspergillus e aflatossine; per Eziologia: definizioni, traumi, pneumotorace, fratture, distorsione/lussazione, danno termico, ustioni, colpo di calore, freddo e radiazioni corpuscolate.
 
-L'enhancer Anatomia Patologica:
+Per aumentare il rigore scientifico, alcune formulazioni degli appunti sono precisate **nelle spiegazioni** senza alterare la banca. Esempi: alta umidità = ridotta evaporazione del sudore nel colpo di calore; ustioni descritte anche con terminologia superficiale/partial-thickness/full-thickness.
 
-- attende il caricamento della banca originale di 300 domande;
-- carica i file di spiegazione separatamente;
-- valida `summary` e quattro motivazioni;
-- associa le motivazioni alle opzioni originali tramite il testo, mantenendole corrette dopo il rimescolamento A/B/C/D;
-- arricchisce il feedback soltanto dopo la correzione;
-- se enhancer o dati esplicativi non sono disponibili, mantiene il feedback base `why` senza bloccare il quiz.
+Nei quesiti coperti finora non sono state modificate domande, opzioni, risposte corrette, ID o topic.
 
-**Punto di ripresa Anatomia Patologica: prossimo blocco da 40 domande = `m81–m100` (20 Microbiologia) + `e1–e20` (20 Eziologia).**
+**Punto di ripresa Anatomia Patologica:** prossimo blocco da 40 = `e21–e50` (30 Eziologia) + `i1–i10` (10 Immunologia), con copertura attesa **160/300**.
 
 Checkpoint dettagliato: `ANATOMIA_PATOLOGICA_PROGRESS.md`.
 
@@ -178,50 +165,43 @@ File principali:
 
 - `index.html` — homepage;
 - `studyhub.css` — stile condiviso;
-- `scienze-salute.html` — wrapper attivo Scienze;
-- `scienze-salute-app.html` — motore originale e banca inline 459 domande;
-- `scienze-salute-explanations.js` — enhancer opzionale;
-- `data/scienze-salute-explanations-001.json` → `013.json` — spiegazioni avanzate complete `1–459`;
-- `SCIENZE_SALUTE_PROGRESS.md` — checkpoint specifico Scienze;
-- `anatomia-patologica.html` — runtime Anatomia Patologica e caricamento banca 300 domande;
-- `anatomia-patologica-explanations.js` — enhancer opzionale Anatomia Patologica;
-- `data/anatomia-patologica-explanations-001.json` → `002.json` — spiegazioni avanzate `m1–m80`;
-- `ANATOMIA_PATOLOGICA_PROGRESS.md` — checkpoint specifico Anatomia Patologica;
+- `scienze-salute.html` — wrapper Scienze;
+- `scienze-salute-app.html` — motore originale Scienze;
+- `scienze-salute-explanations.js` e `data/scienze-salute-explanations-001.json` → `013.json`;
+- `SCIENZE_SALUTE_PROGRESS.md`;
+- `anatomia-patologica.html`;
+- `anatomia-patologica-explanations.js`;
+- `data/anatomia-patologica-explanations-001.json` → `003.json`;
+- `ANATOMIA_PATOLOGICA_PROGRESS.md`;
 - `infermieristica-materno.html`;
-- `paziente-chirurgico.html` — runtime stabile + spiegazioni complete;
+- `paziente-chirurgico.html`;
 - `data/paziente-chirurgico-explanations-manifest.json` e `001`→`029`;
 - `PAZIENTE_CHIRURGICO_PROGRESS.md`;
-- `data/` — banche domande e spiegazioni;
-- `.nojekyll` — pubblicazione statica.
+- `data/` — banche e spiegazioni;
+- `.nojekyll`.
 
-I progressi sono locali al browser; non ci sono account, database remoto o sync cloud.
+I progressi utente restano locali al browser; non ci sono account, database remoto o sync cloud.
 
-## 7. Workflow obbligatorio per modifiche future
+## 7. Workflow obbligatorio
 
 1. leggere `STUDYHUB_STATE.md`;
 2. leggere il `main` aggiornato;
 3. identificare i file realmente attivi;
 4. applicare la modifica più circoscritta possibile;
 5. preservare tutto ciò che non è coinvolto;
-6. verificare conteggi e sezioni dopo modifiche dati;
-7. verificare associazione risposta corretta/opzioni dopo shuffle;
+6. verificare conteggi, ID, sezioni e risposta corretta;
+7. verificare che le motivazioni seguano l'opzione originale dopo shuffle;
 8. testare almeno avvio → risposta → feedback → successiva/precedente → risultato → ripasso errori → Home;
 9. mantenere responsive/mobile;
-10. aggiornare questo file quando cambia lo stato reale del progetto.
+10. aggiornare checkpoint e questo file quando cambia lo stato reale.
 
 ### Lavoro a blocchi
 
-Per revisioni estese di banche o spiegazioni lavorare in **blocchi controllati da 40 domande** quando concordato, con checkpoint GitHub tra i blocchi.
+- Paziente chirurgico: **462/462** completo.
+- Scienze della Salute: **459/459** completo.
+- Anatomia Patologica: **120/300**, blocchi fissi da 40; prossimo `e21–e50` + `i1–i10`.
 
-- Paziente chirurgico: spiegazioni complete **462/462**.
-- Scienze della Salute: spiegazioni complete **459/459**.
-- Anatomia Patologica: spiegazioni avanzate **80/300**, completato `m1–m80`; prossimo blocco `m81–m100` + `e1–e20`.
-
-Per Anatomia Patologica mantenere la dimensione di 40 quesiti per blocco seguendo l'ordine reale complessivo della banca; quando un blocco attraversa una sezione, registrare chiaramente entrambi gli intervalli. L'ultimo blocco può contenere il residuo finale inferiore a 40.
-
-### Continuità tra chat
-
-Se la conversazione diventa molto lunga, prima dell'handoff salvare il lavoro nel `main` o in un checkpoint affidabile e registrare il punto esatto da cui riprendere.
+Quando un blocco attraversa il confine tra due sezioni, mantenere la dimensione di 40 e registrare chiaramente gli intervalli. L'ultimo blocco può contenere il residuo finale inferiore a 40.
 
 ## 8. GitHub e autorizzazioni
 
@@ -234,10 +214,9 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 
 ## 9. Roadmap immediata
 
-1. **Paziente chirurgico: spiegazioni avanzate complete 462/462 con architettura fail-safe.**
-2. **Scienze della Salute: spiegazioni avanzate complete 459/459 con enhancer opzionale fail-safe.**
-3. **Anatomia Patologica: spiegazioni avanzate 80/300; prossimo blocco da 40 = `m81–m100` + `e1–e20`.**
+1. Paziente chirurgico: spiegazioni complete 462/462.
+2. Scienze della Salute: spiegazioni complete 459/459.
+3. Anatomia Patologica: spiegazioni avanzate **120/300**; proseguire con `e21–e50` + `i1–i10`.
 4. Mantenere le banche originali inalterate salvo autorizzazione esplicita.
-5. Gestire eventuali quesiti dubbi o obsoleti come QA separato.
-
-Farmacologia resta una futura banca in preparazione.
+5. Gestire quesiti dubbi o obsoleti come QA separato.
+6. Farmacologia resta una futura banca in preparazione.
