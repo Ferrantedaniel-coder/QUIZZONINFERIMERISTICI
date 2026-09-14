@@ -4,14 +4,14 @@ Ultimo aggiornamento: 14 settembre 2026
 
 ## Stato corrente
 
-L'esame **Scienze della Salute** contiene **459 domande** distribuite in quattro macroargomenti:
+L'esame **Scienze della Salute** contiene **459 domande** distribuite nei quattro macroargomenti:
 
 - Infermieristica nell'evoluzione storica
 - Epidemiologia
 - Igiene e medicina preventiva
 - Storia della medicina
 
-La priorità è mantenere il quiz esistente stabile mentre le spiegazioni vengono portate progressivamente allo standard avanzato.
+La banca non è interamente organizzata in quattro blocchi contigui: nelle parti successive alcuni macroargomenti ricompaiono in intervalli diversi. Per questo la copertura viene registrata per **ID di banca effettivamente completati**.
 
 ## Implementazione attiva
 
@@ -21,28 +21,32 @@ La Home principale apre `scienze-salute.html`.
 
 `scienze-salute-app.html` resta il motore originale dell'esame e contiene inline l'intera banca di **459 domande**. Durante il lavoro sulle spiegazioni avanzate questo file **non viene modificato**.
 
-Restano quindi invariati il motore del quiz, la banca, le quattro opzioni, le risposte corrette, le modalità di sessione, il rimescolamento A/B/C/D, punteggio, navigazione, risultato, ripasso errori e `localStorage`.
+Restano invariati motore del quiz, banca, quattro opzioni, risposte corrette, modalità di sessione, rimescolamento A/B/C/D, punteggio, navigazione, risultato, ripasso errori e `localStorage`.
 
-## Spiegazioni avanzate opzionali - 241/459
+## Spiegazioni avanzate opzionali - 281/459
 
-Copertura attiva:
+Copertura progressiva attiva per ID banca:
 
-- **Infermieristica nell'evoluzione storica: domande banca `1–121` = 121/121, COMPLETO**
-- **Epidemiologia: domande banca `122–176` = 55/55, COMPLETO**
-- **Igiene e medicina preventiva: domande banca `177–220` = 44 domande completate nel tratto corrente**
-- **Storia della medicina: domande banca `221–241` = 21 domande completate nel tratto corrente**
-- **Copertura avanzata totale attiva: 241/459**
+- `1–121` → Infermieristica nell'evoluzione storica
+- `122–176` → Epidemiologia
+- `177–220` → Igiene e medicina preventiva
+- `221–270` → Storia della medicina
+- `271–281` → Igiene e medicina preventiva
+- **Copertura avanzata totale continua: `1–281` = 281/459**
 
-File dati:
+I primi due tratti originari sono completi nel loro intervallo iniziale: **Infermieristica 1–121** ed **Epidemiologia 122–176**. Dopo la 270 la banca torna a intercalare macroargomenti; non si deve quindi dedurre la completezza globale di una materia soltanto dal termine di un intervallo.
 
-- `data/scienze-salute-explanations-001.json` → domande `1–40`
-- `data/scienze-salute-explanations-002.json` → domande `41–80`
-- `data/scienze-salute-explanations-003.json` → domande `81–100`
-- `data/scienze-salute-explanations-004.json` → domande `101–120`
-- `data/scienze-salute-explanations-005.json` → domanda `121`
-- `data/scienze-salute-explanations-006.json` → domande `122–161`
-- `data/scienze-salute-explanations-007.json` → domande `162–201`
-- `data/scienze-salute-explanations-008.json` → domande `202–241`
+## File dati
+
+- `data/scienze-salute-explanations-001.json` → `1–40`
+- `data/scienze-salute-explanations-002.json` → `41–80`
+- `data/scienze-salute-explanations-003.json` → `81–100`
+- `data/scienze-salute-explanations-004.json` → `101–120`
+- `data/scienze-salute-explanations-005.json` → `121`
+- `data/scienze-salute-explanations-006.json` → `122–161`
+- `data/scienze-salute-explanations-007.json` → `162–201`
+- `data/scienze-salute-explanations-008.json` → `202–241`
+- `data/scienze-salute-explanations-009.json` → `242–281`
 
 Ogni entry contiene:
 
@@ -51,7 +55,7 @@ Ogni entry contiene:
 
 ## Architettura fail-safe
 
-Il file `scienze-salute-explanations.js` viene iniettato opzionalmente dal wrapper `scienze-salute.html` dopo il caricamento dell'app.
+`scienze-salute-explanations.js` viene iniettato opzionalmente da `scienze-salute.html` dopo il caricamento dell'app originale.
 
 L'enhancer:
 
@@ -60,16 +64,16 @@ L'enhancer:
 - non modifica domande, opzioni o indice corretto;
 - carica i JSON avanzati con `Promise.allSettled`;
 - valida ogni entry rispetto alla domanda originale;
-- associa le motivazioni alle opzioni tramite il testo dell'opzione originale, così la spiegazione segue correttamente l'alternativa anche dopo lo shuffle A/B/C/D;
-- osserva il riquadro feedback con `MutationObserver` e lo arricchisce soltanto dopo che il motore originale ha già corretto la domanda;
-- se enhancer, JSON o singola entry non sono disponibili, lascia intatto il feedback base `q.e` già prodotto dal quiz.
+- associa le motivazioni al testo dell'opzione originale, così seguono correttamente lo shuffle A/B/C/D;
+- osserva il feedback prodotto dal motore originale e lo arricchisce soltanto dopo la correzione;
+- se enhancer, JSON o singola entry non sono disponibili, mantiene il feedback base `q.e` e il quiz continua a funzionare.
 
-**Un problema delle spiegazioni avanzate non deve impedire avvio, svolgimento o completamento dell'esame.**
+**Un problema delle spiegazioni avanzate non deve mai impedire avvio, svolgimento o completamento dell'esame.**
 
 Quando l'entry avanzata è valida, il feedback mostra:
 
 1. esito corretto/errato;
-2. risposta corretta nella lettera A/B/C/D realmente mostrata;
+2. risposta corretta nella posizione A/B/C/D realmente mostrata;
 3. concetto chiave;
 4. quattro motivazioni separate;
 5. etichetta `CORRETTA` o `ERRATA` per ogni alternativa.
@@ -82,32 +86,28 @@ Non sono stati modificati:
 - testi delle 459 domande;
 - alternative;
 - risposte corrette;
-- ID e macroargomenti.
+- ID o macroargomenti.
 
-Le spiegazioni `1–241` sono state costruite utilizzando il contenuto e il framing già presenti nella banca, senza correggere o sostituire silenziosamente domande e soluzioni.
+Le spiegazioni `1–281` sono dati aggiuntivi esterni alla banca originale.
 
-## Commit principali recenti
+## Commit recenti
 
-Chiusura Epidemiologia + avvio Igiene / pilot6:
+Pilot7 — domande `202–241`:
 
-- dati spiegazioni `162–201`: `836b65add002e4b4a17109f31b6906a6d32ec64c`
-- enhancer esteso a `201`: `e59ce41189218667e48309dd9d2ee559f39f4a91`
-- wrapper/cache enhancer `pilot6`: `19475ac6c49bba24243684dce0c3165eaf3485fc`
-- Home/cache-busting `pilot6`: `3ec4d8cd4de56f254626565107b28a0409e7a865`
+- dati: `7d5dcc0d45c5c7b0ec7d728b9b6686bd79601e11`
+- enhancer finale: `1d1c84c1f66de9dd54f794cf89403aeb5dc61ed7`
+- wrapper: `c91af59ab8b0bc98031e915f39d90f79951d09d2`
+- Home: `33f4def7d668002a433eac444a74573da2e784d5`
 
-Igiene + avvio Storia / pilot7:
+Pilot8 — domande `242–281`:
 
-- dati spiegazioni `202–241`: `7d5dcc0d45c5c7b0ec7d728b9b6686bd79601e11`
-- enhancer esteso a `241`: `4dafe5080d8c96e6f71c78d45b73dbdf2f9d0f6c`
-- correzione escaping enhancer: `1d1c84c1f66de9dd54f794cf89403aeb5dc61ed7`
-- wrapper/cache enhancer `pilot7`: `c91af59ab8b0bc98031e915f39d90f79951d09d2`
-- Home/cache-busting `pilot7`: `33f4def7d668002a433eac444a74573da2e784d5`
+- dati `009`: `19b76c16b1c4001b4c87f1227e4965a2c78bb747`
+- enhancer esteso a `281`: `3f6207905e90383766fefce6c60a3eeed20efc00`
+- wrapper/cache enhancer `pilot8`: `29654c97519248a9bda1a8234f804e40076bd48e`
+- Home/cache-busting `pilot8`: `35161c1abb1d10f1f36c915f04b1fe039a31ab43`
 
 ## Punto di ripresa
 
-- **Infermieristica nell'evoluzione storica: completo 121/121**.
-- **Epidemiologia: completo 55/55 (`122–176`)**.
-- **Igiene e medicina preventiva: completate nel tratto corrente `177–220`**.
-- **Storia della medicina: completate nel tratto corrente `221–241`**.
+La copertura avanzata è continua dalla domanda **1 alla 281**.
 
-Prossimo blocco: **domanda 242**, mantenendo blocchi controllati e lo stesso standard: spiegare perché la corretta è giusta e perché ciascuna delle altre tre è sbagliata.
+Il prossimo blocco parte dalla **domanda 282**, che prosegue in **Igiene e medicina preventiva**. Continuare nell'ordine reale della banca, registrando gli intervalli dei macroargomenti senza assumere che siano globalmente contigui.
