@@ -107,7 +107,7 @@ Per una entry valida il feedback mostra esito, risposta corretta, concetto chiav
 
 Checkpoint dettagliato: `PAZIENTE_CHIRURGICO_PROGRESS.md`.
 
-### Scienze della Salute — spiegazioni avanzate 201/459
+### Scienze della Salute — spiegazioni avanzate 241/459
 
 L'implementazione attiva è:
 
@@ -126,7 +126,8 @@ Per ridurre il rischio di regressione, `scienze-salute-app.html` **non viene mod
 - `data/scienze-salute-explanations-004.json` → domande banca **101–120**;
 - `data/scienze-salute-explanations-005.json` → domanda banca **121**;
 - `data/scienze-salute-explanations-006.json` → domande banca **122–161**;
-- `data/scienze-salute-explanations-007.json` → domande banca **162–201**.
+- `data/scienze-salute-explanations-007.json` → domande banca **162–201**;
+- `data/scienze-salute-explanations-008.json` → domande banca **202–241**.
 
 Il wrapper inietta l'enhancer nello stesso iframe dopo che l'app originale è già stata caricata. L'enhancer:
 
@@ -141,12 +142,13 @@ Il wrapper inietta l'enhancer nello stesso iframe dopo che l'app originale è gi
 
 - **Infermieristica nell'evoluzione storica: domande 1–121 = 121/121, COMPLETO**;
 - **Epidemiologia: domande 122–176 = 55/55, COMPLETO**;
-- **Igiene e medicina preventiva: domande 177–201 = 25 domande completate**;
-- **Totale avanzato opzionale attivo: 201/459**.
+- **Igiene e medicina preventiva: domande 177–220 completate nel tratto corrente**;
+- **Storia della medicina: domande 221–241 completate nel tratto corrente**;
+- **Totale avanzato opzionale attivo: 241/459**.
 
 Per una entry valida il feedback mostra esito corretto/errato, risposta corretta nella posizione effettiva, concetto chiave e quattro motivazioni separate con etichetta `CORRETTA` / `ERRATA`.
 
-Le spiegazioni `1–201` sono state costruite sul contenuto già presente nella banca, senza modificare o correggere silenziosamente domande e soluzioni.
+Le spiegazioni `1–241` sono state costruite sul contenuto già presente nella banca, senza modificare o correggere silenziosamente domande e soluzioni.
 
 Checkpoint dettagliato: `SCIENZE_SALUTE_PROGRESS.md`.
 
@@ -170,6 +172,7 @@ File principali:
 - `data/scienze-salute-explanations-005.json` — spiegazione avanzata Scienze domanda 121;
 - `data/scienze-salute-explanations-006.json` — spiegazioni avanzate Scienze domande 122–161;
 - `data/scienze-salute-explanations-007.json` — spiegazioni avanzate Scienze domande 162–201;
+- `data/scienze-salute-explanations-008.json` — spiegazioni avanzate Scienze domande 202–241;
 - `SCIENZE_SALUTE_PROGRESS.md` — checkpoint specifico Scienze;
 - `anatomia-patologica.html`;
 - `infermieristica-materno.html`;
@@ -202,13 +205,16 @@ I progressi sono locali al browser; non ci sono account, database remoto o sync 
 Per revisione estesa di banche o spiegazioni lavorare in **blocchi controllati di circa 40–60 domande**, con checkpoint GitHub tra i blocchi. Il checkpoint deve indicare esame, intervallo completato, ultima domanda, file modificati, commit e punto di ripresa.
 
 - Paziente chirurgico: spiegazioni complete **462/462**.
-- Scienze della Salute: completate spiegazioni **1–201**; punto di ripresa **domanda 202**.
+- Scienze della Salute: completate spiegazioni **1–241**; punto di ripresa **domanda 242**.
 
-Macroargomenti Scienze:
+Macroargomenti Scienze già coperti nel tratto progressivo corrente:
 
 - **Infermieristica nell'evoluzione storica: 1–121, completo**;
 - **Epidemiologia: 122–176, completo**;
-- **Igiene e medicina preventiva: 177–201 completate; riprendere da 202**.
+- **Igiene e medicina preventiva: 177–220 completate**;
+- **Storia della medicina: 221–241 completate; riprendere da 242**.
+
+Nota: più avanti nella banca alcuni macroargomenti ricompaiono in ulteriori intervalli; la dicitura “completate” sopra riguarda quindi il tratto progressivo già lavorato, salvo i macroargomenti esplicitamente indicati come completi.
 
 ### Continuità tra chat
 
@@ -230,8 +236,8 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 ## 9. Roadmap immediata
 
 1. **Paziente chirurgico: spiegazioni avanzate complete 462/462 con architettura fail-safe.**
-2. **Scienze della Salute: spiegazioni avanzate attive 1–201 con enhancer opzionale fail-safe.**
-3. Proseguire Scienze della Salute dalla **domanda 202**, continuando **Igiene e medicina preventiva** in blocchi controllati.
+2. **Scienze della Salute: spiegazioni avanzate attive 1–241 con enhancer opzionale fail-safe.**
+3. Proseguire Scienze della Salute dalla **domanda 242**, continuando il lavoro nell'ordine della banca in blocchi controllati.
 4. Mantenere le banche originali inalterate durante il lavoro sulle spiegazioni.
 5. QA separato dei quesiti già segnalati, solo con autorizzazione esplicita a modificare la banca.
 
