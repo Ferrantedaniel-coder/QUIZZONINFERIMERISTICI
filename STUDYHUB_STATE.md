@@ -107,7 +107,7 @@ Per una entry valida il feedback mostra esito, risposta corretta, concetto chiav
 
 Checkpoint dettagliato: `PAZIENTE_CHIRURGICO_PROGRESS.md`.
 
-### Scienze della Salute — spiegazioni avanzate 120/459
+### Scienze della Salute — spiegazioni avanzate 161/459
 
 L'implementazione attiva è:
 
@@ -123,7 +123,9 @@ Per ridurre il rischio di regressione, `scienze-salute-app.html` **non viene mod
 - `data/scienze-salute-explanations-001.json` → domande banca **1–40**;
 - `data/scienze-salute-explanations-002.json` → domande banca **41–80**;
 - `data/scienze-salute-explanations-003.json` → domande banca **81–100**;
-- `data/scienze-salute-explanations-004.json` → domande banca **101–120**.
+- `data/scienze-salute-explanations-004.json` → domande banca **101–120**;
+- `data/scienze-salute-explanations-005.json` → domanda banca **121**;
+- `data/scienze-salute-explanations-006.json` → domande banca **122–161**.
 
 Il wrapper inietta l'enhancer nello stesso iframe dopo che l'app originale è già stata caricata. L'enhancer:
 
@@ -136,12 +138,13 @@ Il wrapper inietta l'enhancer nello stesso iframe dopo che l'app originale è gi
 
 #### Copertura Scienze attiva
 
-- **Infermieristica nell'evoluzione storica: domande 1–120**;
-- **Totale avanzato opzionale attivo: 120/459**.
+- **Infermieristica nell'evoluzione storica: domande 1–121 = 121/121, COMPLETO**;
+- **Epidemiologia: domande 122–161 = 40 domande completate**;
+- **Totale avanzato opzionale attivo: 161/459**.
 
 Per una entry valida il feedback mostra esito corretto/errato, risposta corretta nella posizione effettiva, concetto chiave e quattro motivazioni separate con etichetta `CORRETTA` / `ERRATA`.
 
-Le spiegazioni `1–120` sono state costruite sul contenuto già presente nella banca, senza modificare o correggere silenziosamente domande e soluzioni.
+Le spiegazioni `1–161` sono state costruite sul contenuto già presente nella banca, senza modificare o correggere silenziosamente domande e soluzioni.
 
 Checkpoint dettagliato: `SCIENZE_SALUTE_PROGRESS.md`.
 
@@ -162,6 +165,8 @@ File principali:
 - `data/scienze-salute-explanations-002.json` — spiegazioni avanzate Scienze domande 41–80;
 - `data/scienze-salute-explanations-003.json` — spiegazioni avanzate Scienze domande 81–100;
 - `data/scienze-salute-explanations-004.json` — spiegazioni avanzate Scienze domande 101–120;
+- `data/scienze-salute-explanations-005.json` — spiegazione avanzata Scienze domanda 121;
+- `data/scienze-salute-explanations-006.json` — spiegazioni avanzate Scienze domande 122–161;
 - `SCIENZE_SALUTE_PROGRESS.md` — checkpoint specifico Scienze;
 - `anatomia-patologica.html`;
 - `infermieristica-materno.html`;
@@ -194,9 +199,9 @@ I progressi sono locali al browser; non ci sono account, database remoto o sync 
 Per revisione estesa di banche o spiegazioni lavorare in **blocchi controllati di circa 40–60 domande**, con checkpoint GitHub tra i blocchi. Il checkpoint deve indicare esame, intervallo completato, ultima domanda, file modificati, commit e punto di ripresa.
 
 - Paziente chirurgico: spiegazioni complete **462/462**.
-- Scienze della Salute: completate spiegazioni **1–120**; punto di ripresa **domanda 121**.
+- Scienze della Salute: completate spiegazioni **1–161**; punto di ripresa **domanda 162**.
 
-La domanda **121** appartiene ancora a Infermieristica nell'evoluzione storica; dalla **122** inizia Epidemiologia.
+Il primo macroargomento di Scienze, **Infermieristica nell'evoluzione storica**, è completo **121/121**. Il primo blocco di Epidemiologia copre **122–161**.
 
 ### Continuità tra chat
 
@@ -218,8 +223,8 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 ## 9. Roadmap immediata
 
 1. **Paziente chirurgico: spiegazioni avanzate complete 462/462 con architettura fail-safe.**
-2. **Scienze della Salute: spiegazioni avanzate attive 1–120 con enhancer opzionale fail-safe.**
-3. Proseguire Scienze della Salute dalla **domanda 121**, in blocchi controllati.
+2. **Scienze della Salute: spiegazioni avanzate attive 1–161 con enhancer opzionale fail-safe.**
+3. Proseguire Scienze della Salute dalla **domanda 162**, continuando Epidemiologia in blocchi controllati.
 4. Mantenere le banche originali inalterate durante il lavoro sulle spiegazioni.
 5. QA separato dei quesiti già segnalati, solo con autorizzazione esplicita a modificare la banca.
 
