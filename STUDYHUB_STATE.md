@@ -103,21 +103,46 @@ File collegati:
 
 Il runtime supporta sia il formato storico con `entry.options[opzione]` sia il formato con `entry.reasons[]`. Nel secondo caso la motivazione viene ricondotta all'indice dell'opzione originale in `q.options`, quindi segue correttamente la risposta anche dopo il rimescolamento A/B/C/D.
 
-Per una entry valida il feedback mostra:
-
-- esito corretto/errato;
-- risposta corretta nella posizione effettivamente mostrata;
-- concetto chiave;
-- quattro motivazioni separate;
-- etichetta `CORRETTA` / `ERRATA` per ogni alternativa.
-
-**Regola fondamentale: nessun problema delle spiegazioni avanzate deve mai impedire avvio, svolgimento o completamento dell'esame.**
+Per una entry valida il feedback mostra esito, risposta corretta, concetto chiave e quattro motivazioni separate con etichetta `CORRETTA` / `ERRATA`.
 
 Checkpoint dettagliato: `PAZIENTE_CHIRURGICO_PROGRESS.md`.
 
-### Scienze della Salute
+### Scienze della Salute — pilot avanzato 40/459
 
-Resta il prossimo esame da portare allo stesso standard superiore delle spiegazioni. Prima di modificarlo, verificare quale tra `scienze-salute.html` e `scienze-salute-app.html` è realmente attivo e lavorare in blocchi controllati.
+L'implementazione attiva è ora chiarita:
+
+- `index.html` apre `scienze-salute.html`;
+- `scienze-salute.html` è un wrapper che carica `scienze-salute-app.html` in iframe;
+- `scienze-salute-app.html` è il motore originale e contiene inline l'intera banca di **459 domande**.
+
+Per ridurre il rischio di regressione, `scienze-salute-app.html` **non è stato modificato** nel pilot.
+
+È stato aggiunto un enhancer esterno opzionale:
+
+- `scienze-salute-explanations.js`;
+- `data/scienze-salute-explanations-001.json` → domande banca **1–40** di Infermieristica nell'evoluzione storica.
+
+Il wrapper inietta l'enhancer nello stesso iframe dopo che l'app originale è già stata caricata. L'enhancer:
+
+- non è necessario all'avvio o allo svolgimento del quiz;
+- carica i dati avanzati con `Promise.allSettled`;
+- valida `summary` e quattro motivazioni per ciascuna domanda;
+- associa ogni motivazione all'opzione originale tramite il testo dell'alternativa, quindi segue la stessa risposta anche dopo il rimescolamento A/B/C/D;
+- usa `MutationObserver` per arricchire il feedback già prodotto dal motore originale;
+- se enhancer, JSON o singola entry falliscono, il feedback base `q.e` resta disponibile e il quiz non viene bloccato.
+
+#### Copertura Scienze attiva
+
+- **Infermieristica nell'evoluzione storica: domande 1–40**;
+- **Totale avanzato opzionale attivo: 40/459**.
+
+Per una entry valida il feedback mostra esito corretto/errato, risposta corretta nella posizione effettiva, concetto chiave e quattro motivazioni separate con etichetta `CORRETTA` / `ERRATA`.
+
+Le spiegazioni del pilot sono state costruite sul contenuto già presente nella banca, senza modificare o correggere silenziosamente domande e soluzioni.
+
+Checkpoint dettagliato: `SCIENZE_SALUTE_PROGRESS.md`.
+
+**Regola fondamentale per entrambi gli esami: nessun problema delle spiegazioni avanzate deve mai impedire avvio, svolgimento o completamento del quiz.**
 
 ---
 
@@ -127,14 +152,18 @@ File principali:
 
 - `index.html` — homepage;
 - `studyhub.css` — stile condiviso;
-- `scienze-salute.html` / `scienze-salute-app.html`;
+- `scienze-salute.html` — wrapper attivo di Scienze della Salute e loader fail-safe dell'enhancer;
+- `scienze-salute-app.html` — motore originale Scienze della Salute con banca inline da 459 domande, non modificato nel pilot;
+- `scienze-salute-explanations.js` — enhancer opzionale delle spiegazioni di Scienze;
+- `data/scienze-salute-explanations-001.json` — spiegazioni avanzate Scienze domande 1–40;
+- `SCIENZE_SALUTE_PROGRESS.md` — checkpoint specifico Scienze;
 - `anatomia-patologica.html`;
 - `infermieristica-materno.html`;
 - `paziente-chirurgico.html` — runtime stabile + spiegazioni avanzate opzionali complete;
 - `paziente-chirurgico-explanations.js` — file legacy, non caricato dal runtime attivo;
 - `data/paziente-chirurgico-explanations-manifest.json` e `001`→`029` — archivio completo, tutto collegato al runtime;
-- `PAZIENTE_CHIRURGICO_PROGRESS.md` — checkpoint specifico;
-- `data/` — banche domande;
+- `PAZIENTE_CHIRURGICO_PROGRESS.md` — checkpoint specifico Paziente chirurgico;
+- `data/` — banche domande e spiegazioni;
 - `.nojekyll` — pubblicazione statica.
 
 I progressi sono locali al browser; non ci sono account, database remoto o sync cloud.
@@ -158,7 +187,8 @@ I progressi sono locali al browser; non ci sono account, database remoto o sync 
 
 Per revisione estesa di banche o spiegazioni lavorare in **blocchi controllati di circa 40–60 domande**, con checkpoint GitHub tra i blocchi. Il checkpoint deve indicare esame, intervallo completato, ultima domanda, file modificati, commit e punto di ripresa.
 
-Paziente chirurgico non ha più un blocco spiegazioni da completare: è **462/462**.
+- Paziente chirurgico: spiegazioni complete **462/462**.
+- Scienze della Salute: completato pilot **1–40**; punto di ripresa **domanda 41**.
 
 ### Continuità tra chat
 
@@ -180,8 +210,9 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 ## 9. Roadmap immediata
 
 1. **Paziente chirurgico: spiegazioni avanzate complete 462/462 con architettura fail-safe.**
-2. Mantenere Paziente chirurgico stabile e non cambiare la banca durante eventuali interventi UI/infrastrutturali.
-3. Portare **Scienze della Salute** allo stesso standard superiore, in blocchi controllati.
-4. QA separato dei quesiti di Paziente chirurgico già segnalati, solo con autorizzazione esplicita a modificare la banca.
+2. **Scienze della Salute: pilot domande 1–40 attivo con enhancer opzionale fail-safe.**
+3. Verificare stabilità del pilot e proseguire Scienze della Salute dalla **domanda 41**, in blocchi controllati.
+4. Mantenere le banche originali inalterate durante il lavoro sulle spiegazioni.
+5. QA separato dei quesiti già segnalati, solo con autorizzazione esplicita a modificare la banca.
 
 Farmacologia resta una futura banca in preparazione.
