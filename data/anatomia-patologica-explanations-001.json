@@ -1,0 +1,362 @@
+{
+  "m1": {
+    "summary": "La rabbia è una zoonosi trasmessa soprattutto quando saliva infetta viene inoculata nei tessuti attraverso il morso o il graffio di un mammifero infetto.",
+    "reasons": [
+      "Errata: la rosolia si trasmette principalmente per via respiratoria tra persone e può essere trasmessa verticalmente in gravidanza; il morso animale non è la sua modalità tipica.",
+      "Corretta: il virus della rabbia è presente nella saliva dell'animale infetto e viene classicamente trasmesso tramite morsicatura, cioè per inoculazione diretta nei tessuti.",
+      "Errata: l'influenza si diffonde soprattutto attraverso secrezioni respiratorie, aerosol e contatto ravvicinato, non tramite inoculazione da morso animale.",
+      "Errata: il morbillo è un'infezione umana altamente contagiosa a trasmissione respiratoria/aerea; non viene normalmente acquisito mediante morsicatura."
+    ]
+  },
+  "m2": {
+    "summary": "Candida può appartenere al microbiota normale delle mucose e diventare opportunista quando si altera l'equilibrio microbico o diminuiscono le difese dell'ospite.",
+    "reasons": [
+      "Corretta: la candidosi può derivare dalla proliferazione eccessiva di Candida già presente nell'ospite, per esempio dopo antibiotici, variazioni locali o immunodepressione; è quindi un tipico esempio di infezione opportunistica/endogena.",
+      "Errata: la rosolia è una virosi acquisita dall'esterno e non una patologia tipicamente sostenuta dalla flora residente dell'individuo.",
+      "Errata: l'influenza deriva dall'acquisizione di virus influenzali da una sorgente esterna, generalmente per via respiratoria.",
+      "Errata: il morbillo è causato da un virus trasmesso da altri soggetti infetti e non da un microrganismo normalmente residente nel microbiota."
+    ]
+  },
+  "m3": {
+    "summary": "Gli stafilococchi coagulasi-negativi, in particolare specie come Staphylococcus epidermidis, sono componenti comuni del microbiota cutaneo residente.",
+    "reasons": [
+      "Corretta: gli stafilococchi coagulasi-negativi colonizzano frequentemente la cute sana e costituiscono una parte importante del microbiota residente.",
+      "Errata: Salmonella Typhi è un patogeno enterico responsabile della febbre tifoide e non un normale componente stabile della flora cutanea.",
+      "Errata: Neisseria gonorrhoeae è un patogeno umano adattato soprattutto alle mucose genitali e non appartiene al tipico microbiota residente della cute.",
+      "Errata: Streptococcus pyogenes è un patogeno potenziale di cute e faringe, ma non rappresenta la tipica flora cutanea residente sana."
+    ]
+  },
+  "m4": {
+    "summary": "Tra i generi batterici più rappresentativi della cute sana rientrano stafilococchi coagulasi-negativi e Corynebacterium spp.",
+    "reasons": [
+      "Errata: Salmonella e Shigella sono patogeni enterici e non costituiscono una coppia tipica del microbiota cutaneo residente.",
+      "Errata: Neisseria gonorrhoeae e Treponema pallidum sono agenti di infezioni sessualmente trasmesse, non normali residenti della cute.",
+      "Errata: Vibrio cholerae e Campylobacter jejuni sono associati soprattutto a infezioni gastrointestinali e non alla flora cutanea residente.",
+      "Corretta: stafilococchi coagulasi-negativi e corynebatteri sono frequentemente presenti sulla cute sana e fanno parte dei principali gruppi del microbiota cutaneo."
+    ]
+  },
+  "m5": {
+    "summary": "I vaccini possono presentare antigeni mediante microrganismi vivi attenuati, microrganismi inattivati, componenti/subunità antigeniche o tossine detossificate trasformate in tossoidi.",
+    "reasons": [
+      "Errata: microrganismi vivi pienamente virulenti provocherebbero un rischio di malattia e non rappresentano il principio ordinario della vaccinazione preventiva.",
+      "Corretta: le piattaforme vaccinali classiche comprendono vivi attenuati, inattivati, subunità antigeniche e tossoidi, tutti finalizzati a indurre immunità attiva senza riprodurre la malattia naturale.",
+      "Errata: gli antibiotici sono farmaci antimicrobici e non costituiscono antigeni vaccinali in grado di generare memoria immunologica specifica.",
+      "Errata: immunoglobuline già formate conferiscono immunizzazione passiva temporanea e non costituiscono un vaccino che stimola direttamente una risposta immunitaria attiva."
+    ]
+  },
+  "m6": {
+    "summary": "Un vaccino vivo attenuato contiene un microrganismo vitale la cui virulenza è stata ridotta, ma che conserva sufficiente capacità replicativa da stimolare una robusta risposta immunitaria.",
+    "reasons": [
+      "Errata: anticorpi preformati realizzano immunizzazione passiva e non definiscono un vaccino vivo attenuato.",
+      "Errata: un microrganismo completamente inattivato non è vitale e appartiene alla categoria dei vaccini inattivati.",
+      "Corretta: l'attenuazione riduce la capacità di causare malattia mantenendo il microrganismo vitale e capace di una replicazione limitata utile a mimare alcuni aspetti dell'infezione naturale.",
+      "Errata: una tossina batterica biologicamente attiva sarebbe tossica; quando si vaccina contro una tossina si impiega un tossoide, cioè una tossina detossificata ma ancora immunogena."
+    ]
+  },
+  "m7": {
+    "summary": "Nei vaccini split il virione, tipicamente inattivato, viene disgregato in modo da utilizzare un insieme di componenti antigeniche senza mantenere un virus integro replicante.",
+    "reasons": [
+      "Errata: un microrganismo vivo pienamente virulento non è un preparato split e comporterebbe un rischio di malattia.",
+      "Errata: le immunoglobuline specifiche appartengono all'immunizzazione passiva, mentre il vaccino split contiene antigeni virali.",
+      "Corretta: i vaccini split derivano dalla frammentazione di particelle virali inattivate, conservando antigeni utili alla stimolazione della risposta immunitaria.",
+      "Errata: una tossina batterica attiva non definisce un vaccino split e non verrebbe somministrata come antigene vaccinale per il suo effetto tossico."
+    ]
+  },
+  "m8": {
+    "summary": "Un vaccino inattivato contiene microrganismi resi incapaci di replicarsi mediante inattivazione fisica o chimica, pur conservando antigeni immunologicamente riconoscibili.",
+    "reasons": [
+      "Corretta: l'inattivazione elimina la capacità replicativa del patogeno ma mantiene strutture antigeniche in grado di indurre immunità attiva.",
+      "Errata: microrganismi vivi e replicanti appartengono ai vaccini vivi attenuati, non agli inattivati.",
+      "Errata: anticorpi provenienti da un altro individuo o preparato conferiscono immunità passiva e non costituiscono un vaccino inattivato.",
+      "Errata: un farmaco antimicrobico tratta o previene la crescita microbica ma non è un preparato antigenico vaccinale."
+    ]
+  },
+  "m9": {
+    "summary": "Poiché i vaccini inattivati non replicano nell'ospite, spesso richiedono serie primarie di più dosi e successivi richiami per ottenere o mantenere una protezione adeguata.",
+    "reasons": [
+      "Errata: un vaccino inattivato non contiene un patogeno capace di riprodurre necessariamente la malattia naturale.",
+      "Errata: la caratteristica essenziale dell'inattivazione è proprio l'assenza di replicazione del microrganismo vaccinale.",
+      "Corretta: non potendo amplificare l'antigene tramite replicazione, la risposta può necessitare di più somministrazioni e richiami rispetto ad alcuni vaccini vivi attenuati.",
+      "Errata: le immunoglobuline sono strumenti di immunizzazione passiva e non costituiscono la categoria dei vaccini inattivati."
+    ]
+  },
+  "m10": {
+    "summary": "La tossicità selettiva degli antibatterici deriva dallo sfruttamento di bersagli presenti solo nei batteri o sufficientemente diversi da quelli delle cellule umane.",
+    "reasons": [
+      "Errata: danneggiare indiscriminatamente cellule batteriche ed eucariotiche corrisponderebbe a scarsa selettività e quindi a elevata tossicità per l'ospite.",
+      "Errata: un antimicrobico può essere batteriostatico oppure battericida; la selettività non richiede che tutti i farmaci uccidano direttamente il batterio.",
+      "Errata: denaturare tutte le proteine dell'organismo non sarebbe un'azione selettiva e provocherebbe grave tossicità sistemica.",
+      "Corretta: parete di peptidoglicano, ribosomi batterici e vie metaboliche peculiari sono esempi di bersagli che permettono di colpire preferenzialmente il microrganismo risparmiando l'ospite."
+    ]
+  },
+  "m11": {
+    "summary": "I sulfamidici sono analoghi strutturali del PABA e inibiscono competitivamente la diidropteroato-sintasi batterica, interrompendo la sintesi de novo dei folati necessaria alla produzione di nucleotidi.",
+    "reasons": [
+      "Errata: le penicilline agiscono principalmente sulla sintesi della parete batterica legando le penicillin-binding proteins, non sulla via dei folati.",
+      "Errata: i macrolidi inibiscono la sintesi proteica batterica legandosi alla subunità ribosomiale 50S.",
+      "Corretta: i sulfamidici competono con il PABA nella via del folato, riducendo la disponibilità di tetraidrofolato e quindi la sintesi di purine e timidilato.",
+      "Errata: gli aminoglicosidi agiscono soprattutto sulla subunità 30S del ribosoma batterico e alterano la traduzione proteica."
+    ]
+  },
+  "m12": {
+    "summary": "Un'infezione esogena deriva dall'acquisizione di un agente infettivo proveniente dall'esterno dell'organismo.",
+    "reasons": [
+      "Errata: un'infezione dovuta al microbiota intestinale dell'ospite, se questo prolifera o raggiunge un sito anomalo, è tipicamente endogena.",
+      "Corretta: nelle infezioni esogene il microrganismo arriva da una sorgente esterna tramite vie come respiratoria, alimentare, sessuale, traumatica o inoculazione.",
+      "Errata: la mutazione del microbiota non è il criterio che definisce un'infezione esogena; il punto determinante è la provenienza esterna dell'agente.",
+      "Errata: un'infezione esogena può essere sintomatica o asintomatica, quindi l'assenza di sintomi non la definisce."
+    ]
+  },
+  "m13": {
+    "summary": "Le infezioni endogene originano da microrganismi già presenti nell'ospite che proliferano eccessivamente o vengono dislocati in una sede normalmente non colonizzata.",
+    "reasons": [
+      "Corretta: dismicrobismo, immunodepressione o trasferimento del microbiota in un distretto sterile possono trasformare un commensale in causa di infezione endogena.",
+      "Errata: acquisire un nuovo microrganismo dall'ambiente corrisponde a un'infezione esogena.",
+      "Errata: la trasmissione mediante vettore introduce un agente dall'esterno e rientra nelle infezioni esogene.",
+      "Errata: anche l'acquisizione per aerosol è una modalità esogena perché il patogeno proviene da una sorgente esterna."
+    ]
+  },
+  "m14": {
+    "summary": "La caratteristica distintiva dell'infezione endogena è l'origine del patogeno dal microbiota già presente nell'ospite; l'acquisizione di un nuovo patogeno dall'esterno è invece esogena.",
+    "reasons": [
+      "Errata come risposta alla domanda: la sovracrescita di una specie residente è un meccanismo tipico di infezione endogena.",
+      "Errata come risposta alla domanda: il trasferimento della flora residente in un distretto sterile è un classico meccanismo endogeno.",
+      "Corretta: acquisire un nuovo patogeno da una sorgente esterna definisce un'infezione esogena e quindi NON rappresenta un meccanismo endogeno.",
+      "Errata come risposta alla domanda: l'alterazione dell'equilibrio del microbiota può favorire la crescita di specie già residenti e provocare infezione endogena."
+    ]
+  },
+  "m15": {
+    "summary": "Il ciclo replicativo virale procede in modo generale attraverso attacco/adsorbimento, ingresso e scapsidazione, sintesi del genoma e delle proteine, assemblaggio dei virioni e liberazione.",
+    "reasons": [
+      "Corretta: il virus deve prima riconoscere la cellula e penetrarvi; solo dopo l'uncoating può esprimere e replicare il genoma, assemblare nuovi virioni e liberarli.",
+      "Errata: l'assemblaggio non può precedere adsorbimento e sintesi perché richiede componenti virali neoformati nella cellula infetta.",
+      "Errata: la liberazione è una fase finale del ciclo e non può precedere l'adsorbimento e la replicazione nella cellula ospite.",
+      "Errata: la sintesi virale presuppone che il virione abbia già riconosciuto, penetrato e reso disponibile il proprio genoma nella cellula."
+    ]
+  },
+  "m16": {
+    "summary": "I virus sono entità biologiche acellulari/subcellulari prive di metabolismo autonomo e dipendono obbligatoriamente da cellule viventi per la loro replicazione.",
+    "reasons": [
+      "Errata: un virus non è una cellula procariotica; non possiede la tipica organizzazione di un batterio.",
+      "Errata: un virus non è una cellula eucariotica microscopica e non dispone di nucleo e organelli propri.",
+      "Errata: il termine batterio intracellulare facoltativo descrive alcuni batteri, mentre i virus costituiscono una categoria biologica distinta.",
+      "Corretta: il virus possiede un genoma e strutture virali ma necessita dell'apparato biosintetico della cellula ospite, risultando un parassita intracellulare obbligato."
+    ]
+  },
+  "m17": {
+    "summary": "Un virione contiene un solo tipo di acido nucleico genomico, DNA oppure RNA, protetto da un capside proteico e, in alcune famiglie, da un envelope lipidico esterno.",
+    "reasons": [
+      "Corretta: genoma, capside e possibile envelope sono gli elementi fondamentali della struttura virale; il genoma può essere DNA oppure RNA a seconda della famiglia.",
+      "Errata: i virus non possiedono contemporaneamente DNA e RNA come materiale genomico funzionale del virione.",
+      "Errata: il peptidoglicano è un componente della parete batterica e non costituisce una parete universale dei virus.",
+      "Errata: i virus non possiedono un metabolismo energetico autonomo e dipendono dalla cellula ospite per la biosintesi."
+    ]
+  },
+  "m18": {
+    "summary": "Le strutture virali di attacco, chiamate negli appunti antirecettori, sono proteine superficiali del capside nei virus nudi o glicoproteine dell'envelope nei virus rivestiti.",
+    "reasons": [
+      "Errata: il genoma codifica le proteine virali ma non rappresenta la struttura fisicamente esposta che si lega al recettore della cellula bersaglio.",
+      "Errata: il recettore è sulla cellula ospite; l'antirecettore, secondo la terminologia degli appunti, appartiene invece al virione.",
+      "Errata: i virus non possiedono ribosomi propri, quindi non esistono ribosomi virali con funzione di adesione.",
+      "Corretta: le proteine capsidiche o le glicoproteine dell'envelope riconoscono specifici recettori cellulari e determinano la sensibilità della cellula all'infezione."
+    ]
+  },
+  "m19": {
+    "summary": "I genomi virali sono molto diversi: possono essere costituiti da DNA o RNA, a singolo o doppio filamento e con organizzazioni differenti secondo la famiglia virale.",
+    "reasons": [
+      "Errata: esistono virus a DNA sia bicatenario sia monocatenario, quindi il DNA virale non è sempre a doppia catena.",
+      "Errata: esistono anche virus a RNA bicatenario, oltre ai numerosi virus a RNA monocatenario.",
+      "Errata: tipo di acido nucleico e simmetria del capside sono caratteristiche distinte; non tutti i virus a DNA possiedono capside elicoidale.",
+      "Corretta: la classificazione virale riconosce differenti configurazioni genomiche di DNA e RNA, che determinano strategie replicative diverse."
+    ]
+  },
+  "m20": {
+    "summary": "Orthomyxoviridae è una famiglia di virus a RNA che comprende i virus influenzali.",
+    "reasons": [
+      "Corretta: il suffisso -viridae identifica una famiglia virale e Orthomyxoviridae comprende i generi dei virus dell'influenza.",
+      "Errata: Orthomyxoviridae non è il nome di una molecola farmacologica o di una classe di antibiotici.",
+      "Errata: non è una specie batterica, perché appartiene alla tassonomia dei virus.",
+      "Errata: non indica un micete; i funghi appartengono a organismi eucarioti e seguono una classificazione diversa."
+    ]
+  },
+  "m21": {
+    "summary": "Nelle infezioni virali restrittive o latenti il genoma può persistere nella cellula senza una produzione continua di virioni; l'espressione virale dipende dalla permissività e dallo stato cellulare.",
+    "reasons": [
+      "Errata: una replicazione produttiva continua in qualsiasi cellula presupporrebbe completa permissività e non corrisponde alla restrizione o alla latenza.",
+      "Errata: nella latenza il genoma virale persiste proprio nella cellula o nell'ospite, anche quando la produzione di nuovi virioni è assente o minima.",
+      "Errata: i virus non si replicano autonomamente in ambiente extracellulare; necessitano della cellula ospite.",
+      "Corretta: la persistenza del genoma con espressione limitata o condizionata dallo stato permissivo della cellula descrive il concetto didattico di infezione restrittiva/latente."
+    ]
+  },
+  "m22": {
+    "summary": "Un'infezione virale persistente è caratterizzata dalla presenza prolungata del virus o del suo genoma nell'ospite, con replicazione continua, intermittente o a basso livello a seconda dell'agente.",
+    "reasons": [
+      "Corretta: la persistenza implica che l'infezione non venga eliminata rapidamente e che virus o genoma rimangano a lungo nell'ospite.",
+      "Errata: la scomparsa entro poche ore descriverebbe un evento transitorio e non una persistenza virale.",
+      "Errata: il materiale virale può essere rilevabile con metodiche appropriate anche nelle infezioni persistenti, sebbene quantità ed espressione possano variare.",
+      "Errata: molte infezioni persistenti non provocano lisi cellulare immediata e possono mantenersi con produzione virale lenta o episodica."
+    ]
+  },
+  "m23": {
+    "summary": "I virus influenzali appartengono alla famiglia Orthomyxoviridae.",
+    "reasons": [
+      "Errata: il virus del morbillo appartiene ai Paramyxoviridae, non agli Orthomyxoviridae.",
+      "Errata: il virus dell'epatite B appartiene agli Hepadnaviridae.",
+      "Errata: il virus della rosolia non appartiene agli Orthomyxoviridae.",
+      "Corretta: i virus dell'influenza sono orthomyxovirus, caratterizzati tra l'altro da genoma a RNA segmentato."
+    ]
+  },
+  "m24": {
+    "summary": "La diagnostica virologica diretta ricerca il virus o suoi componenti; la PCR/NAAT identifica direttamente sequenze di acido nucleico virale nel campione.",
+    "reasons": [
+      "Errata: il dosaggio delle IgG valuta anticorpi prodotti dall'ospite ed è quindi un approccio sierologico indiretto.",
+      "Errata: la sieroconversione documenta la comparsa/aumento di anticorpi specifici e rappresenta una risposta dell'ospite, non il rilevamento diretto del virus.",
+      "Errata: il test di avidità studia caratteristiche degli anticorpi e viene usato per interpretare temporalmente alcune infezioni, ma resta diagnostica indiretta.",
+      "Corretta: PCR e altre NAAT amplificano e rilevano direttamente il genoma virale presente nel campione clinico."
+    ]
+  },
+  "m25": {
+    "summary": "L'infezione richiede la presenza attiva dell'agente nell'ospite con ingresso e moltiplicazione; non coincide con semplice esposizione o contaminazione e può essere sintomatica oppure asintomatica.",
+    "reasons": [
+      "Errata: un contatto momentaneo con un microrganismo può non determinare ingresso, replicazione o risposta dell'ospite e quindi non equivale automaticamente a infezione.",
+      "Errata: microrganismi presenti su una superficie inanimata definiscono contaminazione ambientale, non infezione dell'ospite.",
+      "Corretta: l'ingresso e la moltiplicazione dell'agente nell'ospite costituiscono il nucleo del concetto di infezione, che può manifestarsi clinicamente oppure restare asintomatica.",
+      "Errata: la febbre è un possibile segno sistemico di infezione ma non è obbligatoria e molte infezioni decorrono senza febbre."
+    ]
+  },
+  "m26": {
+    "summary": "I vaccini vivi attenuati mantengono il microrganismo vitale ma ne riducono la virulenza, consentendo una replicazione limitata capace di indurre una risposta immunitaria efficace.",
+    "reasons": [
+      "Errata: gli anticorpi preformati sono usati nell'immunizzazione passiva, non costituiscono un vaccino vivo attenuato.",
+      "Errata: un vaccino vivo attenuato contiene antigeni perché il microrganismo stesso esprime numerose strutture antigeniche riconosciute dal sistema immunitario.",
+      "Corretta: la vitalità con attenuazione della patogenicità permette di mimare alcuni aspetti dell'infezione senza mantenere la piena virulenza del ceppo naturale.",
+      "Errata: gli antibiotici sono farmaci contro i batteri e non costituiscono il materiale immunogeno di un vaccino vivo."
+    ]
+  },
+  "m27": {
+    "summary": "Nella maggior parte dei batteri il cromosoma principale è una molecola di DNA bicatenario generalmente circolare localizzata nel nucleoide, senza membrana nucleare.",
+    "reasons": [
+      "Errata: il cromosoma batterico principale è costituito da DNA, non da RNA monocatenario.",
+      "Corretta: i batteri sono procarioti e il loro DNA cromosomico è tipicamente bicatenario e circolare, concentrato nella regione del nucleoide.",
+      "Errata: i batteri non possiedono un vero nucleo delimitato da membrana, caratteristica propria delle cellule eucariotiche.",
+      "Errata: i batteri non possiedono mitocondri; inoltre il loro cromosoma non è costituito da RNA bicatenario."
+    ]
+  },
+  "m28": {
+    "summary": "La diagnostica microbiologica diretta dimostra il microrganismo o una sua componente mediante coltura, rilevazione antigenica o identificazione di acidi nucleici.",
+    "reasons": [
+      "Errata: le IgG sono anticorpi dell'ospite e il loro dosaggio costituisce diagnostica indiretta sierologica.",
+      "Errata: l'anamnesi orienta il sospetto clinico ma non dimostra direttamente la presenza dell'agente eziologico.",
+      "Corretta: coltura, antigeni e test molecolari ricercano direttamente il patogeno o suoi costituenti nel materiale biologico.",
+      "Errata: i sintomi possono essere compatibili con molte malattie e da soli non identificano direttamente il microrganismo responsabile."
+    ]
+  },
+  "m29": {
+    "summary": "Miceti, protozoi e alghe microscopiche sono microrganismi eucarioti, dotati di nucleo delimitato da membrana e organelli intracellulari.",
+    "reasons": [
+      "Errata: batteri e cianobatteri hanno organizzazione procariotica.",
+      "Corretta: funghi, protozoi e alghe sono gruppi eucariotici e possono comprendere forme microscopiche di interesse microbiologico.",
+      "Errata: virus e batteriofagi sono entità acellulari e non cellule eucariotiche.",
+      "Errata: gli archei sono procarioti e quindi non costituiscono un gruppo di microrganismi eucarioti."
+    ]
+  },
+  "m30": {
+    "summary": "La cellula eucariotica si distingue dalla cellula batterica soprattutto per la presenza di un vero nucleo delimitato da membrana e di organelli membranosi.",
+    "reasons": [
+      "Errata: sia cellule eucariotiche sia batteri possiedono DNA, quindi la sua semplice presenza non distingue i due tipi cellulari.",
+      "Corretta: nucleo membranoso, mitocondri, reticolo endoplasmatico e apparato di Golgi sono caratteristiche dell'organizzazione eucariotica assenti nei batteri.",
+      "Errata: entrambe le categorie possiedono ribosomi, sebbene con caratteristiche strutturali differenti.",
+      "Errata: sia batteri sia cellule eucariotiche possiedono una membrana citoplasmatica."
+    ]
+  },
+  "m31": {
+    "summary": "Un'infezione endogena può insorgere quando il microbiota residente prolifera eccessivamente o viene trasferito in un distretto normalmente sterile.",
+    "reasons": [
+      "Errata: la puntura di una zanzara infetta introduce dall'esterno un agente trasmesso da vettore e rappresenta una modalità esogena.",
+      "Errata: l'inalazione di un patogeno proveniente dall'ambiente o da un altro individuo è una modalità di infezione esogena.",
+      "Errata: il morso di un animale introduce materiale infetto da una sorgente esterna e non definisce infezione endogena.",
+      "Corretta: microrganismi già presenti nell'ospite possono diventare patogeni se cambiano sede o aumentano eccessivamente in seguito a disbiosi o riduzione delle difese."
+    ]
+  },
+  "m32": {
+    "summary": "La patogenicità è la capacità di una specie o di un microrganismo di provocare malattia nell'ospite; i fattori di virulenza determinano quanto efficacemente questa capacità si esprime.",
+    "reasons": [
+      "Errata: la produzione di tossine è solo uno dei possibili meccanismi di patogenicità, insieme ad adesione, invasione ed evasione immunitaria.",
+      "Corretta: per definizione la patogenicità indica la capacità di causare un processo morboso nell'ospite suscettibile.",
+      "Errata: la velocità di crescita in coltura è una caratteristica biologica del ceppo ma non definisce da sola la patogenicità.",
+      "Errata: la resistenza agli antibiotici può rendere più difficile il trattamento ma non coincide con la capacità intrinseca di provocare malattia."
+    ]
+  },
+  "m33": {
+    "summary": "La MIC, Minimum Inhibitory Concentration, è la più bassa concentrazione di un antimicrobico che in condizioni standardizzate impedisce la crescita visibile del microrganismo.",
+    "reasons": [
+      "Errata: la MIC non misura una concentrazione infettante né quantifica la dose di microrganismi necessaria a causare infezione.",
+      "Errata: il concetto di inoculo riguarda il numero di microrganismi introdotti nel test o nell'ospite, non la concentrazione dell'antibiotico.",
+      "Corretta: la MIC è un parametro quantitativo di sensibilità in vitro e corrisponde alla minima concentrazione che inibisce la crescita visibile.",
+      "Errata: la massima dose tollerata riguarda la sicurezza farmacologica nell'ospite e non la suscettibilità microbiologica del patogeno."
+    ]
+  },
+  "m34": {
+    "summary": "L'endotossina dei batteri Gram-negativi corrisponde al lipopolisaccaride della membrana esterna; la sua attività tossica è attribuita principalmente alla porzione Lipide A.",
+    "reasons": [
+      "Corretta: il Lipide A ancora l'LPS alla membrana esterna ed è la porzione responsabile della maggior parte degli effetti endotossici e dell'attivazione infiammatoria sistemica.",
+      "Errata: gli acidi teicoici sono componenti caratteristici soprattutto della parete dei Gram-positivi e non costituiscono l'endotossina dei Gram-negativi.",
+      "Errata: il peptidoglicano è presente nella parete batterica ma non rappresenta la porzione tossica principale dell'LPS.",
+      "Errata: la capsula può avere importanti funzioni di virulenza, soprattutto antifagocitarie, ma non è la componente endotossica principale dei Gram-negativi."
+    ]
+  },
+  "m35": {
+    "summary": "I plasmidi sono elementi genetici accessori, per lo più molecole di DNA bicatenario circolare extracromosomico, capaci di replicarsi autonomamente rispetto al cromosoma batterico.",
+    "reasons": [
+      "Corretta: i plasmidi possono trasportare geni accessori, per esempio di antibiotico-resistenza, virulenza o metabolismo, e replicarsi indipendentemente dal cromosoma.",
+      "Errata: i plasmidi non sono organelli eucariotici ma elementi genetici presenti soprattutto nei procarioti.",
+      "Errata: nella forma classica i plasmidi sono costituiti da DNA, non esclusivamente da RNA.",
+      "Errata: i virus che infettano i batteri sono batteriofagi, strutturalmente e biologicamente distinti dai plasmidi."
+    ]
+  },
+  "m36": {
+    "summary": "Plasmidi, batteriofagi e trasposoni favoriscono la plasticità del genoma batterico trasferendo, mobilizzando o ricombinando geni, inclusi determinanti di resistenza e virulenza.",
+    "reasons": [
+      "Errata: i batteri non possiedono mitocondri e questi organelli non spiegano la loro variabilità genetica.",
+      "Errata: i lisosomi sono organelli eucariotici assenti nella cellula batterica.",
+      "Errata: l'apparato di Golgi è un organello eucariotico e non partecipa alla variabilità genetica dei batteri.",
+      "Corretta: plasmidi, fagi e trasposoni possono veicolare o spostare materiale genetico e sono centrali nei fenomeni di trasferimento genico orizzontale e ricombinazione."
+    ]
+  },
+  "m37": {
+    "summary": "Il peptidoglicano, o mureina, forma una rete rigida esterna alla membrana citoplasmatica che conferisce forma e resistenza alla pressione osmotica alla maggior parte dei batteri.",
+    "reasons": [
+      "Corretta: il peptidoglicano è costituito da catene di N-acetilglucosamina e N-acetilmuramico reticolate da peptidi ed è il principale elemento meccanico della parete batterica.",
+      "Errata: il colesterolo è un lipide di membrana tipico delle cellule eucariotiche e non costituisce la parete rigida della maggior parte dei batteri.",
+      "Errata: la cellulosa è un polimero strutturale tipico delle pareti vegetali, non il principale componente della parete batterica.",
+      "Errata: la chitina è caratteristica soprattutto della parete dei funghi e di strutture di alcuni animali, non della parete batterica."
+    ]
+  },
+  "m38": {
+    "summary": "La capsula batterica può aumentare la virulenza ostacolando il riconoscimento, l'opsonizzazione e la fagocitosi da parte delle cellule immunitarie.",
+    "reasons": [
+      "Errata: la sintesi di ATP avviene tramite processi metabolici e membrane batteriche, non è la funzione principale della capsula.",
+      "Corretta: molte capsule polisaccaridiche mascherano strutture superficiali e riducono l'efficienza della fagocitosi, favorendo la sopravvivenza del batterio nell'ospite.",
+      "Errata: la replicazione cromosomica dipende dall'apparato di replicazione del DNA e non dalla capsula esterna.",
+      "Errata: i ribosomi sono complessi ribonucleoproteici citoplasmatici e non sono costituiti dalla capsula."
+    ]
+  },
+  "m39": {
+    "summary": "Nel significato microbiologico tradizionale, un organismo saprofita utilizza sostanza organica morta o in decomposizione come fonte di nutrienti e vive prevalentemente nell'ambiente.",
+    "reasons": [
+      "Errata: vivere esclusivamente nel sangue descriverebbe una forte specializzazione parassitaria e non il saprofitismo.",
+      "Errata: un saprofita non è per definizione un patogeno obbligato e in genere trae nutrienti da materiale organico non vivente.",
+      "Errata: la replicazione esclusivamente intracellulare è tipica dei parassiti intracellulari obbligati, non dei saprofiti.",
+      "Corretta: il termine saprofita indica classicamente organismi che ricavano nutrienti dalla decomposizione di materia organica morta."
+    ]
+  },
+  "m40": {
+    "summary": "L'endospora è una struttura di sopravvivenza metabolicamente quiescente, fortemente disidratata e molto resistente, prodotta solo da alcuni batteri quando l'ambiente diventa sfavorevole.",
+    "reasons": [
+      "Errata: la sporulazione batterica non è un meccanismo di riproduzione sessuata e non aumenta il numero di individui; una cellula forma una spora da cui può tornare una cellula vegetativa.",
+      "Errata: la capsula è una struttura superficiale distinta e non tutti i batteri producono endospore.",
+      "Corretta: l'endospora consente a generi come Bacillus e Clostridium di sopravvivere a calore, essiccamento, radiazioni e altre condizioni avverse mantenendo attività metabolica minima o assente.",
+      "Errata: un virus che infetta i batteri è un batteriofago, mentre l'endospora è una struttura differenziata prodotta dalla stessa cellula batterica."
+    ]
+  }
+}
