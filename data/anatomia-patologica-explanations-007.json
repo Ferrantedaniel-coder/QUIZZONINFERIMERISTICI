@@ -1,0 +1,362 @@
+{
+  "a41": {
+    "summary": "L'autopsia clinico-patologica ha anche una finalità scientifica: permette di correlare reperti e storia clinica, contribuendo alla conoscenza dell'evoluzione, della patomorfosi e dell'epidemiologia delle malattie.",
+    "reasons": [
+      "Errata: la determinazione dei costi di ricovero è un'attività amministrativa e non rappresenta una finalità scientifica dell'autopsia.",
+      "Errata: dopo il decesso non si prescrive una terapia al paziente; l'autopsia serve a chiarire diagnosi, cause e meccanismi di malattia.",
+      "Corretta: il riscontro autoptico può ampliare le conoscenze sull'evoluzione delle patologie, sulla loro distribuzione e sulla concordanza tra diagnosi clinica e anatomo-patologica.",
+      "Errata: l'autopsia integra e verifica i dati clinici, ma non sostituisce l'esame clinico svolto durante la vita del paziente."
+    ]
+  },
+  "a42": {
+    "summary": "La patomorfosi indica il cambiamento nel tempo del modo in cui una malattia si manifesta, evolve e viene osservata, anche per effetto di terapie, prevenzione e mutamenti epidemiologici.",
+    "reasons": [
+      "Corretta: il termine descrive la modificazione nel tempo della presentazione e dell'evoluzione di una malattia.",
+      "Errata: la fissazione è una procedura tecnica di conservazione del campione e non coincide con la patomorfosi.",
+      "Errata: la patomorfosi presuppone una malattia e le sue modificazioni, non l'assenza di patologia.",
+      "Errata: l'inizio della putrefazione è un fenomeno cadaverico trasformativo, non una variazione della presentazione clinico-patologica di una malattia."
+    ]
+  },
+  "a43": {
+    "summary": "La richiesta di riscontro diagnostico deve consentire identificazione certa del deceduto e corretta correlazione anatomo-clinica, includendo dati anagrafici, informazioni sul decesso, quadro clinico e identificazione del richiedente.",
+    "reasons": [
+      "Errata: il solo indirizzo non identifica in modo sufficiente il caso né fornisce le informazioni cliniche necessarie.",
+      "Corretta: dati anagrafici, data e ora del decesso, notizie cliniche e firma del richiedente sono elementi pertinenti per tracciabilità e interpretazione del riscontro.",
+      "Errata: il gruppo sanguigno può essere rilevante in altri contesti, ma da solo non è sufficiente per una richiesta autoptica.",
+      "Errata: il peso della salma è un possibile dato descrittivo, ma non sostituisce identificazione e informazioni cliniche."
+    ]
+  },
+  "a44": {
+    "summary": "Se durante un riscontro diagnostico emergono elementi compatibili con una morte di possibile interesse giudiziario, il caso deve essere gestito secondo le procedure medico-legali e con coinvolgimento dell'autorità competente.",
+    "reasons": [
+      "Errata: ignorare reperti potenzialmente rilevanti sul piano giudiziario sarebbe incompatibile con gli obblighi professionali e procedurali.",
+      "Errata: proseguire senza comunicazioni può compromettere l'integrità degli accertamenti medico-legali e la corretta gestione del caso.",
+      "Errata: i familiari non sostituiscono l'autorità competente nelle decisioni giudiziarie relative a una possibile morte da reato.",
+      "Corretta: in presenza di elementi sospetti il riscontro deve essere sospeso o rimodulato secondo le procedure previste e deve essere attivata la comunicazione all'autorità competente."
+    ]
+  },
+  "a45": {
+    "summary": "La tanatologia studia la morte, i processi che la accompagnano e le modificazioni post-mortali del cadavere.",
+    "reasons": [
+      "Corretta: la tanatologia comprende lo studio della morte e dei fenomeni cadaverici immediati, successivi e trasformativi.",
+      "Errata: i tumori benigni rientrano nella patologia neoplastica, non definiscono l'oggetto della tanatologia.",
+      "Errata: lo studio dei batteri appartiene alla microbiologia; alcuni microrganismi intervengono nella putrefazione, ma non esauriscono la tanatologia.",
+      "Errata: la farmacocinetica studia assorbimento, distribuzione, metabolismo ed eliminazione dei farmaci."
+    ]
+  },
+  "a46": {
+    "summary": "La citologia valuta soprattutto la morfologia delle singole cellule e dei piccoli aggregati cellulari, con attenzione a nucleo, citoplasma, rapporto N/C, cromatina e disposizione cellulare.",
+    "reasons": [
+      "Errata: la struttura complessiva di un organo e l'architettura tissutale sono valutate soprattutto mediante istologia.",
+      "Corretta: l'esame citologico studia principalmente le caratteristiche morfologiche delle cellule normali e patologiche.",
+      "Errata: la citologia non è limitata ai cromosomi in metafase; questo appartiene più propriamente alla citogenetica.",
+      "Errata: i vasi sanguigni possono comparire in alcuni campioni, ma non costituiscono l'oggetto esclusivo dell'esame citologico."
+    ]
+  },
+  "a47": {
+    "summary": "La citologia può offrire un campionamento non invasivo o poco invasivo, spesso ripetibile, rapido e relativamente economico; il principale compromesso è la minore informazione architetturale rispetto all'istologia.",
+    "reasons": [
+      "Errata: la citologia non conserva sempre l'intera architettura del tessuto; questo è proprio uno dei suoi principali limiti rispetto all'istologia.",
+      "Errata: sensibilità e accuratezza dipendono da sede, tipo di lesione, qualità del campione e quesito diagnostico; la citologia non è sempre più sensibile dell'istologia.",
+      "Errata: raccolta, preparazione e interpretazione richiedono competenza tecnica e specialistica.",
+      "Corretta: urine, espettorato, brushing e agoaspirati possono essere meno invasivi, ripetibili e relativamente economici rispetto a una biopsia tissutale."
+    ]
+  },
+  "a48": {
+    "summary": "Il limite fondamentale della citologia è la ridotta possibilità di valutare l'architettura del tessuto e i rapporti tra cellule, stroma e strutture circostanti.",
+    "reasons": [
+      "Errata: la citologia nasce proprio per osservare cellule e loro caratteristiche morfologiche.",
+      "Errata: i preparati citologici possono essere colorati con numerose metodiche, tra cui Papanicolaou e colorazioni rapide.",
+      "Corretta: la citologia fornisce informazioni cellulari eccellenti ma, rispetto all'istologia, conserva in modo molto più limitato l'architettura tissutale.",
+      "Errata: la citologia può essere impiegata nel follow-up, per esempio nella sorveglianza di alcune neoplasie uroteliali."
+    ]
+  },
+  "a49": {
+    "summary": "La citologia esfoliativa studia cellule che si distaccano spontaneamente da superfici epiteliali e si ritrovano in liquidi, secrezioni o escreti.",
+    "reasons": [
+      "Corretta: urine, espettorato e versamenti possono contenere cellule spontaneamente esfoliate e quindi essere analizzati citologicamente.",
+      "Errata: il tessuto muscolare è un tessuto e non definisce la citologia esfoliativa.",
+      "Errata: i frammenti chirurgici vengono normalmente studiati istologicamente perché conservano l'architettura.",
+      "Errata: il bisturi serve a prelievi tissutali; la citologia esfoliativa non richiede necessariamente un taglio chirurgico."
+    ]
+  },
+  "a50": {
+    "summary": "Le urine sono un classico materiale di citologia esfoliativa perché contengono cellule uroteliali e altre cellule che si distaccano spontaneamente nelle vie urinarie.",
+    "reasons": [
+      "Errata: una gastrectomia è un pezzo operatorio destinato all'esame istologico.",
+      "Errata: una biopsia epatica è un campione tissutale e quindi viene valutata istologicamente.",
+      "Corretta: le urine raccolgono cellule spontaneamente esfoliate dall'urotelio e sono un materiale citologico tipico.",
+      "Errata: una colectomia è una resezione chirurgica di tessuto e viene studiata istologicamente."
+    ]
+  },
+  "a51": {
+    "summary": "La citologia agoaspirativa o FNA utilizza un ago sottile per ottenere cellule e piccoli aggregati cellulari da una lesione, con valutazione prevalentemente citomorfologica.",
+    "reasons": [
+      "Errata: la rimozione dell'intero organo è una procedura chirurgica e non un agoaspirato.",
+      "Corretta: l'ago sottile viene introdotto nella lesione per aspirare materiale cellulare da strisciare o processare per l'esame citologico.",
+      "Errata: un lavaggio di cavità è una diversa tecnica di raccolta citologica e non coincide con l'agoaspirazione della lesione.",
+      "Errata: un normale prelievo di sangue venoso non rappresenta un agoaspirato di una lesione."
+    ]
+  },
+  "a52": {
+    "summary": "Le lesioni profonde o non palpabili vengono spesso campionate con ago sotto guida ecografica o TC per raggiungere con precisione il bersaglio e ridurre il rischio di prelievo non rappresentativo.",
+    "reasons": [
+      "Errata: una lesione profonda deve essere localizzata per aumentare precisione e sicurezza del prelievo.",
+      "Errata: la sola palpazione è possibile per lesioni superficiali e palpabili, non per molte lesioni profonde.",
+      "Errata: l'anestesia generale non è sempre necessaria per un agoaspirato; la procedura dipende da sede, paziente e tecnica.",
+      "Corretta: ecografia e TC consentono di guidare l'ago verso lesioni profonde o non palpabili."
+    ]
+  },
+  "a53": {
+    "summary": "La qualità dello striscio citologico dipende da rapidità di allestimento, adeguata distribuzione del materiale e prevenzione di essiccamento, schiacciamento e altri artefatti.",
+    "reasons": [
+      "Errata: ritardare per ore l'allestimento favorisce degenerazione e perdita del dettaglio morfologico.",
+      "Errata: una pressione eccessiva può produrre artefatti da schiacciamento e danneggiare le cellule.",
+      "Corretta: preparare rapidamente il campione e manipolarlo delicatamente aiuta a preservare nucleo e citoplasma per una lettura affidabile.",
+      "Errata: distruggere le cellule renderebbe il campione inutilizzabile per la diagnosi."
+    ]
+  },
+  "a54": {
+    "summary": "Nel protocollo didattico del corso si preferisce una minzione successiva alla prima del mattino, perché l'urina rimasta a lungo in vescica può contenere cellule più degenerate; i protocolli operativi possono comunque variare tra laboratori.",
+    "reasons": [
+      "Corretta: gli appunti indicano la seconda minzione del mattino come campione preferibile, evitando la prima urina concentrata rimasta molte ore in vescica.",
+      "Errata: la raccolta delle 24 ore non è il campione indicato nel materiale del corso per la citologia urinaria.",
+      "Errata: il cateterismo è una possibile modalità di raccolta in casi selezionati, ma non è necessario in tutti i pazienti.",
+      "Errata: la primissima urina della notte può presentare maggiore degenerazione cellulare e non è quella preferita nel protocollo riportato."
+    ]
+  },
+  "a55": {
+    "summary": "Nel protocollo riportato negli appunti la raccolta di tre campioni in tre giorni consecutivi serve ad aumentare la probabilità di ottenere cellule diagnostiche; numero e tempistica esatti possono variare nei protocolli moderni dei singoli laboratori.",
+    "reasons": [
+      "Errata: un singolo campione annuale non corrisponde al protocollo diagnostico riportato e può ridurre la probabilità di intercettare cellule esfoliate in modo intermittente.",
+      "Errata: un campione mensile non è la sequenza indicata negli appunti per l'indagine diagnostica.",
+      "Errata: dieci campioni nello stesso giorno non rappresentano il protocollo riportato e non equivalgono a campionamenti ripetuti in giorni diversi.",
+      "Corretta: il materiale del corso indica tre campioni raccolti in tre giornate consecutive per migliorare la rappresentatività del campionamento."
+    ]
+  },
+  "a56": {
+    "summary": "Nel protocollo del corso, nella donna si scarta il primo mitto per ridurre la contaminazione da cellule squamose provenienti dalle basse vie urinarie e dal tratto genitale.",
+    "reasons": [
+      "Errata: lo scopo della manovra non è modificare la concentrazione di glucosio.",
+      "Corretta: le prime urine possono trascinare cellule squamose uretrali e vaginali che aumentano il fondo contaminante del campione.",
+      "Errata: eliminare il primo mitto non rimuove tutti i leucociti e non è questo l'obiettivo della raccolta.",
+      "Errata: la procedura riduce contaminanti cellulari ma non rende l'urina sterile."
+    ]
+  },
+  "a57": {
+    "summary": "Chemioterapia, radioterapia, strumentazioni, calcoli e infiammazione possono produrre alterazioni reattive o degenerative che simulano atipia nella citologia urinaria.",
+    "reasons": [
+      "Corretta: trattamenti citotossici e radiazioni possono modificare dimensioni cellulari, nuclei e cromatina, creando reperti potenzialmente confondenti.",
+      "Errata: l'età può influenzare il contesto clinico ma da sola non spiega le modificazioni citologiche reattive tipiche dei trattamenti.",
+      "Errata: il colore degli occhi non modifica la morfologia uroteliale del campione.",
+      "Errata: l'altezza del paziente non è una causa di atipie citologiche urinarie."
+    ]
+  },
+  "a58": {
+    "summary": "Un campione di espettorato utile alla citologia respiratoria deve provenire dalle basse vie aeree, ottenuto con tosse profonda, e non essere costituito prevalentemente da saliva.",
+    "reasons": [
+      "Corretta: un colpo di tosse profondo permette di raccogliere secrezioni tracheobronchiali contenenti cellule rappresentative delle basse vie respiratorie.",
+      "Errata: la sola saliva contiene soprattutto cellule del cavo orale e rende il campione poco rappresentativo dell'albero bronchiale.",
+      "Errata: le secrezioni nasali provengono dalle alte vie respiratorie.",
+      "Errata: le secrezioni lacrimali non rappresentano materiale delle vie respiratorie inferiori."
+    ]
+  },
+  "a59": {
+    "summary": "Il broncoaspirato è un prelievo citologico ottenuto durante broncoscopia aspirando secrezioni o materiale da una specifica sede dell'albero tracheobronchiale.",
+    "reasons": [
+      "Errata: la puntura lombare serve a ottenere liquido cerebrospinale.",
+      "Errata: la toracentesi preleva liquido pleurico e non materiale bronchiale.",
+      "Corretta: durante broncoscopia il materiale può essere aspirato direttamente da zone bronchiali di interesse.",
+      "Errata: la raccolta di urine appartiene alla citologia urinaria e non alla broncoscopia."
+    ]
+  },
+  "a60": {
+    "summary": "Il broncolavaggio, eseguito tramite broncoscopio, recupera cellule e materiale dalle vie respiratorie distali, comprese porzioni bronchiolari e alveolari.",
+    "reasons": [
+      "Errata: la cute non è la sede campionata dal broncolavaggio.",
+      "Corretta: l'instillazione e successiva aspirazione di soluzione permette di raccogliere materiale dalle porzioni periferiche dell'albero respiratorio.",
+      "Errata: il midollo osseo richiede tecniche di aspirazione o biopsia dedicate.",
+      "Errata: il colon viene studiato con metodiche endoscopiche e bioptiche gastrointestinali, non con broncolavaggio."
+    ]
+  },
+  "a61": {
+    "summary": "Il brushing bronchiale utilizza uno spazzolino introdotto attraverso il broncoscopio per staccare meccanicamente cellule da una zona mirata della mucosa tracheobronchiale.",
+    "reasons": [
+      "Corretta: lo spazzolamento diretto della mucosa consente di raccogliere cellule da una sede bronchiale precisa.",
+      "Errata: l'aspirazione di sangue periferico non è una procedura di brushing.",
+      "Errata: l'espettorato spontaneo è una metodica diversa, non ottenuta con broncoscopio.",
+      "Errata: una biopsia chirurgica a cielo aperto preleva tessuto, non cellule mediante spazzolamento endoscopico."
+    ]
+  },
+  "a62": {
+    "summary": "La citologia dei versamenti sierosi è considerata esfoliativa perché studia cellule libere presenti nel liquido pleurico, pericardico o peritoneale.",
+    "reasons": [
+      "Errata: nell'agoaspirazione l'ago entra direttamente in una lesione; un versamento è invece un liquido di cavità.",
+      "Errata: non si tratta di una resezione tissutale destinata all'istologia.",
+      "Corretta: le cellule presenti nel liquido si sono distaccate dalle superfici o dalle lesioni e vengono analizzate come materiale esfoliato.",
+      "Errata: una biopsia incisionale asporta una porzione di tessuto e non un versamento."
+    ]
+  },
+  "a63": {
+    "summary": "La toracentesi preleva liquido dalla cavità pleurica; il campione può essere sottoposto a citologia per valutare cellule mesoteliali, infiammatorie e neoplastiche.",
+    "reasons": [
+      "Errata: la toracentesi non è un esame della cute.",
+      "Corretta: il liquido pleurico ottenuto mediante toracentesi può essere inviato per esame citologico.",
+      "Errata: la biopsia ossea richiede strumenti e sedi differenti.",
+      "Errata: l'esame urinario utilizza urine, non liquido pleurico."
+    ]
+  },
+  "a64": {
+    "summary": "Secondo la classificazione didattica adottata negli appunti, il washing peritoneale è inserito nella citologia abrasiva perché il lavaggio favorisce meccanicamente il distacco di cellule; la nomenclatura può essere organizzata diversamente in altri testi.",
+    "reasons": [
+      "Errata: l'agoaspirazione richiede l'introduzione di un ago in una lesione, mentre il washing usa un liquido di lavaggio.",
+      "Errata: il washing produce materiale citologico, non una sezione tissutale istologica.",
+      "Errata: la citologia per apposizione deriva dall'impronta diretta di un tessuto su un vetrino.",
+      "Corretta: nel sistema classificativo del corso il lavaggio è considerato una metodica abrasiva perché facilita il distacco cellulare mediante azione meccanica del washing."
+    ]
+  },
+  "a65": {
+    "summary": "Nel sistema didattico del corso il Pap test tradizionale è classificato come citologia abrasiva, perché le cellule cervicali vengono raccolte mediante spatola o brush con distacco meccanico dall'epitelio.",
+    "reasons": [
+      "Errata: il Pap test non asporta chirurgicamente un'intera lesione.",
+      "Corretta: la raccolta con spatola o brush determina il distacco meccanico delle cellule cervicali, perciò negli appunti è inclusa nella citologia abrasiva.",
+      "Errata: non si introduce un ago nella cervice per eseguire un Pap test.",
+      "Errata: il Pap test è un esame citologico e non una sezione istologica congelata."
+    ]
+  },
+  "a66": {
+    "summary": "La colorazione di Papanicolaou è la metodica classica della citologia cervico-vaginale e offre un buon dettaglio nucleare e citoplasmatico.",
+    "reasons": [
+      "Corretta: la colorazione di Papanicolaou è stata sviluppata per la citologia cervicale ed è tuttora una metodica di riferimento.",
+      "Errata: Ziehl-Neelsen è utilizzata soprattutto per micobatteri acido-resistenti.",
+      "Errata: la colorazione di Gram è principalmente batteriologica.",
+      "Errata: Perls evidenzia il ferro e non è la colorazione standard del Pap test."
+    ]
+  },
+  "a67": {
+    "summary": "Il Pap test resta un esame citologico importante, ma nei programmi moderni di screening cervicale l'HPV test molecolare è divenuto il test primario preferito in molte strategie e fasce d'età; intervalli e algoritmi dipendono dal programma nazionale.",
+    "reasons": [
+      "Errata: il Pap test è effettivamente un esame citologico.",
+      "Errata: la citologia cervicale può identificare alterazioni cellulari pre-neoplastiche e neoplastiche.",
+      "Errata: il materiale del Pap test viene raccolto dalla cervice, in particolare dalla zona di trasformazione e dal canale endocervicale secondo la tecnica utilizzata.",
+      "Corretta: le raccomandazioni moderne hanno spostato il fulcro verso il test HPV come screening primario in molte popolazioni, mentre la citologia mantiene ruoli di triage o programmi specifici."
+    ]
+  },
+  "a68": {
+    "summary": "Un aumento del rapporto nucleo/citoplasma è uno dei segni citomorfologici che possono accompagnare atipia o malignità, ma deve essere interpretato insieme a cromatina, contorni nucleari, nucleoli e pattern cellulare.",
+    "reasons": [
+      "Errata: un rapporto N/C aumentato non è un segno esclusivo di normalità.",
+      "Errata: non dimostra una contaminazione batterica e non è specifico per infezione.",
+      "Corretta: molte cellule neoplastiche mostrano nuclei relativamente grandi rispetto al citoplasma, soprattutto insieme ad altre anomalie morfologiche.",
+      "Errata: il reperto non implica obbligatoriamente la presenza di un virus."
+    ]
+  },
+  "a69": {
+    "summary": "Irregolarità dei contorni nucleari, cromatina grossolana, pleomorfismo e mitosi atipiche sono reperti che, nel corretto contesto, aumentano il sospetto di malignità.",
+    "reasons": [
+      "Corretta: la combinazione di atipia nucleare marcata, cromatina anomala e mitosi atipiche è compatibile con una popolazione neoplastica maligna.",
+      "Errata: nuclei piccoli e uniformi in un monostrato ordinato sono più coerenti con una popolazione matura e regolare.",
+      "Errata: un basso rapporto N/C e cromatina fine sono generalmente reperti meno sospetti.",
+      "Errata: perfetta coesione e maturazione uniforme non rappresentano il quadro citologico più suggestivo di malignità."
+    ]
+  },
+  "a70": {
+    "summary": "Un fondo necrotico è costituito da detriti cellulari e materiale amorfo derivati dalla necrosi; può accompagnare tumori ad alto grado ma non è di per sé specifico per malignità.",
+    "reasons": [
+      "Errata: il fondo necrotico è proprio presenza di materiale degradato, non assenza di materiale.",
+      "Errata: non è costituito esclusivamente da eritrociti normali.",
+      "Corretta: il reperto descrive detriti e residui di cellule necrotiche presenti tra le cellule diagnostiche.",
+      "Errata: la presenza di tessuto osseo non definisce un fondo necrotico."
+    ]
+  },
+  "a71": {
+    "summary": "La biopsia è il prelievo di un frammento o di una lesione tissutale per ottenere una diagnosi istologica, preservando caratteristiche cellulari e architetturali.",
+    "reasons": [
+      "Errata: imaging e biopsia sono procedure differenti; la biopsia fornisce materiale biologico da esaminare.",
+      "Corretta: il tessuto prelevato viene fissato, processato e studiato istologicamente per formulare la diagnosi.",
+      "Errata: la biopsia è una procedura diagnostica, non una terapia farmacologica.",
+      "Errata: un semplice campione di sangue non è una biopsia tissutale."
+    ]
+  },
+  "a72": {
+    "summary": "La biopsia incisionale asporta soltanto una parte rappresentativa della lesione, lasciandone una quota in sede, ed è usata quando la rimozione completa non è appropriata come primo atto diagnostico.",
+    "reasons": [
+      "Errata: il prelievo di sole cellule con ago sottile è una citologia agoaspirativa.",
+      "Errata: la biopsia incisionale non comporta necessariamente l'asportazione dell'intero organo.",
+      "Errata: un lavaggio raccoglie cellule o liquido e non costituisce una biopsia incisionale.",
+      "Corretta: viene rimossa una porzione rappresentativa della lesione per consentire l'esame istologico."
+    ]
+  },
+  "a73": {
+    "summary": "La biopsia escissionale rimuove completamente una lesione, generalmente di dimensioni e sede compatibili con un'asportazione diagnostico-terapeutica completa.",
+    "reasons": [
+      "Errata: l'aspirazione di liquido non rimuove una lesione tissutale.",
+      "Errata: il prelievo di una sola porzione corrisponde più propriamente a una biopsia incisionale.",
+      "Corretta: nella biopsia escissionale la lesione viene asportata interamente e poi studiata istologicamente.",
+      "Errata: una colorazione è una fase di laboratorio e non una procedura di prelievo."
+    ]
+  },
+  "a74": {
+    "summary": "L'agobiopsia o core biopsy preleva un cilindro di tessuto e quindi conserva, almeno in parte, i rapporti architetturali; l'agoaspirato raccoglie invece principalmente cellule e piccoli aggregati.",
+    "reasons": [
+      "Errata: il plasma è una componente del sangue e non rappresenta il prodotto tipico di una core biopsy.",
+      "Errata: il prelievo di sole cellule è più tipico dell'agoaspirazione citologica.",
+      "Errata: l'agobiopsia viene eseguita proprio per ottenere materiale diagnostico.",
+      "Corretta: il cilindro tissutale consente di valutare sia la citomorfologia sia parte dell'architettura della lesione."
+    ]
+  },
+  "a75": {
+    "summary": "Negli appunti, l'agobiopsia 'a cielo coperto' indica un prelievo non mirato a una singola massa visibile, utile soprattutto in patologie diffuse dell'organo; oggi la terminologia e le modalità operative dipendono molto dal distretto e dall'imaging disponibile.",
+    "reasons": [
+      "Errata: una lesione superficiale perfettamente visibile può essere campionata direttamente con tecniche più mirate.",
+      "Corretta: nelle patologie diffuse il campione può essere ottenuto senza dover centrare una massa focale specifica, secondo l'impostazione didattica del corso.",
+      "Errata: la tecnica non è limitata esclusivamente ai tumori cutanei.",
+      "Errata: un versamento pleurico è un campione liquido citologico e non l'indicazione tipica di una core biopsy a cielo coperto."
+    ]
+  },
+  "a76": {
+    "summary": "La biopsia stereotassica utilizza coordinate tridimensionali ottenute dall'imaging per guidare con elevata precisione un ago verso una lesione profonda o di piccole dimensioni.",
+    "reasons": [
+      "Corretta: la stereotassi ricostruisce la posizione della lesione nello spazio e permette un campionamento estremamente mirato.",
+      "Errata: la caratteristica della stereotassi è proprio evitare un prelievo casuale.",
+      "Errata: la procedura richiede una guida strumentale basata su imaging e coordinate.",
+      "Errata: non è una tecnica destinata al sangue periferico."
+    ]
+  },
+  "a77": {
+    "summary": "Le biopsie endoscopiche gastrointestinali devono essere fissate tempestivamente in formalina neutra tamponata e identificate con precisione rispetto alla sede, perché orientamento e topografia influenzano l'interpretazione.",
+    "reasons": [
+      "Errata: l'essiccamento produce artefatti e peggiora la conservazione del tessuto.",
+      "Errata: la garza asciutta può disidratare piccoli frammenti e alterarne la morfologia.",
+      "Errata: l'acqua non è un fissativo e non stabilizza le strutture tissutali.",
+      "Corretta: fissazione rapida e corretta identificazione della sede sono essenziali per preservare il campione e interpretarlo nel giusto contesto anatomico."
+    ]
+  },
+  "a78": {
+    "summary": "La biopsia polmonare transparietale, spesso guidata da TC, è particolarmente utile per lesioni periferiche non facilmente raggiungibili con tecniche endobronchiali.",
+    "reasons": [
+      "Corretta: l'accesso attraverso la parete toracica permette di campionare noduli o masse polmonari periferiche.",
+      "Errata: una lesione gastrica viene campionata più tipicamente per via endoscopica digestiva.",
+      "Errata: una lesione uterina richiede tecniche ginecologiche dedicate.",
+      "Errata: una patologia cutanea superficiale può essere biopsiata direttamente senza attraversare la parete toracica."
+    ]
+  },
+  "a79": {
+    "summary": "L'esame intraoperatorio al congelatore fornisce una risposta rapida su quesiti selezionati — natura della lesione, margini, estensione o adeguatezza del campione — quando il risultato può modificare immediatamente la condotta chirurgica.",
+    "reasons": [
+      "Errata: il congelatore non sostituisce l'esame definitivo in paraffina, che offre qualità morfologica superiore e consente ulteriori indagini.",
+      "Errata: lo scopo è precisamente ottenere informazioni diagnostiche utili durante l'intervento.",
+      "Corretta: una risposta rapida può indurre il chirurgo ad ampliare, limitare o modificare la procedura in base al quesito clinico.",
+      "Errata: l'esame al congelatore riguarda tessuto e non esclusivamente sangue."
+    ]
+  },
+  "a80": {
+    "summary": "Il materiale destinato all'esame estemporaneo deve arrivare a fresco e senza fissativo, perché deve essere congelato rapidamente e sezionato al criostato.",
+    "reasons": [
+      "Errata: la formalina fissa il tessuto e impedisce la procedura standard di congelamento rapido richiesta per l'estemporaneo.",
+      "Corretta: il tessuto fresco può essere orientato, congelato e tagliato immediatamente al criostato.",
+      "Errata: l'alcool è un fissativo e non è la modalità standard di invio per una frozen section intraoperatoria.",
+      "Errata: la paraffina richiede processazione più lunga ed è usata per l'esame istologico definitivo, non per la risposta intraoperatoria immediata."
+    ]
+  }
+}
