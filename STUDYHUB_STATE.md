@@ -64,7 +64,7 @@ Per contenuti medici/infermieristici dare priorità ai materiali universitari de
 
 ## 5. Spiegazioni: standard concordato e stato reale
 
-Per **Scienze della Salute**, **Paziente chirurgico** e ora **Anatomia Patologica** lo standard è:
+Per **Scienze della Salute**, **Paziente chirurgico** e **Anatomia Patologica** lo standard è:
 
 - spiegare perché la risposta corretta è giusta;
 - spiegare perché ciascuna delle altre tre è sbagliata;
@@ -135,25 +135,29 @@ Percorsi completi: `data/scienze-salute-explanations-XXX.json`.
 
 Checkpoint dettagliato: `SCIENZE_SALUTE_PROGRESS.md`.
 
-### Anatomia Patologica — IN CORSO 40/300
+### Anatomia Patologica — IN CORSO 80/300
 
-Il lavoro sulle spiegazioni avanzate è iniziato in blocchi controllati da **40 domande**.
+Il lavoro sulle spiegazioni avanzate procede in blocchi controllati da **40 domande**.
 
 Implementazione attiva:
 
 - `anatomia-patologica.html` resta il motore originale e continua a caricare le 12 banche JSON dell'esame;
 - `anatomia-patologica-explanations.js` è un enhancer opzionale fail-safe;
-- `data/anatomia-patologica-explanations-001.json` contiene le spiegazioni avanzate del primo blocco;
-- il rilascio attivo è `pilot1`.
+- `data/anatomia-patologica-explanations-001.json` contiene `m1–m40`;
+- `data/anatomia-patologica-explanations-002.json` contiene `m41–m80`;
+- il rilascio attivo è `pilot2`.
 
 Copertura:
 
 - `m1–m40` → Microbiologia;
-- **totale coperto: 40/300**.
+- `m41–m80` → Microbiologia;
+- **totale coperto: 80/300**.
 
-Il primo blocco è stato costruito usando come base primaria `Microbiologia.pdf` e `Microbiologia compendio.pdf`, con verifica esterna di punti selezionati mediante fonti autorevoli (PubMed/PMC, NCBI/NIH, CDC e letteratura microbiologica pertinente).
+I blocchi sono costruiti usando come base primaria i documenti universitari caricati dall'utente. Per Microbiologia la base principale è costituita da `Microbiologia.pdf` e `Microbiologia compendio.pdf`; i punti sensibili vengono verificati con fonti autorevoli come PubMed/PMC, NCBI/NIH e CDC.
 
-Nel blocco `m1–m40` non sono state modificate domande, opzioni, risposte corrette, ID o topic. Non sono emersi nel controllo preliminare quesiti con risposta corretta chiaramente incompatibile con il materiale universitario e con le fonti autorevoli consultate.
+Nel blocco `m41–m80` sono stati verificati in particolare struttura e metabolismo batterico, endospore, farmacocinetica, meccanismi di resistenza, beta-lattamici/PBP, macrolidi, fluorochinoloni, rifampicina, aminoglicosidi, Gram, Ziehl-Neelsen, micobatteri, Chlamydia, terreni di coltura, raccolta di campioni, emocolture, diagnostica indiretta e sieroconversione.
+
+Nei blocchi `m1–m80` non sono state modificate domande, opzioni, risposte corrette, ID o topic. Non sono emersi quesiti con risposta corretta chiaramente incompatibile con il materiale universitario e con le fonti autorevoli consultate.
 
 L'enhancer Anatomia Patologica:
 
@@ -164,7 +168,7 @@ L'enhancer Anatomia Patologica:
 - arricchisce il feedback soltanto dopo la correzione;
 - se enhancer o dati esplicativi non sono disponibili, mantiene il feedback base `why` senza bloccare il quiz.
 
-**Punto di ripresa Anatomia Patologica: `m41–m80`, 40 domande di Microbiologia.**
+**Punto di ripresa Anatomia Patologica: prossimo blocco da 40 domande = `m81–m100` (20 Microbiologia) + `e1–e20` (20 Eziologia).**
 
 Checkpoint dettagliato: `ANATOMIA_PATOLOGICA_PROGRESS.md`.
 
@@ -181,7 +185,7 @@ File principali:
 - `SCIENZE_SALUTE_PROGRESS.md` — checkpoint specifico Scienze;
 - `anatomia-patologica.html` — runtime Anatomia Patologica e caricamento banca 300 domande;
 - `anatomia-patologica-explanations.js` — enhancer opzionale Anatomia Patologica;
-- `data/anatomia-patologica-explanations-001.json` — spiegazioni avanzate `m1–m40`;
+- `data/anatomia-patologica-explanations-001.json` → `002.json` — spiegazioni avanzate `m1–m80`;
 - `ANATOMIA_PATOLOGICA_PROGRESS.md` — checkpoint specifico Anatomia Patologica;
 - `infermieristica-materno.html`;
 - `paziente-chirurgico.html` — runtime stabile + spiegazioni complete;
@@ -211,9 +215,9 @@ Per revisioni estese di banche o spiegazioni lavorare in **blocchi controllati d
 
 - Paziente chirurgico: spiegazioni complete **462/462**.
 - Scienze della Salute: spiegazioni complete **459/459**.
-- Anatomia Patologica: spiegazioni avanzate **40/300**, completato `m1–m40`, prossimo `m41–m80`.
+- Anatomia Patologica: spiegazioni avanzate **80/300**, completato `m1–m80`; prossimo blocco `m81–m100` + `e1–e20`.
 
-Per Anatomia Patologica mantenere la dimensione di 40 quesiti per blocco seguendo l'ordine reale della banca; l'ultimo blocco può contenere il residuo finale inferiore a 40.
+Per Anatomia Patologica mantenere la dimensione di 40 quesiti per blocco seguendo l'ordine reale complessivo della banca; quando un blocco attraversa una sezione, registrare chiaramente entrambi gli intervalli. L'ultimo blocco può contenere il residuo finale inferiore a 40.
 
 ### Continuità tra chat
 
@@ -232,7 +236,7 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 
 1. **Paziente chirurgico: spiegazioni avanzate complete 462/462 con architettura fail-safe.**
 2. **Scienze della Salute: spiegazioni avanzate complete 459/459 con enhancer opzionale fail-safe.**
-3. **Anatomia Patologica: spiegazioni avanzate 40/300; proseguire da `m41` in blocchi da 40.**
+3. **Anatomia Patologica: spiegazioni avanzate 80/300; prossimo blocco da 40 = `m81–m100` + `e1–e20`.**
 4. Mantenere le banche originali inalterate salvo autorizzazione esplicita.
 5. Gestire eventuali quesiti dubbi o obsoleti come QA separato.
 
