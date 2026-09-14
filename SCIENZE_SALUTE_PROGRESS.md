@@ -23,12 +23,13 @@ La Home principale apre `scienze-salute.html`.
 
 Restano quindi invariati il motore del quiz, la banca, le quattro opzioni, le risposte corrette, le modalità di sessione, il rimescolamento A/B/C/D, punteggio, navigazione, risultato, ripasso errori e `localStorage`.
 
-## Spiegazioni avanzate opzionali - 121/459
+## Spiegazioni avanzate opzionali - 161/459
 
-È ora completato l'intero primo macroargomento:
+Copertura attiva:
 
-- **Infermieristica nell'evoluzione storica: domande banca `1–121` = 121/121**
-- **Copertura avanzata totale attiva: 121/459**
+- **Infermieristica nell'evoluzione storica: domande banca `1–121` = 121/121, COMPLETO**
+- **Epidemiologia: domande banca `122–161` = 40 domande completate**
+- **Copertura avanzata totale attiva: 161/459**
 
 File dati:
 
@@ -37,6 +38,7 @@ File dati:
 - `data/scienze-salute-explanations-003.json` → domande `81–100`
 - `data/scienze-salute-explanations-004.json` → domande `101–120`
 - `data/scienze-salute-explanations-005.json` → domanda `121`
+- `data/scienze-salute-explanations-006.json` → domande `122–161`
 
 Ogni entry contiene:
 
@@ -78,42 +80,28 @@ Non sono stati modificati:
 - risposte corrette;
 - ID e macroargomenti.
 
-Le spiegazioni `1–121` sono state costruite utilizzando i contenuti e il framing già presenti nella banca dell'esame, senza correggere o sostituire silenziosamente il materiale con fonti esterne.
+Le spiegazioni `1–161` sono state costruite utilizzando il contenuto e il framing già presenti nella banca, senza correggere o sostituire silenziosamente domande e soluzioni.
 
-## Commit principali
+## Commit principali recenti
 
-Pilot 1:
+Chiusura primo macroargomento / pilot4:
 
-- Dati spiegazioni `1–40`: `8086e9134391808b777b54d7b01509cc339a848f`
-- Enhancer opzionale iniziale: `6186fd956133ce86ea365efbeb403c345921dcfa`
-- Wrapper iniziale: `60a28bd11f9beeaf33781b58a4f5363174b4b277`
-- Home/cache-busting `pilot1`: `3b9a767222b3e2ca67f90b6c9bc99b1dd870c902`
+- domanda `121`: `fa14048cdf2cce94636594f3d975235b521b5787`
+- enhancer esteso a `121`: `fc77352b9f9a7b38fff8f0200bdad64fd9fa2efb`
+- wrapper `pilot4`: `0a94fc10b09c97b9c52b74f89cf8ac2b3d863c1c`
+- Home `pilot4`: `ead0192c5c6bbd682eb7657114505b134bcf7727`
 
-Pilot 2:
+Epidemiologia primo blocco / pilot5:
 
-- Dati spiegazioni `41–80`: `2c14b9f1770f1a1121c5f921e407c6375fb1c530`
-- Enhancer esteso a `80`: `8fbd9598a32412eed65c996dd80219bf5b301e76`
-- Wrapper/cache enhancer `pilot2`: `33eba477435a8632047d7ac1fb7aec169c243460`
-- Home/cache-busting `pilot2`: `496857823ef7b66cffd178083837d96a9d15ed01`
-
-Pilot 3:
-
-- Dati spiegazioni `81–100`: `52786cd1100130e3a20ac43ce55bb880c0a8a7b7`
-- Dati spiegazioni `101–120`: `ae1156047703551b8fb3d362f7805e0edba0b6ae`
-- Enhancer esteso a `120`: `469f50d4905d4139135a76fdd91eb935b53e0744`
-- Fix escaping enhancer: `6913e0f80297d163873c6e08b92ddba9a9e21e7c`
-- Wrapper/cache enhancer `pilot3`: `ec31a9aed92937b2bf9a23abdd5f57a95ebc6abf`
-- Home/cache-busting `pilot3`: `ab0f4a79b4cf09809c85919e486fa6f22792475d`
-
-Pilot 4 / chiusura primo macroargomento:
-
-- Spiegazione avanzata domanda `121`: `fa14048cdf2cce94636594f3d975235b521b5787`
-- Enhancer esteso a `121`: `fc77352b9f9a7b38fff8f0200bdad64fd9fa2efb`
-- Wrapper/cache enhancer `pilot4`: `0a94fc10b09c97b9c52b74f89cf8ac2b3d863c1c`
-- Home/cache-busting `pilot4`: `ead0192c5c6bbd682eb7657114505b134bcf7727`
+- dati spiegazioni `122–161`: `f99aa5be397c8e704eb925f171cd0b8442311887`
+- enhancer esteso a `161`: `98311a39ec7e54fa2956315789fb6062434fa7e8`
+- wrapper/cache enhancer `pilot5`: `b5611664f4cb3cb2de1281d0ab07c359b5d39b0d`
+- Home/cache-busting `pilot5`: `117c78552e685f3e2983a52fa8101288df74a262`
 
 ## Punto di ripresa
 
 Il macroargomento **Infermieristica nell'evoluzione storica è completo: 121/121**.
 
-Prossimo blocco: **domanda 122**, prima domanda di **Epidemiologia**, mantenendo la stessa architettura opzionale non bloccante e lo stesso standard: spiegare perché la corretta è giusta e perché ciascuna delle altre tre è sbagliata.
+Il primo blocco di **Epidemiologia 122–161** è completo.
+
+Prossimo blocco: **domanda 162**, mantenendo blocchi controllati e lo stesso standard: spiegare perché la corretta è giusta e perché ciascuna delle altre tre è sbagliata.
