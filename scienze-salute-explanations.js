@@ -1,7 +1,7 @@
 (function(){
 'use strict';
-const OPTIONAL_EXPLANATION_FILES=['data/scienze-salute-explanations-001.json','data/scienze-salute-explanations-002.json','data/scienze-salute-explanations-003.json','data/scienze-salute-explanations-004.json','data/scienze-salute-explanations-005.json','data/scienze-salute-explanations-006.json','data/scienze-salute-explanations-007.json','data/scienze-salute-explanations-008.json','data/scienze-salute-explanations-009.json','data/scienze-salute-explanations-010.json'];
-const EXPECTED_ADVANCED=321;
+const OPTIONAL_EXPLANATION_FILES=['data/scienze-salute-explanations-001.json','data/scienze-salute-explanations-002.json','data/scienze-salute-explanations-003.json','data/scienze-salute-explanations-004.json','data/scienze-salute-explanations-005.json','data/scienze-salute-explanations-006.json','data/scienze-salute-explanations-007.json','data/scienze-salute-explanations-008.json','data/scienze-salute-explanations-009.json','data/scienze-salute-explanations-010.json','data/scienze-salute-explanations-011.json'];
+const EXPECTED_ADVANCED=361;
 const ADVANCED_EXPLANATIONS={};
 let feedbackObserver=null;
 
