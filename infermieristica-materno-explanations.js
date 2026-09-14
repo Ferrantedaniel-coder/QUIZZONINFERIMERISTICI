@@ -4,9 +4,12 @@
   const ADVANCED_FILES = [
     "data/materno-explanations-001.json.gz.b64",
     "data/materno-explanations-002.json.gz.b64",
-    "data/materno-explanations-003.json.gz.b64"
+    "data/materno-explanations-003.json.gz.b64",
+    "data/materno-explanations-004.json.gz.b64",
+    "data/materno-explanations-005.json.gz.b64",
+    "data/materno-explanations-006.json.gz.b64"
   ];
-  const EXPECTED_ADVANCED = 120;
+  const EXPECTED_ADVANCED = 240;
   const BY_INDEX = new Map();
   const BY_ID = new Map();
 
@@ -73,14 +76,26 @@
   }
 
   function buildIdMap() {
-    const first = QUESTIONS.slice(0, EXPECTED_ADVANCED);
-    const coherent = first.length === EXPECTED_ADVANCED &&
-      first.every(q => q && q.topic === "Infermieristica Pediatrica");
-    if (!coherent) {
-      console.warn("[Materno] ordine/sezione della banca inattesi: enhancer avanzato disattivato per sicurezza.");
+    if (!Array.isArray(QUESTIONS) || QUESTIONS.length !== 300) {
+      console.warn("[Materno] banca inattesa: enhancer avanzato disattivato per sicurezza.");
       return false;
     }
-    first.forEach((question, zeroIndex) => {
+
+    const expectedSections = [
+      {from: 1, to: 137, topic: "Infermieristica Pediatrica"},
+      {from: 138, to: 192, topic: "Pediatria"},
+      {from: 193, to: 245, topic: "Ostetricia"},
+      {from: 246, to: 300, topic: "Ginecologia"}
+    ];
+    const coherent = expectedSections.every(({from, to, topic}) =>
+      QUESTIONS.slice(from - 1, to).every(q => q && q.topic === topic)
+    );
+    if (!coherent) {
+      console.warn("[Materno] ordine/sezioni della banca inattesi: enhancer avanzato disattivato per sicurezza.");
+      return false;
+    }
+
+    QUESTIONS.slice(0, EXPECTED_ADVANCED).forEach((question, zeroIndex) => {
       const advanced = BY_INDEX.get(zeroIndex + 1);
       if (advanced) BY_ID.set(String(question.id), advanced);
     });
