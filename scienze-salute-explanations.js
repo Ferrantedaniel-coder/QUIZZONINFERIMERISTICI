@@ -1,7 +1,7 @@
 (function(){
 'use strict';
-const OPTIONAL_EXPLANATION_FILES=['data/scienze-salute-explanations-001.json'];
-const EXPECTED_ADVANCED=40;
+const OPTIONAL_EXPLANATION_FILES=['data/scienze-salute-explanations-001.json','data/scienze-salute-explanations-002.json'];
+const EXPECTED_ADVANCED=80;
 const ADVANCED_EXPLANATIONS={};
 let feedbackObserver=null;
 
