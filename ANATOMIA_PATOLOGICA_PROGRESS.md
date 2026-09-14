@@ -47,7 +47,8 @@ File attivi:
 
 - `anatomia-patologica.html` — motore originale dell'esame e caricamento delle 12 banche JSON;
 - `anatomia-patologica-explanations.js` — enhancer opzionale;
-- `data/anatomia-patologica-explanations-001.json` — spiegazioni avanzate del primo blocco.
+- `data/anatomia-patologica-explanations-001.json` — spiegazioni `m1–m40`;
+- `data/anatomia-patologica-explanations-002.json` — spiegazioni `m41–m80`.
 
 L'enhancer:
 
@@ -57,42 +58,56 @@ L'enhancer:
 - carica i dati esplicativi separatamente;
 - associa ogni motivazione al testo dell'opzione originale, quindi la spiegazione segue lo shuffle A/B/C/D;
 - arricchisce il feedback soltanto dopo la correzione;
-- in caso di errore dell'enhancer o del JSON lascia attivo il feedback base `why` e non impedisce lo svolgimento del quiz.
+- in caso di errore dell'enhancer o dei JSON lascia attivo il feedback base `why` e non impedisce lo svolgimento del quiz.
 
-## Copertura — 40/300
+## Copertura — 80/300
 
 ### Blocco 001
 
 - IDs: `m1–m40`
 - Sezione: **Microbiologia**
 - File: `data/anatomia-patologica-explanations-001.json`
-- Copertura totale: **40/300**
+
+Argomenti principali: infezioni endogene/esogene, microbiota, vaccini, virologia, diagnostica, struttura batterica, MIC, LPS, plasmidi, capsula ed endospore.
+
+### Blocco 002
+
+- IDs: `m41–m80`
+- Sezione: **Microbiologia**
+- File: `data/anatomia-patologica-explanations-002.json`
+- Copertura totale: **80/300**
 
 Argomenti verificati nel blocco:
 
-- infezioni endogene ed esogene;
-- microbiota cutaneo e opportunismo;
-- vaccini vivi attenuati, inattivati e split;
-- selettività degli antibatterici e sulfamidici;
-- ciclo replicativo e struttura dei virus;
-- Orthomyxoviridae e diagnostica virologica diretta;
-- procarioti/eucarioti e diagnostica microbiologica;
-- patogenicità e MIC;
-- LPS/Lipide A, plasmidi e variabilità genetica;
-- peptidoglicano, capsula, saprofitismo ed endospore.
+- ribosomi, citoplasma e metabolismo batterico;
+- acidi teicoici e struttura Gram positiva;
+- endospore e germinazione;
+- criteri di valutazione degli antibatterici e farmacocinetica;
+- meccanismi di antibiotico-resistenza;
+- beta-lattamici/PBP, macrolidi, fluorochinoloni, rifampicina e aminoglicosidi;
+- colorazione di Gram e Ziehl-Neelsen;
+- acidi micolici e micobatteri;
+- ciclo di `Chlamydia trachomatis`;
+- agar, terreni di trasporto, selettivi e differenziali;
+- beta-emolisi;
+- raccolta di campioni per coltura, urinocoltura ed emocolture;
+- diagnostica indiretta e sieroconversione.
 
-### QA del blocco 001
+### QA dei blocchi 001–002
 
-Nessun quesito `m1–m40` è stato modificato. Nel controllo preliminare non sono emerse risposte corrette chiaramente incompatibili con il materiale universitario e con le fonti scientifiche autorevoli consultate.
+Nessun quesito `m1–m80` è stato modificato. Nel controllo non sono emerse risposte corrette chiaramente incompatibili con il materiale universitario e con le fonti scientifiche autorevoli consultate.
+
+Per il blocco 002 i punti più sensibili sono stati confrontati con letteratura PubMed/NCBI su meccanismi d'azione e resistenza agli antibiotici, Chlamydia e micobatteri e con indicazioni CDC sulla raccolta di più set di emocolture.
 
 ## Dimensione dei blocchi
 
-Per garantire controllo e qualità, procedere in **blocchi da 40 domande** mantenendo l'ordine reale della banca. L'ultimo blocco potrà contenere il residuo finale se inferiore a 40.
+Per garantire controllo e qualità, procedere in **blocchi da 40 domande** mantenendo l'ordine reale complessivo della banca. Quando un blocco attraversa il confine tra due sezioni, mantenere comunque la dimensione di 40 e registrare chiaramente gli intervalli.
 
 ## Punto di ripresa
 
-Il prossimo blocco è:
+Il prossimo blocco contiene **40 domande**:
 
-- **`m41–m80`**
-- sezione: **Microbiologia**
-- dimensione: **40 domande**
+- `m81–m100` → **Microbiologia** (20 domande)
+- `e1–e20` → **Eziologia** (20 domande)
+
+Copertura successiva attesa al termine del blocco: **120/300**.
