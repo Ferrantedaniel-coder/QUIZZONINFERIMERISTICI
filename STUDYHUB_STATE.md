@@ -78,7 +78,7 @@ Lo standard desiderato per **Scienze della Salute** e **Paziente chirurgico** re
 - spiegare perché ciascuna delle altre tre è sbagliata;
 - non limitarsi a ripetere la risposta corretta.
 
-### Paziente chirurgico — runtime stabile + pilot controllato
+### Paziente chirurgico — runtime stabile + spiegazioni opzionali
 
 L'esame resta basato sul runtime stabile di `paziente-chirurgico.html`:
 
@@ -87,26 +87,27 @@ L'esame resta basato sul runtime stabile di `paziente-chirurgico.html`:
 - verifica ID, quattro opzioni e indice corretto;
 - abilita il quiz senza dipendere dalle spiegazioni avanzate.
 
-È attivo un **pilot non bloccante di 40 domande**, limitato a **Diagnostica `di1–di40`**.
+Le spiegazioni avanzate vengono caricate **solo dopo** che il quiz è già avviabile. Il caricamento usa `Promise.allSettled`; un file mancante o non valido non può bloccare avvio, svolgimento o completamento dell'esame. Quando una spiegazione avanzata non è disponibile viene usato automaticamente il campo base `why`.
 
-Il pilot usa soltanto:
+#### Copertura attiva
 
-- `data/paziente-chirurgico-explanations-001.json`;
-- `data/paziente-chirurgico-explanations-002.json`;
-- `data/paziente-chirurgico-explanations-003.json`;
-- `data/paziente-chirurgico-explanations-004.json`.
+**Diagnostica è completa: `di1–di76` = 76/76 spiegazioni avanzate opzionali attive.**
 
-Le spiegazioni avanzate vengono caricate **dopo** che il quiz è già stato reso avviabile. Il caricamento usa `Promise.allSettled`; un file mancante o non valido non blocca l'esame. Ogni entry viene accettata solo se corrisponde a una domanda esistente e contiene una motivazione valida per tutte e quattro le opzioni.
+File attualmente caricati:
 
-Per `di1–di40`, se l'entry avanzata è disponibile, il feedback mostra:
+- `data/paziente-chirurgico-explanations-001.json` → `007.json`.
+
+Il runtime supporta sia il formato storico con `entry.options[opzione]` sia il formato successivo con `entry.reasons[]`. Nel secondo caso la motivazione viene ricondotta all'indice dell'opzione originale in `q.options`, quindi segue correttamente la risposta anche dopo il rimescolamento A/B/C/D.
+
+Per una entry valida il feedback mostra:
 
 - esito corretto/errato;
 - risposta corretta nella posizione effettivamente mostrata;
 - concetto chiave;
-- quattro motivazioni separate, una per ogni alternativa;
-- etichetta `CORRETTA` / `ERRATA`.
+- quattro motivazioni separate;
+- etichetta `CORRETTA` / `ERRATA` per ogni alternativa.
 
-Se l'entry avanzata non è disponibile, oppure per tutte le domande fuori dal pilot, viene usato automaticamente il campo base `why` della banca.
+Per Educazione terapeutica, Psicologia e Terapia resta per ora il feedback base `why`.
 
 **Regola fondamentale: nessun problema delle spiegazioni avanzate deve mai impedire avvio, svolgimento o completamento dell'esame.**
 
@@ -114,7 +115,7 @@ Checkpoint dettagliato: `PAZIENTE_CHIRURGICO_PROGRESS.md`.
 
 ### Scienze della Salute
 
-Resta da portare allo standard superiore delle spiegazioni, ma solo dopo che l'architettura pilot di Paziente chirurgico sarà stata confermata stabile e riutilizzabile.
+Resta da portare allo standard superiore delle spiegazioni, ma solo dopo il completamento progressivo e stabile di Paziente chirurgico.
 
 ---
 
@@ -127,9 +128,9 @@ File principali:
 - `scienze-salute.html` / `scienze-salute-app.html`;
 - `anatomia-patologica.html`;
 - `infermieristica-materno.html`;
-- `paziente-chirurgico.html` — runtime stabile + pilot spiegazioni non bloccante;
+- `paziente-chirurgico.html` — runtime stabile + spiegazioni avanzate opzionali;
 - `paziente-chirurgico-explanations.js` — file legacy, non caricato dal runtime attivo;
-- `data/paziente-chirurgico-explanations-manifest.json` e `001`→`029` — archivio completo delle spiegazioni; solo `001`→`004` sono attualmente caricati dal pilot;
+- `data/paziente-chirurgico-explanations-manifest.json` e `001`→`029` — archivio completo delle spiegazioni; `001`→`007` sono attualmente collegati al runtime;
 - `PAZIENTE_CHIRURGICO_PROGRESS.md` — checkpoint specifico;
 - `data/` — banche domande;
 - `.nojekyll` — pubblicazione statica.
@@ -155,7 +156,7 @@ I progressi sono locali al browser; non ci sono account, database remoto o sync 
 
 Per revisione estesa di banche o spiegazioni lavorare in **blocchi controllati di circa 40–60 domande**, con checkpoint GitHub tra i blocchi. Il checkpoint deve indicare esame, intervallo completato, ultima domanda, file modificati, commit e punto di ripresa.
 
-Per Paziente chirurgico **non estendere oltre `di40` finché il pilot pubblicato non è stato confermato stabile**. Dopo conferma, il prossimo blocco parte da `di41` mantenendo la stessa architettura fail-safe.
+Punto di ripresa attuale per Paziente chirurgico: **Educazione terapeutica `ed1`**.
 
 ### Continuità tra chat
 
@@ -176,9 +177,10 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 
 ## 9. Roadmap immediata
 
-1. **Verificare il pilot Paziente chirurgico `di1–di40`.**
-2. Se stabile, estendere le spiegazioni avanzate dal blocco `di41` in poi, sempre senza dipendenza dal boot del quiz.
-3. Successivamente completare Scienze della Salute allo stesso standard superiore delle spiegazioni.
-4. QA separato dei quesiti di Paziente chirurgico già segnalati, solo con autorizzazione esplicita a modificare la banca.
+1. **Diagnostica Paziente chirurgico: completa 76/76 con spiegazioni avanzate opzionali fail-safe.**
+2. Proseguire da **Educazione terapeutica `ed1`**, sempre mantenendo il runtime indipendente dalle spiegazioni.
+3. Successivamente Psicologia e Terapia.
+4. Dopo Paziente chirurgico, completare Scienze della Salute allo stesso standard superiore.
+5. QA separato dei quesiti di Paziente chirurgico già segnalati, solo con autorizzazione esplicita a modificare la banca.
 
 Farmacologia resta una futura banca in preparazione.
