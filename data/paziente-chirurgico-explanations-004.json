@@ -1,0 +1,92 @@
+{
+  "di31": {
+    "summary": "La FAST è un'ecografia rapida bedside impiegata nel trauma per ricercare liquido libero, soprattutto emoperitoneo, nelle principali finestre addominali.",
+    "options": {
+      "Trauma toracico lieve": "Errata nel contesto del quesito: l'ecografia toracica può avere altri impieghi, ma la FAST classica viene richiamata qui per il trauma addominale chiuso.",
+      "Trauma addominale chiuso": "Corretta: la FAST consente una valutazione rapida e non invasiva della presenza di liquido libero dopo trauma addominale, orientando le successive decisioni diagnostiche e terapeutiche.",
+      "Distorsione caviglia": "Errata: una distorsione è un problema muscolo-legamentoso periferico e non richiede una ricerca FAST di liquido intraddominale.",
+      "Trauma cranico lieve": "Errata: il trauma cranico viene valutato con esame neurologico e, quando indicato, TC cranio; la FAST non studia il contenuto intracranico."
+    }
+  },
+  "di32": {
+    "summary": "I mezzi di contrasto iodati richiedono particolare attenzione alla funzione renale; nel materiale l'insufficienza renale severa è indicata come controindicazione/rilevante fattore di rischio.",
+    "options": {
+      "Diabete controllato": "Errata: il diabete controllato, isolatamente, non è l'elemento indicato dal quesito come controindicazione principale; va comunque considerato nel quadro clinico complessivo.",
+      "Insufficienza renale severa": "Corretta: una funzione renale gravemente compromessa aumenta il rischio legato alla somministrazione di contrasto iodato e richiede valutazione specifica prima dell'esame.",
+      "Ipertensione": "Errata: l'ipertensione da sola non rappresenta la controindicazione indicata nella banca per la TAC con mezzo di contrasto.",
+      "Asma": "Errata nel quesito: l'asma può rientrare nella valutazione anamnestica del rischio di reazione, ma non sostituisce la severa insufficienza renale come risposta prevista."
+    }
+  },
+  "di33": {
+    "summary": "La sicurezza in RM dipende dalla compatibilità dei dispositivi metallici o elettronici con il forte campo magnetico; un pacemaker non compatibile rappresenta una controindicazione.",
+    "options": {
+      "Pazienti ansiosi": "Errata: l'ansia può richiedere preparazione, supporto o sedazione, ma non è di per sé la controindicazione tecnica indicata.",
+      "Portatori di pacemaker non compatibile": "Corretta: il campo magnetico può interferire con dispositivi non MR-compatibili, rendendo l'esame non eseguibile nelle condizioni proposte.",
+      "Pazienti obesi": "Errata: il peso e le dimensioni possono porre limiti tecnici legati al lettino o al diametro del gantry, ma non costituiscono automaticamente la controindicazione indicata.",
+      "Claustrofobici": "Errata come controindicazione assoluta: la claustrofobia può rendere difficile l'esame, ma spesso è gestibile con preparazione, apparecchiature adatte o supporto farmacologico."
+    }
+  },
+  "di34": {
+    "summary": "L'ecografia è particolarmente utile nello studio di organi e tessuti molli, soprattutto quando esiste una buona finestra acustica.",
+    "options": {
+      "Valutare ossa": "Errata: l'osso riflette fortemente gli ultrasuoni e impedisce la visualizzazione delle strutture profonde; per lo scheletro si usano soprattutto RX e altre metodiche dedicate.",
+      "Valutare organi parenchimatosi": "Corretta: fegato, reni, milza e altri organi parenchimatosi sono tipici distretti valutabili ecograficamente.",
+      "Valutare aria": "Errata: l'aria ostacola la propagazione degli ultrasuoni e costituisce un limite importante dell'ecografia tradizionale.",
+      "Diagnosi radioterapica": "Errata: la radioterapia è un trattamento, mentre l'ecografia è una metodica diagnostica e di guida procedurale."
+    }
+  },
+  "di35": {
+    "summary": "Nel materiale d'esame la voce 'allergia allo iodio' è utilizzata come indicatore anamnestico di rischio/controindicazione al mezzo iodato; le altre allergie elencate non sono pertinenti al contrasto iodato.",
+    "options": {
+      "Allergia allo iodio": "Corretta secondo la banca d'esame: è l'opzione indicata per richiamare la necessità di valutare una precedente reazione o una storia di ipersensibilità collegata ai mezzi di contrasto iodati.",
+      "Allergia al lattosio": "Errata: il lattosio è uno zucchero e la relativa intolleranza/allergia non identifica il rischio specifico richiesto per il mezzo di contrasto iodato.",
+      "Allergia ai pollini": "Errata: una sensibilizzazione ai pollini non corrisponde alla controindicazione specifica indicata dalla domanda per il contrasto iodato.",
+      "Intolleranza al glutine": "Errata: la celiachia o l'intolleranza al glutine non è collegata al contenuto iodato del mezzo di contrasto."
+    }
+  },
+  "di36": {
+    "summary": "La TAC del torace offre una rappresentazione ad alta risoluzione del parenchima polmonare, delle vie aeree, della pleura e del mediastino.",
+    "options": {
+      "Ecografia": "Errata come studio generale del polmone: l'aria polmonare limita la penetrazione degli ultrasuoni, anche se l'ecografia toracica è utile per pleura e alcune condizioni periferiche.",
+      "TAC del torace": "Corretta: la TC è la metodica più completa fra quelle proposte per visualizzare il parenchima polmonare e numerose patologie toraciche.",
+      "RM addome": "Errata: è diretta allo studio dell'addome e non rappresenta l'esame proposto per il parenchima polmonare.",
+      "RX bacino": "Errata: riguarda le strutture del bacino e non il torace."
+    }
+  },
+  "di37": {
+    "summary": "La colangio-RM è una tecnica di risonanza dedicata alla visualizzazione non invasiva delle vie biliari e pancreatiche.",
+    "options": {
+      "RM addome (colangio-RM)": "Corretta: è la metodica specificamente destinata a rappresentare l'albero biliare senza ricorrere a una procedura endoscopica o percutanea.",
+      "RX torace": "Errata: studia principalmente polmoni, cuore e strutture toraciche, non le vie biliari.",
+      "RM cervicale": "Errata: è diretta alle strutture del collo e della colonna cervicale, non al sistema biliare.",
+      "TAC cranio": "Errata: valuta encefalo e cranio e non è pertinente allo studio delle vie biliari."
+    }
+  },
+  "di38": {
+    "summary": "Quando si sospetta una perforazione gastrointestinale si utilizza un contrasto idrosolubile perché, in caso di fuoriuscita dal lume, è preferibile al bario.",
+    "options": {
+      "Perforazione sospetta": "Corretta: il materiale specifica che il bario è controindicato quando si teme una perforazione e che in tale situazione si ricorre a un mezzo idrosolubile.",
+      "Calcolosi renale": "Errata: la litiasi renale viene studiata con ecografia o TC secondo il contesto e non costituisce l'indicazione richiamata per questo contrasto gastrointestinale.",
+      "Studio pancreas": "Errata nel senso della domanda: lo studio del pancreas impiega protocolli TC/RM dedicati e non è la condizione che giustifica qui la scelta del mezzo idrosolubile.",
+      "RM cerebrale": "Errata: la RM encefalica, quando necessita contrasto, utilizza mezzi paramagnetici come il gadolinio, non il contrasto idrosolubile radiologico richiamato."
+    }
+  },
+  "di39": {
+    "summary": "Nell'occlusione intestinale la radiografia può mostrare livelli idro-aerei dovuti alla separazione tra gas e liquido nelle anse dilatate.",
+    "options": {
+      "Diaframma elevato": "Errata: un emidiaframma elevato può avere diverse cause e non è il segno radiografico tipico indicato per l'occlusione intestinale.",
+      "Livelli idro-aerei": "Corretta: la stasi del contenuto intestinale determina accumulo di liquido e gas, che in ortostatismo formano i caratteristici livelli idro-aerei.",
+      "Atelettasia polmonare": "Errata: è il collasso parziale o completo di una porzione di polmone e rappresenta un reperto toracico, non intestinale.",
+      "Scoliosi": "Errata: è una deviazione della colonna vertebrale e non ha valore come segno di occlusione intestinale."
+    }
+  },
+  "di40": {
+    "summary": "La scintigrafia perfusionale valuta la distribuzione del flusso ematico nel parenchima polmonare mediante un radiofarmaco.",
+    "options": {
+      "TAC": "Errata rispetto alla domanda specifica: la TC può studiare l'embolia e l'anatomia polmonare, ma lo studio denominato 'perfusionale' richiamato qui è scintigrafico.",
+      "Scintigrafia perfusionale": "Corretta: il radiofarmaco si distribuisce nel circolo polmonare e permette di evidenziare aree con perfusione ridotta o assente.",
+      "RM": "Errata nel contesto della banca: la RM può avere applicazioni funzionali, ma non è la metodica indicata per lo studio perfusionale polmonare richiesto.",
+      "RX torace": "Errata: la radiografia fornisce soprattutto informazioni morfologiche e non misura la distribuzione della perfusione polmonare."
+    }
+  }
+}
