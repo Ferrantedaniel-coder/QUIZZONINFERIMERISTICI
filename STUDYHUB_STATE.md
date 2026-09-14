@@ -5,7 +5,6 @@
 > Ultimo aggiornamento: **14 settembre 2026**
 > Repository: **Ferrantedaniel-coder/QUIZZONINFERIMERISTICI**
 > Branch di riferimento: **main**
-> Baseline precedente a questo file: `d118121bb58297156d0be7c6dda8a10211c5508b`
 
 ## 1. Scopo del file
 
@@ -29,6 +28,13 @@ StudyHub è una **web app statica per simulazioni d'esame universitarie**, organ
 Totale: **1.521 domande**.
 
 Nella homepage è inoltre presente **Farmacologia** come esame **in preparazione / futuro**.
+
+### Stato spiegazioni avanzate
+
+- **Paziente chirurgico: COMPLETO 462/462** al nuovo standard con spiegazione della risposta corretta e motivazione specifica delle tre alternative errate.
+- **Scienze della Salute: ancora da completare** al medesimo standard.
+
+Per Paziente chirurgico il dettaglio operativo è registrato in `PAZIENTE_CHIRURGICO_PROGRESS.md`.
 
 ---
 
@@ -78,6 +84,8 @@ Quando il compito riguarda soltanto grafica, logica del quiz, spiegazioni o infr
 - **non aggiungere nuove domande** salvo richiesta specifica;
 - mantenere ID, sezione e associazione domanda/risposta coerenti.
 
+Se durante un lavoro sulle spiegazioni emerge una domanda probabilmente errata, obsoleta o internamente incoerente, **non correggerla di nascosto**. Va segnalata come punto QA e la modifica alla banca deve essere affrontata separatamente con autorizzazione esplicita.
+
 ### 4.2 Qualità scientifica
 
 Per contenuti medici e infermieristici:
@@ -86,7 +94,8 @@ Per contenuti medici e infermieristici:
 - dare priorità ai materiali universitari forniti dall'utente;
 - quando serve verificare o correggere un contenuto, usare fonti mediche o istituzionali autorevoli;
 - evitare correzioni arbitrarie della banca senza necessità o senza che la modifica rientri nel lavoro richiesto;
-- mantenere il livello adatto a una simulazione d'esame universitario.
+- mantenere il livello adatto a una simulazione d'esame universitario;
+- distinguere chiaramente ciò che deriva dagli appunti del corso da eventuali aggiornamenti scientifici esterni.
 
 ### 4.3 Distribuzione A/B/C/D
 
@@ -106,21 +115,19 @@ La lettera corretta deve risultare fortemente variabile. Obiettivo:
 
 Una spiegazione utile **non deve limitarsi a ripetere la risposta corretta**. Deve chiarire il principio clinico, scientifico, storico o assistenziale che rende corretta la soluzione.
 
-### Modifica specifica già concordata
+### Standard superiore concordato
 
-Per i soli esami:
+Per:
 
 1. **Scienze della Salute**
 2. **Paziente chirurgico**
 
-le spiegazioni devono essere portate a uno standard superiore.
-
-Dopo la risposta dell'utente, il riquadro deve spiegare:
+il feedback deve spiegare:
 
 - **perché la risposta corretta è giusta**;
 - **perché ciascuna delle altre tre alternative è sbagliata**.
 
-Questa modifica riguarda **esclusivamente le spiegazioni**.
+Questa modifica riguarda **esclusivamente le spiegazioni**, salvo successivo task QA esplicitamente autorizzato.
 
 Per questa attività è tassativamente richiesto mantenere invariati:
 
@@ -136,9 +143,19 @@ Per questa attività è tassativamente richiesto mantenere invariati:
 
 ### Stato tecnico al 14/09/2026
 
-Nel repository attuale, **Paziente chirurgico** mostra ancora principalmente il campo `why` relativo alla soluzione corretta. Anche la versione attualmente pubblicata di **Scienze della Salute** usa una spiegazione generale che, in caso di errore, può limitarsi a dire che l'alternativa scelta non corrisponde al fatto richiesto e poi riproporre la spiegazione della risposta corretta.
+**Paziente chirurgico è stato completato.**
 
-Quindi l'upgrade alle **spiegazioni per tutte e quattro le alternative** va considerato una modifica **concordata e prioritaria**, da implementare senza alterare la banca domande.
+Il quiz utilizza:
+
+- `paziente-chirurgico-explanations.js` per il rendering del feedback avanzato;
+- `data/paziente-chirurgico-explanations-manifest.json` per caricare i file delle spiegazioni;
+- `data/paziente-chirurgico-explanations-001.json` → `029.json` per coprire l'intera banca da `di1` a `te266`.
+
+Il motore mantiene la motivazione associata alla corretta alternativa originale anche dopo il rimescolamento A/B/C/D.
+
+Durante il lavoro sono stati marcati con `ATTENZIONE QA` alcuni quesiti potenzialmente discordanti, datati o ambigui; il dettaglio si trova in `PAZIENTE_CHIRURGICO_PROGRESS.md`. Le risposte registrate nella banca non sono state modificate.
+
+**Scienze della Salute resta il prossimo esame da portare integralmente allo stesso standard.**
 
 ---
 
@@ -154,6 +171,10 @@ Elementi principali attuali:
 - `anatomia-patologica.html` — Anatomia Patologica;
 - `infermieristica-materno.html` — Infermieristica nel Materno;
 - `paziente-chirurgico.html` — Paziente chirurgico;
+- `paziente-chirurgico-explanations.js` — motore feedback avanzato del Paziente chirurgico;
+- `data/paziente-chirurgico-explanations-manifest.json` — manifest delle spiegazioni avanzate;
+- `data/paziente-chirurgico-explanations-001.json` → `029.json` — spiegazioni per tutte le 462 domande di Paziente chirurgico;
+- `PAZIENTE_CHIRURGICO_PROGRESS.md` — checkpoint e QA dell'esame;
 - `data/` — banche domande suddivise in file JSON o JSON compressi;
 - `.nojekyll` — supporto alla pubblicazione statica.
 
@@ -254,12 +275,16 @@ I permessi tecnici del connettore **non vanno interpretati come autorizzazione a
 
 ### Priorità immediata
 
-Portare **Scienze della Salute** e **Paziente chirurgico** al nuovo standard di spiegazione:
+**Paziente chirurgico: completato 462/462 per il nuovo standard di spiegazione.**
+
+La priorità rimanente è portare **Scienze della Salute** allo stesso standard:
 
 - motivazione della corretta;
 - motivazione specifica per ciascuna alternativa errata;
 - nessuna modifica al contenuto del quiz oltre alle spiegazioni;
 - lavorazione in **blocchi controllati da circa 40–60 domande**, con checkpoint GitHub tra i blocchi.
+
+Per Paziente chirurgico resta disponibile un futuro **task QA separato** sui quesiti marcati `ATTENZIONE QA`; tale task potrà modificare domanda/opzioni/soluzioni solo dopo autorizzazione esplicita dell'utente.
 
 ### Espansione del catalogo
 
@@ -304,6 +329,8 @@ Chiunque lavori successivamente sul progetto deve assumere che:
 - interfaccia responsive;
 - repository GitHub come master;
 - lavori estesi gestiti in **blocchi controllati da 40–60 domande**;
-- checkpoint e handoff preventivo tra chat per proteggere qualità e continuità.
+- checkpoint e handoff preventivo tra chat per proteggere qualità e continuità;
+- **Paziente chirurgico completo 462/462 con spiegazione della corretta + spiegazione specifica delle tre errate**;
+- punti clinico-scientifici dubbi di Paziente chirurgico preservati e marcati come QA senza modificare di nascosto la banca.
 
-**Prossimo vincolo prioritario:** migliorare le spiegazioni di **Scienze della Salute** e **Paziente chirurgico** spiegando corretta + tre alternative errate, senza cambiare nient'altro del quiz e procedendo per blocchi controllati.
+**Prossimo vincolo prioritario:** completare **Scienze della Salute** con lo stesso standard di spiegazione, procedendo per blocchi controllati e senza alterare la banca salvo task QA separato.
