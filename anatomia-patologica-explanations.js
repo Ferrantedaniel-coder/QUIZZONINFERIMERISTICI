@@ -1,7 +1,7 @@
 (function(){
 'use strict';
-const OPTIONAL_EXPLANATION_FILES=['data/anatomia-patologica-explanations-001.json','data/anatomia-patologica-explanations-002.json','data/anatomia-patologica-explanations-003.json','data/anatomia-patologica-explanations-004.json','data/anatomia-patologica-explanations-005.json','data/anatomia-patologica-explanations-006.json'];
-const EXPECTED_ADVANCED=240;
+const OPTIONAL_EXPLANATION_FILES=['data/anatomia-patologica-explanations-001.json','data/anatomia-patologica-explanations-002.json','data/anatomia-patologica-explanations-003.json','data/anatomia-patologica-explanations-004.json','data/anatomia-patologica-explanations-005.json','data/anatomia-patologica-explanations-006.json','data/anatomia-patologica-explanations-007.json'];
+const EXPECTED_ADVANCED=280;
 const ADVANCED_EXPLANATIONS={};
 let feedbackObserver=null;
 
