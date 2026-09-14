@@ -49,7 +49,8 @@ File attivi:
 - `anatomia-patologica-explanations.js` — enhancer opzionale;
 - `data/anatomia-patologica-explanations-001.json` — spiegazioni `m1–m40`;
 - `data/anatomia-patologica-explanations-002.json` — spiegazioni `m41–m80`;
-- `data/anatomia-patologica-explanations-003.json` — spiegazioni `m81–m100` + `e1–e20`.
+- `data/anatomia-patologica-explanations-003.json` — spiegazioni `m81–m100` + `e1–e20`;
+- `data/anatomia-patologica-explanations-004.json` — spiegazioni `e21–e50` + `i1–i10`.
 
 L'enhancer:
 
@@ -61,7 +62,7 @@ L'enhancer:
 - arricchisce il feedback soltanto dopo la correzione;
 - in caso di errore dell'enhancer o dei JSON lascia attivo il feedback base `why` e non impedisce lo svolgimento del quiz.
 
-## Copertura — 120/300
+## Copertura — 160/300
 
 ### Blocco 001
 
@@ -80,29 +81,46 @@ L'enhancer:
 - IDs: `m81–m100` → **Microbiologia** (20 domande)
 - IDs: `e1–e20` → **Eziologia** (20 domande)
 - File: `data/anatomia-patologica-explanations-003.json`
-- Copertura totale: **120/300**
 
-Con il blocco 003 la sezione **Microbiologia è completa 100/100** per le spiegazioni avanzate.
+Con il blocco 003 la sezione **Microbiologia è completa 100/100**.
 
-Argomenti principali verificati nel blocco 003:
+### Blocco 004
 
-- beta-lattamasi, resistenza intrinseca e acquisita, batteriostatici;
-- anaerobi facoltativi e obbligati, microaerofili;
-- scissione binaria, trasformazione, trasduzione e coniugazione;
-- NAG/NAM del peptidoglicano e membrana esterna dei Gram-negativi;
-- `Plasmodium`, `Toxoplasma gondii`, miceti, lieviti e muffe;
-- `Candida albicans`, `Aspergillus flavus`, aflatossine e micosi opportunistiche;
-- definizione di eziologia e cause estrinseche;
-- patologia traumatica: ecchimosi, escoriazione, danni viscerali, pneumotorace, fratture, distorsione e lussazione;
-- danno termico e classificazione delle ustioni;
-- colpo di calore e risposta al freddo;
-- radiazioni corpuscolate ed elettromagnetiche, con particelle alfa.
+- IDs: `e21–e50` → **Eziologia** (30 domande)
+- IDs: `i1–i10` → **Immunologia** (10 domande)
+- File: `data/anatomia-patologica-explanations-004.json`
+- Copertura totale: **160/300**
 
-### QA dei blocchi 001–003
+Con il blocco 004 la sezione **Eziologia è completa 50/50** per le spiegazioni avanzate.
 
-Nessun quesito `m1–m100` o `e1–e20` è stato modificato. Nel controllo non sono emerse risposte corrette chiaramente incompatibili con il materiale universitario e con le fonti scientifiche autorevoli consultate.
+Argomenti principali verificati nel blocco 004:
 
-Nel blocco 003 alcune formulazioni degli appunti sono state **precisate nelle spiegazioni senza alterare la banca**: ad esempio, nell'ipertermia l'alta umidità riduce l'efficacia dell'evaporazione del sudore; per le ustioni sono stati usati anche i termini moderni superficiale, partial-thickness e full-thickness. Questo mantiene la risposta della banca ma rende la spiegazione scientificamente più rigorosa.
+- radiazioni ionizzanti, danno al DNA e radiolisi dell'acqua;
+- radicali liberi, radicale ossidrile, perossidazione lipidica, stress ossidativo e sistemi antiossidanti;
+- picnosi, carioressi e cariolisi;
+- radiosensibilità delle cellule proliferanti;
+- danno chimico, osmosi, denaturazione proteica e tossicologia;
+- DL50, saturnismo e biotrasformazione di fase I/II;
+- infiammazione acuta, istamina, prostaglandine, diapedesi, chemiotassi e neutrofili;
+- essudato vs trasudato, pus, ascesso, empiema e infiammazione cronica;
+- guarigione per seconda intenzione;
+- immunosorveglianza;
+- immunità innata vs adattativa;
+- linfociti B/T, selezione ed espansione clonale;
+- cute, lisozima, defensine, microbiota intestinale;
+- opsonizzazione e fagosoma.
+
+### QA dei blocchi 001–004
+
+Nessun quesito `m1–m100`, `e1–e50` o `i1–i10` è stato modificato. Nel controllo non sono emerse risposte corrette chiaramente incompatibili con il materiale universitario e con le fonti scientifiche autorevoli consultate.
+
+Nel blocco 004 alcuni concetti degli appunti sono stati precisati scientificamente nelle spiegazioni senza alterare la banca. In particolare:
+
+- il danno indiretto da radiazioni è spiegato attraverso radiolisi dell'acqua e formazione di specie reattive;
+- lo stress ossidativo è definito come squilibrio a favore degli ossidanti rispetto ai sistemi antiossidanti;
+- l'essudato viene distinto dal trasudato sulla base di permeabilità vascolare, proteine e cellule;
+- la guarigione per seconda intenzione viene descritta con maggiore tessuto di granulazione, contrazione e cicatrice;
+- per l'immunità innata/adattativa sono stati mantenuti i concetti del corso ma con terminologia immunologica corrente.
 
 ## Dimensione dei blocchi
 
@@ -112,7 +130,6 @@ Per garantire controllo e qualità, procedere in **blocchi da 40 domande** mante
 
 Il prossimo blocco contiene **40 domande**:
 
-- `e21–e50` → **Eziologia** (30 domande)
-- `i1–i10` → **Immunologia** (10 domande)
+- `i11–i50` → **Immunologia** (40 domande)
 
-Copertura successiva attesa al termine del blocco: **160/300**.
+Copertura successiva attesa al termine del blocco: **200/300**.
