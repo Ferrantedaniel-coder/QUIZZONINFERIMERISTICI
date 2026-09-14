@@ -23,6 +23,15 @@
   `;
   document.head.appendChild(style);
 
+  function reasonFor(entry,q,opt){
+    if(entry.options&&entry.options[opt])return entry.options[opt];
+    if(Array.isArray(entry.reasons)){
+      const originalIndex=q.options.indexOf(opt);
+      if(originalIndex>=0&&entry.reasons[originalIndex])return entry.reasons[originalIndex];
+    }
+    return "Spiegazione specifica non ancora disponibile per questa alternativa.";
+  }
+
   const baseRender=render;
   render=function(){
     baseRender();
@@ -30,11 +39,11 @@
     const q=session[index];
     if(!q.checked)return;
     const entry=EXPLANATIONS[q.id];
-    if(!entry||!entry.options)return;
+    if(!entry||(!entry.options&&!Array.isArray(entry.reasons)))return;
     const fb=document.getElementById("feedback");
     const rows=q.optionsShown.map((opt,i)=>{
       const isCorrect=i===q.correctShown;
-      const reason=entry.options[opt]||"Spiegazione specifica non ancora disponibile per questa alternativa.";
+      const reason=reasonFor(entry,q,opt);
       return `<div class="answer-explanation ${isCorrect?"correct-reason":"wrong-reason"}"><strong>${String.fromCharCode(65+i)} · ${isCorrect?"CORRETTA":"ERRATA"}</strong><span>${escapeHtml(reason)}</span></div>`;
     }).join("");
     fb.innerHTML=`<div class="status">${q.wasCorrect?"RISPOSTA CORRETTA":"RISPOSTA ERRATA"}</div><strong>Risposta corretta:</strong> ${String.fromCharCode(65+q.correctShown)}. ${escapeHtml(q.optionsShown[q.correctShown])}${entry.summary?`<br><strong>Concetto chiave:</strong> ${escapeHtml(entry.summary)}`:""}<div class="answer-explanations-title">Perché ogni alternativa è giusta o sbagliata:</div><div class="answer-explanations">${rows}</div>`;
