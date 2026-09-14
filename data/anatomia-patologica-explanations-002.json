@@ -1,0 +1,362 @@
+{
+  "m41": {
+    "summary": "I ribosomi batterici 70S, formati dalle subunità 30S e 50S, traducono l'RNA messaggero e sono quindi la sede della sintesi proteica.",
+    "reasons": [
+      "Errata: la replicazione del DNA è svolta da enzimi come DNA-polimerasi e altre proteine del replisoma, non dai ribosomi.",
+      "Corretta: i ribosomi leggono l'mRNA e assemblano gli amminoacidi nella catena polipeptidica; nei batteri sono ribosomi 70S.",
+      "Errata: la capsula viene sintetizzata attraverso vie biosintetiche cellulari, ma non è prodotta direttamente dai ribosomi come funzione specifica.",
+      "Errata: il movimento batterico dipende soprattutto da strutture come i flagelli e dai relativi sistemi motori, non dai ribosomi."
+    ]
+  },
+  "m42": {
+    "summary": "Il citoplasma batterico è costituito prevalentemente da acqua, nella quale sono disciolti metaboliti, ioni, proteine, RNA e altre componenti cellulari.",
+    "reasons": [
+      "Errata: il DNA è essenziale ma rappresenta solo una piccola parte quantitativa del contenuto cellulare.",
+      "Corretta: l'acqua costituisce la frazione quantitativamente predominante del citoplasma batterico e funge da solvente per le reazioni metaboliche.",
+      "Errata: il lipopolisaccaride appartiene alla membrana esterna dei Gram-negativi e non è il componente principale del citoplasma.",
+      "Errata: il peptidoglicano è il principale elemento strutturale della parete batterica, non del citoplasma."
+    ]
+  },
+  "m43": {
+    "summary": "Gli acidi teicoici e lipoteicoici sono componenti caratteristici dell'involucro dei batteri Gram-positivi, associati allo spesso strato di peptidoglicano.",
+    "reasons": [
+      "Errata: il Lipide A è la porzione tossica del lipopolisaccaride dei batteri Gram-negativi.",
+      "Errata: la membrana esterna contenente LPS è tipica dei Gram-negativi ed è assente nei Gram-positivi.",
+      "Errata: l'envelope è un rivestimento lipidico di alcuni virus e non una componente della parete batterica Gram-positiva.",
+      "Corretta: gli acidi teicoici e lipoteicoici sono tipici dei Gram-positivi; i primi sono associati alla parete e i secondi sono ancorati alla membrana citoplasmatica."
+    ]
+  },
+  "m44": {
+    "summary": "Nel parassitismo un organismo trae vantaggio biologico dall'ospite, mentre l'ospite sostiene un costo che può andare da un danno lieve fino alla malattia.",
+    "reasons": [
+      "Errata: vivere nell'ambiente inanimato è più coerente con forme di vita libera o saprofitica, non definisce il parassitismo.",
+      "Corretta: il parassita ricava risorse o condizioni favorevoli dall'ospite e ciò comporta un costo biologico o un potenziale danno per quest'ultimo.",
+      "Errata: il parassitismo è una relazione biologica che può riguardare protozoi, elminti, funghi e altri organismi, non solo batteri.",
+      "Errata: alcuni parassiti possono essere causa diretta di malattia, quindi non sono per definizione incapaci di patogenicità."
+    ]
+  },
+  "m45": {
+    "summary": "L'anabolismo comprende reazioni biosintetiche che costruiscono molecole complesse e richiedono energia, spesso fornita dall'ATP.",
+    "reasons": [
+      "Errata: le reazioni degradative che liberano energia appartengono prevalentemente al catabolismo.",
+      "Corretta: le reazioni anaboliche sintetizzano componenti cellulari a partire da precursori e sono generalmente endoergoniche.",
+      "Errata: la distruzione delle proteine è un processo degradativo e quindi catabolico, non una definizione di anabolismo.",
+      "Errata: l'anabolismo comporta trasferimenti energetici e richiede un apporto di energia per sostenere la biosintesi."
+    ]
+  },
+  "m46": {
+    "summary": "Il catabolismo comprende reazioni degradative che demoliscono substrati e rendono disponibile energia utilizzabile per le funzioni cellulari.",
+    "reasons": [
+      "Errata: la sintesi di macromolecole con consumo di energia appartiene all'anabolismo.",
+      "Errata: nei batteri non esiste un nucleo delimitato da membrana e il catabolismo avviene in diversi compartimenti e sistemi enzimatici cellulari.",
+      "Errata: le reazioni cataboliche comportano trasformazioni energetiche e sono spesso esoergoniche.",
+      "Corretta: il catabolismo degrada molecole e libera energia che può essere conservata, per esempio, sotto forma di ATP."
+    ]
+  },
+  "m47": {
+    "summary": "Una reazione endoergonica ha variazione di energia libera positiva e necessita quindi di un apporto energetico, spesso ottenuto accoppiandola a una reazione esoergonica.",
+    "reasons": [
+      "Corretta: una reazione endoergonica richiede energia netta dall'esterno per procedere.",
+      "Errata: la liberazione netta di energia caratterizza invece una reazione esoergonica.",
+      "Errata: la fermentazione comprende molte reazioni e non è sinonimo di reazione endoergonica.",
+      "Errata: i virus dipendono dal metabolismo della cellula ospite; il concetto di endoergonicità è generale e non esclusivo dei virus."
+    ]
+  },
+  "m48": {
+    "summary": "La maggior parte dei batteri patogeni per l'uomo è chemio-organotrofa ed eterotrofa: ricava sia energia sia carbonio da composti organici disponibili nell'ospite.",
+    "reasons": [
+      "Errata: i fotoautotrofi utilizzano la luce come fonte energetica e CO2 come fonte di carbonio, caratteristica non tipica dei patogeni umani.",
+      "Errata: i chemiolitotrofi autotrofi ricavano energia da composti inorganici e carbonio dalla CO2, modalità non predominante nei patogeni umani.",
+      "Corretta: i patogeni umani utilizzano prevalentemente substrati organici dell'ospite come fonte di energia e carbonio e sono quindi chemio-organotrofi eterotrofi.",
+      "Errata: i batteri possiedono un metabolismo proprio, al contrario dei virus che dipendono dalla cellula ospite."
+    ]
+  },
+  "m49": {
+    "summary": "Le endospore sono molto più resistenti delle cellule vegetative a calore, essiccamento, radiazioni e numerosi agenti chimici grazie alla loro struttura multistratificata e al core disidratato.",
+    "reasons": [
+      "Errata: l'acqua distillata non rappresenta il principale esempio di condizione alla quale si riferisce l'elevata resistenza sporale.",
+      "Corretta: calore, disidratazione e radiazioni sono tra gli stress ai quali le endospore mostrano resistenza nettamente superiore alle forme vegetative.",
+      "Errata: la resistenza sporale non è limitata ai beta-lattamici; riguarda soprattutto condizioni fisiche e chimiche avverse.",
+      "Errata: le endospore sono proprio definite dalla loro elevata resistenza a numerosi agenti ambientali."
+    ]
+  },
+  "m50": {
+    "summary": "La germinazione dell'endospora viene classicamente descritta nelle fasi di attivazione, iniziazione e outgrowth o crescita fino alla forma vegetativa.",
+    "reasons": [
+      "Errata come scelta del quesito: l'attivazione è una fase riconosciuta che prepara la spora alla germinazione in condizioni favorevoli.",
+      "Errata come scelta del quesito: l'iniziazione comprende eventi che rendono irreversibile il ritorno alla crescita vegetativa.",
+      "Errata come scelta del quesito: l'outgrowth è la fase di ripresa della biosintesi e della crescita della cellula vegetativa.",
+      "Corretta: 'contatto' non è una delle tre fasi classiche con cui viene descritta la germinazione dell'endospora."
+    ]
+  },
+  "m51": {
+    "summary": "La valutazione di un antibatterico richiede di considerare attività battericida o batteriostatica, spettro, bersaglio, sensibilità del patogeno e capacità del farmaco di raggiungere concentrazioni efficaci nel sito d'infezione.",
+    "reasons": [
+      "Corretta: efficacia farmacologica e clinica dipendono da meccanismo e spettro d'azione, farmacocinetica e sensibilità del microrganismo isolato o presumibile.",
+      "Errata: caratteristiche estetiche della formulazione non determinano l'attività antimicrobica.",
+      "Errata: l'età del batterio non è il solo parametro che guida la scelta e la valutazione di un antibatterico.",
+      "Errata: la morfologia microscopica può aiutare l'identificazione, ma da sola non definisce efficacia, farmacocinetica o sensibilità al farmaco."
+    ]
+  },
+  "m52": {
+    "summary": "I principali meccanismi di resistenza comprendono inattivazione enzimatica del farmaco, modificazione del bersaglio, ridotta permeabilità o aumento dell'efflusso e bypass della via metabolica colpita.",
+    "reasons": [
+      "Errata: la produzione di ATP è una normale funzione metabolica e non costituisce di per sé un meccanismo specifico di antibiotico-resistenza.",
+      "Errata: non tutti i batteri formano spore e la sporulazione non rappresenta il meccanismo generale di resistenza agli antibiotici descritto nel quesito.",
+      "Corretta: questi sono meccanismi documentati attraverso cui i batteri riducono la concentrazione efficace del farmaco, ne distruggono la molecola, cambiano il bersaglio o aggirano la via bloccata.",
+      "Errata: la perdita completa del DNA è incompatibile con la sopravvivenza e la replicazione di una cellula batterica."
+    ]
+  },
+  "m53": {
+    "summary": "La farmacocinetica descrive il destino del farmaco nell'organismo attraverso assorbimento, distribuzione, metabolismo ed eliminazione, spesso riassunti nell'acronimo ADME.",
+    "reasons": [
+      "Errata: il legame al ribosoma batterico descrive un possibile meccanismo farmacodinamico, non l'intera farmacocinetica.",
+      "Errata: l'attività antimicrobica riguarda l'effetto del farmaco sul microrganismo, mentre la farmacocinetica riguarda ciò che l'organismo fa al farmaco.",
+      "Corretta: assorbimento, distribuzione, metabolismo ed eliminazione sono i processi fondamentali della farmacocinetica.",
+      "Errata: la MIC è una misura microbiologica della sensibilità del microrganismo e non un processo farmacocinetico."
+    ]
+  },
+  "m54": {
+    "summary": "In virologia la sensibilità cellulare dipende dalla presenza di recettori che consentono attacco e ingresso del virus; la permissività indica invece la capacità della cellula di sostenere la replicazione completa.",
+    "reasons": [
+      "Corretta: una cellula sensibile possiede i recettori o co-recettori necessari affinché il virus possa riconoscerla e penetrarvi.",
+      "Errata: sostenere obbligatoriamente l'intero ciclo replicativo definisce la permissività, concetto distinto dalla sola sensibilità.",
+      "Errata: la produzione di antibiotici non definisce la suscettibilità di una cellula all'infezione virale.",
+      "Errata: le cellule bersaglio dei virus possiedono membrane cellulari; l'assenza di membrana non è il criterio di sensibilità."
+    ]
+  },
+  "m55": {
+    "summary": "I plasmidi sono elementi genetici accessori che possono conferire vantaggi selettivi trasportando geni di resistenza, enzimi metabolici e fattori di virulenza o tossine.",
+    "reasons": [
+      "Corretta: numerosi plasmidi veicolano determinanti di antibiotico-resistenza e altri geni accessori utili alla sopravvivenza o alla patogenicità.",
+      "Errata: i ribosomi sono complessi di rRNA e proteine codificati da geni cellulari essenziali, non un prodotto esclusivo dei plasmidi.",
+      "Errata: il peptidoglicano è una struttura fondamentale della parete e la sua sintesi non dipende esclusivamente da geni plasmidici.",
+      "Errata: l'acqua intracellulare non è codificata geneticamente e non può essere 'prodotta' da un plasmide."
+    ]
+  },
+  "m56": {
+    "summary": "I beta-lattamici si legano alle penicillin-binding proteins e bloccano le fasi terminali della sintesi e reticolazione del peptidoglicano, indebolendo la parete batterica.",
+    "reasons": [
+      "Errata: l'inibizione dell'RNA ribosomiale o della sintesi proteica è tipica di altre classi antibiotiche, non del meccanismo principale dei beta-lattamici.",
+      "Errata: i batteri non possiedono membrana nucleare e questa non è un bersaglio dei beta-lattamici.",
+      "Errata: il blocco della sintesi dei folati è tipico di sulfamidici e trimetoprim.",
+      "Corretta: i beta-lattamici interferiscono con le PBP coinvolte nella reticolazione del peptidoglicano e compromettono l'integrità della parete."
+    ]
+  },
+  "m57": {
+    "summary": "Gli acidi teicoici, insieme agli acidi lipoteicoici, sono caratteristici dell'involucro dei batteri Gram-positivi.",
+    "reasons": [
+      "Errata: l'envelope virale è costituito da una membrana lipidica derivata dall'ospite e non contiene i tipici acidi teicoici batterici.",
+      "Corretta: gli acidi teicoici sono polimeri tipici della parete dei Gram-positivi e contribuiscono alle proprietà antigeniche e strutturali dell'involucro.",
+      "Errata: i miceti possiedono pareti con componenti come chitina e glucani, non acidi teicoici come elemento caratteristico.",
+      "Errata: la membrana esterna dei Gram-negativi contiene soprattutto fosfolipidi, proteine e LPS e non gli acidi teicoici tipici dei Gram-positivi."
+    ]
+  },
+  "m58": {
+    "summary": "Il Lipide A è la porzione dell'LPS responsabile della maggior parte degli effetti endotossici dei batteri Gram-negativi.",
+    "reasons": [
+      "Errata: l'antigene O è la porzione polisaccaridica variabile e fortemente antigenica dell'LPS, ma non la principale componente tossica.",
+      "Corretta: il Lipide A, ancorato alla membrana esterna, è la parte dell'LPS che attiva potentemente la risposta infiammatoria innata.",
+      "Errata: il peptidoglicano è un polimero della parete batterica distinto dall'LPS.",
+      "Errata: la capsula può contribuire alla virulenza ma non costituisce la componente endotossica dell'LPS."
+    ]
+  },
+  "m59": {
+    "summary": "La colorazione di Gram inizia con il cristalvioletto, seguito dal mordenzante iodato, dalla decolorazione e dalla controcolorazione.",
+    "reasons": [
+      "Errata: il blu di metilene è usato in altre colorazioni semplici, ma non è il colorante primario della Gram classica.",
+      "Errata: la carbolfucsina è il colorante principale della Ziehl-Neelsen per micobatteri acido-resistenti.",
+      "Corretta: il cristalvioletto è il primo colorante applicato e forma poi un complesso con lo iodio.",
+      "Errata: il verde malachite è associato ad altre procedure tintoriali, per esempio colorazioni delle spore, non alla prima fase della Gram."
+    ]
+  },
+  "m60": {
+    "summary": "I Gram-negativi vengono decolorati durante la procedura di Gram e assumono poi la controcolorazione, apparendo rosa o rossi.",
+    "reasons": [
+      "Errata: il nero non è il colore finale tipico dei Gram-negativi nella colorazione di Gram.",
+      "Errata: il blu-violaceo è tipico dei Gram-positivi che trattengono il complesso cristalvioletto-iodio.",
+      "Errata: dopo una procedura completa i Gram-negativi non restano incolori perché vengono controcolorati.",
+      "Corretta: dopo la perdita del colorante primario, i Gram-negativi assumono la controcolorazione e appaiono rosa-rossi."
+    ]
+  },
+  "m61": {
+    "summary": "La Ziehl-Neelsen evidenzia i bacilli alcol-acido resistenti, soprattutto i micobatteri, grazie alla loro parete ricca di lipidi e acidi micolici.",
+    "reasons": [
+      "Errata: gli stafilococchi sono normalmente studiati con colorazione di Gram e non sono bacilli alcol-acido resistenti.",
+      "Errata: gli enterobatteri sono Gram-negativi e non rappresentano il bersaglio tipico della Ziehl-Neelsen.",
+      "Corretta: i micobatteri trattengono la carbolfucsina anche dopo trattamento con acido-alcol, caratteristica alla base della colorazione di Ziehl-Neelsen.",
+      "Errata: i protozoi intestinali vengono identificati con metodiche parassitologiche differenti e non sono il bersaglio principale della Ziehl-Neelsen classica."
+    ]
+  },
+  "m62": {
+    "summary": "Gli acidi micolici sono acidi grassi a lunga catena caratteristici dell'involucro dei micobatteri e contribuiscono a impermeabilità, resistenza e alcol-acido resistenza.",
+    "reasons": [
+      "Errata: la cellulosa è tipica soprattutto della parete delle cellule vegetali.",
+      "Errata: la chitina è un importante componente della parete dei funghi.",
+      "Corretta: gli acidi micolici sono elementi fondamentali dell'involucro micobatterico e spiegano molte delle sue peculiari proprietà tintoriali e di permeabilità.",
+      "Errata: il glicogeno è una molecola di riserva energetica e non il componente caratteristico della parete dei micobatteri."
+    ]
+  },
+  "m63": {
+    "summary": "Chlamydia trachomatis è un batterio intracellulare obbligato con ciclo bifasico; i sierotipi A, B, Ba e C sono classicamente associati al tracoma.",
+    "reasons": [
+      "Corretta: C. trachomatis dipende dalla cellula ospite per il proprio ciclo replicativo e specifici sierotipi sono responsabili del tracoma.",
+      "Errata: Chlamydia è un batterio e non un micete.",
+      "Errata: l'alcol-acido resistenza è caratteristica dei micobatteri, non di C. trachomatis.",
+      "Errata: Chlamydia è un parassita intracellulare obbligato, non facoltativo."
+    ]
+  },
+  "m64": {
+    "summary": "Nel ciclo di Chlamydia il corpo elementare è la forma infettante extracellulare, mentre il corpo reticolare è la forma intracellulare metabolicamente attiva e replicativa.",
+    "reasons": [
+      "Errata: il corpo reticolare è la forma replicativa intracellulare ma non quella principalmente deputata alla trasmissione tra cellule o ospiti.",
+      "Errata: Chlamydia non produce endospore batteriche.",
+      "Errata: il termine trofozoite è utilizzato soprattutto per forme vegetative di protozoi e non descrive il ciclo bifasico di Chlamydia.",
+      "Corretta: il corpo elementare è piccolo, metabolicamente poco attivo e resistente abbastanza da mediare l'infezione di nuove cellule."
+    ]
+  },
+  "m65": {
+    "summary": "L'agar è un polisaccaride utilizzato comunemente per solidificare i terreni microbiologici perché rimane stabile alle temperature di incubazione e viene metabolizzato da pochi batteri.",
+    "reasons": [
+      "Errata: l'albumina può essere presente in alcuni mezzi o reagenti ma non è l'agente solidificante standard dei terreni batteriologici.",
+      "Errata: il peptidoglicano è una componente della parete batterica e non viene usato normalmente per solidificare i terreni.",
+      "Corretta: l'agar conferisce consistenza solida al mezzo e consente la crescita di colonie isolate.",
+      "Errata: il collagene è una proteina della matrice extracellulare animale e non il solidificante standard della coltura batterica."
+    ]
+  },
+  "m66": {
+    "summary": "Il terreno di trasporto conserva la vitalità dei microrganismi del campione limitandone però la moltiplicazione, così da mantenere rappresentativa la composizione microbiologica fino al laboratorio.",
+    "reasons": [
+      "Errata: favorire una rapida moltiplicazione altererebbe la quantità relativa dei microrganismi e falserebbe il campione.",
+      "Errata: il terreno di trasporto deve preservare i microrganismi ricercati, non eliminarli.",
+      "Corretta: questi terreni proteggono da essiccamento e condizioni sfavorevoli senza fornire nutrienti sufficienti a una crescita significativa.",
+      "Errata: la MIC viene determinata con specifici test di sensibilità antimicrobica, non dal terreno di trasporto."
+    ]
+  },
+  "m67": {
+    "summary": "Un terreno selettivo contiene sostanze che permettono o favoriscono la crescita di determinati microrganismi mentre inibiscono gruppi indesiderati.",
+    "reasons": [
+      "Errata: un terreno che favorisse indistintamente tutte le specie sarebbe non selettivo.",
+      "Errata: sterilizzare significa eliminare i microrganismi e sarebbe incompatibile con lo scopo di coltivarne alcuni selettivamente.",
+      "Errata: la ricerca di anticorpi appartiene alla diagnostica indiretta e non definisce un terreno selettivo.",
+      "Corretta: la selettività deriva da nutrienti, antibiotici, sali, pH o altri componenti che favoriscono alcuni microrganismi e ne inibiscono altri."
+    ]
+  },
+  "m68": {
+    "summary": "Un terreno differenziale contiene indicatori che rendono visibili differenze metaboliche o biochimiche tra microrganismi che riescono a crescervi.",
+    "reasons": [
+      "Errata: un terreno differenziale deve consentire la crescita e il confronto dei microrganismi, non sterilizzare il campione.",
+      "Corretta: variazioni di colore, emolisi o altre reazioni permettono di distinguere microrganismi in base a caratteristiche biochimiche o metaboliche.",
+      "Errata: l'eliminazione sistematica di tutti i Gram-positivi descriverebbe eventualmente una selettività, non la funzione generale di un terreno differenziale.",
+      "Errata: gli anticorpi del paziente vengono misurati con test sierologici e non tramite terreni differenziali."
+    ]
+  },
+  "m69": {
+    "summary": "Su agar sangue la beta-emolisi corrisponde a lisi completa degli eritrociti e produce un alone trasparente attorno alle colonie.",
+    "reasons": [
+      "Errata: l'assenza di emolisi viene indicata tradizionalmente come gamma-emolisi.",
+      "Errata: la beta-emolisi descrive il comportamento emolitico su agar sangue e non la necessità di crescita anaerobia.",
+      "Errata: l'emolisi parziale con colorazione verdastra è alfa-emolisi.",
+      "Corretta: la beta-emolisi è completa e determina una zona chiara per distruzione degli eritrociti nel terreno."
+    ]
+  },
+  "m70": {
+    "summary": "Quando possibile, i campioni per coltura microbiologica devono essere raccolti prima della terapia antibiotica, perché il trattamento può ridurre la vitalità o la carica del patogeno.",
+    "reasons": [
+      "Corretta: il prelievo prima dell'antibiotico massimizza la probabilità di isolare il microrganismo responsabile e di eseguirne correttamente l'identificazione e l'antibiogramma.",
+      "Errata: attendere più dosi di antibiotico può diminuire la sensibilità della coltura.",
+      "Errata: raccogliere esclusivamente al termine della terapia rischia di non rilevare più il patogeno originario.",
+      "Errata: la sede del prelievo è fondamentale e deve corrispondere il più possibile alla sede dell'infezione evitando contaminazioni."
+    ]
+  },
+  "m71": {
+    "summary": "Per l'urinocoltura standard nel paziente collaborante si raccoglie il mitto intermedio in contenitore sterile, riducendo la contaminazione da flora periuretrale e cutanea.",
+    "reasons": [
+      "Corretta: scartare il primo getto e raccogliere il mitto intermedio con tecnica pulita riduce la contaminazione e rende il campione più rappresentativo delle vie urinarie.",
+      "Errata: la sacca di raccolta può essere colonizzata e non rappresenta il sito raccomandato per un campione microbiologico affidabile.",
+      "Errata: una conservazione prolungata a temperatura ambiente può modificare la carica batterica e compromettere l'interpretazione.",
+      "Errata: toccare l'interno o i bordi del contenitore aumenta il rischio di contaminazione del campione."
+    ]
+  },
+  "m72": {
+    "summary": "La raccolta di più set di emocolture aumenta il volume totale analizzato, migliora la sensibilità diagnostica e aiuta a distinguere una vera batteriemia da contaminazione cutanea.",
+    "reasons": [
+      "Errata: l'obiettivo è ridurre la contaminazione attraverso corretta antisepsi, non aumentarla.",
+      "Errata: la tecnica asettica è essenziale per diminuire i falsi positivi da flora cutanea.",
+      "Corretta: più set aumentano la probabilità di recuperare un patogeno realmente circolante e la ripetizione dello stesso isolato aiuta a distinguerlo da un contaminante occasionale.",
+      "Errata: le emocolture sono importanti nella sospetta infezione ematica ma non sostituiscono automaticamente tutti gli altri esami clinici e microbiologici."
+    ]
+  },
+  "m73": {
+    "summary": "La diagnostica microbiologica indiretta documenta la risposta dell'ospite all'infezione, in particolare attraverso la ricerca di anticorpi specifici.",
+    "reasons": [
+      "Errata: la coltura dimostra direttamente il microrganismo e appartiene quindi alla diagnostica diretta.",
+      "Corretta: la presenza, comparsa o variazione di anticorpi specifici è una misura della risposta immunitaria dell'ospite e costituisce diagnostica indiretta.",
+      "Errata: la morfologia batterica osservata direttamente al microscopio appartiene alla ricerca diretta del patogeno.",
+      "Errata: il diametro della colonia è una caratteristica colturale del microrganismo, non una risposta immunitaria dell'ospite."
+    ]
+  },
+  "m74": {
+    "summary": "La sieroconversione indica classicamente il passaggio da assenza a presenza rilevabile di anticorpi specifici; nelle diagnosi sierologiche è spesso rilevante anche un aumento significativo del titolo tra fase acuta e convalescenza.",
+    "reasons": [
+      "Corretta: la comparsa di anticorpi prima assenti definisce la sieroconversione; il confronto di sieri acuto e convalescente può inoltre documentare un incremento diagnostico del titolo.",
+      "Errata: la sieroconversione non comporta la scomparsa di tutte le immunoglobuline ma, al contrario, la comparsa di una risposta anticorpale specifica.",
+      "Errata: la presenza di eritrociti non definisce alcun fenomeno sierologico di conversione anticorpale.",
+      "Errata: la crescita batterica su agar è un metodo colturale diretto e non ha rapporto con la sieroconversione."
+    ]
+  },
+  "m75": {
+    "summary": "Le penicillin-binding proteins sono enzimi batterici coinvolti nelle fasi terminali della sintesi e reticolazione del peptidoglicano e costituiscono il principale bersaglio dei beta-lattamici.",
+    "reasons": [
+      "Errata: la DNA-polimerasi eucariotica appartiene alle cellule dell'ospite e non è il bersaglio selettivo dei beta-lattamici.",
+      "Errata: i ribosomi eucariotici 80S non sono il bersaglio dei beta-lattamici.",
+      "Corretta: legandosi alle PBP, i beta-lattamici impediscono la corretta costruzione della parete e favoriscono la lisi dei batteri in crescita.",
+      "Errata: i batteri non possiedono mitocondri e i beta-lattamici non agiscono su questa struttura."
+    ]
+  },
+  "m76": {
+    "summary": "I macrolidi si legano alla subunità ribosomiale 50S e inibiscono l'allungamento della catena peptidica, bloccando la sintesi proteica batterica.",
+    "reasons": [
+      "Errata: i macrolidi non hanno come bersaglio il DNA umano e la loro selettività deriva dal ribosoma batterico.",
+      "Errata: il blocco della sintesi del peptidoglicano è tipico soprattutto di beta-lattamici e altri farmaci attivi sulla parete.",
+      "Corretta: i macrolidi interagiscono con il ribosoma 50S e ostacolano la traduzione, con effetto generalmente batteriostatico.",
+      "Errata: la sporulazione è un processo di differenziamento di alcuni batteri e non il bersaglio farmacologico dei macrolidi."
+    ]
+  },
+  "m77": {
+    "summary": "I fluorochinoloni inibiscono le topoisomerasi batteriche, soprattutto DNA-girasi e topoisomerasi IV, interferendo con replicazione e gestione della topologia del DNA.",
+    "reasons": [
+      "Corretta: il blocco di DNA-girasi e topoisomerasi IV impedisce la corretta replicazione e segregazione del DNA batterico.",
+      "Errata: gli acidi teicoici sono componenti dei Gram-positivi e non costituiscono il principale bersaglio dei fluorochinoloni.",
+      "Errata: i fluorochinoloni sono antibatterici e non agiscono sulla formazione del capside virale.",
+      "Errata: l'ergosterolo è un bersaglio di diversi antifungini e non dei fluorochinoloni."
+    ]
+  },
+  "m78": {
+    "summary": "La rifampicina inibisce la RNA-polimerasi batterica DNA-dipendente e blocca quindi la trascrizione dell'RNA.",
+    "reasons": [
+      "Errata: la sintesi del peptidoglicano è bersaglio di altre classi, come i beta-lattamici.",
+      "Corretta: la rifampicina si lega alla RNA-polimerasi batterica DNA-dipendente e impedisce l'avvio o la prosecuzione della trascrizione.",
+      "Errata: i batteri non possiedono una membrana nucleare, quindi questa non può costituire il bersaglio del farmaco.",
+      "Errata: la sintesi dell'ergosterolo è un bersaglio antifungino e non il meccanismo della rifampicina."
+    ]
+  },
+  "m79": {
+    "summary": "Gli aminoglicosidi si legano alla subunità ribosomiale 30S, interferiscono con l'inizio della traduzione e causano errori di lettura dell'mRNA, compromettendo la sintesi proteica.",
+    "reasons": [
+      "Errata: il metabolismo dei folati è bersaglio di sulfamidici e trimetoprim.",
+      "Errata: la sintesi del peptidoglicano è bersaglio di beta-lattamici, glicopeptidi e altri farmaci della parete.",
+      "Errata: l'ergosterolo è una componente della membrana fungina e viene colpito da farmaci antifungini.",
+      "Corretta: gli aminoglicosidi interagiscono con il ribosoma 30S e alterano la corretta traduzione delle proteine batteriche."
+    ]
+  },
+  "m80": {
+    "summary": "La resistenza antibiotica acquisita può derivare da mutazioni cromosomiche oppure dall'acquisizione orizzontale di geni di resistenza mediante plasmidi, trasposoni, integroni o batteriofagi.",
+    "reasons": [
+      "Errata: i batteri non possiedono mitocondri e la loro eventuale presenza non può spiegare una resistenza antibiotica acquisita.",
+      "Corretta: mutazioni e trasferimento genico orizzontale possono modificare bersagli, produrre enzimi inattivanti, aumentare l'efflusso o introdurre altre forme di resistenza.",
+      "Errata: la perdita completa del cromosoma impedirebbe le funzioni essenziali e non costituisce un normale meccanismo di acquisizione della resistenza.",
+      "Errata: un batterio non si trasforma in un virus; batteri e virus sono entità biologiche distinte."
+    ]
+  }
+}
