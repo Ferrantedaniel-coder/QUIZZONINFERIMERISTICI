@@ -26,19 +26,21 @@ Il quiz viene abilitato appena la banca è valida. Le spiegazioni avanzate **non
 
 Restano preservati mix/focus, 20/30/50/100/tutte, ordine casuale/banca, shuffle A/B/C/D, `lockOrder`, punteggio, accuratezza, barra progresso, precedente/successiva, risultato, breakdown, ripasso errori, reset, `localStorage` e Home.
 
-## Spiegazioni avanzate opzionali — 130/462 attive
+## Spiegazioni avanzate opzionali — 196/462 attive
 
 Sono ora attive in modalità fail-safe per:
 
 - **Diagnostica `di1–di76`: 76/76**;
-- **Educazione terapeutica `ed1–ed54`: 54/54**.
+- **Educazione terapeutica `ed1–ed54`: 54/54**;
+- **Psicologia `ps1–ps66`: 66/66**.
 
-Totale collegato al runtime: **130 spiegazioni avanzate opzionali**.
+Totale collegato al runtime: **196 spiegazioni avanzate opzionali**.
 
 File opzionali caricati:
 
 - `001.json` → `007.json`: Diagnostica `di1–di76`;
-- `008.json` → `013.json`: Educazione terapeutica `ed1–ed54`.
+- `008.json` → `013.json`: Educazione terapeutica `ed1–ed54`;
+- `014.json` → `020.json`: Psicologia `ps1–ps66`.
 
 ### Architettura fail-safe
 
@@ -71,7 +73,7 @@ Quando l'entry è valida, dopo la conferma vengono mostrati:
 4. quattro motivazioni separate;
 5. etichetta `CORRETTA` o `ERRATA` per ogni alternativa.
 
-Per Psicologia e Terapia resta per ora il feedback base `why`.
+Per Terapia resta per ora il feedback base `why`.
 
 ## Integrità della banca
 
@@ -85,7 +87,8 @@ Restano separati dal presente task i quesiti già segnalati come potenzialmente 
 
 - Diagnostica completa: `di1–di76`.
 - Educazione terapeutica completa: `ed1–ed54`.
-- **Copertura avanzata opzionale totale: 130/462.**
-- Commit runtime Educazione: `a64c4cce594835605f1086c150178bf40e9f2150`.
-- Commit Home/cache-busting: `568c8b457f877d5d678943d63e077157e2a89b5a`.
-- Punto di ripresa successivo: **Psicologia `ps1`**.
+- Psicologia completa: `ps1–ps66`.
+- **Copertura avanzata opzionale totale: 196/462.**
+- Commit runtime Psicologia: `ac2dd4b543af896b02457c4c8caee90bb5581e4d`.
+- Commit Home/cache-busting: `2c0c5d9f5629f9ca3f692c8a1b6a88eb876c6093`.
+- Punto di ripresa successivo: **Terapia `te1`**.
