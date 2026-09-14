@@ -60,7 +60,7 @@ Se il task riguarda UI, logica, spiegazioni o infrastruttura:
 
 Se emerge un quesito probabilmente errato, ambiguo, obsoleto o discordante, **non correggerlo di nascosto**: segnalarlo come QA e modificarlo solo con autorizzazione esplicita.
 
-Per contenuti medici/infermieristici dare priorità ai materiali universitari dell'utente. Quando serve verifica, aggiornamento o disambiguazione usare fonti autorevoli, incluse **PubMed/PMC, NCBI/NIH, WHO, CDC, fonti normative ufficiali e linee guida pertinenti**. Le fonti esterne servono a verificare o precisare il contenuto, non autorizzano modifiche silenziose della banca.
+Per contenuti medici/infermieristici dare priorità ai materiali universitari dell'utente. Quando serve verifica, aggiornamento o disambiguazione usare fonti autorevoli, incluse **PubMed/PMC, NCBI/NIH, WHO, CDC, UICC/NCI, fonti normative ufficiali e linee guida pertinenti**. Le fonti esterne servono a verificare o precisare il contenuto, non autorizzano modifiche silenziose della banca.
 
 ## 5. Standard delle spiegazioni
 
@@ -97,16 +97,14 @@ Implementazione attiva:
 
 Checkpoint: `SCIENZE_SALUTE_PROGRESS.md`.
 
-### Anatomia Patologica — IN CORSO 280/300
-
-Il lavoro procede in blocchi controllati seguendo l'ordine reale complessivo della banca.
+### Anatomia Patologica — COMPLETO 300/300
 
 Implementazione attiva:
 
 - `anatomia-patologica.html` resta il motore originale e continua a caricare le 12 banche JSON;
 - `anatomia-patologica-explanations.js` è un enhancer opzionale fail-safe;
-- rilascio attivo: **`pilot7`**;
-- `EXPECTED_ADVANCED=280`;
+- rilascio finale attivo: **`pilot8`**;
+- `EXPECTED_ADVANCED=300`;
 - file spiegazioni:
   - `data/anatomia-patologica-explanations-001.json` → `m1–m40`;
   - `data/anatomia-patologica-explanations-002.json` → `m41–m80`;
@@ -114,15 +112,16 @@ Implementazione attiva:
   - `data/anatomia-patologica-explanations-004.json` → `e21–e50` + `i1–i10`;
   - `data/anatomia-patologica-explanations-005.json` → `i11–i50`;
   - `data/anatomia-patologica-explanations-006.json` → `a1–a40`;
-  - `data/anatomia-patologica-explanations-007.json` → `a41–a80`.
+  - `data/anatomia-patologica-explanations-007.json` → `a41–a80`;
+  - `data/anatomia-patologica-explanations-008.json` → `a81–a100`.
 
 Copertura:
 
 - Microbiologia `m1–m100` = **100/100 COMPLETA**;
 - Eziologia `e1–e50` = **50/50 COMPLETA**;
 - Immunologia `i1–i50` = **50/50 COMPLETA**;
-- Anatomia Patologica `a1–a80` = **80/100**;
-- **totale 280/300**.
+- Anatomia Patologica `a1–a100` = **100/100 COMPLETA**;
+- **totale 300/300 COMPLETA**.
 
 Materiale universitario primario:
 
@@ -134,13 +133,11 @@ Materiale universitario primario:
 - `ANATOMIA PATOLOGICA.pdf`;
 - `Domande anatomia patologica.pdf` come riferimento didattico aggiuntivo.
 
-Nel blocco 007 sono stati verificati: autopsia e tanatologia; citologia e suoi limiti; citologia urinaria e respiratoria; versamenti; agoaspirato; Pap test; criteri citomorfologici di malignità; biopsie incisionale, escissionale, core e stereotassica; biopsia polmonare transparietale; frozen section e invio a fresco.
+Nel blocco finale `a81–a100` sono stati verificati: criostato, frozen section e suoi limiti; carcinoma/sarcoma; identità delle metastasi; grading e differenziazione; staging e TNM; T/N/M; distinzione grado/stadio; pTNM; specificità dei criteri TNM per sede; biomarcatori predittivi immunoistochimici; integrazione di morfologia, immunofenotipo e diagnostica molecolare.
 
 ### Precisazioni scientifiche registrate
 
-Nei quesiti coperti non sono state modificate domande, opzioni, risposte corrette, ID o topic.
-
-Precisazioni applicate **solo nelle spiegazioni**:
+Nelle spiegazioni avanzate sono state applicate precisazioni scientifiche senza modificare la banca originale. Tra le principali:
 
 - corretta denominazione **via lectinica del complemento** con **mannose-binding lectin (MBL)**;
 - cellule dendritiche come APC più efficienti nell'attivazione dei T vergini, evitando l'assoluto “uniche APC costimolatorie”;
@@ -156,11 +153,13 @@ Precisazioni applicate **solo nelle spiegazioni**:
 - `a67`: spiegazione aggiornata alle indicazioni WHO, con HPV DNA test come metodo primario preferito in molti programmi moderni di screening cervicale;
 - `a70`: fondo necrotico considerato suggestivo in alcuni contesti ma non specifico da solo per malignità;
 - `a75`: “agobiopsia a cielo coperto” mantenuta come terminologia del corso per patologie diffuse, con nota che l'uso moderno dipende dal distretto e dall'imaging;
-- `a79–a80`: frozen section descritta come consulenza intraoperatoria per quesiti selezionati, con limiti di campionamento e artefatti; invio del tessuto a fresco senza fissativo.
+- frozen section descritta come consulenza intraoperatoria per quesiti selezionati, soggetta a limiti di campionamento e artefatti e seguita dall'esame definitivo;
+- **grading e staging sono distinti**: il grading riguarda caratteristiche morfologico-biologiche, lo staging soprattutto l'estensione anatomica;
+- nel TNM: **T** = tumore primitivo, **N** = linfonodi regionali, **M** = metastasi a distanza; le categorie specifiche variano per sede/tipo di tumore;
+- stadiazione patologica indicata con prefisso **p** (`pTNM`) secondo i criteri applicabili;
+- immunoistochimica e diagnostica molecolare possono identificare biomarcatori predittivi utili alla scelta terapeutica.
 
-Le verifiche del blocco 007 hanno utilizzato `ANATOMIA PATOLOGICA.pdf` e `Domande anatomia patologica.pdf` come base primaria, WHO per lo screening cervicale e PubMed per citologia urinaria e frozen section.
-
-**Punto di ripresa Anatomia Patologica:** ultimo blocco `a81–a100` (**20 domande**), con copertura attesa **300/300 COMPLETA**.
+Nessun quesito `m1–m100`, `e1–e50`, `i1–i50` o `a1–a100` è stato modificato durante il lavoro sulle spiegazioni. Domande, opzioni, risposte corrette, ID e topic sono rimasti invariati.
 
 Checkpoint dettagliato: `ANATOMIA_PATOLOGICA_PROGRESS.md`.
 
@@ -176,7 +175,7 @@ File principali:
 - `SCIENZE_SALUTE_PROGRESS.md`;
 - `anatomia-patologica.html`;
 - `anatomia-patologica-explanations.js`;
-- `data/anatomia-patologica-explanations-001.json` → `007.json`;
+- `data/anatomia-patologica-explanations-001.json` → `008.json`;
 - `ANATOMIA_PATOLOGICA_PROGRESS.md`;
 - `infermieristica-materno.html`;
 - `paziente-chirurgico.html`;
@@ -204,7 +203,9 @@ I progressi utente restano locali al browser; non ci sono account, database remo
 
 - Paziente chirurgico: **462/462** completo.
 - Scienze della Salute: **459/459** completo.
-- Anatomia Patologica: **280/300**; resta il residuo finale `a81–a100`.
+- Anatomia Patologica: **300/300** completo.
+
+Non esiste più un punto di ripresa per le spiegazioni avanzate di questi tre esami.
 
 ## 8. GitHub e autorizzazioni
 
@@ -219,7 +220,7 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 
 1. Paziente chirurgico: spiegazioni complete 462/462.
 2. Scienze della Salute: spiegazioni complete 459/459.
-3. Anatomia Patologica: spiegazioni avanzate **280/300**; completare `a81–a100`.
+3. Anatomia Patologica: spiegazioni complete 300/300.
 4. Mantenere le banche originali inalterate salvo autorizzazione esplicita.
 5. Gestire quesiti dubbi o obsoleti come QA separato.
 6. Farmacologia resta una futura banca in preparazione.
