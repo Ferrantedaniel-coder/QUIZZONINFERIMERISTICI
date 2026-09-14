@@ -1,0 +1,92 @@
+{
+  "di21": {
+    "summary": "Il gadolinio evidenzia aree cerebrali in cui l'integrità della barriera emato-encefalica è compromessa, perché in tali sedi il contrasto può passare nello spazio extracellulare.",
+    "options": {
+      "La BEE è intatta": "Errata: una barriera emato-encefalica integra limita il passaggio del mezzo di contrasto dal circolo al tessuto cerebrale.",
+      "La BEE è danneggiata": "Corretta: quando la barriera è alterata, il gadolinio può raggiungere il compartimento extracellulare e produrre enhancement nelle aree patologiche.",
+      "Solo nei bambini": "Errata: il passaggio non dipende dall'età pediatrica, ma dall'integrità o dalla compromissione della barriera.",
+      "Mai": "Errata: proprio la rottura o l'aumentata permeabilità della BEE è uno dei motivi per cui alcune lesioni cerebrali captano contrasto."
+    }
+  },
+  "di22": {
+    "summary": "Il polmone destro è suddiviso in tre lobi: superiore, medio e inferiore.",
+    "options": {
+      "1": "Errata: il polmone destro non è costituito da un unico lobo.",
+      "2": "Errata: due lobi caratterizzano il polmone sinistro, che presenta lobo superiore e inferiore.",
+      "3": "Corretta: il polmone destro possiede tre lobi separati dalle scissure: superiore, medio e inferiore.",
+      "4": "Errata: nell'anatomia normale non esiste una suddivisione del polmone destro in quattro lobi."
+    }
+  },
+  "di23": {
+    "summary": "Il solfato di bario usato come mezzo di contrasto è insolubile e praticamente non assorbito dal tratto gastrointestinale.",
+    "options": {
+      "Sì, completamente": "Errata: il solfato di bario viene scelto proprio perché è insolubile e rimane nel lume gastrointestinale fino all'eliminazione.",
+      "No, è insolubile": "Corretta: la sua insolubilità consente di opacizzare il tubo digerente senza un rapido assorbimento sistemico.",
+      "Solo nei neonati": "Errata: l'insolubilità è una proprietà chimico-fisica del composto e non dipende dall'età del paziente.",
+      "Solo a digiuno": "Errata: il digiuno può essere richiesto per preparare alcuni esami, ma non modifica il fatto che il solfato di bario sia insolubile."
+    }
+  },
+  "di24": {
+    "summary": "Nel materiale d'esame la fascia indicata come maggiormente utile per lo screening mammografico è 50-69 anni.",
+    "options": {
+      "20-30 anni": "Errata: in questa fascia lo screening mammografico di popolazione non è quella indicata dal materiale come fascia principale.",
+      "30-40 anni": "Errata: non corrisponde alla fascia di screening riportata nella banca d'esame.",
+      "40-49 anni": "Errata nel contesto del quesito: può esistere una valutazione individuale o programmi differenti, ma la risposta richiesta dal materiale è 50-69 anni.",
+      "50-69 anni": "Corretta: è la fascia d'età indicata negli appunti e nella soluzione della banca per il programma di screening mammografico richiamato dal quesito."
+    }
+  },
+  "di25": {
+    "summary": "La radiografia standard evidenzia una riduzione della massa ossea soprattutto quando la perdita minerale è già significativa; la densitometria è più adatta alla valutazione precoce.",
+    "options": {
+      "È sufficiente nelle fasi iniziali": "Errata: nelle fasi iniziali dell'osteopenia le variazioni di densità possono essere troppo modeste per essere riconosciute affidabilmente su RX standard.",
+      "Diagnostica solo in fase tardiva": "Corretta nel senso del quesito: la radiografia diventa più evidente quando la demineralizzazione è già avanzata e non rappresenta il metodo sensibile per la diagnosi precoce.",
+      "Non ha alcuna utilità": "Errata: la radiografia può mostrare segni tardivi e soprattutto eventuali fratture o alterazioni strutturali associate.",
+      "Sostituisce la mineralometria": "Errata: la mineralometria ossea, come la DEXA, quantifica la densità minerale e non viene sostituita dalla semplice radiografia."
+    }
+  },
+  "di26": {
+    "summary": "Nel materiale d'esame la TAC spirale, in particolare l'angio-TC del circolo polmonare, è la metodica indicata per documentare un'embolia polmonare.",
+    "options": {
+      "Ecografia addome": "Errata: studia gli organi addominali e non visualizza direttamente il circolo arterioso polmonare.",
+      "TAC spirale": "Corretta: la TC spirale consente acquisizioni rapide e, con contrasto, la visualizzazione dei difetti di riempimento nelle arterie polmonari.",
+      "Radiografia torace": "Errata: può mostrare segni indiretti o diagnosi alternative, ma non è l'esame indicato dal quesito per dimostrare direttamente l'embolo.",
+      "RM cervicale": "Errata: riguarda il distretto cervicale e non è una metodica pertinente alla ricerca di un'embolia polmonare."
+    }
+  },
+  "di27": {
+    "summary": "La TAC con mezzo di contrasto permette di documentare le alterazioni morfologiche del pancreas e le complicanze associate alla pancreatite cronica.",
+    "options": {
+      "RX torace": "Errata: può essere utile per problemi toracici o per alcuni segni indiretti, ma non caratterizza il pancreas nella pancreatite cronica.",
+      "TAC con mezzo di contrasto": "Corretta: consente uno studio dettagliato del pancreas e delle strutture circostanti, mettendo in evidenza alterazioni strutturali e complicanze.",
+      "Ecografia tiroidea": "Errata: è un esame del collo e della ghiandola tiroidea, quindi non pertinente al quadro pancreatico.",
+      "RM encefalo": "Errata: studia il sistema nervoso centrale e non documenta la patologia pancreatica."
+    }
+  },
+  "di28": {
+    "summary": "In caso di sospetta perforazione del tubo digerente si preferisce un contrasto idrosolubile, evitando il bario che, se extravasato, può provocare una reazione da corpo estraneo.",
+    "options": {
+      "RM addome": "Errata nel contesto dell'urgenza proposta: non è l'esame indicato dalla banca per documentare rapidamente una sospetta perforazione duodenale.",
+      "RX addome + mezzo di contrasto idrosolubile": "Corretta: la radiografia può evidenziare aria libera e il contrasto idrosolubile può dimostrare un'eventuale fuoriuscita senza i rischi del bario in caso di perforazione.",
+      "Colonscopia": "Errata: esplora il colon, non il duodeno, e una procedura endoscopica non è la scelta proposta in presenza di sospetta perforazione acuta.",
+      "TAC spinale": "Errata: è un esame della colonna vertebrale e non è pertinente allo studio di una perforazione duodenale."
+    }
+  },
+  "di29": {
+    "summary": "La colangiografia percutanea permette di opacizzare direttamente l'albero biliare ed è richiamata nel materiale in presenza di ostruzione delle vie biliari.",
+    "options": {
+      "Pancreatite": "Errata: la pancreatite è una patologia del pancreas e non costituisce, di per sé, l'indicazione specifica richiamata dal quesito per la colangiografia percutanea.",
+      "Ittero ostruttivo": "Corretta: l'ostruzione biliare determina stasi e ittero; la colangiografia percutanea può definire sede e livello dell'ostacolo e consentire procedure biliari dedicate.",
+      "Gastrite": "Errata: interessa la mucosa gastrica e viene valutata con metodiche gastroenterologiche, non con colangiografia.",
+      "Colite": "Errata: riguarda il colon e non l'albero biliare."
+    }
+  },
+  "di30": {
+    "summary": "La biopsia epatica ecoguidata utilizza l'ecografia per dirigere l'ago verso una lesione del fegato e ottenere tessuto da esaminare istologicamente.",
+    "options": {
+      "Pancreatite": "Errata: la biopsia è epatica, mentre la pancreatite riguarda il pancreas e viene inquadrata con altri esami.",
+      "Sospetta neoplasia epatica HCC": "Corretta: nel materiale la procedura è associata alla caratterizzazione istologica di una sospetta lesione epatica, come un carcinoma epatocellulare.",
+      "Gastrite": "Errata: la gastrite riguarda la mucosa dello stomaco e non richiede una biopsia del parenchima epatico.",
+      "Ittero emolitico": "Errata: l'ittero emolitico deriva dall'aumento della produzione di bilirubina per emolisi e non è, nel quesito, un'indicazione alla biopsia di una massa epatica."
+    }
+  }
+}
