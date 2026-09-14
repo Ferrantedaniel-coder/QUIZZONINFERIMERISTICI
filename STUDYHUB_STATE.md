@@ -94,12 +94,12 @@ Le spiegazioni avanzate vengono caricate **solo dopo** che il quiz è già avvia
 - **Diagnostica: `di1–di76` = 76/76**;
 - **Educazione terapeutica: `ed1–ed54` = 54/54**;
 - **Psicologia: `ps1–ps66` = 66/66**;
-- **Terapia: `te1–te60` = 60/266**;
-- **Totale avanzato opzionale attivo: 256/462**.
+- **Terapia: `te1–te120` = 120/266**;
+- **Totale avanzato opzionale attivo: 316/462**.
 
 File attualmente collegati:
 
-- `data/paziente-chirurgico-explanations-001.json` → `023.json`.
+- `data/paziente-chirurgico-explanations-001.json` → `026.json`.
 
 Il runtime supporta sia il formato storico con `entry.options[opzione]` sia il formato con `entry.reasons[]`. Nel secondo caso la motivazione viene ricondotta all'indice dell'opzione originale in `q.options`, quindi segue correttamente la risposta anche dopo il rimescolamento A/B/C/D.
 
@@ -111,7 +111,7 @@ Per una entry valida il feedback mostra:
 - quattro motivazioni separate;
 - etichetta `CORRETTA` / `ERRATA` per ogni alternativa.
 
-Per Terapia da `te61` in poi resta per ora il feedback base `why`.
+Per Terapia da `te121` in poi resta per ora il feedback base `why`.
 
 **Regola fondamentale: nessun problema delle spiegazioni avanzate deve mai impedire avvio, svolgimento o completamento dell'esame.**
 
@@ -134,7 +134,7 @@ File principali:
 - `infermieristica-materno.html`;
 - `paziente-chirurgico.html` — runtime stabile + spiegazioni avanzate opzionali;
 - `paziente-chirurgico-explanations.js` — file legacy, non caricato dal runtime attivo;
-- `data/paziente-chirurgico-explanations-manifest.json` e `001`→`029` — archivio completo delle spiegazioni; `001`→`023` sono attualmente collegati al runtime;
+- `data/paziente-chirurgico-explanations-manifest.json` e `001`→`029` — archivio completo delle spiegazioni; `001`→`026` sono attualmente collegati al runtime;
 - `PAZIENTE_CHIRURGICO_PROGRESS.md` — checkpoint specifico;
 - `data/` — banche domande;
 - `.nojekyll` — pubblicazione statica.
@@ -160,7 +160,7 @@ I progressi sono locali al browser; non ci sono account, database remoto o sync 
 
 Per revisione estesa di banche o spiegazioni lavorare in **blocchi controllati di circa 40–60 domande**, con checkpoint GitHub tra i blocchi. Il checkpoint deve indicare esame, intervallo completato, ultima domanda, file modificati, commit e punto di ripresa.
 
-Punto di ripresa attuale per Paziente chirurgico: **Terapia `te61`**.
+Punto di ripresa attuale per Paziente chirurgico: **Terapia `te121`**.
 
 ### Continuità tra chat
 
@@ -184,7 +184,7 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 1. **Diagnostica Paziente chirurgico: completa 76/76 con spiegazioni avanzate opzionali fail-safe.**
 2. **Educazione terapeutica: completa 54/54 con spiegazioni avanzate opzionali fail-safe.**
 3. **Psicologia: completa 66/66 con spiegazioni avanzate opzionali fail-safe.**
-4. **Terapia: completato `te1–te60`; proseguire da `te61`** con la stessa architettura non bloccante.
+4. **Terapia: completato `te1–te120`; proseguire da `te121`** con la stessa architettura non bloccante.
 5. Dopo Paziente chirurgico, completare Scienze della Salute allo stesso standard superiore.
 6. QA separato dei quesiti di Paziente chirurgico già segnalati, solo con autorizzazione esplicita a modificare la banca.
 
