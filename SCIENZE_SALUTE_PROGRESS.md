@@ -11,19 +11,17 @@ L'esame **Scienze della Salute** contiene **459 domande** distribuite nei quattr
 - Igiene e medicina preventiva
 - Storia della medicina
 
-La banca non è interamente organizzata in quattro blocchi contigui: nelle parti successive alcuni macroargomenti ricompaiono in intervalli diversi. Per questo la copertura viene registrata per **ID di banca effettivamente completati**.
+La banca non è interamente organizzata in quattro blocchi contigui: nelle parti successive alcuni macroargomenti ricompaiono in intervalli diversi. La copertura viene quindi registrata per **ID di banca effettivamente completati**.
 
 ## Implementazione attiva
 
-La Home principale apre `scienze-salute.html`.
+La Home apre `scienze-salute.html`, wrapper che carica `scienze-salute-app.html` in iframe.
 
-`scienze-salute.html` è il wrapper attivo e carica nello stesso dominio, tramite iframe, `scienze-salute-app.html`.
-
-`scienze-salute-app.html` resta il motore originale dell'esame e contiene inline l'intera banca di **459 domande**. Durante il lavoro sulle spiegazioni avanzate questo file **non viene modificato**.
+`scienze-salute-app.html` resta il motore originale e contiene inline l'intera banca di **459 domande**. Durante il lavoro sulle spiegazioni avanzate questo file non viene modificato.
 
 Restano invariati motore del quiz, banca, quattro opzioni, risposte corrette, modalità di sessione, rimescolamento A/B/C/D, punteggio, navigazione, risultato, ripasso errori e `localStorage`.
 
-## Spiegazioni avanzate opzionali - 321/459
+## Spiegazioni avanzate opzionali - 361/459
 
 Copertura progressiva attiva per ID banca:
 
@@ -32,10 +30,10 @@ Copertura progressiva attiva per ID banca:
 - `177–220` → Igiene e medicina preventiva
 - `221–270` → Storia della medicina
 - `271–320` → Igiene e medicina preventiva
-- `321` → Storia della medicina
-- **Copertura avanzata totale continua: `1–321` = 321/459**
+- `321–361` → Storia della medicina
+- **Copertura avanzata totale continua: `1–361` = 361/459**
 
-I primi due tratti originari sono completi nel loro intervallo iniziale: **Infermieristica 1–121** ed **Epidemiologia 122–176**. Dalla 271 la banca torna a intercalare i macroargomenti; non si deve quindi dedurre la completezza globale di una materia soltanto dal termine di un intervallo.
+I macroargomenti possono ricomparire più avanti nella banca; non si deve dedurre la completezza globale di una materia soltanto dalla fine di un singolo intervallo.
 
 ## File dati
 
@@ -49,36 +47,28 @@ I primi due tratti originari sono completi nel loro intervallo iniziale: **Infer
 - `data/scienze-salute-explanations-008.json` → `202–241`
 - `data/scienze-salute-explanations-009.json` → `242–281`
 - `data/scienze-salute-explanations-010.json` → `282–321`
+- `data/scienze-salute-explanations-011.json` → `322–361`
 
-Ogni entry contiene:
-
-- `summary`: concetto chiave;
-- `reasons[4]`: una motivazione per ciascuna delle quattro opzioni nell'ordine originale della banca.
+Ogni entry contiene `summary` e `reasons[4]`, con una motivazione per ciascuna alternativa nell'ordine originale della banca.
 
 ## Architettura fail-safe
 
-`scienze-salute-explanations.js` viene iniettato opzionalmente da `scienze-salute.html` dopo il caricamento dell'app originale.
+`scienze-salute-explanations.js` viene iniettato opzionalmente dal wrapper dopo il caricamento dell'app originale.
 
 L'enhancer:
 
 - non modifica `scienze-salute-app.html`;
 - non partecipa al caricamento obbligatorio della banca;
 - non modifica domande, opzioni o indice corretto;
-- carica i JSON avanzati con `Promise.allSettled`;
+- carica i JSON con `Promise.allSettled`;
 - valida ogni entry rispetto alla domanda originale;
-- associa le motivazioni al testo dell'opzione originale, così seguono correttamente lo shuffle A/B/C/D;
-- osserva il feedback prodotto dal motore originale e lo arricchisce soltanto dopo la correzione;
-- se enhancer, JSON o singola entry non sono disponibili, mantiene il feedback base `q.e` e il quiz continua a funzionare.
+- associa le motivazioni al testo dell'opzione originale, quindi le motivazioni seguono correttamente lo shuffle A/B/C/D;
+- arricchisce il feedback solo dopo la correzione;
+- se enhancer, JSON o singola entry non sono disponibili, mantiene il feedback base `q.e` e il quiz resta utilizzabile.
 
 **Un problema delle spiegazioni avanzate non deve mai impedire avvio, svolgimento o completamento dell'esame.**
 
-Quando l'entry avanzata è valida, il feedback mostra:
-
-1. esito corretto/errato;
-2. risposta corretta nella posizione A/B/C/D realmente mostrata;
-3. concetto chiave;
-4. quattro motivazioni separate;
-5. etichetta `CORRETTA` o `ERRATA` per ogni alternativa.
+Quando l'entry è valida, il feedback mostra esito, risposta corretta nella posizione realmente mostrata, concetto chiave e quattro motivazioni separate con etichetta `CORRETTA` / `ERRATA`.
 
 ## Integrità della banca
 
@@ -90,26 +80,26 @@ Non sono stati modificati:
 - risposte corrette;
 - ID o macroargomenti.
 
-Le spiegazioni `1–321` sono dati aggiuntivi esterni alla banca originale.
+Le spiegazioni `1–361` sono dati aggiuntivi esterni alla banca originale.
 
 ## Commit recenti
-
-Pilot8 — domande `242–281`:
-
-- dati `009`: `19b76c16b1c4001b4c87f1227e4965a2c78bb747`
-- enhancer esteso a `281`: `3f6207905e90383766fefce6c60a3eeed20efc00`
-- wrapper/cache enhancer `pilot8`: `29654c97519248a9bda1a8234f804e40076bd48e`
-- Home/cache-busting `pilot8`: `35161c1abb1d10f1f36c915f04b1fe039a31ab43`
 
 Pilot9 — domande `282–321`:
 
 - dati `010`: `48a3cdb09fbf952d3594e3d27100f9ae94ef213c`
-- enhancer finale esteso a `321`: `aa4ec1ab5cca0874cd9af999adff8019c8d3b092`
-- wrapper/cache enhancer `pilot9`: `3ff18a54028d35fab0d2c1104603e75b2924590d`
-- Home/cache-busting `pilot9`: `870a32a28e9b1c053542789bdade4d38a4ecf428`
+- enhancer finale: `aa4ec1ab5cca0874cd9af999adff8019c8d3b092`
+- wrapper: `3ff18a54028d35fab0d2c1104603e75b2924590d`
+- Home: `870a32a28e9b1c053542789bdade4d38a4ecf428`
+
+Pilot10 — domande `322–361`:
+
+- dati `011`: `dd38ce278e675060c143ec6b164d2c5529da9877`
+- enhancer esteso a `361`: `869d446880170cdf9ff62bcf6fc0299f0c10a450`
+- wrapper/cache enhancer `pilot10`: `019e6f233f3f7b3eb4c14f8d2ac91081c93d3a87`
+- Home/cache-busting `pilot10`: `850d2965a1bfe2eb99cd5b8026164fbc867c44b6`
 
 ## Punto di ripresa
 
-La copertura avanzata è continua dalla domanda **1 alla 321**.
+La copertura avanzata è continua dalla domanda **1 alla 361**.
 
-Il prossimo blocco parte dalla **domanda 322**, che prosegue in **Storia della medicina**. Continuare nell'ordine reale della banca, registrando gli intervalli dei macroargomenti senza assumere che siano globalmente contigui.
+Il prossimo blocco parte dalla **domanda 362**. Continuare nell'ordine reale della banca e registrare gli intervalli dei macroargomenti senza assumere che siano globalmente contigui.
