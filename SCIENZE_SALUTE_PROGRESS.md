@@ -17,13 +17,13 @@ La banca non è interamente organizzata in quattro blocchi contigui: nelle parti
 
 La Home apre `scienze-salute.html`, wrapper che carica `scienze-salute-app.html` in iframe.
 
-`scienze-salute-app.html` resta il motore originale e contiene inline l'intera banca di **459 domande**. Durante il lavoro sulle spiegazioni avanzate questo file non viene modificato.
+`scienze-salute-app.html` resta il motore originale e contiene inline l'intera banca di **459 domande**. Durante il lavoro sulle spiegazioni avanzate questo file non è stato modificato.
 
 Restano invariati motore del quiz, banca, quattro opzioni, risposte corrette, modalità di sessione, rimescolamento A/B/C/D, punteggio, navigazione, risultato, ripasso errori e `localStorage`.
 
-## Spiegazioni avanzate opzionali - 401/459
+## Spiegazioni avanzate opzionali - COMPLETO 459/459
 
-Copertura progressiva attiva per ID banca:
+Copertura progressiva per ID banca:
 
 - `1–121` → Infermieristica nell'evoluzione storica
 - `122–176` → Epidemiologia
@@ -35,10 +35,15 @@ Copertura progressiva attiva per ID banca:
 - `380–392` → Storia della medicina
 - `393–394` → Infermieristica nell'evoluzione storica
 - `395–399` → Storia della medicina
-- `400–401` → Infermieristica nell'evoluzione storica
-- **Copertura avanzata totale continua: `1–401` = 401/459**
+- `400–402` → Infermieristica nell'evoluzione storica
+- `403–407` → Storia della medicina
+- `408` → Infermieristica nell'evoluzione storica
+- `409–447` → Storia della medicina
+- `448–450` → Infermieristica nell'evoluzione storica
+- `451–459` → Storia della medicina
+- **Copertura avanzata totale continua: `1–459` = 459/459**
 
-I macroargomenti possono ricomparire più avanti nella banca; non si deve dedurre la completezza globale di una materia soltanto dalla fine di un singolo intervallo.
+Tutte le domande dell'esame dispongono ora della spiegazione avanzata concordata: concetto chiave, motivo della risposta corretta e motivo dell'errore per ciascuna delle altre tre alternative.
 
 ## File dati
 
@@ -54,6 +59,7 @@ I macroargomenti possono ricomparire più avanti nella banca; non si deve dedurr
 - `data/scienze-salute-explanations-010.json` → `282–321`
 - `data/scienze-salute-explanations-011.json` → `322–361`
 - `data/scienze-salute-explanations-012.json` → `362–401`
+- `data/scienze-salute-explanations-013.json` → `402–459`
 
 Ogni entry contiene `summary` e `reasons[4]`, con una motivazione per ciascuna alternativa nell'ordine originale della banca.
 
@@ -86,16 +92,9 @@ Non sono stati modificati:
 - risposte corrette;
 - ID o macroargomenti.
 
-Le spiegazioni `1–401` sono dati aggiuntivi esterni alla banca originale.
+Le spiegazioni `1–459` sono dati aggiuntivi esterni alla banca originale.
 
-## Commit recenti
-
-Pilot10 — domande `322–361`:
-
-- dati `011`: `dd38ce278e675060c143ec6b164d2c5529da9877`
-- enhancer esteso a `361`: `869d446880170cdf9ff62bcf6fc0299f0c10a450`
-- wrapper/cache enhancer `pilot10`: `019e6f233f3f7b3eb4c14f8d2ac91081c93d3a87`
-- Home/cache-busting `pilot10`: `850d2965a1bfe2eb99cd5b8026164fbc867c44b6`
+## Commit finali
 
 Pilot11 — domande `362–401`:
 
@@ -104,8 +103,15 @@ Pilot11 — domande `362–401`:
 - wrapper/cache enhancer `pilot11`: `208e908037486d1985b54227da3ad558a96e24fe`
 - Home/cache-busting `pilot11`: `a53754a8139d2aa3ab728c095a2683c6b1edf4b2`
 
+Pilot12 — domande `402–459`:
+
+- dati `013`: `edf3d581fe17e99b1c9e2e5967aee5b103e26db9`
+- enhancer esteso a `459`: `81d3132ee541aaa9b7222dcbb1462be616a7fc92`
+- wrapper/cache enhancer `pilot12`: `272209f94dc140d0211afc0c231a5932d9f35748`
+- Home/cache-busting `pilot12`: `198bb41440c86c32f06918e3d81423d4677c3c4b`
+
 ## Punto di ripresa
 
-La copertura avanzata è continua dalla domanda **1 alla 401**.
+**Nessun blocco residuo. Scienze della Salute è completa: 459/459 spiegazioni avanzate.**
 
-Il prossimo blocco parte dalla **domanda 402**, che prosegue in **Infermieristica nell'evoluzione storica**. Continuare nell'ordine reale della banca e registrare gli intervalli dei macroargomenti senza assumere che siano globalmente contigui.
+Eventuali attività successive devono essere trattate come QA separato, manutenzione o nuove funzionalità, senza modificare la banca originale salvo autorizzazione esplicita.
