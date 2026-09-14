@@ -1,7 +1,7 @@
 (function(){
 'use strict';
-const OPTIONAL_EXPLANATION_FILES=['data/anatomia-patologica-explanations-001.json','data/anatomia-patologica-explanations-002.json'];
-const EXPECTED_ADVANCED=80;
+const OPTIONAL_EXPLANATION_FILES=['data/anatomia-patologica-explanations-001.json','data/anatomia-patologica-explanations-002.json','data/anatomia-patologica-explanations-003.json'];
+const EXPECTED_ADVANCED=120;
 const ADVANCED_EXPLANATIONS={};
 let feedbackObserver=null;
 
