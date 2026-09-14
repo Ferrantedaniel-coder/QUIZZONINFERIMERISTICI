@@ -33,4 +33,6 @@ function showResult(){const checked=session.filter(q=>q.checked).length;if(check
 function retryErrors(){if(!wrongIds.length)return;document.getElementById("mode").value="all";startQuiz([...wrongIds]);}
 function resetProgress(){if(!confirm("Vuoi azzerare i progressi salvati per Anatomia Patologica?"))return;localStorage.removeItem(STORAGE_KEY);persisted=loadPersisted();currentStats={answered:0,correct:0};wrongIds=[];updateStats();}
 boot();
-</script></body></html>
+</script>
+<script src="anatomia-patologica-explanations.js?v=20260914-pilot1"></script>
+</body></html>
