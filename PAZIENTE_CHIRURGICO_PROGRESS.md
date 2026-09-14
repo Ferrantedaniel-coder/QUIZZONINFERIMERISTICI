@@ -26,23 +26,23 @@ Il quiz viene abilitato appena la banca è valida. Le spiegazioni avanzate **non
 
 Restano preservati mix/focus, 20/30/50/100/tutte, ordine casuale/banca, shuffle A/B/C/D, `lockOrder`, punteggio, accuratezza, barra progresso, precedente/successiva, risultato, breakdown, ripasso errori, reset, `localStorage` e Home.
 
-## Spiegazioni avanzate opzionali — 366/462 attive
+## Spiegazioni avanzate opzionali — 416/462 attive
 
 Sono ora attive in modalità fail-safe per:
 
 - **Diagnostica `di1–di76`: 76/76**;
 - **Educazione terapeutica `ed1–ed54`: 54/54**;
 - **Psicologia `ps1–ps66`: 66/66**;
-- **Terapia `te1–te170`: 170/266**.
+- **Terapia `te1–te220`: 220/266**.
 
-Totale collegato al runtime: **366 spiegazioni avanzate opzionali**.
+Totale collegato al runtime: **416 spiegazioni avanzate opzionali**.
 
 File opzionali caricati:
 
 - `001.json` → `007.json`: Diagnostica `di1–di76`;
 - `008.json` → `013.json`: Educazione terapeutica `ed1–ed54`;
 - `014.json` → `020.json`: Psicologia `ps1–ps66`;
-- `021.json` → `027.json`: Terapia `te1–te170`.
+- `021.json` → `028.json`: Terapia `te1–te220`.
 
 ### Architettura fail-safe
 
@@ -75,7 +75,7 @@ Quando l'entry è valida, dopo la conferma vengono mostrati:
 4. quattro motivazioni separate;
 5. etichetta `CORRETTA` o `ERRATA` per ogni alternativa.
 
-Per Terapia da `te171` in poi resta per ora il feedback base `why`.
+Per Terapia da `te221` in poi resta per ora il feedback base `why`.
 
 ## Integrità della banca
 
@@ -90,8 +90,8 @@ Restano separati dal presente task i quesiti già segnalati come potenzialmente 
 - Diagnostica completa: `di1–di76`.
 - Educazione terapeutica completa: `ed1–ed54`.
 - Psicologia completa: `ps1–ps66`.
-- Terapia completata: `te1–te170`.
-- **Copertura avanzata opzionale totale: 366/462.**
-- Commit runtime Terapia `te121–te170`: `33b2e2aac160bebde0f534138904ed31b1d28c0b`.
-- Commit Home/cache-busting pilot7: `82f5edc92005ee3309c99715f09e6d76f1975595`.
-- Punto di ripresa successivo: **Terapia `te171`**.
+- Terapia completata: `te1–te220`.
+- **Copertura avanzata opzionale totale: 416/462.**
+- Commit runtime Terapia `te171–te220`: `a3159cd927210c31067de427ef570fd6798e6759`.
+- Commit Home/cache-busting pilot8: `692f717d0f8e4178c5a52f68bab9c4b5340102b9`.
+- Punto di ripresa successivo: **Terapia `te221`**.
