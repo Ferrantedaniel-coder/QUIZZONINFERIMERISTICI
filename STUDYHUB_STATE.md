@@ -85,7 +85,7 @@ Copertura:
 File: `data/paziente-chirurgico-explanations-001.json` → `029.json`.
 Checkpoint: `PAZIENTE_CHIRURGICO_PROGRESS.md`.
 
-### Scienze della Salute — spiegazioni avanzate 361/459
+### Scienze della Salute — spiegazioni avanzate 401/459
 
 Implementazione attiva:
 
@@ -107,6 +107,7 @@ File avanzati collegati:
 - `009.json` → `242–281`
 - `010.json` → `282–321`
 - `011.json` → `322–361`
+- `012.json` → `362–401`
 
 Percorsi completi: `data/scienze-salute-explanations-XXX.json`.
 
@@ -117,8 +118,13 @@ Percorsi completi: `data/scienze-salute-explanations-XXX.json`.
 - `177–220` → Igiene e medicina preventiva;
 - `221–270` → Storia della medicina;
 - `271–320` → Igiene e medicina preventiva;
-- `321–361` → Storia della medicina;
-- **totale continuo coperto: `1–361` = 361/459**.
+- `321–370` → Storia della medicina;
+- `371–379` → Infermieristica nell'evoluzione storica;
+- `380–392` → Storia della medicina;
+- `393–394` → Infermieristica nell'evoluzione storica;
+- `395–399` → Storia della medicina;
+- `400–401` → Infermieristica nell'evoluzione storica;
+- **totale continuo coperto: `1–401` = 401/459**.
 
 **Importante:** nella parte centrale/finale della banca i macroargomenti ricompaiono in intervalli differenti. Registrare sempre lo stato per ID effettivamente completati e non dichiarare una materia globalmente completa soltanto perché termina un tratto consecutivo.
 
@@ -146,7 +152,7 @@ File principali:
 - `scienze-salute.html` — wrapper attivo Scienze;
 - `scienze-salute-app.html` — motore originale e banca inline 459 domande;
 - `scienze-salute-explanations.js` — enhancer opzionale;
-- `data/scienze-salute-explanations-001.json` → `011.json` — spiegazioni avanzate `1–361`;
+- `data/scienze-salute-explanations-001.json` → `012.json` — spiegazioni avanzate `1–401`;
 - `SCIENZE_SALUTE_PROGRESS.md` — checkpoint specifico Scienze;
 - `anatomia-patologica.html`;
 - `infermieristica-materno.html`;
@@ -176,7 +182,7 @@ I progressi sono locali al browser; non ci sono account, database remoto o sync 
 Per revisione estesa di banche o spiegazioni lavorare in **blocchi controllati di circa 40–60 domande**, con checkpoint GitHub tra i blocchi.
 
 - Paziente chirurgico: spiegazioni complete **462/462**.
-- Scienze della Salute: spiegazioni complete in sequenza **1–361**; punto di ripresa **362**.
+- Scienze della Salute: spiegazioni complete in sequenza **1–401**; punto di ripresa **402**.
 
 Per Scienze continuare nell'ordine reale della banca e annotare gli intervalli dei macroargomenti quando cambiano.
 
@@ -196,8 +202,8 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 ## 9. Roadmap immediata
 
 1. **Paziente chirurgico: spiegazioni avanzate complete 462/462 con architettura fail-safe.**
-2. **Scienze della Salute: spiegazioni avanzate attive 1–361 con enhancer opzionale fail-safe.**
-3. Proseguire Scienze della Salute dalla **domanda 362**, seguendo l'ordine reale della banca.
+2. **Scienze della Salute: spiegazioni avanzate attive 1–401 con enhancer opzionale fail-safe.**
+3. Proseguire Scienze della Salute dalla **domanda 402**, seguendo l'ordine reale della banca.
 4. Mantenere le banche originali inalterate durante il lavoro sulle spiegazioni.
 5. QA separato dei quesiti dubbi o obsoleti, solo con autorizzazione esplicita a modificare la banca.
 
