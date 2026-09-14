@@ -117,7 +117,7 @@ Copertura completa per ID banca:
 
 Checkpoint: `SCIENZE_SALUTE_PROGRESS.md`.
 
-### Anatomia Patologica — IN CORSO 120/300
+### Anatomia Patologica — IN CORSO 160/300
 
 Il lavoro procede in **blocchi da 40 domande** seguendo l'ordine reale complessivo della banca.
 
@@ -125,20 +125,21 @@ Implementazione attiva:
 
 - `anatomia-patologica.html` resta il motore originale e continua a caricare le 12 banche JSON;
 - `anatomia-patologica-explanations.js` è un enhancer opzionale fail-safe;
-- rilascio attivo: **`pilot3`**;
-- `EXPECTED_ADVANCED=120`;
+- rilascio attivo: **`pilot4`**;
+- `EXPECTED_ADVANCED=160`;
 - file spiegazioni:
   - `data/anatomia-patologica-explanations-001.json` → `m1–m40`;
   - `data/anatomia-patologica-explanations-002.json` → `m41–m80`;
-  - `data/anatomia-patologica-explanations-003.json` → `m81–m100` + `e1–e20`.
+  - `data/anatomia-patologica-explanations-003.json` → `m81–m100` + `e1–e20`;
+  - `data/anatomia-patologica-explanations-004.json` → `e21–e50` + `i1–i10`.
 
 Copertura:
 
 - Microbiologia `m1–m100` = **100/100 COMPLETA**;
-- Eziologia `e1–e20` = **20/50**;
-- Immunologia = 0/50;
+- Eziologia `e1–e50` = **50/50 COMPLETA**;
+- Immunologia `i1–i10` = **10/50**;
 - Anatomia Patologica = 0/100;
-- **totale 120/300**.
+- **totale 160/300**.
 
 Materiale universitario primario fornito dall'utente:
 
@@ -149,13 +150,11 @@ Materiale universitario primario fornito dall'utente:
 - `Immunologia STAMPATO.pdf`;
 - `ANATOMIA PATOLOGICA.pdf`.
 
-Nel blocco 003 sono stati verificati: antibiotico-resistenza e beta-lattamasi, anaerobiosi, trasferimento genico, peptidoglicano e membrana dei Gram-negativi, protozoi e miceti, Candida, Aspergillus e aflatossine; per Eziologia: definizioni, traumi, pneumotorace, fratture, distorsione/lussazione, danno termico, ustioni, colpo di calore, freddo e radiazioni corpuscolate.
+Nel blocco 004 sono stati verificati: radiazioni ionizzanti e danno al DNA, radiolisi dell'acqua, radicali liberi, perossidazione lipidica e stress ossidativo; radiosensibilità, danno chimico, osmosi, denaturazione proteica, tossicologia, DL50, saturnismo e biotrasformazione; infiammazione, istamina, prostaglandine, diapedesi, chemiotassi, neutrofili, essudato/trasudato, pus, ascesso/empiema, infiammazione cronica e guarigione per seconda intenzione; per Immunologia: immunosorveglianza, immunità innata/adattativa, linfociti B/T, barriere, lisozima, defensine, microbiota, opsonizzazione e fagosoma.
 
-Per aumentare il rigore scientifico, alcune formulazioni degli appunti sono precisate **nelle spiegazioni** senza alterare la banca. Esempi: alta umidità = ridotta evaporazione del sudore nel colpo di calore; ustioni descritte anche con terminologia superficiale/partial-thickness/full-thickness.
+Nei quesiti coperti finora non sono state modificate domande, opzioni, risposte corrette, ID o topic. Non sono emerse risposte corrette chiaramente incompatibili con i materiali universitari e con le fonti autorevoli consultate.
 
-Nei quesiti coperti finora non sono state modificate domande, opzioni, risposte corrette, ID o topic.
-
-**Punto di ripresa Anatomia Patologica:** prossimo blocco da 40 = `e21–e50` (30 Eziologia) + `i1–i10` (10 Immunologia), con copertura attesa **160/300**.
+**Punto di ripresa Anatomia Patologica:** prossimo blocco da 40 = `i11–i50` (**40 Immunologia**), con copertura attesa **200/300**.
 
 Checkpoint dettagliato: `ANATOMIA_PATOLOGICA_PROGRESS.md`.
 
@@ -171,7 +170,7 @@ File principali:
 - `SCIENZE_SALUTE_PROGRESS.md`;
 - `anatomia-patologica.html`;
 - `anatomia-patologica-explanations.js`;
-- `data/anatomia-patologica-explanations-001.json` → `003.json`;
+- `data/anatomia-patologica-explanations-001.json` → `004.json`;
 - `ANATOMIA_PATOLOGICA_PROGRESS.md`;
 - `infermieristica-materno.html`;
 - `paziente-chirurgico.html`;
@@ -199,7 +198,7 @@ I progressi utente restano locali al browser; non ci sono account, database remo
 
 - Paziente chirurgico: **462/462** completo.
 - Scienze della Salute: **459/459** completo.
-- Anatomia Patologica: **120/300**, blocchi fissi da 40; prossimo `e21–e50` + `i1–i10`.
+- Anatomia Patologica: **160/300**, blocchi fissi da 40; prossimo `i11–i50`.
 
 Quando un blocco attraversa il confine tra due sezioni, mantenere la dimensione di 40 e registrare chiaramente gli intervalli. L'ultimo blocco può contenere il residuo finale inferiore a 40.
 
@@ -216,7 +215,7 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 
 1. Paziente chirurgico: spiegazioni complete 462/462.
 2. Scienze della Salute: spiegazioni complete 459/459.
-3. Anatomia Patologica: spiegazioni avanzate **120/300**; proseguire con `e21–e50` + `i1–i10`.
+3. Anatomia Patologica: spiegazioni avanzate **160/300**; proseguire con `i11–i50`.
 4. Mantenere le banche originali inalterate salvo autorizzazione esplicita.
 5. Gestire quesiti dubbi o obsoleti come QA separato.
 6. Farmacologia resta una futura banca in preparazione.
