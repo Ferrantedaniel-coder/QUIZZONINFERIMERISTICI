@@ -33,11 +33,11 @@ Per ogni domanda:
 - `Immunologia STAMPATO.pdf`
 - `ANATOMIA PATOLOGICA.pdf`
 
-Le spiegazioni devono conservare, quando scientificamente sostenibile, terminologia e impostazione del materiale del corso.
+Le spiegazioni conservano, quando scientificamente sostenibile, terminologia, organizzazione e impostazione del materiale del corso.
 
 ### Verifica scientifica esterna
 
-Quando un punto richiede verifica, aggiornamento o disambiguazione, vengono consultate fonti autorevoli, tra cui PubMed/PMC, NCBI/NIH, CDC e standard o linee guida pertinenti. Le fonti esterne servono a verificare il contenuto e non autorizzano modifiche silenziose della banca.
+Quando un punto richiede verifica, aggiornamento o disambiguazione, vengono consultate fonti autorevoli, tra cui PubMed/PMC, NCBI/NIH, CDC, WHO e standard o linee guida pertinenti. Le fonti esterne servono a verificare o precisare il contenuto e non autorizzano modifiche silenziose della banca.
 
 Se una risposta della banca risultasse probabilmente errata, ambigua o obsoleta, va registrata come **QA separato** e non modificata senza autorizzazione esplicita.
 
@@ -48,7 +48,8 @@ File attivi:
 - `anatomia-patologica.html` — motore originale dell'esame e caricamento delle 12 banche JSON;
 - `anatomia-patologica-explanations.js` — enhancer opzionale;
 - `data/anatomia-patologica-explanations-001.json` — spiegazioni `m1–m40`;
-- `data/anatomia-patologica-explanations-002.json` — spiegazioni `m41–m80`.
+- `data/anatomia-patologica-explanations-002.json` — spiegazioni `m41–m80`;
+- `data/anatomia-patologica-explanations-003.json` — spiegazioni `m81–m100` + `e1–e20`.
 
 L'enhancer:
 
@@ -60,7 +61,7 @@ L'enhancer:
 - arricchisce il feedback soltanto dopo la correzione;
 - in caso di errore dell'enhancer o dei JSON lascia attivo il feedback base `why` e non impedisce lo svolgimento del quiz.
 
-## Copertura — 80/300
+## Copertura — 120/300
 
 ### Blocco 001
 
@@ -68,36 +69,40 @@ L'enhancer:
 - Sezione: **Microbiologia**
 - File: `data/anatomia-patologica-explanations-001.json`
 
-Argomenti principali: infezioni endogene/esogene, microbiota, vaccini, virologia, diagnostica, struttura batterica, MIC, LPS, plasmidi, capsula ed endospore.
-
 ### Blocco 002
 
 - IDs: `m41–m80`
 - Sezione: **Microbiologia**
 - File: `data/anatomia-patologica-explanations-002.json`
-- Copertura totale: **80/300**
 
-Argomenti verificati nel blocco:
+### Blocco 003
 
-- ribosomi, citoplasma e metabolismo batterico;
-- acidi teicoici e struttura Gram positiva;
-- endospore e germinazione;
-- criteri di valutazione degli antibatterici e farmacocinetica;
-- meccanismi di antibiotico-resistenza;
-- beta-lattamici/PBP, macrolidi, fluorochinoloni, rifampicina e aminoglicosidi;
-- colorazione di Gram e Ziehl-Neelsen;
-- acidi micolici e micobatteri;
-- ciclo di `Chlamydia trachomatis`;
-- agar, terreni di trasporto, selettivi e differenziali;
-- beta-emolisi;
-- raccolta di campioni per coltura, urinocoltura ed emocolture;
-- diagnostica indiretta e sieroconversione.
+- IDs: `m81–m100` → **Microbiologia** (20 domande)
+- IDs: `e1–e20` → **Eziologia** (20 domande)
+- File: `data/anatomia-patologica-explanations-003.json`
+- Copertura totale: **120/300**
 
-### QA dei blocchi 001–002
+Con il blocco 003 la sezione **Microbiologia è completa 100/100** per le spiegazioni avanzate.
 
-Nessun quesito `m1–m80` è stato modificato. Nel controllo non sono emerse risposte corrette chiaramente incompatibili con il materiale universitario e con le fonti scientifiche autorevoli consultate.
+Argomenti principali verificati nel blocco 003:
 
-Per il blocco 002 i punti più sensibili sono stati confrontati con letteratura PubMed/NCBI su meccanismi d'azione e resistenza agli antibiotici, Chlamydia e micobatteri e con indicazioni CDC sulla raccolta di più set di emocolture.
+- beta-lattamasi, resistenza intrinseca e acquisita, batteriostatici;
+- anaerobi facoltativi e obbligati, microaerofili;
+- scissione binaria, trasformazione, trasduzione e coniugazione;
+- NAG/NAM del peptidoglicano e membrana esterna dei Gram-negativi;
+- `Plasmodium`, `Toxoplasma gondii`, miceti, lieviti e muffe;
+- `Candida albicans`, `Aspergillus flavus`, aflatossine e micosi opportunistiche;
+- definizione di eziologia e cause estrinseche;
+- patologia traumatica: ecchimosi, escoriazione, danni viscerali, pneumotorace, fratture, distorsione e lussazione;
+- danno termico e classificazione delle ustioni;
+- colpo di calore e risposta al freddo;
+- radiazioni corpuscolate ed elettromagnetiche, con particelle alfa.
+
+### QA dei blocchi 001–003
+
+Nessun quesito `m1–m100` o `e1–e20` è stato modificato. Nel controllo non sono emerse risposte corrette chiaramente incompatibili con il materiale universitario e con le fonti scientifiche autorevoli consultate.
+
+Nel blocco 003 alcune formulazioni degli appunti sono state **precisate nelle spiegazioni senza alterare la banca**: ad esempio, nell'ipertermia l'alta umidità riduce l'efficacia dell'evaporazione del sudore; per le ustioni sono stati usati anche i termini moderni superficiale, partial-thickness e full-thickness. Questo mantiene la risposta della banca ma rende la spiegazione scientificamente più rigorosa.
 
 ## Dimensione dei blocchi
 
@@ -107,7 +112,7 @@ Per garantire controllo e qualità, procedere in **blocchi da 40 domande** mante
 
 Il prossimo blocco contiene **40 domande**:
 
-- `m81–m100` → **Microbiologia** (20 domande)
-- `e1–e20` → **Eziologia** (20 domande)
+- `e21–e50` → **Eziologia** (30 domande)
+- `i1–i10` → **Immunologia** (10 domande)
 
-Copertura successiva attesa al termine del blocco: **120/300**.
+Copertura successiva attesa al termine del blocco: **160/300**.
