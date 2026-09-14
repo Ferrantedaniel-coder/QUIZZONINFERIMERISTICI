@@ -1,2 +1,38 @@
 <!doctype html>
-<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#37b7b3"><title>Study Hub · Infermieristica nel Materno</title><style>html,body{margin:0;width:100%;height:100%;background:#f4f8f7}#bar{height:46px;display:flex;align-items:center;justify-content:space-between;padding:0 14px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:rgba(255,255,255,.92);border-bottom:1px solid rgba(0,0,0,.08);box-sizing:border-box;position:sticky;top:0;z-index:10}#bar strong{color:#243238}button{border:0;border-radius:12px;padding:8px 12px;background:#eaf6f4;color:#356c6b;font-weight:700;cursor:pointer}iframe{width:100%;height:calc(100% - 46px);border:0;display:block}</style></head><body><div id="bar"><strong>Study Hub · Infermieristica nel Materno</strong><button onclick="location.href='index.html'">Home</button></div><iframe id="app" src="infermieristica-materno.html" title="Infermieristica nel Materno"></iframe><script>const f=document.getElementById('app');function installOptionalExplanations(){try{const d=f.contentDocument;if(!d||d.getElementById('maternoExplanationsEnhancer'))return;const s=d.createElement('script');s.id='maternoExplanationsEnhancer';s.src='infermieristica-materno-explanations.js?v=20260915-pilot3';s.async=true;s.onerror=()=>console.warn('Spiegazioni avanzate opzionali non disponibili: il quiz base resta attivo.');(d.body||d.head||d.documentElement).appendChild(s)}catch(e){console.warn('Enhancer opzionale non installato: il quiz base resta attivo.',e)}}function redirectInnerHome(){try{const d=f.contentDocument;if(!d||d.__studyHubHomeRedirect)return;d.__studyHubHomeRedirect=true;d.addEventListener('click',e=>{const el=e.target&&e.target.closest?e.target.closest('[onclick*="index.html"]'):null;if(el){e.preventDefault();e.stopImmediatePropagation();parent.location.href='index.html'}},true)}catch(e){console.warn('Redirect Home interno non installato.',e)}}f.addEventListener('load',()=>{installOptionalExplanations();redirectInnerHome()});</script></body></html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#37b7b3"><title>Study Hub · Infermieristica nel Materno</title><style>html,body{margin:0;width:100%;height:100%;background:#f4f8f7}#bar{height:46px;display:flex;align-items:center;justify-content:space-between;padding:0 14px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:rgba(255,255,255,.92);border-bottom:1px solid rgba(0,0,0,.08);box-sizing:border-box;position:sticky;top:0;z-index:10}#bar strong{color:#243238}button{border:0;border-radius:12px;padding:8px 12px;background:#eaf6f4;color:#356c6b;font-weight:700;cursor:pointer}iframe{width:100%;height:calc(100% - 46px);border:0;display:block}</style></head><body><div id="bar"><strong>Study Hub · Infermieristica nel Materno</strong><button onclick="location.href='index.html'">Home</button></div><iframe id="app" src="infermieristica-materno.html?v=20260915-pilot4" title="Infermieristica nel Materno"></iframe><script>
+const f=document.getElementById('app');
+let enhancerRetry=0;
+function installOptionalExplanations(){
+  try{
+    const d=f.contentDocument;
+    if(!d){scheduleEnhancerRetry();return;}
+    if(d.getElementById('maternoExplanationsEnhancer'))return;
+    const s=d.createElement('script');
+    s.id='maternoExplanationsEnhancer';
+    s.src=new URL('infermieristica-materno-explanations.js?v=20260915-pilot4',location.href).href;
+    s.async=true;
+    s.onerror=()=>{console.warn('Spiegazioni avanzate opzionali non disponibili: il quiz base resta attivo.');scheduleEnhancerRetry();};
+    (d.body||d.head||d.documentElement).appendChild(s);
+  }catch(e){console.warn('Enhancer opzionale non installato: il quiz base resta attivo.',e);scheduleEnhancerRetry();}
+}
+function scheduleEnhancerRetry(){
+  if(enhancerRetry>=20)return;
+  enhancerRetry++;
+  setTimeout(installOptionalExplanations,150);
+}
+function redirectInnerHome(){
+  try{
+    const d=f.contentDocument;
+    if(!d||d.__studyHubHomeRedirect)return;
+    d.__studyHubHomeRedirect=true;
+    d.addEventListener('click',e=>{
+      const el=e.target&&e.target.closest?e.target.closest('[onclick*="index.html"]'):null;
+      if(el){e.preventDefault();e.stopImmediatePropagation();parent.location.href='index.html';}
+    },true);
+  }catch(e){console.warn('Redirect Home interno non installato.',e);}
+}
+function onFrameReady(){enhancerRetry=0;installOptionalExplanations();redirectInnerHome();}
+f.addEventListener('load',onFrameReady);
+if(f.contentDocument&&f.contentDocument.readyState!=='loading')onFrameReady();
+else setTimeout(onFrameReady,100);
+</script></body></html>
