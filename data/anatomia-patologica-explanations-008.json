@@ -1,0 +1,182 @@
+{
+  "a81": {
+    "summary": "Il criostato è un microtomo inserito in una camera refrigerata che permette di congelare rapidamente il tessuto e ottenere sezioni sottili per l'esame intraoperatorio.",
+    "reasons": [
+      "Corretta: il criostato combina refrigerazione e microtomia, consentendo di tagliare tessuto congelato in pochi minuti per una valutazione istologica rapida.",
+      "Errata: un incubatore batteriologico serve alla crescita controllata di microrganismi e non al taglio di tessuti.",
+      "Errata: una centrifuga separa componenti di liquidi biologici mediante forza centrifuga e non produce sezioni istologiche.",
+      "Errata: un apparecchio ecografico genera immagini mediante ultrasuoni e non è uno strumento di microtomia."
+    ]
+  },
+  "a82": {
+    "summary": "La valutazione intraoperatoria dei margini chirurgici è una delle indicazioni classiche della frozen section quando il risultato può modificare immediatamente l'estensione dell'exeresi.",
+    "reasons": [
+      "Corretta: verificare se un margine è libero o interessato dalla neoplasia può orientare il chirurgo a proseguire o ampliare la resezione durante lo stesso intervento.",
+      "Errata: la misurazione della pressione arteriosa è un'attività clinico-assistenziale e non un'indicazione all'esame istologico intraoperatorio.",
+      "Errata: la ricerca del glucosio urinario è un esame di laboratorio e non richiede frozen section.",
+      "Errata: la temperatura corporea è un parametro vitale e non viene valutata mediante anatomia patologica intraoperatoria."
+    ]
+  },
+  "a83": {
+    "summary": "La frozen section va evitata quando la diagnosi richiede l'esame completo di una lesione piccola o focale, perché un campionamento limitato può perdere il reperto decisivo.",
+    "reasons": [
+      "Errata: se la risposta può cambiare immediatamente la strategia chirurgica, l'esame intraoperatorio può essere appropriato, purché il quesito sia ben definito.",
+      "Errata: la valutazione di un margine sospetto è una possibile indicazione alla consulenza intraoperatoria.",
+      "Errata: il riconoscimento rapido di tessuto linfonodale o di metastasi in contesti selezionati può rientrare nelle indicazioni della frozen section.",
+      "Corretta: quando è necessario studiare l'intera lesione, la valutazione di poche sezioni congelate può essere inadeguata; un esempio classico è la distinzione tra adenoma e carcinoma follicolare della tiroide, che richiede accurata ricerca di invasione capsulare e vascolare."
+    ]
+  },
+  "a84": {
+    "summary": "Un falso negativo intraoperatorio si verifica quando una lesione realmente presente non viene identificata nell'esame estemporaneo, spesso per campionamento, artefatti tecnici o interpretazione.",
+    "reasons": [
+      "Errata: diagnosticare malignità all'estemporaneo quando il definitivo è benigno descrive piuttosto un falso positivo.",
+      "Errata: nel falso negativo la lesione esiste; il problema è che non viene riconosciuta durante l'esame intraoperatorio.",
+      "Corretta: una lesione può essere presente ma non inclusa nel frammento esaminato oppure può essere mascherata da artefatti o difficoltà interpretative.",
+      "Errata: la mancata consegna del campione impedirebbe l'esame, ma non costituisce di per sé un risultato diagnostico falso negativo."
+    ]
+  },
+  "a85": {
+    "summary": "La diagnosi intraoperatoria è preliminare: il tessuto viene successivamente fissato e processato in paraffina per l'esame istologico definitivo, più completo e morfologicamente affidabile.",
+    "reasons": [
+      "Corretta: dopo la frozen section il campione viene normalmente fissato e incluso in paraffina per confermare e completare la diagnosi con sezioni definitive ed eventuali tecniche ancillari.",
+      "Errata: il campione non viene distrutto, perché deve essere conservato e studiato nel definitivo.",
+      "Errata: eliminare il materiale senza controllo definitivo impedirebbe la conferma diagnostica e la documentazione istologica.",
+      "Errata: il materiale può eventualmente essere destinato anche ad altri studi se indicato, ma non viene utilizzato esclusivamente per microbiologia."
+    ]
+  },
+  "a86": {
+    "summary": "Il carcinoma è una neoplasia maligna con differenziazione epiteliale; il termine identifica quindi l'origine istologica e non semplicemente la sede anatomica.",
+    "reasons": [
+      "Errata: una neoplasia maligna di origine muscolare appartiene generalmente ai sarcomi, non ai carcinomi.",
+      "Errata: i tumori maligni primitivi dell'osso di origine mesenchimale sono sarcomi, come l'osteosarcoma.",
+      "Corretta: i carcinomi derivano da cellule epiteliali o mostrano differenziazione epiteliale.",
+      "Errata: le neoplasie del tessuto nervoso comprendono entità differenti e non sono definite carcinomi per il solo fatto di essere maligne."
+    ]
+  },
+  "a87": {
+    "summary": "Il sarcoma è una neoplasia maligna di derivazione mesenchimale, comprendente tumori di osso, muscolo, tessuto adiposo, vasi e altri tessuti connettivi o di sostegno.",
+    "reasons": [
+      "Errata: le neoplasie maligne epiteliali sono definite carcinomi.",
+      "Errata: un'eziologia virale non definisce la linea istogenetica di una neoplasia e quindi non identifica un sarcoma.",
+      "Errata: le neoplasie ematologiche costituiscono un gruppo distinto e non coincidono con i sarcomi.",
+      "Corretta: i sarcomi originano prevalentemente da tessuti mesenchimali come muscolo, osso, cartilagine, grasso, vasi e connettivo."
+    ]
+  },
+  "a88": {
+    "summary": "Una metastasi conserva l'identità istologica e il riferimento al tumore primitivo: una localizzazione secondaria epatica di un carcinoma colorettale resta carcinoma colorettale metastatico.",
+    "reasons": [
+      "Errata: la sede di arrivo descrive dove si trova la metastasi, ma non sostituisce l'identità del tumore primitivo.",
+      "Corretta: la denominazione integra l'istotipo e la sede primaria, perché le cellule metastatiche mantengono le caratteristiche del tumore da cui derivano.",
+      "Errata: il colore macroscopico non determina la classificazione della metastasi.",
+      "Errata: la dimensione della metastasi può avere rilevanza clinica o stadiante in specifici contesti, ma non ne definisce l'origine diagnostica."
+    ]
+  },
+  "a89": {
+    "summary": "Il grading descrive caratteristiche morfologiche della neoplasia, soprattutto differenziazione, atipia citologica, architettura e, nei sistemi specifici, attività mitotica o altri parametri.",
+    "reasons": [
+      "Errata: la presenza di metastasi a distanza appartiene soprattutto allo staging e, nel TNM, alla categoria M.",
+      "Errata: la pressione arteriosa del paziente non è un criterio di grading tumorale.",
+      "Corretta: il grading valuta quanto la neoplasia differisce dal tessuto normale e utilizza parametri citologici e architetturali definiti per ciascun tipo di tumore.",
+      "Errata: la durata del ricovero non descrive la differenziazione o l'aggressività morfologica della neoplasia."
+    ]
+  },
+  "a90": {
+    "summary": "Una neoplasia scarsamente differenziata conserva meno caratteristiche morfologiche e funzionali del tessuto di origine e, in molti sistemi, è associata a un grado più elevato.",
+    "reasons": [
+      "Corretta: la scarsa differenziazione indica una minore somiglianza con il tessuto normale da cui il tumore deriva.",
+      "Errata: la scarsa differenziazione è una caratteristica tipica di neoplasie maligne e non implica benignità.",
+      "Errata: una neoplasia scarsamente differenziata può avere elevata attività proliferativa; non è definita dall'assenza di proliferazione.",
+      "Errata: il grado di differenziazione non determina necessariamente le dimensioni macroscopiche del tumore."
+    ]
+  },
+  "a91": {
+    "summary": "Lo staging descrive l'estensione anatomica della malattia neoplastica, includendo diffusione locale, interessamento linfonodale e metastasi a distanza secondo il sistema applicabile.",
+    "reasons": [
+      "Errata: la colorazione istologica è una tecnica diagnostica e non definisce lo stadio della malattia.",
+      "Errata: il fissativo influenza la qualità del campione ma non rappresenta un criterio di staging.",
+      "Errata: la morfologia nucleare può contribuire al grading, non all'estensione anatomica della neoplasia.",
+      "Corretta: lo stadio esprime quanto il tumore si è esteso nella sede primaria e nell'organismo ed è centrale per prognosi e pianificazione terapeutica."
+    ]
+  },
+  "a92": {
+    "summary": "Nel sistema TNM, T descrive il tumore primitivo secondo criteri specifici per sede e neoplasia, come dimensioni e/o estensione locale.",
+    "reasons": [
+      "Errata: T non indica la terapia effettuata.",
+      "Corretta: la categoria T riguarda le caratteristiche anatomiche del tumore primitivo, con definizioni specifiche per il singolo tipo di neoplasia.",
+      "Errata: la tossicità del trattamento non appartiene alla classificazione TNM.",
+      "Errata: il tempo trascorso dalla diagnosi non è il significato della T nel TNM."
+    ]
+  },
+  "a93": {
+    "summary": "Nel TNM, N descrive il coinvolgimento dei linfonodi regionali secondo criteri che variano in base alla sede tumorale.",
+    "reasons": [
+      "Corretta: la categoria N rappresenta presenza, numero, sede o altre caratteristiche dell'interessamento linfonodale regionale secondo lo schema specifico.",
+      "Errata: la necrosi tumorale può avere valore morfologico o prognostico in alcuni tumori, ma non è ciò che indica la N.",
+      "Errata: il numero di mitosi è un parametro di proliferazione e può contribuire al grading, non definisce la N.",
+      "Errata: la N non stabilisce se una lesione sia benigna; il TNM è un sistema di stadiazione delle neoplasie maligne cui è applicabile."
+    ]
+  },
+  "a94": {
+    "summary": "Nel sistema TNM, M indica la presenza o assenza di metastasi a distanza.",
+    "reasons": [
+      "Errata: le mitosi sono un parametro morfologico e proliferativo, non il significato della M nel TNM.",
+      "Corretta: la categoria M descrive la diffusione metastatica a distanza, distinguendo in termini generali assenza o presenza di metastasi secondo lo schema specifico.",
+      "Errata: lo stato dei margini chirurgici viene riportato separatamente e non corrisponde alla M.",
+      "Errata: la morfologia nucleare può contribuire alla valutazione del grado ma non rappresenta la categoria M."
+    ]
+  },
+  "a95": {
+    "summary": "Grading e staging descrivono aspetti diversi: il grading valuta caratteristiche morfologico-biologiche del tumore, mentre lo staging ne descrive soprattutto l'estensione anatomica.",
+    "reasons": [
+      "Errata: grado e stadio non sono sinonimi e possono fornire informazioni prognostiche complementari.",
+      "Errata: le metastasi appartengono allo staging, mentre le mitosi possono rientrare nel grading; l'affermazione li inverte e li riduce impropriamente a un solo parametro.",
+      "Errata: il grading viene utilizzato soprattutto per numerose neoplasie maligne, con sistemi specifici, e non è limitato ai tumori benigni.",
+      "Corretta: il grading riguarda differenziazione e altri parametri morfologici; lo staging descrive sede primaria, diffusione regionale e a distanza secondo il sistema adottato."
+    ]
+  },
+  "a96": {
+    "summary": "Una stadiazione corretta permette di stimare prognosi, scegliere il trattamento e confrontare in modo standardizzato pazienti e risultati clinici.",
+    "reasons": [
+      "Errata: il colore del contenitore è un aspetto logistico e non uno scopo della stadiazione oncologica.",
+      "Errata: il gruppo sanguigno non viene determinato mediante staging tumorale.",
+      "Corretta: conoscere l'estensione della malattia è fondamentale per definire prognosi e piano terapeutico individuale.",
+      "Errata: lo staging non determina l'età biologica o cronologica del tumore, ma la sua estensione anatomica."
+    ]
+  },
+  "a97": {
+    "summary": "La classificazione patologica TNM utilizza convenzionalmente il prefisso p, cioè pTNM, perché integra i reperti ottenuti dall'esame anatomopatologico del materiale chirurgico secondo i criteri applicabili.",
+    "reasons": [
+      "Corretta: il prefisso p identifica la classificazione patologica, distinta dalla classificazione clinica basata sui dati disponibili prima del trattamento definitivo.",
+      "Errata: il prefisso e non è la convenzione standard per indicare la stadiazione patologica TNM.",
+      "Errata: x viene utilizzato in categorie specifiche quando una componente non è valutabile, non come prefisso universale della stadiazione patologica.",
+      "Errata: la classificazione patologica dipende proprio dai reperti anatomo-patologici e viene distinta mediante il prefisso p."
+    ]
+  },
+  "a98": {
+    "summary": "Il TNM è un linguaggio comune, ma i criteri con cui vengono assegnate le categorie T, N e M sono specifici per sede e tipo di tumore e vengono aggiornati periodicamente.",
+    "reasons": [
+      "Corretta: soglie dimensionali, profondità d'invasione, criteri linfonodali e altri parametri variano tra differenti sedi e istotipi.",
+      "Errata: T1 non corrisponde a una dimensione universale identica per tutte le neoplasie.",
+      "Errata: N2 non indica sempre lo stesso numero di linfonodi; la definizione dipende dallo schema tumorale specifico.",
+      "Errata: non tutte le neoplasie, in particolare molte neoplasie ematologiche e alcuni tumori del sistema nervoso, vengono classificate con uno schema TNM identico."
+    ]
+  },
+  "a99": {
+    "summary": "L'immunoistochimica può misurare l'espressione di recettori o proteine con valore predittivo, contribuendo a identificare pazienti più probabilmente responsivi a specifiche terapie.",
+    "reasons": [
+      "Errata: il peso del campione è un dato macroscopico e non costituisce di per sé un biomarcatore immunoistochimico predittivo.",
+      "Corretta: marcatori proteici valutati mediante immunoistochimica, in contesti specifici, possono orientare la scelta di terapie mirate o immunoterapie.",
+      "Errata: la consistenza macroscopica può contribuire alla descrizione del pezzo ma non è un biomarcatore predittivo misurato con immunoistochimica.",
+      "Errata: la temperatura corporea è un parametro clinico e non un bersaglio dell'analisi immunoistochimica tumorale."
+    ]
+  },
+  "a100": {
+    "summary": "L'Anatomia Patologica moderna integra morfologia, immunofenotipo e diagnostica molecolare per definire diagnosi, classificazione, prognosi e biomarcatori utili alla scelta terapeutica.",
+    "reasons": [
+      "Errata: distinguere soltanto normale da patologico ridurrebbe fortemente il ruolo diagnostico e classificativo della disciplina.",
+      "Errata: le autopsie sono solo una parte dell'attività anatomopatologica, che comprende soprattutto diagnostica istologica, citologica e molecolare.",
+      "Corretta: l'integrazione di istologia, immunoistochimica e dati molecolari è oggi essenziale per una caratterizzazione completa della neoplasia e per la medicina di precisione.",
+      "Errata: i risultati dell'anatomia patologica hanno conseguenze cliniche dirette su diagnosi, prognosi, chirurgia e scelta delle terapie."
+    ]
+  }
+}
