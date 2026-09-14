@@ -11,41 +11,93 @@ L'esame **Paziente chirurgico** contiene **462 domande**:
 - Psicologia: 66
 - Terapia: 266
 
-La priorità attuale è la **fruibilità stabile dell'esame**.
+La priorità resta la **fruibilità stabile dell'esame**.
 
-## Hotfix stabilità 14/09/2026
+## Runtime stabile
 
-Dopo regressioni introdotte dal caricamento delle spiegazioni avanzate, il runtime è stato semplificato.
+`paziente-chirurgico.html` continua a caricare i 13 file della banca domande e a verificare:
 
-La pagina attiva `paziente-chirurgico.html` ora:
+- totale esatto di 462 domande;
+- ID presente;
+- quattro opzioni per domanda;
+- indice della risposta corretta valido.
 
-- carica soltanto i 13 file della banca domande;
-- verifica che il totale sia esattamente **462**;
-- verifica che ogni domanda abbia ID, 4 opzioni e indice corretto valido;
-- abilita il quiz appena la banca è caricata correttamente;
-- mantiene mix/focus per sezione;
-- mantiene sessioni 20/30/50/100/tutte;
-- mantiene ordine casuale o ordine banca;
-- mantiene rimescolamento A/B/C/D bilanciato;
-- preserva l'ordine per domande con alternative semanticamente vincolate, come “Tutte le precedenti”;
-- mantiene punteggio, accuratezza, barra progresso, riepilogo, ripasso errori e `localStorage`;
-- usa temporaneamente il campo base `why` già presente nella banca per il feedback dopo la risposta.
+Il quiz viene abilitato appena la banca è valida. Le spiegazioni avanzate **non partecipano al boot obbligatorio** e quindi non possono impedire l'avvio dell'esame.
 
-## Spiegazioni avanzate
+Restano preservati:
 
-Le spiegazioni avanzate costruite per **462/462** domande restano salvate nei file:
+- mix completo / focus per sezione;
+- sessioni 20/30/50/100/tutte;
+- ordine casuale o banca;
+- rimescolamento A/B/C/D bilanciato;
+- `lockOrder` per opzioni semanticamente vincolate;
+- punteggio, accuratezza e barra progresso;
+- precedente/successiva;
+- risultato finale e breakdown;
+- ripasso errori;
+- reset e `localStorage`;
+- ritorno Home.
 
-- `data/paziente-chirurgico-explanations-001.json` → `029.json`
-- `data/paziente-chirurgico-explanations-manifest.json`
-- `paziente-chirurgico-explanations.js`
+## Pilot spiegazioni avanzate — ATTIVO
 
-**Questi file non sono attualmente caricati dal quiz.**
+È stato reintrodotto un primo blocco controllato di **40 domande**, esclusivamente:
 
-La funzione “perché la corretta è giusta + perché le tre errate sono sbagliate” è quindi **temporaneamente in pausa** fino a un successivo task dedicato, per evitare che comprometta l'eseguibilità dell'esame.
+- **Diagnostica `di1–di40`**.
+
+File opzionali caricati:
+
+- `data/paziente-chirurgico-explanations-001.json` — `di1–di10`;
+- `data/paziente-chirurgico-explanations-002.json` — `di11–di20`;
+- `data/paziente-chirurgico-explanations-003.json` — `di21–di30`;
+- `data/paziente-chirurgico-explanations-004.json` — `di31–di40`.
+
+### Architettura fail-safe del pilot
+
+Le spiegazioni vengono caricate **solo dopo che la banca principale è stata caricata e il pulsante Inizia è stato abilitato**.
+
+Il caricamento usa `Promise.allSettled`, quindi il fallimento di uno o più file non genera un errore fatale del quiz.
+
+Ogni spiegazione avanzata viene accettata solo se:
+
+- l'ID corrisponde a una domanda realmente presente;
+- esiste un `summary`;
+- le quattro opzioni della domanda sono univoche;
+- esiste una motivazione non vuota per ciascuna delle quattro opzioni originali.
+
+Se una spiegazione non è disponibile o non supera la validazione, quella domanda usa automaticamente il campo base `why` della banca.
+
+**Il quiz non viene mai bloccato per un problema delle spiegazioni avanzate.**
+
+### Feedback del pilot
+
+Per `di1–di40`, quando il relativo dato avanzato è disponibile, dopo la conferma vengono mostrati:
+
+1. esito corretto/errato;
+2. risposta corretta nella posizione A/B/C/D effettivamente mostrata;
+3. concetto chiave;
+4. quattro motivazioni separate, una per ciascuna alternativa;
+5. etichetta `CORRETTA` o `ERRATA` per ogni alternativa.
+
+Le motivazioni sono recuperate tramite il testo dell'opzione originale, quindi continuano a seguire l'alternativa anche dopo il rimescolamento A/B/C/D.
+
+Per tutte le altre domande (`di41–di76`, Educazione terapeutica, Psicologia, Terapia) resta per ora il feedback base `why`.
+
+## Test eseguiti sul pilot
+
+- sintassi JavaScript verificata con `node --check`: **PASS**;
+- shuffle della risposta corretta su tutte le posizioni A/B/C/D: **PASS**;
+- conservazione delle quattro alternative dopo shuffle: **PASS**;
+- associazione alternativa → spiegazione dopo shuffle: **PASS**;
+- `lockOrder` con “Tutte le precedenti”: **PASS**;
+- disponibilità del fallback base in assenza di spiegazione avanzata: **PASS**;
+- build e deploy GitHub Pages del pilot: **SUCCESS**.
+
+Commit runtime pilot: `fbe309ea672312c50fad42e925c5ebfc03d17b52`.
+Commit Home/cache-busting pilot: `1e729d9fc576a515a2f46134f69ae112d391f4ab`.
 
 ## Integrità della banca
 
-Nel ripristino stabile non sono stati modificati:
+Nel pilot non sono stati modificati:
 
 - testo delle domande;
 - quattro alternative;
@@ -56,8 +108,10 @@ Nel ripristino stabile non sono stati modificati:
 
 ## QA già individuato
 
-Restano da revisionare separatamente, solo con autorizzazione esplicita alla modifica della banca, alcuni quesiti precedentemente marcati come potenzialmente ambigui, datati o discordanti, tra cui `te5`, `te62`, `te103`, `te110`, `te118`, `te137`, `te168`, `te172`, `te175`, `te203`, `te206`, `te209`, `te212`, `te215`, `te223`, `te228`.
+Restano separati dal presente task i quesiti precedentemente segnalati come potenzialmente ambigui, datati o discordanti (`te5`, `te62`, `te103`, `te110`, `te118`, `te137`, `te168`, `te172`, `te175`, `te203`, `te206`, `te209`, `te212`, `te215`, `te223`, `te228`). Non sono stati modificati.
 
-## Regola per il prossimo intervento
+## Punto di ripresa
 
-Non riattivare le spiegazioni avanzate direttamente sul runtime stabile senza prima provarle in modo isolato. La priorità resta: **l'esame deve essere sempre avviabile e completabile anche se il sistema avanzato delle spiegazioni è disattivato**.
+**Pilot attivo e checkpoint salvato: `di1–di40`.**
+
+Prima di estendere le spiegazioni avanzate al blocco successivo, verificare il comportamento reale del pilot pubblicato. Se confermato stabile, il prossimo blocco può partire da **`di41`** mantenendo la stessa architettura non bloccante.
