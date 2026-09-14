@@ -1,13 +1,13 @@
 (function(){
 'use strict';
-const OPTIONAL_EXPLANATION_FILES=['data/scienze-salute-explanations-001.json','data/scienze-salute-explanations-002.json'];
-const EXPECTED_ADVANCED=80;
+const OPTIONAL_EXPLANATION_FILES=['data/scienze-salute-explanations-001.json','data/scienze-salute-explanations-002.json','data/scienze-salute-explanations-003.json','data/scienze-salute-explanations-004.json'];
+const EXPECTED_ADVANCED=120;
 const ADVANCED_EXPLANATIONS={};
 let feedbackObserver=null;
 
 function escapeHtml(value){
   return String(value??'').replace(/[&<>"']/g,ch=>({
-    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#039;'
   }[ch]));
 }
 
