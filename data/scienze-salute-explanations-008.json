@@ -1,0 +1,362 @@
+{
+  "202": {
+    "summary": "La cancerogenesi multistadio viene classicamente descritta come iniziazione, promozione e progressione; invasione e metastasi compaiono con l'evoluzione del fenotipo maligno.",
+    "reasons": [
+      "Corretta: l'iniziazione introduce alterazioni cellulari stabili, la promozione favorisce l'espansione delle cellule alterate e la progressione seleziona caratteristiche sempre più maligne; invasione e metastasi appartengono alle fasi avanzate.",
+      "Errata: collocare la promozione prima dell'iniziazione e l'invasione prima della progressione altera la sequenza biologica della trasformazione neoplastica.",
+      "Errata: la progressione non precede l'iniziazione, perché richiede una popolazione cellulare già trasformata e sottoposta a selezione clonale.",
+      "Errata: la metastatizzazione è una manifestazione avanzata della malignità e non può precedere l'iniziazione del processo cancerogenetico."
+    ]
+  },
+  "203": {
+    "summary": "Dopo la diagnosi e il trattamento di una neoplasia, gli interventi diretti a limitare disabilità, complicanze e perdita di qualità di vita appartengono alla prevenzione terziaria.",
+    "reasons": [
+      "Errata: la prevenzione primordiale agisce a monte dei fattori di rischio, modificando condizioni sociali e ambientali che ne favoriscono la comparsa.",
+      "Errata: la prevenzione primaria mira a impedire l'insorgenza della malattia in persone sane o suscettibili.",
+      "Errata: la prevenzione secondaria riguarda soprattutto diagnosi precoce e trattamento tempestivo di una malattia già iniziata ma non ancora clinicamente avanzata.",
+      "Corretta: attività fisica e riabilitazione dopo trattamento oncologico mirano a ridurre esiti, complicanze e disabilità e quindi rientrano nella prevenzione terziaria."
+    ]
+  },
+  "204": {
+    "summary": "Promuovere alimentazione corretta e stili di vita salutari per ridurre il rischio di tumore è prevenzione primaria, perché interviene prima dell'insorgenza della malattia.",
+    "reasons": [
+      "Errata: la prevenzione terziaria interviene dopo la diagnosi per limitare conseguenze e disabilità.",
+      "Errata: la prevenzione quaternaria mira soprattutto a evitare interventi sanitari inutili, eccessivi o potenzialmente dannosi.",
+      "Corretta: modificare dieta, attività fisica e altri comportamenti riduce l'esposizione a fattori di rischio prima che compaia la neoplasia.",
+      "Errata: la riabilitazione è una componente tipica degli interventi successivi alla malattia e non coincide con la prevenzione primaria."
+    ]
+  },
+  "205": {
+    "summary": "La peste non è eradicata: persiste in focolai ed aree endemiche e il numero di casi varia notevolmente nel tempo e tra le diverse regioni del mondo.",
+    "reasons": [
+      "Errata: Yersinia pestis continua a circolare in serbatoi animali e casi umani vengono ancora notificati in diversi Paesi.",
+      "Corretta: la malattia persiste in aree endemiche e la numerosità annuale dei casi non è un valore fisso, ma cambia in relazione alla situazione epidemiologica.",
+      "Errata: oltre 100.000 casi ogni anno non rappresentano l'ordine di grandezza dell'attuale epidemiologia mondiale della peste.",
+      "Errata: la peste non è confinata all'Europa e persiste soprattutto in specifiche aree di Africa, Asia e Americhe."
+    ]
+  },
+  "206": {
+    "summary": "La prevenzione della dengue combina controllo del vettore e protezione dalle punture con l'impiego di vaccini in popolazioni e contesti epidemiologici selezionati.",
+    "reasons": [
+      "Corretta: oggi esistono vaccini vivi attenuati contro la dengue, ma indicazioni, età, storia di precedente infezione e contesto epidemiologico condizionano il loro utilizzo.",
+      "Errata: affermare che non sia mai esistito alcun vaccino è superato dalla disponibilità di vaccini autorizzati in specifici contesti.",
+      "Errata: l'efficacia vaccinale non è sempre nulla; varia in base al vaccino, al sierotipo, alla popolazione e allo stato immunologico.",
+      "Errata: gli antibiotici non prevengono un'infezione virale trasmessa da zanzare e non sostituiscono controllo del vettore e vaccinazione quando indicata."
+    ]
+  },
+  "207": {
+    "summary": "Dopo la puntura di una zanzara infetta, l'incubazione della dengue nell'uomo è generalmente di circa 4-10 giorni, spesso intorno a 5-7 giorni.",
+    "reasons": [
+      "Errata: 20-30 giorni è un intervallo molto più lungo rispetto alla tipica incubazione della dengue.",
+      "Errata: 30-60 giorni non corrisponde al periodo di incubazione abituale dell'infezione da virus dengue.",
+      "Errata: una o due ore sono insufficienti perché si sviluppi il ciclo biologico necessario prima della comparsa dei sintomi.",
+      "Corretta: il quadro clinico compare tipicamente dopo alcuni giorni dall'infezione, con un intervallo comunemente indicato di circa 4-10 giorni."
+    ]
+  },
+  "208": {
+    "summary": "I vaccini inattivati non interferiscono con la risposta al vaccino vivo contro la febbre gialla e possono essere somministrati contemporaneamente o senza specifici intervalli temporali.",
+    "reasons": [
+      "Errata: non esiste una controindicazione generale alla co-somministrazione di vaccini inattivati con il vaccino anti-febbre gialla.",
+      "Errata: non è necessario imporre un intervallo di sei mesi tra un vaccino inattivato e quello contro la febbre gialla.",
+      "Corretta: i vaccini inattivati possono essere somministrati nello stesso momento, in sedi diverse, oppure prima o dopo il vaccino anti-febbre gialla.",
+      "Errata: i vaccini inattivati non annullano l'efficacia immunologica del vaccino contro la febbre gialla."
+    ]
+  },
+  "209": {
+    "summary": "Gravidanza e allattamento sono generalmente precauzioni per il vaccino vivo anti-febbre gialla: la decisione dipende dal rischio reale di esposizione e dalla possibilità di rinviare o evitare il viaggio.",
+    "reasons": [
+      "Errata: non sono in ogni circostanza controindicazioni assolute; in situazioni ad alto rischio il beneficio della vaccinazione può superare il rischio potenziale.",
+      "Corretta: la vaccinazione richiede una valutazione individuale rischio-beneficio, soprattutto quando l'esposizione alla febbre gialla è concreta e non evitabile.",
+      "Errata: il vaccino non è obbligatorio in ogni gravidanza e non viene somministrato senza considerare destinazione, esposizione e condizioni cliniche.",
+      "Errata: l'allattamento non aumenta l'efficacia del vaccino e costituisce invece una condizione che richiede valutazione prudente."
+    ]
+  },
+  "210": {
+    "summary": "Le oncoproteine E6 ed E7 degli HPV ad alto rischio favoriscono la trasformazione cellulare interferendo soprattutto con gli oncosoppressori p53 e pRb.",
+    "reasons": [
+      "Corretta: E6 favorisce soprattutto la perdita di funzione di p53, mentre E7 interferisce con pRb, alterando controllo del ciclo cellulare e risposta al danno del DNA.",
+      "Errata: insulina e glucagone regolano il metabolismo glucidico e non sono i principali bersagli oncogeni di E6 ed E7.",
+      "Errata: albumina e transferrina sono proteine plasmatiche e di trasporto, non oncosoppressori bersaglio delle oncoproteine HPV.",
+      "Errata: actina e miosina sono proteine strutturali e contrattili, non i principali bersagli responsabili dell'oncogenicità di E6 ed E7."
+    ]
+  },
+  "211": {
+    "summary": "La banca considera dodici tipi di HPV ad alto rischio con sufficiente evidenza di cancerogenicità per il carcinoma cervicale.",
+    "reasons": [
+      "Errata: limitarsi a due tipi sottostima il numero di HPV ad alto rischio, anche se 16 e 18 sono tra i più rilevanti.",
+      "Errata: quattro tipi non comprendono l'intero gruppo di genotipi oncogeni richiamato dal quesito.",
+      "Errata: sei è ancora un numero inferiore rispetto al gruppo classificato nella banca come ad alto rischio con evidenza sufficiente.",
+      "Corretta: il gruppo comprende dodici tipi ad alto rischio, tra cui 16, 18, 31, 33, 35, 39, 45, 51, 52, 56, 58 e 59."
+    ]
+  },
+  "212": {
+    "summary": "HPV 16, 18, 31 e 33 appartengono tutti al gruppo dei genotipi ad alto rischio oncogeno.",
+    "reasons": [
+      "Errata: i tipi 6 e 11 sono classicamente a basso rischio e sono associati soprattutto a condilomi, non alle principali neoplasie HPV-correlate.",
+      "Errata: la presenza di 6, 11 e 40 rende il gruppo non costituito esclusivamente da genotipi ad alto rischio.",
+      "Corretta: 16, 18, 31 e 33 sono tutti genotipi riconosciuti ad alto rischio oncogeno.",
+      "Errata: i tipi 1, 2, 4 e 7 sono tipicamente associati a verruche cutanee e non costituiscono il gruppo degli HPV oncogeni ad alto rischio."
+    ]
+  },
+  "213": {
+    "summary": "L'HPV può infettare persone di entrambi i sessi e interessare differenti sedi anatomiche, con manifestazioni cliniche e rischio oncologico variabili.",
+    "reasons": [
+      "Errata: l'infezione non riguarda esclusivamente le donne; anche gli uomini possono acquisire HPV e sviluppare lesioni correlate.",
+      "Corretta: entrambi i sessi possono essere infettati e le sedi coinvolte comprendono area anogenitale e orofaringe, con differenze di frequenza e manifestazione.",
+      "Errata: l'infezione non è esclusivamente maschile e interessa ampiamente anche la popolazione femminile.",
+      "Errata: la maggior parte delle infezioni da HPV si verifica in persone senza tumore già diagnosticato e spesso è transitoria e asintomatica."
+    ]
+  },
+  "214": {
+    "summary": "Il carcinoma cervicale, il carcinoma anale e una quota dei carcinomi orofaringei sono classicamente HPV-correlati; l'adenocarcinoma del colon non lo è.",
+    "reasons": [
+      "Corretta: l'adenocarcinoma del colon non rientra tra le neoplasie classicamente attribuite all'infezione persistente da HPV ad alto rischio.",
+      "Errata: l'infezione persistente da HPV ad alto rischio è il principale fattore causale del carcinoma della cervice uterina.",
+      "Errata: il carcinoma anale presenta una forte associazione con HPV oncogeni, in particolare HPV 16.",
+      "Errata: una parte importante dei carcinomi orofaringei, soprattutto tonsillari e della base della lingua, è HPV-correlata."
+    ]
+  },
+  "215": {
+    "summary": "Nell'epatite A acuta compaiono anticorpi anti-HAV IgM, che poi diminuiscono; le IgG anti-HAV compaiono e persistono a lungo, indicando immunità pregressa.",
+    "reasons": [
+      "Errata: le IgG non scompaiono prima dell'esordio e le IgM non persistono per tutta la vita.",
+      "Errata: l'infezione da HAV induce una risposta anticorpale misurabile, utilizzata anche nella diagnosi sierologica.",
+      "Errata: nella fase acuta l'indicatore caratteristico è la comparsa di IgM anti-HAV; le IgG diventano poi il marker persistente di immunità.",
+      "Corretta: le IgM identificano soprattutto l'infezione recente o acuta, mentre le IgG persistono a lungo e sono associate alla memoria immunologica."
+    ]
+  },
+  "216": {
+    "summary": "MF59 è un adiuvante vaccinale in emulsione olio-in-acqua impiegato in alcuni vaccini per aumentare e modulare la risposta immunitaria all'antigene.",
+    "reasons": [
+      "Errata: MF59 non è un farmaco antivirale e non agisce direttamente bloccando la replicazione virale.",
+      "Errata: non è un anticorpo monoclonale prodotto contro uno specifico bersaglio antigenico.",
+      "Corretta: è un adiuvante in emulsione utilizzato per potenziare la risposta immunitaria indotta da alcuni vaccini.",
+      "Errata: MF59 identifica una formulazione adiuvante e non un codice amministrativo o di lotto."
+    ]
+  },
+  "217": {
+    "summary": "Le IgG sono tipiche della risposta umorale maturata e della memoria immunologica e diventano particolarmente importanti nella risposta secondaria.",
+    "reasons": [
+      "Errata: nelle prime fasi di molte risposte primarie predominano inizialmente le IgM, mentre le IgG aumentano successivamente.",
+      "Corretta: le IgG possono persistere a lungo, aumentano rapidamente nelle risposte secondarie e sono associate a memoria e maturazione dell'affinità.",
+      "Errata: le IgG partecipano in modo rilevante proprio alla risposta secondaria grazie ai linfociti B memoria.",
+      "Errata: vengono prodotte in risposta a numerosi antigeni, compresi quelli virali, e non esclusivamente nelle infezioni batteriche."
+    ]
+  },
+  "218": {
+    "summary": "Una dose booster riattiva i linfociti memoria e genera una risposta secondaria più rapida, intensa e spesso caratterizzata da anticorpi ad alta affinità.",
+    "reasons": [
+      "Corretta: il richiamo sfrutta la memoria immunologica costruita dalle dosi precedenti e aumenta rapidamente la risposta protettiva.",
+      "Errata: lo scopo del booster è mantenere o rafforzare i linfociti memoria, non eliminarli.",
+      "Errata: la risposta di richiamo non è esclusivamente IgM; tipicamente comporta una robusta produzione di IgG maturate.",
+      "Errata: il richiamo è progettato per rafforzare, non ridurre, la risposta immunitaria specifica."
+    ]
+  },
+  "219": {
+    "summary": "MPR è l'acronimo italiano del vaccino combinato contro morbillo, parotite e rosolia.",
+    "reasons": [
+      "Errata: meningococco e pneumococco non fanno parte della sigla MPR.",
+      "Errata: il vaccino MPR non comprende pneumococco o rotavirus.",
+      "Errata: meningococco, pertosse e rotavirus sono vaccinazioni differenti e non corrispondono all'acronimo MPR.",
+      "Corretta: le tre componenti sono morbillo, parotite e rosolia."
+    ]
+  },
+  "220": {
+    "summary": "DTPa indica il vaccino combinato contro difterite, tetano e pertosse acellulare.",
+    "reasons": [
+      "Errata: la tubercolosi non è una delle componenti indicate dalla sigla DTPa.",
+      "Errata: dengue e poliomielite non corrispondono alle lettere della sigla DTPa.",
+      "Corretta: D indica difterite, T tetano e Pa pertosse acellulare.",
+      "Errata: la poliomielite non è inclusa nella sigla DTPa e la lettera Pa indica pertosse acellulare."
+    ]
+  },
+  "221": {
+    "summary": "Robert Koch contribuì in modo decisivo alla microbiologia medica formulando criteri sperimentali per collegare uno specifico microrganismo a una specifica malattia.",
+    "reasons": [
+      "Errata: la descrizione della circolazione sanguigna è associata soprattutto a William Harvey, non a Koch.",
+      "Errata: la teoria cellulare si sviluppò con autori come Schleiden e Schwann e fu applicata alla patologia da Virchow.",
+      "Errata: l'introduzione della vaccinazione antivaiolosa è legata a Edward Jenner.",
+      "Corretta: i postulati di Koch formalizzarono un metodo per dimostrare il rapporto causale tra agente microbico e malattia."
+    ]
+  },
+  "222": {
+    "summary": "Andrea Vesalio pose le basi dell'anatomia moderna grazie alla dissezione diretta del corpo umano e alla revisione critica di numerosi errori della tradizione galenica.",
+    "reasons": [
+      "Errata: Vesalio non confermò integralmente Galeno, ma ne corresse molte descrizioni derivate soprattutto da dissezioni animali.",
+      "Corretta: l'osservazione anatomica diretta e sistematica del cadavere umano fu il cuore della sua innovazione metodologica.",
+      "Errata: la descrizione della circolazione polmonare non rappresenta il contributo fondamentale attribuito a Vesalio.",
+      "Errata: l'anestesia generale appartiene alla storia della chirurgia del XIX secolo, molti secoli dopo Vesalio."
+    ]
+  },
+  "223": {
+    "summary": "Nella Roma antica molti dei medici che acquisirono prestigio e influenza erano di origine greca o formati nella tradizione medica greca.",
+    "reasons": [
+      "Corretta: la medicina greca esercitò una forte influenza su Roma e numerosi medici di rilievo erano greci.",
+      "Errata: la medicina egizia ebbe un'importante storia propria, ma non rappresenta l'origine prevalente richiamata dal quesito per i primi medici influenti a Roma.",
+      "Errata: l'origine etrusca non è quella prevalentemente associata ai medici che acquisirono maggiore importanza nella Roma antica.",
+      "Errata: la tradizione persiana non costituisce il principale riferimento per questo fenomeno storico romano."
+    ]
+  },
+  "224": {
+    "summary": "La grande pandemia di peste nera raggiunse l'Europa mediterranea nel 1347 e si diffuse rapidamente negli anni successivi.",
+    "reasons": [
+      "Errata: il 1337 precede l'arrivo convenzionalmente datato della peste nera nel Mediterraneo europeo.",
+      "Errata: il 1453 appartiene a una fase storica molto successiva rispetto all'inizio della pandemia del XIV secolo.",
+      "Corretta: il 1347 è l'anno generalmente associato all'arrivo della peste nera nei porti mediterranei europei.",
+      "Errata: il 1492 è posteriore di oltre un secolo rispetto all'inizio della grande pandemia."
+    ]
+  },
+  "225": {
+    "summary": "Contro la peste le autorità svilupparono misure di sanità pubblica come isolamento, restrizioni alla mobilità, quarantena e organismi sanitari dedicati.",
+    "reasons": [
+      "Errata: durante le grandi epidemie storiche di peste non esisteva una vaccinazione obbligatoria capace di costituire l'unica misura di controllo.",
+      "Corretta: isolamento, quarantena, controllo dei movimenti e magistrature sanitarie furono strumenti centrali della risposta epidemica.",
+      "Errata: gli antibiotici non erano disponibili nelle epoche storiche in cui furono sviluppati questi provvedimenti.",
+      "Errata: la disinfezione poteva essere impiegata in varie forme, ma non costituiva l'unico intervento adottato dalle autorità."
+    ]
+  },
+  "226": {
+    "summary": "Rudolf Virchow formulò la patologia cellulare, interpretando la malattia come conseguenza di alterazioni che interessano le cellule.",
+    "reasons": [
+      "Errata: Koch è legato soprattutto alla microbiologia e alla dimostrazione del rapporto tra microrganismi e malattie infettive.",
+      "Errata: Pasteur contribuì alla microbiologia, alla teoria microbica e allo sviluppo di vaccini, non alla formulazione della patologia cellulare.",
+      "Errata: Jenner è ricordato principalmente per la vaccinazione antivaiolosa.",
+      "Corretta: Virchow pose la cellula al centro dell'interpretazione patologica e sviluppò il concetto di patologia cellulare."
+    ]
+  },
+  "227": {
+    "summary": "Edward Jenner è associato allo sviluppo della vaccinazione contro il vaiolo alla fine del XVIII secolo.",
+    "reasons": [
+      "Corretta: Jenner utilizzò l'osservazione della protezione associata al vaiolo bovino per sviluppare la vaccinazione antivaiolosa.",
+      "Errata: la scoperta della penicillina è associata ad Alexander Fleming e al successivo sviluppo terapeutico da parte di altri ricercatori.",
+      "Errata: la vaccinazione antipolio fu sviluppata nel XX secolo soprattutto da Jonas Salk e Albert Sabin.",
+      "Errata: il bacillo della tubercolosi fu identificato da Robert Koch nel 1882."
+    ]
+  },
+  "228": {
+    "summary": "Ignaz Semmelweis dimostrò che l'igiene delle mani degli operatori riduceva drasticamente la febbre puerperale.",
+    "reasons": [
+      "Errata: la scoperta dell'agente della tubercolosi è associata a Robert Koch.",
+      "Errata: Semmelweis non introdusse la vaccinazione come principale contributo storico.",
+      "Corretta: l'impiego del lavaggio delle mani con soluzione clorata ridusse fortemente la mortalità puerperale nelle cliniche ostetriche da lui studiate.",
+      "Errata: i raggi X furono scoperti da Wilhelm Conrad Röntgen nel 1895."
+    ]
+  },
+  "229": {
+    "summary": "Tucidide descrisse durante la peste di Atene che chi era sopravvissuto sembrava essere protetto da una nuova forma grave della stessa malattia.",
+    "reasons": [
+      "Errata: Galeno è una figura centrale della medicina romana imperiale, ma non è l'autore della descrizione della peste di Atene richiamata dal quesito.",
+      "Corretta: Tucidide osservò il fenomeno nei sopravvissuti alla peste di Atene, anticipando intuitivamente il concetto di immunità acquisita.",
+      "Errata: Aristotele contribuì alla filosofia naturale e alla biologia, ma non è il riferimento per questa osservazione epidemica.",
+      "Errata: Celso è autore di un'importante opera medica latina, ma non della descrizione epidemiologica richiesta."
+    ]
+  },
+  "230": {
+    "summary": "Horace Wells fu tra i primi a utilizzare il protossido d'azoto in odontoiatria con finalità anestetiche, contribuendo alla nascita dell'anestesia moderna.",
+    "reasons": [
+      "Errata: Koch è legato alla microbiologia e alle malattie infettive, non all'introduzione del protossido d'azoto in odontoiatria.",
+      "Errata: Joseph Lister è associato soprattutto all'antisepsi chirurgica.",
+      "Errata: William Harvey descrisse la circolazione sistemica del sangue nel XVII secolo.",
+      "Corretta: Horace Wells sperimentò l'uso del protossido d'azoto per ridurre il dolore durante procedure odontoiatriche."
+    ]
+  },
+  "231": {
+    "summary": "Molte università medievali nacquero dalla progressiva organizzazione di comunità di studenti e maestri attorno a centri di insegnamento già esistenti.",
+    "reasons": [
+      "Corretta: le universitates si svilupparono come corporazioni di studenti e/o docenti che ottennero progressivamente privilegi e riconoscimenti istituzionali.",
+      "Errata: l'Organizzazione Mondiale della Sanità nasce nel XX secolo e non ha alcun ruolo nella fondazione delle università medievali.",
+      "Errata: gli ospedali contribuirono alla formazione medica in epoche e contesti diversi, ma non costituiscono l'unica origine delle università medievali.",
+      "Errata: importanti università europee esistevano già diversi secoli prima del XVI secolo."
+    ]
+  },
+  "232": {
+    "summary": "La pandemia influenzale nota come spagnola ebbe la sua massima diffusione mondiale nel 1918-1919.",
+    "reasons": [
+      "Errata: il 1890-1892 corrisponde a un'altra importante pandemia influenzale, precedente alla spagnola.",
+      "Errata: il 1939-1940 coincide con l'inizio della Seconda guerra mondiale, non con la pandemia spagnola.",
+      "Corretta: le grandi ondate della pandemia influenzale spagnola si verificarono soprattutto tra il 1918 e il 1919.",
+      "Errata: il 1957-1958 è associato alla pandemia influenzale asiatica, non alla spagnola."
+    ]
+  },
+  "233": {
+    "summary": "Nel 1377 Ragusa, l'attuale Dubrovnik, introdusse una delle prime forme formalizzate di isolamento preventivo dei viaggiatori provenienti da aree colpite dalla peste.",
+    "reasons": [
+      "Errata: Venezia ebbe un ruolo fondamentale nello sviluppo successivo di quarantena e lazzaretti, ma il provvedimento del 1377 richiamato dal quesito è attribuito a Ragusa.",
+      "Corretta: Ragusa istituì nel 1377 un periodo di isolamento per persone e merci provenienti da zone epidemiche.",
+      "Errata: Firenze adottò importanti misure sanitarie contro la peste, ma non è la città associata alla disposizione del 1377 indicata nella domanda.",
+      "Errata: Londra sviluppò proprie misure durante epidemie successive, ma non è il riferimento storico del 1377."
+    ]
+  },
+  "234": {
+    "summary": "La Costituzione dell'OMS definisce la salute come uno stato di completo benessere fisico, mentale e sociale e non come semplice assenza di malattia o infermità.",
+    "reasons": [
+      "Errata: la capacità di adattamento è stata proposta in definizioni più recenti, ma non corrisponde al testo costituzionale dell'OMS.",
+      "Errata: la definizione OMS non riduce la salute alla sola assenza di alterazioni biologiche.",
+      "Errata: l'autogestione della malattia è un concetto rilevante per alcune concezioni contemporanee, ma non è la definizione ufficiale della Costituzione OMS.",
+      "Corretta: questa formulazione comprende le dimensioni fisica, mentale e sociale e supera l'idea di salute come semplice assenza di malattia."
+    ]
+  },
+  "235": {
+    "summary": "Il riconoscimento internazionale di diritti specifici dell'infanzia si consolidò nel XX secolo, con documenti come la Dichiarazione del 1959 e la Convenzione ONU del 1989.",
+    "reasons": [
+      "Corretta: nel Novecento si sviluppò un quadro internazionale esplicito di tutela dei diritti del bambino anche in ambito sanitario e sociale.",
+      "Errata: nell'antica Grecia non esisteva un sistema internazionale di diritti dell'infanzia comparabile a quello contemporaneo.",
+      "Errata: il Medioevo conobbe forme di assistenza e tutela, ma non l'affermazione internazionale moderna dei diritti specifici del bambino.",
+      "Errata: il Rinascimento precede di secoli i principali documenti internazionali dedicati ai diritti dell'infanzia."
+    ]
+  },
+  "236": {
+    "summary": "Nell'Italia ottocentesca l'elevata mortalità infantile era fortemente legata a infezioni, malnutrizione, scarsa igiene, povertà e difficili condizioni di vita.",
+    "reasons": [
+      "Errata: le neoplasie non rappresentavano il principale determinante dell'elevatissima mortalità infantile dell'epoca.",
+      "Errata: le malattie degenerative dell'anziano non spiegano la mortalità dei bambini.",
+      "Corretta: infezioni, malnutrizione e condizioni igienico-sociali precarie agivano insieme aumentando fortemente morbosità e mortalità infantile.",
+      "Errata: le malformazioni congenite contribuivano alla mortalità, ma non costituivano da sole la causa principale del fenomeno storico descritto."
+    ]
+  },
+  "237": {
+    "summary": "Nella concezione ippocratica il medico deve sostenere i processi naturali di guarigione e intervenire con prudenza, evitando danni inutili.",
+    "reasons": [
+      "Errata: il medico ippocratico non deve sostituirsi completamente ai processi naturali dell'organismo, ma osservarli e favorirli.",
+      "Corretta: l'approccio valorizza osservazione, prognosi, equilibrio e interventi proporzionati capaci di assecondare la natura.",
+      "Errata: la medicina ippocratica rappresenta un passaggio verso spiegazioni naturali della malattia e non si fonda esclusivamente sull'intervento divino.",
+      "Errata: l'attenzione è rivolta al malato nel suo complesso, non soltanto all'entità patologica astratta."
+    ]
+  },
+  "238": {
+    "summary": "La medicina ippocratica contribuì a interpretare la malattia come fenomeno naturale studiabile mediante osservazione clinica e ragionamento.",
+    "reasons": [
+      "Corretta: la ricerca di cause naturali e l'osservazione sistematica del paziente sono elementi centrali della tradizione ippocratica.",
+      "Errata: il peccato non rappresenta la spiegazione sistematica della malattia nella concezione ippocratica razionale.",
+      "Errata: l'osservazione clinica è uno dei cardini del metodo ippocratico e non viene rifiutata.",
+      "Errata: pratiche religiose e magiche esistevano nel mondo antico, ma la medicina ippocratica si distingue proprio per il tentativo di spiegare la malattia attraverso cause naturali."
+    ]
+  },
+  "239": {
+    "summary": "Gli Aforismi della tradizione ippocratica sono brevi sentenze che condensano osservazioni cliniche, esperienza e precetti medici.",
+    "reasons": [
+      "Errata: gli Aforismi non sono una raccolta di sole regole religiose.",
+      "Errata: non costituiscono un manuale esclusivamente chirurgico, ma affrontano numerosi aspetti della medicina e della prognosi.",
+      "Errata: non coincidono con il testo del Giuramento ippocratico, che è un'opera distinta del Corpus.",
+      "Corretta: la forma aforistica sintetizza in frasi brevi principi e osservazioni derivate dall'esperienza medica."
+    ]
+  },
+  "240": {
+    "summary": "Quando un adulto non ha capacità decisionale, le decisioni devono rispettare quanto possibile la sua volontà, considerando disposizioni anticipate, rappresentanza legale e miglior interesse della persona.",
+    "reasons": [
+      "Errata: la perdita di capacità attuale non elimina il valore dell'autonomia, che può essere tutelata attraverso volontà precedentemente espresse e strumenti di rappresentanza.",
+      "Errata: il medico non decide automaticamente ignorando preferenze, disposizioni anticipate e ruolo del rappresentante previsto dalla legge.",
+      "Corretta: la decisione deve integrare volontà pregresse, eventuali disposizioni anticipate, rappresentante legale e valutazione del miglior interesse della persona.",
+      "Errata: la giustizia resta importante, ma non sostituisce autonomia, beneficenza, non maleficenza e le regole sulla rappresentanza decisionale."
+    ]
+  },
+  "241": {
+    "summary": "Nella tradizione ippocratica le epidemie venivano messe in relazione con fattori ambientali come aria, acque, clima e caratteristiche dei luoghi.",
+    "reasons": [
+      "Errata: la medicina ippocratica cercava spiegazioni naturali e non interpretava sistematicamente le epidemie come punizioni divine.",
+      "Corretta: opere come Arie, acque, luoghi collegano stato di salute e malattie alle condizioni ambientali e climatiche.",
+      "Errata: l'esistenza dei batteri non era ancora conoscibile con strumenti microbiologici, sviluppati molti secoli dopo.",
+      "Errata: la genetica moderna è una disciplina molto successiva e non appartiene alle spiegazioni epidemiologiche della medicina ippocratica."
+    ]
+  }
+}
