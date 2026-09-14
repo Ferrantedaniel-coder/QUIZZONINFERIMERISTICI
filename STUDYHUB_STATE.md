@@ -85,13 +85,13 @@ Copertura:
 File: `data/paziente-chirurgico-explanations-001.json` → `029.json`.
 Checkpoint: `PAZIENTE_CHIRURGICO_PROGRESS.md`.
 
-### Scienze della Salute — spiegazioni avanzate 401/459
+### Scienze della Salute — COMPLETO 459/459
 
 Implementazione attiva:
 
 - `index.html` apre `scienze-salute.html`;
 - `scienze-salute.html` carica `scienze-salute-app.html` in iframe;
-- `scienze-salute-app.html` è il motore originale con l'intera banca di **459 domande** e non viene modificato durante il lavoro sulle spiegazioni;
+- `scienze-salute-app.html` è il motore originale con l'intera banca di **459 domande** e non è stato modificato durante il lavoro sulle spiegazioni;
 - `scienze-salute-explanations.js` è l'enhancer opzionale fail-safe.
 
 File avanzati collegati:
@@ -108,6 +108,7 @@ File avanzati collegati:
 - `010.json` → `282–321`
 - `011.json` → `322–361`
 - `012.json` → `362–401`
+- `013.json` → `402–459`
 
 Percorsi completi: `data/scienze-salute-explanations-XXX.json`.
 
@@ -123,10 +124,13 @@ Percorsi completi: `data/scienze-salute-explanations-XXX.json`.
 - `380–392` → Storia della medicina;
 - `393–394` → Infermieristica nell'evoluzione storica;
 - `395–399` → Storia della medicina;
-- `400–401` → Infermieristica nell'evoluzione storica;
-- **totale continuo coperto: `1–401` = 401/459**.
-
-**Importante:** nella parte centrale/finale della banca i macroargomenti ricompaiono in intervalli differenti. Registrare sempre lo stato per ID effettivamente completati e non dichiarare una materia globalmente completa soltanto perché termina un tratto consecutivo.
+- `400–402` → Infermieristica nell'evoluzione storica;
+- `403–407` → Storia della medicina;
+- `408` → Infermieristica nell'evoluzione storica;
+- `409–447` → Storia della medicina;
+- `448–450` → Infermieristica nell'evoluzione storica;
+- `451–459` → Storia della medicina;
+- **totale continuo coperto: `1–459` = 459/459**.
 
 L'enhancer:
 
@@ -152,7 +156,7 @@ File principali:
 - `scienze-salute.html` — wrapper attivo Scienze;
 - `scienze-salute-app.html` — motore originale e banca inline 459 domande;
 - `scienze-salute-explanations.js` — enhancer opzionale;
-- `data/scienze-salute-explanations-001.json` → `012.json` — spiegazioni avanzate `1–401`;
+- `data/scienze-salute-explanations-001.json` → `013.json` — spiegazioni avanzate complete `1–459`;
 - `SCIENZE_SALUTE_PROGRESS.md` — checkpoint specifico Scienze;
 - `anatomia-patologica.html`;
 - `infermieristica-materno.html`;
@@ -179,12 +183,12 @@ I progressi sono locali al browser; non ci sono account, database remoto o sync 
 
 ### Lavoro a blocchi
 
-Per revisione estesa di banche o spiegazioni lavorare in **blocchi controllati di circa 40–60 domande**, con checkpoint GitHub tra i blocchi.
+Per revisioni estese di banche o spiegazioni lavorare in **blocchi controllati di circa 40–60 domande**, con checkpoint GitHub tra i blocchi.
 
 - Paziente chirurgico: spiegazioni complete **462/462**.
-- Scienze della Salute: spiegazioni complete in sequenza **1–401**; punto di ripresa **402**.
+- Scienze della Salute: spiegazioni complete **459/459**.
 
-Per Scienze continuare nell'ordine reale della banca e annotare gli intervalli dei macroargomenti quando cambiano.
+Per eventuali nuove banche mantenere lo stesso principio di checkpoint, non regressione e separazione tra banca originale e dati esplicativi quando possibile.
 
 ### Continuità tra chat
 
@@ -202,9 +206,9 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 ## 9. Roadmap immediata
 
 1. **Paziente chirurgico: spiegazioni avanzate complete 462/462 con architettura fail-safe.**
-2. **Scienze della Salute: spiegazioni avanzate attive 1–401 con enhancer opzionale fail-safe.**
-3. Proseguire Scienze della Salute dalla **domanda 402**, seguendo l'ordine reale della banca.
-4. Mantenere le banche originali inalterate durante il lavoro sulle spiegazioni.
-5. QA separato dei quesiti dubbi o obsoleti, solo con autorizzazione esplicita a modificare la banca.
+2. **Scienze della Salute: spiegazioni avanzate complete 459/459 con enhancer opzionale fail-safe.**
+3. Mantenere le banche originali inalterate salvo autorizzazione esplicita.
+4. Gestire eventuali quesiti dubbi o obsoleti come QA separato.
+5. Proseguire con nuove funzionalità o nuove banche solo su richiesta, preservando il comportamento stabile degli esami esistenti.
 
 Farmacologia resta una futura banca in preparazione.
