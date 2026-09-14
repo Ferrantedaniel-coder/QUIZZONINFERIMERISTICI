@@ -177,6 +177,46 @@ Prima di modificare StudyHub:
 10. mantenere responsive layout e leggibilità mobile;
 11. aggiornare questo `STUDYHUB_STATE.md` quando una modifica cambia realmente lo stato del progetto, una regola o la roadmap.
 
+### 7.1 Lavoro a blocchi controllati
+
+Per lavori estesi sulle banche domande — soprattutto revisione, correzione o riscrittura delle spiegazioni — si deve procedere **a blocchi controllati, idealmente di 40–60 domande per volta**.
+
+Questa dimensione non rappresenta un limite di lettura, ma una regola di qualità. Serve a:
+
+- mantenere alta l'attenzione su ogni singola domanda;
+- controllare che le spiegazioni siano scientificamente corrette;
+- evitare spiegazioni generiche, automatiche o ripetitive;
+- verificare che le motivazioni delle alternative errate siano realmente specifiche;
+- ridurre il rischio di regressioni o associazioni errate tra domanda, risposta e spiegazione;
+- rendere ogni tranche facilmente verificabile e recuperabile.
+
+Dopo ogni blocco completato, quando tecnicamente appropriato, il lavoro deve essere **salvato nel master GitHub** o comunque portato a un checkpoint chiaramente identificabile prima di iniziare il blocco successivo.
+
+Il checkpoint deve permettere di sapere con precisione almeno:
+
+- quale esame si sta lavorando;
+- quali domande sono state completate;
+- qual è l'ultima domanda completata;
+- quali file sono stati modificati;
+- quale commit contiene il lavoro completato, quando disponibile;
+- da quale domanda o blocco riprendere.
+
+### 7.2 Sicurezza della continuità tra chat
+
+Durante lavori molto lunghi, ChatGPT deve **segnalare proattivamente quando la conversazione sta accumulando abbastanza materiale da rendere preferibile un passaggio a una nuova chat**.
+
+Non esiste un contatore preciso e affidabile del tipo “mancano N token al limite”, quindi **non va promesso un allarme matematico o una soglia numerica esatta**. La regola è invece riconoscere per tempo una conversazione diventata molto estesa e proporre un handoff sicuro **prima** che la continuità del lavoro possa diventare fragile.
+
+L'avviso deve essere concreto, ad esempio:
+
+> “Abbiamo completato fino alla domanda 240 e il lavoro è salvato nel master. Da qui conviene aprire una nuova chat, leggere `STUDYHUB_STATE.md` e ripartire dalla domanda 241.”
+
+Prima di consigliare il cambio chat, bisogna assicurarsi che il lavoro già completato sia stato salvato in un checkpoint affidabile, idealmente nel branch `main`.
+
+In questo modo il cambio di conversazione **non deve comportare perdita del lavoro già svolto**: la nuova chat recupera lo stato dal repository, da questo file e dal checkpoint indicato.
+
+Se la conversazione è già molto lunga, non va avviato inutilmente un nuovo blocco enorme: si completa e salva il blocco corrente, si registra il punto di ripresa e si effettua l'handoff.
+
 ### Principio di non regressione
 
 Una richiesta puntuale non autorizza a rifare parti non coinvolte. Esempio: se viene richiesto di migliorare le spiegazioni, non si devono contemporaneamente riscrivere domande, cambiare grafica, eliminare progressi o alterare la logica del quiz.
@@ -218,7 +258,8 @@ Portare **Scienze della Salute** e **Paziente chirurgico** al nuovo standard di 
 
 - motivazione della corretta;
 - motivazione specifica per ciascuna alternativa errata;
-- nessuna modifica al contenuto del quiz oltre alle spiegazioni.
+- nessuna modifica al contenuto del quiz oltre alle spiegazioni;
+- lavorazione in **blocchi controllati da circa 40–60 domande**, con checkpoint GitHub tra i blocchi.
 
 ### Espansione del catalogo
 
@@ -240,7 +281,9 @@ Chiunque lavori successivamente sul progetto deve assumere che:
 - il repository GitHub `main` descrive l'implementazione reale più recente;
 - in caso di differenza tra una vecchia copia locale e GitHub, **prevale il repository aggiornato**;
 - in caso di differenza tra una proposta futura e una regola esplicitamente consolidata qui, **prevale la regola consolidata** finché l'utente non la modifica;
-- dopo cambiamenti rilevanti, questo file deve essere aggiornato per evitare perdita di contesto.
+- dopo cambiamenti rilevanti, questo file deve essere aggiornato per evitare perdita di contesto;
+- nei lavori estesi si deve riprendere dall'ultimo **checkpoint dichiarato**, non ricominciare arbitrariamente da zero;
+- se la chat precedente ha segnalato un punto di handoff, quel punto deve essere verificato sul master prima di continuare.
 
 ---
 
@@ -259,6 +302,8 @@ Chiunque lavori successivamente sul progetto deve assumere che:
 - ripasso errori;
 - progressi in `localStorage`;
 - interfaccia responsive;
-- repository GitHub come master.
+- repository GitHub come master;
+- lavori estesi gestiti in **blocchi controllati da 40–60 domande**;
+- checkpoint e handoff preventivo tra chat per proteggere qualità e continuità.
 
-**Prossimo vincolo prioritario:** migliorare le spiegazioni di **Scienze della Salute** e **Paziente chirurgico** spiegando corretta + tre alternative errate, senza cambiare nient'altro del quiz.
+**Prossimo vincolo prioritario:** migliorare le spiegazioni di **Scienze della Salute** e **Paziente chirurgico** spiegando corretta + tre alternative errate, senza cambiare nient'altro del quiz e procedendo per blocchi controllati.
