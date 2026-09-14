@@ -1,0 +1,92 @@
+{
+  "di41": {
+    "summary": "La TAC utilizza raggi X, quindi radiazioni ionizzanti; RM ed ecografia si basano invece su principi fisici non ionizzanti.",
+    "options": {
+      "TAC": "Corretta: la tomografia computerizzata acquisisce numerose proiezioni mediante raggi X e ricostruisce sezioni del corpo, esponendo quindi il paziente a radiazioni ionizzanti.",
+      "RM": "Errata: la risonanza magnetica impiega un forte campo magnetico e impulsi di radiofrequenza, non raggi X.",
+      "Ecografia": "Errata: l'ecografia utilizza ultrasuoni, cioè onde meccaniche non ionizzanti.",
+      "Nessuna": "Errata: almeno una delle metodiche elencate, la TAC, utilizza effettivamente radiazioni ionizzanti."
+    }
+  },
+  "di42": {
+    "summary": "La PET è una metodica di medicina nucleare che utilizza radiofarmaci per rappresentare processi metabolici e funzionali.",
+    "options": {
+      "Raggi X": "Errata: i raggi X sono il principio della radiografia e della TAC; non rappresentano la sostanza tracciante utilizzata dalla PET.",
+      "Radiofarmaci": "Corretta: la PET somministra un tracciante radioattivo e rileva i fotoni generati dal decadimento per ricostruirne la distribuzione nell'organismo.",
+      "Ultrasuoni": "Errata: gli ultrasuoni appartengono all'ecografia e non alla PET.",
+      "Magneti superconduttori": "Errata: i magneti superconduttori sono associati alla RM, mentre la PET appartiene alla medicina nucleare."
+    }
+  },
+  "di43": {
+    "summary": "L'HRCT utilizza sezioni TC ad alta risoluzione ed è particolarmente adatta a definire il pattern del parenchima polmonare nelle interstiziopatie fibrosanti.",
+    "options": {
+      "RX torace": "Errata come esame migliore: la radiografia può mostrare alterazioni grossolane o avanzate, ma ha una sensibilità e un dettaglio inferiori rispetto alla HRCT.",
+      "HRCT (TAC ad alta risoluzione)": "Corretta: permette di valutare con grande dettaglio interstizio e architettura del parenchima, caratteristiche fondamentali nello studio della fibrosi polmonare.",
+      "RM addome": "Errata: riguarda il distretto addominale e non è indicata per il pattern interstiziale del polmone.",
+      "Ecografia toracica": "Errata come metodica principale per la fibrosi diffusa: l'aria limita lo studio ecografico del parenchima polmonare profondo."
+    }
+  },
+  "di44": {
+    "summary": "Le calcificazioni attenuano fortemente i raggi X e risultano radiopache, per questo possono essere riconosciute radiograficamente.",
+    "options": {
+      "RX": "Corretta: il calcio è molto radiopaco e può apparire come un'area ad elevata densità lungo il decorso di strutture vascolari.",
+      "RM": "Errata nel contesto del quesito: la RM è eccellente per i tessuti molli, ma non rappresenta la metodica semplice indicata qui per mettere in evidenza calcificazioni.",
+      "Ecografia": "Errata come risposta prevista: l'ecografia può visualizzare calcificazioni in alcuni distretti, ma il quesito richiama la loro radiopacità e quindi l'RX.",
+      "PET": "Errata: la PET valuta soprattutto distribuzione e metabolismo di radiofarmaci, non la presenza di calcio vascolare come reperto strutturale primario."
+    }
+  },
+  "di45": {
+    "summary": "L'ecografia è il primo esame per la litiasi della colecisti perché è rapida, non invasiva e molto sensibile per i calcoli biliari.",
+    "options": {
+      "TAC": "Errata come primo esame: la TC può essere utile in quadri complessi o complicanze, ma non è la metodica iniziale indicata dalla banca per la ricerca di calcoli della colecisti.",
+      "Ecografia": "Corretta: visualizza direttamente la colecisti, i calcoli con ombra acustica e numerosi segni associati, senza esposizione a radiazioni.",
+      "RM": "Errata come prima scelta: la colangio-RM è molto utile per l'albero biliare, ma è più complessa e non sostituisce l'ecografia come esame iniziale della litiasi colecistica.",
+      "PET": "Errata: la PET è una metodica metabolica di medicina nucleare e non è impiegata come indagine di prima linea per i calcoli biliari."
+    }
+  },
+  "di46": {
+    "summary": "Lo pneumoperitoneo è la presenza di aria libera nella cavità peritoneale e, in radiografia eseguita in posizione idonea, può apparire come falce d'aria sotto il diaframma.",
+    "options": {
+      "Opacità basale": "Errata: un'opacità basale è un reperto toracico generico e non rappresenta il classico segno di aria libera intraperitoneale.",
+      "Aria sottodiaframmatica": "Corretta: l'aria libera tende a raccogliersi nelle porzioni più alte della cavità e può essere visibile sotto le cupole diaframmatiche.",
+      "Addome rigido": "Errata: è un segno clinico di irritazione peritoneale, non un reperto radiografico.",
+      "Ombra renale": "Errata: la visualizzazione del profilo renale non identifica uno pneumoperitoneo."
+    }
+  },
+  "di47": {
+    "summary": "La radiografia standard è l'esame di prima linea per la maggior parte delle sospette fratture perché mostra bene la continuità e l'allineamento dell'osso.",
+    "options": {
+      "RM": "Errata come esame di base: la RM è utile per midollo, tessuti molli e alcune fratture occulte, ma non è la prima metodica proposta per una frattura ossea comune.",
+      "RX": "Corretta: l'elevata radiopacità dell'osso rende la radiografia adatta a dimostrare interruzioni corticali, rime di frattura e dislocazioni.",
+      "Ecografia": "Errata: può avere impieghi selezionati, ma l'osso limita la propagazione ultrasonora e non rappresenta la metodica standard per la maggior parte delle fratture.",
+      "Colangio-RM": "Errata: è una sequenza dedicata alle vie biliari e non ha relazione con la diagnosi di frattura."
+    }
+  },
+  "di48": {
+    "summary": "L'enteroclisi studia il tenue distendendolo e opacizzandolo con un mezzo di contrasto introdotto nel lume.",
+    "options": {
+      "Soluzione fisiologica": "Errata come unica risposta: una soluzione può contribuire alla distensione in protocolli specifici, ma il quesito richiede il mezzo capace di opacizzare il tenue.",
+      "Mezzo idrosolubile/opaco": "Corretta: il contrasto viene introdotto nel piccolo intestino per delinearne lume e pareti durante lo studio contrastografico.",
+      "Gadolino": "Errata nel contesto di questa enteroclisi radiologica: il gadolinio è un mezzo di contrasto tipico della RM, non quello indicato dalla banca per l'opacizzazione del tenue.",
+      "Nessuno": "Errata: l'esame descritto richiede la distensione e opacizzazione del lume e quindi non corrisponde a uno studio senza mezzo di contrasto."
+    }
+  },
+  "di49": {
+    "summary": "La scintigrafia ossea permette una valutazione dell'intero scheletro e rileva aree di aumentata attività osteoblastica, frequenti in molte metastasi ossee.",
+    "options": {
+      "Ecografia": "Errata: gli ultrasuoni non consentono uno screening dell'intero scheletro per focolai metastatici profondi.",
+      "Scintigrafia ossea": "Corretta: grazie alla distribuzione del radiofarmaco nello scheletro può evidenziare molteplici focolai patologici anche prima che siano evidenti su una singola radiografia.",
+      "RM cervicale": "Errata: studia con grande dettaglio un distretto limitato, la regione cervicale, ma non rappresenta l'esame panoramico indicato dal quesito per il riconoscimento di metastasi scheletriche.",
+      "RX cranio": "Errata: valuta soltanto il cranio e ha sensibilità limitata per una ricerca sistemica di metastasi ossee."
+    }
+  },
+  "di50": {
+    "summary": "In urgenza l'ecografia è la metodica iniziale più pratica per lo studio della colecisti: è rapida, ripetibile e identifica calcoli, distensione e altri segni rilevanti.",
+    "options": {
+      "Ecografia": "Corretta: consente una valutazione immediata della colecisti al letto del paziente o in radiologia senza utilizzare radiazioni ionizzanti.",
+      "RM": "Errata come prima scelta urgente: è utile in problemi biliari selezionati, ma richiede più tempo e risorse rispetto all'ecografia.",
+      "RX torace": "Errata: il torace non è il distretto principale per valutare la colecisti.",
+      "TAC cranio": "Errata: è un esame del capo e non fornisce informazioni sulla colecisti."
+    }
+  }
+}
