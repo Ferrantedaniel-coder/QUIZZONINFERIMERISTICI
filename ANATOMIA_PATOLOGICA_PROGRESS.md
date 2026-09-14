@@ -32,12 +32,13 @@ Per ogni domanda:
 - `Eziologia generale STAMPATO.pdf`
 - `Immunologia STAMPATO.pdf`
 - `ANATOMIA PATOLOGICA.pdf`
+- `Domande anatomia patologica.pdf`, usato come ulteriore riferimento per terminologia e impostazione delle domande storiche del corso.
 
 Le spiegazioni conservano terminologia, organizzazione e impostazione del materiale del corso quando scientificamente sostenibili.
 
 ### Verifica scientifica esterna
 
-Quando un punto richiede verifica, aggiornamento o disambiguazione vengono consultate fonti autorevoli, tra cui PubMed/PMC, NCBI/NIH, CDC, WHO e linee guida pertinenti. Le fonti esterne servono a verificare o precisare il contenuto e non autorizzano modifiche silenziose della banca.
+Quando un punto richiede verifica, aggiornamento o disambiguazione vengono consultate fonti autorevoli, tra cui PubMed/PMC, NCBI/NIH, CDC, WHO, fonti normative ufficiali e linee guida pertinenti. Le fonti esterne servono a verificare o precisare il contenuto e non autorizzano modifiche silenziose della banca.
 
 Se una risposta della banca risultasse probabilmente errata, ambigua o obsoleta, va registrata come **QA separato** e non modificata senza autorizzazione esplicita.
 
@@ -51,7 +52,8 @@ File attivi:
 - `data/anatomia-patologica-explanations-002.json` — `m41–m80`;
 - `data/anatomia-patologica-explanations-003.json` — `m81–m100` + `e1–e20`;
 - `data/anatomia-patologica-explanations-004.json` — `e21–e50` + `i1–i10`;
-- `data/anatomia-patologica-explanations-005.json` — `i11–i50`.
+- `data/anatomia-patologica-explanations-005.json` — `i11–i50`;
+- `data/anatomia-patologica-explanations-006.json` — `a1–a40`.
 
 L'enhancer:
 
@@ -62,7 +64,7 @@ L'enhancer:
 - associa ogni motivazione al testo dell'opzione originale, quindi la spiegazione segue lo shuffle A/B/C/D;
 - se enhancer o JSON non sono disponibili lascia attivo il feedback base `why` e non impedisce lo svolgimento del quiz.
 
-## Copertura — 200/300
+## Copertura — 240/300
 
 ### Blocco 001
 - `m1–m40` — Microbiologia
@@ -82,39 +84,50 @@ L'enhancer:
 
 ### Blocco 005
 - `i11–i50` — Immunologia (40)
-- File: `data/anatomia-patologica-explanations-005.json`
 - **Immunologia completa 50/50**
-- Copertura totale: **200/300**
 
-Argomenti principali verificati nel blocco 005:
+### Blocco 006
+- `a1–a40` — Anatomia Patologica (40)
+- File: `data/anatomia-patologica-explanations-006.json`
+- Anatomia Patologica: **40/100**
+- Copertura totale: **240/300**
 
-- plasmacellule e cellule B memoria;
-- CD4, CD8, selezione clonale e riconoscimento BCR/TCR;
-- neutrofili, eosinofili, mastociti e basofili;
-- NK, missing-self, perforine e granzimi;
-- organi linfoidi primari e secondari, timo, linfonodo e milza;
-- struttura delle immunoglobuline, epitopo e classi IgM/IgG/IgA/IgE;
-- MHC I/MHC II, via citosolica, via endocitica e TAP;
-- costimolazione e IL-2;
-- risposte TH1, TH2 e TH17;
-- citotossicità T CD8;
-- class switching e maturazione dell'affinità;
-- complemento, via classica e opsonizzazione;
-- segnalazione autocrina delle citochine;
-- ipersensibilità di tipo I, II, III e IV.
+Argomenti principali verificati nel blocco 006:
 
-### QA e precisazioni scientifiche dei blocchi 001–005
+- ruolo dell'anatomopatologo e metodiche ancillari;
+- istologia vs citologia;
+- formalina neutra tamponata al 10%, fissazione e tempo di ischemia fredda;
+- identificazione dei campioni e informazioni della richiesta;
+- processazione istologica, inclusione in paraffina e sezioni di pochi micrometri;
+- ematossilina-eosina, Perls, Rosso Congo e PAS;
+- immunoistochimica, ibridazione in situ, microscopia elettronica e Ki-67;
+- campionamento macroscopico, orientamento delle biopsie e artefatti;
+- autopsia clinico-patologica e medico-legale;
+- fenomeni cadaverici immediati, successivi e trasformativi;
+- rigor mortis, ipostasi, autolisi, autodigestione e putrefazione;
+- epicrisi ed esame interno autoptico;
+- disciplina italiana del periodo di osservazione del cadavere.
 
-Nessun quesito `m1–m100`, `e1–e50` o `i1–i50` è stato modificato. Le risposte corrette della banca sono rimaste invariate.
+### QA e precisazioni scientifiche dei blocchi 001–006
 
-Nel confronto tra `Immunologia STAMPATO.pdf` e fonti immunologiche autorevoli sono emerse alcune formulazioni didattiche da precisare **nelle spiegazioni**, senza cambiare i quesiti:
+Nessun quesito `m1–m100`, `e1–e50`, `i1–i50` o `a1–a40` è stato modificato. Le risposte corrette della banca sono rimaste invariate.
 
-- la corretta denominazione è **via lectinica del complemento**, attivata da molecole di riconoscimento come la **mannose-binding lectin (MBL)**; la dicitura degli appunti “via leptinica/leptina” non è scientificamente corretta;
-- le cellule dendritiche sono le APC più efficaci nell'attivazione dei linfociti T vergini, ma non sono in senso assoluto le uniche cellule capaci di esprimere molecole costimolatorie; anche altre APC professionali possono esprimerle in condizioni appropriate;
-- MHC I viene descritto nelle spiegazioni come espresso sulla grande maggioranza delle cellule nucleate, evitando formulazioni eccessivamente assolute;
-- l'uccisione mediata da NK e T CD8 tramite perforine/granzimi è descritta principalmente come induzione di apoptosi.
+Precisazioni già registrate nei blocchi precedenti:
 
-Il blocco 005 è stato verificato anche con fonti PubMed/NCBI su MHC I/II, TAP, missing-self delle NK, centri germinativi, class switching, maturazione dell'affinità, complemento e ipersensibilità.
+- corretta denominazione **via lectinica del complemento** con **mannose-binding lectin (MBL)**;
+- cellule dendritiche come APC più efficienti nell'attivazione dei T vergini, evitando l'assoluto “uniche APC costimolatorie”;
+- MHC I espresso sulla grande maggioranza delle cellule nucleate;
+- citotossicità perforina/granzimi descritta principalmente come induzione di apoptosi.
+
+Precisazioni del blocco 006:
+
+- la formalina al 10% è descritta in modo rigoroso come formalina neutra tamponata contenente circa il 4% di formaldeide;
+- il tempo tra prelievo e fissazione è trattato come variabile pre-analitica rilevante perché può modificare morfologia, antigenicità e alcuni biomarcatori;
+- il Rosso Congo è associato all'amiloide e alla classica birifrangenza verde mela in luce polarizzata, con la dovuta attenzione agli artefatti interpretativi;
+- Ki-67 è descritto come marcatore nucleare della frazione proliferante, non come indicatore universale con identico significato prognostico in ogni tumore;
+- per `a39–a40` è stata verificata direttamente la normativa ufficiale: **D.P.R. 10 settembre 1990, n. 285, artt. 8–9**, che stabilisce 24 ore come periodo ordinario e fino a 48 ore in caso di morte improvvisa o dubbio di morte apparente, salvo accertamento anticipato della morte secondo le modalità previste.
+
+Il blocco 006 è stato verificato anche con letteratura PubMed sulla fase pre-analitica della fissazione e dell'immunoistochimica e con fonti ufficiali italiane per i quesiti normativi.
 
 ## Dimensione dei blocchi
 
@@ -124,8 +137,8 @@ Per garantire controllo e qualità, procedere in **blocchi da 40 domande** mante
 
 Il prossimo blocco contiene **40 domande**:
 
-- `a1–a40` → **Anatomia Patologica**
+- `a41–a80` → **Anatomia Patologica**
 
-Copertura successiva attesa: **240/300**.
+Copertura successiva attesa: **280/300**.
 
-Dopo questo blocco resteranno `a41–a80` e infine `a81–a100`.
+Dopo questo blocco resterà il residuo finale `a81–a100` (20 domande).
