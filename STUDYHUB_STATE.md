@@ -2,7 +2,7 @@
 
 > **Single source of truth operativo per StudyHub**
 >
-> Ultimo aggiornamento: **14 settembre 2026**  
+> Ultimo aggiornamento: **15 settembre 2026**  
 > Repository: **Ferrantedaniel-coder/QUIZZONINFERIMERISTICI**  
 > Branch operativo: **main**
 
@@ -117,7 +117,7 @@ Copertura completa per ID banca:
 
 Checkpoint: `SCIENZE_SALUTE_PROGRESS.md`.
 
-### Anatomia Patologica — IN CORSO 160/300
+### Anatomia Patologica — IN CORSO 200/300
 
 Il lavoro procede in **blocchi da 40 domande** seguendo l'ordine reale complessivo della banca.
 
@@ -125,21 +125,22 @@ Implementazione attiva:
 
 - `anatomia-patologica.html` resta il motore originale e continua a caricare le 12 banche JSON;
 - `anatomia-patologica-explanations.js` è un enhancer opzionale fail-safe;
-- rilascio attivo: **`pilot4`**;
-- `EXPECTED_ADVANCED=160`;
+- rilascio attivo: **`pilot5`**;
+- `EXPECTED_ADVANCED=200`;
 - file spiegazioni:
   - `data/anatomia-patologica-explanations-001.json` → `m1–m40`;
   - `data/anatomia-patologica-explanations-002.json` → `m41–m80`;
   - `data/anatomia-patologica-explanations-003.json` → `m81–m100` + `e1–e20`;
-  - `data/anatomia-patologica-explanations-004.json` → `e21–e50` + `i1–i10`.
+  - `data/anatomia-patologica-explanations-004.json` → `e21–e50` + `i1–i10`;
+  - `data/anatomia-patologica-explanations-005.json` → `i11–i50`.
 
 Copertura:
 
 - Microbiologia `m1–m100` = **100/100 COMPLETA**;
 - Eziologia `e1–e50` = **50/50 COMPLETA**;
-- Immunologia `i1–i10` = **10/50**;
+- Immunologia `i1–i50` = **50/50 COMPLETA**;
 - Anatomia Patologica = 0/100;
-- **totale 160/300**.
+- **totale 200/300**.
 
 Materiale universitario primario fornito dall'utente:
 
@@ -150,11 +151,22 @@ Materiale universitario primario fornito dall'utente:
 - `Immunologia STAMPATO.pdf`;
 - `ANATOMIA PATOLOGICA.pdf`.
 
-Nel blocco 004 sono stati verificati: radiazioni ionizzanti e danno al DNA, radiolisi dell'acqua, radicali liberi, perossidazione lipidica e stress ossidativo; radiosensibilità, danno chimico, osmosi, denaturazione proteica, tossicologia, DL50, saturnismo e biotrasformazione; infiammazione, istamina, prostaglandine, diapedesi, chemiotassi, neutrofili, essudato/trasudato, pus, ascesso/empiema, infiammazione cronica e guarigione per seconda intenzione; per Immunologia: immunosorveglianza, immunità innata/adattativa, linfociti B/T, barriere, lisozima, defensine, microbiota, opsonizzazione e fagosoma.
+Nel blocco 005 sono stati verificati in particolare: differenziazione B in plasmacellule/memoria, CD4/CD8, selezione clonale, neutrofili/eosinofili/mastociti, NK e missing-self, organi linfoidi, struttura e classi delle immunoglobuline, epitopi, MHC I/II, TAP, costimolazione, IL-2, TH1/TH2/TH17, perforine/granzimi, class switching, maturazione dell'affinità, complemento e ipersensibilità I–IV.
 
-Nei quesiti coperti finora non sono state modificate domande, opzioni, risposte corrette, ID o topic. Non sono emerse risposte corrette chiaramente incompatibili con i materiali universitari e con le fonti autorevoli consultate.
+### Precisazioni scientifiche registrate
 
-**Punto di ripresa Anatomia Patologica:** prossimo blocco da 40 = `i11–i50` (**40 Immunologia**), con copertura attesa **200/300**.
+Nei quesiti coperti finora non sono state modificate domande, opzioni, risposte corrette, ID o topic. Non sono emerse risposte corrette da cambiare nel blocco `i11–i50`.
+
+Dal confronto tra il materiale del corso e fonti autorevoli sono però state registrate queste precisazioni, applicate **solo nelle spiegazioni**:
+
+- la corretta denominazione è **via lectinica del complemento**, con riconoscimento da parte di molecole come la **mannose-binding lectin (MBL)**; la dicitura “via leptinica/leptina” presente negli appunti non è scientificamente corretta;
+- le cellule dendritiche sono le APC più efficaci per l'attivazione dei T vergini, ma non sono in senso assoluto le uniche APC capaci di esprimere molecole costimolatorie;
+- MHC I viene descritto in modo rigoroso come espresso sulla grande maggioranza delle cellule nucleate;
+- la citotossicità mediata da perforine/granzimi di NK e T CD8 viene descritta principalmente come induzione di apoptosi.
+
+Le verifiche del blocco 005 hanno utilizzato anche fonti PubMed/NCBI su MHC, NK/missing-self, immunoglobuline, centri germinativi, class switching, maturazione dell'affinità, complemento e ipersensibilità.
+
+**Punto di ripresa Anatomia Patologica:** prossimo blocco da 40 = `a1–a40` (**Anatomia Patologica**), con copertura attesa **240/300**.
 
 Checkpoint dettagliato: `ANATOMIA_PATOLOGICA_PROGRESS.md`.
 
@@ -170,7 +182,7 @@ File principali:
 - `SCIENZE_SALUTE_PROGRESS.md`;
 - `anatomia-patologica.html`;
 - `anatomia-patologica-explanations.js`;
-- `data/anatomia-patologica-explanations-001.json` → `004.json`;
+- `data/anatomia-patologica-explanations-001.json` → `005.json`;
 - `ANATOMIA_PATOLOGICA_PROGRESS.md`;
 - `infermieristica-materno.html`;
 - `paziente-chirurgico.html`;
@@ -198,9 +210,9 @@ I progressi utente restano locali al browser; non ci sono account, database remo
 
 - Paziente chirurgico: **462/462** completo.
 - Scienze della Salute: **459/459** completo.
-- Anatomia Patologica: **160/300**, blocchi fissi da 40; prossimo `i11–i50`.
+- Anatomia Patologica: **200/300**, blocchi fissi da 40; prossimo `a1–a40`.
 
-Quando un blocco attraversa il confine tra due sezioni, mantenere la dimensione di 40 e registrare chiaramente gli intervalli. L'ultimo blocco può contenere il residuo finale inferiore a 40.
+Per Anatomia Patologica restano 100 domande: `a1–a40`, `a41–a80`, poi residuo finale `a81–a100`.
 
 ## 8. GitHub e autorizzazioni
 
@@ -215,7 +227,7 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 
 1. Paziente chirurgico: spiegazioni complete 462/462.
 2. Scienze della Salute: spiegazioni complete 459/459.
-3. Anatomia Patologica: spiegazioni avanzate **160/300**; proseguire con `i11–i50`.
+3. Anatomia Patologica: spiegazioni avanzate **200/300**; proseguire con `a1–a40`.
 4. Mantenere le banche originali inalterate salvo autorizzazione esplicita.
 5. Gestire quesiti dubbi o obsoleti come QA separato.
 6. Farmacologia resta una futura banca in preparazione.
