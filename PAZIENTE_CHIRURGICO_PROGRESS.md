@@ -26,23 +26,23 @@ Il quiz viene abilitato appena la banca è valida. Le spiegazioni avanzate **non
 
 Restano preservati mix/focus, 20/30/50/100/tutte, ordine casuale/banca, shuffle A/B/C/D, `lockOrder`, punteggio, accuratezza, barra progresso, precedente/successiva, risultato, breakdown, ripasso errori, reset, `localStorage` e Home.
 
-## Spiegazioni avanzate opzionali — 256/462 attive
+## Spiegazioni avanzate opzionali — 316/462 attive
 
 Sono ora attive in modalità fail-safe per:
 
 - **Diagnostica `di1–di76`: 76/76**;
 - **Educazione terapeutica `ed1–ed54`: 54/54**;
 - **Psicologia `ps1–ps66`: 66/66**;
-- **Terapia `te1–te60`: 60/266**.
+- **Terapia `te1–te120`: 120/266**.
 
-Totale collegato al runtime: **256 spiegazioni avanzate opzionali**.
+Totale collegato al runtime: **316 spiegazioni avanzate opzionali**.
 
 File opzionali caricati:
 
 - `001.json` → `007.json`: Diagnostica `di1–di76`;
 - `008.json` → `013.json`: Educazione terapeutica `ed1–ed54`;
 - `014.json` → `020.json`: Psicologia `ps1–ps66`;
-- `021.json` → `023.json`: Terapia `te1–te60`.
+- `021.json` → `026.json`: Terapia `te1–te120`.
 
 ### Architettura fail-safe
 
@@ -75,7 +75,7 @@ Quando l'entry è valida, dopo la conferma vengono mostrati:
 4. quattro motivazioni separate;
 5. etichetta `CORRETTA` o `ERRATA` per ogni alternativa.
 
-Per Terapia da `te61` in poi resta per ora il feedback base `why`.
+Per Terapia da `te121` in poi resta per ora il feedback base `why`.
 
 ## Integrità della banca
 
@@ -83,15 +83,15 @@ Non sono stati modificati testo delle domande, quattro alternative, soluzione re
 
 ## QA separato
 
-Restano separati dal presente task i quesiti già segnalati come potenzialmente ambigui, datati o discordanti (`te5`, `te62`, `te103`, `te110`, `te118`, `te137`, `te168`, `te172`, `te175`, `te203`, `te206`, `te209`, `te212`, `te215`, `te223`, `te228`). Non sono stati modificati. In particolare `te5` mantiene nel file delle spiegazioni una nota `ATTENZIONE QA`, senza alterare la soluzione memorizzata nella banca.
+Restano separati dal presente task i quesiti già segnalati come potenzialmente ambigui, datati o discordanti (`te5`, `te62`, `te64`, `te84`, `te86`, `te99`, `te103`, `te110`, `te118`, `te137`, `te168`, `te172`, `te175`, `te203`, `te206`, `te209`, `te212`, `te215`, `te223`, `te228`). Non sono stati modificati. Le relative spiegazioni possono contenere `ATTENZIONE QA`, senza alterare la soluzione memorizzata nella banca.
 
 ## Checkpoint
 
 - Diagnostica completa: `di1–di76`.
 - Educazione terapeutica completa: `ed1–ed54`.
 - Psicologia completa: `ps1–ps66`.
-- Terapia completata in questo blocco: `te1–te60`.
-- **Copertura avanzata opzionale totale: 256/462.**
-- Commit runtime Terapia `te1–te60`: `4ae917ab8458427490b0de345132b0a333bd4a93`.
-- Commit Home/cache-busting pilot5: `e9aaa4b80a17b066f1649bc40980d4edc1cdfd81`.
-- Punto di ripresa successivo: **Terapia `te61`**.
+- Terapia completata: `te1–te120`.
+- **Copertura avanzata opzionale totale: 316/462.**
+- Commit runtime Terapia `te61–te120`: `020f1556aa8af005a5682e33acde68af58226523`.
+- Commit Home/cache-busting pilot6: `9d219cfa42d89c797e4417c78d5ada290b31ca92`.
+- Punto di ripresa successivo: **Terapia `te121`**.
