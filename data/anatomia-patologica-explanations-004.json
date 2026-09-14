@@ -1,0 +1,362 @@
+{
+  "e21": {
+    "summary": "Le radiazioni ionizzanti possiedono energia sufficiente a rimuovere elettroni dagli atomi o dalle molecole, producendo ioni e avviando reazioni capaci di danneggiare strutture cellulari.",
+    "reasons": [
+      "Corretta: la caratteristica fisica che definisce una radiazione ionizzante è la capacità di trasferire energia sufficiente a espellere elettroni dalla materia attraversata, generando ioni.",
+      "Errata: alcune radiazioni non ionizzanti hanno penetrazione superficiale, ma le radiazioni ionizzanti possono attraversare i tessuti in misura variabile e non agiscono esclusivamente sulla cute.",
+      "Errata: il DNA è uno dei bersagli biologici più importanti delle radiazioni ionizzanti, sia per danno diretto sia per l'azione indiretta di specie reattive.",
+      "Errata: le radiazioni ionizzanti possono produrre numerosi effetti biologici, inclusi danno cellulare, mutazioni e, in funzione della dose, aumento del rischio neoplastico."
+    ]
+  },
+  "e22": {
+    "summary": "Il DNA è un bersaglio critico delle radiazioni ionizzanti perché rotture dei filamenti, alterazioni delle basi e lesioni complesse possono compromettere sopravvivenza cellulare e stabilità genomica.",
+    "reasons": [
+      "Errata: l'acqua è molto importante nel danno indiretto da radiazioni, ma non è l'unico bersaglio biologico rilevante e non è una macromolecola.",
+      "Errata: il glicogeno può subire modificazioni, ma non rappresenta il principale bersaglio critico responsabile delle conseguenze mutagene delle radiazioni.",
+      "Corretta: il DNA è particolarmente rilevante perché il danno non riparato o riparato in modo errato può causare morte cellulare, mutazioni e instabilità genomica.",
+      "Errata: il colesterolo può essere coinvolto in processi ossidativi di membrana, ma non è il bersaglio macromolecolare centrale indicato nel quesito."
+    ]
+  },
+  "e23": {
+    "summary": "Una quota importante del danno da radiazioni ionizzanti è indiretta: la radiolisi dell'acqua genera specie reattive, soprattutto radicali, capaci di attaccare DNA, proteine e lipidi.",
+    "reasons": [
+      "Errata: l'acqua non blocca automaticamente l'azione delle radiazioni; essendo abbondante nelle cellule, può invece contribuire al danno indiretto.",
+      "Corretta: l'energia depositata nell'acqua può generare specie reattive dell'ossigeno, incluso il radicale ossidrile, che reagiscono rapidamente con le biomolecole.",
+      "Errata: la radiolisi dell'acqua non converte l'acqua in glucosio; produce specie ionizzate e radicaliche altamente reattive.",
+      "Errata: l'acqua non neutralizza automaticamente il DNA; le specie reattive formate dalla sua radiolisi possono danneggiarlo."
+    ]
+  },
+  "e24": {
+    "summary": "Un radicale libero è una specie chimica che possiede almeno un elettrone spaiato, caratteristica che spesso la rende molto reattiva.",
+    "reasons": [
+      "Errata: un radicale libero contiene elettroni; ciò che lo distingue è la presenza di uno o più elettroni non appaiati.",
+      "Errata: un radicale può essere neutro, positivo o negativo; la carica positiva non è un requisito della definizione.",
+      "Errata: esistono radicali che non contengono ossigeno; 'radicale libero' è una definizione elettronica, non chimicamente limitata alle specie dell'ossigeno.",
+      "Corretta: la presenza di uno o più elettroni spaiati è la caratteristica fondamentale che definisce un radicale libero."
+    ]
+  },
+  "e25": {
+    "summary": "Il radicale ossidrile (•OH) è una delle specie radicaliche più reattive in biologia e può danneggiare rapidamente DNA, proteine e lipidi nel punto in cui viene generato.",
+    "reasons": [
+      "Corretta: •OH ha reattività estremamente elevata e può innescare lesioni ossidative quasi immediatamente sulle biomolecole vicine.",
+      "Errata: l'azoto molecolare N2 è relativamente stabile e non è la specie radicalica altamente reattiva descritta nel quesito.",
+      "Errata: il cloruro di sodio è un sale stabile nelle condizioni fisiologiche e non è un radicale libero.",
+      "Errata: l'acqua è una molecola stabile; può essere sottoposta a radiolisi generando radicali, ma non è essa stessa un radicale libero."
+    ]
+  },
+  "e26": {
+    "summary": "La perossidazione lipidica è una reazione a catena ossidativa che colpisce soprattutto gli acidi grassi polinsaturi delle membrane, alterandone struttura e funzione.",
+    "reasons": [
+      "Errata: l'attacco radicalico ai lipidi non sintetizza membrane sane; al contrario può comprometterne integrità e proprietà fisiche.",
+      "Corretta: la perossidazione dei lipidi altera la membrana, genera idroperossidi e prodotti secondari reattivi e può contribuire alla disfunzione o morte cellulare.",
+      "Errata: la produzione di anticorpi è una funzione del sistema immunitario adattativo e non un effetto diretto della perossidazione lipidica.",
+      "Errata: l'aumento della sintesi di collagene riguarda processi di riparazione e fibrosi, non è l'effetto caratteristico del danno ossidativo ai lipidi di membrana."
+    ]
+  },
+  "e27": {
+    "summary": "I sistemi antiossidanti limitano lo stress ossidativo prevenendo la formazione di specie reattive, neutralizzandole, interrompendo reazioni a catena e contribuendo alla riparazione del danno.",
+    "reasons": [
+      "Errata: un sistema antiossidante tende a ridurre, non a favorire, la formazione o la propagazione di specie ossidanti.",
+      "Errata: l'ossigeno è essenziale per il metabolismo aerobico; la difesa antiossidante non ha lo scopo di eliminarlo completamente.",
+      "Corretta: gli antiossidanti enzimatici e non enzimatici riducono la formazione, la concentrazione o gli effetti biologici delle specie reattive.",
+      "Errata: bloccare definitivamente il metabolismo sarebbe incompatibile con la vita; i sistemi antiossidanti regolano l'omeostasi redox senza arrestare i processi cellulari."
+    ]
+  },
+  "e28": {
+    "summary": "Lo stress ossidativo nasce quando la produzione o la presenza di specie ossidanti supera la capacità dei sistemi antiossidanti e di riparazione di mantenere l'omeostasi redox.",
+    "reasons": [
+      "Errata: un equilibrio efficace tra produzione di ossidanti e difese antiossidanti è compatibile con l'omeostasi e non definisce stress ossidativo.",
+      "Errata: l'assenza di metabolismo cellulare non è una condizione fisiologica e non rappresenta la definizione di stress ossidativo.",
+      "Errata: eliminare completamente l'ossigeno non è né fisiologico né il criterio che definisce lo stress ossidativo.",
+      "Corretta: lo squilibrio a favore delle specie ossidanti può determinare modificazioni di lipidi, proteine e acidi nucleici."
+    ]
+  },
+  "e29": {
+    "summary": "Picnosi, carioressi e cariolisi sono classiche alterazioni nucleari associate a danno cellulare irreversibile e morte cellulare.",
+    "reasons": [
+      "Corretta: nella sequenza didattica, la cromatina si condensa nella picnosi, il nucleo si frammenta nella carioressi e infine il materiale nucleare si dissolve nella cariolisi.",
+      "Errata: la mitosi e l'ipertrofia non costituiscono una progressione morfologica di distruzione del nucleo.",
+      "Errata: iperplasia e rigenerazione sono risposte proliferative/adattative e non fanno parte della sequenza di degradazione nucleare indicata.",
+      "Errata: metaplasia e displasia sono modificazioni dell'identità o dell'organizzazione cellulare e non rappresentano la sequenza nucleare della necrosi."
+    ]
+  },
+  "e30": {
+    "summary": "Le cellule con elevata attività proliferativa sono in genere più radiosensibili perché il danno al DNA interferisce fortemente con replicazione e mitosi.",
+    "reasons": [
+      "Errata: i neuroni maturi sono cellule scarsamente proliferanti e, in generale, non rappresentano il modello classico delle cellule più radiosensibili.",
+      "Corretta: tessuti con cellule labili o in rapida proliferazione, come midollo emopoietico ed epiteli a rapido ricambio, mostrano particolare sensibilità alle radiazioni.",
+      "Errata: gli adipociti maturi hanno bassa attività proliferativa e non sono il prototipo di radiosensibilità elevata.",
+      "Errata: anche le cellule cartilaginee hanno attività proliferativa limitata e non sono indicate come le più radiosensibili."
+    ]
+  },
+  "e31": {
+    "summary": "Gli agenti chimici possono danneggiare le cellule con meccanismi diversi, tra cui alterazioni del pH, dissoluzione di componenti lipidiche, denaturazione proteica e tossicità biochimica specifica.",
+    "reasons": [
+      "Errata: le mutazioni ereditarie sono cause intrinseche e non esauriscono i meccanismi di danno da agenti chimici.",
+      "Errata: i traumi meccanici appartengono alle cause fisiche e non descrivono l'azione tipica degli agenti chimici.",
+      "Errata: un'infezione è sostenuta da agenti biologici e non rappresenta un meccanismo generale di tossicità chimica.",
+      "Corretta: acidi e basi, solventi, denaturanti e veleni possono produrre danno attraverso meccanismi differenti ma tutti pertinenti alle cause chimiche."
+    ]
+  },
+  "e32": {
+    "summary": "In una soluzione ipotonica la concentrazione effettiva dei soluti all'esterno è inferiore a quella intracellulare: l'acqua entra nella cellula per osmosi e ne aumenta il volume.",
+    "reasons": [
+      "Corretta: l'ingresso di acqua provoca rigonfiamento e, se marcato, può condurre a lisi osmotica soprattutto nelle cellule prive di parete rigida.",
+      "Errata: la perdita di acqua e il raggrinzimento sono tipici di un ambiente ipertonico.",
+      "Errata: una differenza di tonicità determina movimento netto di acqua attraverso una membrana permeabile all'acqua.",
+      "Errata: la formazione di spore è una risposta specializzata di alcuni batteri e non è una conseguenza osmotica universale di una soluzione ipotonica."
+    ]
+  },
+  "e33": {
+    "summary": "La denaturazione altera la struttura secondaria, terziaria o quaternaria di una proteina senza necessariamente romperne i legami peptidici della struttura primaria, causando spesso perdita di funzione.",
+    "reasons": [
+      "Errata: la denaturazione in genere riduce o abolisce l'attività biologica; non comporta un aumento obbligatorio della funzione.",
+      "Corretta: la funzione di molte proteine dipende dalla loro conformazione tridimensionale, che viene alterata dalla denaturazione.",
+      "Errata: una proteina non si replica; viene sintetizzata mediante traduzione dell'mRNA.",
+      "Errata: una proteina non viene trasformata in DNA perché proteine e acidi nucleici sono classi molecolari differenti."
+    ]
+  },
+  "e34": {
+    "summary": "La tossicità dipende dalla relazione tra agente e organismo: dose, durata dell'esposizione, via di ingresso, distribuzione e concentrazione raggiunta nel bersaglio influenzano l'effetto.",
+    "reasons": [
+      "Errata: il colore della sostanza non determina la sua tossicità biologica.",
+      "Errata: caratteristiche individuali possono modificare la suscettibilità, ma il sesso da solo non è il parametro unico indicato negli appunti.",
+      "Corretta: dose ed esposizione determinano quanto agente raggiunge il bersaglio, mentre distribuzione e via di ingresso ne condizionano concentrazione e durata d'azione.",
+      "Errata: la temperatura esterna può influenzare alcune esposizioni, ma non è il determinante generale ed esclusivo della tossicità."
+    ]
+  },
+  "e35": {
+    "summary": "La DL50 (dose letale 50) è un indice tossicologico storico che esprime la dose capace di determinare la morte del 50% di una popolazione sperimentale definita.",
+    "reasons": [
+      "Corretta: la DL50 confronta la letalità acuta di sostanze in condizioni sperimentali standardizzate, pur non descrivendo da sola tutti gli aspetti della tossicità.",
+      "Errata: una dose inefficace nel 50% dei soggetti riguarda concetti di efficacia, non la definizione di DL50.",
+      "Errata: la sigla non indica una quantità di farmaco eliminata in un intervallo di 50 minuti.",
+      "Errata: la DL50 è una dose sperimentale associata a letalità, non una concentrazione fisiologica."
+    ]
+  },
+  "e36": {
+    "summary": "Il saturnismo è l'intossicazione da piombo; l'esposizione cronica può danneggiare soprattutto sistema nervoso, apparato emopoietico e reni.",
+    "reasons": [
+      "Errata: l'intossicazione da mercurio è distinta dal saturnismo e può provocare soprattutto effetti neurologici e renali.",
+      "Corretta: 'saturnismo' è il termine tradizionale per l'avvelenamento da piombo, possibile in esposizioni professionali, ambientali o domestiche.",
+      "Errata: un eccesso di ferro può causare intossicazione e sovraccarico, ma non viene chiamato saturnismo.",
+      "Errata: anche il rame può essere tossico in eccesso, ma la sua intossicazione non è definita saturnismo."
+    ]
+  },
+  "e37": {
+    "summary": "La biotrasformazione modifica xenobiotici e sostanze endogene per facilitarne, in molti casi, l'eliminazione rendendoli più polari; talvolta però genera metaboliti più reattivi o tossici.",
+    "reasons": [
+      "Errata: la biotrasformazione non rende necessariamente ogni sostanza più tossica; spesso avviene una detossificazione.",
+      "Errata: il deposito nel tessuto adiposo è una possibile modalità di distribuzione/accumulo e non lo scopo generale della biotrasformazione.",
+      "Errata: molte trasformazioni aumentano la possibilità di eliminazione renale o biliare anziché bloccarla.",
+      "Corretta: fase I e fase II tendono complessivamente a produrre composti più idrosolubili ed eliminabili, pur con importanti eccezioni di bioattivazione."
+    ]
+  },
+  "e38": {
+    "summary": "Le reazioni di fase I introducono o rendono disponibili gruppi funzionali mediante ossidazione, riduzione o idrolisi, spesso attraverso enzimi del citocromo P450.",
+    "reasons": [
+      "Corretta: ossidazione, riduzione e idrolisi sono le principali categorie di reazioni di fase I.",
+      "Errata: la sintesi proteica non è una reazione di biotrasformazione di fase I.",
+      "Errata: la coniugazione con acido glucuronico è una tipica reazione di fase II.",
+      "Errata: la produzione di anticorpi è una risposta immunitaria e non un processo di metabolismo xenobiotico."
+    ]
+  },
+  "e39": {
+    "summary": "Le reazioni di fase II coniugano il composto o un suo metabolita con gruppi endogeni, aumentando spesso polarità e solubilità e favorendo l'escrezione.",
+    "reasons": [
+      "Errata: la fase II è un processo enzimatico chimico e non una frammentazione meccanica.",
+      "Corretta: glucuronidazione, solfatazione, acetilazione e coniugazione con glutatione sono esempi di reazioni di fase II.",
+      "Errata: alcune reazioni metaboliche possono generare specie reattive, ma la produzione obbligatoria di radicali non definisce la fase II.",
+      "Errata: il composto non viene trasformato in una proteina; viene generalmente coniugato con piccole molecole o gruppi endogeni."
+    ]
+  },
+  "e40": {
+    "summary": "L'infiammazione è una risposta difensiva dei tessuti vascolarizzati a infezioni o danno, caratterizzata da modificazioni vascolari, reclutamento cellulare e mediatori che favoriscono contenimento e riparazione.",
+    "reasons": [
+      "Errata: gli anticorpi appartengono alla risposta adattativa, mentre l'infiammazione comprende soprattutto meccanismi innati vascolari e cellulari.",
+      "Errata: l'infiammazione è protettiva quando controllata, anche se può diventare dannosa se eccessiva o cronica.",
+      "Corretta: la flogosi è una risposta relativamente aspecifica a diversi tipi di agenti lesivi e serve a eliminare la causa del danno e avviare la riparazione.",
+      "Errata: può essere provocata da infezioni, traumi, necrosi, agenti chimici e molte altre condizioni, non solo da tumori."
+    ]
+  },
+  "e41": {
+    "summary": "L'istamina è un mediatore precoce dell'infiammazione acuta, liberato soprattutto da mastociti, che favorisce vasodilatazione arteriolare e aumento della permeabilità delle venule.",
+    "reasons": [
+      "Corretta: l'istamina aumenta rapidamente il flusso ematico e la permeabilità vascolare, contribuendo a rossore ed edema.",
+      "Errata: l'insulina regola principalmente il metabolismo glucidico e non è il mediatore tipico delle modificazioni vascolari acute descritte.",
+      "Errata: l'emoglobina trasporta ossigeno nei globuli rossi e non è un mediatore vasoattivo dell'infiammazione.",
+      "Errata: l'albumina è una proteina plasmatica importante per la pressione oncotica e il trasporto di molecole, ma non è il mediatore indicato."
+    ]
+  },
+  "e42": {
+    "summary": "La cicloossigenasi (COX-1/COX-2) metabolizza l'acido arachidonico generando prostanoidi, tra cui prostaglandine e trombossani, importanti nella risposta infiammatoria.",
+    "reasons": [
+      "Errata: le immunoglobuline sono prodotte dai linfociti B/plasmacellule e non derivano dall'acido arachidonico.",
+      "Corretta: le prostaglandine sono mediatori lipidici derivati dalla via cicloossigenasica dell'acido arachidonico.",
+      "Errata: il collagene è una proteina della matrice extracellulare e non un derivato della COX.",
+      "Errata: l'emoglobina è una proteina eritrocitaria e non viene sintetizzata dalla via dell'acido arachidonico."
+    ]
+  },
+  "e43": {
+    "summary": "La diapedesi o transmigrazione leucocitaria è il passaggio dei leucociti attraverso la parete vascolare verso il tessuto extravascolare sede dell'infiammazione.",
+    "reasons": [
+      "Errata: l'emostasi arresta il sanguinamento attraverso vasocostrizione, piastrine e coagulazione.",
+      "Errata: la fibrinolisi degrada il coagulo di fibrina e non descrive la migrazione dei leucociti.",
+      "Corretta: dopo adesione all'endotelio, i leucociti attraversano la parete, soprattutto nelle venule post-capillari, per raggiungere il focolaio.",
+      "Errata: l'emolisi è la distruzione dei globuli rossi e non il passaggio dei leucociti nei tessuti."
+    ]
+  },
+  "e44": {
+    "summary": "La chemiotassi è il movimento direzionale dei leucociti lungo un gradiente di sostanze chemioattrattanti prodotte da microrganismi, complemento, cellule o tessuti danneggiati.",
+    "reasons": [
+      "Errata: la distruzione dei globuli rossi è emolisi e non chemiotassi.",
+      "Errata: la produzione di collagene è una funzione soprattutto dei fibroblasti durante riparazione e fibrosi.",
+      "Errata: la cicatrice deriva da deposizione e rimodellamento della matrice extracellulare, non definisce un movimento cellulare orientato.",
+      "Corretta: la chemiotassi guida cellule come neutrofili e monociti verso concentrazioni crescenti di mediatori presenti nel focolaio infiammatorio."
+    ]
+  },
+  "e45": {
+    "summary": "I neutrofili sono tra i principali fagociti dell'infiammazione acuta e vengono rapidamente reclutati dal sangue nei tessuti, soprattutto nelle fasi iniziali.",
+    "reasons": [
+      "Errata: gli eritrociti trasportano gas respiratori e non sono cellule fagocitarie.",
+      "Corretta: i granulociti neutrofili fagocitano microrganismi e detriti e utilizzano enzimi e specie reattive per uccidere i patogeni.",
+      "Errata: gli adipociti immagazzinano lipidi e non sono i fagociti tipici dell'infiammazione acuta.",
+      "Errata: i fibroblasti sono fondamentali soprattutto nella riparazione e nella deposizione di matrice extracellulare, non nella fagocitosi acuta."
+    ]
+  },
+  "e46": {
+    "summary": "L'essudato è un liquido infiammatorio ricco di proteine e spesso cellule, prodotto dall'aumento della permeabilità vascolare; il trasudato deriva soprattutto da alterazioni idrostatiche o oncotiche con permeabilità relativamente integra.",
+    "reasons": [
+      "Errata: proprio perché deriva da aumento della permeabilità, l'essudato contiene una concentrazione proteica relativamente elevata.",
+      "Errata: il trasudato non è per definizione purulento; è tipicamente povero di proteine e cellule.",
+      "Corretta: l'aumentata permeabilità consente la fuoriuscita di proteine plasmatiche e cellule, caratteristica fondamentale dell'essudazione infiammatoria.",
+      "Errata: essudato e trasudato hanno meccanismi patogenetici e composizione diversi e non sono necessariamente identici."
+    ]
+  },
+  "e47": {
+    "summary": "L'infiammazione purulenta produce pus, materiale ricco di neutrofili, detriti cellulari, proteine e liquido derivato dal danno tissutale e dall'essudazione.",
+    "reasons": [
+      "Corretta: la presenza di pus è la caratteristica morfologica centrale dell'infiammazione suppurativa o purulenta.",
+      "Errata: la fibrina può essere abbondante nell'infiammazione fibrinosa, ma da sola non definisce una flogosi purulenta.",
+      "Errata: il muco predomina nelle infiammazioni catarrali delle mucose e non definisce il pus.",
+      "Errata: eritrociti possono essere presenti in un essudato emorragico, ma non costituiscono da soli il materiale purulento."
+    ]
+  },
+  "e48": {
+    "summary": "Un ascesso è una raccolta localizzata di pus in una cavità neoformata nel tessuto; un empiema è una raccolta purulenta all'interno di una cavità anatomica preesistente.",
+    "reasons": [
+      "Errata: né ascesso né empiema sono definiti come raccolte rispettivamente di sangue o acqua.",
+      "Errata: gli ascessi sono tipicamente associati a infezioni piogene batteriche, non sono per definizione virali.",
+      "Errata: l'empiema contiene materiale infiammatorio, inclusi numerosi neutrofili e detriti.",
+      "Corretta: la distinzione anatomica è tra cavità formata dal processo suppurativo nell'ascesso e cavità già esistente nell'empiema, per esempio la cavità pleurica."
+    ]
+  },
+  "e49": {
+    "summary": "Nell'infiammazione cronica predominano cellule mononucleate, soprattutto macrofagi, linfociti e plasmacellule, associate a danno tissutale persistente e tentativi di riparazione/fibrosi.",
+    "reasons": [
+      "Errata: gli eritrociti non rappresentano la popolazione cellulare caratteristica della flogosi cronica.",
+      "Errata: i neutrofili predominano tipicamente nell'infiammazione acuta, anche se possono persistere in alcune condizioni croniche suppurative.",
+      "Corretta: macrofagi e linfociti sono centrali nella cronicità; plasmacellule possono essere numerose e i fibroblasti partecipano alla deposizione di tessuto connettivo.",
+      "Errata: le piastrine sono importanti nell'emostasi e nella riparazione, ma non costituiscono la popolazione predominante dell'infiammazione cronica."
+    ]
+  },
+  "e50": {
+    "summary": "La guarigione per seconda intenzione avviene quando i margini non sono ben accostati o vi è una perdita tissutale importante: richiede più tessuto di granulazione, contrazione e deposizione di matrice e lascia in genere una cicatrice più ampia.",
+    "reasons": [
+      "Errata: la seconda intenzione è un processo riparativo attivo e non un'assenza di guarigione.",
+      "Corretta: rispetto alla prima intenzione, il difetto più ampio viene riempito da maggiore tessuto di granulazione e richiede più contrazione e fibrosi.",
+      "Errata: i fibroblasti sono essenziali perché producono collagene e matrice extracellulare durante la riparazione.",
+      "Errata: molte ferite guariscono per seconda intenzione; il processo è più lento e lascia cicatrici più evidenti, ma non è impossibile."
+    ]
+  },
+  "i1": {
+    "summary": "L'immunosorveglianza è la capacità del sistema immunitario di riconoscere e controllare cellule dell'organismo che hanno acquisito caratteristiche anomale, comprese alcune cellule trasformate o neoplastiche.",
+    "reasons": [
+      "Errata: la produzione generalizzata di anticorpi contro i tessuti self sarebbe compatibile con autoimmunità, non con la normale immunosorveglianza.",
+      "Errata: l'immunosorveglianza non è limitata ai batteri extracellulari e riguarda anche cellule proprie alterate.",
+      "Errata: le proteine della coagulazione appartengono al sistema emostatico e non definiscono l'immunosorveglianza.",
+      "Corretta: cellule mutate possono esprimere antigeni o segnali anomali riconoscibili da linfociti T, NK e altri componenti immunitari, contribuendo al controllo delle cellule trasformate."
+    ]
+  },
+  "i2": {
+    "summary": "L'immunità innata è disponibile fin dalle prime fasi dell'infezione e utilizza barriere, recettori di riconoscimento, complemento e cellule effettrici che rispondono rapidamente a pattern condivisi dai patogeni.",
+    "reasons": [
+      "Errata: l'espansione clonale antigeno-specifica è caratteristica dei linfociti dell'immunità adattativa.",
+      "Errata: i linfociti B appartengono principalmente all'immunità adattativa e non sono gli unici mediatori della risposta innata.",
+      "Corretta: l'immunità innata interviene rapidamente con meccanismi preformati o rapidamente inducibili e con modalità relativamente stereotipate.",
+      "Errata: la comparsa dopo diversi giorni è più tipica della risposta adattativa primaria, mentre l'innata agisce da subito."
+    ]
+  },
+  "i3": {
+    "summary": "L'immunità adattativa è mediata soprattutto dai linfociti B e T, dotati di recettori altamente specifici e capaci di espansione clonale e memoria immunologica.",
+    "reasons": [
+      "Errata: eritrociti e piastrine svolgono funzioni ematologiche ed emostatiche ma non sono le cellule fondamentali dell'immunità adattativa.",
+      "Corretta: i linfociti B mediano soprattutto l'immunità umorale e i linfociti T le principali risposte cellulari regolatorie e citotossiche.",
+      "Errata: neutrofili ed eosinofili sono granulociti dell'immunità innata e non costituiscono il nucleo dell'immunità adattativa.",
+      "Errata: i mastociti partecipano soprattutto all'immunità innata e alle risposte allergiche, ma non mediano da soli la risposta adattativa."
+    ]
+  },
+  "i4": {
+    "summary": "L'attivazione adattativa segue il riconoscimento specifico dell'antigene da parte di un clone linfocitario e porta a proliferazione, differenziamento in cellule effettrici e formazione di memoria.",
+    "reasons": [
+      "Errata: la fibrina appartiene alla coagulazione e non è l'evento distintivo dell'attivazione linfocitaria adattativa.",
+      "Errata: l'istamina è un mediatore precoce liberato soprattutto da mastociti e basofili e non costituisce da sola l'attivazione adattativa.",
+      "Errata: l'immunità adattativa non elimina casualmente i microrganismi; è caratterizzata da elevata specificità di riconoscimento.",
+      "Corretta: la selezione del linfocita con recettore appropriato è seguita da espansione clonale e differenziamento, passaggi centrali della risposta specifica."
+    ]
+  },
+  "i5": {
+    "summary": "Cute e mucose costituiscono barriere anatomiche dell'immunità innata: separano l'ambiente esterno dai tessuti e ostacolano ingresso e colonizzazione dei patogeni.",
+    "reasons": [
+      "Corretta: l'integrità della cute rappresenta una prima linea fisica di difesa, sostenuta da caratteristiche chimiche e dal microbiota residente.",
+      "Errata: le IgG e le cellule memoria derivano dalla risposta adattativa e non sono barriere anatomiche.",
+      "Errata: i linfociti T citotossici sono effettori dell'immunità adattativa cellulare, non una barriera fisica.",
+      "Errata: le plasmacellule derivano dai linfociti B e producono anticorpi; non costituiscono una barriera anatomica."
+    ]
+  },
+  "i6": {
+    "summary": "Il lisozima è un enzima antimicrobico presente in secrezioni come saliva e lacrime e scinde legami del peptidoglicano, risultando particolarmente efficace contro batteri con parete esposta.",
+    "reasons": [
+      "Errata: l'emoglobina è una proteina eritrocitaria deputata soprattutto al trasporto dei gas respiratori.",
+      "Errata: le IgE sono anticorpi coinvolti soprattutto in allergia immediata e difesa antiparassitaria e non rappresentano la sostanza antibatterica enzimatica indicata.",
+      "Corretta: il lisozima idrolizza il legame tra N-acetilglucosamina e acido N-acetilmuramico del peptidoglicano batterico.",
+      "Errata: il fibrinogeno è una proteina plasmatica della coagulazione e non l'enzima antibatterico tipico di saliva e lacrime."
+    ]
+  },
+  "i7": {
+    "summary": "Le defensine sono piccoli peptidi cationici dell'immunità innata prodotti da epiteli e cellule immunitarie; possono inserirsi nelle membrane microbiche e comprometterne l'integrità.",
+    "reasons": [
+      "Errata: il trasporto dell'ossigeno è svolto soprattutto dall'emoglobina e non dalle defensine.",
+      "Corretta: la carica positiva e la struttura anfipatica consentono a molte defensine di interagire con membrane microbiche e favorirne la permeabilizzazione.",
+      "Errata: le immunoglobuline vengono prodotte dalle plasmacellule, non dalle defensine.",
+      "Errata: le defensine possono modulare anche segnali immunitari, ma non attivano direttamente e specificamente i T citotossici come loro funzione primaria."
+    ]
+  },
+  "i8": {
+    "summary": "Il microbiota intestinale contribuisce alla 'resistenza alla colonizzazione' occupando nicchie, consumando nutrienti, producendo metaboliti e modulando le difese mucosali, così da ostacolare l'espansione di patogeni.",
+    "reasons": [
+      "Errata: i linfociti sono prodotti e maturano negli organi linfoidi, non vengono 'prodotti esclusivamente' dal microbiota.",
+      "Corretta: la competizione ecologica tra commensali e patogeni limita l'attecchimento e la proliferazione di molti microrganismi invasori.",
+      "Errata: il microbiota non elimina tutte le cellule immunitarie; al contrario interagisce con esse e contribuisce alla maturazione delle difese mucosali.",
+      "Errata: il microbiota può modulare l'infiammazione, ma non la blocca completamente e in alcuni contesti può contribuire anche a risposte infiammatorie."
+    ]
+  },
+  "i9": {
+    "summary": "L'opsonizzazione consiste nel rivestire un bersaglio con molecole riconoscibili dai fagociti, come C3b del complemento o anticorpi, rendendo più efficiente l'adesione e la fagocitosi.",
+    "reasons": [
+      "Errata: l'opsonizzazione non indica la distruzione immediata di un linfocita.",
+      "Errata: la formazione di cellule memoria è un processo dell'immunità adattativa e non coincide con il rivestimento opsonico di un patogeno.",
+      "Corretta: le opsonine creano un ponte funzionale tra superficie microbica e recettori dei fagociti, facilitando ingestione e uccisione.",
+      "Errata: l'eritropoiesi avviene nel midollo osseo ed è indipendente dal processo di opsonizzazione."
+    ]
+  },
+  "i10": {
+    "summary": "Durante la fagocitosi la membrana del fagocita circonda il microrganismo e forma una vescicola intracellulare chiamata fagosoma, che successivamente matura e si fonde con compartimenti lisosomiali.",
+    "reasons": [
+      "Corretta: il fagosoma è il compartimento membranoso che contiene inizialmente il materiale fagocitato e nel quale vengono progressivamente attivati meccanismi microbicidi.",
+      "Errata: il fagocita non crea un secondo nucleo per contenere il patogeno.",
+      "Errata: un anticorpo può opsonizzare il microrganismo, ma non è la vescicola intracellulare formata dopo l'inglobamento.",
+      "Errata: un eritrocita è una cellula circolante e non il compartimento nel quale un fagocita racchiude il microrganismo."
+    ]
+  }
+}
