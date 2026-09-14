@@ -1,15 +1,43 @@
 (()=>{
+  const VERSION="20260914-fix1";
   const MANIFEST="data/paziente-chirurgico-explanations-manifest.json";
+  const EXPECTED_EXPLANATIONS=462;
   const EXPLANATIONS={};
+  let loadError=null;
+
+  function versionedUrl(url){
+    return `${url}${url.includes("?")?"&":"?"}v=${VERSION}`;
+  }
+
+  async function fetchJson(url){
+    const response=await fetch(versionedUrl(url),{cache:"no-store"});
+    if(!response.ok)throw new Error(`${url}: HTTP ${response.status}`);
+    return response.json();
+  }
+
   const ready=(async()=>{
-    try{
-      const manifestResponse=await fetch(MANIFEST);
-      if(!manifestResponse.ok)throw new Error(MANIFEST);
-      const files=await manifestResponse.json();
-      const parts=await Promise.all(files.map(f=>fetch(f).then(r=>{if(!r.ok)throw new Error(f);return r.json();})));
-      parts.forEach(part=>Object.assign(EXPLANATIONS,part));
-    }catch(e){console.error("Impossibile caricare le spiegazioni avanzate di Paziente chirurgico",e);}
-  })();
+    const files=await fetchJson(MANIFEST);
+    if(!Array.isArray(files)||!files.length)throw new Error("Manifest spiegazioni non valido");
+
+    const settled=await Promise.allSettled(files.map(async file=>({file,data:await fetchJson(file)})));
+    const failures=[];
+    settled.forEach((result,i)=>{
+      if(result.status==="fulfilled")Object.assign(EXPLANATIONS,result.value.data);
+      else failures.push(`${files[i]}: ${result.reason?.message||String(result.reason)}`);
+    });
+
+    const count=Object.keys(EXPLANATIONS).length;
+    window.__studyhubPazienteExplanations={version:VERSION,count,failures:[...failures]};
+    if(failures.length||count!==EXPECTED_EXPLANATIONS){
+      throw new Error(`Spiegazioni caricate ${count}/${EXPECTED_EXPLANATIONS}${failures.length?` · ${failures.join(" | ")}`:""}`);
+    }
+    return true;
+  })().catch(error=>{
+    loadError=error;
+    window.__studyhubPazienteExplanations={version:VERSION,count:Object.keys(EXPLANATIONS).length,error:error.message};
+    console.error("Impossibile caricare tutte le spiegazioni avanzate di Paziente chirurgico",error);
+    throw error;
+  });
 
   const style=document.createElement("style");
   style.textContent=`
@@ -29,7 +57,12 @@
       const originalIndex=q.options.indexOf(opt);
       if(originalIndex>=0&&entry.reasons[originalIndex])return entry.reasons[originalIndex];
     }
-    return "Spiegazione specifica non ancora disponibile per questa alternativa.";
+    return null;
+  }
+
+  function renderLoadError(fb,message){
+    fb.className="feedback bad";
+    fb.innerHTML=`<div class="status">ERRORE SPIEGAZIONE</div><strong>La spiegazione avanzata non è disponibile.</strong><br>${escapeHtml(message||"Ricarica la pagina prima di continuare il quiz.")}`;
   }
 
   const baseRender=render;
@@ -38,17 +71,34 @@
     if(!session.length)return;
     const q=session[index];
     if(!q.checked)return;
-    const entry=EXPLANATIONS[q.id];
-    if(!entry||(!entry.options&&!Array.isArray(entry.reasons)))return;
     const fb=document.getElementById("feedback");
+
+    if(loadError){
+      renderLoadError(fb,"Il pacchetto completo delle spiegazioni non è stato caricato correttamente. Ricarica la pagina.");
+      return;
+    }
+
+    const entry=EXPLANATIONS[q.id];
+    if(!entry||(!entry.options&&!Array.isArray(entry.reasons))){
+      renderLoadError(fb,`Manca la spiegazione specifica per la domanda ${q.id}.`);
+      return;
+    }
+
     const rows=q.optionsShown.map((opt,i)=>{
       const isCorrect=i===q.correctShown;
       const reason=reasonFor(entry,q,opt);
-      return `<div class="answer-explanation ${isCorrect?"correct-reason":"wrong-reason"}"><strong>${String.fromCharCode(65+i)} · ${isCorrect?"CORRETTA":"ERRATA"}</strong><span>${escapeHtml(reason)}</span></div>`;
+      return `<div class="answer-explanation ${isCorrect?"correct-reason":"wrong-reason"}"><strong>${String.fromCharCode(65+i)} · ${isCorrect?"CORRETTA":"ERRATA"}</strong><span>${escapeHtml(reason||"Errore: motivazione specifica non disponibile per questa alternativa.")}</span></div>`;
     }).join("");
+
+    fb.className="feedback "+(q.wasCorrect?"ok":"bad");
     fb.innerHTML=`<div class="status">${q.wasCorrect?"RISPOSTA CORRETTA":"RISPOSTA ERRATA"}</div><strong>Risposta corretta:</strong> ${String.fromCharCode(65+q.correctShown)}. ${escapeHtml(q.optionsShown[q.correctShown])}${entry.summary?`<br><strong>Concetto chiave:</strong> ${escapeHtml(entry.summary)}`:""}<div class="answer-explanations-title">Perché ogni alternativa è giusta o sbagliata:</div><div class="answer-explanations">${rows}</div>`;
   };
 
   const baseStartQuiz=startQuiz;
-  startQuiz=function(ids=null){ready.finally(()=>baseStartQuiz(ids));};
+  startQuiz=function(ids=null){
+    return ready.then(()=>baseStartQuiz(ids)).catch(error=>{
+      console.error(error);
+      alert("Le spiegazioni avanzate di Paziente chirurgico non sono state caricate correttamente. Ricarica la pagina prima di iniziare il quiz.");
+    });
+  };
 })();
