@@ -1,7 +1,7 @@
 (function(){
 'use strict';
-const OPTIONAL_EXPLANATION_FILES=['data/scienze-salute-explanations-001.json','data/scienze-salute-explanations-002.json','data/scienze-salute-explanations-003.json','data/scienze-salute-explanations-004.json'];
-const EXPECTED_ADVANCED=120;
+const OPTIONAL_EXPLANATION_FILES=['data/scienze-salute-explanations-001.json','data/scienze-salute-explanations-002.json','data/scienze-salute-explanations-003.json','data/scienze-salute-explanations-004.json','data/scienze-salute-explanations-005.json'];
+const EXPECTED_ADVANCED=121;
 const ADVANCED_EXPLANATIONS={};
 let feedbackObserver=null;
 
