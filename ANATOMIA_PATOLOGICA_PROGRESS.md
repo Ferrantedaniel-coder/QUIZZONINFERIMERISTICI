@@ -20,7 +20,7 @@ Per ogni domanda:
 1. concetto chiave sintetico e utile allo studio;
 2. spiegazione del perché la risposta corretta è corretta;
 3. spiegazione specifica del perché ciascuna delle altre tre opzioni è errata;
-4. motivazioni memorizzate nell'ordine originale delle quattro opzioni, così da poter seguire correttamente il rimescolamento A/B/C/D del quiz.
+4. motivazioni memorizzate nell'ordine originale delle quattro opzioni, così da seguire correttamente il rimescolamento A/B/C/D.
 
 ## Fonti e metodo
 
@@ -32,9 +32,9 @@ Per ogni domanda:
 - `Eziologia generale STAMPATO.pdf`
 - `Immunologia STAMPATO.pdf`
 - `ANATOMIA PATOLOGICA.pdf`
-- `Domande anatomia patologica.pdf`, usato come ulteriore riferimento per terminologia e impostazione delle domande storiche del corso.
+- `Domande anatomia patologica.pdf` come ulteriore riferimento per terminologia e impostazione didattica.
 
-Le spiegazioni conservano terminologia, organizzazione e impostazione del materiale del corso quando scientificamente sostenibili.
+Le spiegazioni conservano terminologia, organizzazione e impostazione del corso quando scientificamente sostenibili.
 
 ### Verifica scientifica esterna
 
@@ -53,18 +53,12 @@ File attivi:
 - `data/anatomia-patologica-explanations-003.json` — `m81–m100` + `e1–e20`;
 - `data/anatomia-patologica-explanations-004.json` — `e21–e50` + `i1–i10`;
 - `data/anatomia-patologica-explanations-005.json` — `i11–i50`;
-- `data/anatomia-patologica-explanations-006.json` — `a1–a40`.
+- `data/anatomia-patologica-explanations-006.json` — `a1–a40`;
+- `data/anatomia-patologica-explanations-007.json` — `a41–a80`.
 
-L'enhancer:
+L'enhancer non modifica le domande, associa le motivazioni al testo originale delle opzioni e mantiene il feedback base `why` se i file avanzati non sono disponibili.
 
-- non modifica i file delle domande;
-- non cambia testo, opzioni, risposta corretta, ID o topic;
-- attende il caricamento della banca originale di 300 quesiti;
-- carica i dati esplicativi separatamente con logica fail-safe;
-- associa ogni motivazione al testo dell'opzione originale, quindi la spiegazione segue lo shuffle A/B/C/D;
-- se enhancer o JSON non sono disponibili lascia attivo il feedback base `why` e non impedisce lo svolgimento del quiz.
-
-## Copertura — 240/300
+## Copertura — 280/300
 
 ### Blocco 001
 - `m1–m40` — Microbiologia
@@ -89,56 +83,63 @@ L'enhancer:
 ### Blocco 006
 - `a1–a40` — Anatomia Patologica (40)
 - File: `data/anatomia-patologica-explanations-006.json`
-- Anatomia Patologica: **40/100**
-- Copertura totale: **240/300**
 
-Argomenti principali verificati nel blocco 006:
+### Blocco 007
+- `a41–a80` — Anatomia Patologica (40)
+- File: `data/anatomia-patologica-explanations-007.json`
+- Anatomia Patologica: **80/100**
+- Copertura totale: **280/300**
 
-- ruolo dell'anatomopatologo e metodiche ancillari;
-- istologia vs citologia;
-- formalina neutra tamponata al 10%, fissazione e tempo di ischemia fredda;
-- identificazione dei campioni e informazioni della richiesta;
-- processazione istologica, inclusione in paraffina e sezioni di pochi micrometri;
-- ematossilina-eosina, Perls, Rosso Congo e PAS;
-- immunoistochimica, ibridazione in situ, microscopia elettronica e Ki-67;
-- campionamento macroscopico, orientamento delle biopsie e artefatti;
-- autopsia clinico-patologica e medico-legale;
-- fenomeni cadaverici immediati, successivi e trasformativi;
-- rigor mortis, ipostasi, autolisi, autodigestione e putrefazione;
-- epicrisi ed esame interno autoptico;
-- disciplina italiana del periodo di osservazione del cadavere.
+Argomenti principali verificati nel blocco 007:
 
-### QA e precisazioni scientifiche dei blocchi 001–006
+- finalità scientifiche dell'autopsia, patomorfosi, richiesta di riscontro diagnostico e gestione di reperti di possibile interesse giudiziario;
+- tanatologia;
+- vantaggi e limiti della citologia rispetto all'istologia;
+- citologia esfoliativa, agoaspirativa, respiratoria e dei versamenti;
+- citologia urinaria: seconda minzione, campioni ripetuti, contaminazione e artefatti da terapia o strumentazione;
+- espettorato, broncoaspirato, broncolavaggio e brushing;
+- classificazione didattica del washing e del Pap test come citologia abrasiva;
+- aggiornamento dello screening cervicale con centralità dell'HPV test nei programmi moderni;
+- rapporto nucleo/citoplasma, atipie nucleari e fondo necrotico;
+- biopsia incisionale, escissionale, agobiopsia/core biopsy e biopsia stereotassica;
+- biopsie endoscopiche e polmonari transparietali;
+- esame intraoperatorio al congelatore e invio a fresco del materiale.
 
-Nessun quesito `m1–m100`, `e1–e50`, `i1–i50` o `a1–a40` è stato modificato. Le risposte corrette della banca sono rimaste invariate.
+## QA e precisazioni scientifiche dei blocchi 001–007
 
-Precisazioni già registrate nei blocchi precedenti:
+Nessun quesito `m1–m100`, `e1–e50`, `i1–i50` o `a1–a80` è stato modificato. Le risposte corrette della banca sono rimaste invariate.
+
+Precisazioni già registrate:
 
 - corretta denominazione **via lectinica del complemento** con **mannose-binding lectin (MBL)**;
 - cellule dendritiche come APC più efficienti nell'attivazione dei T vergini, evitando l'assoluto “uniche APC costimolatorie”;
 - MHC I espresso sulla grande maggioranza delle cellule nucleate;
-- citotossicità perforina/granzimi descritta principalmente come induzione di apoptosi.
+- citotossicità perforina/granzimi descritta principalmente come induzione di apoptosi;
+- formalina al 10% precisata come formalina neutra tamponata con circa il 4% di formaldeide;
+- ritardo alla fissazione trattato come variabile pre-analitica rilevante;
+- Rosso Congo associato all'amiloide e alla birifrangenza verde mela;
+- Ki-67 descritto come marcatore nucleare della frazione proliferante con significato dipendente dal contesto;
+- `a39–a40` verificati sulla normativa ufficiale italiana, D.P.R. 285/1990, artt. 8–9.
 
-Precisazioni del blocco 006:
+Precisazioni del blocco 007:
 
-- la formalina al 10% è descritta in modo rigoroso come formalina neutra tamponata contenente circa il 4% di formaldeide;
-- il tempo tra prelievo e fissazione è trattato come variabile pre-analitica rilevante perché può modificare morfologia, antigenicità e alcuni biomarcatori;
-- il Rosso Congo è associato all'amiloide e alla classica birifrangenza verde mela in luce polarizzata, con la dovuta attenzione agli artefatti interpretativi;
-- Ki-67 è descritto come marcatore nucleare della frazione proliferante, non come indicatore universale con identico significato prognostico in ogni tumore;
-- per `a39–a40` è stata verificata direttamente la normativa ufficiale: **D.P.R. 10 settembre 1990, n. 285, artt. 8–9**, che stabilisce 24 ore come periodo ordinario e fino a 48 ore in caso di morte improvvisa o dubbio di morte apparente, salvo accertamento anticipato della morte secondo le modalità previste.
+- `a54–a55`: seconda minzione e tre campioni consecutivi sono mantenuti come **protocollo del corso**; il principio di evitare campioni cellularmente degenerati e di aumentare la resa con campionamenti ripetuti è coerente con la pratica citologica, mentre numero e tempistica esatti possono variare tra laboratori;
+- `a64–a65`: la classificazione di washing e Pap test come “citologia abrasiva” è mantenuta perché esplicitamente adottata negli appunti; altri testi possono usare tassonomie differenti;
+- `a67`: è stata aggiornata la spiegazione in accordo con WHO, che indica l'HPV DNA test come metodo primario preferito in molti programmi moderni di screening cervicale;
+- `a70`: il fondo necrotico è descritto come reperto suggestivo in alcuni contesti ma non specifico da solo per malignità;
+- `a75`: “agobiopsia a cielo coperto” è mantenuta come terminologia didattica del corso per campionamento di patologie diffuse, segnalando che l'uso moderno dipende dal distretto e dalla guida di imaging;
+- `a79–a80`: l'esame al congelatore è spiegato come consulenza intraoperatoria utile solo per quesiti selezionati, con limiti da campionamento e artefatti; il campione deve arrivare a fresco e senza fissativo.
 
-Il blocco 006 è stato verificato anche con letteratura PubMed sulla fase pre-analitica della fissazione e dell'immunoistochimica e con fonti ufficiali italiane per i quesiti normativi.
+Le verifiche del blocco 007 hanno utilizzato `ANATOMIA PATOLOGICA.pdf` e `Domande anatomia patologica.pdf` come base primaria, WHO per lo screening cervicale e letteratura PubMed per citologia urinaria e frozen section.
 
 ## Dimensione dei blocchi
 
-Per garantire controllo e qualità, procedere in **blocchi da 40 domande** mantenendo l'ordine reale complessivo della banca. L'ultimo blocco potrà contenere il residuo finale inferiore a 40.
+Per garantire controllo e qualità, procedere in blocchi da 40 domande; il residuo finale può essere inferiore a 40.
 
 ## Punto di ripresa
 
-Il prossimo blocco contiene **40 domande**:
+Resta l'ultimo blocco:
 
-- `a41–a80` → **Anatomia Patologica**
+- `a81–a100` → **Anatomia Patologica** (20 domande)
 
-Copertura successiva attesa: **280/300**.
-
-Dopo questo blocco resterà il residuo finale `a81–a100` (20 domande).
+Copertura attesa al termine: **300/300 COMPLETA**.
