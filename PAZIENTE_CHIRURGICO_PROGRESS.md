@@ -26,19 +26,19 @@ Il quiz viene abilitato appena la banca è valida. Le spiegazioni avanzate **non
 
 Restano preservati mix/focus, 20/30/50/100/tutte, ordine casuale/banca, shuffle A/B/C/D, `lockOrder`, punteggio, accuratezza, barra progresso, precedente/successiva, risultato, breakdown, ripasso errori, reset, `localStorage` e Home.
 
-## Spiegazioni avanzate opzionali — Diagnostica completa
+## Spiegazioni avanzate opzionali — 130/462 attive
 
-Sono ora attive in modalità fail-safe per **tutta Diagnostica `di1–di76`**.
+Sono ora attive in modalità fail-safe per:
+
+- **Diagnostica `di1–di76`: 76/76**;
+- **Educazione terapeutica `ed1–ed54`: 54/54**.
+
+Totale collegato al runtime: **130 spiegazioni avanzate opzionali**.
 
 File opzionali caricati:
 
-- `001.json` — `di1–di10`;
-- `002.json` — `di11–di20`;
-- `003.json` — `di21–di30`;
-- `004.json` — `di31–di40`;
-- `005.json` — `di41–di50`;
-- `006.json` — `di51–di60`;
-- `007.json` — `di61–di76`.
+- `001.json` → `007.json`: Diagnostica `di1–di76`;
+- `008.json` → `013.json`: Educazione terapeutica `ed1–ed54`.
 
 ### Architettura fail-safe
 
@@ -50,12 +50,12 @@ Il caricamento usa `Promise.allSettled`: il fallimento di uno o più file non ge
 - esiste un `summary` non vuoto;
 - esiste una motivazione valida per ciascuna delle quattro opzioni originali.
 
-Il runtime supporta entrambi i formati già presenti nell'archivio delle spiegazioni:
+Il runtime supporta entrambi i formati presenti nell'archivio:
 
-- mappa testuale `entry.options[opzione]`;
+- mappa `entry.options[opzione]`;
 - array `entry.reasons[]` indicizzato sull'ordine originale della banca.
 
-Per il formato `reasons[]`, dopo lo shuffle la motivazione viene recuperata tramite l'indice dell'opzione nel vettore originale `q.options`, quindi resta associata semanticamente alla risposta corretta anche se cambia lettera A/B/C/D.
+Per `reasons[]`, dopo lo shuffle la motivazione viene ricondotta all'indice dell'opzione originale in `q.options`; in questo modo resta associata semanticamente alla stessa risposta anche se cambia lettera A/B/C/D.
 
 Se una spiegazione manca o non supera la validazione, la singola domanda usa automaticamente il campo base `why`.
 
@@ -63,7 +63,7 @@ Se una spiegazione manca o non supera la validazione, la singola domanda usa aut
 
 ### Feedback avanzato
 
-Per `di1–di76`, quando l'entry è valida, dopo la conferma vengono mostrati:
+Quando l'entry è valida, dopo la conferma vengono mostrati:
 
 1. esito corretto/errato;
 2. risposta corretta nella posizione A/B/C/D realmente mostrata;
@@ -71,7 +71,7 @@ Per `di1–di76`, quando l'entry è valida, dopo la conferma vengono mostrati:
 4. quattro motivazioni separate;
 5. etichetta `CORRETTA` o `ERRATA` per ogni alternativa.
 
-Per Educazione terapeutica, Psicologia e Terapia resta per ora il feedback base `why`.
+Per Psicologia e Terapia resta per ora il feedback base `why`.
 
 ## Integrità della banca
 
@@ -83,9 +83,9 @@ Restano separati dal presente task i quesiti già segnalati come potenzialmente 
 
 ## Checkpoint
 
-- Pilot precedente: `di1–di40`.
-- Blocco appena esteso: `di41–di76`.
-- **Diagnostica totale con spiegazioni avanzate opzionali: 76/76.**
-- Commit runtime: `22027093522eac6837da3c4f78e24c84eafb824c`.
-- Commit Home/cache-busting: `cfe455e1fa9675ff2e5e60bd2b5c7ba09e7ad09e`.
-- Punto di ripresa successivo: **Educazione terapeutica `ed1`**.
+- Diagnostica completa: `di1–di76`.
+- Educazione terapeutica completa: `ed1–ed54`.
+- **Copertura avanzata opzionale totale: 130/462.**
+- Commit runtime Educazione: `a64c4cce594835605f1086c150178bf40e9f2150`.
+- Commit Home/cache-busting: `568c8b457f877d5d678943d63e077157e2a89b5a`.
+- Punto di ripresa successivo: **Psicologia `ps1`**.
