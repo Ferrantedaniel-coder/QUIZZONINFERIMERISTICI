@@ -1,0 +1,362 @@
+{
+  "242": {
+    "summary": "La medicina romana contribuì in modo rilevante alla salute collettiva soprattutto attraverso opere di ingegneria sanitaria e organizzazione urbana, come acquedotti, fognature e terme.",
+    "reasons": [
+      "Errata: gli antibiotici appartengono alla medicina contemporanea e non furono scoperti in epoca romana.",
+      "Errata: la teoria cellulare si sviluppò nel XIX secolo, molto dopo l'età romana.",
+      "Errata: la vaccinazione antivaiolosa fu introdotta da Edward Jenner alla fine del XVIII secolo.",
+      "Corretta: acquedotti, fognature, bagni pubblici e altre infrastrutture migliorarono approvvigionamento idrico, igiene urbana e gestione dei reflui, rappresentando uno dei principali contributi romani alla sanità pubblica."
+    ]
+  },
+  "243": {
+    "summary": "I valetudinaria erano strutture sanitarie organizzate soprattutto in ambito militare romano per assistere soldati malati o feriti.",
+    "reasons": [
+      "Corretta: i valetudinaria costituivano strutture assistenziali stabili presenti in particolare negli accampamenti e nelle organizzazioni militari romane.",
+      "Errata: i sanatori antitubercolari comparvero molti secoli dopo, soprattutto tra XIX e XX secolo.",
+      "Errata: i lazzaretti sono strutture legate soprattutto alla gestione delle epidemie, sviluppatesi nel Medioevo e nell'età moderna.",
+      "Errata: le università mediche nacquero nel Medioevo e non rappresentano una struttura sanitaria dell'esercito romano."
+    ]
+  },
+  "244": {
+    "summary": "Aristotele attribuiva al cuore un ruolo centrale nella vita, nelle sensazioni e nelle funzioni superiori, mentre considerava il cervello soprattutto un organo di raffreddamento.",
+    "reasons": [
+      "Errata: nella fisiologia aristotelica il fegato aveva funzioni importanti ma non era considerato il centro delle funzioni sensoriali superiori.",
+      "Errata: Aristotele non attribuiva al cervello il ruolo centrale che gli riconosciamo oggi; lo interpretava soprattutto come organo di raffreddamento del sangue.",
+      "Corretta: nella concezione cardiocentrica aristotelica il cuore era sede fondamentale della vita, della sensibilità e di funzioni psichiche superiori.",
+      "Errata: il rene non era considerato il centro della vita o delle funzioni sensoriali superiori."
+    ]
+  },
+  "245": {
+    "summary": "Nella fisiologia galenica il fegato era strettamente legato alla funzione nutritiva e alla produzione del sangue venoso, distribuito poi attraverso il sistema venoso.",
+    "reasons": [
+      "Errata: per Galeno il fegato aveva un ruolo fisiologico centrale e non era un semplice organo digestivo secondario.",
+      "Corretta: Galeno collegava il fegato alla trasformazione del nutrimento e alla formazione del sangue venoso, considerandolo origine funzionale del sistema venoso.",
+      "Errata: Galeno associava le funzioni superiori soprattutto al cervello, non al fegato.",
+      "Errata: il fegato era tutt'altro che privo di funzione nel sistema fisiologico galenico."
+    ]
+  },
+  "246": {
+    "summary": "La Scuola Medica Salernitana fu uno dei principali centri medievali di insegnamento e trasmissione del sapere medico in Occidente e anticipò alcuni caratteri della futura formazione universitaria.",
+    "reasons": [
+      "Corretta: Salerno rappresentò un importante centro di studio medico medievale e viene spesso considerata un precursore dell'insegnamento medico universitario europeo.",
+      "Errata: Andrea Vesalio visse nel XVI secolo, mentre la Scuola Salernitana si sviluppò molti secoli prima.",
+      "Errata: la tradizione salernitana è ricordata anche per la presenza o associazione di figure femminili, tra cui Trotula, quindi non può essere descritta come esclusivamente maschile.",
+      "Errata: la scuola integrò e trasmise tradizioni classiche e contributi arabi ed ebraici invece di rifiutarli completamente."
+    ]
+  },
+  "247": {
+    "summary": "Trotula è tradizionalmente collegata alla Scuola Medica Salernitana e a testi medievali dedicati alla salute femminile, alla ginecologia e all'ostetricia; la ricostruzione storica della sua figura richiede prudenza.",
+    "reasons": [
+      "Errata: la teoria cellulare appartiene al XIX secolo e non è collegata a Trotula.",
+      "Errata: Vesalio visse nel XVI secolo, secoli dopo la tradizione salernitana associata a Trotula.",
+      "Errata: la vaccinazione antivaiolosa è legata a Edward Jenner nel XVIII secolo.",
+      "Corretta: Trotula è associata alla tradizione salernitana e a opere medievali sulla salute delle donne, pur con questioni storiografiche riguardo identità e attribuzione dei testi."
+    ]
+  },
+  "248": {
+    "summary": "La Scuola Medica Salernitana rappresentò un punto di incontro tra tradizione greco-latina e saperi provenienti dal mondo arabo ed ebraico.",
+    "reasons": [
+      "Errata: limitare la scuola alle sole culture romana e cristiana trascura l'importante circolazione di testi e conoscenze di origine araba ed ebraica.",
+      "Errata: l'influenza araba fu significativa ma non esclusiva.",
+      "Corretta: Salerno favorì l'integrazione di tradizioni greco-latine, arabe ed ebraiche, elemento centrale della medicina medievale mediterranea.",
+      "Errata: la cultura germanica non fu l'unica fonte e non descrive la pluralità delle influenze salernitane."
+    ]
+  },
+  "249": {
+    "summary": "La tradizione ippocratica contribuì a interpretare la malattia come fenomeno naturale, osservabile e spiegabile attraverso cause naturali anziché esclusivamente soprannaturali.",
+    "reasons": [
+      "Errata: l'approccio ippocratico si distaccò progressivamente dall'idea della malattia come semplice punizione soprannaturale.",
+      "Corretta: i testi ippocratici ricercano cause naturali e valorizzano osservazione clinica, ambiente, dieta e decorso della malattia.",
+      "Errata: il peccato non costituisce il principio eziologico fondamentale della medicina ippocratica.",
+      "Errata: l'astrologia non rappresenta la spiegazione esclusiva della malattia nella tradizione ippocratica."
+    ]
+  },
+  "250": {
+    "summary": "La teoria umorale classica descriveva quattro umori: sangue, flegma, bile gialla e bile nera, il cui equilibrio era ritenuto essenziale per la salute.",
+    "reasons": [
+      "Corretta: sangue, flegma, bile gialla e bile nera costituiscono i quattro umori della tradizione ippocratico-galenica.",
+      "Errata: ferro e acqua non fanno parte della classificazione canonica dei quattro umori.",
+      "Errata: linfa e muco non sostituiscono flegma e le due bile nella teoria classica.",
+      "Errata: acqua, aria, fuoco e terra sono i quattro elementi della filosofia naturale, non i quattro umori corporei."
+    ]
+  },
+  "251": {
+    "summary": "La medicina ippocratica si sviluppò in un contesto filosofico-naturalistico nel quale la riflessione sulla natura, sull'uomo e sull'equilibrio corporeo contribuiva alla comprensione della salute e della malattia.",
+    "reasons": [
+      "Errata: medicina e riflessione filosofica non erano incompatibili nel mondo greco antico.",
+      "Errata: il sapere filosofico non si limitò semplicemente a sostituire la religione, ma fornì categorie naturalistiche per interpretare corpo e malattia.",
+      "Errata: esisteva un rapporto significativo tra medicina, filosofia naturale e concezioni dell'uomo.",
+      "Corretta: la riflessione filosofica sulla natura e sull'essere umano contribuì allo sviluppo di spiegazioni razionali della salute e della malattia."
+    ]
+  },
+  "252": {
+    "summary": "Il vaiolo è la prima malattia umana dichiarata eradicata a livello mondiale; l'OMS certificò ufficialmente l'eradicazione nel 1980.",
+    "reasons": [
+      "Errata: la poliomielite è stata eliminata in molte aree ma non è ancora eradicata globalmente.",
+      "Errata: la peste continua a persistere in serbatoi animali e a causare casi umani in alcune regioni.",
+      "Corretta: dopo una campagna vaccinale globale, l'OMS dichiarò ufficialmente eradicato il vaiolo nel 1980.",
+      "Errata: il morbillo continua a circolare e non è stato eradicato a livello mondiale."
+    ]
+  },
+  "253": {
+    "summary": "Wilhelm Conrad Röntgen scoprì i raggi X nel 1895, inaugurando una trasformazione fondamentale della diagnostica medica per immagini.",
+    "reasons": [
+      "Corretta: Röntgen osservò nel 1895 una nuova forma di radiazione capace di attraversare i tessuti e produrre immagini radiografiche.",
+      "Errata: Robert Koch è associato soprattutto alla batteriologia e all'identificazione di specifici agenti infettivi.",
+      "Errata: Louis Pasteur contribuì alla microbiologia, alla teoria microbica e alla vaccinologia, non alla scoperta dei raggi X.",
+      "Errata: Willem Einthoven è noto soprattutto per lo sviluppo dell'elettrocardiografia moderna."
+    ]
+  },
+  "254": {
+    "summary": "Paracelso fu uno dei principali esponenti della iatrochimica, orientamento che interpretava funzioni corporee e malattie attraverso processi chimici e promuoveva l'uso terapeutico di sostanze chimiche.",
+    "reasons": [
+      "Errata: la teoria cellulare venne formulata nel XIX secolo, molto dopo Paracelso.",
+      "Corretta: Paracelso contribuì alla tradizione iatrochimica, opponendosi a diversi aspetti della medicina galenica e valorizzando spiegazioni e rimedi chimici.",
+      "Errata: la genetica moderna nasce tra XIX e XX secolo e non identifica il principale contributo di Paracelso.",
+      "Errata: la microbiologia batterica si sviluppò pienamente nel XIX secolo con studiosi come Pasteur e Koch."
+    ]
+  },
+  "255": {
+    "summary": "La medicina egizia antica integrava concezioni magico-religiose con osservazioni empiriche, rimedi farmacologici e procedure pratiche, comprese alcune tecniche chirurgiche.",
+    "reasons": [
+      "Errata: non era una medicina scientifica nel senso moderno e manteneva una forte componente religiosa e magica.",
+      "Errata: i papiri medici mostrano numerose osservazioni empiriche e trattamenti pratici.",
+      "Errata: religione e medicina non erano completamente separate nella cultura egizia antica.",
+      "Corretta: la pratica egizia combinava rituali, interpretazioni religiose, rimedi farmacologici, osservazione clinica e alcune procedure chirurgiche."
+    ]
+  },
+  "256": {
+    "summary": "Nella cultura egizia antica il cuore era considerato sede fondamentale dell'identità, del pensiero, delle emozioni e della dimensione morale dell'individuo.",
+    "reasons": [
+      "Errata: il polmone aveva importanza fisiologica ma non era considerato la principale sede dell'identità morale e del pensiero.",
+      "Errata: il rene non occupava il ruolo simbolico centrale attribuito al cuore.",
+      "Corretta: il cuore aveva un significato fisico e spirituale centrale ed era ritenuto sede di pensiero, memoria, emozioni e giudizio morale.",
+      "Errata: la milza non era considerata il centro dell'identità e della vita morale."
+    ]
+  },
+  "257": {
+    "summary": "La medicina egizia combinava pratiche rituali e apotropaiche con terapie concrete, farmaci, medicazioni e procedure empiriche.",
+    "reasons": [
+      "Corretta: la documentazione egizia mostra la coesistenza di formule rituali e interventi empirici, senza una netta separazione tra dimensione religiosa e pratica terapeutica.",
+      "Errata: la teoria microbica delle malattie appartiene alla medicina del XIX secolo.",
+      "Errata: gli Egizi utilizzavano numerosi trattamenti materiali e non si affidavano esclusivamente a rituali.",
+      "Errata: la medicina egizia comprendeva molti approcci terapeutici e non era limitata alla chirurgia."
+    ]
+  },
+  "258": {
+    "summary": "Imhotep fu un alto funzionario dell'Antico Regno egizio, vissuto nel III millennio a.C., successivamente divinizzato e associato alla sapienza, alla medicina e alla guarigione.",
+    "reasons": [
+      "Errata: Imhotep appartiene all'antico Egitto, non alla medicina romana.",
+      "Corretta: fu un importante funzionario dell'Antico Regno e, molti secoli dopo, venne divinizzato e venerato come figura connessa alla guarigione.",
+      "Errata: visse molto prima di Ippocrate e non ne fu allievo.",
+      "Errata: la Scuola Medica Salernitana nacque nel Medioevo, millenni dopo Imhotep."
+    ]
+  },
+  "259": {
+    "summary": "Asclepio era nella mitologia greca la divinità della medicina e della guarigione, tradizionalmente considerato figlio di Apollo.",
+    "reasons": [
+      "Errata: Asclepio appartiene alla mitologia religiosa greca e non fu un imperatore romano.",
+      "Errata: non viene identificato come filosofo della scuola pitagorica.",
+      "Corretta: Asclepio era venerato come dio guaritore e i suoi santuari, gli Asklepieia, furono importanti luoghi di culto e cura.",
+      "Errata: non fu un anatomista della scuola alessandrina."
+    ]
+  },
+  "260": {
+    "summary": "La concezione ippocratica dell'assistenza valorizzava l'osservazione complessiva del malato, delle sue abitudini, dell'ambiente e dell'evoluzione clinica.",
+    "reasons": [
+      "Errata: l'approccio ippocratico non riduceva la valutazione al singolo organo colpito.",
+      "Errata: la tradizione ippocratica contribuì proprio a ridimensionare spiegazioni esclusivamente magiche della malattia.",
+      "Errata: clima, acqua, alimentazione e ambiente erano considerati elementi rilevanti nella valutazione della salute.",
+      "Corretta: il malato veniva osservato nella sua globalità, considerando costituzione, stile di vita, ambiente, segni clinici e andamento della malattia."
+    ]
+  },
+  "261": {
+    "summary": "Nella clinica ippocratica l'oggetto centrale dell'osservazione era il malato nella sua condizione complessiva e nel decorso della malattia.",
+    "reasons": [
+      "Corretta: l'osservazione sistematica del paziente, dei sintomi, dell'ambiente e del decorso costituiva un elemento fondamentale della pratica ippocratica.",
+      "Errata: i microrganismi non erano ancora conosciuti e la teoria microbica sarebbe comparsa molti secoli dopo.",
+      "Errata: gli esami di laboratorio moderni non erano disponibili nel mondo antico.",
+      "Errata: l'osservazione non era limitata al solo organo interessato ma riguardava il paziente nel suo insieme."
+    ]
+  },
+  "262": {
+    "summary": "Le origini della Scuola Medica Salernitana vengono generalmente collocate nell'Alto Medioevo, tradizionalmente intorno al IX secolo, con massima fioritura tra XI e XII secolo.",
+    "reasons": [
+      "Errata: nel XV secolo la scuola esisteva già da molti secoli.",
+      "Corretta: la tradizione ne colloca le origini nell'Alto Medioevo e il periodo di maggiore prestigio nei secoli XI-XII.",
+      "Errata: il XIX secolo è troppo tardo e appartiene a una fase completamente diversa della formazione medica.",
+      "Errata: la scuola non risale alla Roma repubblicana, anche se raccolse e trasmise conoscenze della medicina classica."
+    ]
+  },
+  "263": {
+    "summary": "Robert Koch contribuì in modo decisivo alla teoria microbica dimostrando il legame tra specifici microrganismi e specifiche malattie infettive.",
+    "reasons": [
+      "Errata: la teoria degli umori appartiene alla medicina antica e non al contributo scientifico di Koch.",
+      "Errata: il microscopio esisteva già da secoli; Koch perfezionò invece tecniche batteriologiche di coltura, colorazione e identificazione.",
+      "Errata: lo studio del sistema nervoso non costituisce il principale contributo storico di Koch.",
+      "Corretta: le sue ricerche su antrace, tubercolosi e altre infezioni consolidarono il principio della relazione causale tra specifici microrganismi e specifiche malattie."
+    ]
+  },
+  "264": {
+    "summary": "La nascita del Movimento internazionale della Croce Rossa seguì una sequenza storica che parte dalla battaglia di Solferino del 1859 e conduce alla Convenzione di Ginevra del 1864.",
+    "reasons": [
+      "Errata: una sequenza diversa non rispetta la cronologia documentata degli eventi che portarono alla nascita del movimento.",
+      "Errata: la fondazione degli organismi della Croce Rossa e la Convenzione di Ginevra avvennero dopo l'esperienza di Solferino e l'opera di Dunant.",
+      "Corretta: Solferino nel 1859 ispirò Dunant, che pubblicò Un souvenir de Solférino nel 1862; nel 1863 nacque il comitato destinato a diventare l'ICRC e nel 1864 fu adottata la prima Convenzione di Ginevra.",
+      "Errata: invertire queste tappe altera la successione storica che portò alla codificazione dell'assistenza ai feriti di guerra."
+    ]
+  },
+  "265": {
+    "summary": "In Italia il Regio decreto-legge 15 agosto 1925, n. 1832 istituì e regolò le Scuole-convitto professionali per infermiere.",
+    "reasons": [
+      "Corretta: il R.D.L. n. 1832 del 1925 rappresenta il provvedimento storico di riferimento per l'istituzione delle Scuole-convitto professionali per infermiere.",
+      "Errata: la legge 833/1978 istituì il Servizio sanitario nazionale e non le Scuole-convitto degli anni Venti.",
+      "Errata: la legge 42/1999 intervenne sulla disciplina delle professioni sanitarie e sul superamento del mansionario, non sull'istituzione delle Scuole-convitto.",
+      "Errata: il DPR 225/1974 riguardava il mansionario dell'infermiere e appartiene a una fase normativa molto successiva."
+    ]
+  },
+  "266": {
+    "summary": "Tra tardo Medioevo e prima età moderna i barbieri-chirurghi svolgevano frequentemente procedure pratiche come salassi, flebotomie, estrazioni dentarie e piccola chirurgia.",
+    "reasons": [
+      "Errata: il farmacista o speziale era soprattutto dedicato alla preparazione e vendita di rimedi e sostanze medicinali.",
+      "Corretta: il barbiere-chirurgo esercitava attività manuali e chirurgiche considerate distinte dalla medicina accademica, tra cui salasso ed estrazioni dentarie.",
+      "Errata: il notaio svolgeva funzioni giuridiche e documentali, non pratiche chirurgiche sanitarie.",
+      "Errata: il sacerdote poteva avere ruoli assistenziali o religiosi ma non identificava la categoria professionale tipicamente addetta a queste procedure."
+    ]
+  },
+  "267": {
+    "summary": "I Parabolani erano gruppi o confraternite cristiane della tarda antichità associati all'assistenza dei malati e dei bisognosi, tradizionalmente ricordati anche in contesti epidemici.",
+    "reasons": [
+      "Errata: non erano una categoria di medici militari dell'esercito romano.",
+      "Errata: non corrispondevano ai chirurghi formati nelle università medievali.",
+      "Errata: non erano una corporazione di farmacisti arabi.",
+      "Corretta: i Parabolani sono ricordati come personale o confraternite dedite ad attività assistenziali, soprattutto verso persone malate e vulnerabili."
+    ]
+  },
+  "268": {
+    "summary": "Camillo de Lellis contribuì alla storia dell'assistenza promuovendo una cura più organizzata e rispettosa dei malati e fondando l'ordine dei Ministri degli Infermi.",
+    "reasons": [
+      "Errata: Robert Koch fu un batteriologo del XIX secolo e non è legato all'opera assistenziale di Camillo de Lellis.",
+      "Errata: Camillo de Lellis non è ricordato per l'introduzione della vaccinazione.",
+      "Corretta: fondò i Ministri degli Infermi, detti Camilliani, e promosse un'assistenza più sistematica e centrata sui bisogni della persona malata.",
+      "Errata: la teoria cellulare è una conquista scientifica del XIX secolo e non il contributo storico di Camillo de Lellis."
+    ]
+  },
+  "269": {
+    "summary": "La medicina scientifica moderna si sviluppò anche attraverso la progressiva sostituzione delle spiegazioni esclusivamente soprannaturali con ipotesi naturali, osservabili e verificabili.",
+    "reasons": [
+      "Corretta: osservazione, anatomia, esperimento e verifica empirica favorirono una concezione della malattia basata su fenomeni naturali studiabili.",
+      "Errata: la teurgia appartiene a pratiche religiose o magiche e non rappresenta il fondamento metodologico della medicina scientifica moderna.",
+      "Errata: il rifiuto dell'esperimento sarebbe contrario allo sviluppo del metodo scientifico.",
+      "Errata: l'anatomia divenne invece uno dei pilastri della medicina moderna, soprattutto dal Rinascimento in poi."
+    ]
+  },
+  "270": {
+    "summary": "Prima della disponibilità di efficaci terapie antitubercolari, i sanatori erano strutture dedicate alla cura prolungata dei pazienti con tubercolosi.",
+    "reasons": [
+      "Errata: il lazzaretto era destinato soprattutto all'isolamento e alla gestione di malattie contagiose epidemiche, in particolare peste e altre infezioni.",
+      "Corretta: il sanatorio antitubercolare offriva isolamento, riposo, alimentazione e cure protratte prima dell'era antibiotica.",
+      "Errata: gli ospizi per pellegrini avevano finalità assistenziali generali e non erano strutture specificamente dedicate alla tubercolosi.",
+      "Errata: il valetudinarium era una struttura assistenziale dell'antichità romana, soprattutto militare, non un centro antitubercolare moderno."
+    ]
+  },
+  "271": {
+    "summary": "Un SAL di 10⁻⁶ indica un livello di garanzia di sterilità corrispondente a una probabilità non superiore a una su un milione che una singola unità sterilizzata contenga un microrganismo vitale.",
+    "reasons": [
+      "Errata: una probabilità di 1 su 1.000 corrisponderebbe a 10⁻³, molto meno stringente di un SAL 10⁻⁶.",
+      "Corretta: SAL 10⁻⁶ esprime una probabilità teorica di sopravvivenza microbica pari o inferiore a 0,000001 per unità trattata.",
+      "Errata: consentire la sopravvivenza del 10% dei microrganismi sarebbe incompatibile con il concetto di sterilizzazione.",
+      "Errata: il SAL riguarda microrganismi vitali residui e non certifica l'assenza di endotossine, che richiede controlli specifici."
+    ]
+  },
+  "272": {
+    "summary": "La sterilizzazione è un processo validato finalizzato a rendere un prodotto privo di microrganismi vitali, comprese le spore batteriche.",
+    "reasons": [
+      "Errata: la semplice riduzione della carica microbica può essere ottenuta con detersione o disinfezione e non equivale a sterilizzazione.",
+      "Errata: la sterilizzazione non mira soltanto ai patogeni ma a tutte le forme vitali microbiche.",
+      "Errata: eliminare soltanto le forme vegetative non è sufficiente perché le spore sono tra le forme più resistenti da inattivare.",
+      "Corretta: un processo di sterilizzazione validato deve garantire l'inattivazione di tutte le forme vitali, incluse le spore, secondo il livello di sicurezza previsto."
+    ]
+  },
+  "273": {
+    "summary": "Sterilizzazione e disinfezione differiscono per livello di efficacia: la prima mira all'eliminazione di tutte le forme vitali, mentre la seconda non garantisce necessariamente l'inattivazione delle spore batteriche.",
+    "reasons": [
+      "Corretta: l'eliminazione anche delle spore distingue il concetto di sterilizzazione dalla comune disinfezione.",
+      "Errata: la disinfezione non è per definizione più efficace della sterilizzazione; rappresenta un livello inferiore di decontaminazione.",
+      "Errata: i termini non sono sinonimi e indicano obiettivi microbiologici differenti.",
+      "Errata: sulla cute e sui tessuti viventi si parla di antisepsi; la sterilizzazione riguarda materiali e dispositivi compatibili con il processo."
+    ]
+  },
+  "274": {
+    "summary": "I polisaccaridi capsulari non coniugati inducono prevalentemente una risposta immunitaria T-indipendente, poco efficace nei bambini molto piccoli e caratterizzata da scarsa memoria immunologica.",
+    "reasons": [
+      "Errata: gli anticorpi materni non costituiscono la ragione principale della ridotta immunogenicità dei polisaccaridi puri nei lattanti.",
+      "Errata: i vaccini polisaccaridici pneumococcici non sono costituiti da virus vivi.",
+      "Corretta: gli antigeni polisaccaridici puri attivano soprattutto linfociti B senza adeguato supporto T, producendo una risposta debole nei piccoli e poca memoria; la coniugazione a una proteina rende invece la risposta T-dipendente.",
+      "Errata: i polisaccaridi capsulari sono veri antigeni; il problema riguarda il tipo di risposta immunitaria che inducono."
+    ]
+  },
+  "275": {
+    "summary": "Guanti, camice protettivo, protezione oculare e respiratore sono tutti dispositivi di protezione individuale utilizzabili per ridurre l'esposizione professionale a rischi biologici.",
+    "reasons": [
+      "Errata: termometro e fonendoscopio sono dispositivi clinici e non DPI.",
+      "Corretta: tutti gli elementi elencati proteggono direttamente l'operatore da specifiche vie di esposizione e rientrano nella dotazione di DPI quando indicati dalla valutazione del rischio.",
+      "Errata: sfigmomanometro e saturimetro sono strumenti diagnostico-assistenziali, non dispositivi di protezione individuale.",
+      "Errata: stetoscopio e termometro non hanno funzione protettiva per l'operatore."
+    ]
+  },
+  "276": {
+    "summary": "Nella normale sequenza di vestizione con più DPI i guanti vengono generalmente indossati per ultimi, dopo camice e protezioni di volto e vie respiratorie.",
+    "reasons": [
+      "Corretta: indossare i guanti per ultimi consente di completare correttamente gli altri DPI e di coprire, quando previsto, i polsini del camice senza contaminare i guanti prima dell'assistenza.",
+      "Errata: indossarli per primi renderebbe più difficile applicare gli altri DPI senza contaminarli.",
+      "Errata: il camice viene generalmente indossato prima dei guanti.",
+      "Errata: l'igiene delle mani deve precedere la vestizione e l'ingresso nell'area assistenziale secondo la procedura prevista."
+    ]
+  },
+  "277": {
+    "summary": "Le precauzioni airborne richiedono una protezione respiratoria filtrante adeguata, come FFP2/N95 o superiore secondo rischio, procedura e normativa applicabile.",
+    "reasons": [
+      "Errata: l'assenza di protezione respiratoria espone l'operatore all'inalazione di particelle infettive sospese nell'aria.",
+      "Errata: una mascherina di stoffa non garantisce il livello di filtrazione e tenuta richiesto per le precauzioni airborne.",
+      "Errata: la visiera protegge soprattutto occhi e volto dagli schizzi ma non sostituisce un respiratore contro aerosol infettivi.",
+      "Corretta: un respiratore filtrante ben aderente, almeno FFP2/N95 quando appropriato, riduce l'inalazione di particelle aerodisperse e costituisce il DPI respiratorio indicato."
+    ]
+  },
+  "278": {
+    "summary": "Per un paziente con infezione trasmissibile per via airborne è preferibile una stanza singola per isolamento aereo, idealmente a pressione negativa e con adeguato ricambio d'aria.",
+    "reasons": [
+      "Errata: una stanza condivisa con pazienti non infetti aumenta il rischio di trasmissione, salvo specifiche strategie di coorte previste dalle procedure.",
+      "Errata: il corridoio non permette un adeguato contenimento delle particelle aerodisperse.",
+      "Corretta: una stanza singola con gestione controllata dell'aria riduce la dispersione degli aerosol infettivi verso le aree adiacenti.",
+      "Errata: le misure ambientali sono parte essenziale delle precauzioni airborne e non possono essere omesse."
+    ]
+  },
+  "279": {
+    "summary": "Tubercolosi polmonare contagiosa, morbillo e varicella sono esempi classici di infezioni per le quali si applicano precauzioni per trasmissione airborne.",
+    "reasons": [
+      "Errata: pertosse e influenza sono gestite principalmente con precauzioni droplet, mentre la meningite meningococcica richiede anch'essa precauzioni da droplet.",
+      "Corretta: tubercolosi polmonare contagiosa, morbillo e varicella possono trasmettersi tramite particelle aerodisperse e richiedono misure specifiche per via aerea.",
+      "Errata: HBV, HIV e HCV si trasmettono soprattutto attraverso sangue e altri liquidi biologici, non per via airborne.",
+      "Errata: salmonellosi, epatite A e colera hanno trasmissione prevalentemente fecale-orale, non aerea."
+    ]
+  },
+  "280": {
+    "summary": "Secondo la classificazione di Spaulding, i dispositivi critici che penetrano tessuti sterili o sistema vascolare devono essere sterili prima dell'uso.",
+    "reasons": [
+      "Errata: non tutti gli oggetti presenti in una stanza devono essere sterilizzati; il livello di trattamento dipende dal rischio associato al dispositivo.",
+      "Errata: i dispositivi che entrano in contatto soltanto con cute integra sono classificati come non critici e in genere richiedono pulizia e disinfezione appropriata, non sterilizzazione obbligatoria.",
+      "Errata: un dispositivo monouso non definisce da solo la categoria Spaulding; la necessità di sterilità dipende dal tipo di contatto previsto.",
+      "Corretta: i dispositivi critici accedono a sedi normalmente sterili o al circolo sanguigno e devono quindi essere sottoposti a sterilizzazione o forniti sterili."
+    ]
+  },
+  "281": {
+    "summary": "La chemioprofilassi dei contatti stretti di un caso di malattia meningococcica invasiva deve essere avviata il prima possibile, idealmente entro 24 ore dall'identificazione del caso indice.",
+    "reasons": [
+      "Corretta: la profilassi precoce riduce il rischio di casi secondari eliminando la colonizzazione meningococcica nei contatti ad alto rischio.",
+      "Errata: attendere la comparsa di sintomi annullerebbe la funzione preventiva della chemioprofilassi.",
+      "Errata: iniziare dopo 14 giorni è troppo tardivo rispetto al periodo di maggior rischio per i contatti stretti.",
+      "Errata: attendere un mese rende la profilassi sostanzialmente inefficace per prevenire i casi secondari legati all'esposizione recente."
+    ]
+  }
+}
