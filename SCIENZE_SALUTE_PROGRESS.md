@@ -23,7 +23,7 @@ La Home principale apre `scienze-salute.html`.
 
 Restano invariati motore del quiz, banca, quattro opzioni, risposte corrette, modalità di sessione, rimescolamento A/B/C/D, punteggio, navigazione, risultato, ripasso errori e `localStorage`.
 
-## Spiegazioni avanzate opzionali - 281/459
+## Spiegazioni avanzate opzionali - 321/459
 
 Copertura progressiva attiva per ID banca:
 
@@ -31,10 +31,11 @@ Copertura progressiva attiva per ID banca:
 - `122–176` → Epidemiologia
 - `177–220` → Igiene e medicina preventiva
 - `221–270` → Storia della medicina
-- `271–281` → Igiene e medicina preventiva
-- **Copertura avanzata totale continua: `1–281` = 281/459**
+- `271–320` → Igiene e medicina preventiva
+- `321` → Storia della medicina
+- **Copertura avanzata totale continua: `1–321` = 321/459**
 
-I primi due tratti originari sono completi nel loro intervallo iniziale: **Infermieristica 1–121** ed **Epidemiologia 122–176**. Dopo la 270 la banca torna a intercalare macroargomenti; non si deve quindi dedurre la completezza globale di una materia soltanto dal termine di un intervallo.
+I primi due tratti originari sono completi nel loro intervallo iniziale: **Infermieristica 1–121** ed **Epidemiologia 122–176**. Dalla 271 la banca torna a intercalare i macroargomenti; non si deve quindi dedurre la completezza globale di una materia soltanto dal termine di un intervallo.
 
 ## File dati
 
@@ -47,6 +48,7 @@ I primi due tratti originari sono completi nel loro intervallo iniziale: **Infer
 - `data/scienze-salute-explanations-007.json` → `162–201`
 - `data/scienze-salute-explanations-008.json` → `202–241`
 - `data/scienze-salute-explanations-009.json` → `242–281`
+- `data/scienze-salute-explanations-010.json` → `282–321`
 
 Ogni entry contiene:
 
@@ -88,16 +90,9 @@ Non sono stati modificati:
 - risposte corrette;
 - ID o macroargomenti.
 
-Le spiegazioni `1–281` sono dati aggiuntivi esterni alla banca originale.
+Le spiegazioni `1–321` sono dati aggiuntivi esterni alla banca originale.
 
 ## Commit recenti
-
-Pilot7 — domande `202–241`:
-
-- dati: `7d5dcc0d45c5c7b0ec7d728b9b6686bd79601e11`
-- enhancer finale: `1d1c84c1f66de9dd54f794cf89403aeb5dc61ed7`
-- wrapper: `c91af59ab8b0bc98031e915f39d90f79951d09d2`
-- Home: `33f4def7d668002a433eac444a74573da2e784d5`
 
 Pilot8 — domande `242–281`:
 
@@ -106,8 +101,15 @@ Pilot8 — domande `242–281`:
 - wrapper/cache enhancer `pilot8`: `29654c97519248a9bda1a8234f804e40076bd48e`
 - Home/cache-busting `pilot8`: `35161c1abb1d10f1f36c915f04b1fe039a31ab43`
 
+Pilot9 — domande `282–321`:
+
+- dati `010`: `48a3cdb09fbf952d3594e3d27100f9ae94ef213c`
+- enhancer finale esteso a `321`: `aa4ec1ab5cca0874cd9af999adff8019c8d3b092`
+- wrapper/cache enhancer `pilot9`: `3ff18a54028d35fab0d2c1104603e75b2924590d`
+- Home/cache-busting `pilot9`: `870a32a28e9b1c053542789bdade4d38a4ecf428`
+
 ## Punto di ripresa
 
-La copertura avanzata è continua dalla domanda **1 alla 281**.
+La copertura avanzata è continua dalla domanda **1 alla 321**.
 
-Il prossimo blocco parte dalla **domanda 282**, che prosegue in **Igiene e medicina preventiva**. Continuare nell'ordine reale della banca, registrando gli intervalli dei macroargomenti senza assumere che siano globalmente contigui.
+Il prossimo blocco parte dalla **domanda 322**, che prosegue in **Storia della medicina**. Continuare nell'ordine reale della banca, registrando gli intervalli dei macroargomenti senza assumere che siano globalmente contigui.
