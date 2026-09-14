@@ -1,5 +1,5 @@
 (()=>{
-  const VERSION="20260914-fix1";
+  const VERSION="20260914-fix2";
   const MANIFEST="data/paziente-chirurgico-explanations-manifest.json";
   const EXPECTED_EXPLANATIONS=462;
   const EXPLANATIONS={};
@@ -64,6 +64,17 @@
     fb.className="feedback bad";
     fb.innerHTML=`<div class="status">ERRORE SPIEGAZIONE</div><strong>La spiegazione avanzata non è disponibile.</strong><br>${escapeHtml(message||"Ricarica la pagina prima di continuare il quiz.")}`;
   }
+
+  // Le opzioni aggregate dipendenti dalla posizione non devono essere rimescolate.
+  // Esempi: “Tutte le precedenti”, “Tutte vere”, “Tutte corrette”.
+  const basePrepare=prepare;
+  prepare=function(q,targetPos){
+    const lockOrder=Boolean(q.lockOrder)||q.options.some(opt=>/\b(tutte\s+(?:le\s+)?precedenti|tutte\s+vere|tutte\s+corrette)\b/i.test(opt));
+    if(lockOrder){
+      return {...q,optionsShown:[...q.options],correctShown:q.correct,selected:null,checked:false,wasCorrect:null};
+    }
+    return basePrepare(q,targetPos);
+  };
 
   const baseRender=render;
   render=function(){
