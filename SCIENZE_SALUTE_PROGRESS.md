@@ -23,14 +23,15 @@ La Home principale apre `scienze-salute.html`.
 
 Restano quindi invariati il motore del quiz, la banca, le quattro opzioni, le risposte corrette, le modalità di sessione, il rimescolamento A/B/C/D, punteggio, navigazione, risultato, ripasso errori e `localStorage`.
 
-## Spiegazioni avanzate opzionali - 201/459
+## Spiegazioni avanzate opzionali - 241/459
 
 Copertura attiva:
 
 - **Infermieristica nell'evoluzione storica: domande banca `1–121` = 121/121, COMPLETO**
 - **Epidemiologia: domande banca `122–176` = 55/55, COMPLETO**
-- **Igiene e medicina preventiva: domande banca `177–201` = 25 domande completate**
-- **Copertura avanzata totale attiva: 201/459**
+- **Igiene e medicina preventiva: domande banca `177–220` = 44 domande completate nel tratto corrente**
+- **Storia della medicina: domande banca `221–241` = 21 domande completate nel tratto corrente**
+- **Copertura avanzata totale attiva: 241/459**
 
 File dati:
 
@@ -41,6 +42,7 @@ File dati:
 - `data/scienze-salute-explanations-005.json` → domanda `121`
 - `data/scienze-salute-explanations-006.json` → domande `122–161`
 - `data/scienze-salute-explanations-007.json` → domande `162–201`
+- `data/scienze-salute-explanations-008.json` → domande `202–241`
 
 Ogni entry contiene:
 
@@ -82,16 +84,9 @@ Non sono stati modificati:
 - risposte corrette;
 - ID e macroargomenti.
 
-Le spiegazioni `1–201` sono state costruite utilizzando il contenuto e il framing già presenti nella banca, senza correggere o sostituire silenziosamente domande e soluzioni.
+Le spiegazioni `1–241` sono state costruite utilizzando il contenuto e il framing già presenti nella banca, senza correggere o sostituire silenziosamente domande e soluzioni.
 
 ## Commit principali recenti
-
-Epidemiologia primo blocco / pilot5:
-
-- dati spiegazioni `122–161`: `f99aa5be397c8e704eb925f171cd0b8442311887`
-- enhancer esteso a `161`: `98311a39ec7e54fa2956315789fb6062434fa7e8`
-- wrapper/cache enhancer `pilot5`: `b5611664f4cb3cb2de1281d0ab07c359b5d39b0d`
-- Home/cache-busting `pilot5`: `117c78552e685f3e2983a52fa8101288df74a262`
 
 Chiusura Epidemiologia + avvio Igiene / pilot6:
 
@@ -100,10 +95,19 @@ Chiusura Epidemiologia + avvio Igiene / pilot6:
 - wrapper/cache enhancer `pilot6`: `19475ac6c49bba24243684dce0c3165eaf3485fc`
 - Home/cache-busting `pilot6`: `3ec4d8cd4de56f254626565107b28a0409e7a865`
 
+Igiene + avvio Storia / pilot7:
+
+- dati spiegazioni `202–241`: `7d5dcc0d45c5c7b0ec7d728b9b6686bd79601e11`
+- enhancer esteso a `241`: `4dafe5080d8c96e6f71c78d45b73dbdf2f9d0f6c`
+- correzione escaping enhancer: `1d1c84c1f66de9dd54f794cf89403aeb5dc61ed7`
+- wrapper/cache enhancer `pilot7`: `c91af59ab8b0bc98031e915f39d90f79951d09d2`
+- Home/cache-busting `pilot7`: `33f4def7d668002a433eac444a74573da2e784d5`
+
 ## Punto di ripresa
 
 - **Infermieristica nell'evoluzione storica: completo 121/121**.
 - **Epidemiologia: completo 55/55 (`122–176`)**.
-- **Igiene e medicina preventiva: completate `177–201`**.
+- **Igiene e medicina preventiva: completate nel tratto corrente `177–220`**.
+- **Storia della medicina: completate nel tratto corrente `221–241`**.
 
-Prossimo blocco: **domanda 202**, ancora in **Igiene e medicina preventiva**, mantenendo blocchi controllati e lo stesso standard: spiegare perché la corretta è giusta e perché ciascuna delle altre tre è sbagliata.
+Prossimo blocco: **domanda 242**, mantenendo blocchi controllati e lo stesso standard: spiegare perché la corretta è giusta e perché ciascuna delle altre tre è sbagliata.
