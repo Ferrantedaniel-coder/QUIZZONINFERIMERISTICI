@@ -8,14 +8,15 @@ Portare tutte le **462 domande** di **Paziente chirurgico** al nuovo standard St
 
 ## Stato finale
 
-- [x] Motore UI per spiegazioni per singola alternativa attivo (`paziente-chirurgico-explanations.js`).
+- [x] Motore UI per spiegazioni per singola alternativa **integrato direttamente in `paziente-chirurgico.html`**.
 - [x] Manifest delle spiegazioni completo (`data/paziente-chirurgico-explanations-manifest.json`).
 - [x] **Diagnostica: 76/76** (`di1`-`di76`).
 - [x] **Educazione terapeutica: 54/54** (`ed1`-`ed54`).
 - [x] **Psicologia: 66/66** (`ps1`-`ps66`).
 - [x] **Terapia: 266/266** (`te1`-`te266`).
 - [x] **Totale: 462/462 spiegazioni avanzate complete**.
-- [x] **Runtime fix 14/09/2026:** caricamento spiegazioni reso fail-safe, controllo obbligatorio 462/462, cache-busting e protezione delle opzioni dipendenti dall'ordine.
+- [x] **Runtime integrato fix4 (14/09/2026):** verifica obbligatoria 462/462 prima dell'avvio, verifica delle quattro motivazioni per ogni domanda, cache-busting e protezione delle opzioni dipendenti dall'ordine.
+- [x] Deploy GitHub Pages del fix4 completato con successo sul commit `b62f4a0a72dbac720768a1ad2727e1b6409fc14c`.
 
 ## File spiegazioni
 
@@ -43,20 +44,25 @@ Dopo la conferma della risposta, il quiz mostra:
 
 Il motore associa le spiegazioni alle opzioni originali anche dopo il rimescolamento della posizione A/B/C/D.
 
-### Correzione runtime del 14/09/2026
+### Correzione runtime definitiva del 14/09/2026
 
-È stata individuata e corretta una regressione che poteva far ricadere il quiz sul vecchio campo generico `why`.
+Il precedente approccio caricava `paziente-chirurgico-explanations.js` dopo il motore principale e sovrascriveva alcune funzioni a runtime. Questo meccanismo era fragile e poteva lasciare visibile il vecchio campo generico `why` in alcune condizioni di caricamento/cache.
 
-La versione corretta del motore ora:
+La versione attiva **fix4** elimina quel punto fragile:
 
-- carica il manifest e i 29 file di spiegazione con richieste non servite dalla cache;
-- verifica che siano presenti **esattamente 462 spiegazioni** prima di avviare il quiz;
-- non usa più un fallback silenzioso alla vecchia spiegazione generica in caso di errore;
-- mostra un errore esplicito se il pacchetto delle spiegazioni è incompleto;
-- usa una versione cache-busted (`20260914-fix2`) per evitare che il browser continui a eseguire una vecchia copia dello script;
-- preserva l'ordine delle domande con alternative semanticamente dipendenti dalla posizione, tra cui `Tutte le precedenti`, `Tutte vere` e `Tutte corrette`.
+- il motore delle spiegazioni è incorporato direttamente in `paziente-chirurgico.html`;
+- banca domande e spiegazioni vengono caricate e verificate nello stesso `boot()`;
+- il pulsante **Inizia / Ricomincia resta disabilitato** finché la verifica non è conclusa;
+- devono essere presenti **esattamente 462/462 spiegazioni**;
+- per ognuna delle 462 domande devono essere presenti le **quattro motivazioni specifiche**, una per ogni opzione;
+- se manca un file, una domanda o una motivazione, il quiz non parte e mostra `Spiegazioni: ERRORE` invece di usare il vecchio `why`;
+- quando tutto è valido compare visibilmente `Spiegazioni: 462/462 ✓`;
+- i JSON vengono caricati con parametro di versione e `cache: no-store`;
+- la homepage apre l'esame con `paziente-chirurgico.html?v=20260914-fix4` per evitare che il browser riusi la vecchia pagina;
+- le domande con alternative semanticamente dipendenti dalla posizione conservano l'ordine originale (`Tutte le precedenti`, `Nessuna delle precedenti`, `Tutte vere`, `Tutte corrette` e formulazioni equivalenti);
+- le normali domande continuano a usare il rimescolamento A/B/C/D bilanciato.
 
-Le normali domande continuano a usare il rimescolamento A/B/C/D bilanciato.
+`paziente-chirurgico-explanations.js` può restare nel repository come file storico, ma **non viene più caricato dalla pagina attiva** e non deve essere considerato il motore corrente.
 
 ## Integrità della banca
 
