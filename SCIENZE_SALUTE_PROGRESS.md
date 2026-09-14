@@ -23,18 +23,22 @@ La Home principale apre `scienze-salute.html`.
 
 Restano quindi invariati il motore del quiz, la banca, le quattro opzioni, le risposte corrette, le modalità di sessione, il rimescolamento A/B/C/D, punteggio, navigazione, risultato, ripasso errori e `localStorage`.
 
-## Spiegazioni avanzate opzionali - 80/459
+## Spiegazioni avanzate opzionali - 120/459
 
-Sono attivi due blocchi controllati:
+Sono attivi quattro file controllati:
 
 - **Infermieristica nell'evoluzione storica: domande banca `1–40`**
 - **Infermieristica nell'evoluzione storica: domande banca `41–80`**
-- **Copertura avanzata attiva: 80/459**
+- **Infermieristica nell'evoluzione storica: domande banca `81–100`**
+- **Infermieristica nell'evoluzione storica: domande banca `101–120`**
+- **Copertura avanzata attiva: 120/459**
 
 File dati:
 
 - `data/scienze-salute-explanations-001.json` → domande `1–40`
 - `data/scienze-salute-explanations-002.json` → domande `41–80`
+- `data/scienze-salute-explanations-003.json` → domande `81–100`
+- `data/scienze-salute-explanations-004.json` → domande `101–120`
 
 Ogni entry contiene:
 
@@ -76,7 +80,7 @@ Non sono stati modificati:
 - risposte corrette;
 - ID e macroargomenti.
 
-Le spiegazioni `1–80` sono state costruite utilizzando i contenuti e il framing già presenti nella banca dell'esame, senza correggere o sostituire silenziosamente il materiale con fonti esterne.
+Le spiegazioni `1–120` sono state costruite utilizzando i contenuti e il framing già presenti nella banca dell'esame, senza correggere o sostituire silenziosamente il materiale con fonti esterne.
 
 ## Commit principali
 
@@ -94,6 +98,14 @@ Pilot 2:
 - Wrapper/cache enhancer `pilot2`: `33eba477435a8632047d7ac1fb7aec169c243460`
 - Home/cache-busting `pilot2`: `496857823ef7b66cffd178083837d96a9d15ed01`
 
+Pilot 3:
+
+- Dati spiegazioni `81–100`: `52786cd1100130e3a20ac43ce55bb880c0a8a7b7`
+- Dati spiegazioni `101–120`: `ae1156047703551b8fb3d362f7805e0edba0b6ae`
+- Enhancer esteso a `120`: `6913e0f80297d163873c6e08b92ddba9a9e21e7c`
+- Wrapper/cache enhancer `pilot3`: `ec31a9aed92937b2bf9a23abdd5f57a95ebc6abf`
+- Home/cache-busting `pilot3`: `ab0f4a79b4cf09809c85919e486fa6f22792475d`
+
 ## Punto di ripresa
 
-Prossimo blocco: **domanda 81**, mantenendo blocchi controllati di circa 40 domande e la stessa architettura opzionale non bloccante.
+Prossimo blocco: **domanda 121**. La domanda 121 appartiene ancora a Infermieristica nell'evoluzione storica; dalla **122** inizia Epidemiologia. Continuare in blocchi controllati e con la stessa architettura opzionale non bloccante.
