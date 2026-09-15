@@ -18,14 +18,15 @@ Ogni lezione mantiene lo schema StudyHub:
 
 ## Copertura complessiva
 
-Sono ora strutturati e apribili due percorsi d'esame:
+Sono ora strutturati e apribili tre percorsi d'esame:
 
 - **Anatomia Patologica**: 63 capitoli mappati / 47 lezioni attive;
-- **Infermieristica nel Materno**: 62 capitoli / **62 lezioni attive**.
+- **Infermieristica nel Materno**: 62 capitoli / **62 lezioni attive**;
+- **Paziente chirurgico**: 60 capitoli / **60 lezioni attive**.
 
-Totale StudyHub Lezioni: **125 capitoli mappati / 109 lezioni interattive attive**.
+Totale StudyHub Lezioni: **185 capitoli mappati / 169 lezioni interattive attive**.
 
-Paziente chirurgico e Scienze della Salute restano predisposti come successive estensioni della sezione Lezioni.
+Scienze della Salute resta predisposto come successiva estensione della sezione Lezioni.
 
 ---
 
@@ -64,133 +65,159 @@ Tra le correzioni scientifiche già registrate: via **lectinica** del complement
 
 # 2. Infermieristica nel Materno — COMPLETA 62/62
 
-Il percorso Materno è stato costruito sui quattro compendi reali del corso e sulla banca Materno già verificata. Le quattro materie sono tutte complete e navigabili.
+Il percorso Materno è costruito sui quattro compendi reali del corso. Le quattro materie sono complete e navigabili.
 
-## Infermieristica Pediatrica — 15/15
+- **Infermieristica Pediatrica: 15/15**;
+- **Pediatria: 15/15**;
+- **Ostetricia: 18/18**;
+- **Ginecologia: 14/14**.
 
-Fonte primaria: `COMPENDEIO INFE PED.pdf`.
+Fonti primarie:
 
-Lezioni:
+- `COMPENDEIO INFE PED.pdf`;
+- `PEDIATRIA.pdf`;
+- `COMPENDIO OSTETRICIA.pdf`;
+- `COMPENDIO GINE.pdf`.
 
-1. Approccio assistenziale al bambino e alla famiglia
-2. Stato di coscienza e osservazione neurologica
-3. Parametri vitali pediatrici
-4. Crescita, antropometria e percentili
-5. Valutazione del dolore
-6. Strategie non farmacologiche del dolore
-7. Termoregolazione neonatale
-8. Sonno sicuro e prevenzione della SIDS
-9. Somministrazione dei farmaci in pediatria
-10. Detersione nasale e terapia inalatoria
-11. Nausea, vomito e rigurgito
-12. Alvo, diarrea e disidratazione
-13. Trauma cranico pediatrico
-14. Emergenze pediatriche e triage
-15. Ospedalizzazione, genitori e gioco terapeutico
+Pacchetti:
 
-Aggiornamenti applicati: sonno sicuro coerente con raccomandazioni correnti; dosaggio/somministrazione pediatrica senza regole generalizzate sulla manipolazione delle formulazioni; PBLS ed emergenze formulati secondo principi e linee guida correnti, evitando algoritmi storici del vecchio compendio.
+- `data/lezioni-materno.json`;
+- `data/lezioni-materno-infermieristica-2.json`;
+- `data/lezioni-materno-pediatria.json`;
+- `data/lezioni-materno-ostetricia.json`;
+- `data/lezioni-materno-ginecologia.json`;
+- `lezioni-materno-loader.js`.
 
-## Pediatria — 15/15
+Correzioni principali già applicate: sonno sicuro aggiornato; PBLS formulato secondo principi correnti; ipoglicemia neonatale e ittero non ridotti a soglie fisse obsolete; OGTT non presentato come unico criterio diagnostico del diabete; eliminazione della regola rigida 1 cm/ora nel travaglio; preeclampsia come sindrome multisistemica; precedente cesareo non come automatismo; endometriosi non vincolata sempre a laparoscopia; leiomiomi uterini descritti correttamente; CA-125 non usato come screening generale; screening cervicale e HPV aggiornati.
 
-Fonte primaria: `PEDIATRIA.pdf`.
+---
 
-Lezioni:
+# 3. Paziente chirurgico — COMPLETO 60/60
 
-1. Fasi dello sviluppo e prevenzione
-2. Screening neonatali e pediatrici
-3. Infezioni perinatali e TORCH
-4. Adattamento alla vita extrauterina
-5. Valutazione del neonato e APGAR
-6. Classificazione del neonato
-7. Prematurità e principali rischi
-8. Ittero e malattia emolitica
-9. Alimentazione e allattamento
-10. Patologie respiratorie pediatriche
-11. Diabete tipo 1 e chetoacidosi
-12. Fibrosi cistica e celiachia
-13. Patologie gastrointestinali pediatriche
-14. Rene, vie urinarie e IVU
-15. Neurologia pediatrica
+Il percorso è attivo e navigabile nelle cinque materie previste.
 
-Aggiornamenti applicati: rischio rosolia congenita non limitato al solo primo mese; ipoglicemia neonatale senza soglie fisse obsolete; bilirubina interpretata per età in ore/età gestazionale/rischi; alimentazione complementare aggiornata; OGTT non presentato come unico criterio diagnostico del diabete; reflusso del lattante compatibile con sonno supino sicuro.
-
-## Ostetricia — 18/18
-
-Fonte primaria: `COMPENDIO OSTETRICIA.pdf`.
+## Assistenza perioperatoria — 18/18
 
 Lezioni:
 
-1. Placenta, membrane e liquido amniotico
-2. Cordone ombelicale
-3. Gravidanza fisiologica
-4. Sviluppo fetale e bacino osseo
-5. Diagnosi prenatale e screening
-6. Diagnostica prenatale invasiva
-7. Aborto spontaneo e gravidanza ectopica
-8. Preparazione al parto
-9. Cardiotocografia
-10. Travaglio e stadi del parto
-11. Analgesia del parto
-12. Parto operativo e taglio cesareo
-13. Post-partum e puerperio
-14. Allattamento al seno
-15. Preeclampsia
-16. Placenta previa e distacco di placenta
-17. Prolasso del funicolo
-18. Rottura prematura delle membrane
+1. Percorso perioperatorio
+2. Classificazione degli interventi
+3. Valutazione preoperatoria e rischio
+4. Consenso, identificazione e sicurezza
+5. Digiuno e preparazione preoperatoria
+6. Preparazione della cute e tricotomia
+7. Surgical Safety Checklist
+8. Sala operatoria, asepsi e team
+9. Posizionamento intraoperatorio
+10. PACU e monitoraggio post-anestesia
+11. Dolore postoperatorio
+12. Mobilizzazione precoce e prevenzione TEV
+13. Complicanze postoperatorie precoci
+14. Ferita chirurgica e cicatrizzazione
+15. Drenaggi chirurgici
+16. Stomie e assistenza
+17. Nutrizione nel paziente chirurgico
+18. Emergenze chirurgiche e deterioramento
 
-Aggiornamenti applicati:
+## Diagnostica — 10/10
 
-- classificazione moderna dei tre stadi del parto;
-- eliminazione della vecchia regola rigida **1 cm/ora** come criterio isolato di distocia/intervento;
-- preeclampsia descritta come sindrome ipertensiva multisistemica: proteinuria non obbligatoria se presenti specifici segni di danno d'organo; edema non necessario alla diagnosi;
-- incremento ponderale in gravidanza individualizzato in base al BMI e al contesto;
-- placenta previa/distacco e prolasso del funicolo ripuliti da percentuali e schemi terapeutici datati del compendio;
-- PROM/PPROM trattate distinguendo epoca gestazionale e rischio infettivo/pretermine;
-- precedente cesareo non presentato come indicazione automatica a cesareo ripetuto.
+1. Principi di diagnostica per immagini
+2. Radiografia
+3. Ecografia
+4. Tomografia computerizzata
+5. Risonanza magnetica
+6. Medicina nucleare
+7. Mezzi di contrasto
+8. Sicurezza dei mezzi di contrasto
+9. Angiografia e radiologia interventistica
+10. Biopsie image-guided e assistenza
 
-## Ginecologia — 14/14
+## Psicologia — 10/10
 
-Fonte primaria: `COMPENDIO GINE.pdf`.
+1. Dal modello biomedico al biopsicosociale
+2. Stress e trauma chirurgico
+3. Ansia preoperatoria
+4. Comunicazione e informazione
+5. Coping e meccanismi di difesa
+6. Immagine corporea e perdita d'organo
+7. Paura dell'anestesia e perdita di controllo
+8. Adattamento psicologico postoperatorio
+9. Vissuti nei grandi cambiamenti corporei
+10. Resilienza e alleanza terapeutica
 
-Lezioni:
+## Educazione terapeutica — 7/7
 
-1. Anatomia dell'apparato genitale femminile
-2. Ovaio e tube uterine
-3. Utero, endometrio e miometrio
-4. Ciclo ovarico ed endometriale
-5. Menopausa
-6. Endometriosi
-7. Malformazioni mülleriane
-8. Fibromi e polipi uterini
-9. Cisti e neoformazioni ovariche
-10. Screening del carcinoma cervicale
-11. Colposcopia, biopsia e conizzazione
-12. HPV e lesioni cervicali
-13. Infezioni vulvovaginali e IST
-14. Procreazione medicalmente assistita
+1. Educazione terapeutica: definizione e finalità
+2. Analisi del bisogno educativo
+3. Obiettivi e progettazione educativa
+4. Metodologie educative
+5. Educazione preoperatoria
+6. Educazione postoperatoria e dimissione
+7. Educazione a dispositivi e caregiver
 
-Correzioni scientifiche principali:
+## Terapia e farmacologia — 15/15
 
-- la vagina non viene descritta come provvista di ghiandole proprie diffuse: la lubrificazione deriva soprattutto da trasudazione e secrezioni cervicali/vestibolari;
-- fibromi/leiomiomi descritti correttamente come tumori benigni della muscolatura liscia uterina;
-- non tutte le malformazioni mülleriane sono considerate automaticamente causa di infertilità;
-- endometriosi: laparoscopia non obbligatoria per ogni diagnosi; valorizzati quadro clinico ed imaging;
-- cisti dermoide identificata come teratoma maturo; cistoadenomi distinti dai fibromi ovarici;
-- CA-125 non presentato come screening generale del carcinoma ovarico;
-- screening cervicale italiano aggiornato: Pap test generalmente 25–29 anni ogni 3 anni e HPV-DNA primario 30–64 anni ogni 5 anni nei programmi che hanno completato la transizione;
-- HPV positivo distinto dalla diagnosi di carcinoma; persistenza di HPV ad alto rischio come elemento centrale;
-- infertilità definita secondo OMS come mancata gravidanza dopo 12 mesi o più di rapporti regolari non protetti, con valutazione anticipabile in base a età/fattori clinici.
+1. Processo di gestione del farmaco
+2. Rischio clinico ed errori in terapia
+3. Calcoli di dose e infusioni
+4. Vie enterali
+5. Vie sottocutanea, intradermica e intramuscolare
+6. Somministrazione endovenosa
+7. Catetere venoso periferico
+8. Midline, PICC, CVC e Port
+9. Pompe ed elastomeri
+10. Farmaci attraverso sondino enterale
+11. Via epidurale e intraossea
+12. Anticoagulanti e antiaggreganti nel perioperatorio
+13. Analgesia nel paziente chirurgico
+14. Farmaci ad alto rischio e potassio
+15. Riconciliazione, PRN e monitoraggio
 
-## File Materno
+### Fonti Paziente chirurgico
 
-- `data/lezioni-materno.json` — roadmap completa delle 4 materie e primo pacchetto di Infermieristica Pediatrica;
-- `data/lezioni-materno-infermieristica-2.json` — completamento Infermieristica Pediatrica;
-- `data/lezioni-materno-pediatria.json` — 15 lezioni Pediatria;
-- `data/lezioni-materno-ostetricia.json` — 18 lezioni Ostetricia;
-- `data/lezioni-materno-ginecologia.json` — 14 lezioni Ginecologia;
-- `lezioni-materno-loader.js` — carica e unisce i quattro pacchetti nel percorso `infermieristica-materno`;
-- `lezioni.html` — importa il loader Materno con cache-busting aggiornato.
+Materiali primari del corso/progetto utilizzati:
+
+- `Infermieristica nell'assistenza del paziente chirurgico.pdf`;
+- `DIAGNOSTICA.pdf`;
+- `PSICOLOGIA .pdf`;
+- `Terapia.pdf`;
+- `ASSISTENZA INFERMIERISTICA NEL PAZIENTE CHIRURGICO .pdf` come compendio esteso già verificato nel progetto;
+- `Il_Paziente_Chirurgico_-_Sintesi_Esame.pdf` come sintesi integrata di controllo.
+
+### Correzioni e aggiornamenti applicati
+
+Le lezioni preservano il programma del corso ma non propagano nozioni datate o errate. In particolare:
+
+- nessuna programmazione discriminatoria del paziente sieropositivo: **precauzioni standard per tutti**;
+- esami preoperatori non richiesti come pacchetto fisso universale, ma in base a paziente e procedura;
+- digiuno non ridotto alla regola automatica “dalla mezzanotte”: tempi differenziati per liquidi chiari, pasti e rischio individuale;
+- tricotomia non routinaria; se necessaria, clipper e non rasoio a lama;
+- Surgical Safety Checklist articolata in **Sign In, Time Out, Sign Out**;
+- RM: impianti/dispositivi valutati come MR Safe / MR Conditional / MR Unsafe secondo caratteristiche specifiche, non “metallo = sempre vietato”;
+- contrasto: distinte reazioni allergic-like e fisiologiche; premedicazione non universale; gestione metformina in base soprattutto a funzione renale/AKI e protocollo;
+- PET-FDG non presentata come specifica esclusivamente per neoplasia;
+- **Midline = accesso periferico lungo**, non CVC;
+- **PICC = accesso centrale a inserzione periferica**, con punta in posizione centrale appropriata e verificata, non genericamente “in atrio destro”;
+- CVP non sostituito secondo una scadenza rigida universale di 72 ore: gestione secondo indicazione clinica e protocollo;
+- KCl concentrato mai EV push o non diluito;
+- warfarin: nessun divieto assoluto di alimenti con vitamina K; importanza della costanza alimentare e del monitoraggio INR; gestione perioperatoria individualizzata;
+- formulazioni orali: non tutte le capsule sono automaticamente indivisibili e non tutte le compresse triturabili; verifica della formulazione;
+- via intraossea descritta secondo competenze, formazione e protocolli locali, evitando la formula universale “atto medico delegato”;
+- modelli psicologici a stadi descritti come cornici interpretative, non sequenze obbligatorie e lineari.
+
+### File Paziente chirurgico Lezioni
+
+- `data/lezioni-paziente-chirurgico.json` — roadmap 5 materie / 60 capitoli;
+- `data/lezioni-paziente-chirurgico-assistenza-1.json`;
+- `data/lezioni-paziente-chirurgico-assistenza-2.json`;
+- `data/lezioni-paziente-chirurgico-diagnostica.json`;
+- `data/lezioni-paziente-chirurgico-psicologia.json`;
+- `data/lezioni-paziente-chirurgico-educazione.json`;
+- `data/lezioni-paziente-chirurgico-terapia-1.json`;
+- `data/lezioni-paziente-chirurgico-terapia-2.json`;
+- `lezioni-paziente-chirurgico-loader.js` — carica e unisce tutti i pacchetti nel percorso `paziente-chirurgico`.
+
+`lezioni.html` importa il loader dedicato e `data/materiali.json` collega la Biblioteca al percorso con **Studia come lezione**.
 
 ---
 
@@ -210,19 +237,19 @@ Correzioni scientifiche principali:
 - progressi in `localStorage` con chiave `studyhub.lessons.progress.v1`;
 - schermata di completamento;
 - passaggio **Studia → Allenati sul quiz**;
-- apertura del PDF originale;
+- apertura del PDF/materiale originale disponibile;
 - layout responsive desktop/mobile.
 
 ## Regola contenuti
 
-**Non inventare contenuti per riempire la roadmap.** Le lezioni devono derivare dai materiali reali del corso. Le fonti esterne autorevoli possono essere usate per correggere o aggiornare parti obsolete, ma non devono essere attribuite falsamente al PDF del corso.
+**Non inventare contenuti per riempire la roadmap.** Le lezioni devono derivare dai materiali reali del corso/progetto. Le fonti esterne autorevoli possono essere usate per correggere o aggiornare parti obsolete, ma non devono essere attribuite falsamente al PDF del corso.
 
 Quando un argomento non è sufficientemente coperto dal materiale universitario e non esiste un'integrazione autorizzata/affidabile, il capitolo rimane **IN PREPARAZIONE**.
 
 ## Prossimo sviluppo
 
-Il percorso **Infermieristica nel Materno è completo 62/62**.
+I percorsi **Infermieristica nel Materno 62/62** e **Paziente chirurgico 60/60** sono completi.
 
-Prossimo blocco consigliato per Lezioni: **Paziente chirurgico**, usando i PDF reali già presenti nella Biblioteca Materiali e mantenendo esattamente la stessa architettura e gli stessi standard di non regressione.
+Prossimo percorso Lezioni naturale: **Scienze della Salute**, quando saranno disponibili materiali reali sufficienti da associare alla Biblioteca.
 
 Restano inoltre 16 capitoli della roadmap di Anatomia Patologica non attivati per insufficiente copertura diretta nei materiali già verificati.
