@@ -7,14 +7,14 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <title>Study Hub · Lezioni</title>
 <link rel="stylesheet" href="studyhub.css">
-<link rel="stylesheet" href="lezioni.css?v=20260915-pilot2">
+<link rel="stylesheet" href="lezioni.css?v=20260915-pathways1">
 </head>
 <body>
 <main class="lesson-shell">
   <div class="lesson-topbar glass">
     <div class="lesson-brand" onclick="location.href='index.html'">
       <div class="brandmark"></div>
-      <div><div class="brandname">Study Hub</div><div class="muted" style="font-size:.76rem">Studia. Verifica. Ripassa.</div></div>
+      <div><div class="brandname">Study Hub</div><div class="muted lesson-brand-sub">Studia. Verifica. Ripassa.</div></div>
     </div>
     <div class="lesson-nav">
       <button class="lesson-navlink" onclick="location.href='index.html'">Esami</button>
@@ -27,33 +27,47 @@
     <section class="lesson-hero glass">
       <div class="eyebrow">STUDIO INTERATTIVO</div>
       <h1>LEGGI MENO.<br>RICORDA DI PIÙ.</h1>
-      <p>Sbobine, compendi e slide diventano percorsi brevi, verificabili e collegati ai materiali originali. Leggi, richiama dalla memoria, rispondi ai checkpoint e riprendi da dove avevi lasciato.</p>
+      <p>Scegli l'esame, entra nella materia e studia un capitolo alla volta. Ogni percorso nasce dai materiali reali del corso e collega spiegazione, active recall, checkpoint, ripasso e quiz.</p>
       <div class="hero-stats">
-        <span class="pill" id="lessonCount">0 lezioni</span>
-        <span class="pill">Active recall</span>
-        <span class="pill">Checkpoint</span>
+        <span class="pill" id="examCount">0 esami</span>
+        <span class="pill" id="chapterCount">0 capitoli</span>
+        <span class="pill" id="lessonCount">0 lezioni attive</span>
         <span class="pill">Progressi locali</span>
       </div>
     </section>
-
-    <div class="section-head"><div><h2>I TUOI PERCORSI</h2><p>Le lezioni vengono costruite a partire dai materiali reali del corso.</p></div></div>
-    <section id="subjectGrid" class="lesson-subject-grid"></section>
+    <div class="section-head"><div><h2>SCEGLI L'ESAME</h2><p>Ogni esame contiene le materie che lo compongono.</p></div></div>
+    <section id="examGrid" class="lesson-subject-grid"></section>
   </section>
 
-  <section id="subjectView" class="lesson-hidden">
-    <div class="lesson-breadcrumb"><button onclick="goHome()">Lezioni</button><span>›</span><span id="subjectCrumb"></span></div>
+  <section id="examView" class="lesson-hidden">
+    <div class="lesson-breadcrumb"><button onclick="goHome()">Lezioni</button><span>›</span><span id="examCrumb"></span></div>
     <section class="lesson-course-hero glass">
-      <div class="eyebrow">PERCORSO INTERATTIVO</div>
-      <h1 id="subjectTitle"></h1>
-      <p id="subjectDescription"></p>
-      <div class="lesson-progress-wrap"><div class="lesson-progress"><div id="subjectProgressBar"></div></div><span id="subjectProgressText">0%</span></div>
+      <div class="eyebrow">PERCORSO D'ESAME</div>
+      <h1 id="examTitle"></h1>
+      <p id="examDescription"></p>
+      <div class="lesson-progress-wrap"><div class="lesson-progress"><div id="examProgressBar"></div></div><span id="examProgressText">0%</span></div>
     </section>
-    <div class="section-head"><div><h2>LEZIONI</h2><p>Completa una lezione e continua con la successiva.</p></div></div>
-    <section id="lessonGrid" class="lesson-card-grid"></section>
+    <div class="section-head"><div><h2>LE MATERIE</h2><p>Scegli cosa vuoi studiare o ripassare. L'ordine segue la progressione didattica del percorso.</p></div></div>
+    <section id="disciplineGrid" class="discipline-grid"></section>
+  </section>
+
+  <section id="disciplineView" class="lesson-hidden">
+    <div class="lesson-breadcrumb"><button onclick="goHome()">Lezioni</button><span>›</span><button id="disciplineExamBack" onclick="backToExam()"></button><span>›</span><span id="disciplineCrumb"></span></div>
+    <section class="lesson-course-hero glass discipline-hero">
+      <div class="eyebrow">MATERIA</div>
+      <h1 id="disciplineTitle"></h1>
+      <p id="disciplineDescription"></p>
+      <div class="discipline-tools">
+        <div class="lesson-progress-wrap"><div class="lesson-progress"><div id="disciplineProgressBar"></div></div><span id="disciplineProgressText">0%</span></div>
+        <a id="disciplineSourceLink" class="button peach" href="#" target="_blank">Apri materiale originale</a>
+      </div>
+    </section>
+    <div class="section-head"><div><h2>CAPITOLI</h2><p>Scegli il capitolo. Quelli già trasformati in lezione sono subito studiabili; gli altri restano visibili nella roadmap completa.</p></div></div>
+    <section id="chapterGrid" class="chapter-grid"></section>
   </section>
 
   <section id="runnerView" class="lesson-hidden">
-    <div class="lesson-breadcrumb"><button onclick="backToSubject()">Lezioni</button><span>›</span><span id="runnerCrumb"></span></div>
+    <div class="lesson-breadcrumb"><button onclick="goHome()">Lezioni</button><span>›</span><button id="runnerExamCrumb" onclick="backToExam()"></button><span>›</span><button id="runnerDisciplineCrumb" onclick="backToDiscipline()"></button><span>›</span><span id="runnerCrumb"></span></div>
     <section class="runner-layout">
       <aside class="runner-side glass">
         <div class="runner-side-title">PROGRESSO</div>
@@ -79,6 +93,6 @@
   </section>
 </main>
 <div id="lessonToast" class="lesson-toast"></div>
-<script src="lezioni.js?v=20260915-pilot2"></script>
+<script src="lezioni.js?v=20260915-pathways1"></script>
 </body>
 </html>
