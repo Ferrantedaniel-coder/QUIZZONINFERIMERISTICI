@@ -15,7 +15,8 @@ File principali:
 - `lezioni.js` — motore interattivo e progressi locali;
 - `data/lezioni.json` — catalogo gerarchico esami → materie → capitoli → lezioni;
 - `data/lezioni-eziologia.json` + `lezioni-eziologia-loader.js` — pacchetto Eziologia Generale;
-- `data/lezioni-patologia-1.json`, `data/lezioni-patologia-2.json` + `lezioni-patologia-loader.js` — pacchetto Patologia Generale.
+- `data/lezioni-patologia-1.json`, `data/lezioni-patologia-2.json` + `lezioni-patologia-loader.js` — pacchetto Patologia Generale;
+- `data/lezioni-immunologia-1.json`, `data/lezioni-immunologia-2.json` + `lezioni-immunologia-loader.js` — pacchetto Immunologia.
 
 ## Architettura corrente
 
@@ -38,9 +39,9 @@ Roadmap:
 
 - Eziologia Generale: **8 capitoli / 8 lezioni attive**;
 - Patologia Generale: **20 capitoli / 10 lezioni attive**;
-- Immunologia: **16 capitoli / 0 lezioni attive**;
+- Immunologia: **16 capitoli / 12 lezioni attive**;
 - Anatomia Patologica: **19 capitoli / 3 lezioni attive**;
-- totale: **63 capitoli mappati / 21 lezioni interattive attive**.
+- totale: **63 capitoli mappati / 33 lezioni interattive attive**.
 
 I capitoli non ancora convertiti mostrano chiaramente **IN PREPARAZIONE**.
 
@@ -80,26 +81,48 @@ Sono state pubblicate solo lezioni supportate direttamente dai materiali reali d
 Fonti:
 
 - `PATOLOGIA GENERALE definitivo.pdf` come fonte primaria delle prime nove lezioni;
-- `ANATOMIA PATOLOGICA.pdf` per la lezione sull'amiloide, in particolare deposito beta-fibrillare, Rosso Congo e birifrangenza verde mela.
+- `ANATOMIA PATOLOGICA.pdf` per la lezione sull'amiloide.
 
-Ogni lezione contiene spiegazione, concetti chiave, active recall e 2 checkpoint A/B/C/D obbligatori con feedback.
+Restano volutamente in preparazione, per insufficiente copertura diretta nei materiali verificati: adattamenti cellulari completi, accumuli intracellulari, calcificazioni patologiche, guarigione delle ferite, disturbi emodinamici generali, emostasi/trombosi, embolia, infarto, shock, pigmenti/metabolismo della bilirubina.
 
-### Capitoli lasciati volutamente in preparazione
+## Immunologia — 12/16 capitoli con lezione attiva
 
-Non sono stati riempiti artificialmente i capitoli per i quali, nella verifica corrente dei materiali, non è emersa copertura sufficiente per una lezione completa e affidabile:
+Fonte primaria: `Immunologia STAMPATO.pdf`.
 
-- Adattamenti cellulari completi;
-- Accumuli intracellulari;
-- Calcificazioni patologiche;
-- Guarigione delle ferite;
-- Disturbi emodinamici generali;
-- Emostasi e trombosi;
-- Embolia;
-- Infarto;
-- Shock;
-- Pigmenti e metabolismo della bilirubina.
+Sono attive:
 
-Questi capitoli restano visibili nella roadmap con stato **IN PREPARAZIONE**. Verranno attivati solo dopo aver individuato materiale universitario dell'utente che li copra adeguatamente oppure dopo una futura integrazione esplicitamente autorizzata e verificata.
+1. **Introduzione al sistema immunitario**
+2. **Immunità innata**
+3. **Fagocitosi**
+4. **Sistema del complemento**
+5. **Antigeni e anticorpi**
+6. **Linfociti B**
+7. **MHC e presentazione dell'antigene**
+8. **Linfociti T**
+9. **Sottopopolazioni T helper**
+10. **Citotossicità**
+11. **Citochine**
+12. **Ipersensibilità**
+
+### Precisazioni scientifiche applicate
+
+Sono state corrette solo imprecisioni già note, senza attribuire al PDF contenuti assenti:
+
+- la cosiddetta “via leptinica” degli appunti è indicata correttamente come **via lectinica del complemento**, mediata dalla **mannose-binding lectin (MBL)**;
+- le cellule dendritiche sono descritte come le APC **più efficaci** nell'attivazione dei T vergini, evitando l'assoluto “uniche cellule costimolatorie”;
+- MHC I è descritto sulla grande maggioranza delle cellule nucleate;
+- perforina/granzimi sono presentati principalmente come meccanismo di induzione dell'apoptosi.
+
+### Capitoli Immunologia lasciati volutamente in preparazione
+
+Il compendio contiene solo riferimenti parziali e non sufficienti per costruire una lezione completa secondo la roadmap:
+
+- **Autoimmunità** — presenti tolleranza ed esempi, ma non abbastanza per sviluppare in modo completo tolleranza centrale/periferica e meccanismi;
+- **Immunodeficienze** — presenti esempi e richiami, ma non una trattazione sistematica delle forme primitive/secondarie;
+- **Immunologia dei trapianti** — è presente il concetto di compatibilità MHC/HLA, ma non una trattazione completa di rigetto iperacuto, acuto e cronico;
+- **Immunità antitumorale** — sono presenti immunosorveglianza e NK, ma non abbastanza materiale per sviluppare antigeni tumorali, evasione e checkpoint immunitari.
+
+Questi quattro capitoli restano **IN PREPARAZIONE** invece di essere riempiti con contenuti non presenti nei materiali dell'utente.
 
 ## Anatomia Patologica — 3 lezioni già attive
 
@@ -139,7 +162,7 @@ Fonte primaria: `ANATOMIA PATOLOGICA.pdf`.
 Proseguire nell'ordine didattico:
 
 1. completare eventuali capitoli di Patologia Generale solo se supportati da materiali reali aggiuntivi;
-2. **Immunologia** — 16 capitoli;
-3. **Anatomia Patologica** — completare i capitoli ancora senza lezione.
+2. completare eventuali 4 capitoli Immunologia solo quando supportati da materiale sufficiente;
+3. **Anatomia Patologica** — completare i capitoli ancora senza lezione usando `ANATOMIA PATOLOGICA.pdf`.
 
 Per ogni capitolo mantenere lo schema StudyHub: **spiegazione → concetti chiave → active recall → checkpoint → materiale originale → quiz collegato**.
