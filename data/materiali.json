@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-15-real-catalog-1",
+  "version": "2026-09-15-real-catalog-2",
   "subjects": [
     {
       "id": "anatomia-patologica",
@@ -7,12 +7,12 @@
       "description": "Patologia generale, eziologia, immunologia, microbiologia e anatomia patologica.",
       "topics": ["Microbiologia", "Eziologia generale", "Immunologia", "Patologia generale", "Neoplasie", "Diagnostica anatomopatologica"],
       "documents": [
-        {"id":"ap-anatomia","type":"Slide","title":"Anatomia Patologica","sourceName":"ANATOMIA PATOLOGICA.pdf","meta":"56 pagine · materiale del corso","file":null,"plannedPath":"materials/anatomia-patologica/anatomia-patologica.pdf"},
-        {"id":"ap-eziologia","type":"Compendio","title":"Eziologia generale","sourceName":"Eziologia generale STAMPATO.pdf","meta":"PDF · materiale del corso","file":null,"plannedPath":"materials/anatomia-patologica/eziologia-generale-stampato.pdf"},
-        {"id":"ap-immunologia","type":"Compendio","title":"Immunologia","sourceName":"Immunologia STAMPATO.pdf","meta":"PDF · materiale del corso","file":null,"plannedPath":"materials/anatomia-patologica/immunologia-stampato.pdf"},
-        {"id":"ap-microbiologia","type":"Slide","title":"Microbiologia","sourceName":"Microbiologia.pdf","meta":"PDF · materiale del corso","file":null,"plannedPath":"materials/anatomia-patologica/microbiologia.pdf"},
-        {"id":"ap-microbiologia-comp","type":"Compendio","title":"Microbiologia · Compendio","sourceName":"Microbiologia compendio.pdf","meta":"PDF · compendio","file":null,"plannedPath":"materials/anatomia-patologica/microbiologia-compendio.pdf"},
-        {"id":"ap-patologia-generale","type":"Compendio","title":"Patologia Generale · Definitivo","sourceName":"PATOLOGIA GENERALE definitivo.pdf","meta":"PDF · compendio completo","file":null,"plannedPath":"materials/anatomia-patologica/patologia-generale-definitivo.pdf"}
+        {"id":"ap-anatomia","type":"Slide","title":"Anatomia Patologica","sourceName":"ANATOMIA PATOLOGICA.pdf","meta":"56 pagine · materiale del corso","file":"ANATOMIA PATOLOGICA.pdf","plannedPath":"materials/anatomia-patologica/anatomia-patologica.pdf"},
+        {"id":"ap-eziologia","type":"Compendio","title":"Eziologia generale","sourceName":"Eziologia generale STAMPATO.pdf","meta":"PDF · materiale del corso","file":"Eziologia generale STAMPATO.pdf","plannedPath":"materials/anatomia-patologica/eziologia-generale-stampato.pdf"},
+        {"id":"ap-immunologia","type":"Compendio","title":"Immunologia","sourceName":"Immunologia STAMPATO.pdf","meta":"PDF · materiale del corso","file":"Immunologia STAMPATO.pdf","plannedPath":"materials/anatomia-patologica/immunologia-stampato.pdf"},
+        {"id":"ap-microbiologia","type":"Slide","title":"Microbiologia","sourceName":"Microbiologia.pdf","meta":"PDF · materiale del corso","file":"Microbiologia.pdf","plannedPath":"materials/anatomia-patologica/microbiologia.pdf"},
+        {"id":"ap-microbiologia-comp","type":"Compendio","title":"Microbiologia · Compendio","sourceName":"Microbiologia compendio.pdf","meta":"PDF · compendio","file":"Microbiologia compendio.pdf","plannedPath":"materials/anatomia-patologica/microbiologia-compendio.pdf"},
+        {"id":"ap-patologia-generale","type":"Compendio","title":"Patologia Generale · Definitivo","sourceName":"PATOLOGIA GENERALE definitivo.pdf","meta":"PDF · compendio completo","file":"PATOLOGIA GENERALE definitivo.pdf","plannedPath":"materials/anatomia-patologica/patologia-generale-definitivo.pdf"}
       ]
     },
     {
@@ -23,10 +23,10 @@
       "documents": [
         {"id":"pc-assistenza","type":"Compendio","title":"Assistenza infermieristica nel paziente chirurgico","sourceName":"ASSISTENZA INFERMIERISTICA NEL PAZIENTE CHIRURGICO .pdf","meta":"PDF · compendio completo","file":null,"plannedPath":"materials/paziente-chirurgico/assistenza-infermieristica-paziente-chirurgico.pdf"},
         {"id":"pc-sintesi","type":"Compendio","title":"Il Paziente Chirurgico · Sintesi Esame","sourceName":"Il_Paziente_Chirurgico_-_Sintesi_Esame.pdf","meta":"23 pagine · sintesi integrata","file":null,"plannedPath":"materials/paziente-chirurgico/sintesi-esame.pdf"},
-        {"id":"pc-infermieristica","type":"Sbobina","title":"Infermieristica nell'assistenza del paziente chirurgico","sourceName":"Infermieristica nell'assistenza del paziente chirurgico.pdf","meta":"PDF · materiale di lezione","file":null,"plannedPath":"materials/paziente-chirurgico/infermieristica-assistenza.pdf"},
-        {"id":"pc-diagnostica","type":"Sbobina","title":"Diagnostica","sourceName":"DIAGNOSTICA.pdf","meta":"PDF · diagnostica strumentale","file":null,"plannedPath":"materials/paziente-chirurgico/diagnostica.pdf"},
-        {"id":"pc-psicologia","type":"Slide","title":"Psicologia del paziente chirurgico","sourceName":"PSICOLOGIA .pdf","meta":"PDF · materiale del corso","file":null,"plannedPath":"materials/paziente-chirurgico/psicologia.pdf"},
-        {"id":"pc-terapia","type":"Sbobina","title":"Terapia","sourceName":"Terapia.pdf","meta":"PDF · farmacoterapia e somministrazione","file":null,"plannedPath":"materials/paziente-chirurgico/terapia.pdf"}
+        {"id":"pc-infermieristica","type":"Sbobina","title":"Infermieristica nell'assistenza del paziente chirurgico","sourceName":"Infermieristica nell'assistenza del paziente chirurgico.pdf","meta":"PDF · materiale di lezione","file":"Infermieristica nell'assistenza del paziente chirurgico.pdf","plannedPath":"materials/paziente-chirurgico/infermieristica-assistenza.pdf"},
+        {"id":"pc-diagnostica","type":"Sbobina","title":"Diagnostica","sourceName":"DIAGNOSTICA.pdf","meta":"PDF · diagnostica strumentale","file":"DIAGNOSTICA.pdf","plannedPath":"materials/paziente-chirurgico/diagnostica.pdf"},
+        {"id":"pc-psicologia","type":"Slide","title":"Psicologia del paziente chirurgico","sourceName":"PSICOLOGIA .pdf","meta":"PDF · materiale del corso","file":"PSICOLOGIA .pdf","plannedPath":"materials/paziente-chirurgico/psicologia.pdf"},
+        {"id":"pc-terapia","type":"Sbobina","title":"Terapia","sourceName":"Terapia.pdf","meta":"PDF · farmacoterapia e somministrazione","file":"Terapia.pdf","plannedPath":"materials/paziente-chirurgico/terapia.pdf"}
       ]
     },
     {
