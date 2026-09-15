@@ -13,11 +13,13 @@ File principali:
 - `lezioni.html` — interfaccia delle lezioni interattive;
 - `lezioni.css` — stile Apple-like coerente con StudyHub;
 - `lezioni.js` — motore interattivo e progressi locali;
-- `data/lezioni.json` — catalogo gerarchico esami → materie → capitoli → lezioni.
+- `data/lezioni.json` — catalogo gerarchico esami → materie → capitoli → lezioni;
+- `data/lezioni-eziologia.json` — pacchetto contenuti Eziologia Generale;
+- `lezioni-eziologia-loader.js` — loader non distruttivo del pacchetto Eziologia.
 
 ## Architettura corrente
 
-La navigazione Lezioni è ora:
+La navigazione Lezioni è:
 
 **Lezioni → Esame → Materia → Capitolo → Lezione interattiva**
 
@@ -32,21 +34,50 @@ All'apertura dell'esame vengono mostrate le quattro materie nell'ordine didattic
 3. **Immunologia**
 4. **Anatomia Patologica**
 
-Tutte e quattro sono apribili e mostrano la roadmap dei capitoli anche quando le singole lezioni interattive non sono ancora state scritte.
+Roadmap:
 
-Roadmap attuale:
-
-- Eziologia Generale: **8 capitoli**;
+- Eziologia Generale: **8 capitoli / 8 lezioni attive**;
 - Patologia Generale: **20 capitoli**;
 - Immunologia: **16 capitoli**;
-- Anatomia Patologica: **19 capitoli**;
-- totale: **63 capitoli mappati**.
+- Anatomia Patologica: **19 capitoli / 3 lezioni attive**;
+- totale: **63 capitoli mappati / 11 lezioni interattive attive**.
 
-Le materie senza lezioni già convertite mostrano chiaramente lo stato **STRUTTURA PRONTA / IN PREPARAZIONE**: nessun contenuto medico viene inventato per riempire card vuote.
+Le materie o i capitoli non ancora convertiti mostrano chiaramente **STRUTTURA PRONTA / IN PREPARAZIONE**.
 
-## Lezioni interattive attive
+## Eziologia Generale — COMPLETA 8/8
 
-Restano attive le 3 lezioni pilota, ora collocate nella materia **Anatomia Patologica** e nei rispettivi capitoli:
+Tutti gli 8 capitoli della roadmap sono ora trasformati in vere lezioni interattive:
+
+1. **Concetti fondamentali di eziologia**
+2. **Agenti fisici**
+3. **Agenti chimici e tossici**
+4. **Agenti biologici**
+5. **Fattori nutrizionali**
+6. **Fattori genetici**
+7. **Radicali liberi e stress ossidativo**
+8. **Invecchiamento cellulare**
+
+Ogni lezione contiene:
+
+- obiettivo didattico;
+- spiegazione universitaria sintetica;
+- concetti chiave;
+- active recall;
+- 2 checkpoint A/B/C/D obbligatori;
+- feedback immediato;
+- collegamento al materiale originale;
+- stato/progresso salvato in `localStorage`.
+
+Fonti primarie del pacchetto:
+
+- `Eziologia generale STAMPATO.pdf` per classificazione delle cause, agenti fisici, cause chimiche e radicali liberi;
+- `PATOLOGIA GENERALE definitivo.pdf` come integrazione per cause genetiche, fattori alimentari, agenti biologici e invecchiamento/stress ossidativo.
+
+Il pacchetto è separato dal catalogo principale e viene collegato a runtime dal loader: questo rende più semplice aggiungere in seguito Patologia Generale, Immunologia e altre materie senza gonfiare o riscrivere il motore.
+
+## Anatomia Patologica — 3 lezioni già attive
+
+Le 3 lezioni pilota restano collocate nei rispettivi capitoli:
 
 1. **Citologia diagnostica** → capitolo Citologia;
 2. **Classificazione delle neoplasie** → capitolo Classificazione delle neoplasie;
@@ -56,7 +87,7 @@ Gli ID delle tre lezioni non sono stati cambiati, quindi i progressi già presen
 
 Fonte primaria: `ANATOMIA PATOLOGICA.pdf`.
 
-Le altre materie sono già collegate ai rispettivi materiali originali:
+## Fonti collegate alle materie
 
 - Eziologia Generale → `Eziologia generale STAMPATO.pdf`;
 - Patologia Generale → `PATOLOGIA GENERALE definitivo.pdf`;
@@ -88,13 +119,10 @@ Le altre materie sono già collegate ai rispettivi materiali originali:
 
 ## Routing e compatibilità
 
-Nuovo routing supportato:
-
 - `lezioni.html?esame=anatomia-patologica` → apre l'esame;
-- `lezioni.html?esame=anatomia-patologica&materia=immunologia` → apre direttamente la materia;
-- il vecchio parametro `?materia=anatomia-patologica` viene ancora interpretato come accesso all'esame per non rompere vecchi link.
-
-La Biblioteca Materiali usa ora il nuovo percorso `?esame=anatomia-patologica`.
+- `lezioni.html?esame=anatomia-patologica&materia=eziologia-generale` → apre direttamente Eziologia;
+- `lezioni.html?esame=anatomia-patologica&materia=immunologia` → apre direttamente Immunologia;
+- il vecchio parametro `?materia=anatomia-patologica` resta compatibile.
 
 ## Design
 
@@ -114,15 +142,14 @@ Il modulo mantiene il design system StudyHub:
 
 Le Lezioni sono una terza area separata. Non devono modificare domande, opzioni, risposte corrette, spiegazioni avanzate, progressi o logica degli esami esistenti.
 
-I contenuti delle lezioni devono derivare dai materiali reali del corso; quando un capitolo non è ancora stato trasformato in lezione, deve rimanere indicato come **in preparazione** invece di essere completato con contenuti non verificati.
+I contenuti devono derivare dai materiali reali del corso; eventuali integrazioni devono servire a rendere il contenuto scientificamente corretto e coerente, senza attribuire ai PDF affermazioni non presenti.
 
 ## Prossimo sviluppo
 
-Riempire progressivamente i 63 capitoli seguendo l'ordine:
+Eziologia è completa. Proseguire nell'ordine didattico:
 
-1. Eziologia Generale;
-2. Patologia Generale;
-3. Immunologia;
-4. Anatomia Patologica.
+1. **Patologia Generale** — 20 capitoli;
+2. **Immunologia** — 16 capitoli;
+3. **Anatomia Patologica** — completare i 16 capitoli ancora senza lezione.
 
-Per ogni capitolo usare lo schema StudyHub: **spiegazione → concetti chiave → active recall → checkpoint → materiale originale → quiz collegato**.
+Per ogni capitolo mantenere lo schema StudyHub: **spiegazione → concetti chiave → active recall → checkpoint → materiale originale → quiz collegato**.
