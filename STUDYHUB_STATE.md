@@ -25,7 +25,7 @@ StudyHub è una web app statica HTML/CSS/JavaScript con **4 esami attivi e 1.521
 
 Farmacologia è visibile in homepage come **in preparazione**.
 
-StudyHub è ora organizzato in tre aree principali:
+StudyHub è organizzato in tre aree principali:
 
 1. **Esami** — simulazioni, spiegazioni, error review e progressi;
 2. **Materiali** — sbobine, compendi e slide consultabili/scaricabili;
@@ -41,7 +41,7 @@ Slogan correnti:
 
 La Biblioteca Materiali è attiva tramite `materiali.html`, `materiali.css`, `materiali.js` e `data/materiali.json`.
 
-PDF attualmente collegati e disponibili:
+PDF collegati:
 
 - Anatomia Patologica: **6/6**;
 - Paziente chirurgico: **4** PDF attivi più 2 materiali catalogati ma non ancora pubblicati;
@@ -50,35 +50,93 @@ PDF attualmente collegati e disponibili:
 
 Checkpoint: `MATERIALI_PROGRESS.md`.
 
-### Lezioni interattive
+## 3. Lezioni interattive
 
 Il motore Lezioni è attivo tramite `lezioni.html`, `lezioni.css`, `lezioni.js` e `data/lezioni.json`.
 
-Gerarchia attiva:
+Gerarchia:
 
 **Lezioni → Esame → Materia → Capitolo → Lezione interattiva**.
 
-Il percorso strutturato attivo è **Anatomia Patologica**. Aprendo l'esame compaiono, nell'ordine didattico concordato:
+Sono attivi due percorsi strutturati:
 
-1. **Eziologia Generale** — 8 capitoli / **8 lezioni attive**;
-2. **Patologia Generale** — 20 capitoli / **10 lezioni attive**;
-3. **Immunologia** — 16 capitoli / **12 lezioni attive**;
-4. **Anatomia Patologica** — 19 capitoli / **17 lezioni attive**.
+### Anatomia Patologica
 
-Totale roadmap: **63 capitoli mappati / 47 lezioni interattive attive**.
+- Eziologia Generale: **8/8**;
+- Patologia Generale: **10/20**;
+- Immunologia: **12/16**;
+- Anatomia Patologica: **17/19**;
+- totale: **63 capitoli mappati / 47 lezioni attive**.
 
-I capitoli non sufficientemente coperti dai materiali universitari rimangono **IN PREPARAZIONE**: non vengono riempiti con contenuti inventati. Restano 16 capitoli non attivati: 10 di Patologia Generale, 4 di Immunologia e 2 di Anatomia Patologica.
+Restano 16 capitoli volutamente **IN PREPARAZIONE** perché non sufficientemente coperti dai materiali universitari: 10 di Patologia Generale, 4 di Immunologia e 2 di Anatomia Patologica.
 
-Le 3 lezioni pilota originarie — **Citologia diagnostica**, **Classificazione delle neoplasie**, **Grading e staging** — mantengono gli stessi ID, quindi i progressi precedentemente salvati nel browser restano compatibili.
+Le tre lezioni pilota originarie — **Citologia diagnostica**, **Classificazione delle neoplasie**, **Grading e staging** — mantengono gli stessi ID e quindi i progressi già salvati restano compatibili.
 
-Pacchetti di contenuto attivi:
+Pacchetti:
 
 - `data/lezioni-eziologia.json` + `lezioni-eziologia-loader.js`;
 - `data/lezioni-patologia-1.json`, `data/lezioni-patologia-2.json` + `lezioni-patologia-loader.js`;
 - `data/lezioni-immunologia-1.json`, `data/lezioni-immunologia-2.json` + `lezioni-immunologia-loader.js`;
-- `data/lezioni-anatomia-patologica-1.json`, `002`/`003` come file denominati `data/lezioni-anatomia-patologica-2.json`, `data/lezioni-anatomia-patologica-3.json` + `lezioni-anatomia-patologica-loader.js`.
+- `data/lezioni-anatomia-patologica-1.json`, `data/lezioni-anatomia-patologica-2.json`, `data/lezioni-anatomia-patologica-3.json` + `lezioni-anatomia-patologica-loader.js`.
 
-Funzioni attive:
+### Infermieristica nel Materno — COMPLETA 62/62
+
+Il percorso Materno è ora interamente navigabile nelle quattro materie:
+
+- **Infermieristica Pediatrica: 15/15 lezioni**;
+- **Pediatria: 15/15 lezioni**;
+- **Ostetricia: 18/18 lezioni**;
+- **Ginecologia: 14/14 lezioni**;
+- totale Materno: **62 capitoli / 62 lezioni attive**.
+
+Totale globale area Lezioni: **125 capitoli mappati / 109 lezioni interattive attive**.
+
+Fonti primarie Materno:
+
+- `COMPENDEIO INFE PED.pdf`;
+- `PEDIATRIA.pdf`;
+- `COMPENDIO OSTETRICIA.pdf`;
+- `COMPENDIO GINE.pdf`;
+- banca `Infermieristica_nel_materno_300_domande.*` come supporto di controllo/coerenza con il programma.
+
+Pacchetti Materno:
+
+- `data/lezioni-materno.json` — roadmap delle quattro materie e primo blocco Infermieristica Pediatrica;
+- `data/lezioni-materno-infermieristica-2.json` — completamento Infermieristica Pediatrica;
+- `data/lezioni-materno-pediatria.json` — Pediatria 15/15;
+- `data/lezioni-materno-ostetricia.json` — Ostetricia 18/18;
+- `data/lezioni-materno-ginecologia.json` — Ginecologia 14/14;
+- `lezioni-materno-loader.js` — unisce i pacchetti e attiva il percorso `infermieristica-materno`.
+
+Il loader assegna a ogni materia lo stato `complete`, `active` o `outline` sulla base della copertura reale e aggiorna i contatori globali senza modificare il motore base.
+
+### Correzioni scientifiche Materno registrate
+
+Le lezioni restano grounded sui compendi, ma gli errori o contenuti obsoleti vengono corretti con fonti autorevoli senza modificare di nascosto la banca quiz.
+
+Principali correzioni applicate:
+
+- sonno sicuro del lattante: supino, superficie rigida/piana, ambiente libero da oggetti soffici;
+- PBLS/emergenze pediatriche formulate secondo principi aggiornati, evitando algoritmi storici del vecchio compendio;
+- ipoglicemia neonatale e ittero non ridotti a soglie fisse universali obsolete;
+- alimentazione complementare aggiornata; non viene mantenuto il rinvio indiscriminato degli alimenti allergenici oltre l'anno;
+- OGTT non presentato come unico criterio diagnostico per diabete;
+- travaglio: eliminata la vecchia regola rigida **1 cm/ora** come criterio isolato di intervento;
+- preeclampsia: sindrome ipertensiva multisistemica; proteinuria non sempre necessaria se presenti specifici segni di danno d'organo; edema non richiesto per diagnosi;
+- precedente cesareo non presentato come indicazione automatica a cesareo ripetuto;
+- vagina: corretta l'affermazione sulle presunte ghiandole proprie diffuse;
+- fibromi uterini descritti come **leiomiomi della muscolatura liscia**;
+- malformazioni mülleriane non considerate automaticamente causa di infertilità;
+- endometriosi: laparoscopia non obbligatoria per ogni diagnosi; valorizzati quadro clinico ed imaging;
+- cisti dermoide distinta come teratoma maturo; cistoadenomi distinti dai fibromi ovarici;
+- CA-125 non presentato come screening generale del carcinoma ovarico;
+- screening cervicale italiano aggiornato con Pap test/HPV-DNA secondo fascia d'età e programma regionale;
+- HPV positivo distinto dalla diagnosi di carcinoma; rilevanza della persistenza dei genotipi ad alto rischio;
+- infertilità definita secondo OMS dopo 12 mesi o più di rapporti regolari non protetti, con possibile valutazione anticipata per età/fattori clinici.
+
+Checkpoint dettagliato: `LESSONS_PROGRESS.md`.
+
+### Funzioni Lezioni da preservare
 
 - navigazione esame → materia → capitolo → lezione;
 - breadcrumb su tutti i livelli;
@@ -89,16 +147,15 @@ Funzioni attive:
 - feedback immediato;
 - conteggio checkpoint corretti;
 - avanzamento di lezione, materia ed esame sulle lezioni effettivamente attive;
-- `DA INIZIARE`, `IN CORSO`, `COMPLETATA`, `DA RIPASSARE`;
+- stati `DA INIZIARE`, `IN CORSO`, `COMPLETATA`, `DA RIPASSARE`;
 - salvataggio progressi in `localStorage` con chiave `studyhub.lessons.progress.v1`;
 - collegamento al PDF originale della materia;
-- accesso Materiali → **Studia come lezione** per Anatomia Patologica;
 - passaggio finale **Studia → Allenati sul quiz**;
-- compatibilità con il vecchio routing `?materia=anatomia-patologica` e nuovo routing `?esame=...&materia=...`.
+- routing `?esame=...&materia=...`;
+- compatibilità con i vecchi routing già supportati;
+- layout responsive desktop/mobile.
 
-Checkpoint dettagliato: `LESSONS_PROGRESS.md`.
-
-## 3. Funzioni da preservare
+## 4. Funzioni generali da preservare
 
 - homepage unica;
 - accesso coerente alle tre aree Esami / Materiali / Lezioni;
@@ -125,7 +182,7 @@ Checkpoint dettagliato: `LESSONS_PROGRESS.md`.
 
 Domande con alternative come **“Tutte le precedenti”**, **“Nessuna delle precedenti”**, **“Tutte vere”**, **“Tutte corrette”** o equivalenti non devono essere rimescolate se l'ordine ne altera il significato. Il principio `lockOrder` va preservato.
 
-## 4. Integrità delle banche
+## 5. Integrità delle banche
 
 Se il task riguarda UI, logica, spiegazioni o infrastruttura:
 
@@ -137,13 +194,15 @@ Se il task riguarda UI, logica, spiegazioni o infrastruttura:
 
 Se emerge un quesito probabilmente errato, ambiguo, obsoleto o discordante, **non correggerlo di nascosto**: segnalarlo come QA e modificarlo solo con autorizzazione esplicita.
 
-Per contenuti medici/infermieristici dare priorità ai materiali universitari dell'utente. Quando serve verifica, aggiornamento o disambiguazione usare fonti autorevoli, incluse **PubMed/PMC, NCBI/NIH, WHO, CDC, UICC/NCI, fonti normative ufficiali e linee guida pertinenti**. Le fonti esterne servono a verificare o precisare il contenuto, non autorizzano modifiche silenziose della banca.
+Per contenuti medici/infermieristici dare priorità ai materiali universitari dell'utente. Quando serve verifica, aggiornamento o disambiguazione usare fonti autorevoli, incluse **PubMed/PMC, NCBI/NIH, WHO, CDC, ACOG, ERC, ISS/Ministero della Salute, UICC/NCI, fonti normative ufficiali e linee guida pertinenti**.
 
-Le lezioni interattive devono essere costruite sui materiali reali del corso. Non attribuire a slide o PDF contenuti non verificati. Il PDF originale deve rimanere accessibile come fonte primaria. Se il materiale non copre a sufficienza un capitolo della roadmap, quel capitolo resta **IN PREPARAZIONE**.
+Le fonti esterne servono a verificare o precisare il contenuto e non autorizzano modifiche silenziose della banca.
 
-## 5. Standard delle spiegazioni
+Le lezioni interattive devono essere costruite sui materiali reali del corso. Non attribuire a slide o PDF contenuti non verificati. Il PDF originale deve rimanere accessibile come fonte primaria. Se il materiale non copre a sufficienza un capitolo, quel capitolo resta **IN PREPARAZIONE**.
 
-Per **Scienze della Salute**, **Paziente chirurgico** e **Anatomia Patologica** lo standard è:
+## 6. Standard delle spiegazioni quiz
+
+Per **Scienze della Salute**, **Paziente chirurgico**, **Anatomia Patologica** e, progressivamente, **Infermieristica nel Materno** lo standard è:
 
 - spiegare perché la risposta corretta è giusta;
 - spiegare perché ciascuna delle altre tre è sbagliata;
@@ -153,126 +212,86 @@ Per **Scienze della Salute**, **Paziente chirurgico** e **Anatomia Patologica** 
 
 ### Paziente chirurgico — COMPLETO 462/462
 
-Copertura:
-
 - Diagnostica `di1–di76` = 76/76;
 - Educazione terapeutica `ed1–ed54` = 54/54;
 - Psicologia `ps1–ps66` = 66/66;
 - Terapia `te1–te266` = 266/266;
-- **totale 462/462**.
+- totale **462/462**.
 
 File: `data/paziente-chirurgico-explanations-001.json` → `029.json`.  
 Checkpoint: `PAZIENTE_CHIRURGICO_PROGRESS.md`.
 
 ### Scienze della Salute — COMPLETO 459/459
 
-Implementazione attiva:
-
-- `index.html` apre `scienze-salute.html`;
 - `scienze-salute.html` carica `scienze-salute-app.html` in iframe;
-- `scienze-salute-app.html` è il motore originale con l'intera banca di 459 domande;
-- `scienze-salute-explanations.js` è l'enhancer opzionale fail-safe;
-- `data/scienze-salute-explanations-001.json` → `013.json` coprono `1–459`.
+- `scienze-salute-explanations.js` è enhancer opzionale fail-safe;
+- `data/scienze-salute-explanations-001.json` → `013.json` coprono 1–459.
 
 Checkpoint: `SCIENZE_SALUTE_PROGRESS.md`.
 
 ### Anatomia Patologica — COMPLETO 300/300
 
-Implementazione attiva:
-
-- `anatomia-patologica.html` resta il motore originale e continua a caricare le 12 banche JSON;
-- `anatomia-patologica-explanations.js` è un enhancer opzionale fail-safe;
-- rilascio finale attivo: **`pilot8`**;
+- `anatomia-patologica.html` mantiene le 12 banche originali;
+- `anatomia-patologica-explanations.js` è enhancer opzionale fail-safe;
+- release spiegazioni: `pilot8`;
 - `EXPECTED_ADVANCED=300`;
-- file spiegazioni:
-  - `data/anatomia-patologica-explanations-001.json` → `m1–m40`;
-  - `data/anatomia-patologica-explanations-002.json` → `m41–m80`;
-  - `data/anatomia-patologica-explanations-003.json` → `m81–m100` + `e1–e20`;
-  - `data/anatomia-patologica-explanations-004.json` → `e21–e50` + `i1–i10`;
-  - `data/anatomia-patologica-explanations-005.json` → `i11–i50`;
-  - `data/anatomia-patologica-explanations-006.json` → `a1–a40`;
-  - `data/anatomia-patologica-explanations-007.json` → `a41–a80`;
-  - `data/anatomia-patologica-explanations-008.json` → `a81–a100`.
+- pacchetti `data/anatomia-patologica-explanations-001.json` → `008.json`;
+- Microbiologia 100/100, Eziologia 50/50, Immunologia 50/50, Anatomia Patologica 100/100.
 
-Copertura:
+Nessuna domanda/opzione/risposta corretta/ID è stata modificata durante il lavoro sulle spiegazioni o sulle Lezioni.
 
-- Microbiologia `m1–m100` = **100/100 COMPLETA**;
-- Eziologia `e1–e50` = **50/50 COMPLETA**;
-- Immunologia `i1–i50` = **50/50 COMPLETA**;
-- Anatomia Patologica `a1–a100` = **100/100 COMPLETA**;
-- **totale 300/300 COMPLETA**.
+Checkpoint: `ANATOMIA_PATOLOGICA_PROGRESS.md`.
 
-Materiale universitario primario:
+### Infermieristica nel Materno — SPIEGAZIONI QUIZ 240/300
 
-- `Microbiologia.pdf`;
-- `Microbiologia compendio.pdf`;
-- `PATOLOGIA GENERALE definitivo.pdf`;
-- `Eziologia generale STAMPATO.pdf`;
-- `Immunologia STAMPATO.pdf`;
-- `ANATOMIA PATOLOGICA.pdf`;
-- `Domande anatomia patologica.pdf` come riferimento didattico aggiuntivo.
+**Attenzione: questo stato riguarda le spiegazioni del quiz, non le Lezioni. Le Lezioni Materno sono già complete 62/62.**
 
-Nel blocco finale `a81–a100` sono stati verificati: criostato, frozen section e suoi limiti; carcinoma/sarcoma; identità delle metastasi; grading e differenziazione; staging e TNM; T/N/M; distinzione grado/stadio; pTNM; specificità dei criteri TNM per sede; biomarcatori predittivi immunoistochimici; integrazione di morfologia, immunofenotipo e diagnostica molecolare.
+Stato enhancer Materno:
 
-### Precisazioni scientifiche registrate
+- Infermieristica Pediatrica: **137/137**;
+- Pediatria: **55/55**;
+- Ostetricia: **48/53**;
+- Ginecologia: **0/55**;
+- totale: **240/300**;
+- prossimo indice: **241**;
+- restano **60** domande.
 
-Nelle spiegazioni avanzate e nelle lezioni interattive sono state applicate precisazioni scientifiche senza modificare la banca originale. Tra le principali:
+Pacchetti attuali: `data/materno-explanations-001.json.gz.b64` → `006.json.gz.b64`; `infermieristica-materno-explanations.js` ha `EXPECTED_ADVANCED = 240`.
 
-- corretta denominazione **via lectinica del complemento** con **mannose-binding lectin (MBL)**;
-- cellule dendritiche come APC più efficienti nell'attivazione dei T vergini, evitando l'assoluto “uniche APC costimolatorie”;
-- MHC I espresso sulla grande maggioranza delle cellule nucleate;
-- citotossicità perforina/granzimi descritta principalmente come induzione di apoptosi;
-- formalina al 10% precisata come soluzione con circa il 4% di formaldeide;
-- ritardo alla fissazione trattato come variabile pre-analitica rilevante;
-- Rosso Congo associato all'amiloide e alla birifrangenza verde mela;
-- Ki-67 descritto come marcatore nucleare della frazione proliferante con significato dipendente dal contesto;
-- `a39–a40` verificati sulla normativa ufficiale italiana, D.P.R. 285/1990, artt. 8–9;
-- `a54–a55`: seconda minzione e tre campioni consecutivi mantenuti come **protocollo del corso**, precisando che numero e tempistica possono variare tra laboratori;
-- `a64–a65`: washing e Pap test come “citologia abrasiva” mantenuti secondo la classificazione didattica degli appunti;
-- `a67`: spiegazione aggiornata alle indicazioni WHO, con HPV DNA test come metodo primario preferito in molti programmi moderni di screening cervicale;
-- `a70`: fondo necrotico considerato suggestivo in alcuni contesti ma non specifico da solo per malignità;
-- `a75`: “agobiopsia a cielo coperto” mantenuta come terminologia del corso per patologie diffuse, con nota che l'uso moderno dipende dal distretto e dall'imaging;
-- frozen section descritta come consulenza intraoperatoria per quesiti selezionati, soggetta a limiti di campionamento e artefatti e seguita dall'esame definitivo;
-- **grading e staging sono distinti**: il grading riguarda caratteristiche morfologico-biologiche, lo staging soprattutto l'estensione anatomica;
-- nel TNM: **T** = tumore primitivo, **N** = linfonodi regionali, **M** = metastasi a distanza; le categorie specifiche variano per sede/tipo di tumore;
-- stadiazione patologica indicata con prefisso **p** (`pTNM`) secondo i criteri applicabili;
-- immunoistochimica e diagnostica molecolare possono identificare biomarcatori predittivi utili alla scelta terapeutica.
+Ripresa corretta spiegazioni quiz: 241–245 Ostetricia, 246–280 Ginecologia, 281–300 Ginecologia. Non rifare 1–240.
 
-Nessun quesito `m1–m100`, `e1–e50`, `i1–i50` o `a1–a100` è stato modificato durante il lavoro sulle spiegazioni o sulle Lezioni. Domande, opzioni, risposte corrette, ID e topic sono rimasti invariati.
+Checkpoint: `MATERNO_PROGRESS.md`.
 
-Checkpoint dettagliato quiz: `ANATOMIA_PATOLOGICA_PROGRESS.md`.  
-Checkpoint dettagliato Lezioni: `LESSONS_PROGRESS.md`.
-
-## 6. Architettura corrente
+## 7. Architettura corrente
 
 File principali:
 
 - `index.html` — homepage e accesso Esami / Materiali / Lezioni;
 - `studyhub.css` — stile condiviso;
-- `materiali.html`, `materiali.css`, `materiali.js`, `data/materiali.json` — Biblioteca materiali;
+- `materiali.html`, `materiali.css`, `materiali.js`, `data/materiali.json` — Biblioteca Materiali;
 - `MATERIALI_PROGRESS.md`;
 - `lezioni.html`, `lezioni.css`, `lezioni.js`, `data/lezioni.json` — motore Lezioni;
-- `lezioni-eziologia-loader.js`, `lezioni-patologia-loader.js`, `lezioni-immunologia-loader.js`, `lezioni-anatomia-patologica-loader.js`;
-- relativi pacchetti `data/lezioni-*.json`;
+- loader Anatomia: `lezioni-eziologia-loader.js`, `lezioni-patologia-loader.js`, `lezioni-immunologia-loader.js`, `lezioni-anatomia-patologica-loader.js`;
+- loader Materno: `lezioni-materno-loader.js`;
+- pacchetti `data/lezioni-*.json`;
 - `LESSONS_PROGRESS.md`;
-- `scienze-salute.html` — wrapper Scienze;
-- `scienze-salute-app.html` — motore originale Scienze;
-- `scienze-salute-explanations.js` e `data/scienze-salute-explanations-001.json` → `013.json`;
+- `scienze-salute.html`, `scienze-salute-app.html`, `scienze-salute-explanations.js`;
+- `data/scienze-salute-explanations-001.json` → `013.json`;
 - `SCIENZE_SALUTE_PROGRESS.md`;
-- `anatomia-patologica.html`;
-- `anatomia-patologica-explanations.js`;
+- `anatomia-patologica.html`, `anatomia-patologica-explanations.js`;
 - `data/anatomia-patologica-explanations-001.json` → `008.json`;
 - `ANATOMIA_PATOLOGICA_PROGRESS.md`;
-- `infermieristica-materno.html`;
+- `infermieristica-materno.html`, `infermieristica-materno-plus.html`, `infermieristica-materno-explanations.js`;
+- `MATERNO_PROGRESS.md`;
 - `paziente-chirurgico.html`;
 - `data/paziente-chirurgico-explanations-manifest.json` e `001`→`029`;
 - `PAZIENTE_CHIRURGICO_PROGRESS.md`;
-- `data/` — banche, spiegazioni, cataloghi Materiali e Lezioni;
+- `data/` — banche, spiegazioni e cataloghi;
 - `.nojekyll`.
 
-I progressi utente restano locali al browser; non ci sono account, database remoto o sync cloud. I progressi dei quiz e quelli delle Lezioni usano namespace separati.
+I progressi utente restano locali al browser; non ci sono account, database remoto o sync cloud. Quiz e Lezioni usano namespace separati.
 
-## 7. Workflow obbligatorio
+## 8. Workflow obbligatorio
 
 1. leggere `STUDYHUB_STATE.md`;
 2. leggere il `main` aggiornato;
@@ -288,14 +307,15 @@ I progressi utente restano locali al browser; non ci sono account, database remo
 
 ### Lavoro a blocchi
 
-- Paziente chirurgico: **462/462** completo.
-- Scienze della Salute: **459/459** completo.
-- Anatomia Patologica: **300/300** completo.
-- Lezioni esame Anatomia Patologica: **63 capitoli mappati / 47 lezioni interattive attive**.
+- Paziente chirurgico spiegazioni: **462/462** completo;
+- Scienze della Salute spiegazioni: **459/459** completo;
+- Anatomia Patologica spiegazioni: **300/300** completo;
+- Materno spiegazioni quiz: **240/300**, ripresa da **241**;
+- Lezioni Anatomia Patologica: **47/63** attive;
+- Lezioni Infermieristica nel Materno: **62/62 COMPLETE**;
+- totale Lezioni: **109/125** attive.
 
-Non esiste più un punto di ripresa per le spiegazioni avanzate dei tre esami completi. Il lavoro incrementale corrente riguarda l'estensione delle Lezioni sui capitoli supportati dai materiali e il completamento delle spiegazioni Materno secondo `MATERNO_PROGRESS.md`.
-
-## 8. GitHub e autorizzazioni
+## 9. GitHub e autorizzazioni
 
 Repository: `Ferrantedaniel-coder/QUIZZONINFERIMERISTICI`  
 Branch: `main`
@@ -304,14 +324,14 @@ Per StudyHub ChatGPT è autorizzato a leggere il repository, confrontare version
 
 Non sono automaticamente autorizzati mass delete, force update, modifiche distruttive, cambi di impostazioni o interventi fuori scope.
 
-## 9. Roadmap immediata
+## 10. Roadmap immediata
 
-1. mantenere intatti i quattro esami esistenti e le relative banche;
-2. completare le spiegazioni avanzate Materno secondo `MATERNO_PROGRESS.md`;
-3. per l'esame Anatomia Patologica attivare i 16 capitoli ancora in preparazione **solo quando esiste materiale universitario sufficiente oppure dopo integrazione esterna esplicitamente autorizzata e verificata**;
-4. creare Lezioni per Infermieristica nel Materno utilizzando i PDF reali già pubblicati;
-5. creare Lezioni per Paziente chirurgico utilizzando i PDF reali già pubblicati;
-6. collegare progressivamente le lezioni alle sezioni/domande pertinenti dei quiz;
+1. preservare intatti i quattro esami e le rispettive banche;
+2. **Lezioni Materno: COMPLETE 62/62 — non rifarle**;
+3. prossimo percorso Lezioni consigliato: **Paziente chirurgico**, usando i PDF reali già pubblicati;
+4. per Anatomia Patologica attivare i 16 capitoli ancora in preparazione solo con materiale universitario sufficiente o integrazione esterna verificata/autorizzata;
+5. completare separatamente le spiegazioni quiz Materno da **241 a 300** secondo `MATERNO_PROGRESS.md`;
+6. collegare progressivamente Materiali → Lezioni anche per Materno dove utile;
 7. associare materiali reali a Scienze della Salute quando disponibili;
-8. Farmacologia resta una futura banca in preparazione;
+8. Farmacologia resta futura banca in preparazione;
 9. gestire quesiti dubbi o obsoleti come QA separato.
