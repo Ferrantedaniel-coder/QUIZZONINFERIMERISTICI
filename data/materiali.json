@@ -1,11 +1,11 @@
 {
-  "version": "2026-09-15-real-catalog-4",
+  "version": "2026-09-15-real-catalog-5",
   "subjects": [
     {
       "id": "anatomia-patologica",
       "name": "Anatomia Patologica",
       "description": "Patologia generale, eziologia, immunologia, microbiologia e anatomia patologica.",
-      "lessonPath": "lezioni.html?materia=anatomia-patologica",
+      "lessonPath": "lezioni.html?esame=anatomia-patologica",
       "topics": ["Microbiologia", "Eziologia generale", "Immunologia", "Patologia generale", "Neoplasie", "Diagnostica anatomopatologica"],
       "documents": [
         {"id":"ap-anatomia","type":"Slide","title":"Anatomia Patologica","sourceName":"ANATOMIA PATOLOGICA.pdf","meta":"56 pagine · materiale del corso","file":"ANATOMIA PATOLOGICA.pdf","plannedPath":"materials/anatomia-patologica/anatomia-patologica.pdf"},
