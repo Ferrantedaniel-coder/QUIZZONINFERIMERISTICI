@@ -1,0 +1,175 @@
+{
+  "version":"2026-09-15-patologia-completa-1",
+  "disciplineId":"patologia-generale",
+  "chapters":{
+    "pg-adattamenti":[{
+      "id":"pg-adattamenti-cellulari",
+      "title":"Adattamenti cellulari",
+      "subtitle":"Ipertrofia, iperplasia, atrofia, metaplasia e displasia",
+      "duration":"16 min",
+      "source":"PATOLOGIA GENERALE definitivo.pdf",
+      "references":["https://www.ncbi.nlm.nih.gov/books/NBK554382/","https://pubmed.ncbi.nlm.nih.gov/28860646/"],
+      "blocks":[
+        {"type":"intro","title":"Obiettivo della lezione","text":"Distinguere i principali adattamenti cellulari e capire quando una risposta allo stress resta adattativa e quando si entra nell'ambito della crescita disordinata."},
+        {"type":"text","title":"Adattamento allo stress","text":"Le cellule possono modificare dimensioni, numero o fenotipo per mantenere la funzione davanti a uno stimolo persistente. L'ipertrofia aumenta la dimensione cellulare; l'iperplasia aumenta il numero di cellule; l'atrofia riduce dimensioni e attività funzionale; la metaplasia sostituisce un tipo cellulare differenziato con un altro più adatto allo stimolo."},
+        {"type":"key","title":"Le differenze da ricordare","items":["Ipertrofia: aumento della dimensione delle cellule.","Iperplasia: aumento del numero delle cellule.","Atrofia: riduzione di dimensioni e funzione del tessuto per riduzione delle componenti cellulari.","Metaplasia: sostituzione adattativa di un tipo cellulare maturo con un altro tipo cellulare maturo.","Displasia: crescita e maturazione disordinate; non è un normale adattamento e può rappresentare una lesione precancerosa in alcuni tessuti."]},
+        {"type":"text","title":"Metaplasia e rischio di progressione","text":"La metaplasia nasce spesso in risposta a irritazione o infiammazione cronica ed è potenzialmente reversibile se lo stimolo viene rimosso. Tuttavia, in alcuni contesti la persistenza dello stimolo può favorire la sequenza metaplasia-displasia-neoplasia."},
+        {"type":"recall","question":"Qual è la differenza essenziale tra ipertrofia e iperplasia?","answer":"L'ipertrofia aumenta la dimensione delle cellule; l'iperplasia aumenta il loro numero."},
+        {"type":"checkpoint","question":"Quale adattamento consiste nella sostituzione di un tipo cellulare maturo con un altro?","options":["Atrofia","Metaplasia","Ipertrofia","Displasia"],"correct":1,"explanation":"La metaplasia è una sostituzione adattativa del fenotipo cellulare differenziato."},
+        {"type":"checkpoint","question":"Quale affermazione sulla displasia è corretta?","options":["È sempre una risposta fisiologica","È sinonimo di ipertrofia","È una crescita disordinata che può avere significato precanceroso","È sempre irreversibile"],"correct":2,"explanation":"La displasia indica alterazioni dell'organizzazione, della crescita e della maturazione cellulare e in alcuni epiteli può precedere la malignità."}
+      ]
+    }],
+    "pg-accumuli":[{
+      "id":"pg-accumuli-intracellulari",
+      "title":"Accumuli intracellulari",
+      "subtitle":"Lipidi, proteine, glicogeno e pigmenti",
+      "duration":"16 min",
+      "source":"PATOLOGIA GENERALE definitivo.pdf",
+      "references":["https://pubmed.ncbi.nlm.nih.gov/7792202/","https://www.ncbi.nlm.nih.gov/books/NBK537358/"],
+      "blocks":[
+        {"type":"intro","title":"Obiettivo della lezione","text":"Capire perché alcune sostanze si accumulano nelle cellule e riconoscere le principali categorie di deposito intracellulare."},
+        {"type":"text","title":"Perché si accumula una sostanza","text":"Un accumulo intracellulare può comparire quando una sostanza normale viene prodotta o introdotta in quantità superiore alla capacità di smaltimento, quando il metabolismo o il trasporto sono alterati oppure quando una sostanza anomala non può essere degradata efficacemente."},
+        {"type":"key","title":"Categorie principali","items":["Lipidi: l'accumulo di trigliceridi negli epatociti produce steatosi.","Proteine: possono accumularsi per eccessiva sintesi, difetti di trasporto o degradazione.","Glicogeno: può aumentare in malattie da deposito o in condizioni metaboliche con alterata regolazione glucidica.","Pigmenti endogeni: lipofuscina, melanina ed emosiderina sono esempi classici.","Pigmenti o particelle esogene possono essere fagocitati e permanere nei tessuti."]},
+        {"type":"text","title":"Lipofuscina e altri pigmenti","text":"La lipofuscina è un pigmento intracellulare derivato da materiale non completamente degradabile che tende ad accumularsi soprattutto nelle cellule longeve e con l'età. L'emosiderina rappresenta un deposito di ferro, mentre la melanina è prodotta dai melanociti."},
+        {"type":"recall","question":"Che cosa indica il termine steatosi epatica?","answer":"L'accumulo patologico di trigliceridi sotto forma di gocce lipidiche nel citoplasma degli epatociti."},
+        {"type":"checkpoint","question":"Quale sostanza è tipicamente associata alla steatosi epatica?","options":["Trigliceridi","Calcio","Bilirubina coniugata","Collagene"],"correct":0,"explanation":"La steatosi è definita dall'accumulo di trigliceridi nelle cellule, soprattutto negli epatociti."},
+        {"type":"checkpoint","question":"Quale pigmento tende ad accumularsi nelle cellule longeve con l'invecchiamento?","options":["Emoglobina","Bilirubina","Cheratina","Lipofuscina"],"correct":3,"explanation":"La lipofuscina è un prodotto di degradazione intracellulare che si accumula progressivamente soprattutto nelle cellule post-mitotiche."}
+      ]
+    }],
+    "pg-calcificazioni":[{
+      "id":"pg-calcificazioni-patologiche",
+      "title":"Calcificazioni patologiche",
+      "subtitle":"Calcificazione distrofica e metastatica",
+      "duration":"13 min",
+      "source":"PATOLOGIA GENERALE definitivo.pdf",
+      "references":["https://pubmed.ncbi.nlm.nih.gov/39389897/","https://pubmed.ncbi.nlm.nih.gov/21679810/"],
+      "blocks":[
+        {"type":"intro","title":"Obiettivo della lezione","text":"Distinguere la calcificazione distrofica da quella metastatica sulla base del tessuto coinvolto e dello stato del metabolismo calcio-fosforo."},
+        {"type":"text","title":"Depositi di sali di calcio","text":"La calcificazione patologica è la deposizione anomala di sali di calcio nei tessuti. La distinzione classica separa una forma distrofica, che interessa tessuti danneggiati o necrotici, da una forma metastatica, legata a un'alterazione sistemica del metabolismo del calcio e/o del fosfato."},
+        {"type":"key","title":"Distrofica vs metastatica","items":["Distrofica: deposito in tessuti lesionati o necrotici, con calcemia spesso normale.","Metastatica: deposito in tessuti altrimenti vitali favorito da ipercalcemia e/o iperfosfatemia o da alterazioni del metabolismo minerale.","Le sedi e le conseguenze dipendono dal contesto clinico e dal tessuto coinvolto."]},
+        {"type":"recall","question":"Quale elemento distingue soprattutto la calcificazione distrofica da quella metastatica?","answer":"La distrofica insorge localmente in tessuti danneggiati anche con calcemia normale; la metastatica riflette un'alterazione sistemica del metabolismo calcio-fosforo."},
+        {"type":"checkpoint","question":"In quale situazione è più coerente parlare di calcificazione distrofica?","options":["Deposito di calcio in un'area di necrosi","Ipercalcemia sistemica con depositi diffusi","Aumento fisiologico della mineralizzazione ossea","Ipervitaminosi senza deposito tissutale"],"correct":0,"explanation":"La calcificazione distrofica si sviluppa tipicamente in tessuti precedentemente danneggiati o necrotici."},
+        {"type":"checkpoint","question":"Quale condizione favorisce maggiormente una calcificazione metastatica?","options":["Trauma locale con calcemia normale","Aumento sistemico di calcio e/o fosfato","Riduzione isolata della melanina","Atrofia da disuso"],"correct":1,"explanation":"La calcificazione metastatica è legata a squilibri sistemici del metabolismo minerale."}
+      ]
+    }],
+    "pg-ferite":[{
+      "id":"pg-guarigione-ferite",
+      "title":"Guarigione delle ferite",
+      "subtitle":"Fasi della riparazione, prima e seconda intenzione e complicanze",
+      "duration":"17 min",
+      "source":"PATOLOGIA GENERALE definitivo.pdf",
+      "references":["https://pubmed.ncbi.nlm.nih.gov/30571027/","https://pubmed.ncbi.nlm.nih.gov/864076/"],
+      "blocks":[
+        {"type":"intro","title":"Obiettivo della lezione","text":"Seguire le fasi fondamentali della guarigione e distinguere una ferita che guarisce per prima intenzione da una che guarisce per seconda intenzione."},
+        {"type":"text","title":"Un processo sovrapposto, non a compartimenti rigidi","text":"La guarigione procede attraverso fasi che si sovrappongono: emostasi, infiammazione, proliferazione e rimodellamento. Durante la fase proliferativa si formano nuovi vasi, tessuto di granulazione e nuova matrice extracellulare; nella fase di rimodellamento il collagene viene riorganizzato e la cicatrice matura."},
+        {"type":"key","title":"Prima e seconda intenzione","items":["Prima intenzione: margini ben accostati, ridotta perdita di tessuto e cicatrice generalmente più contenuta.","Seconda intenzione: perdita di tessuto maggiore, necessità di più tessuto di granulazione, contrazione della ferita e cicatrice più ampia.","Infezione, ipossia, malnutrizione, alterata perfusione e alcune terapie possono rallentare la guarigione.","Deiscenza e cicatrizzazione eccessiva sono possibili complicanze."]},
+        {"type":"text","title":"Cheloide e cicatrice ipertrofica","text":"Entrambe rappresentano un'eccessiva deposizione cicatriziale. La cicatrice ipertrofica resta confinata ai margini della ferita; il cheloide tende invece a estendersi oltre i limiti originari della lesione."},
+        {"type":"recall","question":"Quali sono le quattro fasi generali della guarigione?","answer":"Emostasi, infiammazione, proliferazione e rimodellamento, con sovrapposizione temporale tra le fasi."},
+        {"type":"checkpoint","question":"Quale caratteristica è tipica della guarigione per seconda intenzione?","options":["Margini perfettamente accostati","Assenza di tessuto di granulazione","Maggiore perdita di tessuto e contrazione della ferita","Cicatrice sempre invisibile"],"correct":2,"explanation":"La seconda intenzione richiede più tessuto di granulazione e contrazione perché la perdita di sostanza è maggiore."},
+        {"type":"checkpoint","question":"Quale lesione cicatriziale supera i margini originari della ferita?","options":["Cheloide","Ecchimosi","Escoriazione","Cicatrice atrofica fisiologica"],"correct":0,"explanation":"Il cheloide si estende oltre i confini iniziali della ferita, a differenza della cicatrice ipertrofica."}
+      ]
+    }],
+    "pg-emodinamici":[{
+      "id":"pg-disturbi-emodinamici",
+      "title":"Disturbi emodinamici",
+      "subtitle":"Iperemia, congestione, edema ed emorragia",
+      "duration":"16 min",
+      "source":"PATOLOGIA GENERALE definitivo.pdf",
+      "references":["https://www.ncbi.nlm.nih.gov/sites/books/NBK537065/","https://pubmed.ncbi.nlm.nih.gov/36868727/"],
+      "blocks":[
+        {"type":"intro","title":"Obiettivo della lezione","text":"Distinguere alterazioni del flusso e della distribuzione dei liquidi e collegarle ai principali meccanismi fisiopatologici."},
+        {"type":"text","title":"Iperemia e congestione","text":"L'iperemia è un processo attivo dovuto all'aumento dell'afflusso arterioso, per esempio durante infiammazione o esercizio. La congestione è invece un processo passivo dovuto a ostacolato deflusso venoso, con accumulo di sangue e possibile ipossia tissutale se persistente."},
+        {"type":"key","title":"Perché si forma edema","items":["Aumento della pressione idrostatica capillare.","Riduzione della pressione oncotica plasmatica.","Aumento della permeabilità vascolare.","Ostruzione o insufficienza del drenaggio linfatico.","Ritenzione di sodio e acqua può favorire o aggravare l'espansione del compartimento extracellulare."]},
+        {"type":"text","title":"Emorragia","text":"L'emorragia è la fuoriuscita di sangue dal compartimento vascolare. Può essere esterna o interna e la rilevanza clinica dipende da sede, volume, velocità della perdita e capacità di compenso."},
+        {"type":"recall","question":"Qual è la differenza essenziale tra iperemia e congestione?","answer":"L'iperemia è un aumento attivo dell'afflusso arterioso; la congestione è un accumulo passivo dovuto a ostacolo del deflusso venoso."},
+        {"type":"checkpoint","question":"Quale meccanismo favorisce direttamente la formazione di edema?","options":["Aumento della pressione oncotica plasmatica","Aumento della pressione idrostatica capillare","Riduzione della permeabilità vascolare","Aumento del drenaggio linfatico"],"correct":1,"explanation":"L'aumento della pressione idrostatica favorisce la filtrazione di liquido dal capillare verso l'interstizio."},
+        {"type":"checkpoint","question":"La congestione è principalmente conseguenza di:","options":["Aumento attivo dell'afflusso arterioso","Aumento della eritropoiesi","Ostacolato deflusso venoso","Riduzione dei leucociti"],"correct":2,"explanation":"La congestione è un fenomeno passivo legato alla difficoltà di drenaggio venoso."}
+      ]
+    }],
+    "pg-trombosi":[{
+      "id":"pg-emostasi-trombosi",
+      "title":"Emostasi e trombosi",
+      "subtitle":"Emostasi fisiologica, triade di Virchow e formazione del trombo",
+      "duration":"18 min",
+      "source":"PATOLOGIA GENERALE definitivo.pdf",
+      "references":["https://pubmed.ncbi.nlm.nih.gov/22104070/","https://pmc.ncbi.nlm.nih.gov/articles/PMC11547114/"],
+      "blocks":[
+        {"type":"intro","title":"Obiettivo della lezione","text":"Distinguere l'emostasi fisiologica dalla trombosi patologica e ricordare i tre grandi fattori che favoriscono la formazione di un trombo."},
+        {"type":"text","title":"Emostasi: fermare il sanguinamento in modo localizzato","text":"Dopo una lesione vascolare, l'emostasi primaria porta ad adesione, attivazione e aggregazione piastrinica; l'emostasi secondaria stabilizza il tappo mediante la cascata coagulativa e la formazione di fibrina. La risposta deve rimanere localizzata alla sede di danno."},
+        {"type":"key","title":"Triade di Virchow","items":["Danno o disfunzione endoteliale.","Alterazioni del flusso ematico: stasi e turbolenza.","Ipercoagulabilità del sangue.","I tre fattori possono agire singolarmente ma spesso interagiscono tra loro."]},
+        {"type":"text","title":"Trombi arteriosi e venosi","text":"Nei distretti arteriosi l'elevato shear e il danno endoteliale favoriscono una componente piastrinica importante; nei distretti venosi la stasi favorisce coagulo ricco di fibrina ed eritrociti. La composizione reale è comunque variabile e dipende dal contesto."},
+        {"type":"recall","question":"Quali sono i tre elementi della triade di Virchow?","answer":"Alterazione della parete/endotelio, alterazione del flusso ematico e ipercoagulabilità."},
+        {"type":"checkpoint","question":"Quale elemento NON appartiene alla triade di Virchow?","options":["Danno endoteliale","Stasi o turbolenza","Ipercoagulabilità","Iperplasia epiteliale"],"correct":3,"explanation":"La triade comprende parete vascolare, flusso e composizione/coagulabilità del sangue."},
+        {"type":"checkpoint","question":"Che cosa stabilizza il tappo piastrinico nell'emostasi secondaria?","options":["Fibrina","Melanina","Bilirubina","Collagene cicatriziale maturo"],"correct":0,"explanation":"La cascata della coagulazione genera fibrina che stabilizza il tappo emostatico."}
+      ]
+    }],
+    "pg-embolia":[{
+      "id":"pg-embolia",
+      "title":"Embolia",
+      "subtitle":"Tromboembolia, embolia polmonare, sistemica, gassosa e adiposa",
+      "duration":"17 min",
+      "source":"PATOLOGIA GENERALE definitivo.pdf",
+      "references":["https://www.ncbi.nlm.nih.gov/books/NBK560551/","https://pubmed.ncbi.nlm.nih.gov/42375760/"],
+      "blocks":[
+        {"type":"intro","title":"Obiettivo della lezione","text":"Capire che cos'è un embolo e distinguere le principali forme di embolia in base al materiale trasportato e al distretto raggiunto."},
+        {"type":"text","title":"Definizione","text":"Un embolo è materiale intravascolare trasportato dal sangue che può occludere un vaso lontano dal punto di origine. Nella maggior parte dei casi clinici l'embolo è trombotico, ma esistono anche emboli gassosi, adiposi e di altra natura."},
+        {"type":"key","title":"Principali forme","items":["Tromboembolia polmonare: spesso deriva da una trombosi venosa profonda degli arti inferiori e raggiunge l'arteria polmonare.","Tromboembolia sistemica: un embolo entra nel circolo arterioso sistemico e può raggiungere cervello, reni, milza o arti.","Embolia gassosa: bolle di gas nel circolo possono ostacolare il flusso e provocare ischemia.","Embolia adiposa: gocce lipidiche possono entrare nel circolo soprattutto dopo traumi ortopedici; la sindrome da embolia adiposa è una manifestazione clinica sistemica distinta dalla semplice presenza di microemboli adiposi."]},
+        {"type":"text","title":"Il danno dipende da sede e carico embolico","text":"La conseguenza varia da assenza di sintomi a grave compromissione emodinamica o ischemica. Nella tromboembolia polmonare l'impatto dipende da quantità, dimensione e sede dell'ostruzione e dalla riserva cardiopolmonare."},
+        {"type":"recall","question":"Da dove origina più frequentemente una tromboembolia polmonare?","answer":"Da trombi delle vene profonde, soprattutto degli arti inferiori, che si frammentano e raggiungono il circolo polmonare."},
+        {"type":"checkpoint","question":"Quale materiale costituisce la forma più comune di embolo clinicamente rilevante?","options":["Gas","Tessuto osseo","Materiale trombotico","Melanina"],"correct":2,"explanation":"La tromboembolia è la forma più comune: un frammento di trombo viene trasportato a distanza."},
+        {"type":"checkpoint","question":"La sindrome da embolia adiposa è più frequentemente associata a:","options":["Fratture di ossa lunghe e trauma ortopedico","Iperplasia prostatica","Gastrite cronica","Ipotiroidismo"],"correct":0,"explanation":"Il trauma ortopedico, in particolare delle ossa lunghe, è il contesto classico della sindrome da embolia adiposa."}
+      ]
+    }],
+    "pg-infarto":[{
+      "id":"pg-infarto",
+      "title":"Infarto",
+      "subtitle":"Necrosi ischemica, infarti pallidi ed emorragici e fattori che ne modulano l'estensione",
+      "duration":"16 min",
+      "source":"PATOLOGIA GENERALE definitivo.pdf",
+      "references":["https://pubmed.ncbi.nlm.nih.gov/28317476/","https://pubmed.ncbi.nlm.nih.gov/42652987/"],
+      "blocks":[
+        {"type":"intro","title":"Obiettivo della lezione","text":"Comprendere l'infarto come necrosi ischemica e collegarne l'aspetto al tipo di vascolarizzazione e alla presenza o meno di riperfusione."},
+        {"type":"text","title":"Dall'ischemia all'infarto","text":"Quando l'interruzione del flusso sanguigno è sufficientemente intensa e prolungata, l'ischemia supera la capacità di sopravvivenza del tessuto e produce necrosi. Nel miocardio la forma classica di necrosi ischemica è la necrosi coagulativa."},
+        {"type":"key","title":"Infarto pallido e infarto emorragico","items":["Infarti pallidi: più tipici di organi solidi con circolazione terminale, come cuore, rene e milza.","Infarti emorragici: favoriti da tessuti con doppia vascolarizzazione, congestione venosa, riperfusione o occlusione venosa.","Il cervello rappresenta un'eccezione importante: l'ischemia cerebrale evolve tipicamente verso necrosi colliquativa."]},
+        {"type":"text","title":"Fattori che influenzano l'estensione","text":"Contano rapidità dell'occlusione, durata dell'ischemia, presenza di circoli collaterali, vulnerabilità del tessuto e contenuto di ossigeno del sangue. Una riperfusione precoce può salvare tessuto, ma può anche modificare la morfologia della lesione."},
+        {"type":"recall","question":"Qual è il tipo di necrosi classico dell'infarto miocardico?","answer":"Necrosi coagulativa."},
+        {"type":"checkpoint","question":"Quale organo è tipicamente associato a un infarto pallido?","options":["Polmone","Intestino con congestione","Rene","Tessuto già riperfuso"],"correct":2,"explanation":"Gli organi solidi con circolazione terminale, come il rene, sviluppano tipicamente infarti pallidi."},
+        {"type":"checkpoint","question":"Quale fattore può limitare l'estensione di un infarto?","options":["Assenza di qualunque circolo collaterale","Presenza di circoli collaterali efficienti","Ipercoagulabilità marcata","Occlusione completa e prolungata"],"correct":1,"explanation":"Una buona circolazione collaterale può mantenere perfusione residua e limitare la necrosi ischemica."}
+      ]
+    }],
+    "pg-shock":[{
+      "id":"pg-shock",
+      "title":"Shock",
+      "subtitle":"Ipovolemico, cardiogeno, distributivo e principali meccanismi di ipoperfusione",
+      "duration":"18 min",
+      "source":"PATOLOGIA GENERALE definitivo.pdf",
+      "references":["https://pubmed.ncbi.nlm.nih.gov/36871993/","https://pubmed.ncbi.nlm.nih.gov/30573009/"],
+      "blocks":[
+        {"type":"intro","title":"Obiettivo della lezione","text":"Definire lo shock come insufficienza circolatoria con inadeguata perfusione tissutale e distinguere i principali meccanismi emodinamici."},
+        {"type":"text","title":"Il denominatore comune","text":"Nello shock il sistema circolatorio non riesce a garantire un adeguato apporto di ossigeno e substrati ai tessuti. Se l'ipoperfusione persiste, la disfunzione cellulare può progredire fino al danno d'organo multiplo."},
+        {"type":"key","title":"Quattro grandi categorie","items":["Ipovolemico: riduzione del volume intravascolare, per esempio da emorragia o perdita importante di liquidi.","Cardiogeno: insufficienza della pompa cardiaca.","Ostruttivo: ostacolo meccanico al riempimento o all'eiezione del cuore.","Distributivo: vasodilatazione e distribuzione anomala del flusso; comprende shock settico, anafilattico e neurogeno."]},
+        {"type":"text","title":"Progressione dello shock","text":"I meccanismi compensatori cercano inizialmente di mantenere pressione e perfusione degli organi vitali. Se la causa persiste, l'ipoperfusione induce alterazioni metaboliche, endoteliali e microcircolatorie che rendono progressivamente più difficile il recupero."},
+        {"type":"recall","question":"Qual è il problema fisiopatologico comune a tutte le forme di shock?","answer":"L'inadeguata perfusione tissutale con insufficiente disponibilità di ossigeno e substrati rispetto alle necessità cellulari."},
+        {"type":"checkpoint","question":"Lo shock settico appartiene principalmente a quale categoria?","options":["Cardiogeno","Distributivo","Ostruttivo","Emorragico puro"],"correct":1,"explanation":"Lo shock settico è una forma di shock distributivo caratterizzata da grave alterazione del tono vascolare e della microcircolazione."},
+        {"type":"checkpoint","question":"Quale situazione è tipica dello shock ipovolemico?","options":["Perdita importante di sangue","Tamponamento cardiaco","Infarto con grave disfunzione di pompa","Anafilassi"],"correct":0,"explanation":"La perdita di volume intravascolare, per esempio per emorragia, è il meccanismo fondamentale dello shock ipovolemico."}
+      ]
+    }],
+    "pg-bilirubina":[{
+      "id":"pg-bilirubina",
+      "title":"Pigmenti e metabolismo della bilirubina",
+      "subtitle":"Dal catabolismo dell'eme alla coniugazione epatica, bile e ittero",
+      "duration":"17 min",
+      "source":"PATOLOGIA GENERALE definitivo.pdf",
+      "references":["https://www.ncbi.nlm.nih.gov/books/NBK544252/","https://pubmed.ncbi.nlm.nih.gov/24151358/"],
+      "blocks":[
+        {"type":"intro","title":"Obiettivo della lezione","text":"Seguire il percorso della bilirubina dalla degradazione dell'eme all'escrezione e distinguere bilirubina non coniugata e coniugata."},
+        {"type":"text","title":"Dall'eme alla bilirubina","text":"La degradazione dell'eme produce biliverdina, successivamente ridotta a bilirubina non coniugata. Questa forma è lipofila e nel plasma viaggia legata all'albumina fino al fegato."},
+        {"type":"key","title":"Le tappe essenziali","items":["Produzione: eme → biliverdina → bilirubina non coniugata.","Trasporto plasmatico: bilirubina non coniugata legata all'albumina.","Coniugazione epatica: UGT1A1 aggiunge acido glucuronico, rendendo la bilirubina più idrosolubile.","Escrezione: bilirubina coniugata secreta nella bile e trasferita all'intestino.","Metabolismo intestinale: formazione di urobilinogeno e prodotti eliminati soprattutto con le feci; una quota viene riassorbita ed escreta nelle urine."]},
+        {"type":"text","title":"Ittero: dove può essere il problema","text":"Un aumento della bilirubina non coniugata può derivare da aumentata produzione, ridotta captazione epatica o difetto di coniugazione. L'aumento della bilirubina coniugata orienta invece verso difetti di escrezione, colestasi o danno epatocellulare, pur con possibili quadri misti."},
+        {"type":"recall","question":"Perché la coniugazione epatica è fondamentale?","answer":"Trasforma la bilirubina lipofila e poco idrosolubile in bilirubina glucuronata più idrosolubile, permettendone l'escrezione nella bile."},
+        {"type":"checkpoint","question":"Quale enzima è fondamentale per la coniugazione della bilirubina?","options":["Elastasi","UGT1A1","Trombina","Mieloperossidasi"],"correct":1,"explanation":"UGT1A1 coniuga la bilirubina con acido glucuronico negli epatociti."},
+        {"type":"checkpoint","question":"Come circola principalmente la bilirubina non coniugata nel plasma?","options":["Libera in soluzione acquosa","Legata alla fibrina","Legata all'albumina","All'interno delle piastrine"],"correct":2,"explanation":"La bilirubina non coniugata è lipofila e viene trasportata nel sangue soprattutto legata all'albumina."}
+      ]
+    }]
+  }
+}
