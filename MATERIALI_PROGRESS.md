@@ -6,7 +6,7 @@ Ultimo aggiornamento: 15 settembre 2026
 
 La seconda area di StudyHub, **Materiali**, è integrata nel repository e collegata alla homepage.
 
-File introdotti:
+File principali:
 
 - `materiali.html` — pagina Biblioteca;
 - `materiali.css` — stile Apple-like coerente con `studyhub.css`;
@@ -17,7 +17,7 @@ La homepage `index.html` contiene l'accesso a `materiali.html` senza modificare 
 
 ## PDF pubblicati e attivi nel repository
 
-Sono attualmente presenti sul branch `main` **10 PDF reali**, ora collegati direttamente alla Biblioteca.
+Sono attualmente collegati alla Biblioteca **16 PDF reali**.
 
 ### Anatomia Patologica — 6/6 attivi
 
@@ -27,8 +27,6 @@ Sono attualmente presenti sul branch `main` **10 PDF reali**, ora collegati dire
 4. `Microbiologia.pdf`
 5. `Microbiologia compendio.pdf`
 6. `PATOLOGIA GENERALE definitivo.pdf`
-
-Per questi documenti sono attivi sia **Apri** nel lettore integrato sia **Scarica**.
 
 ### Paziente chirurgico — 4 attivi, 2 ancora solo catalogati
 
@@ -44,9 +42,16 @@ Ancora catalogati ma non presenti nel repository:
 - `ASSISTENZA INFERMIERISTICA NEL PAZIENTE CHIRURGICO .pdf`
 - `Il_Paziente_Chirurgico_-_Sintesi_Esame.pdf`
 
-### Infermieristica nel Materno
+### Infermieristica nel Materno — 6/6 attivi
 
-Il catalogo è predisposto, ma i PDF `PEDIATRIA.pdf`, `1.pdf` e `2.pdf` non risultano ancora presenti sul branch `main`; i relativi pulsanti rimangono quindi disabilitati per evitare link inesistenti.
+1. `PEDIATRIA.pdf` — Compendio Pediatria
+2. `COMPENDEIO INFE PED.pdf` — Compendio Infermieristica Pediatrica
+3. `COMPENDIO GINE.pdf` — Compendio Ginecologia
+4. `COMPENDIO OSTETRICIA.pdf` — Compendio Ostetricia
+5. `1.pdf` — Slide Materno 1
+6. `2.pdf` — Slide Materno 2
+
+I due file numerici sono volutamente mostrati con titoli neutrali finché il contenuto non viene rinominato o identificato con certezza.
 
 ### Scienze della Salute
 
