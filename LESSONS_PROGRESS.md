@@ -16,7 +16,8 @@ File principali:
 - `data/lezioni.json` — catalogo gerarchico esami → materie → capitoli → lezioni;
 - `data/lezioni-eziologia.json` + `lezioni-eziologia-loader.js` — pacchetto Eziologia Generale;
 - `data/lezioni-patologia-1.json`, `data/lezioni-patologia-2.json` + `lezioni-patologia-loader.js` — pacchetto Patologia Generale;
-- `data/lezioni-immunologia-1.json`, `data/lezioni-immunologia-2.json` + `lezioni-immunologia-loader.js` — pacchetto Immunologia.
+- `data/lezioni-immunologia-1.json`, `data/lezioni-immunologia-2.json` + `lezioni-immunologia-loader.js` — pacchetto Immunologia;
+- `data/lezioni-anatomia-patologica-1.json`, `data/lezioni-anatomia-patologica-2.json`, `data/lezioni-anatomia-patologica-3.json` + `lezioni-anatomia-patologica-loader.js` — pacchetto Anatomia Patologica.
 
 ## Architettura corrente
 
@@ -26,28 +27,28 @@ La navigazione Lezioni è:
 
 La homepage Lezioni mostra gli esami. Al momento **Anatomia Patologica** è il percorso strutturato e apribile; Paziente chirurgico, Infermieristica nel Materno e Scienze della Salute restano predisposti come estensioni future.
 
-### Anatomia Patologica
+### Esame Anatomia Patologica
 
-All'apertura dell'esame vengono mostrate le quattro materie nell'ordine didattico concordato:
+All'apertura vengono mostrate le quattro materie nell'ordine didattico concordato:
 
 1. **Eziologia Generale**
 2. **Patologia Generale**
 3. **Immunologia**
 4. **Anatomia Patologica**
 
-Roadmap:
+Roadmap e copertura reale:
 
 - Eziologia Generale: **8 capitoli / 8 lezioni attive**;
 - Patologia Generale: **20 capitoli / 10 lezioni attive**;
 - Immunologia: **16 capitoli / 12 lezioni attive**;
-- Anatomia Patologica: **19 capitoli / 3 lezioni attive**;
-- totale: **63 capitoli mappati / 33 lezioni interattive attive**.
+- Anatomia Patologica: **19 capitoli / 17 lezioni attive**;
+- totale: **63 capitoli mappati / 47 lezioni interattive attive**.
 
-I capitoli non ancora convertiti mostrano chiaramente **IN PREPARAZIONE**.
+I capitoli non convertiti mostrano chiaramente **IN PREPARAZIONE**.
 
 ## Eziologia Generale — COMPLETA 8/8
 
-Sono attive le lezioni:
+Sono attive:
 
 1. Concetti fondamentali di eziologia
 2. Agenti fisici
@@ -58,81 +59,96 @@ Sono attive le lezioni:
 7. Radicali liberi e stress ossidativo
 8. Invecchiamento cellulare
 
-Fonti primarie:
+Fonti primarie: `Eziologia generale STAMPATO.pdf` e, dove necessario, `PATOLOGIA GENERALE definitivo.pdf`.
 
-- `Eziologia generale STAMPATO.pdf`;
-- `PATOLOGIA GENERALE definitivo.pdf` dove necessario per parti presenti nel materiale del corso.
+## Patologia Generale — 10/20
 
-## Patologia Generale — 10/20 capitoli con lezione attiva
+Lezioni attive:
 
-Sono state pubblicate solo lezioni supportate direttamente dai materiali reali del corso:
+1. Danno cellulare
+2. Morte cellulare
+3. Infiammazione acuta
+4. Reclutamento leucocitario
+5. Mediatori dell'infiammazione
+6. Esiti dell'infiammazione acuta
+7. Infiammazione cronica
+8. Infiammazione granulomatosa
+9. Riparazione tissutale
+10. Amiloidosi
 
-1. **Danno cellulare**
-2. **Morte cellulare**
-3. **Infiammazione acuta**
-4. **Reclutamento leucocitario**
-5. **Mediatori dell'infiammazione**
-6. **Esiti dell'infiammazione acuta**
-7. **Infiammazione cronica**
-8. **Infiammazione granulomatosa**
-9. **Riparazione tissutale**
-10. **Amiloidosi**
-
-Fonti:
-
-- `PATOLOGIA GENERALE definitivo.pdf` come fonte primaria delle prime nove lezioni;
-- `ANATOMIA PATOLOGICA.pdf` per la lezione sull'amiloide.
+Fonti: `PATOLOGIA GENERALE definitivo.pdf`; `ANATOMIA PATOLOGICA.pdf` per l'amiloide.
 
 Restano volutamente in preparazione, per insufficiente copertura diretta nei materiali verificati: adattamenti cellulari completi, accumuli intracellulari, calcificazioni patologiche, guarigione delle ferite, disturbi emodinamici generali, emostasi/trombosi, embolia, infarto, shock, pigmenti/metabolismo della bilirubina.
 
-## Immunologia — 12/16 capitoli con lezione attiva
+## Immunologia — 12/16
 
 Fonte primaria: `Immunologia STAMPATO.pdf`.
 
-Sono attive:
+Lezioni attive:
 
-1. **Introduzione al sistema immunitario**
-2. **Immunità innata**
-3. **Fagocitosi**
-4. **Sistema del complemento**
-5. **Antigeni e anticorpi**
-6. **Linfociti B**
-7. **MHC e presentazione dell'antigene**
-8. **Linfociti T**
-9. **Sottopopolazioni T helper**
-10. **Citotossicità**
-11. **Citochine**
-12. **Ipersensibilità**
+1. Introduzione al sistema immunitario
+2. Immunità innata
+3. Fagocitosi
+4. Sistema del complemento
+5. Antigeni e anticorpi
+6. Linfociti B
+7. MHC e presentazione dell'antigene
+8. Linfociti T
+9. Sottopopolazioni T helper
+10. Citotossicità
+11. Citochine
+12. Ipersensibilità
 
 ### Precisazioni scientifiche applicate
 
-Sono state corrette solo imprecisioni già note, senza attribuire al PDF contenuti assenti:
+- “via leptinica” degli appunti → **via lectinica del complemento**, mediata dalla **mannose-binding lectin (MBL)**;
+- cellule dendritiche indicate come APC **più efficaci** nell'attivazione dei T vergini, evitando l'assoluto “uniche cellule costimolatorie”;
+- MHC I descritto sulla grande maggioranza delle cellule nucleate;
+- perforina/granzimi presentati principalmente come meccanismo di induzione dell'apoptosi.
 
-- la cosiddetta “via leptinica” degli appunti è indicata correttamente come **via lectinica del complemento**, mediata dalla **mannose-binding lectin (MBL)**;
-- le cellule dendritiche sono descritte come le APC **più efficaci** nell'attivazione dei T vergini, evitando l'assoluto “uniche cellule costimolatorie”;
-- MHC I è descritto sulla grande maggioranza delle cellule nucleate;
-- perforina/granzimi sono presentati principalmente come meccanismo di induzione dell'apoptosi.
+Restano in preparazione per copertura insufficiente nel compendio: Autoimmunità, Immunodeficienze, Immunologia dei trapianti, Immunità antitumorale.
 
-### Capitoli Immunologia lasciati volutamente in preparazione
+## Anatomia Patologica — 17/19
 
-Il compendio contiene solo riferimenti parziali e non sufficienti per costruire una lezione completa secondo la roadmap:
+Fonti primarie: `ANATOMIA PATOLOGICA.pdf` e, per concetti di invasione/metastasi/neoplasia, `PATOLOGIA GENERALE definitivo.pdf` dello stesso esame.
 
-- **Autoimmunità** — presenti tolleranza ed esempi, ma non abbastanza per sviluppare in modo completo tolleranza centrale/periferica e meccanismi;
-- **Immunodeficienze** — presenti esempi e richiami, ma non una trattazione sistematica delle forme primitive/secondarie;
-- **Immunologia dei trapianti** — è presente il concetto di compatibilità MHC/HLA, ma non una trattazione completa di rigetto iperacuto, acuto e cronico;
-- **Immunità antitumorale** — sono presenti immunosorveglianza e NK, ma non abbastanza materiale per sviluppare antigeni tumorali, evasione e checkpoint immunitari.
+Le 3 lezioni pilota preesistenti mantengono gli stessi ID e quindi la compatibilità con i progressi già salvati:
 
-Questi quattro capitoli restano **IN PREPARAZIONE** invece di essere riempiti con contenuti non presenti nei materiali dell'utente.
+- Citologia diagnostica
+- Classificazione delle neoplasie
+- Grading e staging
 
-## Anatomia Patologica — 3 lezioni già attive
+Sono state aggiunte 14 lezioni grounded:
 
-Le tre lezioni pilota restano nei rispettivi capitoli e mantengono gli ID originali, quindi i progressi browser restano compatibili:
+1. **Introduzione all'Anatomia Patologica**
+2. **Prelievo e campionamento**
+3. **Fissazione del campione**
+4. **Processazione istologica**
+5. **Colorazioni istologiche e istochimica**
+6. **Immunoistochimica**
+7. **Diagnostica molecolare**
+8. **Esame intraoperatorio al congelatore**
+9. **Neoplasia: concetti fondamentali**
+10. **Invasione tumorale**
+11. **Metastasi**
+12. **Biomarcatori tumorali**
+13. **Qualità del campione**
+14. **Autopsia e riscontro diagnostico**
 
-1. **Citologia diagnostica**
-2. **Classificazione delle neoplasie**
-3. **Grading e staging**
+### Capitoli Anatomia Patologica lasciati volutamente in preparazione
 
-Fonte primaria: `ANATOMIA PATOLOGICA.pdf`.
+- **Citologia cervico-vaginale** — il materiale contiene Pap test e citologia abrasiva, ma la roadmap richiede anche HPV e screening cervicale; non vengono trasformate in indicazioni attuali eventuali nozioni datate degli appunti senza una verifica dedicata.
+- **Refertazione anatomopatologica** — istotipo, grading, staging, margini, linfonodi e biomarcatori sono presenti separatamente nei materiali, ma non è stata trovata una trattazione abbastanza organica del referto completo da giustificare una lezione autonoma senza integrare contenuti esterni.
+
+### Precisazioni scientifiche applicate in Anatomia Patologica
+
+- formalina al 10% descritta correttamente come soluzione contenente circa il 4% di formaldeide;
+- ritardo alla fissazione trattato come variabile preanalitica rilevante;
+- Rosso Congo associato all'amiloide e alla birifrangenza verde mela;
+- Ki-67 descritto come indice proliferativo il cui significato dipende dal contesto tumorale;
+- frozen section presentata come consulenza intraoperatoria selettiva, con limiti di campionamento e artefatti, seguita dall'esame definitivo;
+- grading e staging mantenuti distinti;
+- T/N/M descritti rispettivamente come tumore primitivo, linfonodi regionali e metastasi a distanza, con criteri specifici dipendenti dalla sede.
 
 ## Funzioni implementate
 
@@ -159,10 +175,12 @@ Fonte primaria: `ANATOMIA PATOLOGICA.pdf`.
 
 ## Prossimo sviluppo
 
-Proseguire nell'ordine didattico:
+Per l'esame Anatomia Patologica restano **16 capitoli della roadmap non attivati** perché non sufficientemente coperti dai materiali già verificati: 10 di Patologia Generale, 4 di Immunologia e 2 di Anatomia Patologica.
 
-1. completare eventuali capitoli di Patologia Generale solo se supportati da materiali reali aggiuntivi;
-2. completare eventuali 4 capitoli Immunologia solo quando supportati da materiale sufficiente;
-3. **Anatomia Patologica** — completare i capitoli ancora senza lezione usando `ANATOMIA PATOLOGICA.pdf`.
+Prossimi passi possibili:
+
+1. attivare questi capitoli solo quando viene individuato materiale universitario sufficiente o dopo un'integrazione esterna esplicitamente autorizzata e verificata;
+2. iniziare il percorso Lezioni di **Infermieristica nel Materno** usando i PDF reali già presenti;
+3. iniziare il percorso Lezioni di **Paziente chirurgico** usando i PDF reali già presenti.
 
 Per ogni capitolo mantenere lo schema StudyHub: **spiegazione → concetti chiave → active recall → checkpoint → materiale originale → quiz collegato**.
