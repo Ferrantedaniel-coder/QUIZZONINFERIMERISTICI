@@ -1,0 +1,74 @@
+{
+  "version":"2026-09-15-immunologia-completa-1",
+  "disciplineId":"immunologia",
+  "chapters":{
+    "im-autoimmunita":[{
+      "id":"im-autoimmunita",
+      "title":"Autoimmunità",
+      "subtitle":"Tolleranza centrale e periferica, perdita della tolleranza e autoanticorpi",
+      "duration":"18 min",
+      "source":"Immunologia STAMPATO.pdf",
+      "references":["https://pubmed.ncbi.nlm.nih.gov/22661634/","https://www.ncbi.nlm.nih.gov/books/NBK576418/"],
+      "blocks":[
+        {"type":"intro","title":"Obiettivo della lezione","text":"Capire come il sistema immunitario mantiene la tolleranza verso il self e come il fallimento dei meccanismi di controllo può permettere lo sviluppo di autoimmunità."},
+        {"type":"text","title":"Tolleranza immunologica","text":"La tolleranza impedisce che linfociti autoreattivi provochino danno ai tessuti dell'organismo. La tolleranza centrale agisce durante la maturazione dei linfociti negli organi linfoidi primari; la tolleranza periferica controlla invece le cellule autoreattive che raggiungono i tessuti periferici."},
+        {"type":"key","title":"Meccanismi fondamentali","items":["Tolleranza centrale dei T: selezione timica con eliminazione o deviazione regolatoria dei cloni fortemente autoreattivi.","Tolleranza centrale dei B: eliminazione, anergia o editing del recettore in risposta al self.","Tolleranza periferica: anergia, delezione e soppressione da parte dei linfociti T regolatori.","La perdita combinata di questi controlli può permettere l'attivazione di linfociti autoreattivi e la produzione di autoanticorpi."]},
+        {"type":"text","title":"Perché compare una malattia autoimmune","text":"L'autoimmunità è multifattoriale. Predisposizione genetica, alterazioni della regolazione immunitaria e fattori ambientali possono cooperare. Alcune infezioni possono favorire l'attivazione di cloni autoreattivi attraverso infiammazione intensa o reattività crociata, senza che questo rappresenti un meccanismo universale per tutte le malattie autoimmuni."},
+        {"type":"recall","question":"Qual è la differenza essenziale tra tolleranza centrale e periferica?","answer":"La centrale seleziona e controlla i linfociti durante la maturazione negli organi linfoidi primari; la periferica controlla i linfociti autoreattivi che sono sfuggiti alla selezione centrale."},
+        {"type":"checkpoint","question":"Quale meccanismo appartiene alla tolleranza periferica?","options":["Anergia dei linfociti autoreattivi","Coniugazione della bilirubina","Formazione di fibrina","Metaplasia epiteliale"],"correct":0,"explanation":"L'anergia è uno dei principali meccanismi con cui un linfocita autoreattivo viene reso funzionalmente non responsivo in periferia."},
+        {"type":"checkpoint","question":"Quale cellula contribuisce in modo importante alla soppressione periferica delle risposte autoreattive?","options":["Eritrocita","Neutrofilo maturo","Linfocita T regolatore","Megacariocita"],"correct":2,"explanation":"I linfociti T regolatori sono un elemento centrale della tolleranza periferica."}
+      ]
+    }],
+    "im-immunodeficienze":[{
+      "id":"im-immunodeficienze",
+      "title":"Immunodeficienze",
+      "subtitle":"Forme primitive e secondarie e principali compartimenti immunitari coinvolti",
+      "duration":"19 min",
+      "source":"Immunologia STAMPATO.pdf",
+      "references":["https://pubmed.ncbi.nlm.nih.gov/39294908/","https://pubmed.ncbi.nlm.nih.gov/32799060/"],
+      "blocks":[
+        {"type":"intro","title":"Obiettivo della lezione","text":"Distinguere immunodeficienze primitive e secondarie e collegare il tipo di difetto immunitario al rischio di infezioni e ad altre manifestazioni di disregolazione immunitaria."},
+        {"type":"text","title":"Primitive e secondarie","text":"Le immunodeficienze primitive, oggi spesso definite errori congeniti dell'immunità, derivano da alterazioni genetiche che compromettono sviluppo o funzione del sistema immunitario. Le forme secondarie sono acquisite e possono dipendere da infezioni, malnutrizione, neoplasie, perdita proteica o terapie immunosoppressive."},
+        {"type":"key","title":"Principali compartimenti che possono essere colpiti","items":["Difetti prevalentemente anticorpali o dei linfociti B.","Difetti dei linfociti T.","Immunodeficienze combinate con alterazione di più compartimenti adattativi.","Difetti della fagocitosi o della funzione dei fagociti.","Difetti del complemento.","Le forme secondarie possono imitare uno o più di questi pattern in base alla causa."]},
+        {"type":"text","title":"Non solo infezioni","text":"Una immunodeficienza può manifestarsi con infezioni ricorrenti, severe, opportunistiche o in sedi insolite, ma alcune forme si associano anche ad autoimmunità, infiammazione persistente, allergia, linfoproliferazione o aumento del rischio di neoplasie."},
+        {"type":"recall","question":"Qual è la distinzione fondamentale tra immunodeficienza primitiva e secondaria?","answer":"La primitiva deriva da un difetto intrinseco, spesso genetico, dell'immunità; la secondaria è acquisita a causa di malattie, terapie o condizioni esterne al sistema immunitario."},
+        {"type":"checkpoint","question":"Quale tra le seguenti è una possibile causa di immunodeficienza secondaria?","options":["Mutazione germinale di un gene immunitario come unica causa","Terapia immunosoppressiva","Selezione positiva timica fisiologica","Vaccinazione"],"correct":1,"explanation":"Farmaci immunosoppressori e alcuni trattamenti biologici possono causare immunodeficienza secondaria."},
+        {"type":"checkpoint","question":"Un difetto del complemento rientra tra:","options":["Le categorie di immunodeficienza","Le calcificazioni patologiche","Le forme di metaplasia","I disturbi della bilirubina"],"correct":0,"explanation":"Il complemento è una componente fondamentale dell'immunità innata e suoi difetti possono costituire immunodeficienze specifiche."}
+      ]
+    }],
+    "im-trapianti":[{
+      "id":"im-immunologia-trapianti",
+      "title":"Immunologia dei trapianti",
+      "subtitle":"HLA, riconoscimento dell'allotrapianto e rigetto iperacuto, acuto e cronico",
+      "duration":"20 min",
+      "source":"Immunologia STAMPATO.pdf",
+      "references":["https://www.ncbi.nlm.nih.gov/books/NBK535410/","https://pubmed.ncbi.nlm.nih.gov/37849755/"],
+      "blocks":[
+        {"type":"intro","title":"Obiettivo della lezione","text":"Capire perché il sistema immunitario riconosce il trapianto come non-self e distinguere i principali tipi di rigetto in base al meccanismo e alla tempistica."},
+        {"type":"text","title":"Alloriconoscimento e compatibilità","text":"Le molecole HLA del donatore rappresentano importanti bersagli dell'alloriconoscimento. La compatibilità HLA e il crossmatch pre-trapianto riducono il rischio di reazioni contro antigeni del donatore, ma non eliminano completamente la possibilità di rigetto."},
+        {"type":"key","title":"Tre forme principali di rigetto","items":["Iperacuto: dovuto soprattutto ad anticorpi preformati contro antigeni del donatore, con danno vascolare molto rapido dopo la rivascolarizzazione.","Acuto: può essere mediato da linfociti T e/o anticorpi e compare tipicamente nei giorni, settimane o mesi successivi al trapianto.","Cronico: processo progressivo in cui partecipano meccanismi immunitari e non immunitari, con danno vascolare e fibrosi del trapianto.","Gli anticorpi donor-specific anti-HLA sono associati a maggior rischio di rigetto e perdita del graft in diversi trapianti solidi."]},
+        {"type":"text","title":"Perché serve immunosoppressione","text":"L'immunosoppressione riduce l'attivazione e le funzioni effettrici responsabili del rigetto. Il trattamento deve però bilanciare protezione del graft e rischio di infezioni, tossicità farmacologica e neoplasie."},
+        {"type":"recall","question":"Qual è il meccanismo classico del rigetto iperacuto?","answer":"Anticorpi preformati nel ricevente contro antigeni del donatore, spesso HLA o ABO, che attivano rapidamente danno endoteliale e trombosi del graft."},
+        {"type":"checkpoint","question":"Quale forma di rigetto è più strettamente associata ad anticorpi preformati già presenti prima del trapianto?","options":["Cronico","Acuto tardivo","Iperacuto","Nessuna"],"correct":2,"explanation":"Il rigetto iperacuto è tipicamente mediato da anticorpi preesistenti nel ricevente."},
+        {"type":"checkpoint","question":"Quale affermazione sul rigetto acuto è corretta?","options":["Può essere mediato da linfociti T e/o anticorpi","È sempre non immunologico","Compare solo dopo decenni","Non coinvolge mai HLA"],"correct":0,"explanation":"Il rigetto acuto può essere cellulare T-mediato oppure anticorpo-mediato e coinvolge il riconoscimento di antigeni del donatore."}
+      ]
+    }],
+    "im-tumori":[{
+      "id":"im-immunita-antitumorale",
+      "title":"Immunità antitumorale",
+      "subtitle":"Immunosorveglianza, immunoediting, cellule effettrici ed evasione immunitaria",
+      "duration":"20 min",
+      "source":"Immunologia STAMPATO.pdf",
+      "references":["https://pubmed.ncbi.nlm.nih.gov/39748116/","https://www.cancer.gov/about-cancer/treatment/types/immunotherapy/checkpoint-inhibitors"],
+      "blocks":[
+        {"type":"intro","title":"Obiettivo della lezione","text":"Comprendere come il sistema immunitario riconosce cellule trasformate, come il tumore può essere selezionato dalla pressione immunitaria e come i checkpoint immunitari vengono sfruttati terapeuticamente."},
+        {"type":"text","title":"Immunosorveglianza e immunoediting","text":"Il sistema immunitario può riconoscere e distruggere cellule trasformate. L'immunoediting descrive una relazione dinamica in tre fasi: eliminazione delle cellule immunogeniche, equilibrio tra crescita tumorale e controllo immune, ed escape di varianti capaci di evitare o sopprimere la risposta immunitaria."},
+        {"type":"key","title":"Principali protagonisti","items":["Linfociti T CD8+: riconoscono peptidi tumorali presentati da MHC I e possono uccidere cellule bersaglio.","Cellule NK: contribuiscono al controllo di cellule con ridotta espressione di MHC I o segnali di stress.","Cellule dendritiche: presentano antigeni tumorali e possono attivare risposte T.","Citochine e cellule del microambiente possono favorire oppure ostacolare l'immunità antitumorale."]},
+        {"type":"text","title":"Come il tumore evade il sistema immunitario","text":"Le cellule tumorali possono ridurre presentazione antigenica, selezionare cloni meno immunogenici, creare un microambiente immunosoppressivo o sfruttare checkpoint fisiologici. L'asse PD-1/PD-L1 può frenare la funzione dei linfociti T; bloccarlo con anticorpi checkpoint-inhibitor può riattivare la risposta in tumori sensibili."},
+        {"type":"recall","question":"Quali sono le tre fasi classiche dell'immunoediting tumorale?","answer":"Eliminazione, equilibrio ed escape."},
+        {"type":"checkpoint","question":"Quale cellula può riconoscere efficacemente cellule con ridotta espressione di MHC I?","options":["Eritrocita","Cellula NK","Piastrina","Fibroblasto"],"correct":1,"explanation":"Le cellule NK sono particolarmente importanti nel riconoscimento di cellule che hanno perso o ridotto segnali MHC I."},
+        {"type":"checkpoint","question":"Che effetto produce fisiologicamente il legame PD-L1/PD-1 sui linfociti T?","options":["Aumenta sempre la citotossicità","Trasforma i T in neutrofili","Riduce l'attività del linfocita T","Produce direttamente anticorpi"],"correct":2,"explanation":"PD-1 è un checkpoint inibitorio: il legame con PD-L1 riduce la risposta dei linfociti T; gli inibitori del checkpoint bloccano questo freno."}
+      ]
+    }]
+  }
+}
