@@ -8,153 +8,197 @@ La terza area di StudyHub, **Lezioni**, è integrata nel repository e collegata 
 
 Slogan attivo: **“Leggi meno. Ricorda di più.”**
 
-File principali:
-
-- `lezioni.html` — interfaccia delle lezioni interattive;
-- `lezioni.css` — stile Apple-like coerente con StudyHub;
-- `lezioni.js` — motore interattivo e progressi locali;
-- `data/lezioni.json` — catalogo gerarchico esami → materie → capitoli → lezioni;
-- `data/lezioni-eziologia.json` + `lezioni-eziologia-loader.js` — pacchetto Eziologia Generale;
-- `data/lezioni-patologia-1.json`, `data/lezioni-patologia-2.json` + `lezioni-patologia-loader.js` — pacchetto Patologia Generale;
-- `data/lezioni-immunologia-1.json`, `data/lezioni-immunologia-2.json` + `lezioni-immunologia-loader.js` — pacchetto Immunologia;
-- `data/lezioni-anatomia-patologica-1.json`, `data/lezioni-anatomia-patologica-2.json`, `data/lezioni-anatomia-patologica-3.json` + `lezioni-anatomia-patologica-loader.js` — pacchetto Anatomia Patologica.
-
-## Architettura corrente
-
-La navigazione Lezioni è:
+La navigazione è:
 
 **Lezioni → Esame → Materia → Capitolo → Lezione interattiva**
 
-La homepage Lezioni mostra gli esami. Al momento **Anatomia Patologica** è il percorso strutturato e apribile; Paziente chirurgico, Infermieristica nel Materno e Scienze della Salute restano predisposti come estensioni future.
+Ogni lezione mantiene lo schema StudyHub:
 
-### Esame Anatomia Patologica
+**spiegazione → concetti chiave → active recall → checkpoint → materiale originale → quiz collegato**.
 
-All'apertura vengono mostrate le quattro materie nell'ordine didattico concordato:
+## Copertura complessiva
 
-1. **Eziologia Generale**
-2. **Patologia Generale**
-3. **Immunologia**
-4. **Anatomia Patologica**
+Sono ora strutturati e apribili due percorsi d'esame:
 
-Roadmap e copertura reale:
+- **Anatomia Patologica**: 63 capitoli mappati / 47 lezioni attive;
+- **Infermieristica nel Materno**: 62 capitoli / **62 lezioni attive**.
 
-- Eziologia Generale: **8 capitoli / 8 lezioni attive**;
-- Patologia Generale: **20 capitoli / 10 lezioni attive**;
-- Immunologia: **16 capitoli / 12 lezioni attive**;
-- Anatomia Patologica: **19 capitoli / 17 lezioni attive**;
-- totale: **63 capitoli mappati / 47 lezioni interattive attive**.
+Totale StudyHub Lezioni: **125 capitoli mappati / 109 lezioni interattive attive**.
 
-I capitoli non convertiti mostrano chiaramente **IN PREPARAZIONE**.
+Paziente chirurgico e Scienze della Salute restano predisposti come successive estensioni della sezione Lezioni.
 
-## Eziologia Generale — COMPLETA 8/8
+---
 
-Sono attive:
+# 1. Anatomia Patologica
 
-1. Concetti fondamentali di eziologia
-2. Agenti fisici
-3. Agenti chimici e tossici
-4. Agenti biologici
-5. Fattori nutrizionali
-6. Fattori genetici
-7. Radicali liberi e stress ossidativo
-8. Invecchiamento cellulare
+Materie e copertura:
 
-Fonti primarie: `Eziologia generale STAMPATO.pdf` e, dove necessario, `PATOLOGIA GENERALE definitivo.pdf`.
+- Eziologia Generale: **8/8**;
+- Patologia Generale: **10/20**;
+- Immunologia: **12/16**;
+- Anatomia Patologica: **17/19**.
 
-## Patologia Generale — 10/20
+Totale: **47/63**.
 
-Lezioni attive:
+I 16 capitoli non attivati restano volutamente **IN PREPARAZIONE** perché non sufficientemente coperti dai materiali universitari verificati: 10 di Patologia Generale, 4 di Immunologia e 2 di Anatomia Patologica.
 
-1. Danno cellulare
-2. Morte cellulare
-3. Infiammazione acuta
-4. Reclutamento leucocitario
-5. Mediatori dell'infiammazione
-6. Esiti dell'infiammazione acuta
-7. Infiammazione cronica
-8. Infiammazione granulomatosa
-9. Riparazione tissutale
-10. Amiloidosi
+Le tre lezioni pilota originarie — **Citologia diagnostica**, **Classificazione delle neoplasie**, **Grading e staging** — mantengono gli stessi ID e quindi restano compatibili con i progressi già salvati.
 
-Fonti: `PATOLOGIA GENERALE definitivo.pdf`; `ANATOMIA PATOLOGICA.pdf` per l'amiloide.
+Pacchetti attivi:
 
-Restano volutamente in preparazione, per insufficiente copertura diretta nei materiali verificati: adattamenti cellulari completi, accumuli intracellulari, calcificazioni patologiche, guarigione delle ferite, disturbi emodinamici generali, emostasi/trombosi, embolia, infarto, shock, pigmenti/metabolismo della bilirubina.
+- `data/lezioni-eziologia.json` + `lezioni-eziologia-loader.js`;
+- `data/lezioni-patologia-1.json`, `data/lezioni-patologia-2.json` + `lezioni-patologia-loader.js`;
+- `data/lezioni-immunologia-1.json`, `data/lezioni-immunologia-2.json` + `lezioni-immunologia-loader.js`;
+- `data/lezioni-anatomia-patologica-1.json`, `data/lezioni-anatomia-patologica-2.json`, `data/lezioni-anatomia-patologica-3.json` + `lezioni-anatomia-patologica-loader.js`.
 
-## Immunologia — 12/16
+Fonti universitarie principali:
 
-Fonte primaria: `Immunologia STAMPATO.pdf`.
+- `Eziologia generale STAMPATO.pdf`;
+- `PATOLOGIA GENERALE definitivo.pdf`;
+- `Immunologia STAMPATO.pdf`;
+- `ANATOMIA PATOLOGICA.pdf`.
 
-Lezioni attive:
+Tra le correzioni scientifiche già registrate: via **lectinica** del complemento/MBL; MHC I sulla grande maggioranza delle cellule nucleate; perforina/granzimi come meccanismo apoptotico; formalina 10% ≈ 4% formaldeide; Rosso Congo e birifrangenza verde mela; Ki-67 contestualizzato; frozen section come consulenza intraoperatoria selettiva; grading e staging distinti; TNM dipendente dalla sede.
 
-1. Introduzione al sistema immunitario
-2. Immunità innata
-3. Fagocitosi
-4. Sistema del complemento
-5. Antigeni e anticorpi
-6. Linfociti B
-7. MHC e presentazione dell'antigene
-8. Linfociti T
-9. Sottopopolazioni T helper
-10. Citotossicità
-11. Citochine
-12. Ipersensibilità
+---
 
-### Precisazioni scientifiche applicate
+# 2. Infermieristica nel Materno — COMPLETA 62/62
 
-- “via leptinica” degli appunti → **via lectinica del complemento**, mediata dalla **mannose-binding lectin (MBL)**;
-- cellule dendritiche indicate come APC **più efficaci** nell'attivazione dei T vergini, evitando l'assoluto “uniche cellule costimolatorie”;
-- MHC I descritto sulla grande maggioranza delle cellule nucleate;
-- perforina/granzimi presentati principalmente come meccanismo di induzione dell'apoptosi.
+Il percorso Materno è stato costruito sui quattro compendi reali del corso e sulla banca Materno già verificata. Le quattro materie sono tutte complete e navigabili.
 
-Restano in preparazione per copertura insufficiente nel compendio: Autoimmunità, Immunodeficienze, Immunologia dei trapianti, Immunità antitumorale.
+## Infermieristica Pediatrica — 15/15
 
-## Anatomia Patologica — 17/19
+Fonte primaria: `COMPENDEIO INFE PED.pdf`.
 
-Fonti primarie: `ANATOMIA PATOLOGICA.pdf` e, per concetti di invasione/metastasi/neoplasia, `PATOLOGIA GENERALE definitivo.pdf` dello stesso esame.
+Lezioni:
 
-Le 3 lezioni pilota preesistenti mantengono gli stessi ID e quindi la compatibilità con i progressi già salvati:
+1. Approccio assistenziale al bambino e alla famiglia
+2. Stato di coscienza e osservazione neurologica
+3. Parametri vitali pediatrici
+4. Crescita, antropometria e percentili
+5. Valutazione del dolore
+6. Strategie non farmacologiche del dolore
+7. Termoregolazione neonatale
+8. Sonno sicuro e prevenzione della SIDS
+9. Somministrazione dei farmaci in pediatria
+10. Detersione nasale e terapia inalatoria
+11. Nausea, vomito e rigurgito
+12. Alvo, diarrea e disidratazione
+13. Trauma cranico pediatrico
+14. Emergenze pediatriche e triage
+15. Ospedalizzazione, genitori e gioco terapeutico
 
-- Citologia diagnostica
-- Classificazione delle neoplasie
-- Grading e staging
+Aggiornamenti applicati: sonno sicuro coerente con raccomandazioni correnti; dosaggio/somministrazione pediatrica senza regole generalizzate sulla manipolazione delle formulazioni; PBLS ed emergenze formulati secondo principi e linee guida correnti, evitando algoritmi storici del vecchio compendio.
 
-Sono state aggiunte 14 lezioni grounded:
+## Pediatria — 15/15
 
-1. **Introduzione all'Anatomia Patologica**
-2. **Prelievo e campionamento**
-3. **Fissazione del campione**
-4. **Processazione istologica**
-5. **Colorazioni istologiche e istochimica**
-6. **Immunoistochimica**
-7. **Diagnostica molecolare**
-8. **Esame intraoperatorio al congelatore**
-9. **Neoplasia: concetti fondamentali**
-10. **Invasione tumorale**
-11. **Metastasi**
-12. **Biomarcatori tumorali**
-13. **Qualità del campione**
-14. **Autopsia e riscontro diagnostico**
+Fonte primaria: `PEDIATRIA.pdf`.
 
-### Capitoli Anatomia Patologica lasciati volutamente in preparazione
+Lezioni:
 
-- **Citologia cervico-vaginale** — il materiale contiene Pap test e citologia abrasiva, ma la roadmap richiede anche HPV e screening cervicale; non vengono trasformate in indicazioni attuali eventuali nozioni datate degli appunti senza una verifica dedicata.
-- **Refertazione anatomopatologica** — istotipo, grading, staging, margini, linfonodi e biomarcatori sono presenti separatamente nei materiali, ma non è stata trovata una trattazione abbastanza organica del referto completo da giustificare una lezione autonoma senza integrare contenuti esterni.
+1. Fasi dello sviluppo e prevenzione
+2. Screening neonatali e pediatrici
+3. Infezioni perinatali e TORCH
+4. Adattamento alla vita extrauterina
+5. Valutazione del neonato e APGAR
+6. Classificazione del neonato
+7. Prematurità e principali rischi
+8. Ittero e malattia emolitica
+9. Alimentazione e allattamento
+10. Patologie respiratorie pediatriche
+11. Diabete tipo 1 e chetoacidosi
+12. Fibrosi cistica e celiachia
+13. Patologie gastrointestinali pediatriche
+14. Rene, vie urinarie e IVU
+15. Neurologia pediatrica
 
-### Precisazioni scientifiche applicate in Anatomia Patologica
+Aggiornamenti applicati: rischio rosolia congenita non limitato al solo primo mese; ipoglicemia neonatale senza soglie fisse obsolete; bilirubina interpretata per età in ore/età gestazionale/rischi; alimentazione complementare aggiornata; OGTT non presentato come unico criterio diagnostico del diabete; reflusso del lattante compatibile con sonno supino sicuro.
 
-- formalina al 10% descritta correttamente come soluzione contenente circa il 4% di formaldeide;
-- ritardo alla fissazione trattato come variabile preanalitica rilevante;
-- Rosso Congo associato all'amiloide e alla birifrangenza verde mela;
-- Ki-67 descritto come indice proliferativo il cui significato dipende dal contesto tumorale;
-- frozen section presentata come consulenza intraoperatoria selettiva, con limiti di campionamento e artefatti, seguita dall'esame definitivo;
-- grading e staging mantenuti distinti;
-- T/N/M descritti rispettivamente come tumore primitivo, linfonodi regionali e metastasi a distanza, con criteri specifici dipendenti dalla sede.
+## Ostetricia — 18/18
+
+Fonte primaria: `COMPENDIO OSTETRICIA.pdf`.
+
+Lezioni:
+
+1. Placenta, membrane e liquido amniotico
+2. Cordone ombelicale
+3. Gravidanza fisiologica
+4. Sviluppo fetale e bacino osseo
+5. Diagnosi prenatale e screening
+6. Diagnostica prenatale invasiva
+7. Aborto spontaneo e gravidanza ectopica
+8. Preparazione al parto
+9. Cardiotocografia
+10. Travaglio e stadi del parto
+11. Analgesia del parto
+12. Parto operativo e taglio cesareo
+13. Post-partum e puerperio
+14. Allattamento al seno
+15. Preeclampsia
+16. Placenta previa e distacco di placenta
+17. Prolasso del funicolo
+18. Rottura prematura delle membrane
+
+Aggiornamenti applicati:
+
+- classificazione moderna dei tre stadi del parto;
+- eliminazione della vecchia regola rigida **1 cm/ora** come criterio isolato di distocia/intervento;
+- preeclampsia descritta come sindrome ipertensiva multisistemica: proteinuria non obbligatoria se presenti specifici segni di danno d'organo; edema non necessario alla diagnosi;
+- incremento ponderale in gravidanza individualizzato in base al BMI e al contesto;
+- placenta previa/distacco e prolasso del funicolo ripuliti da percentuali e schemi terapeutici datati del compendio;
+- PROM/PPROM trattate distinguendo epoca gestazionale e rischio infettivo/pretermine;
+- precedente cesareo non presentato come indicazione automatica a cesareo ripetuto.
+
+## Ginecologia — 14/14
+
+Fonte primaria: `COMPENDIO GINE.pdf`.
+
+Lezioni:
+
+1. Anatomia dell'apparato genitale femminile
+2. Ovaio e tube uterine
+3. Utero, endometrio e miometrio
+4. Ciclo ovarico ed endometriale
+5. Menopausa
+6. Endometriosi
+7. Malformazioni mülleriane
+8. Fibromi e polipi uterini
+9. Cisti e neoformazioni ovariche
+10. Screening del carcinoma cervicale
+11. Colposcopia, biopsia e conizzazione
+12. HPV e lesioni cervicali
+13. Infezioni vulvovaginali e IST
+14. Procreazione medicalmente assistita
+
+Correzioni scientifiche principali:
+
+- la vagina non viene descritta come provvista di ghiandole proprie diffuse: la lubrificazione deriva soprattutto da trasudazione e secrezioni cervicali/vestibolari;
+- fibromi/leiomiomi descritti correttamente come tumori benigni della muscolatura liscia uterina;
+- non tutte le malformazioni mülleriane sono considerate automaticamente causa di infertilità;
+- endometriosi: laparoscopia non obbligatoria per ogni diagnosi; valorizzati quadro clinico ed imaging;
+- cisti dermoide identificata come teratoma maturo; cistoadenomi distinti dai fibromi ovarici;
+- CA-125 non presentato come screening generale del carcinoma ovarico;
+- screening cervicale italiano aggiornato: Pap test generalmente 25–29 anni ogni 3 anni e HPV-DNA primario 30–64 anni ogni 5 anni nei programmi che hanno completato la transizione;
+- HPV positivo distinto dalla diagnosi di carcinoma; persistenza di HPV ad alto rischio come elemento centrale;
+- infertilità definita secondo OMS come mancata gravidanza dopo 12 mesi o più di rapporti regolari non protetti, con valutazione anticipabile in base a età/fattori clinici.
+
+## File Materno
+
+- `data/lezioni-materno.json` — roadmap completa delle 4 materie e primo pacchetto di Infermieristica Pediatrica;
+- `data/lezioni-materno-infermieristica-2.json` — completamento Infermieristica Pediatrica;
+- `data/lezioni-materno-pediatria.json` — 15 lezioni Pediatria;
+- `data/lezioni-materno-ostetricia.json` — 18 lezioni Ostetricia;
+- `data/lezioni-materno-ginecologia.json` — 14 lezioni Ginecologia;
+- `lezioni-materno-loader.js` — carica e unisce i quattro pacchetti nel percorso `infermieristica-materno`;
+- `lezioni.html` — importa il loader Materno con cache-busting aggiornato.
+
+---
 
 ## Funzioni implementate
 
 - navigazione Home → Lezioni → esame → materia → capitolo → lezione;
 - breadcrumb su tutti i livelli;
-- accesso Materiali → **Studia come lezione**;
+- accesso Materiali → **Studia come lezione** dove previsto;
 - roadmap completa dei capitoli;
 - spiegazioni e concetti chiave;
 - active recall;
@@ -171,16 +215,14 @@ Sono state aggiunte 14 lezioni grounded:
 
 ## Regola contenuti
 
-**Non inventare contenuti per riempire la roadmap.** Le lezioni devono derivare dai materiali reali del corso. Se un argomento non è sufficientemente coperto, resta in preparazione. Eventuali precisazioni esterne possono essere usate solo per verificare/correggere scientificamente e devono essere distinguibili dal contenuto attribuito ai materiali del corso.
+**Non inventare contenuti per riempire la roadmap.** Le lezioni devono derivare dai materiali reali del corso. Le fonti esterne autorevoli possono essere usate per correggere o aggiornare parti obsolete, ma non devono essere attribuite falsamente al PDF del corso.
+
+Quando un argomento non è sufficientemente coperto dal materiale universitario e non esiste un'integrazione autorizzata/affidabile, il capitolo rimane **IN PREPARAZIONE**.
 
 ## Prossimo sviluppo
 
-Per l'esame Anatomia Patologica restano **16 capitoli della roadmap non attivati** perché non sufficientemente coperti dai materiali già verificati: 10 di Patologia Generale, 4 di Immunologia e 2 di Anatomia Patologica.
+Il percorso **Infermieristica nel Materno è completo 62/62**.
 
-Prossimi passi possibili:
+Prossimo blocco consigliato per Lezioni: **Paziente chirurgico**, usando i PDF reali già presenti nella Biblioteca Materiali e mantenendo esattamente la stessa architettura e gli stessi standard di non regressione.
 
-1. attivare questi capitoli solo quando viene individuato materiale universitario sufficiente o dopo un'integrazione esterna esplicitamente autorizzata e verificata;
-2. iniziare il percorso Lezioni di **Infermieristica nel Materno** usando i PDF reali già presenti;
-3. iniziare il percorso Lezioni di **Paziente chirurgico** usando i PDF reali già presenti.
-
-Per ogni capitolo mantenere lo schema StudyHub: **spiegazione → concetti chiave → active recall → checkpoint → materiale originale → quiz collegato**.
+Restano inoltre 16 capitoli della roadmap di Anatomia Patologica non attivati per insufficiente copertura diretta nei materiali già verificati.
