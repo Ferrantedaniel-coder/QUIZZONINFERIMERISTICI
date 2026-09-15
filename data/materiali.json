@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-15-real-catalog-6",
+  "version": "2026-09-15-real-catalog-7",
   "subjects": [
     {
       "id": "anatomia-patologica",
@@ -20,6 +20,7 @@
       "id": "paziente-chirurgico",
       "name": "Paziente chirurgico",
       "description": "Assistenza perioperatoria, diagnostica, psicologia, terapia ed educazione terapeutica.",
+      "lessonPath": "lezioni.html?esame=paziente-chirurgico",
       "topics": ["Assistenza perioperatoria", "Diagnostica", "Psicologia", "Terapia", "Educazione terapeutica", "Accessi vascolari", "Drenaggi"],
       "documents": [
         {"id":"pc-assistenza","type":"Compendio","title":"Assistenza infermieristica nel paziente chirurgico","sourceName":"ASSISTENZA INFERMIERISTICA NEL PAZIENTE CHIRURGICO .pdf","meta":"PDF · compendio completo","file":null,"plannedPath":"materials/paziente-chirurgico/assistenza-infermieristica-paziente-chirurgico.pdf"},
