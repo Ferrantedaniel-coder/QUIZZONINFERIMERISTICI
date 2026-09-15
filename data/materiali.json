@@ -1,0 +1,49 @@
+{
+  "version": "2026-09-15",
+  "subjects": [
+    {
+      "id": "anatomia-patologica",
+      "name": "Anatomia Patologica",
+      "description": "Danno cellulare, infiammazione, immunologia e neoplasie.",
+      "topics": ["Adattamenti cellulari", "Necrosi e apoptosi", "Infiammazione", "Granulomi", "Fibrosi", "Neoplasie"],
+      "documents": [
+        {"id":"ap-compendio","type":"Compendio","title":"Compendio completo · Anatomia Patologica","meta":"PDF · in preparazione","file":null},
+        {"id":"ap-sbobine-tumori","type":"Sbobina","title":"Tumori · Sbobine integrate","meta":"PDF · in preparazione","file":null},
+        {"id":"ap-slide-neoplasie","type":"Slide","title":"Slide del professore · Neoplasie","meta":"PDF · in preparazione","file":null},
+        {"id":"ap-slide-infiammazione","type":"Slide","title":"Slide del professore · Infiammazione","meta":"PDF · in preparazione","file":null}
+      ]
+    },
+    {
+      "id": "paziente-chirurgico",
+      "name": "Paziente chirurgico",
+      "description": "Diagnostica, educazione terapeutica, psicologia e assistenza.",
+      "topics": ["Preoperatorio", "Diagnostica", "Educazione terapeutica", "Dolore", "Postoperatorio"],
+      "documents": [
+        {"id":"pc-compendio","type":"Compendio","title":"Compendio · Paziente chirurgico","meta":"PDF · in preparazione","file":null},
+        {"id":"pc-sbobine","type":"Sbobina","title":"Educazione terapeutica e diagnostica","meta":"PDF · in preparazione","file":null},
+        {"id":"pc-slide","type":"Slide","title":"Slide del professore · Assistenza perioperatoria","meta":"PDF · in preparazione","file":null}
+      ]
+    },
+    {
+      "id": "scienze-della-salute",
+      "name": "Scienze della Salute",
+      "description": "Infermieristica, epidemiologia, igiene e storia della medicina.",
+      "topics": ["Epidemiologia", "Igiene", "Prevenzione", "Storia della medicina"],
+      "documents": [
+        {"id":"ss-compendio","type":"Compendio","title":"Compendio · Scienze della Salute","meta":"PDF · in preparazione","file":null},
+        {"id":"ss-slide-epidemiologia","type":"Slide","title":"Slide · Epidemiologia e prevenzione","meta":"PDF · in preparazione","file":null},
+        {"id":"ss-slide-igiene","type":"Slide","title":"Slide · Igiene","meta":"PDF · in preparazione","file":null}
+      ]
+    },
+    {
+      "id": "infermieristica-materno",
+      "name": "Infermieristica nel Materno",
+      "description": "Pediatria, ostetricia, ginecologia e infermieristica pediatrica.",
+      "topics": ["Pediatria", "Ostetricia", "Ginecologia", "Infermieristica pediatrica"],
+      "documents": [
+        {"id":"im-sbobine","type":"Sbobina","title":"Sbobine · Materno infantile","meta":"PDF · in preparazione","file":null},
+        {"id":"im-slide","type":"Slide","title":"Slide · Pediatria e ostetricia","meta":"PDF · in preparazione","file":null}
+      ]
+    }
+  ]
+}
