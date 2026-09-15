@@ -12,7 +12,7 @@ Prima di qualsiasi modifica a StudyHub leggere questo file e il `main` aggiornat
 
 La priorità generale è la **non regressione**: una modifica puntuale non autorizza a cambiare domande, opzioni, risposte corrette, grafica, progressi o logica non coinvolti dal task.
 
-Per contenuti medici/infermieristici dare priorità ai materiali universitari dell'utente. Le fonti esterne autorevoli possono essere usate per verificare e correggere contenuti obsoleti, ma non devono essere attribuite falsamente ai PDF del corso e non autorizzano modifiche silenziose delle banche quiz.
+Per contenuti medici/infermieristici dare priorità ai materiali universitari dell'utente. Le fonti esterne autorevoli possono essere usate per verificare, completare e correggere contenuti obsoleti quando autorizzato, ma non devono essere attribuite falsamente ai PDF del corso e non autorizzano modifiche silenziose delle banche quiz.
 
 ## 2. Stato generale
 
@@ -78,30 +78,37 @@ Schema didattico obbligatorio:
 
 ### Copertura globale
 
-- Anatomia Patologica: **63 capitoli mappati / 47 lezioni attive**;
+- Anatomia Patologica: **63/63 lezioni COMPLETE**;
 - Infermieristica nel Materno: **62/62 lezioni COMPLETE**;
 - Paziente chirurgico: **60/60 lezioni COMPLETE**;
-- totale area Lezioni: **185 capitoli mappati / 169 lezioni attive**.
+- totale area Lezioni: **185 capitoli mappati / 185 lezioni attive**.
 
 Scienze della Salute resta il successivo percorso da strutturare quando saranno disponibili materiali reali sufficienti.
 
-### 4.1 Anatomia Patologica — 47/63
+### 4.1 Anatomia Patologica — COMPLETA 63/63
 
 - Eziologia Generale: **8/8**;
-- Patologia Generale: **10/20**;
-- Immunologia: **12/16**;
-- Anatomia Patologica: **17/19**.
+- Patologia Generale: **20/20**;
+- Immunologia: **16/16**;
+- Anatomia Patologica: **19/19**.
 
-I 16 capitoli non attivati restano volutamente **IN PREPARAZIONE** perché non sufficientemente coperti dai materiali verificati.
+I 16 capitoli precedentemente in preparazione sono stati completati con una combinazione di materiale del corso e integrazione esterna verificata, mantenendo la provenienza esplicita nei campi `source` delle nuove lezioni.
 
 Loader/pacchetti:
 
 - `lezioni-eziologia-loader.js` + `data/lezioni-eziologia.json`;
-- `lezioni-patologia-loader.js` + `data/lezioni-patologia-1.json`, `data/lezioni-patologia-2.json`;
-- `lezioni-immunologia-loader.js` + `data/lezioni-immunologia-1.json`, `data/lezioni-immunologia-2.json`;
-- `lezioni-anatomia-patologica-loader.js` + `data/lezioni-anatomia-patologica-1.json`, `-2.json`, `-3.json`.
+- `lezioni-patologia-loader.js` + `data/lezioni-patologia-1.json`, `data/lezioni-patologia-2.json`, `data/lezioni-patologia-3.json`;
+- `lezioni-immunologia-loader.js` + `data/lezioni-immunologia-1.json`, `data/lezioni-immunologia-2.json`, `data/lezioni-immunologia-3.json`;
+- `lezioni-anatomia-patologica-loader.js` + `data/lezioni-anatomia-patologica-1.json`, `-2.json`, `-3.json`, `-4.json`.
 
 Le tre lezioni pilota originarie — **Citologia diagnostica**, **Classificazione delle neoplasie**, **Grading e staging** — mantengono gli stessi ID e restano compatibili con i progressi già salvati.
+
+Integrazioni verificate principali:
+
+- NCBI/NIH: adattamenti cellulari, accumuli, calcificazioni, ferite, emodinamica, trombosi, embolia, infarto, shock, bilirubina, autoimmunità, immunodeficienze e trapianti;
+- NCI: immunità antitumorale e checkpoint immunitari;
+- WHO: screening cervicale e ruolo del test HPV;
+- CAP: principi di refertazione oncologica strutturata e data elements essenziali.
 
 Checkpoint: `LESSONS_PROGRESS.md`.
 
@@ -296,10 +303,10 @@ I progressi utente restano locali al browser; non ci sono account, database remo
 - Scienze della Salute spiegazioni quiz: **459/459** completo;
 - Anatomia Patologica spiegazioni quiz: **300/300** completo;
 - Materno spiegazioni quiz: **240/300**, ripresa da **241**;
-- Lezioni Anatomia Patologica: **47/63** attive;
+- Lezioni Anatomia Patologica: **63/63 COMPLETE**;
 - Lezioni Infermieristica nel Materno: **62/62 COMPLETE**;
 - Lezioni Paziente chirurgico: **60/60 COMPLETE**;
-- totale Lezioni: **169/185 attive**.
+- totale Lezioni: **185/185 attive**.
 
 ## 10. GitHub e autorizzazioni
 
@@ -313,10 +320,10 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 ## 11. Roadmap immediata
 
 1. preservare intatti i quattro esami e le rispettive banche;
-2. **Lezioni Materno 62/62 — COMPLETE, non rifarle**;
-3. **Lezioni Paziente chirurgico 60/60 — COMPLETE, non rifarle**;
-4. prossimo percorso Lezioni: **Scienze della Salute**, dopo associazione di materiali universitari sufficienti;
-5. per Anatomia Patologica attivare i 16 capitoli ancora in preparazione solo con materiale sufficiente o integrazione verificata/autorizzata;
+2. **Lezioni Anatomia Patologica 63/63 — COMPLETE, non rifarle**;
+3. **Lezioni Materno 62/62 — COMPLETE, non rifarle**;
+4. **Lezioni Paziente chirurgico 60/60 — COMPLETE, non rifarle**;
+5. prossimo percorso Lezioni: **Scienze della Salute**, dopo associazione di materiali universitari sufficienti;
 6. completare separatamente le spiegazioni quiz Materno da **241 a 300**;
 7. associare materiali reali a Scienze della Salute quando disponibili;
 8. Farmacologia resta futura banca in preparazione;
