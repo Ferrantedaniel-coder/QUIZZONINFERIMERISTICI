@@ -13,22 +13,62 @@ File principali:
 - `lezioni.html` — interfaccia delle lezioni interattive;
 - `lezioni.css` — stile Apple-like coerente con StudyHub;
 - `lezioni.js` — motore interattivo e progressi locali;
-- `data/lezioni.json` — catalogo e contenuti delle lezioni.
+- `data/lezioni.json` — catalogo gerarchico esami → materie → capitoli → lezioni.
 
-## Pilota attivo
+## Architettura corrente
 
-### Anatomia Patologica — 3 lezioni
+La navigazione Lezioni è ora:
 
-1. **Classificazione delle neoplasie**
-2. **Grading e staging**
-3. **Citologia diagnostica**
+**Lezioni → Esame → Materia → Capitolo → Lezione interattiva**
 
-Le lezioni sono costruite sui materiali reali del corso e mantengono il collegamento al PDF `ANATOMIA PATOLOGICA.pdf`.
+La homepage Lezioni mostra gli esami. Al momento **Anatomia Patologica** è il percorso strutturato e apribile; Paziente chirurgico, Infermieristica nel Materno e Scienze della Salute restano predisposti come estensioni future.
+
+### Anatomia Patologica
+
+All'apertura dell'esame vengono mostrate le quattro materie nell'ordine didattico concordato:
+
+1. **Eziologia Generale**
+2. **Patologia Generale**
+3. **Immunologia**
+4. **Anatomia Patologica**
+
+Tutte e quattro sono apribili e mostrano la roadmap dei capitoli anche quando le singole lezioni interattive non sono ancora state scritte.
+
+Roadmap attuale:
+
+- Eziologia Generale: **8 capitoli**;
+- Patologia Generale: **20 capitoli**;
+- Immunologia: **16 capitoli**;
+- Anatomia Patologica: **19 capitoli**;
+- totale: **63 capitoli mappati**.
+
+Le materie senza lezioni già convertite mostrano chiaramente lo stato **STRUTTURA PRONTA / IN PREPARAZIONE**: nessun contenuto medico viene inventato per riempire card vuote.
+
+## Lezioni interattive attive
+
+Restano attive le 3 lezioni pilota, ora collocate nella materia **Anatomia Patologica** e nei rispettivi capitoli:
+
+1. **Citologia diagnostica** → capitolo Citologia;
+2. **Classificazione delle neoplasie** → capitolo Classificazione delle neoplasie;
+3. **Grading e staging** → capitolo Grading e staging.
+
+Gli ID delle tre lezioni non sono stati cambiati, quindi i progressi già presenti nel browser restano compatibili.
+
+Fonte primaria: `ANATOMIA PATOLOGICA.pdf`.
+
+Le altre materie sono già collegate ai rispettivi materiali originali:
+
+- Eziologia Generale → `Eziologia generale STAMPATO.pdf`;
+- Patologia Generale → `PATOLOGIA GENERALE definitivo.pdf`;
+- Immunologia → `Immunologia STAMPATO.pdf`;
+- Anatomia Patologica → `ANATOMIA PATOLOGICA.pdf`.
 
 ## Funzioni implementate
 
-- navigazione Home → Lezioni → materia → singola lezione;
-- accesso diretto Materiali → **Studia come lezione** per Anatomia Patologica;
+- navigazione Home → Lezioni → esame → materia → capitolo → lezione;
+- breadcrumb su tutti i livelli;
+- accesso Materiali → **Studia come lezione** per Anatomia Patologica;
+- roadmap completa dei capitoli prima della conversione in lezioni;
 - blocchi didattici brevi e sequenziali;
 - concetti chiave;
 - active recall con risposta nascosta;
@@ -36,15 +76,25 @@ Le lezioni sono costruite sui materiali reali del corso e mantengono il collegam
 - obbligo di rispondere ai checkpoint prima di proseguire;
 - feedback immediato corretto/da rivedere;
 - conteggio dei checkpoint corretti;
-- avanzamento della lezione;
-- avanzamento complessivo della materia;
+- avanzamento della singola lezione;
+- avanzamento della materia e dell'esame sulle lezioni effettivamente attive;
 - stato `DA INIZIARE`, `IN CORSO`, `COMPLETATA`, `DA RIPASSARE`;
 - comando **Segna da ripassare**;
 - persistenza in `localStorage` con chiave `studyhub.lessons.progress.v1`;
 - schermata di completamento;
 - passaggio **Studia → Allenati sul quiz**;
-- apertura del PDF originale;
+- apertura del PDF originale della materia;
 - layout responsive desktop/mobile.
+
+## Routing e compatibilità
+
+Nuovo routing supportato:
+
+- `lezioni.html?esame=anatomia-patologica` → apre l'esame;
+- `lezioni.html?esame=anatomia-patologica&materia=immunologia` → apre direttamente la materia;
+- il vecchio parametro `?materia=anatomia-patologica` viene ancora interpretato come accesso all'esame per non rompere vecchi link.
+
+La Biblioteca Materiali usa ora il nuovo percorso `?esame=anatomia-patologica`.
 
 ## Design
 
@@ -55,26 +105,24 @@ Il modulo mantiene il design system StudyHub:
 - pesca `#f1b796`;
 - turchese `#37b7b3`;
 - acquamarina `#86d9cf`;
-- glassmorphism, gradienti morbidi e card arrotondate.
-
-## Materie predisposte
-
-Sono già presenti nel catalogo come future estensioni:
-
-- Paziente chirurgico;
-- Infermieristica nel Materno;
-- Scienze della Salute.
-
-Il motore è generico: per aggiungere nuove lezioni non è necessario creare un nuovo motore, ma aggiungere i contenuti strutturati in `data/lezioni.json` e collegare la materia ai materiali originali e al quiz.
+- glassmorphism;
+- gradienti morbidi;
+- card arrotondate;
+- responsive desktop/mobile.
 
 ## Regola di non regressione
 
 Le Lezioni sono una terza area separata. Non devono modificare domande, opzioni, risposte corrette, spiegazioni avanzate, progressi o logica degli esami esistenti.
 
-## Prossimo sviluppo consigliato
+I contenuti delle lezioni devono derivare dai materiali reali del corso; quando un capitolo non è ancora stato trasformato in lezione, deve rimanere indicato come **in preparazione** invece di essere completato con contenuti non verificati.
 
-1. estendere Anatomia Patologica oltre le 3 lezioni pilota;
-2. creare il percorso Materno usando `PEDIATRIA.pdf`, `COMPENDEIO INFE PED.pdf`, `COMPENDIO GINE.pdf` e `COMPENDIO OSTETRICIA.pdf`;
-3. creare Paziente chirurgico dai PDF già pubblicati;
-4. collegare, quando possibile, ogni lezione a una sezione o gruppo di domande specifico del relativo esame;
-5. aggiungere una futura modalità di ripasso aggregato delle lezioni segnate `DA RIPASSARE`.
+## Prossimo sviluppo
+
+Riempire progressivamente i 63 capitoli seguendo l'ordine:
+
+1. Eziologia Generale;
+2. Patologia Generale;
+3. Immunologia;
+4. Anatomia Patologica.
+
+Per ogni capitolo usare lo schema StudyHub: **spiegazione → concetti chiave → active recall → checkpoint → materiale originale → quiz collegato**.
