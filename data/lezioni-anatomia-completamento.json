@@ -1,0 +1,42 @@
+{
+  "version":"2026-09-15-anatomia-completa-1",
+  "disciplineId":"anatomia-patologica",
+  "chapters":{
+    "ap-cervicale":[{
+      "id":"ap-citologia-cervico-vaginale",
+      "title":"Citologia cervico-vaginale",
+      "subtitle":"Pap test, HPV, triage citologico e screening cervicale",
+      "duration":"18 min",
+      "source":"ANATOMIA PATOLOGICA.pdf",
+      "references":["https://www.who.int/publications/i/item/9789240121744","https://www.salute.gov.it/new/it/faq/faq-screening-tumori/"],
+      "blocks":[
+        {"type":"intro","title":"Obiettivo della lezione","text":"Comprendere che cosa valuta il Pap test, il ruolo dell'HPV ad alto rischio e come citologia e test HPV vengono integrati nei programmi di screening cervicale."},
+        {"type":"text","title":"Che cosa valuta la citologia cervicale","text":"Il Pap test raccoglie cellule della cervice uterina e ne valuta al microscopio le alterazioni morfologiche. Può identificare modificazioni cellulari precancerose o tumorali e può mostrare anche alterazioni reattive o infiammatorie. Il virus HPV non viene visualizzato direttamente dal Pap test: le sue conseguenze cellulari possono però essere riconosciute citologicamente."},
+        {"type":"key","title":"Pap test e HPV test non sono la stessa cosa","items":["Pap test: esame citologico delle cellule cervicali.","HPV-DNA test: ricerca la presenza di tipi di HPV ad alto rischio oncogeno.","Un test HPV positivo non equivale a diagnosi di tumore.","La citologia può essere usata come test primario oppure come triage dopo positività HPV, in base al programma di screening e all'età."]},
+        {"type":"text","title":"Screening cervicale nel programma italiano","text":"Nel programma organizzato italiano attualmente indicato dal Ministero della Salute, il Pap test è offerto ogni 3 anni nella fascia 25-29 anni; dai 30 ai 64 anni il test HPV-DNA è offerto ogni 5 anni. Se il test HPV è positivo, la citologia viene utilizzata come test di triage per selezionare chi necessita di approfondimento colposcopico. I programmi regionali possono avere modalità organizzative specifiche."},
+        {"type":"text","title":"Perché l'HPV è centrale","text":"L'infezione persistente da HPV ad alto rischio è il principale fattore eziologico del carcinoma cervicale. Lo screening HPV-based identifica il rischio prima che compaiano necessariamente alterazioni citologiche evidenti e consente una stratificazione più precoce."},
+        {"type":"recall","question":"Qual è la differenza essenziale tra Pap test e HPV-DNA test?","answer":"Il Pap test osserva le alterazioni morfologiche delle cellule cervicali; l'HPV-DNA test ricerca direttamente la presenza di HPV ad alto rischio."},
+        {"type":"checkpoint","question":"Nel programma italiano attuale, quale test è usato come screening primario dai 30 ai 64 anni?","options":["Solo colposcopia","HPV-DNA test","Biopsia cervicale annuale","Dosaggio del CA-125"],"correct":1,"explanation":"Il Ministero della Salute indica il test HPV-DNA ogni 5 anni come screening primario nella fascia 30-64 anni."},
+        {"type":"checkpoint","question":"Che cosa significa un HPV-DNA test positivo?","options":["Diagnosi certa di carcinoma invasivo","Necessità automatica di isterectomia","Presenza di HPV ad alto rischio che richiede triage/gestione secondo protocollo","Pap test necessariamente negativo"],"correct":2,"explanation":"La positività HPV identifica infezione da HPV ad alto rischio ma non equivale a diagnosi di carcinoma; la gestione successiva dipende dal triage citologico e dal protocollo."}
+      ]
+    }],
+    "ap-refertazione":[{
+      "id":"ap-refertazione-anatomopatologica",
+      "title":"Refertazione anatomopatologica",
+      "subtitle":"Diagnosi, istotipo, grado, stadio, margini, linfonodi e biomarcatori",
+      "duration":"20 min",
+      "source":"ANATOMIA PATOLOGICA.pdf",
+      "references":["https://www.cap.org/protocols-and-guidelines/cancer-protocols/current-cancer-protocols/","https://pubmed.ncbi.nlm.nih.gov/27097810/"],
+      "blocks":[
+        {"type":"intro","title":"Obiettivo della lezione","text":"Capire quali informazioni strutturate può contenere un referto anatomopatologico oncologico e perché alcuni elementi sono decisivi per prognosi e terapia."},
+        {"type":"text","title":"Il referto è una sintesi diagnostica strutturata","text":"Il referto anatomopatologico integra il tipo di campione, la diagnosi morfologica e, quando pertinenti, dati prognostici e predittivi. Nei tumori maligni la refertazione strutturata o sinottica migliora completezza e uniformità delle informazioni clinicamente rilevanti."},
+        {"type":"key","title":"Elementi che possono essere richiesti nei tumori solidi","items":["Istotipo e sede del tumore.","Grado istologico quando previsto per quella neoplasia.","Dimensioni o estensione del tumore secondo il protocollo specifico.","Stato dei margini di resezione.","Invasione linfovascolare o perineurale quando pertinente.","Numero e stato dei linfonodi regionali quando campionati.","Stadiazione patologica pTNM quando applicabile.","Biomarcatori diagnostici, prognostici o predittivi quando richiesti dal tipo di tumore e dalla pratica clinica."]},
+        {"type":"text","title":"Perché non esiste un unico referto identico per tutti i tumori","text":"Gli elementi obbligatori variano in base a organo, istotipo, tipo di procedura e standard di classificazione. I protocolli CAP, come altri sistemi strutturati internazionali, definiscono set di dati specifici per sede e vengono aggiornati con le classificazioni WHO e i sistemi di staging vigenti."},
+        {"type":"text","title":"Grading, staging e margini rispondono a domande diverse","text":"Il grading descrive caratteristiche morfologico-biologiche del tumore; lo staging descrive l'estensione anatomica; i margini indicano il rapporto tra neoplasia e limite chirurgico del pezzo. Queste informazioni non sono intercambiabili e possono avere significati prognostici o terapeutici differenti."},
+        {"type":"recall","question":"Perché la refertazione sinottica è utile?","answer":"Perché organizza in modo standardizzato gli elementi essenziali, riducendo omissioni e rendendo più semplice trovare le informazioni necessarie alla gestione clinica."},
+        {"type":"checkpoint","question":"Quale elemento del referto descrive soprattutto l'estensione anatomica della neoplasia?","options":["Staging","Colorazione H&E","Fissazione","Indice eritrocitario"],"correct":0,"explanation":"Lo staging, spesso espresso con il sistema TNM quando applicabile, descrive l'estensione anatomica della malattia."},
+        {"type":"checkpoint","question":"Quale affermazione è corretta?","options":["Tutti i tumori hanno esattamente gli stessi elementi di referto","Grading e staging sono sinonimi","Gli elementi richiesti dipendono dal tipo e dalla sede della neoplasia","I biomarcatori non hanno mai valore terapeutico"],"correct":2,"explanation":"I protocolli di refertazione sono specifici per organo e tipo tumorale e possono includere elementi differenti in base al contesto."}
+      ]
+    }]
+  }
+}
