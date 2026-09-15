@@ -54,26 +54,44 @@ Checkpoint: `MATERIALI_PROGRESS.md`.
 
 Il motore Lezioni è attivo tramite `lezioni.html`, `lezioni.css`, `lezioni.js` e `data/lezioni.json`.
 
-Pilota attivo: **Anatomia Patologica**, con 3 lezioni:
+Gerarchia attiva:
 
-1. Classificazione delle neoplasie;
-2. Grading e staging;
-3. Citologia diagnostica.
+**Lezioni → Esame → Materia → Capitolo → Lezione interattiva**.
+
+Il percorso strutturato attivo è **Anatomia Patologica**. Aprendo l'esame compaiono, nell'ordine didattico concordato:
+
+1. **Eziologia Generale** — 8 capitoli;
+2. **Patologia Generale** — 20 capitoli;
+3. **Immunologia** — 16 capitoli;
+4. **Anatomia Patologica** — 19 capitoli.
+
+Totale roadmap: **63 capitoli mappati**. Le quattro materie sono apribili anche se una singola lezione non è ancora stata convertita: in quel caso il capitolo è mostrato come **IN PREPARAZIONE**, senza generare contenuti non verificati.
+
+Le 3 lezioni interattive attive sono collocate nella materia Anatomia Patologica:
+
+1. Citologia diagnostica;
+2. Classificazione delle neoplasie;
+3. Grading e staging.
+
+Gli ID delle 3 lezioni pilota sono rimasti invariati per preservare i progressi già salvati.
 
 Funzioni attive:
 
+- navigazione esame → materia → capitolo → lezione;
+- breadcrumb su tutti i livelli;
 - blocchi didattici sequenziali;
 - concetti chiave;
 - active recall;
 - checkpoint A/B/C/D con risposta obbligatoria prima di proseguire;
 - feedback immediato;
 - conteggio checkpoint corretti;
-- stato della lezione e avanzamento della materia;
+- avanzamento di lezione, materia ed esame sulle lezioni effettivamente attive;
 - `DA INIZIARE`, `IN CORSO`, `COMPLETATA`, `DA RIPASSARE`;
 - salvataggio progressi in `localStorage` con chiave `studyhub.lessons.progress.v1`;
-- collegamento al PDF originale;
+- collegamento al PDF originale della materia;
 - accesso Materiali → **Studia come lezione** per Anatomia Patologica;
-- passaggio finale **Studia → Allenati sul quiz**.
+- passaggio finale **Studia → Allenati sul quiz**;
+- compatibilità con il vecchio routing `?materia=anatomia-patologica` e nuovo routing `?esame=...&materia=...`.
 
 Checkpoint: `LESSONS_PROGRESS.md`.
 
@@ -258,7 +276,7 @@ I progressi utente restano locali al browser; non ci sono account, database remo
 6. verificare conteggi, ID, sezioni e risposta corretta;
 7. verificare che le motivazioni seguano l'opzione originale dopo shuffle;
 8. per gli esami testare almeno avvio → risposta → feedback → successiva/precedente → risultato → ripasso errori → Home;
-9. per le Lezioni testare almeno Home Lezioni → materia → blocchi → active recall → checkpoint → completamento → quiz/PDF → ritorno;
+9. per le Lezioni testare almeno Home Lezioni → esame → materia → capitolo → blocchi → active recall → checkpoint → completamento → quiz/PDF → ritorno;
 10. mantenere responsive/mobile;
 11. aggiornare checkpoint e questo file quando cambia lo stato reale.
 
@@ -267,7 +285,7 @@ I progressi utente restano locali al browser; non ci sono account, database remo
 - Paziente chirurgico: **462/462** completo.
 - Scienze della Salute: **459/459** completo.
 - Anatomia Patologica: **300/300** completo.
-- Lezioni Anatomia Patologica: **3 lezioni pilota attive**.
+- Lezioni Anatomia Patologica: **63 capitoli mappati, 3 lezioni interattive attive**.
 
 Non esiste più un punto di ripresa per le spiegazioni avanzate dei tre esami completi. Il lavoro incrementale corrente riguarda l'estensione delle Lezioni e il completamento delle spiegazioni Materno secondo `MATERNO_PROGRESS.md`.
 
@@ -284,7 +302,7 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 
 1. mantenere intatti i quattro esami esistenti e le relative banche;
 2. completare le spiegazioni avanzate Materno secondo `MATERNO_PROGRESS.md`;
-3. estendere il percorso Lezioni di Anatomia Patologica oltre le 3 lezioni pilota;
+3. riempire progressivamente i 63 capitoli di Anatomia Patologica seguendo l'ordine **Eziologia Generale → Patologia Generale → Immunologia → Anatomia Patologica**;
 4. creare Lezioni per Infermieristica nel Materno utilizzando i PDF reali già pubblicati;
 5. creare Lezioni per Paziente chirurgico utilizzando i PDF reali già pubblicati;
 6. collegare progressivamente le lezioni alle sezioni/domande pertinenti dei quiz;
