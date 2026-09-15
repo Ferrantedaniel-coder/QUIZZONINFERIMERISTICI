@@ -10,7 +10,7 @@ File principali:
 
 - `materiali.html` — pagina Biblioteca;
 - `materiali.css` — stile Apple-like coerente con `studyhub.css`;
-- `materiali.js` — ricerca, filtri, navigazione materia, lettore PDF e download;
+- `materiali.js` — ricerca, filtri, navigazione materia, lettore PDF, download e collegamento alle Lezioni;
 - `data/materiali.json` — catalogo centralizzato dei materiali.
 
 La homepage `index.html` contiene l'accesso a `materiali.html` senza modificare la logica dei quattro esami esistenti.
@@ -27,6 +27,8 @@ Sono attualmente collegati alla Biblioteca **16 PDF reali**.
 4. `Microbiologia.pdf`
 5. `Microbiologia compendio.pdf`
 6. `PATOLOGIA GENERALE definitivo.pdf`
+
+Il pacchetto mostra anche **Studia come lezione**, collegato a `lezioni.html?esame=anatomia-patologica`.
 
 ### Paziente chirurgico — 4 attivi, 2 ancora solo catalogati
 
@@ -53,6 +55,8 @@ Ancora catalogati ma non presenti nel repository:
 
 I due file numerici sono volutamente mostrati con titoli neutrali finché il contenuto non viene rinominato o identificato con certezza.
 
+Il pacchetto Materno mostra ora **Studia come lezione**, collegato al percorso completo `lezioni.html?esame=infermieristica-materno` (**62/62 lezioni attive**).
+
 ### Scienze della Salute
 
 La materia è predisposta nell'interfaccia; nessun PDF è ancora associato.
@@ -72,8 +76,9 @@ La materia è predisposta nell'interfaccia; nessun PDF è ancora associato.
 - download diretto dei PDF pubblicati;
 - stato `DISPONIBILE`, `PARZIALMENTE DISPONIBILE`, `CATALOGATO` o `IN CATALOGAZIONE` calcolato dai file realmente presenti;
 - contatore distinto tra documenti disponibili e documenti catalogati;
-- pulsanti disabilitati quando il PDF non è ancora presente nel repository.
+- pulsanti disabilitati quando il PDF non è ancora presente nel repository;
+- collegamento **Materiali → Studia come lezione** per Anatomia Patologica e Infermieristica nel Materno.
 
 ## Regola di non regressione
 
-La nuova area Materiali non modifica banche quiz, risposte, spiegazioni, conteggi, localStorage o logica degli esami esistenti.
+L'area Materiali non modifica banche quiz, risposte, spiegazioni, conteggi, localStorage o logica degli esami esistenti.
