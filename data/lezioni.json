@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-15-lessons-pilot1",
+  "version": "2026-09-15-lessons-pilot2",
   "subjects": [
     {
       "id": "anatomia-patologica",
@@ -7,6 +7,8 @@
       "description": "Lezioni interattive costruite sui materiali reali del corso.",
       "status": "active",
       "source": "ANATOMIA PATOLOGICA.pdf",
+      "examLink": "anatomia-patologica.html?v=20260915-pilot8",
+      "materialsLink": "materiali.html",
       "lessons": [
         {
           "id": "classificazione-neoplasie",
@@ -59,8 +61,8 @@
         }
       ]
     },
-    {"id":"paziente-chirurgico","name":"Paziente chirurgico","description":"Percorsi interattivi da compendi, sbobine e materiali del corso.","status":"planned","lessons":[]},
-    {"id":"infermieristica-materno","name":"Infermieristica nel Materno","description":"Pediatria, infermieristica pediatrica, ostetricia e ginecologia.","status":"planned","lessons":[]},
-    {"id":"scienze-della-salute","name":"Scienze della Salute","description":"Percorsi di studio interattivi in preparazione.","status":"planned","lessons":[]}
+    {"id":"paziente-chirurgico","name":"Paziente chirurgico","description":"Percorsi interattivi da compendi, sbobine e materiali del corso.","status":"planned","lessons":[],"examLink":"paziente-chirurgico.html"},
+    {"id":"infermieristica-materno","name":"Infermieristica nel Materno","description":"Pediatria, infermieristica pediatrica, ostetricia e ginecologia.","status":"planned","lessons":[],"examLink":"infermieristica-materno-plus.html"},
+    {"id":"scienze-della-salute","name":"Scienze della Salute","description":"Percorsi di studio interattivi in preparazione.","status":"planned","lessons":[],"examLink":"scienze-salute.html"}
   ]
 }
