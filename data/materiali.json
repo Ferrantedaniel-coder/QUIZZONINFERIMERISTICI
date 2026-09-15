@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-15-real-catalog-5",
+  "version": "2026-09-15-real-catalog-6",
   "subjects": [
     {
       "id": "anatomia-patologica",
@@ -41,6 +41,7 @@
       "id": "infermieristica-materno",
       "name": "Infermieristica nel Materno",
       "description": "Infermieristica pediatrica, pediatria, ostetricia, ginecologia e materiali materno-infantili.",
+      "lessonPath": "lezioni.html?esame=infermieristica-materno",
       "topics": ["Infermieristica pediatrica", "Pediatria", "Ostetricia", "Ginecologia", "Neonatologia", "Assistenza materno-infantile"],
       "documents": [
         {"id":"im-pediatria","type":"Compendio","title":"Pediatria","sourceName":"PEDIATRIA.pdf","meta":"PDF · compendio","file":"PEDIATRIA.pdf","plannedPath":"materials/materno/pediatria.pdf"},
