@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#37b7b3">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Study Hub · Lezioni</title>
+<link rel="stylesheet" href="studyhub.css">
+<link rel="stylesheet" href="lezioni.css">
+</head>
+<body>
+<main class="lesson-shell">
+  <div class="lesson-topbar glass">
+    <div class="lesson-brand" onclick="location.href='index.html'">
+      <div class="brandmark"></div>
+      <div><div class="brandname">Study Hub</div><div class="muted" style="font-size:.76rem">Studia. Verifica. Ripassa.</div></div>
+    </div>
+    <div class="lesson-nav">
+      <button class="lesson-navlink" onclick="location.href='index.html'">Esami</button>
+      <button class="lesson-navlink" onclick="location.href='materiali.html'">Materiali</button>
+      <button class="lesson-navlink active" onclick="goHome()">Lezioni</button>
+    </div>
+  </div>
+
+  <section id="lessonHome">
+    <section class="lesson-hero glass">
+      <div class="eyebrow">STUDIO INTERATTIVO</div>
+      <h1>DAL PDF<br>ALLA LEZIONE.</h1>
+      <p>Sbobine, compendi e slide diventano percorsi brevi, verificabili e collegati ai materiali originali. Leggi, richiama dalla memoria, rispondi ai checkpoint e riprendi da dove avevi lasciato.</p>
+      <div class="hero-stats">
+        <span class="pill" id="lessonCount">0 lezioni</span>
+        <span class="pill">Active recall</span>
+        <span class="pill">Checkpoint</span>
+        <span class="pill">Progressi locali</span>
+      </div>
+    </section>
+
+    <div class="section-head"><div><h2>I TUOI PERCORSI</h2><p>Le lezioni vengono costruite a partire dai materiali reali del corso.</p></div></div>
+    <section id="subjectGrid" class="lesson-subject-grid"></section>
+  </section>
+
+  <section id="subjectView" class="lesson-hidden">
+    <div class="lesson-breadcrumb"><button onclick="goHome()">Lezioni</button><span>›</span><span id="subjectCrumb"></span></div>
+    <section class="lesson-course-hero glass">
+      <div class="eyebrow">PERCORSO INTERATTIVO</div>
+      <h1 id="subjectTitle"></h1>
+      <p id="subjectDescription"></p>
+      <div class="lesson-progress-wrap"><div class="lesson-progress"><div id="subjectProgressBar"></div></div><span id="subjectProgressText">0%</span></div>
+    </section>
+    <div class="section-head"><div><h2>LEZIONI</h2><p>Completa una lezione e continua con la successiva.</p></div></div>
+    <section id="lessonGrid" class="lesson-card-grid"></section>
+  </section>
+
+  <section id="runnerView" class="lesson-hidden">
+    <div class="lesson-breadcrumb"><button onclick="backToSubject()">Lezioni</button><span>›</span><span id="runnerCrumb"></span></div>
+    <section class="runner-layout">
+      <aside class="runner-side glass">
+        <div class="runner-side-title">PROGRESSO</div>
+        <div class="lesson-progress"><div id="runnerProgressBar"></div></div>
+        <div id="runnerProgressText" class="muted runner-progress-label">0%</div>
+        <div class="runner-source"><span>Fonte</span><strong id="runnerSource"></strong><small id="runnerPages"></small></div>
+        <a id="runnerSourceLink" class="button peach" href="#" target="_blank">Apri PDF originale</a>
+      </aside>
+      <article class="runner-main glass">
+        <div class="eyebrow">LEZIONE INTERATTIVA</div>
+        <h1 id="runnerTitle"></h1>
+        <p id="runnerSubtitle" class="runner-subtitle"></p>
+        <div id="blockHost"></div>
+        <div class="runner-nav-row">
+          <button id="prevBlock" class="button peach" onclick="moveBlock(-1)">Indietro</button>
+          <button id="nextBlock" class="button primary" onclick="moveBlock(1)">Continua</button>
+        </div>
+      </article>
+    </section>
+  </section>
+</main>
+<div id="lessonToast" class="lesson-toast"></div>
+<script src="lezioni.js?v=20260915-pilot1"></script>
+</body>
+</html>
