@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-15-real-catalog-2",
+  "version": "2026-09-15-real-catalog-3",
   "subjects": [
     {
       "id": "anatomia-patologica",
@@ -39,13 +39,15 @@
     {
       "id": "infermieristica-materno",
       "name": "Infermieristica nel Materno",
-      "description": "Pediatria, neonatologia e assistenza infermieristica materno-infantile.",
-      "topics": ["Pediatria", "Neonatologia", "Neonato sano", "Prematurità", "Assistenza alla nascita"],
+      "description": "Infermieristica pediatrica, pediatria, ostetricia, ginecologia e materiali materno-infantili.",
+      "topics": ["Infermieristica pediatrica", "Pediatria", "Ostetricia", "Ginecologia", "Neonatologia", "Assistenza materno-infantile"],
       "documents": [
-        {"id":"im-pediatria","type":"Compendio","title":"Pediatria","sourceName":"PEDIATRIA.pdf","meta":"12 pagine · compendio","file":null,"plannedPath":"materials/materno/pediatria.pdf"},
-        {"id":"im-neonato-sano","type":"Slide","title":"Assistenza infermieristica al neonato sano","sourceName":"1.pdf","meta":"PDF · slide del corso","file":null,"plannedPath":"materials/materno/neonato-sano.pdf"},
-        {"id":"im-neonatologia","type":"Slide","title":"Neonatologia · caratteristiche e adattamento","sourceName":"1.pdf","meta":"PDF · slide del corso","file":null,"plannedPath":"materials/materno/neonatologia-adattamento.pdf"},
-        {"id":"im-prematurita","type":"Slide","title":"Prematurità","sourceName":"2.pdf","meta":"PDF · slide del corso","file":null,"plannedPath":"materials/materno/prematurita.pdf"}
+        {"id":"im-pediatria","type":"Compendio","title":"Pediatria","sourceName":"PEDIATRIA.pdf","meta":"PDF · compendio","file":"PEDIATRIA.pdf","plannedPath":"materials/materno/pediatria.pdf"},
+        {"id":"im-infe-ped","type":"Compendio","title":"Infermieristica Pediatrica · Compendio","sourceName":"COMPENDEIO INFE PED.pdf","meta":"PDF · compendio","file":"COMPENDEIO INFE PED.pdf","plannedPath":"materials/materno/compendio-infermieristica-pediatrica.pdf"},
+        {"id":"im-gine","type":"Compendio","title":"Ginecologia · Compendio","sourceName":"COMPENDIO GINE.pdf","meta":"PDF · compendio","file":"COMPENDIO GINE.pdf","plannedPath":"materials/materno/compendio-ginecologia.pdf"},
+        {"id":"im-ostetricia","type":"Compendio","title":"Ostetricia · Compendio","sourceName":"COMPENDIO OSTETRICIA.pdf","meta":"PDF · compendio","file":"COMPENDIO OSTETRICIA.pdf","plannedPath":"materials/materno/compendio-ostetricia.pdf"},
+        {"id":"im-slide-1","type":"Slide","title":"Slide Materno 1","sourceName":"1.pdf","meta":"PDF · slide del corso","file":"1.pdf","plannedPath":"materials/materno/slide-materno-1.pdf"},
+        {"id":"im-slide-2","type":"Slide","title":"Slide Materno 2","sourceName":"2.pdf","meta":"PDF · slide del corso","file":"2.pdf","plannedPath":"materials/materno/slide-materno-2.pdf"}
       ]
     }
   ]
