@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <title>Study Hub · Lezioni</title>
 <link rel="stylesheet" href="studyhub.css">
-<link rel="stylesheet" href="lezioni.css">
+<link rel="stylesheet" href="lezioni.css?v=20260915-pilot2">
 </head>
 <body>
 <main class="lesson-shell">
@@ -60,7 +60,10 @@
         <div class="lesson-progress"><div id="runnerProgressBar"></div></div>
         <div id="runnerProgressText" class="muted runner-progress-label">0%</div>
         <div class="runner-source"><span>Fonte</span><strong id="runnerSource"></strong><small id="runnerPages"></small></div>
-        <a id="runnerSourceLink" class="button peach" href="#" target="_blank">Apri PDF originale</a>
+        <div class="runner-side-actions">
+          <a id="runnerSourceLink" class="button peach" href="#" target="_blank">Apri PDF originale</a>
+          <button id="reviewLesson" class="button review-button" onclick="toggleReview()">Segna da ripassare</button>
+        </div>
       </aside>
       <article class="runner-main glass">
         <div class="eyebrow">LEZIONE INTERATTIVA</div>
@@ -76,6 +79,6 @@
   </section>
 </main>
 <div id="lessonToast" class="lesson-toast"></div>
-<script src="lezioni.js?v=20260915-pilot1"></script>
+<script src="lezioni.js?v=20260915-pilot2"></script>
 </body>
 </html>
