@@ -25,9 +25,62 @@ StudyHub è una web app statica HTML/CSS/JavaScript con **4 esami attivi e 1.521
 
 Farmacologia è visibile in homepage come **in preparazione**.
 
+StudyHub è ora organizzato in tre aree principali:
+
+1. **Esami** — simulazioni, spiegazioni, error review e progressi;
+2. **Materiali** — sbobine, compendi e slide consultabili/scaricabili;
+3. **Lezioni** — percorsi interattivi costruiti sui materiali originali con active recall, checkpoint e collegamento ai quiz.
+
+Slogan correnti:
+
+- Esami: **“Scegli l'esame. Poi distruggilo.”**
+- Materiali: **“Meno cartelle. Più studio.”**
+- Lezioni: **“Leggi meno. Ricorda di più.”**
+
+### Materiali
+
+La Biblioteca Materiali è attiva tramite `materiali.html`, `materiali.css`, `materiali.js` e `data/materiali.json`.
+
+PDF attualmente collegati e disponibili:
+
+- Anatomia Patologica: **6/6**;
+- Paziente chirurgico: **4** PDF attivi più 2 materiali catalogati ma non ancora pubblicati;
+- Infermieristica nel Materno: **6/6**;
+- Scienze della Salute: area predisposta, nessun PDF ancora associato.
+
+Checkpoint: `MATERIALI_PROGRESS.md`.
+
+### Lezioni interattive
+
+Il motore Lezioni è attivo tramite `lezioni.html`, `lezioni.css`, `lezioni.js` e `data/lezioni.json`.
+
+Pilota attivo: **Anatomia Patologica**, con 3 lezioni:
+
+1. Classificazione delle neoplasie;
+2. Grading e staging;
+3. Citologia diagnostica.
+
+Funzioni attive:
+
+- blocchi didattici sequenziali;
+- concetti chiave;
+- active recall;
+- checkpoint A/B/C/D con risposta obbligatoria prima di proseguire;
+- feedback immediato;
+- conteggio checkpoint corretti;
+- stato della lezione e avanzamento della materia;
+- `DA INIZIARE`, `IN CORSO`, `COMPLETATA`, `DA RIPASSARE`;
+- salvataggio progressi in `localStorage` con chiave `studyhub.lessons.progress.v1`;
+- collegamento al PDF originale;
+- accesso Materiali → **Studia come lezione** per Anatomia Patologica;
+- passaggio finale **Studia → Allenati sul quiz**.
+
+Checkpoint: `LESSONS_PROGRESS.md`.
+
 ## 3. Funzioni da preservare
 
 - homepage unica;
+- accesso coerente alle tre aree Esami / Materiali / Lezioni;
 - mix completo o focus sulla singola sezione;
 - sessioni 20/30/50/100/tutte;
 - ordine domande casuale o ordine banca quando previsto;
@@ -42,7 +95,10 @@ Farmacologia è visibile in homepage come **in preparazione**.
 - reset progressi;
 - progressi in `localStorage`;
 - interfaccia responsive/mobile;
-- ritorno semplice alla Home.
+- ritorno semplice alla Home;
+- accesso ai PDF originali dalla Biblioteca;
+- progressi Lezioni separati dai progressi dei quiz;
+- un problema nell'area Lezioni o Materiali non deve impedire il funzionamento degli esami.
 
 ### Opzioni semanticamente vincolate
 
@@ -61,6 +117,8 @@ Se il task riguarda UI, logica, spiegazioni o infrastruttura:
 Se emerge un quesito probabilmente errato, ambiguo, obsoleto o discordante, **non correggerlo di nascosto**: segnalarlo come QA e modificarlo solo con autorizzazione esplicita.
 
 Per contenuti medici/infermieristici dare priorità ai materiali universitari dell'utente. Quando serve verifica, aggiornamento o disambiguazione usare fonti autorevoli, incluse **PubMed/PMC, NCBI/NIH, WHO, CDC, UICC/NCI, fonti normative ufficiali e linee guida pertinenti**. Le fonti esterne servono a verificare o precisare il contenuto, non autorizzano modifiche silenziose della banca.
+
+Le lezioni interattive devono essere costruite sui materiali reali del corso. Non attribuire a slide o PDF contenuti non verificati. Il PDF originale deve rimanere accessibile come fonte primaria.
 
 ## 5. Standard delle spiegazioni
 
@@ -167,8 +225,12 @@ Checkpoint dettagliato: `ANATOMIA_PATOLOGICA_PROGRESS.md`.
 
 File principali:
 
-- `index.html` — homepage;
+- `index.html` — homepage e accesso Esami / Materiali / Lezioni;
 - `studyhub.css` — stile condiviso;
+- `materiali.html`, `materiali.css`, `materiali.js`, `data/materiali.json` — Biblioteca materiali;
+- `MATERIALI_PROGRESS.md`;
+- `lezioni.html`, `lezioni.css`, `lezioni.js`, `data/lezioni.json` — motore Lezioni;
+- `LESSONS_PROGRESS.md`;
 - `scienze-salute.html` — wrapper Scienze;
 - `scienze-salute-app.html` — motore originale Scienze;
 - `scienze-salute-explanations.js` e `data/scienze-salute-explanations-001.json` → `013.json`;
@@ -181,10 +243,10 @@ File principali:
 - `paziente-chirurgico.html`;
 - `data/paziente-chirurgico-explanations-manifest.json` e `001`→`029`;
 - `PAZIENTE_CHIRURGICO_PROGRESS.md`;
-- `data/` — banche e spiegazioni;
+- `data/` — banche, spiegazioni, cataloghi Materiali e Lezioni;
 - `.nojekyll`.
 
-I progressi utente restano locali al browser; non ci sono account, database remoto o sync cloud.
+I progressi utente restano locali al browser; non ci sono account, database remoto o sync cloud. I progressi dei quiz e quelli delle Lezioni usano namespace separati.
 
 ## 7. Workflow obbligatorio
 
@@ -195,17 +257,19 @@ I progressi utente restano locali al browser; non ci sono account, database remo
 5. preservare tutto ciò che non è coinvolto;
 6. verificare conteggi, ID, sezioni e risposta corretta;
 7. verificare che le motivazioni seguano l'opzione originale dopo shuffle;
-8. testare almeno avvio → risposta → feedback → successiva/precedente → risultato → ripasso errori → Home;
-9. mantenere responsive/mobile;
-10. aggiornare checkpoint e questo file quando cambia lo stato reale.
+8. per gli esami testare almeno avvio → risposta → feedback → successiva/precedente → risultato → ripasso errori → Home;
+9. per le Lezioni testare almeno Home Lezioni → materia → blocchi → active recall → checkpoint → completamento → quiz/PDF → ritorno;
+10. mantenere responsive/mobile;
+11. aggiornare checkpoint e questo file quando cambia lo stato reale.
 
 ### Lavoro a blocchi
 
 - Paziente chirurgico: **462/462** completo.
 - Scienze della Salute: **459/459** completo.
 - Anatomia Patologica: **300/300** completo.
+- Lezioni Anatomia Patologica: **3 lezioni pilota attive**.
 
-Non esiste più un punto di ripresa per le spiegazioni avanzate di questi tre esami.
+Non esiste più un punto di ripresa per le spiegazioni avanzate dei tre esami completi. Il lavoro incrementale corrente riguarda l'estensione delle Lezioni e il completamento delle spiegazioni Materno secondo `MATERNO_PROGRESS.md`.
 
 ## 8. GitHub e autorizzazioni
 
@@ -218,9 +282,12 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 
 ## 9. Roadmap immediata
 
-1. Paziente chirurgico: spiegazioni complete 462/462.
-2. Scienze della Salute: spiegazioni complete 459/459.
-3. Anatomia Patologica: spiegazioni complete 300/300.
-4. Mantenere le banche originali inalterate salvo autorizzazione esplicita.
-5. Gestire quesiti dubbi o obsoleti come QA separato.
-6. Farmacologia resta una futura banca in preparazione.
+1. mantenere intatti i quattro esami esistenti e le relative banche;
+2. completare le spiegazioni avanzate Materno secondo `MATERNO_PROGRESS.md`;
+3. estendere il percorso Lezioni di Anatomia Patologica oltre le 3 lezioni pilota;
+4. creare Lezioni per Infermieristica nel Materno utilizzando i PDF reali già pubblicati;
+5. creare Lezioni per Paziente chirurgico utilizzando i PDF reali già pubblicati;
+6. collegare progressivamente le lezioni alle sezioni/domande pertinenti dei quiz;
+7. associare materiali reali a Scienze della Salute quando disponibili;
+8. Farmacologia resta una futura banca in preparazione;
+9. gestire quesiti dubbi o obsoleti come QA separato.
