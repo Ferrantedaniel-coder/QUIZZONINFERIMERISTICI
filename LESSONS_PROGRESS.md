@@ -18,39 +18,37 @@ Ogni lezione mantiene lo schema StudyHub:
 
 ## Copertura complessiva
 
-Sono ora strutturati e apribili tre percorsi d'esame:
+Sono ora strutturati e apribili tre percorsi d'esame, tutti completi:
 
-- **Anatomia Patologica**: 63 capitoli mappati / 47 lezioni attive;
+- **Anatomia Patologica**: 63 capitoli / **63 lezioni attive**;
 - **Infermieristica nel Materno**: 62 capitoli / **62 lezioni attive**;
 - **Paziente chirurgico**: 60 capitoli / **60 lezioni attive**.
 
-Totale StudyHub Lezioni: **185 capitoli mappati / 169 lezioni interattive attive**.
+Totale StudyHub Lezioni: **185 capitoli mappati / 185 lezioni interattive attive**.
 
 Scienze della Salute resta predisposto come successiva estensione della sezione Lezioni.
 
 ---
 
-# 1. Anatomia Patologica
+# 1. Anatomia Patologica — COMPLETA 63/63
 
 Materie e copertura:
 
 - Eziologia Generale: **8/8**;
-- Patologia Generale: **10/20**;
-- Immunologia: **12/16**;
-- Anatomia Patologica: **17/19**.
+- Patologia Generale: **20/20**;
+- Immunologia: **16/16**;
+- Anatomia Patologica: **19/19**.
 
-Totale: **47/63**.
+Totale: **63/63**.
 
-I 16 capitoli non attivati restano volutamente **IN PREPARAZIONE** perché non sufficientemente coperti dai materiali universitari verificati: 10 di Patologia Generale, 4 di Immunologia e 2 di Anatomia Patologica.
-
-Le tre lezioni pilota originarie — **Citologia diagnostica**, **Classificazione delle neoplasie**, **Grading e staging** — mantengono gli stessi ID e quindi restano compatibili con i progressi già salvati.
+Le tre lezioni pilota originarie — **Citologia diagnostica**, **Classificazione delle neoplasie**, **Grading e staging** — mantengono gli stessi ID e quindi i progressi già salvati restano compatibili.
 
 Pacchetti attivi:
 
 - `data/lezioni-eziologia.json` + `lezioni-eziologia-loader.js`;
-- `data/lezioni-patologia-1.json`, `data/lezioni-patologia-2.json` + `lezioni-patologia-loader.js`;
-- `data/lezioni-immunologia-1.json`, `data/lezioni-immunologia-2.json` + `lezioni-immunologia-loader.js`;
-- `data/lezioni-anatomia-patologica-1.json`, `data/lezioni-anatomia-patologica-2.json`, `data/lezioni-anatomia-patologica-3.json` + `lezioni-anatomia-patologica-loader.js`.
+- `data/lezioni-patologia-1.json`, `data/lezioni-patologia-2.json`, `data/lezioni-patologia-3.json` + `lezioni-patologia-loader.js`;
+- `data/lezioni-immunologia-1.json`, `data/lezioni-immunologia-2.json`, `data/lezioni-immunologia-3.json` + `lezioni-immunologia-loader.js`;
+- `data/lezioni-anatomia-patologica-1.json`, `data/lezioni-anatomia-patologica-2.json`, `data/lezioni-anatomia-patologica-3.json`, `data/lezioni-anatomia-patologica-4.json` + `lezioni-anatomia-patologica-loader.js`.
 
 Fonti universitarie principali:
 
@@ -59,7 +57,15 @@ Fonti universitarie principali:
 - `Immunologia STAMPATO.pdf`;
 - `ANATOMIA PATOLOGICA.pdf`.
 
-Tra le correzioni scientifiche già registrate: via **lectinica** del complemento/MBL; MHC I sulla grande maggioranza delle cellule nucleate; perforina/granzimi come meccanismo apoptotico; formalina 10% ≈ 4% formaldeide; Rosso Congo e birifrangenza verde mela; Ki-67 contestualizzato; frozen section come consulenza intraoperatoria selettiva; grading e staging distinti; TNM dipendente dalla sede.
+Per i 16 capitoli precedentemente non sufficientemente sviluppati nei PDF è stata usata **integrazione esterna esplicitamente verificata**, mantenendo distinta la provenienza nei campi `source` delle lezioni. Riferimenti principali: NCBI/NIH per patologia generale, autoimmunità, immunodeficienze e trapianti; NCI per immunità antitumorale/checkpoint; WHO per screening cervicale; CAP per refertazione oncologica strutturata.
+
+Capitoli completati nell'ultimo blocco:
+
+- Patologia Generale: adattamenti cellulari; accumuli intracellulari; calcificazioni patologiche; guarigione delle ferite; disturbi emodinamici; emostasi e trombosi; embolia; infarto; shock; metabolismo della bilirubina e ittero.
+- Immunologia: autoimmunità; immunodeficienze; immunologia dei trapianti; immunità antitumorale.
+- Anatomia Patologica: citologia/screening cervicale; refertazione anatomopatologica.
+
+Tra le correzioni scientifiche registrate: via **lectinica** del complemento/MBL; MHC I sulla grande maggioranza delle cellule nucleate; perforina/granzimi come meccanismo apoptotico; formalina 10% ≈ 4% formaldeide; Rosso Congo e birifrangenza verde mela; Ki-67 contestualizzato; frozen section come consulenza intraoperatoria selettiva; grading e staging distinti; TNM dipendente dalla sede; HPV positivo distinto da diagnosi di carcinoma; test HPV valorizzato nello screening moderno; refertazione oncologica strutturata con elementi essenziali di istotipo, margini, linfonodi, pTNM e biomarcatori quando applicabili.
 
 ---
 
@@ -242,14 +248,10 @@ Le lezioni preservano il programma del corso ma non propagano nozioni datate o e
 
 ## Regola contenuti
 
-**Non inventare contenuti per riempire la roadmap.** Le lezioni devono derivare dai materiali reali del corso/progetto. Le fonti esterne autorevoli possono essere usate per correggere o aggiornare parti obsolete, ma non devono essere attribuite falsamente al PDF del corso.
-
-Quando un argomento non è sufficientemente coperto dal materiale universitario e non esiste un'integrazione autorizzata/affidabile, il capitolo rimane **IN PREPARAZIONE**.
+**Non inventare contenuti per riempire la roadmap.** Le lezioni devono derivare dai materiali reali del corso/progetto. Le fonti esterne autorevoli possono essere usate per correggere, completare o aggiornare parti non sufficientemente sviluppate quando ciò è stato autorizzato; la provenienza deve restare distinta e non va attribuita falsamente al PDF del corso.
 
 ## Prossimo sviluppo
 
-I percorsi **Infermieristica nel Materno 62/62** e **Paziente chirurgico 60/60** sono completi.
+I percorsi **Anatomia Patologica 63/63**, **Infermieristica nel Materno 62/62** e **Paziente chirurgico 60/60** sono completi.
 
 Prossimo percorso Lezioni naturale: **Scienze della Salute**, quando saranno disponibili materiali reali sufficienti da associare alla Biblioteca.
-
-Restano inoltre 16 capitoli della roadmap di Anatomia Patologica non attivati per insufficiente copertura diretta nei materiali già verificati.
