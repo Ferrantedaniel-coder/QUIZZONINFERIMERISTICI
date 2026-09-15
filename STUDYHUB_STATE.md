@@ -60,20 +60,23 @@ Gerarchia attiva:
 
 Il percorso strutturato attivo è **Anatomia Patologica**. Aprendo l'esame compaiono, nell'ordine didattico concordato:
 
-1. **Eziologia Generale** — 8 capitoli;
-2. **Patologia Generale** — 20 capitoli;
-3. **Immunologia** — 16 capitoli;
-4. **Anatomia Patologica** — 19 capitoli.
+1. **Eziologia Generale** — 8 capitoli / **8 lezioni attive**;
+2. **Patologia Generale** — 20 capitoli / **10 lezioni attive**;
+3. **Immunologia** — 16 capitoli / **12 lezioni attive**;
+4. **Anatomia Patologica** — 19 capitoli / **17 lezioni attive**.
 
-Totale roadmap: **63 capitoli mappati**. Le quattro materie sono apribili anche se una singola lezione non è ancora stata convertita: in quel caso il capitolo è mostrato come **IN PREPARAZIONE**, senza generare contenuti non verificati.
+Totale roadmap: **63 capitoli mappati / 47 lezioni interattive attive**.
 
-Le 3 lezioni interattive attive sono collocate nella materia Anatomia Patologica:
+I capitoli non sufficientemente coperti dai materiali universitari rimangono **IN PREPARAZIONE**: non vengono riempiti con contenuti inventati. Restano 16 capitoli non attivati: 10 di Patologia Generale, 4 di Immunologia e 2 di Anatomia Patologica.
 
-1. Citologia diagnostica;
-2. Classificazione delle neoplasie;
-3. Grading e staging.
+Le 3 lezioni pilota originarie — **Citologia diagnostica**, **Classificazione delle neoplasie**, **Grading e staging** — mantengono gli stessi ID, quindi i progressi precedentemente salvati nel browser restano compatibili.
 
-Gli ID delle 3 lezioni pilota sono rimasti invariati per preservare i progressi già salvati.
+Pacchetti di contenuto attivi:
+
+- `data/lezioni-eziologia.json` + `lezioni-eziologia-loader.js`;
+- `data/lezioni-patologia-1.json`, `data/lezioni-patologia-2.json` + `lezioni-patologia-loader.js`;
+- `data/lezioni-immunologia-1.json`, `data/lezioni-immunologia-2.json` + `lezioni-immunologia-loader.js`;
+- `data/lezioni-anatomia-patologica-1.json`, `002`/`003` come file denominati `data/lezioni-anatomia-patologica-2.json`, `data/lezioni-anatomia-patologica-3.json` + `lezioni-anatomia-patologica-loader.js`.
 
 Funzioni attive:
 
@@ -93,7 +96,7 @@ Funzioni attive:
 - passaggio finale **Studia → Allenati sul quiz**;
 - compatibilità con il vecchio routing `?materia=anatomia-patologica` e nuovo routing `?esame=...&materia=...`.
 
-Checkpoint: `LESSONS_PROGRESS.md`.
+Checkpoint dettagliato: `LESSONS_PROGRESS.md`.
 
 ## 3. Funzioni da preservare
 
@@ -136,7 +139,7 @@ Se emerge un quesito probabilmente errato, ambiguo, obsoleto o discordante, **no
 
 Per contenuti medici/infermieristici dare priorità ai materiali universitari dell'utente. Quando serve verifica, aggiornamento o disambiguazione usare fonti autorevoli, incluse **PubMed/PMC, NCBI/NIH, WHO, CDC, UICC/NCI, fonti normative ufficiali e linee guida pertinenti**. Le fonti esterne servono a verificare o precisare il contenuto, non autorizzano modifiche silenziose della banca.
 
-Le lezioni interattive devono essere costruite sui materiali reali del corso. Non attribuire a slide o PDF contenuti non verificati. Il PDF originale deve rimanere accessibile come fonte primaria.
+Le lezioni interattive devono essere costruite sui materiali reali del corso. Non attribuire a slide o PDF contenuti non verificati. Il PDF originale deve rimanere accessibile come fonte primaria. Se il materiale non copre a sufficienza un capitolo della roadmap, quel capitolo resta **IN PREPARAZIONE**.
 
 ## 5. Standard delle spiegazioni
 
@@ -213,13 +216,13 @@ Nel blocco finale `a81–a100` sono stati verificati: criostato, frozen section 
 
 ### Precisazioni scientifiche registrate
 
-Nelle spiegazioni avanzate sono state applicate precisazioni scientifiche senza modificare la banca originale. Tra le principali:
+Nelle spiegazioni avanzate e nelle lezioni interattive sono state applicate precisazioni scientifiche senza modificare la banca originale. Tra le principali:
 
 - corretta denominazione **via lectinica del complemento** con **mannose-binding lectin (MBL)**;
 - cellule dendritiche come APC più efficienti nell'attivazione dei T vergini, evitando l'assoluto “uniche APC costimolatorie”;
 - MHC I espresso sulla grande maggioranza delle cellule nucleate;
 - citotossicità perforina/granzimi descritta principalmente come induzione di apoptosi;
-- formalina al 10% precisata come formalina neutra tamponata con circa il 4% di formaldeide;
+- formalina al 10% precisata come soluzione con circa il 4% di formaldeide;
 - ritardo alla fissazione trattato come variabile pre-analitica rilevante;
 - Rosso Congo associato all'amiloide e alla birifrangenza verde mela;
 - Ki-67 descritto come marcatore nucleare della frazione proliferante con significato dipendente dal contesto;
@@ -235,9 +238,10 @@ Nelle spiegazioni avanzate sono state applicate precisazioni scientifiche senza 
 - stadiazione patologica indicata con prefisso **p** (`pTNM`) secondo i criteri applicabili;
 - immunoistochimica e diagnostica molecolare possono identificare biomarcatori predittivi utili alla scelta terapeutica.
 
-Nessun quesito `m1–m100`, `e1–e50`, `i1–i50` o `a1–a100` è stato modificato durante il lavoro sulle spiegazioni. Domande, opzioni, risposte corrette, ID e topic sono rimasti invariati.
+Nessun quesito `m1–m100`, `e1–e50`, `i1–i50` o `a1–a100` è stato modificato durante il lavoro sulle spiegazioni o sulle Lezioni. Domande, opzioni, risposte corrette, ID e topic sono rimasti invariati.
 
-Checkpoint dettagliato: `ANATOMIA_PATOLOGICA_PROGRESS.md`.
+Checkpoint dettagliato quiz: `ANATOMIA_PATOLOGICA_PROGRESS.md`.  
+Checkpoint dettagliato Lezioni: `LESSONS_PROGRESS.md`.
 
 ## 6. Architettura corrente
 
@@ -248,6 +252,8 @@ File principali:
 - `materiali.html`, `materiali.css`, `materiali.js`, `data/materiali.json` — Biblioteca materiali;
 - `MATERIALI_PROGRESS.md`;
 - `lezioni.html`, `lezioni.css`, `lezioni.js`, `data/lezioni.json` — motore Lezioni;
+- `lezioni-eziologia-loader.js`, `lezioni-patologia-loader.js`, `lezioni-immunologia-loader.js`, `lezioni-anatomia-patologica-loader.js`;
+- relativi pacchetti `data/lezioni-*.json`;
 - `LESSONS_PROGRESS.md`;
 - `scienze-salute.html` — wrapper Scienze;
 - `scienze-salute-app.html` — motore originale Scienze;
@@ -285,9 +291,9 @@ I progressi utente restano locali al browser; non ci sono account, database remo
 - Paziente chirurgico: **462/462** completo.
 - Scienze della Salute: **459/459** completo.
 - Anatomia Patologica: **300/300** completo.
-- Lezioni Anatomia Patologica: **63 capitoli mappati, 3 lezioni interattive attive**.
+- Lezioni esame Anatomia Patologica: **63 capitoli mappati / 47 lezioni interattive attive**.
 
-Non esiste più un punto di ripresa per le spiegazioni avanzate dei tre esami completi. Il lavoro incrementale corrente riguarda l'estensione delle Lezioni e il completamento delle spiegazioni Materno secondo `MATERNO_PROGRESS.md`.
+Non esiste più un punto di ripresa per le spiegazioni avanzate dei tre esami completi. Il lavoro incrementale corrente riguarda l'estensione delle Lezioni sui capitoli supportati dai materiali e il completamento delle spiegazioni Materno secondo `MATERNO_PROGRESS.md`.
 
 ## 8. GitHub e autorizzazioni
 
@@ -302,7 +308,7 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 
 1. mantenere intatti i quattro esami esistenti e le relative banche;
 2. completare le spiegazioni avanzate Materno secondo `MATERNO_PROGRESS.md`;
-3. riempire progressivamente i 63 capitoli di Anatomia Patologica seguendo l'ordine **Eziologia Generale → Patologia Generale → Immunologia → Anatomia Patologica**;
+3. per l'esame Anatomia Patologica attivare i 16 capitoli ancora in preparazione **solo quando esiste materiale universitario sufficiente oppure dopo integrazione esterna esplicitamente autorizzata e verificata**;
 4. creare Lezioni per Infermieristica nel Materno utilizzando i PDF reali già pubblicati;
 5. creare Lezioni per Paziente chirurgico utilizzando i PDF reali già pubblicati;
 6. collegare progressivamente le lezioni alle sezioni/domande pertinenti dei quiz;
