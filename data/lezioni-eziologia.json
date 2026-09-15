@@ -1,0 +1,158 @@
+{
+  "version": "2026-09-15-eziologia-1",
+  "disciplineId": "eziologia-generale",
+  "chapters": {
+    "ez-concetti": [
+      {
+        "id": "ez-concetti-fondamentali",
+        "title": "Concetti fondamentali di eziologia",
+        "subtitle": "Cause di malattia, eziologia, patogenesi e classificazione",
+        "duration": "14 min",
+        "source": "Eziologia generale STAMPATO.pdf",
+        "sourcePages": "1",
+        "blocks": [
+          {"type":"intro","title":"Obiettivo della lezione","text":"Distinguere eziologia e patogenesi e organizzare le principali cause di malattia in cause intrinseche/endogene ed estrinseche/esogene."},
+          {"type":"text","title":"Eziologia e patogenesi","text":"L'eziologia studia le cause della malattia. La patogenesi descrive invece i meccanismi attraverso cui una causa produce alterazioni cellulari, tissutali e cliniche. Le due domande sono quindi diverse: l'eziologia chiede 'perché nasce la malattia?', la patogenesi 'come si sviluppa?'."},
+          {"type":"key","title":"La classificazione di base","items":["Cause intrinseche o endogene: originano dall'interno dell'organismo, in particolare da alterazioni genetiche o costituzionali.","Cause estrinseche o esogene: derivano dall'ambiente esterno.","Tra le cause esogene rientrano agenti fisici, chimici, biologici e fattori alimentari.","Una stessa malattia può derivare dall'interazione di più fattori e non necessariamente da una singola causa."]},
+          {"type":"text","title":"Dalla causa al danno","text":"Uno stimolo patologico può essere tollerato, indurre un adattamento oppure causare danno. L'effetto dipende dall'intensità dello stimolo, dalla durata dell'esposizione e dalla vulnerabilità del tessuto. Quando la capacità di adattamento viene superata, il danno può diventare irreversibile."},
+          {"type":"recall","question":"Qual è la differenza essenziale tra eziologia e patogenesi?","answer":"L'eziologia identifica le cause della malattia; la patogenesi descrive i meccanismi con cui quelle cause producono la malattia."},
+          {"type":"checkpoint","question":"Quale disciplina studia i meccanismi attraverso cui una causa produce la malattia?","options":["Eziologia","Patogenesi","Citologia","Istologia"],"correct":1,"explanation":"La patogenesi studia la sequenza di eventi e i meccanismi che collegano la causa alle manifestazioni della malattia."},
+          {"type":"checkpoint","question":"Quale tra queste è una causa esogena?","options":["Una mutazione ereditaria","Un'anomalia cromosomica costituzionale","L'esposizione a una sostanza tossica","Una predisposizione genetica"],"correct":2,"explanation":"Una sostanza tossica proviene dall'esterno dell'organismo ed è quindi una causa esogena."}
+        ]
+      }
+    ],
+    "ez-fisici": [
+      {
+        "id": "ez-agenti-fisici",
+        "title": "Agenti fisici",
+        "subtitle": "Traumi, temperatura e radiazioni",
+        "duration": "20 min",
+        "source": "Eziologia generale STAMPATO.pdf",
+        "sourcePages": "1–8",
+        "blocks": [
+          {"type":"intro","title":"Obiettivo della lezione","text":"Riconoscere i principali agenti fisici di malattia e comprendere come trauma meccanico, temperatura e radiazioni producono danno tissutale."},
+          {"type":"text","title":"Traumi meccanici","text":"Gli insulti meccanici possono interessare tessuti superficiali, organi interni o apparato osteoarticolare. Un trauma può quindi essere evidente sulla cute oppure provocare lesioni interne importanti senza segni esterni proporzionati."},
+          {"type":"key","title":"Lesioni da trauma","items":["Ecchimosi: stravaso ematico sottocutaneo con cute integra.","Escoriazione: perdita degli strati superficiali della cute.","Ferita: soluzione di continuo della cute e dei tessuti sottostanti.","Frattura: può essere completa o incompleta, composta o scomposta; una frattura esposta comunica con l'esterno.","Distorsione: temporanea perdita dei normali rapporti articolari con ritorno spontaneo; lussazione: persistenza del disallineamento."]},
+          {"type":"text","title":"Alte e basse temperature","text":"Il danno termico dipende da temperatura raggiunta, durata dell'esposizione, modalità di trasferimento del calore e tipo di tessuto. Il calore può produrre ustioni fino alla necrosi profonda; il freddo induce inizialmente vasocostrizione e, se intenso o prolungato, può determinare lesioni tissutali, congelamento e gangrena."},
+          {"type":"text","title":"Radiazioni","text":"Le radiazioni ionizzanti possiedono energia sufficiente a ionizzare la materia e possono danneggiare direttamente macromolecole come il DNA oppure indirettamente attraverso la radiolisi dell'acqua e la formazione di specie reattive. La radiosensibilità è maggiore nelle cellule in rapida proliferazione, anche se il risultato finale dipende da dose, tessuto e capacità di riparazione."},
+          {"type":"recall","question":"Perché una lesione interna può essere più subdola di una ferita superficiale?","answer":"Perché un organo interno può essere danneggiato anche in assenza di una lesione cutanea evidente, ritardando il riconoscimento di emorragie o altre complicanze."},
+          {"type":"checkpoint","question":"Quale situazione descrive meglio una lussazione?","options":["Una frattura incompleta","Uno spostamento articolare che persiste","Un'ecchimosi periarticolare","Una lesione esclusivamente muscolare"],"correct":1,"explanation":"Nella lussazione i capi articolari restano disallineati e non ritornano spontaneamente nella posizione originaria."},
+          {"type":"checkpoint","question":"Qual è uno dei principali meccanismi indiretti di danno da radiazioni ionizzanti?","options":["Riduzione della glicemia","Radiolisi dell'acqua con formazione di specie reattive","Aumento della sintesi di collagene","Blocco della trascrizione di tutti i geni"],"correct":1,"explanation":"L'energia delle radiazioni può agire sull'acqua cellulare generando specie reattive capaci di danneggiare macromolecole."}
+        ]
+      }
+    ],
+    "ez-chimici": [
+      {
+        "id": "ez-agenti-chimici",
+        "title": "Agenti chimici e tossici",
+        "subtitle": "Dose, vie di esposizione, biotrasformazione e veleni",
+        "duration": "20 min",
+        "source": "Eziologia generale STAMPATO.pdf",
+        "sourcePages": "8–12",
+        "blocks": [
+          {"type":"intro","title":"Obiettivo della lezione","text":"Capire da cosa dipende la tossicità di un agente chimico e come l'organismo trasforma ed elimina xenobiotici e sostanze potenzialmente dannose."},
+          {"type":"text","title":"Come una sostanza chimica produce danno","text":"Il danno chimico dipende dalla natura della sostanza, dalla dose, dalla durata del contatto, dalla via di ingresso, dalla distribuzione nell'organismo e dal metabolismo. Tra i meccanismi descritti nel corso rientrano alterazioni del pH, effetto solvente sulle membrane, denaturazione proteica e azione tossica specifica."},
+          {"type":"key","title":"I determinanti della tossicità","items":["Dose: quantità di sostanza assorbita.","Tempo: durata e ripetizione dell'esposizione.","Via di ingresso: orale, inalatoria, cutanea o parenterale.","Distribuzione: alcuni composti raggiungono molti tessuti, altri si concentrano in sedi specifiche.","Biotrasformazione: può inattivare un composto oppure, in alcuni casi, generare metaboliti più reattivi e tossici."]},
+          {"type":"text","title":"Biotrasformazione: fase I e fase II","text":"Le reazioni di fase I comprendono soprattutto ossidazione, riduzione e idrolisi e spesso coinvolgono sistemi enzimatici epatici come i citocromi P450. Le reazioni di fase II coniugano il composto con molecole che ne aumentano in genere l'idrosolubilità, facilitandone l'eliminazione. La biotrasformazione non coincide sempre con detossificazione: alcuni metaboliti intermedi possono essere più tossici del composto di partenza."},
+          {"type":"text","title":"Veleni e tossici","text":"Le sostanze tossiche possono essere inorganiche, di origine biologica o sintetiche. Metalli pesanti, pesticidi, tossine naturali e farmaci possono produrre quadri molto differenti. Il concetto centrale è che la pericolosità non dipende soltanto dal nome della sostanza, ma dall'esposizione reale e dal modo in cui viene assorbita e metabolizzata."},
+          {"type":"recall","question":"Perché la biotrasformazione non significa sempre detossificazione?","answer":"Perché il metabolismo può trasformare una sostanza in un composto più idrosolubile e innocuo, ma può anche produrre intermedi più reattivi o tossici."},
+          {"type":"checkpoint","question":"Quale fattore NON è irrilevante nel determinare la tossicità di una sostanza?","options":["Dose","Via di ingresso","Durata dell'esposizione","Sono tutti rilevanti"],"correct":3,"explanation":"Dose, via di ingresso e durata dell'esposizione contribuiscono tutte a determinare l'effetto tossico."},
+          {"type":"checkpoint","question":"Qual è la funzione generale delle reazioni di fase II?","options":["Coniugare il composto favorendone l'eliminazione","Frammentare meccanicamente la molecola","Produrre sempre un metabolita più tossico","Bloccare l'assorbimento intestinale"],"correct":0,"explanation":"Le reazioni di fase II formano coniugati generalmente più polari e quindi più facilmente eliminabili."}
+        ]
+      }
+    ],
+    "ez-biologici": [
+      {
+        "id": "ez-agenti-biologici",
+        "title": "Agenti biologici",
+        "subtitle": "Microrganismi, parassiti e modalità generali di danno",
+        "duration": "13 min",
+        "source": "PATOLOGIA GENERALE definitivo.pdf",
+        "blocks": [
+          {"type":"intro","title":"Obiettivo della lezione","text":"Inquadrare batteri, virus, funghi e parassiti come cause esogene di malattia, concentrandosi sui meccanismi generali con cui possono danneggiare l'ospite."},
+          {"type":"text","title":"Una categoria eziologica, molti meccanismi","text":"Gli agenti biologici non producono tutti lo stesso tipo di danno. Possono replicarsi nei tessuti, provocare citolisi, liberare prodotti tossici, sottrarre risorse all'ospite oppure indurre una risposta infiammatoria e immunitaria che contribuisce al danno tissutale."},
+          {"type":"key","title":"Le principali categorie","items":["Batteri: organismi cellulari procariotici capaci, a seconda della specie, di invasione, produzione di tossine o persistenza nei tessuti.","Virus: parassiti intracellulari obbligati che utilizzano la cellula ospite per replicarsi.","Funghi: possono causare infezioni superficiali o profonde, soprattutto quando le difese dell'ospite sono compromesse.","Parassiti: comprendono protozoi ed elminti e possono provocare danno diretto, infiammazione e alterazioni nutrizionali o tissutali."]},
+          {"type":"text","title":"Il ruolo dell'ospite","text":"La malattia infettiva dipende dall'interazione tra caratteristiche dell'agente e condizioni dell'ospite. Integrità delle barriere, immunità, età, comorbidità e carica dell'agente influenzano il rischio che il semplice contatto evolva in infezione e malattia."},
+          {"type":"recall","question":"Perché il danno da agente biologico non dipende soltanto dal microrganismo?","answer":"Perché la gravità deriva dall'interazione tra patogenicità dell'agente, quantità/esposizione e capacità difensiva dell'ospite."},
+          {"type":"checkpoint","question":"Quale caratteristica distingue i virus dagli altri principali agenti biologici?","options":["Sono sempre visibili al microscopio ottico","Sono parassiti intracellulari obbligati","Producono tutti esotossine","Sono tutti extracellulari"],"correct":1,"explanation":"I virus necessitano della cellula ospite per completare il proprio ciclo replicativo."},
+          {"type":"checkpoint","question":"Quale fattore dell'ospite può modificare il rischio di malattia infettiva?","options":["Integrità delle barriere","Stato immunitario","Età e comorbidità","Tutti i precedenti"],"correct":3,"explanation":"Tutti questi elementi modificano la suscettibilità dell'ospite e l'esito dell'esposizione."}
+        ]
+      }
+    ],
+    "ez-nutrizionali": [
+      {
+        "id": "ez-fattori-nutrizionali",
+        "title": "Fattori nutrizionali",
+        "subtitle": "Carenza, eccesso e squilibrio come cause di malattia",
+        "duration": "12 min",
+        "source": "PATOLOGIA GENERALE definitivo.pdf",
+        "blocks": [
+          {"type":"intro","title":"Obiettivo della lezione","text":"Comprendere come un apporto nutrizionale insufficiente, eccessivo o qualitativamente squilibrato possa contribuire alla malattia."},
+          {"type":"text","title":"Non conta solo quanta energia assumiamo","text":"I fattori alimentari rientrano tra le cause esogene di malattia. Il danno può derivare da carenza energetico-proteica, deficit di micronutrienti oppure eccesso cronico di energia e nutrienti. L'effetto dipende dalla durata dello squilibrio e dalle condizioni individuali."},
+          {"type":"key","title":"Tre grandi meccanismi","items":["Carenza globale: apporto energetico e proteico insufficiente.","Carenza selettiva: deficit di vitamine, minerali o altri nutrienti essenziali.","Eccesso: sovrappeso e obesità possono favorire alterazioni metaboliche, cardiovascolari e infiammatorie.","Squilibrio qualitativo: una dieta non adeguatamente bilanciata può contribuire a stress metabolico e aumentato rischio di malattia."]},
+          {"type":"text","title":"Nutrizione e vulnerabilità dei tessuti","text":"Una nutrizione inadeguata modifica anche la capacità dell'organismo di reagire ad altri insulti. Carenze proteiche o vitaminiche possono compromettere riparazione tissutale e difese; l'eccesso adiposo può invece associarsi a disfunzioni metaboliche e a uno stato infiammatorio cronico di basso grado."},
+          {"type":"recall","question":"Quali sono le tre modalità principali con cui la nutrizione può diventare un fattore eziologico?","answer":"Carenza globale, carenza selettiva di nutrienti ed eccesso/squilibrio cronico dell'apporto."},
+          {"type":"checkpoint","question":"Quale situazione rappresenta una carenza selettiva?","options":["Deficit di una vitamina essenziale","Trauma meccanico","Esposizione a radiazioni","Infezione virale"],"correct":0,"explanation":"Una carenza selettiva riguarda un singolo nutriente o gruppo di nutrienti, come una vitamina o un minerale."},
+          {"type":"checkpoint","question":"Perché un deficit nutrizionale può rallentare la riparazione dei tessuti?","options":["Perché riduce necessariamente la temperatura corporea","Perché può limitare substrati e cofattori necessari a sintesi e proliferazione cellulare","Perché aumenta sempre la pressione arteriosa","Perché blocca direttamente tutti i leucociti"],"correct":1,"explanation":"La riparazione richiede energia, aminoacidi, vitamine e altri cofattori; una carenza può quindi ostacolare il processo."}
+        ]
+      }
+    ],
+    "ez-genetici": [
+      {
+        "id": "ez-fattori-genetici",
+        "title": "Fattori genetici",
+        "subtitle": "Mutazioni, ereditarietà e predisposizione",
+        "duration": "13 min",
+        "source": "PATOLOGIA GENERALE definitivo.pdf",
+        "blocks": [
+          {"type":"intro","title":"Obiettivo della lezione","text":"Distinguere alterazione genetica, malattia ereditaria e predisposizione, evitando di considerare ogni malattia genetica come inevitabile o ogni malattia congenita come ereditaria."},
+          {"type":"text","title":"Cause endogene","text":"Le alterazioni del patrimonio genetico rappresentano una delle principali categorie di cause intrinseche. Una mutazione può modificare la quantità o la funzione di una proteina strutturale, enzimatica o regolatoria e produrre conseguenze cellulari e sistemiche molto differenti."},
+          {"type":"key","title":"Concetti da distinguere","items":["Genetico: legato a un'alterazione del DNA o dei cromosomi.","Ereditario: trasmesso attraverso la linea germinale dai genitori alla prole.","Congenito: presente alla nascita; può essere genetico oppure derivare da fattori ambientali prenatali.","Predisposizione: variante o insieme di varianti che aumenta la probabilità di una malattia senza determinarla necessariamente."]},
+          {"type":"text","title":"Malattie monogeniche e multifattoriali","text":"Alcune malattie derivano principalmente dalla mutazione di un singolo gene; altre dipendono dall'interazione di numerose varianti genetiche con fattori ambientali. Nelle malattie multifattoriali il patrimonio genetico modifica il rischio, ma l'esito dipende anche dalle esposizioni e dallo stile di vita."},
+          {"type":"recall","question":"Perché 'congenito' ed 'ereditario' non sono sinonimi?","answer":"Congenito significa presente alla nascita e può dipendere anche da fattori ambientali prenatali; ereditario significa trasmesso geneticamente attraverso la linea germinale."},
+          {"type":"checkpoint","question":"Quale affermazione sulla predisposizione genetica è corretta?","options":["Determina sempre la malattia","Aumenta il rischio ma non rende inevitabile la malattia","È sempre acquisita dopo la nascita","È sinonimo di infezione congenita"],"correct":1,"explanation":"Una predisposizione modifica la probabilità di malattia e spesso interagisce con fattori ambientali."},
+          {"type":"checkpoint","question":"Una condizione presente alla nascita ma causata da un'esposizione ambientale fetale è correttamente definita:","options":["Congenita ma non necessariamente ereditaria","Sempre ereditaria","Sempre monogenica","Sempre cromosomica"],"correct":0,"explanation":"La presenza alla nascita definisce una condizione congenita, che può essere genetica oppure ambientale."}
+        ]
+      }
+    ],
+    "ez-ossidativo": [
+      {
+        "id": "ez-stress-ossidativo",
+        "title": "Radicali liberi e stress ossidativo",
+        "subtitle": "ROS, danno macromolecolare e sistemi antiossidanti",
+        "duration": "17 min",
+        "source": "Eziologia generale STAMPATO.pdf",
+        "sourcePages": "4–7",
+        "blocks": [
+          {"type":"intro","title":"Obiettivo della lezione","text":"Comprendere che cosa sono radicali liberi e specie reattive dell'ossigeno, quali macromolecole possono danneggiare e come agiscono le difese antiossidanti."},
+          {"type":"text","title":"Radicali liberi e ROS","text":"Un radicale libero possiede uno o più elettroni spaiati e per questo tende a reagire rapidamente con altre molecole. Tra le specie reattive dell'ossigeno sono rilevanti l'anione superossido e il radicale ossidrile; il perossido di idrogeno non è un radicale, ma può generare specie radicaliche molto reattive."},
+          {"type":"key","title":"Bersagli del danno ossidativo","items":["Lipidi: perossidazione delle membrane e perdita della loro integrità.","Proteine: ossidazione e alterazione di struttura e funzione.","DNA: modificazioni delle basi e rotture che possono favorire mutazioni.","Carboidrati e glicoconiugati: alterazioni strutturali e funzionali."]},
+          {"type":"text","title":"Quando si parla di stress ossidativo","text":"La formazione di specie reattive è fisiologica e partecipa anche a funzioni normali. Si parla di stress ossidativo quando la produzione di ossidanti supera la capacità dei sistemi antiossidanti e di riparazione, con accumulo di danno cellulare."},
+          {"type":"key","title":"Difese antiossidanti","items":["Superossido dismutasi: converte il superossido in specie meno reattive, generando perossido di idrogeno.","Catalasi e glutatione perossidasi: contribuiscono alla rimozione del perossido di idrogeno e dei perossidi.","Glutatione e altre sostanze riducenti: partecipano alla neutralizzazione degli ossidanti.","Vitamine e antiossidanti alimentari: contribuiscono alla difesa non enzimatica."]},
+          {"type":"recall","question":"Perché il perossido di idrogeno è importante anche se non è un radicale libero?","answer":"Perché può partecipare a reazioni che generano radicali molto reattivi e quindi contribuire al danno ossidativo."},
+          {"type":"checkpoint","question":"Quale macromolecola è coinvolta nella perossidazione?","options":["Lipidi","DNA soltanto","Collagene soltanto","Glicogeno soltanto"],"correct":0,"explanation":"La perossidazione lipidica colpisce soprattutto i lipidi di membrana e può comprometterne struttura e funzione."},
+          {"type":"checkpoint","question":"Quando si parla correttamente di stress ossidativo?","options":["Quando non vengono mai prodotti ROS","Quando gli ossidanti superano la capacità antiossidante e di riparazione","Solo durante un'infezione batterica","Solo dopo esposizione a radiazioni"],"correct":1,"explanation":"Lo stress ossidativo deriva da uno squilibrio a favore delle specie ossidanti rispetto ai sistemi di controllo e riparazione."}
+        ]
+      }
+    ],
+    "ez-invecchiamento": [
+      {
+        "id": "ez-invecchiamento-cellulare",
+        "title": "Invecchiamento cellulare",
+        "subtitle": "Senescenza, danno cumulativo e perdita della capacità di adattamento",
+        "duration": "14 min",
+        "source": "PATOLOGIA GENERALE definitivo.pdf",
+        "blocks": [
+          {"type":"intro","title":"Obiettivo della lezione","text":"Collegare l'invecchiamento cellulare all'accumulo progressivo di danno, alla senescenza e alla riduzione della capacità di mantenere l'omeostasi."},
+          {"type":"text","title":"L'invecchiamento non è un singolo meccanismo","text":"L'invecchiamento biologico deriva dall'interazione di più processi: accumulo di danno al DNA e alle proteine, alterazioni metaboliche e mitocondriali, riduzione dell'efficienza dei sistemi di riparazione e comparsa di cellule senescenti."},
+          {"type":"key","title":"Processi da ricordare","items":["Danno ossidativo cumulativo a proteine, lipidi e DNA.","Riduzione dell'efficienza dei sistemi di riparazione e proteostasi.","Senescenza cellulare: arresto stabile della proliferazione in risposta a stress o danno.","Accorciamento telomerico nelle cellule proliferanti come uno dei segnali che possono favorire la senescenza replicativa.","Progressiva riduzione della riserva funzionale dei tessuti."]},
+          {"type":"text","title":"Telomeri e senescenza","text":"I telomeri proteggono le estremità dei cromosomi. In molte cellule somatiche proliferanti si accorciano con le divisioni cellulari; quando diventano criticamente corti possono attivare risposte di danno al DNA e favorire la senescenza. Questo è uno dei meccanismi dell'invecchiamento cellulare, non l'unico."},
+          {"type":"text","title":"Perché aumenta la vulnerabilità","text":"Con l'età diminuisce in molti tessuti la capacità di compensare nuovi stress. Un danno che in un organismo giovane viene corretto rapidamente può quindi produrre effetti più marcati quando la riserva funzionale e i sistemi di riparazione sono ridotti."},
+          {"type":"recall","question":"Perché non è corretto spiegare l'invecchiamento soltanto con l'accorciamento dei telomeri?","answer":"Perché l'invecchiamento è multifattoriale e comprende anche danno ossidativo, alterazioni metaboliche e mitocondriali, proteostasi, riparazione del DNA e senescenza."},
+          {"type":"checkpoint","question":"Che cosa indica la senescenza cellulare?","options":["Una proliferazione incontrollata","Un arresto stabile della proliferazione associato a stress o danno","La morte immediata di tutte le cellule","Una forma di infezione"],"correct":1,"explanation":"La senescenza è uno stato stabile di arresto proliferativo che può essere indotto da stress, danno al DNA e altri segnali."},
+          {"type":"checkpoint","question":"Quale processo può contribuire all'invecchiamento cellulare?","options":["Accumulo di danno ossidativo","Miglioramento indefinito della riparazione del DNA","Aumento costante della riserva funzionale","Eliminazione completa delle cellule senescenti"],"correct":0,"explanation":"Il danno ossidativo cumulativo è uno dei processi che contribuiscono alla perdita progressiva di funzione cellulare."}
+        ]
+      }
+    ]
+  }
+}
