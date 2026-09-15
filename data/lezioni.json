@@ -1,68 +1,169 @@
 {
-  "version": "2026-09-15-lessons-pilot2",
-  "subjects": [
+  "version": "2026-09-15-lessons-pathways-1",
+  "exams": [
     {
       "id": "anatomia-patologica",
       "name": "Anatomia Patologica",
-      "description": "Lezioni interattive costruite sui materiali reali del corso.",
+      "description": "Un unico percorso per studiare eziologia, patologia generale, immunologia e anatomia patologica nell'ordine più utile per costruire i concetti.",
       "status": "active",
-      "source": "ANATOMIA PATOLOGICA.pdf",
       "examLink": "anatomia-patologica.html?v=20260915-pilot8",
       "materialsLink": "materiali.html",
-      "lessons": [
+      "disciplines": [
         {
-          "id": "classificazione-neoplasie",
-          "title": "Classificazione delle neoplasie",
-          "subtitle": "Istotipo, sede e caratteristiche molecolari",
-          "duration": "12 min",
-          "sourcePages": "1–2",
-          "blocks": [
-            {"type":"intro","title":"Obiettivo della lezione","text":"Capire come l’anatomia patologica classifica le neoplasie maligne e come origine tissutale, sede e caratteristiche molecolari concorrono alla diagnosi."},
-            {"type":"text","title":"Il ruolo dell’anatomo-patologo","text":"L’anatomo-patologo formula diagnosi istologiche e citologiche, contribuisce alle decisioni terapeutiche e chirurgiche, esegue riscontri diagnostici e utilizza metodiche ancillari come immunoistochimica e indagini molecolari."},
-            {"type":"key","title":"I tre criteri","items":["Istologico: in base al tessuto di origine.","Di sede: in base all’organo in cui la neoplasia ha origine.","Molecolare: in base ad anomalie genetiche e/o profili di espressione proteica associati."]},
-            {"type":"text","title":"Origine istologica","text":"I carcinomi derivano dagli epiteli; i sarcomi derivano da tessuti di origine mesenchimale; le neoplasie ematologiche comprendono linfomi e leucemie. La sede primitiva completa la classificazione: anche quando una neoplasia metastatizza, mantiene la denominazione legata al tumore di origine."},
-            {"type":"recall","question":"Perché una metastasi mantiene il nome del tumore primitivo?","answer":"Perché la classificazione conserva l’origine istologica e la sede primaria della neoplasia: la localizzazione metastatica non modifica l’identità del tumore d’origine."},
-            {"type":"checkpoint","question":"Quale criterio classifica una neoplasia in base all’organo in cui ha avuto origine?","options":["Criterio istologico","Criterio di sede","Criterio citologico","Criterio di grading"],"correct":1,"explanation":"Il criterio di sede identifica l’organo in cui la neoplasia si è sviluppata primitivamente."},
-            {"type":"checkpoint","question":"Quale affermazione descrive correttamente un sarcoma?","options":["Origina da tessuti epiteliali","È sempre una neoplasia ematologica","Origina da tessuti di derivazione mesenchimale","È definito esclusivamente dalla sede metastatica"],"correct":2,"explanation":"Nel materiale del corso i sarcomi sono ricondotti ai tessuti mesenchimali, come muscolare, adiposo e vascolare."}
+          "id": "eziologia-generale",
+          "name": "Eziologia Generale",
+          "description": "Le cause di malattia: agenti fisici, chimici e biologici, fattori genetici e nutrizionali, stress ossidativo e invecchiamento.",
+          "source": "Eziologia generale STAMPATO.pdf",
+          "status": "outline",
+          "chapters": [
+            {"id":"ez-concetti","title":"Concetti fondamentali di eziologia","subtitle":"Salute, malattia, omeostasi, eziologia e patogenesi","lessons":[]},
+            {"id":"ez-fisici","title":"Agenti fisici","subtitle":"Traumi, temperatura, radiazioni, elettricità e pressione","lessons":[]},
+            {"id":"ez-chimici","title":"Agenti chimici e tossici","subtitle":"Dose, vie di esposizione, xenobiotici, veleni e farmaci","lessons":[]},
+            {"id":"ez-biologici","title":"Agenti biologici","subtitle":"Batteri, virus, funghi, parassiti e meccanismi di patogenicità","lessons":[]},
+            {"id":"ez-nutrizionali","title":"Fattori nutrizionali","subtitle":"Malnutrizione, carenze, obesità e squilibri energetici","lessons":[]},
+            {"id":"ez-genetici","title":"Fattori genetici","subtitle":"Mutazioni, anomalie cromosomiche e predisposizione","lessons":[]},
+            {"id":"ez-ossidativo","title":"Radicali liberi e stress ossidativo","subtitle":"ROS, danno cellulare e sistemi antiossidanti","lessons":[]},
+            {"id":"ez-invecchiamento","title":"Invecchiamento cellulare","subtitle":"Senescenza, telomeri e danno cumulativo","lessons":[]}
           ]
         },
         {
-          "id": "grading-staging",
-          "title": "Grading e staging",
-          "subtitle": "Differenziazione, prognosi ed estensione della malattia",
-          "duration": "15 min",
-          "sourcePages": "3–5",
-          "blocks": [
-            {"type":"intro","title":"Obiettivo della lezione","text":"Distinguere con chiarezza grading e staging e ricordare il significato delle categorie T, N e M."},
-            {"type":"text","title":"Grading","text":"Il grading valuta la differenziazione neoplastica attraverso parametri citologici e architetturali osservati al microscopio. Il sistema specifico dipende dalla neoplasia e contribuisce, insieme ad altri fattori, alla valutazione prognostica e terapeutica."},
-            {"type":"key","title":"Schema G1–G4","items":["G1: neoplasia ben differenziata.","G2: moderatamente differenziata.","G3: scarsamente differenziata.","G4: indifferenziata o anaplastica."]},
-            {"type":"text","title":"Staging","text":"Lo staging descrive l’estensione anatomica della malattia nella sede di origine e la sua diffusione nell’organismo. Serve a stimare la prognosi, formulare il piano terapeutico e creare un linguaggio comune per confrontare casi e studi clinici."},
-            {"type":"key","title":"TNM","items":["T: caratteristiche del tumore primitivo, con criteri specifici per sede.","N: coinvolgimento dei linfonodi regionali.","M: presenza o assenza di metastasi a distanza."]},
-            {"type":"recall","question":"Qual è la differenza essenziale tra grading e staging?","answer":"Il grading descrive soprattutto il grado di differenziazione e le caratteristiche morfologiche della neoplasia; lo staging descrive invece l’estensione anatomica della malattia e la sua diffusione."},
-            {"type":"checkpoint","question":"Nel sistema TNM, cosa indica N?","options":["Necrosi del tumore","Numero di mitosi","Linfonodi regionali","Neoplasie primitive multiple"],"correct":2,"explanation":"N descrive il coinvolgimento dei linfonodi regionali."},
-            {"type":"checkpoint","question":"Quale affermazione distingue meglio staging e grading?","options":["Sono sinonimi","Il grading riguarda la differenziazione; lo staging l’estensione anatomica","Lo staging riguarda solo la citologia","Il grading valuta esclusivamente le metastasi"],"correct":1,"explanation":"Sono due concetti distinti: morfologia/differenziazione per il grading, estensione della malattia per lo staging."}
+          "id": "patologia-generale",
+          "name": "Patologia Generale",
+          "description": "Dalla risposta cellulare al danno fino a infiammazione, riparazione, disturbi emodinamici, trombosi, shock e alterazioni sistemiche.",
+          "source": "PATOLOGIA GENERALE definitivo.pdf",
+          "status": "outline",
+          "chapters": [
+            {"id":"pg-adattamenti","title":"Adattamenti cellulari","subtitle":"Ipertrofia, iperplasia, atrofia, metaplasia e displasia","lessons":[]},
+            {"id":"pg-danno","title":"Danno cellulare","subtitle":"Danno reversibile e irreversibile, ATP, calcio e membrane","lessons":[]},
+            {"id":"pg-morte","title":"Morte cellulare","subtitle":"Necrosi, apoptosi e principali pattern necrotici","lessons":[]},
+            {"id":"pg-accumuli","title":"Accumuli intracellulari","subtitle":"Lipidi, proteine, glicogeno e pigmenti","lessons":[]},
+            {"id":"pg-calcificazioni","title":"Calcificazioni patologiche","subtitle":"Calcificazione distrofica e metastatica","lessons":[]},
+            {"id":"pg-infiammazione-acuta","title":"Infiammazione acuta","subtitle":"Segni cardinali, modificazioni vascolari, essudato e trasudato","lessons":[]},
+            {"id":"pg-leucociti","title":"Reclutamento leucocitario","subtitle":"Marginazione, rolling, adesione, diapedesi e chemiotassi","lessons":[]},
+            {"id":"pg-mediatori","title":"Mediatori dell'infiammazione","subtitle":"Istamina, eicosanoidi, complemento, citochine e ossido nitrico","lessons":[]},
+            {"id":"pg-esiti-acuta","title":"Esiti dell'infiammazione acuta","subtitle":"Risoluzione, ascesso, fibrosi e cronicizzazione","lessons":[]},
+            {"id":"pg-cronica","title":"Infiammazione cronica","subtitle":"Macrofagi, linfociti, danno tissutale e riparazione","lessons":[]},
+            {"id":"pg-granulomatosa","title":"Infiammazione granulomatosa","subtitle":"Granulomi, cellule epitelioidi e cellule giganti","lessons":[]},
+            {"id":"pg-riparazione","title":"Riparazione tissutale","subtitle":"Rigenerazione, angiogenesi, fibrosi e rimodellamento","lessons":[]},
+            {"id":"pg-ferite","title":"Guarigione delle ferite","subtitle":"Prima e seconda intenzione, deiscenza, cheloide e cicatrice","lessons":[]},
+            {"id":"pg-emodinamici","title":"Disturbi emodinamici","subtitle":"Iperemia, congestione, edema ed emorragia","lessons":[]},
+            {"id":"pg-trombosi","title":"Emostasi e trombosi","subtitle":"Emostasi primaria e secondaria, triade di Virchow e trombi","lessons":[]},
+            {"id":"pg-embolia","title":"Embolia","subtitle":"Tromboembolia, embolia polmonare, sistemica, gassosa e adiposa","lessons":[]},
+            {"id":"pg-infarto","title":"Infarto","subtitle":"Infarto bianco, rosso e fattori che ne determinano l'estensione","lessons":[]},
+            {"id":"pg-shock","title":"Shock","subtitle":"Ipovolemico, cardiogeno, settico, anafilattico e neurogeno","lessons":[]},
+            {"id":"pg-bilirubina","title":"Pigmenti e metabolismo della bilirubina","subtitle":"Emoglobina, bilirubina, coniugazione e ittero","lessons":[]},
+            {"id":"pg-amiloidosi","title":"Amiloidosi","subtitle":"Deposizione di amiloide, Rosso Congo e principali forme","lessons":[]}
           ]
         },
         {
-          "id": "citologia-diagnostica",
-          "title": "Citologia diagnostica",
-          "subtitle": "Applicazioni, vantaggi e limiti",
-          "duration": "14 min",
-          "sourcePages": "13–17",
-          "blocks": [
-            {"type":"intro","title":"Obiettivo della lezione","text":"Comprendere che cosa valuta l’esame citologico, quando viene utilizzato e quale informazione manca rispetto all’esame istologico."},
-            {"type":"text","title":"Che cosa studia la citologia","text":"La citologia studia le caratteristiche morfologiche delle cellule e, quando presente, il loro pattern di aggregazione. Rispetto all’istologia non fornisce il dato architetturale completo del tessuto."},
-            {"type":"key","title":"Principali modalità di prelievo","items":["Citologia esfoliativa.","Citologia abrasiva.","Citologia agoaspirativa.","Citologia per apposizione."]},
-            {"type":"text","title":"Perché viene utilizzata","text":"Può essere non invasiva o poco invasiva, è ripetibile e relativamente economica. Nel materiale del corso viene indicata per prevenzione, diagnosi e follow-up, mentre per alcune valutazioni prognostiche e predittive l’esame istologico offre informazioni più complete."},
-            {"type":"recall","question":"Quale informazione fondamentale manca nella citologia rispetto all’istologia?","answer":"Manca il dato architetturale completo del tessuto: la citologia valuta soprattutto la morfologia cellulare e gli eventuali aggregati."},
-            {"type":"checkpoint","question":"Quale delle seguenti è una forma di citologia abrasiva?","options":["Scraping","Autopsia","Biopsia escissionale","Esame al congelatore"],"correct":0,"explanation":"Nel materiale del corso scraping, brushing e washing sono descritti tra le modalità della citologia abrasiva."},
-            {"type":"checkpoint","question":"Qual è un limite strutturale dell’esame citologico?","options":["Non consente mai di osservare cellule","Non può essere ripetuto","Manca il dato architetturale completo del tessuto","Richiede sempre un intervento chirurgico"],"correct":2,"explanation":"La citologia fornisce soprattutto informazioni cellulari; il dato architetturale è proprio dell’esame istologico."}
+          "id": "immunologia",
+          "name": "Immunologia",
+          "description": "Immunità innata e adattativa, complemento, anticorpi, linfociti, ipersensibilità, autoimmunità, immunodeficienze e immunità antitumorale.",
+          "source": "Immunologia STAMPATO.pdf",
+          "status": "outline",
+          "chapters": [
+            {"id":"im-intro","title":"Introduzione al sistema immunitario","subtitle":"Immunità innata e adattativa, organi e cellule","lessons":[]},
+            {"id":"im-innata","title":"Immunità innata","subtitle":"Barriere, neutrofili, macrofagi, dendritiche, NK, PAMP e DAMP","lessons":[]},
+            {"id":"im-fagocitosi","title":"Fagocitosi","subtitle":"Chemiotassi, opsonizzazione, ingestione e killing microbico","lessons":[]},
+            {"id":"im-complemento","title":"Sistema del complemento","subtitle":"Vie di attivazione, C3/C5 convertasi, opsonizzazione e MAC","lessons":[]},
+            {"id":"im-anticorpi","title":"Antigeni e anticorpi","subtitle":"Epitopi, immunogenicità e classi immunoglobuliniche","lessons":[]},
+            {"id":"im-b","title":"Linfociti B","subtitle":"Attivazione, plasmacellule, memoria, switch e affinità","lessons":[]},
+            {"id":"im-mhc","title":"MHC e presentazione dell'antigene","subtitle":"MHC I, MHC II, APC, vie endogena ed esogena","lessons":[]},
+            {"id":"im-t","title":"Linfociti T","subtitle":"T helper, citotossici, regolatori, attivazione e memoria","lessons":[]},
+            {"id":"im-th","title":"Sottopopolazioni T helper","subtitle":"Th1, Th2, Th17, Tfh, Treg e citochine","lessons":[]},
+            {"id":"im-citotossicita","title":"Citotossicità","subtitle":"Perforina, granzimi, Fas/FasL e apoptosi","lessons":[]},
+            {"id":"im-citochine","title":"Citochine","subtitle":"Interleuchine, interferoni, TNF e chemiochine","lessons":[]},
+            {"id":"im-ipersensibilita","title":"Ipersensibilità","subtitle":"Tipi I, II, III e IV con esempi clinici","lessons":[]},
+            {"id":"im-autoimmunita","title":"Autoimmunità","subtitle":"Tolleranza, perdita della tolleranza e autoanticorpi","lessons":[]},
+            {"id":"im-immunodeficienze","title":"Immunodeficienze","subtitle":"Primitive, secondarie e principali deficit immunitari","lessons":[]},
+            {"id":"im-trapianti","title":"Immunologia dei trapianti","subtitle":"HLA, rigetto iperacuto, acuto e cronico","lessons":[]},
+            {"id":"im-tumori","title":"Immunità antitumorale","subtitle":"Immunosorveglianza, antigeni tumorali, NK e checkpoint","lessons":[]}
+          ]
+        },
+        {
+          "id": "anatomia-patologica",
+          "name": "Anatomia Patologica",
+          "description": "Campionamento, istologia, citologia, immunoistochimica, diagnostica molecolare e patologia neoplastica fino a grading, staging e refertazione.",
+          "source": "ANATOMIA PATOLOGICA.pdf",
+          "status": "active",
+          "chapters": [
+            {"id":"ap-introduzione","title":"Introduzione alla disciplina","subtitle":"Ruolo dell'anatomo-patologo e principali attività diagnostiche","lessons":[]},
+            {"id":"ap-prelievo","title":"Prelievo del campione","subtitle":"Biopsie, agobiopsie, campionamento e rappresentatività","lessons":[]},
+            {"id":"ap-fissazione","title":"Fissazione","subtitle":"Formalina neutra tamponata, tempi e variabili preanalitiche","lessons":[]},
+            {"id":"ap-processazione","title":"Processazione istologica","subtitle":"Disidratazione, chiarificazione, paraffina e microtomia","lessons":[]},
+            {"id":"ap-colorazioni","title":"Colorazioni","subtitle":"Ematossilina-eosina, PAS, Rosso Congo e colorazioni speciali","lessons":[]},
+            {"id":"ap-immunoistochimica","title":"Immunoistochimica","subtitle":"Marcatori diagnostici, prognostici, predittivi e Ki-67","lessons":[]},
+            {"id":"ap-molecolare","title":"Diagnostica molecolare","subtitle":"Mutazioni, amplificazioni, riarrangiamenti e terapie target","lessons":[]},
+            {"id":"ap-intraoperatorio","title":"Esame intraoperatorio","subtitle":"Frozen section, criostato, indicazioni e limiti","lessons":[]},
+            {"id":"ap-citologia","title":"Citologia","subtitle":"Modalità di prelievo, applicazioni, vantaggi e limiti","lessons":[
+              {
+                "id":"citologia-diagnostica",
+                "title":"Citologia diagnostica",
+                "subtitle":"Applicazioni, vantaggi e limiti",
+                "duration":"14 min",
+                "sourcePages":"13–17",
+                "blocks":[
+                  {"type":"intro","title":"Obiettivo della lezione","text":"Comprendere che cosa valuta l'esame citologico, quando viene utilizzato e quale informazione manca rispetto all'esame istologico."},
+                  {"type":"text","title":"Che cosa studia la citologia","text":"La citologia studia le caratteristiche morfologiche delle cellule e, quando presente, il loro pattern di aggregazione. Rispetto all'istologia non fornisce il dato architetturale completo del tessuto."},
+                  {"type":"key","title":"Principali modalità di prelievo","items":["Citologia esfoliativa.","Citologia abrasiva.","Citologia agoaspirativa.","Citologia per apposizione."]},
+                  {"type":"text","title":"Perché viene utilizzata","text":"Può essere non invasiva o poco invasiva, è ripetibile e relativamente economica. Nel materiale del corso viene indicata per prevenzione, diagnosi e follow-up, mentre per alcune valutazioni prognostiche e predittive l'esame istologico offre informazioni più complete."},
+                  {"type":"recall","question":"Quale informazione fondamentale manca nella citologia rispetto all'istologia?","answer":"Manca il dato architetturale completo del tessuto: la citologia valuta soprattutto la morfologia cellulare e gli eventuali aggregati."},
+                  {"type":"checkpoint","question":"Quale delle seguenti è una forma di citologia abrasiva?","options":["Scraping","Autopsia","Biopsia escissionale","Esame al congelatore"],"correct":0,"explanation":"Nel materiale del corso scraping, brushing e washing sono descritti tra le modalità della citologia abrasiva."},
+                  {"type":"checkpoint","question":"Qual è un limite strutturale dell'esame citologico?","options":["Non consente mai di osservare cellule","Non può essere ripetuto","Manca il dato architetturale completo del tessuto","Richiede sempre un intervento chirurgico"],"correct":2,"explanation":"La citologia fornisce soprattutto informazioni cellulari; il dato architetturale è proprio dell'esame istologico."}
+                ]
+              }
+            ]},
+            {"id":"ap-cervicale","title":"Citologia cervico-vaginale","subtitle":"Pap test, HPV e screening cervicale","lessons":[]},
+            {"id":"ap-neoplasia","title":"Neoplasia: concetti fondamentali","subtitle":"Benigno, maligno, differenziazione, anaplasia, atipia e mitosi","lessons":[]},
+            {"id":"ap-classificazione","title":"Classificazione delle neoplasie","subtitle":"Carcinomi, sarcomi e criteri istologici, di sede e molecolari","lessons":[
+              {
+                "id":"classificazione-neoplasie",
+                "title":"Classificazione delle neoplasie",
+                "subtitle":"Istotipo, sede e caratteristiche molecolari",
+                "duration":"12 min",
+                "sourcePages":"1–2",
+                "blocks":[
+                  {"type":"intro","title":"Obiettivo della lezione","text":"Capire come l'anatomia patologica classifica le neoplasie maligne e come origine tissutale, sede e caratteristiche molecolari concorrono alla diagnosi."},
+                  {"type":"text","title":"Il ruolo dell'anatomo-patologo","text":"L'anatomo-patologo formula diagnosi istologiche e citologiche, contribuisce alle decisioni terapeutiche e chirurgiche, esegue riscontri diagnostici e utilizza metodiche ancillari come immunoistochimica e indagini molecolari."},
+                  {"type":"key","title":"I tre criteri","items":["Istologico: in base al tessuto di origine.","Di sede: in base all'organo in cui la neoplasia ha origine.","Molecolare: in base ad anomalie genetiche e/o profili di espressione proteica associati."]},
+                  {"type":"text","title":"Origine istologica","text":"I carcinomi derivano dagli epiteli; i sarcomi derivano da tessuti di origine mesenchimale; le neoplasie ematologiche comprendono linfomi e leucemie. La sede primitiva completa la classificazione: anche quando una neoplasia metastatizza, mantiene la denominazione legata al tumore di origine."},
+                  {"type":"recall","question":"Perché una metastasi mantiene il nome del tumore primitivo?","answer":"Perché la classificazione conserva l'origine istologica e la sede primaria della neoplasia: la localizzazione metastatica non modifica l'identità del tumore d'origine."},
+                  {"type":"checkpoint","question":"Quale criterio classifica una neoplasia in base all'organo in cui ha avuto origine?","options":["Criterio istologico","Criterio di sede","Criterio citologico","Criterio di grading"],"correct":1,"explanation":"Il criterio di sede identifica l'organo in cui la neoplasia si è sviluppata primitivamente."},
+                  {"type":"checkpoint","question":"Quale affermazione descrive correttamente un sarcoma?","options":["Origina da tessuti epiteliali","È sempre una neoplasia ematologica","Origina da tessuti di derivazione mesenchimale","È definito esclusivamente dalla sede metastatica"],"correct":2,"explanation":"Nel materiale del corso i sarcomi sono ricondotti ai tessuti mesenchimali, come muscolare, adiposo e vascolare."}
+                ]
+              }
+            ]},
+            {"id":"ap-invasione","title":"Invasione tumorale","subtitle":"Membrana basale, infiltrazione locale e angiogenesi","lessons":[]},
+            {"id":"ap-metastasi","title":"Metastasi","subtitle":"Diffusione linfatica, ematica e transcelomatica","lessons":[]},
+            {"id":"ap-grading","title":"Grading e staging","subtitle":"Differenziazione, prognosi, TNM ed estensione della malattia","lessons":[
+              {
+                "id":"grading-staging",
+                "title":"Grading e staging",
+                "subtitle":"Differenziazione, prognosi ed estensione della malattia",
+                "duration":"15 min",
+                "sourcePages":"3–5",
+                "blocks":[
+                  {"type":"intro","title":"Obiettivo della lezione","text":"Distinguere con chiarezza grading e staging e ricordare il significato delle categorie T, N e M."},
+                  {"type":"text","title":"Grading","text":"Il grading valuta la differenziazione neoplastica attraverso parametri citologici e architetturali osservati al microscopio. Il sistema specifico dipende dalla neoplasia e contribuisce, insieme ad altri fattori, alla valutazione prognostica e terapeutica."},
+                  {"type":"key","title":"Schema G1–G4","items":["G1: neoplasia ben differenziata.","G2: moderatamente differenziata.","G3: scarsamente differenziata.","G4: indifferenziata o anaplastica."]},
+                  {"type":"text","title":"Staging","text":"Lo staging descrive l'estensione anatomica della malattia nella sede di origine e la sua diffusione nell'organismo. Serve a stimare la prognosi, formulare il piano terapeutico e creare un linguaggio comune per confrontare casi e studi clinici."},
+                  {"type":"key","title":"TNM","items":["T: caratteristiche del tumore primitivo, con criteri specifici per sede.","N: coinvolgimento dei linfonodi regionali.","M: presenza o assenza di metastasi a distanza."]},
+                  {"type":"recall","question":"Qual è la differenza essenziale tra grading e staging?","answer":"Il grading descrive soprattutto il grado di differenziazione e le caratteristiche morfologiche della neoplasia; lo staging descrive invece l'estensione anatomica della malattia e la sua diffusione."},
+                  {"type":"checkpoint","question":"Nel sistema TNM, cosa indica N?","options":["Necrosi del tumore","Numero di mitosi","Linfonodi regionali","Neoplasie primitive multiple"],"correct":2,"explanation":"N descrive il coinvolgimento dei linfonodi regionali."},
+                  {"type":"checkpoint","question":"Quale affermazione distingue meglio staging e grading?","options":["Sono sinonimi","Il grading riguarda la differenziazione; lo staging l'estensione anatomica","Lo staging riguarda solo la citologia","Il grading valuta esclusivamente le metastasi"],"correct":1,"explanation":"Sono due concetti distinti: morfologia/differenziazione per il grading, estensione della malattia per lo staging."}
+                ]
+              }
+            ]},
+            {"id":"ap-biomarcatori","title":"Biomarcatori tumorali","subtitle":"Marcatori diagnostici, prognostici e predittivi","lessons":[]},
+            {"id":"ap-refertazione","title":"Refertazione anatomopatologica","subtitle":"Istotipo, grado, stadio, margini, linfonodi e biomarcatori","lessons":[]},
+            {"id":"ap-qualita","title":"Qualità del campione","subtitle":"Errori preanalitici, artefatti e rappresentatività","lessons":[]},
+            {"id":"ap-autopsia","title":"Autopsia e riscontro diagnostico","subtitle":"Finalità, diagnosi post-mortem e aspetti generali della normativa","lessons":[]}
           ]
         }
       ]
     },
-    {"id":"paziente-chirurgico","name":"Paziente chirurgico","description":"Percorsi interattivi da compendi, sbobine e materiali del corso.","status":"planned","lessons":[],"examLink":"paziente-chirurgico.html"},
-    {"id":"infermieristica-materno","name":"Infermieristica nel Materno","description":"Pediatria, infermieristica pediatrica, ostetricia e ginecologia.","status":"planned","lessons":[],"examLink":"infermieristica-materno-plus.html"},
-    {"id":"scienze-della-salute","name":"Scienze della Salute","description":"Percorsi di studio interattivi in preparazione.","status":"planned","lessons":[],"examLink":"scienze-salute.html"}
+    {"id":"paziente-chirurgico","name":"Paziente chirurgico","description":"Percorso interattivo da compendi, sbobine e materiali del corso.","status":"planned","examLink":"paziente-chirurgico.html","disciplines":[]},
+    {"id":"infermieristica-materno","name":"Infermieristica nel Materno","description":"Pediatria, infermieristica pediatrica, ostetricia e ginecologia.","status":"planned","examLink":"infermieristica-materno-plus.html","disciplines":[]},
+    {"id":"scienze-della-salute","name":"Scienze della Salute","description":"Infermieristica, epidemiologia, igiene e storia della medicina.","status":"planned","examLink":"scienze-salute.html","disciplines":[]}
   ]
 }
