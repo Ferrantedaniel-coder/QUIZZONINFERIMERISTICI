@@ -1,23 +1,22 @@
 # MATERIALI_PROGRESS.md
 
-Ultimo aggiornamento: 15 settembre 2026
+Ultimo aggiornamento: **16 settembre 2026**
 
 ## Stato
 
-La seconda area di StudyHub, **Materiali**, è integrata nel repository e collegata alla homepage.
+L'area **Materiali** è integrata nel repository e collegata alla homepage.
 
 File principali:
 
-- `materiali.html` — pagina Biblioteca;
+- `materiali.html` — Biblioteca;
 - `materiali.css` — stile Apple-like coerente con `studyhub.css`;
 - `materiali.js` — ricerca, filtri, navigazione materia, lettore PDF, download e collegamento alle Lezioni;
-- `data/materiali.json` — catalogo centralizzato dei materiali.
+- `data/materiali.json` — catalogo base;
+- `data/materiali-medchirufarmaco.json` + `materiali-medchirufarmaco-loader.js` — estensione MedChiruFarmaco.
 
-La homepage `index.html` contiene l'accesso a `materiali.html` senza modificare la logica dei quattro esami esistenti.
+## Stato documenti
 
-## PDF pubblicati e attivi nel repository
-
-Sono attualmente collegati alla Biblioteca **16 PDF reali**.
+Sono pubblicati nel repository **16 PDF reali** su **22 documenti catalogati**.
 
 ### Anatomia Patologica — 6/6 attivi
 
@@ -28,9 +27,9 @@ Sono attualmente collegati alla Biblioteca **16 PDF reali**.
 5. `Microbiologia compendio.pdf`
 6. `PATOLOGIA GENERALE definitivo.pdf`
 
-Il pacchetto mostra **Studia come lezione**, collegato a `lezioni.html?esame=anatomia-patologica`.
+Percorso **Studia come lezione**: `lezioni.html?esame=anatomia-patologica`.
 
-### Paziente chirurgico — 4 attivi, 2 ancora solo catalogati
+### Paziente chirurgico — 4 attivi, 2 catalogati
 
 Attivi:
 
@@ -39,47 +38,55 @@ Attivi:
 3. `PSICOLOGIA .pdf`
 4. `Terapia.pdf`
 
-Ancora catalogati ma non presenti nel repository:
+Catalogati ma non presenti come binari:
 
 - `ASSISTENZA INFERMIERISTICA NEL PAZIENTE CHIRURGICO .pdf`
 - `Il_Paziente_Chirurgico_-_Sintesi_Esame.pdf`
 
-Il pacchetto mostra ora **Studia come lezione**, collegato al percorso completo `lezioni.html?esame=paziente-chirurgico` (**60/60 lezioni attive**).
+Percorso **Studia come lezione**: `lezioni.html?esame=paziente-chirurgico`.
 
 ### Infermieristica nel Materno — 6/6 attivi
 
-1. `PEDIATRIA.pdf` — Compendio Pediatria
-2. `COMPENDEIO INFE PED.pdf` — Compendio Infermieristica Pediatrica
-3. `COMPENDIO GINE.pdf` — Compendio Ginecologia
-4. `COMPENDIO OSTETRICIA.pdf` — Compendio Ostetricia
-5. `1.pdf` — Slide Materno 1
-6. `2.pdf` — Slide Materno 2
+1. `PEDIATRIA.pdf`
+2. `COMPENDEIO INFE PED.pdf`
+3. `COMPENDIO GINE.pdf`
+4. `COMPENDIO OSTETRICIA.pdf`
+5. `1.pdf`
+6. `2.pdf`
 
-I due file numerici sono volutamente mostrati con titoli neutrali finché il contenuto non viene rinominato o identificato con certezza.
-
-Il pacchetto Materno mostra **Studia come lezione**, collegato al percorso completo `lezioni.html?esame=infermieristica-materno` (**62/62 lezioni attive**).
+Percorso **Studia come lezione**: `lezioni.html?esame=infermieristica-materno`.
 
 ### Scienze della Salute
 
-La materia è predisposta nell'interfaccia; nessun PDF è ancora associato.
+Area predisposta; nessun PDF associato.
+
+### MedChiruFarmaco — 0 attivi, 4 catalogati
+
+1. `Medicina Generale.pdf.pdf` — 77 pagine;
+2. `Chirurgia Definitivo.pdf` — 85 pagine;
+3. `FARMACO SCHEMI.odt` — schemi del corso;
+4. `domande esame corrette medicina chirurgia farmacologia (1).pdf` — prova AulaWeb con 65 quesiti.
+
+Percorso **Studia come lezione**: `lezioni.html?esame=medchirufarmaco`.
+
+I quattro file originali sono stati usati per costruire quiz e lezioni ma **non risultano ancora pubblicati come binari nel repository del sito**. La Biblioteca li mostra quindi correttamente come catalogati con pulsanti Apri/Scarica disabilitati. `medchirufarmaco-source-guard.js` evita che le Lezioni aprano URL PDF inesistenti e rimanda alla scheda Materiali finché i binari non saranno disponibili.
 
 ## Funzioni implementate
 
 - pagina Materiali separata dalla pagina Esami;
-- palette StudyHub invariata: terracotta, pesca, turchese, acquamarina;
-- font Bebas Neue + Inter;
+- palette StudyHub invariata;
 - glassmorphism e layout responsive;
-- ricerca globale sui materiali;
+- ricerca globale;
 - filtri Tutti / Sbobine / Compendi / Slide;
 - pagina interna per materia;
 - argomenti collegati;
 - catalogo dati separato dalla UI;
 - lettore PDF integrato via iframe;
 - download diretto dei PDF pubblicati;
-- stato `DISPONIBILE`, `PARZIALMENTE DISPONIBILE`, `CATALOGATO` o `IN CATALOGAZIONE` calcolato dai file realmente presenti;
-- contatore distinto tra documenti disponibili e documenti catalogati;
-- pulsanti disabilitati quando il PDF non è ancora presente nel repository;
-- collegamento **Materiali → Studia come lezione** per Anatomia Patologica, Infermieristica nel Materno e Paziente chirurgico.
+- stati `DISPONIBILE`, `PARZIALMENTE DISPONIBILE`, `CATALOGATO` o `IN CATALOGAZIONE` calcolati dai file realmente disponibili;
+- contatore distintivo tra documenti disponibili e catalogati;
+- pulsanti disabilitati quando il binario non è pubblicato;
+- collegamento **Materiali → Studia come lezione** per Anatomia Patologica, Infermieristica nel Materno, Paziente chirurgico e MedChiruFarmaco.
 
 ## Regola di non regressione
 
