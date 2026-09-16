@@ -1,82 +1,62 @@
 # LESSONS_PROGRESS.md
 
-Ultimo aggiornamento: 15 settembre 2026
+Ultimo aggiornamento: **16 settembre 2026**
 
 ## Stato
 
-La terza area di StudyHub, **Lezioni**, è integrata nel repository e collegata alla homepage e alla Biblioteca Materiali.
+L'area **Lezioni** è integrata nel repository e collegata a homepage e Biblioteca Materiali.
 
-Slogan attivo: **“Leggi meno. Ricorda di più.”**
+Slogan: **“Leggi meno. Ricorda di più.”**
 
-La navigazione è:
+Navigazione:
 
 **Lezioni → Esame → Materia → Capitolo → Lezione interattiva**
 
-Ogni lezione mantiene lo schema StudyHub:
+Schema StudyHub obbligatorio:
 
-**spiegazione → concetti chiave → active recall → checkpoint → materiale originale → quiz collegato**.
+**spiegazione → concetti chiave → active recall → checkpoint → materiale → quiz collegato**.
 
 ## Copertura complessiva
 
-Sono ora strutturati e apribili tre percorsi d'esame, tutti completi:
+Sono attivi quattro percorsi completi:
 
-- **Anatomia Patologica**: 63 capitoli / **63 lezioni attive**;
-- **Infermieristica nel Materno**: 62 capitoli / **62 lezioni attive**;
-- **Paziente chirurgico**: 60 capitoli / **60 lezioni attive**.
+- **Anatomia Patologica**: 63/63;
+- **Infermieristica nel Materno**: 62/62;
+- **Paziente chirurgico**: 60/60;
+- **MedChiruFarmaco**: 24/24.
 
-Totale StudyHub Lezioni: **185 capitoli mappati / 185 lezioni interattive attive**.
+Totale StudyHub Lezioni: **209 capitoli mappati / 209 lezioni interattive attive**.
 
-Scienze della Salute resta predisposto come successiva estensione della sezione Lezioni.
+Scienze della Salute resta predisposto per una successiva estensione quando saranno disponibili materiali reali sufficienti.
 
 ---
 
 # 1. Anatomia Patologica — COMPLETA 63/63
-
-Materie e copertura:
 
 - Eziologia Generale: **8/8**;
 - Patologia Generale: **20/20**;
 - Immunologia: **16/16**;
 - Anatomia Patologica: **19/19**.
 
-Totale: **63/63**.
+Pacchetti consolidati:
 
-Le tre lezioni pilota originarie — **Citologia diagnostica**, **Classificazione delle neoplasie**, **Grading e staging** — mantengono gli stessi ID e quindi i progressi già salvati restano compatibili.
+- `lezioni-eziologia-loader.js` + `data/lezioni-eziologia.json`;
+- `lezioni-patologia-loader.js` + tre pacchetti Patologia;
+- `lezioni-immunologia-loader.js` + tre pacchetti Immunologia;
+- `lezioni-anatomia-patologica-loader.js` + quattro pacchetti Anatomia Patologica.
 
-Pacchetti attivi:
+Le tre lezioni pilota originarie — Citologia diagnostica, Classificazione delle neoplasie, Grading e staging — mantengono gli ID originari e la compatibilità con i progressi locali.
 
-- `data/lezioni-eziologia.json` + `lezioni-eziologia-loader.js`;
-- `data/lezioni-patologia-1.json`, `data/lezioni-patologia-2.json`, `data/lezioni-patologia-3.json` + `lezioni-patologia-loader.js`;
-- `data/lezioni-immunologia-1.json`, `data/lezioni-immunologia-2.json`, `data/lezioni-immunologia-3.json` + `lezioni-immunologia-loader.js`;
-- `data/lezioni-anatomia-patologica-1.json`, `data/lezioni-anatomia-patologica-2.json`, `data/lezioni-anatomia-patologica-3.json`, `data/lezioni-anatomia-patologica-4.json` + `lezioni-anatomia-patologica-loader.js`.
-
-Fonti universitarie principali:
-
-- `Eziologia generale STAMPATO.pdf`;
-- `PATOLOGIA GENERALE definitivo.pdf`;
-- `Immunologia STAMPATO.pdf`;
-- `ANATOMIA PATOLOGICA.pdf`.
-
-Per i 16 capitoli precedentemente non sufficientemente sviluppati nei PDF è stata usata **integrazione esterna esplicitamente verificata**, mantenendo distinta la provenienza nei campi `source` delle lezioni. Riferimenti principali: NCBI/NIH per patologia generale, autoimmunità, immunodeficienze e trapianti; NCI per immunità antitumorale/checkpoint; WHO per screening cervicale; CAP per refertazione oncologica strutturata.
-
-Capitoli completati nell'ultimo blocco:
-
-- Patologia Generale: adattamenti cellulari; accumuli intracellulari; calcificazioni patologiche; guarigione delle ferite; disturbi emodinamici; emostasi e trombosi; embolia; infarto; shock; metabolismo della bilirubina e ittero.
-- Immunologia: autoimmunità; immunodeficienze; immunologia dei trapianti; immunità antitumorale.
-- Anatomia Patologica: citologia/screening cervicale; refertazione anatomopatologica.
-
-Tra le correzioni scientifiche registrate: via **lectinica** del complemento/MBL; MHC I sulla grande maggioranza delle cellule nucleate; perforina/granzimi come meccanismo apoptotico; formalina 10% ≈ 4% formaldeide; Rosso Congo e birifrangenza verde mela; Ki-67 contestualizzato; frozen section come consulenza intraoperatoria selettiva; grading e staging distinti; TNM dipendente dalla sede; HPV positivo distinto da diagnosi di carcinoma; test HPV valorizzato nello screening moderno; refertazione oncologica strutturata con elementi essenziali di istotipo, margini, linfonodi, pTNM e biomarcatori quando applicabili.
+Correzioni scientifiche già consolidate nel percorso restano quelle registrate nello storico del progetto e in `STUDYHUB_STATE.md`.
 
 ---
 
 # 2. Infermieristica nel Materno — COMPLETA 62/62
 
-Il percorso Materno è costruito sui quattro compendi reali del corso. Le quattro materie sono complete e navigabili.
-
-- **Infermieristica Pediatrica: 15/15**;
-- **Pediatria: 15/15**;
-- **Ostetricia: 18/18**;
-- **Ginecologia: 14/14**.
+- Infermieristica Pediatrica: **15/15**;
+- Pediatria: **15/15**;
+- Ostetricia: **18/18**;
+- Ginecologia: **14/14**.
 
 Fonti primarie:
 
@@ -85,7 +65,7 @@ Fonti primarie:
 - `COMPENDIO OSTETRICIA.pdf`;
 - `COMPENDIO GINE.pdf`.
 
-Pacchetti:
+Pacchetti consolidati:
 
 - `data/lezioni-materno.json`;
 - `data/lezioni-materno-infermieristica-2.json`;
@@ -94,145 +74,94 @@ Pacchetti:
 - `data/lezioni-materno-ginecologia.json`;
 - `lezioni-materno-loader.js`.
 
-Correzioni principali già applicate: sonno sicuro aggiornato; PBLS formulato secondo principi correnti; ipoglicemia neonatale e ittero non ridotti a soglie fisse obsolete; OGTT non presentato come unico criterio diagnostico del diabete; eliminazione della regola rigida 1 cm/ora nel travaglio; preeclampsia come sindrome multisistemica; precedente cesareo non come automatismo; endometriosi non vincolata sempre a laparoscopia; leiomiomi uterini descritti correttamente; CA-125 non usato come screening generale; screening cervicale e HPV aggiornati.
-
 ---
 
 # 3. Paziente chirurgico — COMPLETO 60/60
 
-Il percorso è attivo e navigabile nelle cinque materie previste.
+- Assistenza perioperatoria: **18/18**;
+- Diagnostica: **10/10**;
+- Psicologia: **10/10**;
+- Educazione terapeutica: **7/7**;
+- Terapia e farmacologia: **15/15**.
 
-## Assistenza perioperatoria — 18/18
+Pacchetti consolidati:
 
-Lezioni:
+- `data/lezioni-paziente-chirurgico.json`;
+- due pacchetti Assistenza;
+- un pacchetto Diagnostica;
+- un pacchetto Psicologia;
+- un pacchetto Educazione terapeutica;
+- due pacchetti Terapia;
+- `lezioni-paziente-chirurgico-loader.js`.
 
-1. Percorso perioperatorio
-2. Classificazione degli interventi
-3. Valutazione preoperatoria e rischio
-4. Consenso, identificazione e sicurezza
-5. Digiuno e preparazione preoperatoria
-6. Preparazione della cute e tricotomia
-7. Surgical Safety Checklist
-8. Sala operatoria, asepsi e team
-9. Posizionamento intraoperatorio
-10. PACU e monitoraggio post-anestesia
-11. Dolore postoperatorio
-12. Mobilizzazione precoce e prevenzione TEV
-13. Complicanze postoperatorie precoci
-14. Ferita chirurgica e cicatrizzazione
-15. Drenaggi chirurgici
-16. Stomie e assistenza
-17. Nutrizione nel paziente chirurgico
-18. Emergenze chirurgiche e deterioramento
-
-## Diagnostica — 10/10
-
-1. Principi di diagnostica per immagini
-2. Radiografia
-3. Ecografia
-4. Tomografia computerizzata
-5. Risonanza magnetica
-6. Medicina nucleare
-7. Mezzi di contrasto
-8. Sicurezza dei mezzi di contrasto
-9. Angiografia e radiologia interventistica
-10. Biopsie image-guided e assistenza
-
-## Psicologia — 10/10
-
-1. Dal modello biomedico al biopsicosociale
-2. Stress e trauma chirurgico
-3. Ansia preoperatoria
-4. Comunicazione e informazione
-5. Coping e meccanismi di difesa
-6. Immagine corporea e perdita d'organo
-7. Paura dell'anestesia e perdita di controllo
-8. Adattamento psicologico postoperatorio
-9. Vissuti nei grandi cambiamenti corporei
-10. Resilienza e alleanza terapeutica
-
-## Educazione terapeutica — 7/7
-
-1. Educazione terapeutica: definizione e finalità
-2. Analisi del bisogno educativo
-3. Obiettivi e progettazione educativa
-4. Metodologie educative
-5. Educazione preoperatoria
-6. Educazione postoperatoria e dimissione
-7. Educazione a dispositivi e caregiver
-
-## Terapia e farmacologia — 15/15
-
-1. Processo di gestione del farmaco
-2. Rischio clinico ed errori in terapia
-3. Calcoli di dose e infusioni
-4. Vie enterali
-5. Vie sottocutanea, intradermica e intramuscolare
-6. Somministrazione endovenosa
-7. Catetere venoso periferico
-8. Midline, PICC, CVC e Port
-9. Pompe ed elastomeri
-10. Farmaci attraverso sondino enterale
-11. Via epidurale e intraossea
-12. Anticoagulanti e antiaggreganti nel perioperatorio
-13. Analgesia nel paziente chirurgico
-14. Farmaci ad alto rischio e potassio
-15. Riconciliazione, PRN e monitoraggio
-
-### Fonti Paziente chirurgico
-
-Materiali primari del corso/progetto utilizzati:
-
-- `Infermieristica nell'assistenza del paziente chirurgico.pdf`;
-- `DIAGNOSTICA.pdf`;
-- `PSICOLOGIA .pdf`;
-- `Terapia.pdf`;
-- `ASSISTENZA INFERMIERISTICA NEL PAZIENTE CHIRURGICO .pdf` come compendio esteso già verificato nel progetto;
-- `Il_Paziente_Chirurgico_-_Sintesi_Esame.pdf` come sintesi integrata di controllo.
-
-### Correzioni e aggiornamenti applicati
-
-Le lezioni preservano il programma del corso ma non propagano nozioni datate o errate. In particolare:
-
-- nessuna programmazione discriminatoria del paziente sieropositivo: **precauzioni standard per tutti**;
-- esami preoperatori non richiesti come pacchetto fisso universale, ma in base a paziente e procedura;
-- digiuno non ridotto alla regola automatica “dalla mezzanotte”: tempi differenziati per liquidi chiari, pasti e rischio individuale;
-- tricotomia non routinaria; se necessaria, clipper e non rasoio a lama;
-- Surgical Safety Checklist articolata in **Sign In, Time Out, Sign Out**;
-- RM: impianti/dispositivi valutati come MR Safe / MR Conditional / MR Unsafe secondo caratteristiche specifiche, non “metallo = sempre vietato”;
-- contrasto: distinte reazioni allergic-like e fisiologiche; premedicazione non universale; gestione metformina in base soprattutto a funzione renale/AKI e protocollo;
-- PET-FDG non presentata come specifica esclusivamente per neoplasia;
-- **Midline = accesso periferico lungo**, non CVC;
-- **PICC = accesso centrale a inserzione periferica**, con punta in posizione centrale appropriata e verificata, non genericamente “in atrio destro”;
-- CVP non sostituito secondo una scadenza rigida universale di 72 ore: gestione secondo indicazione clinica e protocollo;
-- KCl concentrato mai EV push o non diluito;
-- warfarin: nessun divieto assoluto di alimenti con vitamina K; importanza della costanza alimentare e del monitoraggio INR; gestione perioperatoria individualizzata;
-- formulazioni orali: non tutte le capsule sono automaticamente indivisibili e non tutte le compresse triturabili; verifica della formulazione;
-- via intraossea descritta secondo competenze, formazione e protocolli locali, evitando la formula universale “atto medico delegato”;
-- modelli psicologici a stadi descritti come cornici interpretative, non sequenze obbligatorie e lineari.
-
-### File Paziente chirurgico Lezioni
-
-- `data/lezioni-paziente-chirurgico.json` — roadmap 5 materie / 60 capitoli;
-- `data/lezioni-paziente-chirurgico-assistenza-1.json`;
-- `data/lezioni-paziente-chirurgico-assistenza-2.json`;
-- `data/lezioni-paziente-chirurgico-diagnostica.json`;
-- `data/lezioni-paziente-chirurgico-psicologia.json`;
-- `data/lezioni-paziente-chirurgico-educazione.json`;
-- `data/lezioni-paziente-chirurgico-terapia-1.json`;
-- `data/lezioni-paziente-chirurgico-terapia-2.json`;
-- `lezioni-paziente-chirurgico-loader.js` — carica e unisce tutti i pacchetti nel percorso `paziente-chirurgico`.
-
-`lezioni.html` importa il loader dedicato e `data/materiali.json` collega la Biblioteca al percorso con **Studia come lezione**.
+Le correzioni già consolidate — precauzioni standard, digiuno individualizzato, tricotomia solo se necessaria, checklist OMS, sicurezza RM/contrasto, classificazione Midline/PICC, gestione KCl/warfarin e altri aggiornamenti — restano valide e non sono state alterate dal lavoro MedChiruFarmaco.
 
 ---
 
-## Funzioni implementate
+# 4. MedChiruFarmaco — COMPLETO V1 24/24
 
-- navigazione Home → Lezioni → esame → materia → capitolo → lezione;
+Percorso costruito sui materiali caricati per il nuovo esame.
+
+## Medicina Generale — 12/12
+
+1. Esame obiettivo
+2. Temperatura, febbre e ipertermia
+3. Dispnea e cianosi
+4. Tosse ed escreato
+5. Edemi e ascite
+6. Ittero e bilirubina
+7. Vertigini e cefalee
+8. Stato di coscienza, lipotimia, sincope e coma
+9. Diuresi e minzione
+10. Emorragie
+11. Funzioni digestive e alvo
+12. Diabete mellito e piede diabetico
+
+Fonte primaria: `Medicina Generale.pdf.pdf`.
+
+## Chirurgia Generale — 9/9
+
+1. Gestione postoperatoria
+2. Rischio operatorio
+3. Malato con sepsi
+4. Nutrizione in chirurgia
+5. Sistema linfatico e patologie vascolari
+6. Esofago, stomaco e intestino
+7. Chirurgia endocrina
+8. Patologia mammaria
+9. Addome acuto
+
+Fonte primaria: `Chirurgia Definitivo.pdf`.
+
+## Farmacologia — 3/3
+
+1. Principi della terapia antipertensiva
+2. Diuretici
+3. Beta-bloccanti
+
+Fonte primaria: `FARMACO SCHEMI.odt`.
+
+Il percorso Farmacologia V1 è volutamente limitato agli argomenti realmente sviluppati nel materiale disponibile usato per questo blocco; non sono stati inventati capitoli per riempire la roadmap.
+
+File:
+
+- `data/lezioni-medchirufarmaco.json`;
+- `data/lezioni-medchirufarmaco-medicina-generale.json`;
+- `data/lezioni-medchirufarmaco-chirurgia-generale.json`;
+- `data/lezioni-medchirufarmaco-farmacologia.json`;
+- `lezioni-medchirufarmaco-loader.js`;
+- `medchirufarmaco-source-guard.js`.
+
+Il source guard rimanda alla scheda Biblioteca finché i quattro materiali originali MedChiruFarmaco non sono pubblicati come binari nel repository, evitando link 404.
+
+Checkpoint dettagliato quiz/QA/materiali: `MEDCHIRUFARMACO_PROGRESS.md`.
+
+---
+
+## Funzioni da preservare
+
 - breadcrumb su tutti i livelli;
-- accesso Materiali → **Studia come lezione** dove previsto;
-- roadmap completa dei capitoli;
+- roadmap capitoli;
 - spiegazioni e concetti chiave;
 - active recall;
 - checkpoint A/B/C/D con risposta obbligatoria;
@@ -243,15 +172,15 @@ Le lezioni preservano il programma del corso ma non propagano nozioni datate o e
 - progressi in `localStorage` con chiave `studyhub.lessons.progress.v1`;
 - schermata di completamento;
 - passaggio **Studia → Allenati sul quiz**;
-- apertura del PDF/materiale originale disponibile;
+- apertura del materiale originale solo quando realmente disponibile;
 - layout responsive desktop/mobile.
 
 ## Regola contenuti
 
-**Non inventare contenuti per riempire la roadmap.** Le lezioni devono derivare dai materiali reali del corso/progetto. Le fonti esterne autorevoli possono essere usate per correggere, completare o aggiornare parti non sufficientemente sviluppate quando ciò è stato autorizzato; la provenienza deve restare distinta e non va attribuita falsamente al PDF del corso.
+**Non inventare contenuti per riempire la roadmap.** Le lezioni devono derivare dai materiali reali del corso/progetto. Le fonti esterne possono integrare o correggere solo quando autorizzato e con provenienza distinta.
 
 ## Prossimo sviluppo
 
-I percorsi **Anatomia Patologica 63/63**, **Infermieristica nel Materno 62/62** e **Paziente chirurgico 60/60** sono completi.
-
-Prossimo percorso Lezioni naturale: **Scienze della Salute**, quando saranno disponibili materiali reali sufficienti da associare alla Biblioteca.
+- non rifare Anatomia 63/63, Materno 62/62, Paziente chirurgico 60/60 o MedChiruFarmaco 24/24;
+- Scienze della Salute resta il prossimo percorso naturale quando avrà materiali reali sufficienti;
+- una futura espansione di MedChiruFarmaco potrà usare le raccolte aggiuntive di domande, mantenendo QA e fonti tracciate.
