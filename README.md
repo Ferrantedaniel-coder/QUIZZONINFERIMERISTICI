@@ -1,29 +1,52 @@
 # Study Hub – Quiz Infermieristici
 
-Web app per simulazioni d'esame universitarie di infermieristica.
+Web app statica per simulazioni d'esame, materiali e lezioni interattive universitarie.
 
 ## Esami disponibili
-- **Scienze della Salute** — 459 domande
-- **Anatomia Patologica** — 300 domande, con Microbiologia, Eziologia, Immunologia e Anatomia Patologica
-- **Infermieristica nel Materno** — 300 domande, con Infermieristica Pediatrica, Pediatria, Ostetricia e Ginecologia
 
-**Totale attivo: 1.059 domande.**
+- **Scienze della Salute** — 459 domande
+- **Anatomia Patologica** — 300 domande
+- **Infermieristica nel Materno** — 300 domande
+- **Paziente chirurgico** — 462 domande
+- **MedChiruFarmaco** — 65 domande: Medicina Generale 25, Chirurgia Generale 25, Farmacologia 15
+
+**Totale attivo: 1.586 domande.**
 
 ## Funzioni
-- mix dell'intero esame oppure focus su una singola sezione
-- simulazioni da 20/30/50/100 domande oppure banca completa
-- ordine casuale delle domande e delle alternative quando appropriato
-- spiegazione del perché dopo ogni risposta
-- ripasso degli errori
-- punteggio, accuratezza e progressi salvati nel browser
+
+- mix dell'intero esame oppure focus su una singola sezione/materia;
+- simulazioni con numero configurabile di domande;
+- ordine casuale delle domande e alternative bilanciate quando appropriato;
+- `lockOrder` per alternative semanticamente dipendenti dall'ordine;
+- spiegazione del perché della risposta corretta e delle alternative errate;
+- ripasso degli errori;
+- punteggio, accuratezza e progressi salvati nel browser;
+- Biblioteca Materiali con lettura/download dei PDF pubblicati;
+- Lezioni interattive con spiegazione, active recall e checkpoint.
+
+## Lezioni interattive
+
+- Anatomia Patologica: 63/63
+- Infermieristica nel Materno: 62/62
+- Paziente chirurgico: 60/60
+- MedChiruFarmaco: 24/24
+
+Totale: **209 lezioni attive**.
 
 ## Pubblicazione
+
 Il sito è pubblicato con GitHub Pages dalla radice del branch `main`.
 
 ## Struttura principale
+
 - `index.html` — homepage Study Hub
-- `scienze-salute.html` / `scienze-salute-app.html` — Scienze della Salute
-- `anatomia-patologica.html` — Anatomia Patologica
-- `infermieristica-materno.html` — Infermieristica nel Materno
+- `materiali.html` — Biblioteca
+- `lezioni.html` — Lezioni interattive
+- `scienze-salute.html` / `scienze-salute-app.html`
+- `anatomia-patologica.html`
+- `infermieristica-materno-plus.html`
+- `paziente-chirurgico.html`
+- `medchirufarmaco.html`
 - `studyhub.css` — stile condiviso
-- `data/` — banche dati degli esami
+- `data/` — banche, spiegazioni, cataloghi e pacchetti lezioni
+- `STUDYHUB_STATE.md` — stato operativo e regole di non regressione
