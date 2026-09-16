@@ -1,0 +1,54 @@
+{
+  "id": "medchirufarmaco",
+  "name": "MedChiruFarmaco",
+  "description": "Medicina Generale, Chirurgia Generale e Farmacologia riunite nello stesso pacchetto di studio.",
+  "lessonPath": "lezioni.html?esame=medchirufarmaco",
+  "topics": [
+    "Semeiotica e Medicina Generale",
+    "Diabete mellito",
+    "Assistenza e patologie chirurgiche",
+    "Nutrizione e rischio perioperatorio",
+    "Antipertensivi",
+    "Diuretici",
+    "Beta-bloccanti",
+    "Domande d'esame"
+  ],
+  "documents": [
+    {
+      "id": "mcf-medicina",
+      "type": "Compendio",
+      "title": "Medicina Generale",
+      "sourceName": "Medicina Generale.pdf.pdf",
+      "meta": "77 pagine · materiale del corso",
+      "file": null,
+      "plannedPath": "materials/medchirufarmaco/medicina-generale.pdf"
+    },
+    {
+      "id": "mcf-chirurgia",
+      "type": "Compendio",
+      "title": "Chirurgia Generale · Definitivo",
+      "sourceName": "Chirurgia Definitivo.pdf",
+      "meta": "85 pagine · materiale del corso",
+      "file": null,
+      "plannedPath": "materials/medchirufarmaco/chirurgia-definitivo.pdf"
+    },
+    {
+      "id": "mcf-farmacologia",
+      "type": "Sbobina",
+      "title": "Farmacologia · Schemi",
+      "sourceName": "FARMACO SCHEMI.odt",
+      "meta": "Schemi del corso · materiale caricato",
+      "file": null,
+      "plannedPath": "materials/medchirufarmaco/farmaco-schemi.pdf"
+    },
+    {
+      "id": "mcf-aulaweb",
+      "type": "Compendio",
+      "title": "Esame AulaWeb · 27 gennaio 2015",
+      "sourceName": "domande esame corrette medicina chirurgia farmacologia (1).pdf",
+      "meta": "65 domande · prova reale con correzioni AulaWeb",
+      "file": null,
+      "plannedPath": "materials/medchirufarmaco/esame-aulaweb-27-01-2015.pdf"
+    }
+  ]
+}
