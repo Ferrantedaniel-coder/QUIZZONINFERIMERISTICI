@@ -1,0 +1,22 @@
+[
+  {"id":"dg021","topic":"Diagnostica","q":"Il gadolinio attraversa la barriera emato-encefalica quando:","options":["La BEE è intatta","La BEE è danneggiata","Solo nei bambini","Mai"],"correct":1},
+  {"id":"dg022","topic":"Diagnostica","q":"Quanti lobi ha il polmone destro?","options":["1","2","3","4"],"correct":2},
+  {"id":"dg023","topic":"Diagnostica","q":"Il solfato di bario viene assorbito rapidamente?","options":["Sì, completamente","No, è insolubile","Solo nei neonati","Solo a digiuno"],"correct":1},
+  {"id":"dg024","topic":"Diagnostica","q":"Screening mammografico utile maggiormente in donne tra:","options":["20-30 anni","30-40 anni","40-49 anni","50-69 anni"],"correct":3},
+  {"id":"dg025","topic":"Diagnostica","q":"In caso di osteopenia la radiografia standard:","options":["È sufficiente nelle fasi iniziali","Diagnostica solo in fase tardiva","Non ha alcuna utilità","Sostituisce la mineralometria"],"correct":1},
+  {"id":"dg026","topic":"Diagnostica","q":"Imaging più indicato in embolia polmonare?","options":["Ecografia addome","TAC spirale","Radiografia torace","RM cervicale"],"correct":1},
+  {"id":"dg027","topic":"Diagnostica","q":"In pancreatite cronica l'esame migliore per documentare il quadro?","options":["RX torace","TAC con mezzo di contrasto","Ecografia tiroidea","RM encefalo"],"correct":1},
+  {"id":"dg028","topic":"Diagnostica","q":"In sospetta perforazione duodenale, quali esami utili in urgenza?","options":["RM addome","RX addome + mezzo di contrasto idrosolubile","Colonscopia","TAC spinale"],"correct":1},
+  {"id":"dg029","topic":"Diagnostica","q":"Quando è indicata la colangiografia percutanea?","options":["Pancreatite","Ittero ostruttivo","Gastrite","Colite"],"correct":1},
+  {"id":"dg030","topic":"Diagnostica","q":"Biopsia epatica ecoguidata è utile in:","options":["Pancreatite","Sospetta neoplasia epatica HCC","Gastrite","Ittero emolitico"],"correct":1},
+  {"id":"dg031","topic":"Diagnostica","q":"In quale trauma è utile la FAST?","options":["Trauma toracico lieve","Trauma addominale chiuso","Distorsione caviglia","Trauma cranico lieve"],"correct":1},
+  {"id":"dg032","topic":"Diagnostica","q":"La TAC con mezzo di contrasto è controindicata in:","options":["Diabete controllato","Insufficienza renale severa","Ipertensione","Asma"],"correct":1},
+  {"id":"dg033","topic":"Diagnostica","q":"La RM è controindicata in:","options":["Pazienti ansiosi","Portatori di pacemaker non compatibile","Pazienti obesi","Claustrofobici"],"correct":1},
+  {"id":"dg034","topic":"Diagnostica","q":"L'ecografia è utile per:","options":["Valutare ossa","Valutare organi parenchimatosi","Valutare aria","Diagnosi radioterapica"],"correct":1},
+  {"id":"dg035","topic":"Diagnostica","q":"Mezzo di contrasto iodato è controindicato in:","options":["Allergia allo iodio","Allergia al lattosio","Allergia ai pollini","Intolleranza al glutine"],"correct":0},
+  {"id":"dg036","topic":"Diagnostica","q":"Studio migliore del polmone?","options":["Ecografia","TAC del torace","RM addome","RX bacino"],"correct":1},
+  {"id":"dg037","topic":"Diagnostica","q":"Studio delle vie biliari:","options":["RM addome (colangio-RM)","RX torace","RM cervicale","TAC cranio"],"correct":0},
+  {"id":"dg038","topic":"Diagnostica","q":"Quando si usa mezzo di contrasto idrosolubile?","options":["Perforazione sospetta","Calcolosi renale","Studio pancreas","RM cerebrale"],"correct":0},
+  {"id":"dg039","topic":"Diagnostica","q":"Segno radiologico di occlusione intestinale?","options":["Diaframma elevato","Livelli idro-aerei","Atelettasia polmonare","Scoliosi"],"correct":1},
+  {"id":"dg040","topic":"Diagnostica","q":"Lo studio della perfusione polmonare si effettua con:","options":["TAC","Scintigrafia perfusionale","RM","RX torace"],"correct":1}
+]
