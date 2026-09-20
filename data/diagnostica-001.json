@@ -1,0 +1,144 @@
+[
+  {
+    "id": "dg001",
+    "topic": "Diagnostica",
+    "q": "Come viene somministrato il mezzo di contrasto in TAC?",
+    "options": ["Solo per via orale","Per via orale e per via endovenosa","Solo per via endovenosa","Solo per via rettale"],
+    "correct": 1
+  },
+  {
+    "id": "dg002",
+    "topic": "Diagnostica",
+    "q": "Qual è l'organo più sensibile alle radiazioni?",
+    "options": ["Fegato","Testicolo / midollo osseo","Polmoni","Rene"],
+    "correct": 1
+  },
+  {
+    "id": "dg003",
+    "topic": "Diagnostica",
+    "q": "Qual è il vantaggio principale della RM?",
+    "options": ["Minor costo","Tempo di esecuzione più rapido","Pluriplanarità di acquisizione delle immagini","Usa radiazioni ionizzanti"],
+    "correct": 2
+  },
+  {
+    "id": "dg004",
+    "topic": "Diagnostica",
+    "q": "La biopsia epatica percutanea è utile per:",
+    "options": ["Calcoli biliari","Diagnosi di HCC (neoplasia epatica)","Pancreatite","Varici esofagee"],
+    "correct": 1
+  },
+  {
+    "id": "dg005",
+    "topic": "Diagnostica",
+    "q": "Mezzo di contrasto nella colangio-RM:",
+    "options": ["Si somministra per via orale","Gadolino per via endovenosa","Mezzi iodati per via rettale","Bario per via orale"],
+    "correct": 1
+  },
+  {
+    "id": "dg006",
+    "topic": "Diagnostica",
+    "q": "Il gadolinio serve per:",
+    "options": ["Colorare organi","Evidenziare tessuti e vasi sanguigni","Valutare solo vie biliari","Valutare solo muscolo scheletrico"],
+    "correct": 1
+  },
+  {
+    "id": "dg007",
+    "topic": "Diagnostica",
+    "q": "A quale organo si fa la duttogalattografia?",
+    "options": ["Tiroide","Mammella","Pancreas","Rene"],
+    "correct": 1
+  },
+  {
+    "id": "dg008",
+    "topic": "Diagnostica",
+    "q": "Prestazioni infermieristiche in diagnostica:",
+    "options": ["Solo consegna referti","Assistenza a esami e prestazioni diagnostico-terapeutiche (tutte le precedenti)","Solo preparazione sale","Solo gestione liste d'attesa"],
+    "correct": 1,
+    "lockOrder": true
+  },
+  {
+    "id": "dg009",
+    "topic": "Diagnostica",
+    "q": "Gli indumenti di protezione devono contenere:",
+    "options": ["Alluminio","Piombo","Rame","Titanio"],
+    "correct": 1
+  },
+  {
+    "id": "dg010",
+    "topic": "Diagnostica",
+    "q": "L'angiografia studia:",
+    "options": ["Solo arterie","Solo vene","Arterie e vene","Solo cuore"],
+    "correct": 2
+  },
+  {
+    "id": "dg011",
+    "topic": "Diagnostica",
+    "q": "La contaminazione in procedure radiologiche può avvenire tramite:",
+    "options": ["Solo contatto","Solo ingestione","Tutte le precedenti","Solo inalazione"],
+    "correct": 2,
+    "lockOrder": true
+  },
+  {
+    "id": "dg012",
+    "topic": "Diagnostica",
+    "q": "Per cosa NON è usata la diagnostica per immagini?",
+    "options": ["TAC","RM","Ecografia","Colonscopia"],
+    "correct": 3
+  },
+  {
+    "id": "dg013",
+    "topic": "Diagnostica",
+    "q": "Quale mezzo di contrasto NON si somministra EV?",
+    "options": ["Mezzo iodato","Gadolino","Bario","Mezzo paramagnetico"],
+    "correct": 2
+  },
+  {
+    "id": "dg014",
+    "topic": "Diagnostica",
+    "q": "L'ecografia si basa su:",
+    "options": ["Raggi gamma","Onde acustiche ad alta frequenza (ultrasuoni)","Raggi X","Microonde"],
+    "correct": 1
+  },
+  {
+    "id": "dg015",
+    "topic": "Diagnostica",
+    "q": "Dove sono usati principalmente i raggi X?",
+    "options": ["Risonanza magnetica","Radiografie mediche","Ecografie","Scintigrafia"],
+    "correct": 1
+  },
+  {
+    "id": "dg016",
+    "topic": "Diagnostica",
+    "q": "Gli ultrasuoni si usano in:",
+    "options": ["TAC","RM","Ecografia","PET"],
+    "correct": 2
+  },
+  {
+    "id": "dg017",
+    "topic": "Diagnostica",
+    "q": "Cos'è la radiosensibilità?",
+    "options": ["Capacità di emettere radiazioni","Vulnerabilità dei tessuti al danno da radiazioni","Valutazione della densità ossea","Capacità di assorbire ferro"],
+    "correct": 1
+  },
+  {
+    "id": "dg018",
+    "topic": "Diagnostica",
+    "q": "I criteri di malignità di un nodulo polmonare indeterminato sono:",
+    "options": ["Nessuno","Solo la crescita rapida","Tutti i criteri indicati","Solo la forma irregolare"],
+    "correct": 2
+  },
+  {
+    "id": "dg019",
+    "topic": "Diagnostica",
+    "q": "I tofi caratterizzano:",
+    "options": ["Artrite reumatoide","Artropatia cronica della gotta","Artrosi","Spondilite anchilosante"],
+    "correct": 1
+  },
+  {
+    "id": "dg020",
+    "topic": "Diagnostica",
+    "q": "Il broncogramma aereo è:",
+    "options": ["Studio del diaframma","Visualizzazione dell'albero bronchiale fino alle diramazioni periferiche","Studio dei seni paranasali","Studio dell'esofago"],
+    "correct": 1
+  }
+]
