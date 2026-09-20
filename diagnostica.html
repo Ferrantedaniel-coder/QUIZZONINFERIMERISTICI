@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#37b7b3">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Study Hub · Diagnostica</title>
+<link rel="stylesheet" href="studyhub.css">
+</head>
+<body>
+<main class="quiz-wrap">
+  <div class="topbar">
+    <div class="brand">
+      <button class="brandmark" style="border:0;cursor:pointer" onclick="location.href='index.html'" aria-label="Torna alla home"></button>
+      <div>
+        <div class="exam-title">Diagnostica</div>
+        <div class="muted" style="font-size:.78rem">80 domande · Paziente chirurgico</div>
+      </div>
+    </div>
+    <button class="button peach" onclick="location.href='index.html'">Home</button>
+  </div>
+
+  <section class="hero glass" style="padding:30px;margin-bottom:16px">
+    <div class="eyebrow">STUDY HUB · ESAME AUTONOMO</div>
+    <h1 style="font-size:clamp(2.8rem,8vw,5.4rem)">DIAGNOSTICA</h1>
+    <p>Allenati sulla banca di Diagnostica del Paziente chirurgico. Le risposte corrette sono quelle già indicate nel file d'esame; il feedback mostra la correzione senza spiegazioni aggiuntive.</p>
+    <div class="topic-summary">
+      <div class="mini"><b>80</b><span>Domande</span></div>
+      <div class="mini"><b>A/B/C/D</b><span>Correzione immediata</span></div>
+      <div class="mini"><b>100%</b><span>Banca del file</span></div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="controls">
+      <div class="field">
+        <label class="cap" for="mode">Numero di domande</label>
+        <select id="mode">
+          <option value="20">20 casuali</option>
+          <option value="30">30 casuali</option>
+          <option value="50">50 casuali</option>
+          <option value="all">Tutte le 80 domande</option>
+        </select>
+      </div>
+      <button class="button primary" id="startBtn" onclick="startQuiz()" disabled>Caricamento…</button>
+      <button class="button peach" onclick="toggleQuestionOrder()">Ordine domande: <span id="shuffleLabel">casuale</span></button>
+      <button class="button terracotta" onclick="resetProgress()">Azzera progressi</button>
+    </div>
+
+    <div class="stats">
+      <span id="poolInfo">Disponibili: —</span>
+      <span id="score">Punteggio: 0</span>
+      <span id="answered">Risposte: 0</span>
+      <span id="accuracy">Accuratezza: 0%</span>
+    </div>
+
+    <div class="progress"><div id="bar"></div></div>
+    <div class="exam-note"><strong>Correzione:</strong> dopo la conferma viene mostrata la risposta corretta prevista dal file originale. Non vengono aggiunte spiegazioni “perché corretta/perché falsa”.</div>
+  </section>
+
+  <section id="quizCard" class="quiz-card">
+    <div class="meta">
+      <span class="qnum" id="qnum">Caricamento banca…</span>
+      <span class="badge" id="topicBadge">Diagnostica</span>
+    </div>
+    <div class="question" id="question">Sto caricando le 80 domande di Diagnostica.</div>
+    <div id="options"></div>
+    <div id="feedback" class="feedback"></div>
+    <div class="nav">
+      <button class="button peach" id="prevBtn" onclick="prevQuestion()">← Precedente</button>
+      <button class="button primary" id="checkBtn" onclick="checkAnswer()">Conferma risposta</button>
+      <button class="button peach" id="nextBtn" onclick="nextQuestion()">Successiva →</button>
+    </div>
+    <div class="session-note">Le domande e le soluzioni sono mantenute come nella banca fornita. Le alternative semanticamente dipendenti dall'ordine, come “Tutte le precedenti” o “Nessuna delle precedenti”, non vengono rimescolate.</div>
+  </section>
+
+  <section id="result" class="result-card hidden">
+    <h2>QUIZ COMPLETATO</h2>
+    <p id="resultText"></p>
+    <div class="action-line" style="justify-content:center">
+      <button class="button primary" onclick="startQuiz()">Nuovo quiz</button>
+      <button class="button terracotta" id="retryBtn" onclick="retryErrors()">Ripassa errori</button>
+      <button class="button peach" onclick="location.href='index.html'">Torna alla Home</button>
+    </div>
+  </section>
+</main>
+
+<script>
+const DATA_FILES=[
+  "data/diagnostica-001.json",
+  "data/diagnostica-002.json",
+  "data/diagnostica-003.json",
+  "data/diagnostica-004.json"
+];
+const STORAGE_KEY="studyhub_diagnostica_v1";
+const EXPECTED_QUESTIONS=80;
+
+let QUESTIONS=[];
+let randomOrder=true;
+let session=[];
+let index=0;
+let wrongIds=[];
+let currentStats={answered:0,correct:0};
+let persisted=loadPersisted();
+
+function loadPersisted(){
+  try{
+    const raw=localStorage.getItem(STORAGE_KEY);
+    return raw?JSON.parse(raw):{answered:0,correct:0,lastWrong:[]};
+  }catch(e){
+    return {answered:0,correct:0,lastWrong:[]};
+  }
+}
+
+function savePersisted(){
+  try{localStorage.setItem(STORAGE_KEY,JSON.stringify(persisted));}
+  catch(e){console.warn("Impossibile salvare i progressi",e);}
+}
+
+function shuffle(arr){
+  const a=[...arr];
+  for(let i=a.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [a[i],a[j]]=[a[j],a[i]];
+  }
+  return a;
+}
+
+function balancedPositions(n){
+  const out=[];
+  let prev=-1;
+  while(out.length<n){
+    let block=shuffle([0,1,2,3]);
+    if(prev===block[0]){
+      const j=block.findIndex((x,k)=>k>0&&x!==prev);
+      if(j>0)[block[0],block[j]]=[block[j],block[0]];
+    }
+    for(const x of block){
+      if(out.length<n){out.push(x);prev=x;}
+    }
+  }
+  return out;
+}
+
+function requiresLockedOrder(q){
+  if(q.lockOrder)return true;
+  return q.options.some(opt=>/(tutt[ei].*precedent|nessun[ao].*precedent|tutte\s+vere|tutte\s+corrette)/i.test(opt));
+}
+
+function prepare(q,targetPos){
+  if(requiresLockedOrder(q)){
+    return {...q,optionsShown:[...q.options],correctShown:q.correct,selected:null,checked:false,wasCorrect:null};
+  }
+  const correctText=q.options[q.correct];
+  const distractors=shuffle(q.options.filter((_,i)=>i!==q.correct));
+  const opts=[...distractors];
+  opts.splice(targetPos,0,correctText);
+  return {...q,optionsShown:opts,correctShown:targetPos,selected:null,checked:false,wasCorrect:null};
+}
+
+function escapeHtml(s){
+  return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
+}
+
+async function boot(){
+  const start=document.getElementById("startBtn");
+  start.disabled=true;
+  try{
+    const parts=await Promise.all(DATA_FILES.map(async path=>{
+      const r=await fetch(path,{cache:"no-store"});
+      if(!r.ok)throw new Error(`${path}: HTTP ${r.status}`);
+      return r.json();
+    }));
+    QUESTIONS=parts.flat();
+
+    if(QUESTIONS.length!==EXPECTED_QUESTIONS){
+      throw new Error(`Conteggio banca non valido: ${QUESTIONS.length}/${EXPECTED_QUESTIONS}`);
+    }
+
+    const ids=new Set();
+    const bad=QUESTIONS.find(q=>{
+      if(!q||!q.id||ids.has(q.id)||q.topic!=="Diagnostica"||!Array.isArray(q.options)||q.options.length!==4||!Number.isInteger(q.correct)||q.correct<0||q.correct>3)return true;
+      ids.add(q.id);
+      return false;
+    });
+    if(bad)throw new Error(`Domanda non valida: ${bad?.id||"ID sconosciuto"}`);
+
+    document.getElementById("poolInfo").textContent=`Disponibili: ${QUESTIONS.length}`;
+    document.getElementById("qnum").textContent="Pronto";
+    document.getElementById("question").textContent="Banca caricata correttamente. Scegli il numero di domande e premi “Inizia / Ricomincia”.";
+    start.disabled=false;
+    start.textContent="Inizia / Ricomincia";
+  }catch(e){
+    document.getElementById("qnum").textContent="Errore di caricamento";
+    document.getElementById("question").textContent="Non riesco a caricare la banca di Diagnostica. Ricarica la pagina.";
+    start.disabled=true;
+    start.textContent="Errore caricamento";
+    console.error(e);
+  }
+}
+
+function startQuiz(ids=null){
+  if(!QUESTIONS.length)return;
+
+  let pool=ids?QUESTIONS.filter(q=>ids.includes(q.id)):[...QUESTIONS];
+  if(randomOrder)pool=shuffle(pool);
+
+  const mode=document.getElementById("mode").value;
+  const n=ids?pool.length:(mode==="all"?pool.length:Math.min(parseInt(mode,10),pool.length));
+  pool=pool.slice(0,n);
+
+  const positions=balancedPositions(pool.length);
+  session=pool.map((q,i)=>prepare(q,positions[i]));
+  index=0;
+  wrongIds=[];
+  currentStats={answered:0,correct:0};
+
+  document.getElementById("result").classList.add("hidden");
+  document.getElementById("quizCard").classList.remove("hidden");
+
+  render();
+  updateStats();
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function toggleQuestionOrder(){
+  randomOrder=!randomOrder;
+  document.getElementById("shuffleLabel").textContent=randomOrder?"casuale":"banca";
+}
+
+function renderFeedback(q){
+  const fb=document.getElementById("feedback");
+  fb.className="feedback "+(q.wasCorrect?"ok":"bad");
+  fb.innerHTML=`<div class="status">${q.wasCorrect?"RISPOSTA CORRETTA":"RISPOSTA ERRATA"}</div><strong>Risposta corretta:</strong> ${String.fromCharCode(65+q.correctShown)}. ${escapeHtml(q.optionsShown[q.correctShown])}`;
+}
+
+function render(){
+  if(!session.length)return;
+
+  const q=session[index];
+  document.getElementById("qnum").textContent=`Domanda ${index+1} / ${session.length}`;
+  document.getElementById("topicBadge").textContent="Diagnostica";
+  document.getElementById("question").textContent=q.q;
+
+  const wrap=document.getElementById("options");
+  wrap.innerHTML="";
+
+  q.optionsShown.forEach((opt,i)=>{
+    const label=document.createElement("label");
+    label.className="option";
+    if(q.checked&&i===q.correctShown)label.classList.add("correct");
+    if(q.checked&&q.selected===i&&i!==q.correctShown)label.classList.add("wrong");
+
+    const radio=document.createElement("input");
+    radio.type="radio";
+    radio.name="answer";
+    radio.value=i;
+    radio.disabled=q.checked;
+    radio.checked=q.selected===i;
+    radio.addEventListener("change",()=>{q.selected=i;});
+
+    const txt=document.createElement("span");
+    txt.innerHTML=`<b>${String.fromCharCode(65+i)}.</b> ${escapeHtml(opt)}`;
+
+    label.append(radio,txt);
+    wrap.appendChild(label);
+  });
+
+  const fb=document.getElementById("feedback");
+  if(q.checked)renderFeedback(q);
+  else{
+    fb.className="feedback";
+    fb.innerHTML="";
+  }
+
+  document.getElementById("prevBtn").disabled=index===0;
+  document.getElementById("nextBtn").textContent=index===session.length-1?"Risultati →":"Successiva →";
+  document.getElementById("checkBtn").disabled=q.checked;
+}
+
+function checkAnswer(){
+  if(!session.length)return;
+  const q=session[index];
+
+  if(q.selected===null){
+    alert("Seleziona una risposta.");
+    return;
+  }
+  if(q.checked)return;
+
+  q.checked=true;
+  q.wasCorrect=q.selected===q.correctShown;
+  currentStats.answered++;
+  persisted.answered=(persisted.answered||0)+1;
+
+  if(q.wasCorrect){
+    currentStats.correct++;
+    persisted.correct=(persisted.correct||0)+1;
+  }else if(!wrongIds.includes(q.id)){
+    wrongIds.push(q.id);
+  }
+
+  persisted.lastWrong=[...wrongIds];
+  savePersisted();
+  render();
+  updateStats();
+}
+
+function updateStats(){
+  const a=currentStats.answered;
+  const c=currentStats.correct;
+  document.getElementById("score").textContent=`Punteggio: ${c}`;
+  document.getElementById("answered").textContent=`Risposte: ${a}`;
+  document.getElementById("accuracy").textContent=`Accuratezza: ${a?Math.round(c/a*100):0}%`;
+  document.getElementById("bar").style.width=(session.length?Math.round(a/session.length*100):0)+"%";
+}
+
+function prevQuestion(){
+  if(index>0){index--;render();}
+}
+
+function nextQuestion(){
+  if(!session.length)return;
+  if(index===session.length-1){showResult();return;}
+  index++;
+  render();
+}
+
+function showResult(){
+  const checked=session.filter(q=>q.checked).length;
+  if(checked<session.length&&!confirm(`Hai risposto a ${checked} domande su ${session.length}. Vuoi vedere comunque i risultati?`))return;
+
+  document.getElementById("quizCard").classList.add("hidden");
+  document.getElementById("result").classList.remove("hidden");
+
+  const a=currentStats.answered;
+  const c=currentStats.correct;
+  const p=a?Math.round(c/a*100):0;
+  document.getElementById("resultText").innerHTML=`<strong>${c} / ${a}</strong> corrette · ${p}% di accuratezza`;
+  document.getElementById("retryBtn").disabled=wrongIds.length===0;
+
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function retryErrors(){
+  if(!wrongIds.length)return;
+  document.getElementById("mode").value="all";
+  startQuiz([...wrongIds]);
+}
+
+function resetProgress(){
+  if(!confirm("Vuoi azzerare i progressi salvati per Diagnostica?"))return;
+  localStorage.removeItem(STORAGE_KEY);
+  persisted=loadPersisted();
+  currentStats={answered:0,correct:0};
+  wrongIds=[];
+  updateStats();
+}
+
+boot();
+</script>
+</body>
+</html>
