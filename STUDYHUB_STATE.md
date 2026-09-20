@@ -2,7 +2,7 @@
 
 > **Single source of truth operativo per StudyHub**
 >
-> Ultimo aggiornamento: **16 settembre 2026**  
+> Ultimo aggiornamento: **20 settembre 2026**  
 > Repository: **Ferrantedaniel-coder/QUIZZONINFERIMERISTICI**  
 > Branch operativo: **main**
 
@@ -18,7 +18,7 @@ Se un quesito storico è ambiguo, errato o obsoleto, la correzione va **tracciat
 
 ## 2. Stato generale
 
-StudyHub è una web app statica HTML/CSS/JavaScript con **5 esami attivi e 1.586 domande**:
+StudyHub è una web app statica HTML/CSS/JavaScript con **6 esami attivi e 1.666 domande**:
 
 | Esame | Domande | Sezioni |
 |---|---:|---|
@@ -26,6 +26,7 @@ StudyHub è una web app statica HTML/CSS/JavaScript con **5 esami attivi e 1.586
 | Anatomia Patologica | 300 | Microbiologia 100; Eziologia 50; Immunologia 50; Anatomia Patologica 100 |
 | Infermieristica nel Materno | 300 | Infermieristica Pediatrica 137; Pediatria 55; Ostetricia 53; Ginecologia 55 |
 | Paziente chirurgico | 462 | Diagnostica 76; Educazione terapeutica 54; Psicologia 66; Terapia 266 |
+| Diagnostica | 80 | Diagnostica (esame autonomo da banca fornita il 20/09/2026) |
 | MedChiruFarmaco | 65 | Medicina Generale 25; Chirurgia Generale 25; Farmacologia 15 |
 
 StudyHub è organizzato in tre aree principali:
@@ -210,6 +211,10 @@ Fonte primaria banca V1: prova AulaWeb del 27/01/2015. Tre adattamenti sono trac
 
 Le raccolte `Domande Medicina Chirurgia e Farmacologia.pdf`, `Domande 1.pdf` e `Domande 2.pdf` restano fonti per una futura espansione oltre la V1 da 65 domande.
 
+### Diagnostica standalone
+
+La banca `Diagnostica` da **80 domande** è un esame autonomo separato dal blocco Diagnostica già incluso in `Paziente chirurgico` (76 domande). Per richiesta esplicita dell'utente, usa le correzioni già presenti nel file sorgente e **non applica** lo standard delle spiegazioni avanzate “perché corretta/perché errata”. Il quiz mantiene correzione immediata, randomizzazione, punteggio, accuratezza, ripasso errori e progressi locali.
+
 ## 8. Architettura principale
 
 - `index.html` — homepage;
@@ -222,6 +227,7 @@ Le raccolte `Domande Medicina Chirurgia e Farmacologia.pdf`, `Domande 1.pdf` e `
 - `anatomia-patologica.html`, `anatomia-patologica-explanations.js`;
 - `infermieristica-materno.html`, `infermieristica-materno-plus.html`, `infermieristica-materno-explanations.js`;
 - `paziente-chirurgico.html` + enhancer spiegazioni;
+- `diagnostica.html` + `data/diagnostica-001.json`–`004.json` — esame autonomo da 80 domande, feedback di sola correzione;
 - `medchirufarmaco.html` + sei pacchetti banca/spiegazioni;
 - `MEDCHIRUFARMACO_PROGRESS.md`;
 - `data/` — banche, spiegazioni, cataloghi e pacchetti Lezioni;
@@ -253,7 +259,7 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 
 ## 11. Roadmap immediata
 
-1. preservare intatti i cinque esami attivi;
+1. preservare intatti i sei esami attivi;
 2. MedChiruFarmaco V1: **65/65 quiz + 65/65 spiegazioni + 24/24 lezioni** — non rifare;
 3. possibile futura espansione MedChiruFarmaco usando le raccolte di domande aggiuntive, con QA separato;
 4. completare separatamente le spiegazioni quiz Materno da 241 a 300;
