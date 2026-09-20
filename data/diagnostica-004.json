@@ -1,0 +1,22 @@
+[
+  {"id":"dg061","topic":"Diagnostica","q":"La MOC (DEXA) serve per:","options":["Valutare perfusione polmonare","Misurare densità ossea","Studio della milza","Identificare emorragie cerebrali"],"correct":1},
+  {"id":"dg062","topic":"Diagnostica","q":"Il clisma opaco utilizza:","options":["Mezzo iodato EV","Soluzione fisiologica","Bario per via rettale","Gadolino"],"correct":2},
+  {"id":"dg063","topic":"Diagnostica","q":"In presenza di metastasi scheletriche, l'esame più sensibile è:","options":["RX ossea standard","Scintigrafia ossea","Ecografia dei tessuti molli","RM della colonna"],"correct":1},
+  {"id":"dg064","topic":"Diagnostica","q":"Studio di urgenza della colecisti:","options":["RM","TAC con mezzo","PET","Ecografia"],"correct":3},
+  {"id":"dg065","topic":"Diagnostica","q":"Segno radiografico di occlusione intestinale:","options":["Pneumoperitoneo","Ascite setacciata","Livelli idroaerei","Ombra renale aumentata"],"correct":2},
+  {"id":"dg066","topic":"Diagnostica","q":"Quando si usa mezzo di contrasto idrosolubile?","options":["In caso di sospetta perforazione gastrointestinale","Studio di colangite acuta","Ecografia epatica","RM encefalica"],"correct":0},
+  {"id":"dg067","topic":"Diagnostica","q":"Miglior metodo per studiare la fibrosi polmonare:","options":["RX torace","HRCT (TAC ad alta risoluzione)","RM torace","Scintigrafia"],"correct":1},
+  {"id":"dg068","topic":"Diagnostica","q":"Quale metodica utilizza radiofarmaci?","options":["TAC","PET","RM con gadolino","Ecografia"],"correct":1},
+  {"id":"dg069","topic":"Diagnostica","q":"Raggi X sono utilizzati in:","options":["RM","Ecografia","TAC","Nessuna delle precedenti"],"correct":2,"lockOrder":true},
+  {"id":"dg070","topic":"Diagnostica","q":"Miglior esame per frattura ossea:","options":["Ecografia","PET","RX","RM addome"],"correct":2},
+  {"id":"dg071","topic":"Diagnostica","q":"L'enteroclisi usa:","options":["Gadolino","Mezzo idrosolubile/opaco introdotto nel tenue","Soluzione fisiologica calda","Nessun mezzo"],"correct":1},
+  {"id":"dg072","topic":"Diagnostica","q":"Esame per conferma di ittero ostruttivo:","options":["RM encefalo","Colangiografia percutanea","RX addome","TAC cranio"],"correct":1},
+  {"id":"dg073","topic":"Diagnostica","q":"TAC con mezzo di contrasto è controindicata in:","options":["Anemia","Insufficienza renale severa","Disidratazione lieve","Tosse acuta"],"correct":1},
+  {"id":"dg074","topic":"Diagnostica","q":"La RM è controindicata in:","options":["Portatori di pacemaker non compatibile","Pazienti asmatici","Pazienti con anemia","Pazienti con diabete"],"correct":0},
+  {"id":"dg075","topic":"Diagnostica","q":"Primo esame per sospetta litiasi renale:","options":["Ecografia renale","RX colonna","TAC cerebrale","Scintigrafia tiroidea"],"correct":0},
+  {"id":"dg076","topic":"Diagnostica","q":"Quale metodica NON usa radiazioni ionizzanti?","options":["TAC","RX","RM","Scintigrafia"],"correct":2},
+  {"id":"dg077","topic":"Diagnostica","q":"Esame più indicato per polmone (visualizzazione parenchima):","options":["Ecografia","TAC torace","RM addome","RX bacino"],"correct":1},
+  {"id":"dg078","topic":"Diagnostica","q":"Il solfato di bario è controindicato in:","options":["Vomito","Perforazione intestinale sospetta","Calcoli renali","Occlusione nasale"],"correct":1},
+  {"id":"dg079","topic":"Diagnostica","q":"Quando il gadolinio attraversa la barriera emato-encefalica?","options":["Quando la BEE è intatta","Quando la BEE è danneggiata","Nei pazienti sotto i 10 anni","Mai"],"correct":1},
+  {"id":"dg080","topic":"Diagnostica","q":"A quale esame corrisponde il termine \"spirale\"?","options":["RM cervicale","TAC spirale (angio-TAC)","RX stomaco","Scintigrafia ossea"],"correct":1}
+]
