@@ -1,0 +1,1212 @@
+{
+  "disciplineId": "storia-medicina",
+  "chapters": {
+    "ss-origini-antiche": [
+      {
+        "id": "ss-storia-medicina-origini-antiche",
+        "title": "Medicina antica: Egitto, Mesopotamia e origini",
+        "subtitle": "Prime pratiche, testi e concezioni della malattia",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          223,
+          255,
+          256,
+          257,
+          258,
+          267,
+          323,
+          354,
+          355
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare medicina antica: egitto, mesopotamia e origini usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Nella Roma antica molti dei medici che acquisirono prestigio e influenza erano di origine greca o formati nella tradizione medica greca. La medicina egizia antica integrava concezioni magico-religiose con osservazioni empiriche, rimedi farmacologici e procedure pratiche, comprese alcune tecniche chirurgiche. Nella cultura egizia antica il cuore era considerato sede fondamentale dell'identità, del pensiero, delle emozioni e della dimensione morale dell'individuo."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "La medicina egizia combinava pratiche rituali e apotropaiche con terapie concrete, farmaci, medicazioni e procedure empiriche.",
+              "Imhotep fu un alto funzionario dell'Antico Regno egizio, vissuto nel III millennio a.C., successivamente divinizzato e associato alla sapienza, alla medicina e alla guarigione.",
+              "I Parabolani erano gruppi o confraternite cristiane della tarda antichità associati all'assistenza dei malati e dei bisognosi, tradizionalmente ricordati anche in contesti epidemici.",
+              "La medicina romana colta fu fortemente influenzata dal mondo greco e molti medici di rilievo attivi a Roma erano greci."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "I primi medici che acquisirono particolare importanza nella Roma antica erano prevalentemente di origine:",
+            "answer": "Greca"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale descrizione dell'antica medicina egizia è più corretta?",
+            "options": [
+              "Era esclusivamente scientifica nel senso moderno, escludendo così altri fattori rilevanti; nell'evoluzione delle teorie mediche.",
+              "Era priva di pratiche empiriche, nel passaggio verso la medicina moderna; nel contesto scientifico dell'epoca.",
+              "Era completamente separata dalla religione, con effetti sullo sviluppo della medicina; nel contesto scientifico dell'epoca.",
+              "Combinava elementi magico-religiosi con osservazioni empiriche, rimedi farmacologici e alcune pratiche chirurgiche"
+            ],
+            "correct": 3,
+            "explanation": "La medicina egizia antica integrava concezioni magico-religiose con osservazioni empiriche, rimedi farmacologici e procedure pratiche, comprese alcune tecniche chirurgiche."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Nella cultura egizia antica quale organo era considerato particolarmente importante come sede dell'identità, del pensiero e della vita morale?",
+            "options": [
+              "Polmone",
+              "Rene",
+              "Cuore",
+              "Milza"
+            ],
+            "correct": 2,
+            "explanation": "Nella cultura egizia antica il cuore era considerato sede fondamentale dell'identità, del pensiero, delle emozioni e della dimensione morale dell'individuo."
+          }
+        ]
+      }
+    ],
+    "ss-grecia-ippocrate": [
+      {
+        "id": "ss-storia-medicina-grecia-ippocrate",
+        "title": "Grecia classica, Ippocrate e teoria umorale",
+        "subtitle": "Osservazione clinica, natura e quattro umori",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          229,
+          237,
+          238,
+          239,
+          241,
+          249,
+          250,
+          251,
+          259
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare grecia classica, ippocrate e teoria umorale usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Tucidide descrisse durante la peste di Atene che chi era sopravvissuto sembrava essere protetto da una nuova forma grave della stessa malattia. Nella concezione ippocratica il medico deve sostenere i processi naturali di guarigione e intervenire con prudenza, evitando danni inutili. La medicina ippocratica contribuì a interpretare la malattia come fenomeno naturale studiabile mediante osservazione clinica e ragionamento."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Gli Aforismi della tradizione ippocratica sono brevi sentenze che condensano osservazioni cliniche, esperienza e precetti medici.",
+              "Nella tradizione ippocratica le epidemie venivano messe in relazione con fattori ambientali come aria, acque, clima e caratteristiche dei luoghi.",
+              "La tradizione ippocratica contribuì a interpretare la malattia come fenomeno naturale, osservabile e spiegabile attraverso cause naturali anziché esclusivamente soprannaturali.",
+              "La teoria umorale classica descriveva quattro umori: sangue, flegma, bile gialla e bile nera, il cui equilibrio era ritenuto essenziale per la salute."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Quale autore dell'antichità descrisse durante la peste di Atene il fatto che chi era sopravvissuto alla malattia sembrava non ammalarsi nuovamente gravemente?",
+            "answer": "Tucidide"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Secondo la concezione ippocratica, il medico doveva soprattutto:",
+            "options": [
+              "Sostituirsi completamente ai processi naturali dell'organismo, nel quadro storico del periodo considerato.",
+              "Favorire e assecondare i processi naturali di guarigione, evitando interventi inutilmente dannosi",
+              "Invocare esclusivamente l'intervento divino, escludendo così altri fattori rilevanti; nel contesto scientifico dell'epoca.",
+              "Concentrarsi esclusivamente sulla malattia e non sul malato, attribuendo agli altri elementi un ruolo secondario."
+            ],
+            "correct": 1,
+            "explanation": "Nella concezione ippocratica il medico deve sostenere i processi naturali di guarigione e intervenire con prudenza, evitando danni inutili."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Una caratteristica fondamentale della medicina ippocratica fu:",
+            "options": [
+              "L'interpretazione della malattia come fenomeno naturale studiabile mediante osservazione e ragionamento",
+              "L'attribuzione sistematica della malattia al peccato, nel quadro storico del periodo considerato.",
+              "Il rifiuto dell'osservazione clinica, nel quadro storico del periodo considerato; con ricadute sull'organizzazione sanitaria.",
+              "La prevalenza assoluta della magia, nel quadro storico del periodo considerato; nella trasformazione delle pratiche di cura."
+            ],
+            "correct": 0,
+            "explanation": "La medicina ippocratica contribuì a interpretare la malattia come fenomeno naturale studiabile mediante osservazione clinica e ragionamento."
+          }
+        ]
+      }
+    ],
+    "ss-roma-galeno": [
+      {
+        "id": "ss-storia-medicina-roma-galeno",
+        "title": "Roma antica, Galeno e sanità pubblica",
+        "subtitle": "Medici greci a Roma, diritto e infrastrutture sanitarie",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          242,
+          245,
+          341,
+          344,
+          451,
+          452
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare roma antica, galeno e sanità pubblica usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "La medicina romana contribuì in modo rilevante alla salute collettiva soprattutto attraverso opere di ingegneria sanitaria e organizzazione urbana, come acquedotti, fognature e terme. Nella fisiologia galenica il fegato era strettamente legato alla funzione nutritiva e alla produzione del sangue venoso, distribuito poi attraverso il sistema venoso. La civiltà romana contribuì alla salute collettiva attraverso infrastrutture e igiene urbana: acquedotti, fognature e terme."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Nella fisiologia galenica il fegato era centrale per la funzione nutritiva e per la formazione del sangue venoso.",
+              "La Lex Cornelia de sicariis et veneficiis era una legge romana contro omicidi e avvelenamenti, applicata anche a condotte relative alla somministrazione di sostanze nocive o abortive.",
+              "La Lex Aquilia rappresenta una radice storica della responsabilità civile per il danno ingiustamente causato."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Per quale aspetto la medicina romana diede un contributo particolarmente rilevante alla salute collettiva?",
+            "answer": "Realizzazione di acquedotti, fognature, terme e altre infrastrutture di sanità pubblica"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale ruolo attribuiva Galeno al fegato nella propria fisiologia?",
+            "options": [
+              "Era esclusivamente un organo digestivo secondario, senza considerare le altre componenti del fenomeno.",
+              "Era centrale nella funzione nutritiva e considerato origine del sistema venoso e del sangue venoso",
+              "Era considerato sede esclusiva del pensiero, con ricadute sull'organizzazione sanitaria.",
+              "Era considerato privo di funzione, secondo le conoscenze allora disponibili; nella trasformazione delle pratiche di cura."
+            ],
+            "correct": 1,
+            "explanation": "Nella fisiologia galenica il fegato era strettamente legato alla funzione nutritiva e alla produzione del sangue venoso, distribuito poi attraverso il sistema venoso."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale fu uno dei contributi più importanti della civiltà romana alla salute collettiva?",
+            "options": [
+              "La scoperta della penicillina, nell'evoluzione delle teorie mediche; con ricadute sull'organizzazione sanitaria.",
+              "La teoria cellulare, nel passaggio verso la medicina moderna; con effetti sullo sviluppo della medicina.",
+              "La vaccinazione antivaiolosa, nella trasformazione delle pratiche di cura; con effetti sullo sviluppo della medicina.",
+              "Lo sviluppo di acquedotti, fognature, terme e sistemi organizzati di igiene urbana"
+            ],
+            "correct": 3,
+            "explanation": "La civiltà romana contribuì alla salute collettiva attraverso infrastrutture e igiene urbana: acquedotti, fognature e terme."
+          }
+        ]
+      }
+    ],
+    "ss-medioevo-salerno": [
+      {
+        "id": "ss-storia-medicina-medioevo-salerno",
+        "title": "Medioevo, monasteri e Scuola Medica Salernitana",
+        "subtitle": "Trasmissione del sapere, università e assistenza medievale",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          231,
+          246,
+          247,
+          248,
+          262,
+          266,
+          331,
+          345,
+          346
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare medioevo, monasteri e scuola medica salernitana usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Molte università medievali nacquero dalla progressiva organizzazione di comunità di studenti e maestri attorno a centri di insegnamento già esistenti. La Scuola Medica Salernitana fu uno dei principali centri medievali di insegnamento e trasmissione del sapere medico in Occidente e anticipò alcuni caratteri della futura formazione universitaria. Trotula è tradizionalmente collegata alla Scuola Medica Salernitana e a testi medievali dedicati alla salute femminile, alla ginecologia e all'ostetricia; la ricostruzione storica della sua figura richiede prudenza."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "La Scuola Medica Salernitana rappresentò un punto di incontro tra tradizione greco-latina e saperi provenienti dal mondo arabo ed ebraico.",
+              "Le origini della Scuola Medica Salernitana vengono generalmente collocate nell'Alto Medioevo, tradizionalmente intorno al IX secolo, con massima fioritura tra XI e XII secolo.",
+              "Tra tardo Medioevo e prima età moderna i barbieri-chirurghi svolgevano frequentemente procedure pratiche come salassi, flebotomie, estrazioni dentarie e piccola chirurgia.",
+              "Molte università medievali nacquero da comunità organizzate di studenti e maestri attorno a centri di insegnamento preesistenti."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Come nacquero molte delle prime università medievali europee?",
+            "answer": "Dalla progressiva organizzazione in corporazioni di studenti e/o maestri attorno a centri di insegnamento preesistenti"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Perché la Scuola Medica Salernitana è particolarmente importante nella storia della medicina europea?",
+            "options": [
+              "È considerata uno dei principali precursori dell'insegnamento medico universitario medievale in Occidente",
+              "Fu fondata da Vesalio nel XVI secolo, nel quadro storico del periodo considerato; con effetti sullo sviluppo della medicina.",
+              "Ammetteva esclusivamente uomini, escludendo così altri fattori rilevanti; nella trasformazione delle pratiche di cura.",
+              "Rifiutava completamente la medicina classica, con ricadute sull'organizzazione sanitaria; nella trasformazione delle pratiche di cura."
+            ],
+            "correct": 0,
+            "explanation": "La Scuola Medica Salernitana fu uno dei principali centri medievali di insegnamento e trasmissione del sapere medico in Occidente e anticipò alcuni caratteri della futura formazione universitaria."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale affermazione su Trotula di Salerno è storicamente più prudente e corretta?",
+            "options": [
+              "Fu la scopritrice della teoria cellulare, nel passaggio verso la medicina moderna; secondo le conoscenze allora disponibili; nell'evoluzione delle teorie mediche.",
+              "Fu assistente di Vesalio, secondo le conoscenze allora disponibili; con ricadute sull'organizzazione sanitaria; nell'evoluzione delle teorie mediche.",
+              "Inventò la vaccinazione, nel contesto scientifico dell'epoca; secondo le conoscenze allora disponibili; con effetti sullo sviluppo della medicina.",
+              "È una figura associata alla Scuola Medica Salernitana e alla tradizione di testi medievali sulla salute femminile, ginecologia e ostetricia"
+            ],
+            "correct": 3,
+            "explanation": "Trotula è tradizionalmente collegata alla Scuola Medica Salernitana e a testi medievali dedicati alla salute femminile, alla ginecologia e all'ostetricia; la ricostruzione storica della sua figura richiede prudenza."
+          }
+        ]
+      }
+    ],
+    "ss-rinascimento-anatomia": [
+      {
+        "id": "ss-storia-medicina-rinascimento-anatomia",
+        "title": "Rinascimento, anatomia e Vesalio",
+        "subtitle": "Dissezione, iconografia e superamento degli errori antichi",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          222,
+          322,
+          368,
+          389,
+          403,
+          404,
+          407,
+          426
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare rinascimento, anatomia e vesalio usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Andrea Vesalio pose le basi dell'anatomia moderna grazie alla dissezione diretta del corpo umano e alla revisione critica di numerosi errori della tradizione galenica. Vesalio fondò l’anatomia moderna sulla dissezione diretta del corpo umano, correggendo numerosi errori galenici. Erofilo di Calcedonia fu tra i grandi anatomisti alessandrini e praticò dissezioni umane, contribuendo in particolare alla conoscenza del sistema nervoso."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Guido da Vigevano è ricordato per l'uso sistematico di illustrazioni anatomiche associate a descrizioni derivate dallo studio del corpo.",
+              "Mondino de' Liuzzi contribuì alla rinascita dell'anatomia medievale sistematizzando la dissezione umana nell'insegnamento e redigendo un importante manuale anatomico.",
+              "Aristotele contribuì allo sviluppo dell'anatomia attraverso osservazioni sistematiche sugli animali, ponendo importanti basi dell'anatomia comparata.",
+              "Giovanni Battista Morgagni pose le basi dell'anatomia patologica correlando i sintomi osservati in vita con le lesioni riscontrate all'autopsia."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Quale fu il contributo fondamentale di Andrea Vesalio alla medicina?",
+            "answer": "Lo sviluppo dell'anatomia moderna attraverso la dissezione sistematica di cadaveri umani e la correzione di numerosi errori galenici"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale fu il contributo fondamentale di Andrea Vesalio allo sviluppo dell'anatomia?",
+            "options": [
+              "Confermò integralmente le descrizioni anatomiche di Galeno, con effetti sullo sviluppo della medicina; con ricadute sull'organizzazione sanitaria.",
+              "Fondò l'anatomia moderna attraverso la dissezione sistematica del corpo umano, correggendo numerosi errori della tradizione galenica",
+              "Scoprì il batterio della tubercolosi, nell'evoluzione delle teorie mediche; nel passaggio verso la medicina moderna; nel quadro storico del periodo considerato.",
+              "Formulò la teoria cellulare, nel passaggio verso la medicina moderna; con effetti sullo sviluppo della medicina; con ricadute sull'organizzazione sanitaria."
+            ],
+            "correct": 1,
+            "explanation": "Vesalio fondò l’anatomia moderna sulla dissezione diretta del corpo umano, correggendo numerosi errori galenici."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale importante contributo viene attribuito a Erofilo di Calcedonia?",
+            "options": [
+              "La scoperta della vaccinazione, secondo le conoscenze allora disponibili; nel contesto scientifico dell'epoca.",
+              "L'invenzione dell'elettrocardiografo, nella trasformazione delle pratiche di cura; nel contesto scientifico dell'epoca.",
+              "La pratica sistematica della dissezione anatomica umana e importanti descrizioni del sistema nervoso",
+              "La scoperta della penicillina, nella trasformazione delle pratiche di cura; nel contesto scientifico dell'epoca."
+            ],
+            "correct": 2,
+            "explanation": "Erofilo di Calcedonia fu tra i grandi anatomisti alessandrini e praticò dissezioni umane, contribuendo in particolare alla conoscenza del sistema nervoso."
+          }
+        ]
+      }
+    ],
+    "ss-microscopio-patologia": [
+      {
+        "id": "ss-storia-medicina-microscopio-patologia",
+        "title": "Microscopio, fisiologia e patologia moderna",
+        "subtitle": "Harvey, Malpighi, Virchow e nuovi livelli di osservazione",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          226,
+          244,
+          326,
+          343,
+          369,
+          425
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare microscopio, fisiologia e patologia moderna usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Rudolf Virchow formulò la patologia cellulare, interpretando la malattia come conseguenza di alterazioni che interessano le cellule. Aristotele attribuiva al cuore un ruolo centrale nella vita, nelle sensazioni e nelle funzioni superiori, mentre considerava il cervello soprattutto un organo di raffreddamento. Rudolf Virchow formulò nell’Ottocento la patologia cellulare, interpretando la malattia attraverso le alterazioni delle cellule."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Nella fisiologia aristotelica il cuore era considerato centro fondamentale della vita e delle funzioni percettive.",
+              "Carl Ludwig contribuì alla nascita della fisiologia sperimentale applicando misurazioni quantitative e principi fisico-chimici allo studio delle funzioni vitali.",
+              "Giovanni Faber è tradizionalmente associato all'introduzione del termine 'microscopio', non all'invenzione esclusiva dello strumento."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Chi formulò la teoria della patologia cellulare secondo cui le malattie devono essere comprese attraverso le alterazioni delle cellule?",
+            "answer": "Rudolf Virchow"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Nella fisiologia aristotelica, quale organo veniva considerato centrale per la vita e le funzioni sensoriali superiori?",
+            "options": [
+              "Fegato",
+              "Cervello",
+              "Cuore",
+              "Rene"
+            ],
+            "correct": 2,
+            "explanation": "Aristotele attribuiva al cuore un ruolo centrale nella vita, nelle sensazioni e nelle funzioni superiori, mentre considerava il cervello soprattutto un organo di raffreddamento."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Chi formulò nell'Ottocento la teoria della patologia cellulare?",
+            "options": [
+              "Louis Pasteur",
+              "Rudolf Virchow",
+              "Robert Koch",
+              "Edward Jenner"
+            ],
+            "correct": 1,
+            "explanation": "Rudolf Virchow formulò nell’Ottocento la patologia cellulare, interpretando la malattia attraverso le alterazioni delle cellule."
+          }
+        ]
+      }
+    ],
+    "ss-ospedali-riforme": [
+      {
+        "id": "ss-storia-medicina-ospedali-riforme",
+        "title": "Ospedali, carità e riforme assistenziali",
+        "subtitle": "Evoluzione delle strutture ospedaliere e dell’organizzazione della cura",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          243,
+          260,
+          268,
+          342,
+          383,
+          385,
+          386,
+          390,
+          391
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare ospedali, carità e riforme assistenziali usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "I valetudinaria erano strutture sanitarie organizzate soprattutto in ambito militare romano per assistere soldati malati o feriti. La concezione ippocratica dell'assistenza valorizzava l'osservazione complessiva del malato, delle sue abitudini, dell'ambiente e dell'evoluzione clinica. Camillo de Lellis contribuì alla storia dell'assistenza promuovendo una cura più organizzata e rispettosa dei malati e fondando l'ordine dei Ministri degli Infermi."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "I valetudinaria erano strutture assistenziali romane particolarmente importanti nell’esercito per la cura dei militari.",
+              "L'infirmarius era storicamente la persona incaricata dell'assistenza agli infermi, soprattutto nelle infermerie monastiche.",
+              "Gli ospizi medievali lungo le vie di pellegrinaggio offrivano ospitalità e assistenza a pellegrini, poveri, malati e altre persone vulnerabili.",
+              "L'Ospedale Maggiore di Milano, noto come Ca' Granda, è uno degli esempi più importanti della riorganizzazione ospedaliera italiana del Quattrocento."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Quale importante struttura sanitaria fu sviluppata in particolare nell'esercito romano?",
+            "answer": "I valetudinaria, strutture organizzate per l'assistenza dei militari"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale caratteristica viene frequentemente attribuita alla concezione ippocratica dell'assistenza al malato?",
+            "options": [
+              "Considerazione esclusiva dell'organo malato, nel contesto scientifico dell'epoca; con ricadute sull'organizzazione sanitaria.",
+              "Dipendenza dalla magia, nel passaggio verso la medicina moderna; secondo le conoscenze allora disponibili.",
+              "Esclusione dell'ambiente, nell'evoluzione delle teorie mediche; con ricadute sull'organizzazione sanitaria.",
+              "Considerazione complessiva della persona, delle sue condizioni, dell'ambiente e dell'evoluzione della malattia"
+            ],
+            "correct": 3,
+            "explanation": "La concezione ippocratica dell'assistenza valorizzava l'osservazione complessiva del malato, delle sue abitudini, dell'ambiente e dell'evoluzione clinica."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Per quale motivo Camillo de Lellis è una figura importante nella storia dell'assistenza?",
+            "options": [
+              "Scoprì il bacillo della tubercolosi, con ricadute sull'organizzazione sanitaria; nel passaggio verso la medicina moderna.",
+              "Inventò la vaccinazione, con effetti sullo sviluppo della medicina; nel quadro storico del periodo considerato.",
+              "Promosse una forma organizzata e più attenta di assistenza ai malati e fondò l'ordine dei Ministri degli Infermi",
+              "Elaborò la teoria cellulare, con ricadute sull'organizzazione sanitaria; nella trasformazione delle pratiche di cura."
+            ],
+            "correct": 2,
+            "explanation": "Camillo de Lellis contribuì alla storia dell'assistenza promuovendo una cura più organizzata e rispettosa dei malati e fondando l'ordine dei Ministri degli Infermi."
+          }
+        ]
+      }
+    ],
+    "ss-peste-quarantena": [
+      {
+        "id": "ss-storia-medicina-peste-quarantena",
+        "title": "Peste, quarantena e magistrature sanitarie",
+        "subtitle": "Isolamento, lazzaretti e prime misure di sanità pubblica",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          224,
+          225,
+          233,
+          324,
+          325,
+          329,
+          333,
+          364,
+          387
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare peste, quarantena e magistrature sanitarie usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "La grande pandemia di peste nera raggiunse l'Europa mediterranea nel 1347 e si diffuse rapidamente negli anni successivi. Contro la peste le autorità svilupparono misure di sanità pubblica come isolamento, restrizioni alla mobilità, quarantena e organismi sanitari dedicati. Nel 1377 Ragusa, l'attuale Dubrovnik, introdusse una delle prime forme formalizzate di isolamento preventivo dei viaggiatori provenienti da aree colpite dalla peste."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "La Peste Nera raggiunse l’Europa mediterranea nel 1347, dando avvio alla grande pandemia europea del XIV secolo.",
+              "Il controllo storico della peste combinò isolamento, quarantena e organizzazione sanitaria pubblica.",
+              "Tucidide descrisse durante la peste di Atene una precoce osservazione dell’immunità acquisita dopo la malattia.",
+              "Ragusa, oggi Dubrovnik, introdusse nel 1377 una delle prime forme formalizzate di isolamento preventivo dei viaggiatori."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "La grande pandemia di peste nera raggiunse l'Europa mediterranea principalmente a partire dal:",
+            "answer": "1347"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quali provvedimenti furono storicamente utilizzati dalle autorità per contrastare la diffusione della peste?",
+            "options": [
+              "Solamente vaccinazione obbligatoria, considerando marginali gli altri aspetti coinvolti; nel contesto scientifico dell'epoca.",
+              "Isolamento dei malati, limitazioni agli spostamenti, quarantena e istituzione di magistrature sanitarie",
+              "Esclusivamente terapia antibiotica, considerando marginali gli altri aspetti coinvolti; nella trasformazione delle pratiche di cura.",
+              "Solamente disinfezione chimica delle abitazioni, attribuendo agli altri elementi un ruolo secondario."
+            ],
+            "correct": 1,
+            "explanation": "Contro la peste le autorità svilupparono misure di sanità pubblica come isolamento, restrizioni alla mobilità, quarantena e organismi sanitari dedicati."
+          },
+          {
+            "type": "checkpoint",
+            "question": "A quale città viene generalmente ricondotta una delle prime disposizioni formalizzate di isolamento preventivo dei viaggiatori durante la peste, nel 1377?",
+            "options": [
+              "Venezia",
+              "Ragusa, l'attuale Dubrovnik",
+              "Firenze",
+              "Londra"
+            ],
+            "correct": 1,
+            "explanation": "Nel 1377 Ragusa, l'attuale Dubrovnik, introdusse una delle prime forme formalizzate di isolamento preventivo dei viaggiatori provenienti da aree colpite dalla peste."
+          }
+        ]
+      }
+    ],
+    "ss-vaiolo-jenner": [
+      {
+        "id": "ss-storia-medicina-vaiolo-jenner",
+        "title": "Vaiolo, Jenner e storia della vaccinazione",
+        "subtitle": "Dalla vaccinazione all’eradicazione del vaiolo",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          227,
+          252,
+          327,
+          351,
+          442
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare vaiolo, jenner e storia della vaccinazione usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Edward Jenner è associato allo sviluppo della vaccinazione contro il vaiolo alla fine del XVIII secolo. Il vaiolo è la prima malattia umana dichiarata eradicata a livello mondiale; l'OMS certificò ufficialmente l'eradicazione nel 1980. Edward Jenner sviluppò alla fine del XVIII secolo il principio della vaccinazione contro il vaiolo."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Il vaiolo è la prima malattia infettiva umana eradicata globalmente, risultato certificato dall’OMS nel 1980.",
+              "La vaccinazione antivaiolosa ridusse progressivamente la circolazione del vaiolo fino all'eradicazione mondiale certificata dall'OMS nel 1980."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "La figura di Edward Jenner è principalmente associata a:",
+            "answer": "Lo sviluppo della vaccinazione contro il vaiolo alla fine del XVIII secolo"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale malattia è stata ufficialmente dichiarata eradicata a livello mondiale dall'OMS nel 1980?",
+            "options": [
+              "Poliomielite",
+              "Peste",
+              "Vaiolo",
+              "Morbillo"
+            ],
+            "correct": 2,
+            "explanation": "Il vaiolo è la prima malattia umana dichiarata eradicata a livello mondiale; l'OMS certificò ufficialmente l'eradicazione nel 1980."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Edward Jenner è principalmente ricordato per:",
+            "options": [
+              "Lo sviluppo della vaccinazione contro il vaiolo",
+              "La scoperta del bacillo tubercolare",
+              "L'introduzione dell'antisepsi chirurgica",
+              "La scoperta dei raggi X"
+            ],
+            "correct": 0,
+            "explanation": "Edward Jenner sviluppò alla fine del XVIII secolo il principio della vaccinazione contro il vaiolo."
+          }
+        ]
+      }
+    ],
+    "ss-teoria-microbica": [
+      {
+        "id": "ss-storia-medicina-teoria-microbica",
+        "title": "Semmelweis, Pasteur, Koch e teoria microbica",
+        "subtitle": "Igiene delle mani, microbiologia e causalità infettiva",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          221,
+          228,
+          263,
+          321,
+          328,
+          363,
+          421,
+          456
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare semmelweis, pasteur, koch e teoria microbica usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Robert Koch contribuì in modo decisivo alla microbiologia medica formulando criteri sperimentali per collegare uno specifico microrganismo a una specifica malattia. Ignaz Semmelweis dimostrò che l'igiene delle mani degli operatori riduceva drasticamente la febbre puerperale. Robert Koch contribuì in modo decisivo alla teoria microbica dimostrando il legame tra specifici microrganismi e specifiche malattie infettive."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Robert Koch contribuì a fondare la microbiologia medica definendo criteri sperimentali per collegare causalmente uno specifico microrganismo a una specifica malattia.",
+              "Semmelweis dimostrò l’importanza dell’igiene delle mani nel ridurre la febbre puerperale.",
+              "Nel 1882 Robert Koch identificò il bacillo della tubercolosi, oggi denominato Mycobacterium tuberculosis.",
+              "Louis Pasteur dimostrò il ruolo dei microrganismi in processi come la fermentazione e sviluppò vaccini importanti, contribuendo alla teoria microbica delle malattie."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Quale fu uno dei contributi fondamentali di Robert Koch allo sviluppo della microbiologia medica?",
+            "answer": "La definizione di criteri sperimentali per stabilire la relazione causale tra un microrganismo e una malattia"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Ignaz Semmelweis è storicamente associato soprattutto:",
+            "options": [
+              "Alla scoperta della tubercolosi, nell'evoluzione delle teorie mediche; nel passaggio verso la medicina moderna.",
+              "All'introduzione della vaccinazione, con effetti sullo sviluppo della medicina.",
+              "Alla riduzione della febbre puerperale mediante l'igiene delle mani degli operatori",
+              "Alla scoperta dei raggi X, nella trasformazione delle pratiche di cura; nel quadro storico del periodo considerato."
+            ],
+            "correct": 2,
+            "explanation": "Ignaz Semmelweis dimostrò che l'igiene delle mani degli operatori riduceva drasticamente la febbre puerperale."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale contributo di Robert Koch modificò profondamente lo studio delle malattie infettive?",
+            "options": [
+              "La teoria dei quattro umori, nell'evoluzione delle teorie mediche; secondo le conoscenze allora disponibili.",
+              "L'invenzione del microscopio, nel quadro storico del periodo considerato; secondo le conoscenze allora disponibili.",
+              "La descrizione del sistema nervoso, nell'evoluzione delle teorie mediche; secondo le conoscenze allora disponibili.",
+              "La dimostrazione che specifiche specie microbiche possono essere responsabili di specifiche malattie"
+            ],
+            "correct": 3,
+            "explanation": "Robert Koch contribuì in modo decisivo alla teoria microbica dimostrando il legame tra specifici microrganismi e specifiche malattie infettive."
+          }
+        ]
+      }
+    ],
+    "ss-chirurgia-moderna": [
+      {
+        "id": "ss-storia-medicina-chirurgia-moderna",
+        "title": "Antisepsi, anestesia e chirurgia moderna",
+        "subtitle": "Lister, anestesia e sviluppo della chirurgia",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          230,
+          330,
+          446,
+          447,
+          266
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare antisepsi, anestesia e chirurgia moderna usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Horace Wells fu tra i primi a utilizzare il protossido d'azoto in odontoiatria con finalità anestetiche, contribuendo alla nascita dell'anestesia moderna. Horace Wells contribuì allo sviluppo dell’anestesia moderna usando il protossido d’azoto in odontoiatria. Il grande sviluppo della chirurgia ottocentesca fu reso possibile dall'integrazione di anestesia, antisepsi e asepsi, controllo dell'emorragia e migliori conoscenze anatomo-fisiopatologiche."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Tra fine XIX e inizio XX secolo la chirurgia si espanse verso interventi cavitari, addomino-pelvici, anastomosi e nuove specialità ortopedico-traumatologiche.",
+              "Tra tardo Medioevo e prima età moderna i barbieri-chirurghi svolgevano frequentemente procedure pratiche come salassi, flebotomie, estrazioni dentarie e piccola chirurgia."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Chi è associato a uno dei primi impieghi moderni dell'anestesia con protossido d'azoto in odontoiatria?",
+            "answer": "Horace Wells"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Chi utilizzò il protossido d'azoto in odontoiatria contribuendo allo sviluppo dell'anestesia moderna?",
+            "options": [
+              "Robert Koch",
+              "Horace Wells",
+              "Rudolf Virchow",
+              "Carlo Forlanini"
+            ],
+            "correct": 1,
+            "explanation": "Horace Wells contribuì allo sviluppo dell’anestesia moderna usando il protossido d’azoto in odontoiatria."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quali fattori resero possibile il grande sviluppo della chirurgia nella seconda metà del XIX secolo?",
+            "options": [
+              "Anestesia, antisepsi/asepsi, maggiore controllo dell'emorragia e progressi delle conoscenze anatomiche, fisiologiche e patologiche",
+              "Esclusivamente la scoperta dei raggi X, attribuendo agli altri elementi un ruolo secondario; nell'evoluzione delle teorie mediche.",
+              "Solamente l'invenzione degli antibiotici, considerando marginali gli altri aspetti coinvolti; secondo le conoscenze allora disponibili.",
+              "Esclusivamente l'aumento del numero di ospedali, escludendo così altri fattori rilevanti; con ricadute sull'organizzazione sanitaria."
+            ],
+            "correct": 0,
+            "explanation": "Il grande sviluppo della chirurgia ottocentesca fu reso possibile dall'integrazione di anestesia, antisepsi e asepsi, controllo dell'emorragia e migliori conoscenze anatomo-fisiopatologiche."
+          }
+        ]
+      }
+    ],
+    "ss-endemie-italia": [
+      {
+        "id": "ss-storia-medicina-endemie-italia",
+        "title": "Colera, malaria, pellagra e tubercolosi in Italia",
+        "subtitle": "Endemie, condizioni sociali e interventi di sanità pubblica",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          270,
+          361,
+          362,
+          380,
+          381,
+          430,
+          431,
+          432,
+          433
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare colera, malaria, pellagra e tubercolosi in italia usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Prima della disponibilità di efficaci terapie antitubercolari, i sanatori erano strutture dedicate alla cura prolungata dei pazienti con tubercolosi. Prima degli antibiotici antitubercolari, i sanatori erano strutture dedicate al ricovero e al trattamento prolungato della tubercolosi. Carlo Forlanini introdusse il pneumotorace artificiale come forma di collassoterapia della tubercolosi polmonare prima della disponibilità di antibiotici efficaci."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "La tubercolosi è stata definita una malattia sociale perché trasmissione, gravità e mortalità erano fortemente influenzate da povertà, sovraffollamento, malnutrizione e condizioni di vita e lavoro.",
+              "La tubercolosi veniva storicamente chiamata anche mal sottile o male sottile per il lento e progressivo deperimento fisico del malato.",
+              "La pellagra fu storicamente associata a povertà e diete monotone basate quasi esclusivamente sul mais, con conseguente carenza di niacina.",
+              "Nell'Italia rurale ottocentesca malaria e pellagra erano entrambe importanti ma avevano cause diverse: vettori Anopheles per la malaria, carenza di niacina e povertà alimentare per la pellagra."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Prima dell'introduzione di terapie antibiotiche efficaci, quale struttura era specificamente destinata alla cura prolungata dei pazienti affetti da tubercolosi?",
+            "answer": "Sanatorio"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Prima dell'introduzione degli antibiotici antitubercolari, quali strutture erano specificamente dedicate al trattamento prolungato dei pazienti affetti da tubercolosi?",
+            "options": [
+              "Lazzaretti",
+              "Valetudinaria",
+              "Leprosari",
+              "Sanatori"
+            ],
+            "correct": 3,
+            "explanation": "Prima degli antibiotici antitubercolari, i sanatori erano strutture dedicate al ricovero e al trattamento prolungato della tubercolosi."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale medico italiano sviluppò il pneumotorace artificiale come trattamento della tubercolosi polmonare?",
+            "options": [
+              "Robert Koch",
+              "Carlo Forlanini",
+              "Ignaz Semmelweis",
+              "Giovanni Battista Morgagni"
+            ],
+            "correct": 1,
+            "explanation": "Carlo Forlanini introdusse il pneumotorace artificiale come forma di collassoterapia della tubercolosi polmonare prima della disponibilità di antibiotici efficaci."
+          }
+        ]
+      }
+    ],
+    "ss-industrializzazione": [
+      {
+        "id": "ss-storia-medicina-industrializzazione",
+        "title": "Industrializzazione e salute nel Novecento",
+        "subtitle": "Urbanizzazione, lavoro, traffico e nuovi problemi sanitari",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          435,
+          436,
+          439,
+          445,
+          457,
+          380
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare industrializzazione e salute nel novecento usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "All'inizio del Novecento il controllo della malaria in Italia si basò su chinino, bonifiche e interventi contro i siti di riproduzione delle zanzare Anopheles. Nelle dispense la 'triplice endemia' dell'Italia d'inizio Novecento è costituita da malaria, tubercolosi e sifilide. Nel XX secolo, con il controllo di molte infezioni e i cambiamenti sociali, aumentarono il peso relativo delle patologie cronico-degenerative, professionali, oncologiche e cardiovascolari."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Industrializzazione, motorizzazione e urbanizzazione aumentarono il peso di patologie respiratorie croniche, tumori da esposizione, incidenti stradali e malattie professionali.",
+              "La diffusione ottocentesca del colera fu favorita da mobilità di persone e merci, rotte commerciali e militari, urbanizzazione e gravi carenze igienico-sanitarie.",
+              "La tubercolosi è stata definita una malattia sociale perché trasmissione, gravità e mortalità erano fortemente influenzate da povertà, sovraffollamento, malnutrizione e condizioni di vita e lavoro."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Quali furono importanti interventi contro la malaria in Italia all'inizio del XX secolo?",
+            "answer": "Distribuzione regolamentata e gratuita del chinino, bonifiche e interventi volti a ridurre i siti di riproduzione delle zanzare Anopheles"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quali malattie vengono indicate nelle dispense di storia sanitaria italiana come la cosiddetta “triplice endemia” dell'inizio del Novecento?",
+            "options": [
+              "Colera, peste e vaiolo",
+              "Pellagra, scorbuto e tifo",
+              "Malaria, tubercolosi e sifilide",
+              "Morbillo, rosolia e pertosse"
+            ],
+            "correct": 2,
+            "explanation": "Nelle dispense la 'triplice endemia' dell'Italia d'inizio Novecento è costituita da malaria, tubercolosi e sifilide."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Con il progressivo controllo di numerose infezioni nel XX secolo e con industrializzazione e urbanizzazione:",
+            "options": [
+              "Tutte le malattie scomparvero, nel quadro storico del periodo considerato; nel passaggio verso la medicina moderna.",
+              "Le malattie professionali diminuirono immediatamente a zero, con effetti sullo sviluppo della medicina; nel quadro storico del periodo considerato.",
+              "Le neoplasie smisero di rappresentare un problema sanitario, nel passaggio verso la medicina moderna; nel contesto scientifico dell'epoca.",
+              "Acquisirono crescente importanza patologie cronico-degenerative, malattie professionali, tumori e patologie cardiovascolari"
+            ],
+            "correct": 3,
+            "explanation": "Nel XX secolo, con il controllo di molte infezioni e i cambiamenti sociali, aumentarono il peso relativo delle patologie cronico-degenerative, professionali, oncologiche e cardiovascolari."
+          }
+        ]
+      }
+    ],
+    "ss-infanzia-maternita": [
+      {
+        "id": "ss-storia-medicina-infanzia-maternita",
+        "title": "Pediatria, maternità e salute dell’infanzia",
+        "subtitle": "Mortalità infantile, tutela materno-infantile e sviluppo della pediatria",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          235,
+          236,
+          336,
+          409,
+          410
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare pediatria, maternità e salute dell’infanzia usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Il riconoscimento internazionale di diritti specifici dell'infanzia si consolidò nel XX secolo, con documenti come la Dichiarazione del 1959 e la Convenzione ONU del 1989. Nell'Italia ottocentesca l'elevata mortalità infantile era fortemente legata a infezioni, malnutrizione, scarsa igiene, povertà e difficili condizioni di vita. Nell’Italia ottocentesca l’elevata mortalità infantile era legata soprattutto a infezioni, malnutrizione e condizioni igienico-sociali precarie."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Luigi Mangiagalli fu un medico ostetrico-ginecologo, accademico e protagonista dello sviluppo sanitario e universitario milanese.",
+              "Mangiagalli contribuì allo sviluppo delle istituzioni sanitarie milanesi e sostenne iniziative che portarono anche alla nascita dell'Istituto dei Tumori."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "L'affermazione internazionale dei diritti specifici del bambino in ambito sociale e sanitario si sviluppò soprattutto:",
+            "answer": "Nel XX secolo, con documenti come la Dichiarazione dei diritti del fanciullo del 1959 e la Convenzione ONU del 1989"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Nell'Italia del XIX secolo l'elevata mortalità infantile era strettamente associata soprattutto a:",
+            "options": [
+              "Patologie oncologiche, nel quadro storico del periodo considerato; con ricadute sull'organizzazione sanitaria.",
+              "Malattie degenerative dell'anziano, nell'evoluzione delle teorie mediche; nel passaggio verso la medicina moderna.",
+              "Malattie infettive, condizioni igienico-sanitarie precarie, malnutrizione e difficili condizioni di vita",
+              "Esclusivamente malformazioni congenite, escludendo così altri fattori rilevanti; nel passaggio verso la medicina moderna."
+            ],
+            "correct": 2,
+            "explanation": "Nell'Italia ottocentesca l'elevata mortalità infantile era fortemente legata a infezioni, malnutrizione, scarsa igiene, povertà e difficili condizioni di vita."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Nell'Italia del XIX secolo l'elevata mortalità infantile era associata soprattutto:",
+            "options": [
+              "All'aumento dei tumori infantili, nel passaggio verso la medicina moderna; nell'evoluzione delle teorie mediche.",
+              "Esclusivamente a malattie genetiche, escludendo così altri fattori rilevanti.",
+              "A malattie infettive, malnutrizione e precarie condizioni igieniche e sociali",
+              "Principalmente agli incidenti stradali, nel quadro storico del periodo considerato."
+            ],
+            "correct": 2,
+            "explanation": "Nell’Italia ottocentesca l’elevata mortalità infantile era legata soprattutto a infezioni, malnutrizione e condizioni igienico-sociali precarie."
+          }
+        ]
+      }
+    ],
+    "ss-medicina-contemporanea": [
+      {
+        "id": "ss-storia-medicina-medicina-contemporanea",
+        "title": "Trapianti, antibiotici e medicina contemporanea",
+        "subtitle": "Antibiotici, trapianti e innovazioni del XX secolo",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          269,
+          412,
+          415,
+          416,
+          419,
+          222,
+          230,
+          266,
+          270
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare trapianti, antibiotici e medicina contemporanea usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "La medicina scientifica moderna si sviluppò anche attraverso la progressiva sostituzione delle spiegazioni esclusivamente soprannaturali con ipotesi naturali, osservabili e verificabili. I sulfamidici furono tra i primi farmaci antibatterici sistemici efficaci disponibili prima della diffusione clinica della penicillina. Christiaan Barnard realizzò nel 1967 il primo trapianto di cuore umano da uomo a uomo con successo tecnico."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Il primo trapianto cardiaco umano eseguito da Christiaan Barnard avvenne il 3 dicembre 1967.",
+              "Willem Einthoven è considerato il padre dell'elettrocardiografia moderna per lo sviluppo del galvanometro a corda e dell'ECG clinicamente utilizzabile.",
+              "Andrea Vesalio pose le basi dell'anatomia moderna grazie alla dissezione diretta del corpo umano e alla revisione critica di numerosi errori della tradizione galenica.",
+              "Horace Wells fu tra i primi a utilizzare il protossido d'azoto in odontoiatria con finalità anestetiche, contribuendo alla nascita dell'anestesia moderna."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Un elemento fondamentale della nascita della medicina scientifica moderna fu:",
+            "answer": "La progressiva ricerca di spiegazioni naturali e verificabili della malattia, riducendo il ricorso a spiegazioni esclusivamente soprannaturali"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale affermazione descrive correttamente il ruolo storico dei sulfamidici?",
+            "options": [
+              "Furono tra i primi farmaci antibatterici sistemici efficaci disponibili prima della diffusione clinica della penicillina",
+              "Sono vaccini, nell'evoluzione delle teorie mediche; nel quadro storico del periodo considerato; con ricadute sull'organizzazione sanitaria.",
+              "Sono farmaci esclusivamente antivirali, attribuendo agli altri elementi un ruolo secondario; nel passaggio verso la medicina moderna.",
+              "Furono scoperti da Jenner, nel quadro storico del periodo considerato; con ricadute sull'organizzazione sanitaria."
+            ],
+            "correct": 0,
+            "explanation": "I sulfamidici furono tra i primi farmaci antibatterici sistemici efficaci disponibili prima della diffusione clinica della penicillina."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale innovazione è associata al chirurgo sudafricano Christiaan Barnard?",
+            "options": [
+              "Primo trapianto di rene, nell'evoluzione delle teorie mediche; con ricadute sull'organizzazione sanitaria.",
+              "Primo impianto di pacemaker, con effetti sullo sviluppo della medicina; secondo le conoscenze allora disponibili.",
+              "Primo trapianto di cuore umano da uomo a uomo realizzato con successo tecnico",
+              "Prima trasfusione di sangue, con effetti sullo sviluppo della medicina; secondo le conoscenze allora disponibili."
+            ],
+            "correct": 2,
+            "explanation": "Christiaan Barnard realizzò nel 1967 il primo trapianto di cuore umano da uomo a uomo con successo tecnico."
+          }
+        ]
+      }
+    ],
+    "ss-etica-diritti": [
+      {
+        "id": "ss-storia-medicina-etica-diritti",
+        "title": "Etica, diritti e definizione di salute",
+        "subtitle": "OMS, consenso, capacità decisionale e diritti della persona",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          234,
+          240,
+          334,
+          335,
+          339,
+          235,
+          252,
+          351,
+          442
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare etica, diritti e definizione di salute usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "La Costituzione dell'OMS definisce la salute come uno stato di completo benessere fisico, mentale e sociale e non come semplice assenza di malattia o infermità. Quando un adulto non ha capacità decisionale, le decisioni devono rispettare quanto possibile la sua volontà, considerando disposizioni anticipate, rappresentanza legale e miglior interesse della persona. La Costituzione dell’OMS definisce la salute come completo benessere fisico, mentale e sociale, non semplice assenza di malattia."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Il riconoscimento internazionale dei diritti specifici dell’infanzia si consolidò soprattutto nel XX secolo.",
+              "Quando un adulto perde capacità decisionale vanno considerate volontà precedenti, disposizioni anticipate, rappresentanza prevista dalla legge e miglior interesse.",
+              "Il riconoscimento internazionale di diritti specifici dell'infanzia si consolidò nel XX secolo, con documenti come la Dichiarazione del 1959 e la Convenzione ONU del 1989.",
+              "Il vaiolo è la prima malattia umana dichiarata eradicata a livello mondiale; l'OMS certificò ufficialmente l'eradicazione nel 1980."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Qual è ancora oggi la definizione di salute contenuta nella Costituzione dell'OMS?",
+            "answer": "Stato di completo benessere fisico, mentale e sociale e non semplice assenza di malattia o infermità"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quando un paziente adulto non possiede capacità decisionale, quale affermazione è eticamente più corretta?",
+            "options": [
+              "Il principio di autonomia cessa di avere qualsiasi importanza, nel passaggio verso la medicina moderna; con effetti sullo sviluppo della medicina.",
+              "Decide automaticamente il medico senza considerare la volontà precedente del paziente, nel quadro storico del periodo considerato.",
+              "Devono essere considerate volontà precedentemente espresse, eventuali disposizioni anticipate, rappresentante legale e miglior interesse della persona",
+              "Si applica esclusivamente il principio di giustizia, considerando marginali gli altri aspetti coinvolti; nella trasformazione delle pratiche di cura."
+            ],
+            "correct": 2,
+            "explanation": "Quando un adulto non ha capacità decisionale, le decisioni devono rispettare quanto possibile la sua volontà, considerando disposizioni anticipate, rappresentanza legale e miglior interesse della persona."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Qual è la definizione di salute contenuta ancora oggi nella Costituzione dell'OMS?",
+            "options": [
+              "Capacità individuale di adattarsi autonomamente a ogni malattia, nella trasformazione delle pratiche di cura.",
+              "Stato di completo benessere fisico, mentale e sociale e non semplice assenza di malattia o infermità",
+              "Completa assenza di patologie organiche, nell'evoluzione delle teorie mediche; nel passaggio verso la medicina moderna.",
+              "Capacità di lavorare e svolgere autonomamente le attività quotidiane, nella trasformazione delle pratiche di cura."
+            ],
+            "correct": 1,
+            "explanation": "La Costituzione dell’OMS definisce la salute come completo benessere fisico, mentale e sociale, non semplice assenza di malattia."
+          }
+        ]
+      }
+    ],
+    "ss-igiene-concezioni": [
+      {
+        "id": "ss-storia-medicina-igiene-concezioni",
+        "title": "Pratiche igieniche e concezioni storiche della malattia",
+        "subtitle": "Miasmi, bagno, pori e interpretazioni pre-microbiologiche",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          455,
+          459,
+          228,
+          236,
+          241,
+          328,
+          341
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare pratiche igieniche e concezioni storiche della malattia usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Durante il viaggio in Italia del 1510-1511 Martin Lutero descrisse positivamente alcuni ospedali italiani per pulizia, ordine, strutture e qualità dell'assistenza. Tra XVI e XVII secolo alcune teorie mediche ritenevano che il bagno, soprattutto caldo, aprisse i pori e potesse facilitare l'ingresso di vapori nocivi o alterare l'equilibrio corporeo. Ignaz Semmelweis dimostrò che l'igiene delle mani degli operatori riduceva drasticamente la febbre puerperale."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Nell'Italia ottocentesca l'elevata mortalità infantile era fortemente legata a infezioni, malnutrizione, scarsa igiene, povertà e difficili condizioni di vita.",
+              "Nella tradizione ippocratica le epidemie venivano messe in relazione con fattori ambientali come aria, acque, clima e caratteristiche dei luoghi.",
+              "Semmelweis dimostrò l’importanza dell’igiene delle mani nel ridurre la febbre puerperale.",
+              "La civiltà romana contribuì alla salute collettiva attraverso infrastrutture e igiene urbana: acquedotti, fognature e terme."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Durante il suo viaggio in Italia all'inizio del XVI secolo, che cosa colpì positivamente Martin Lutero osservando alcuni ospedali italiani?",
+            "answer": "L'igiene, la qualità delle strutture e degli arredi, l'organizzazione e la qualità dell'assistenza"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Perché, tra XVI e XVII secolo, il bagno poteva essere considerato pericoloso per una persona malata?",
+            "options": [
+              "Perché si conosceva già il rischio di iponatriemia, nel quadro storico del periodo considerato; nella trasformazione delle pratiche di cura; con ricadute sull'organizzazione sanitaria.",
+              "Perché era dimostrato che l'acqua trasmettesse tutti i microrganismi, nella trasformazione delle pratiche di cura; secondo le conoscenze allora disponibili; nel contesto scientifico dell'epoca.",
+              "Perché secondo le concezioni mediche dell'epoca il calore e il bagno potevano aprire i pori, facilitando l'ingresso di vapori nocivi o alterando l'equilibrio corporeo, soprattutto durante le epidemie",
+              "Perché i bagni erano vietati esclusivamente dalla religione, attribuendo agli altri elementi un ruolo secondario; con effetti sullo sviluppo della medicina; nel quadro storico del periodo considerato."
+            ],
+            "correct": 2,
+            "explanation": "Tra XVI e XVII secolo alcune teorie mediche ritenevano che il bagno, soprattutto caldo, aprisse i pori e potesse facilitare l'ingresso di vapori nocivi o alterare l'equilibrio corporeo."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Ignaz Semmelweis è storicamente associato soprattutto:",
+            "options": [
+              "Alla scoperta della tubercolosi, nell'evoluzione delle teorie mediche; nel passaggio verso la medicina moderna.",
+              "All'introduzione della vaccinazione, con effetti sullo sviluppo della medicina.",
+              "Alla riduzione della febbre puerperale mediante l'igiene delle mani degli operatori",
+              "Alla scoperta dei raggi X, nella trasformazione delle pratiche di cura; nel quadro storico del periodo considerato."
+            ],
+            "correct": 2,
+            "explanation": "Ignaz Semmelweis dimostrò che l'igiene delle mani degli operatori riduceva drasticamente la febbre puerperale."
+          }
+        ]
+      }
+    ]
+  }
+}
