@@ -1,0 +1,570 @@
+{
+  "disciplineId": "epidemiologia",
+  "chapters": {
+    "ss-prevenzione-screening": [
+      {
+        "id": "ss-epidemiologia-prevenzione-screening",
+        "title": "Prevenzione, screening e valutazione degli interventi",
+        "subtitle": "Livelli di prevenzione e valutazione epidemiologica",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          122,
+          123,
+          151,
+          154,
+          170
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare prevenzione, screening e valutazione degli interventi usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Lo screening è un intervento di prevenzione secondaria perché mira a individuare precocemente una malattia o una condizione in persone ancora asintomatiche o in fase iniziale. Valutare l'effetto di una campagna vaccinale significa misurarne efficacia e impatto sulla popolazione, un compito tipicamente epidemiologico. L'epidemiologia è fondamentale nella valutazione post-intervento perché permette di misurare se un programma preventivo ha modificato frequenza e distribuzione degli esiti nella popolazione."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "L'epidemiologia studia distribuzione e determinanti degli stati o eventi di salute nelle popolazioni e applica queste conoscenze alla prevenzione e al controllo dei problemi sanitari.",
+              "Ridurre o rimuovere un agente cancerogeno prima che provochi malattia è prevenzione primaria."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "L'organizzazione di un programma di screening rientra principalmente in quale livello di prevenzione?",
+            "answer": "Prevenzione secondaria."
+          },
+          {
+            "type": "checkpoint",
+            "question": "La valutazione dell'effetto prodotto da una campagna di vaccinazione appartiene principalmente all'ambito:",
+            "options": [
+              "Esclusivamente amministrativo, considerando marginali gli altri aspetti coinvolti; rispetto al gruppo di confronto previsto.",
+              "Epidemiologico, attraverso la valutazione dell'efficacia e dell'impatto dell'intervento sulla popolazione.",
+              "Esclusivamente diagnostico, senza considerare le altre componenti del fenomeno; nel rapporto tra esposizione ed esito osservato.",
+              "Della prevenzione secondaria, rispetto al gruppo di confronto previsto; nella popolazione e nel periodo considerati."
+            ],
+            "correct": 1,
+            "explanation": "Valutare l'effetto di una campagna vaccinale significa misurarne efficacia e impatto sulla popolazione, un compito tipicamente epidemiologico."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Nel modello didattico di valutazione di un intervento preventivo, l'epidemiologia è particolarmente importante nella fase di:",
+            "options": [
+              "Diagnosi clinica individuale, nel rapporto tra esposizione ed esito osservato.",
+              "Valutazione post-intervento degli effetti e dell'impatto sulla popolazione.",
+              "Prescrizione terapeutica, in base alla misura epidemiologica richiesta.",
+              "Somministrazione dei farmaci, considerando la corretta sequenza temporale."
+            ],
+            "correct": 1,
+            "explanation": "L'epidemiologia è fondamentale nella valutazione post-intervento perché permette di misurare se un programma preventivo ha modificato frequenza e distribuzione degli esiti nella popolazione."
+          }
+        ]
+      }
+    ],
+    "ss-misure-frequenza": [
+      {
+        "id": "ss-epidemiologia-misure-frequenza",
+        "title": "Incidenza, prevalenza, morbosità e mortalità",
+        "subtitle": "Le principali misure descrittive in popolazione",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          124,
+          127,
+          128,
+          130,
+          131,
+          132,
+          133,
+          134,
+          138
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare incidenza, prevalenza, morbosità e mortalità usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Quando si contano nuovi casi verificatisi in un intervallo di tempo in una specifica fascia di popolazione, si descrive una misura di incidenza specifica. La morbosità descrive la frequenza delle malattie in una popolazione e può essere espressa attraverso misure come incidenza e prevalenza. Mortalità e letalità hanno denominatori diversi: la mortalità considera la popolazione, la letalità soltanto i soggetti malati."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Nell'approssimazione P ≈ I × D, la durata media si ricava come D = P/I: 0,005 ÷ 0,0006 ≈ 8,33 anni.",
+              "La densità d'incidenza misura la velocità di comparsa di nuovi eventi usando come denominatore il tempo-persona a rischio.",
+              "Nel calcolo della densità d'incidenza, il numeratore è formato dai nuovi casi e il denominatore dalla somma del tempo-persona a rischio.",
+              "La prevalenza è la proporzione di individui che presenta una determinata condizione in un preciso momento o durante un intervallo di tempo."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "“30 nuovi casi di influenza ogni 1.000 bambini di età compresa tra 5 e 14 anni durante la settimana 49” rappresentano:",
+            "answer": "Una misura di incidenza specifica per fascia d'età nel periodo considerato."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Con il termine morbosità si indica, in epidemiologia:",
+            "options": [
+              "Esclusivamente il numero di decessi causati da una malattia, considerando marginali gli altri aspetti coinvolti.",
+              "La frequenza della malattia in una popolazione, descrivibile attraverso misure quali incidenza e prevalenza.",
+              "Il rapporto tra decessi e malati, tenendo distinti numeratore e denominatore; nel confronto tra i gruppi della popolazione.",
+              "Esclusivamente le giornate lavorative perse, escludendo così altri fattori rilevanti; in base alla misura epidemiologica richiesta."
+            ],
+            "correct": 1,
+            "explanation": "La morbosità descrive la frequenza delle malattie in una popolazione e può essere espressa attraverso misure come incidenza e prevalenza."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Qual è la corretta distinzione tra mortalità e letalità?",
+            "options": [
+              "Sono sinonimi, nel rapporto tra esposizione ed esito osservato; in base alla misura epidemiologica richiesta; considerando la corretta sequenza temporale.",
+              "Entrambe utilizzano esclusivamente i malati al denominatore, attribuendo agli altri elementi un ruolo secondario; rispetto al gruppo di confronto previsto.",
+              "La mortalità non tiene conto della popolazione, escludendo così altri fattori rilevanti; nel rapporto tra esposizione ed esito osservato.",
+              "La mortalità descrive i decessi nella popolazione, mentre la letalità esprime la proporzione dei malati che muore a causa della malattia."
+            ],
+            "correct": 3,
+            "explanation": "Mortalità e letalità hanno denominatori diversi: la mortalità considera la popolazione, la letalità soltanto i soggetti malati."
+          }
+        ]
+      }
+    ],
+    "ss-tempo-persona-attacco": [
+      {
+        "id": "ss-epidemiologia-tempo-persona-attacco",
+        "title": "Tempo-persona, densità d’incidenza e tasso d’attacco",
+        "subtitle": "Misure dinamiche del rischio e studio dei focolai",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          158,
+          167,
+          171,
+          172,
+          173,
+          174
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare tempo-persona, densità d’incidenza e tasso d’attacco usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "La densità d'incidenza è il rapporto tra nuovi eventi e tempo-persona complessivamente trascorso a rischio. L'incidenza cumulativa è una proporzione che esprime un rischio; la densità d'incidenza è invece un vero tasso basato sul tempo-persona. Il cosiddetto tasso d'attacco è in realtà una forma di incidenza cumulativa: la proporzione di persone a rischio che si ammala durante un focolaio."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Il tasso d'attacco è usato soprattutto nelle indagini di epidemie e focolai in popolazioni definite e in intervalli relativamente brevi.",
+              "In un focolaio alimentare, il tasso d'attacco negli esposti è dato dai malati tra gli esposti diviso il totale degli esposti a rischio, moltiplicato per 100.",
+              "Un vero tasso epidemiologico esprime la velocità con cui si verificano eventi e incorpora il tempo-persona nel denominatore."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "La densità d'incidenza è:",
+            "answer": "Il numero di nuovi eventi rapportato alla quantità complessiva di tempo-persona trascorsa a rischio."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Come devono essere classificate incidenza cumulativa e densità d'incidenza?",
+            "options": [
+              "Entrambe sono proporzioni, rispetto al gruppo di confronto previsto; considerando la corretta sequenza temporale.",
+              "Entrambe sono tassi persona-tempo, nella popolazione e nel periodo considerati; tenendo distinti numeratore e denominatore.",
+              "L'incidenza cumulativa è una proporzione o rischio; la densità d'incidenza è un vero tasso basato sul tempo-persona.",
+              "L'incidenza cumulativa è un tasso e la densità d'incidenza è una prevalenza, secondo il disegno epidemiologico utilizzato."
+            ],
+            "correct": 2,
+            "explanation": "L'incidenza cumulativa è una proporzione che esprime un rischio; la densità d'incidenza è invece un vero tasso basato sul tempo-persona."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Il cosiddetto “tasso d'attacco” è più precisamente:",
+            "options": [
+              "Una prevalenza puntuale, tenendo distinti numeratore e denominatore; nella popolazione e nel periodo considerati; secondo il disegno epidemiologico utilizzato.",
+              "Un vero tasso persona-tempo, tenendo distinti numeratore e denominatore; rispetto al gruppo di confronto previsto; considerando la corretta sequenza temporale.",
+              "Un'incidenza cumulativa o proporzione di persone a rischio che sviluppa la malattia durante un focolaio in un periodo definito.",
+              "Una misura di letalità, rispetto al gruppo di confronto previsto; in base alla misura epidemiologica richiesta; nel confronto tra i gruppi della popolazione."
+            ],
+            "correct": 2,
+            "explanation": "Il cosiddetto tasso d'attacco è in realtà una forma di incidenza cumulativa: la proporzione di persone a rischio che si ammala durante un focolaio."
+          }
+        ]
+      }
+    ],
+    "ss-trasversali-ecologici": [
+      {
+        "id": "ss-epidemiologia-trasversali-ecologici",
+        "title": "Studi trasversali ed ecologici",
+        "subtitle": "Prevalenza, dati aggregati e fallacia ecologica",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          136,
+          139,
+          141,
+          146,
+          163,
+          138
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare studi trasversali ed ecologici usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "La fallacia ecologica consiste nell'attribuire agli individui un'associazione osservata soltanto a livello di gruppi o popolazioni. Studi trasversali ed ecologici sono utili per descrivere fenomeni e generare ipotesi; i trasversali consentono inoltre di stimare la prevalenza. Caso-controllo, coorte e trasversale hanno punti di forza diversi: malattie rare e OR per caso-controllo, incidenza e RR per coorte, prevalenza per trasversale."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Il principale limite dello studio trasversale è la difficoltà nel determinare la sequenza temporale tra esposizione ed esito.",
+              "Lo studio trasversale fotografa una popolazione in un determinato momento o periodo ed è utile per stimare la prevalenza e descrivere contemporaneamente più caratteristiche.",
+              "Gli studi trasversali fotografano esposizione ed esito nello stesso momento: sono utili per la prevalenza, ma limitati nel chiarire temporalità e per eventi rari o di breve durata."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "La fallacia ecologica si verifica quando:",
+            "answer": "Un'associazione osservata su dati aggregati viene erroneamente interpretata come se descrivesse necessariamente l'associazione a livello individuale."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale affermazione descrive correttamente un vantaggio degli studi trasversali ed ecologici?",
+            "options": [
+              "Permettono sempre il calcolo diretto del rischio relativo basato sull'incidenza, senza considerare le altre componenti del fenomeno.",
+              "Permettono di dimostrare con certezza la causalità, rispetto al gruppo di confronto previsto; secondo il disegno epidemiologico utilizzato.",
+              "Sono utili per descrivere fenomeni e generare ipotesi; gli studi trasversali consentono inoltre di stimare la prevalenza.",
+              "Eliminano automaticamente i confondenti, in base alla misura epidemiologica richiesta; considerando la corretta sequenza temporale."
+            ],
+            "correct": 2,
+            "explanation": "Studi trasversali ed ecologici sono utili per descrivere fenomeni e generare ipotesi; i trasversali consentono inoltre di stimare la prevalenza."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale associazione tra disegno di studio e caratteristica è corretta?",
+            "options": [
+              "Malattie rare → studio di coorte; prevalenza → studio caso-controllo.",
+              "Odds ratio → studio di coorte; incidenza → studio trasversale, considerando la corretta sequenza temporale.",
+              "Rischio relativo → studio caso-controllo; prevalenza → studio di coorte.",
+              "Malattie rare e OR → caso-controllo; incidenza e RR → coorte; prevalenza → trasversale."
+            ],
+            "correct": 3,
+            "explanation": "Caso-controllo, coorte e trasversale hanno punti di forza diversi: malattie rare e OR per caso-controllo, incidenza e RR per coorte, prevalenza per trasversale."
+          }
+        ]
+      }
+    ],
+    "ss-coorte": [
+      {
+        "id": "ss-epidemiologia-coorte",
+        "title": "Studi di coorte",
+        "subtitle": "Dall’esposizione all’esito e stima dell’incidenza",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          140,
+          142,
+          147,
+          148,
+          149,
+          159,
+          169,
+          175,
+          176
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare studi di coorte usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Il rischio relativo confronta il rischio o l'incidenza dell'esito negli esposti con quello dei non esposti. Il rischio relativo si ottiene dividendo l'incidenza negli esposti per quella nei non esposti: 0,30/0,15 = 2. La perdita di partecipanti durante il follow-up è un problema tipico degli studi di coorte perché può ridurre precisione e introdurre bias se non è casuale."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Gli studi di coorte possono richiedere molto tempo e risorse, essere inefficienti per malattie rare e risentire delle perdite al follow-up.",
+              "Con 5 casi su 221 esposti e 8 su 369 non esposti, le incidenze sono circa 2,26% e 2,17%; il RR è circa 1,04 e la differenza assoluta circa 0,09 punti percentuali.",
+              "Gli studi caso-controllo sono particolarmente efficienti per malattie rare o a lunga latenza e permettono di valutare numerose esposizioni passate.",
+              "Nella tabella 2×2 di un caso-controllo, l'odds ratio si ottiene dal rapporto dei prodotti incrociati: OR = ad/bc."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Il rischio relativo (RR):",
+            "answer": "È il rapporto tra rischio/incidenza negli esposti e rischio/incidenza nei non esposti ed è tipicamente stimabile negli studi di coorte."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Se l'incidenza negli esposti è del 30% e quella nei non esposti è del 15%, il rischio relativo è:",
+            "options": [
+              "2,0",
+              "0,5",
+              "0,15",
+              "Non calcolabile."
+            ],
+            "correct": 0,
+            "explanation": "Il rischio relativo si ottiene dividendo l'incidenza negli esposti per quella nei non esposti: 0,30/0,15 = 2."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale dei seguenti è uno svantaggio tipico degli studi di coorte?",
+            "options": [
+              "La possibile perdita di partecipanti durante il follow-up.",
+              "L'impossibilità di calcolare l'incidenza, nella popolazione e nel periodo considerati.",
+              "L'impossibilità di calcolare il rischio relativo.",
+              "L'impossibilità di studiare più outcome, tenendo distinti numeratore e denominatore."
+            ],
+            "correct": 0,
+            "explanation": "La perdita di partecipanti durante il follow-up è un problema tipico degli studi di coorte perché può ridurre precisione e introdurre bias se non è casuale."
+          }
+        ]
+      }
+    ],
+    "ss-caso-controllo": [
+      {
+        "id": "ss-epidemiologia-caso-controllo",
+        "title": "Studi caso-controllo",
+        "subtitle": "Dall’esito all’esposizione e uso dei controlli",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          143,
+          150,
+          160,
+          161,
+          162,
+          165
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare studi caso-controllo usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Negli studi caso-controllo il numero di controlli per caso è flessibile; aumentarlo oltre circa 3–4 per caso fornisce in genere benefici statistici progressivamente minori. Negli studi caso-controllo la misura di associazione tipica è l'odds ratio, perché casi e controlli vengono selezionati in base all'esito e non permettono in genere il calcolo diretto del rischio. Nei caso-controllo il rapporto casi-controlli non è fisso: può essere 1:1 o includere più controlli per caso, con beneficio statistico generalmente limitato oltre circa 3–4 controlli."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Gli studi caso-controllo sono vulnerabili a bias di selezione e ricordo, non stimano direttamente incidenza o RR e sono poco efficienti quando l'esposizione è molto rara.",
+              "Gli studi caso-controllo sono particolarmente efficienti per malattie rare o a lunga latenza, consentono di valutare molte esposizioni e utilizzano tipicamente l'odds ratio come misura di associazione.",
+              "Per una malattia rara e con lunga latenza, lo studio caso-controllo è spesso il disegno osservazionale più efficiente."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Negli studi caso-controllo, quale affermazione sul numero di controlli per ciascun caso è corretta?",
+            "answer": "Il rapporto può variare; spesso si utilizzano da 1 a 3-4 controlli per caso, oltre i quali il guadagno di efficienza tende generalmente a ridursi."
+          },
+          {
+            "type": "checkpoint",
+            "question": "In uno studio caso-controllo, l'associazione tra esposizione e malattia viene tipicamente quantificata attraverso:",
+            "options": [
+              "La densità d'incidenza.",
+              "L'odds ratio (OR).",
+              "Il rischio relativo calcolato direttamente.",
+              "La prevalenza puntuale."
+            ],
+            "correct": 1,
+            "explanation": "Negli studi caso-controllo la misura di associazione tipica è l'odds ratio, perché casi e controlli vengono selezionati in base all'esito e non permettono in genere il calcolo diretto del rischio."
+          },
+          {
+            "type": "checkpoint",
+            "question": "In uno studio caso-controllo, quale affermazione sull'appaiamento tra casi e controlli è corretta?",
+            "options": [
+              "Deve essere sempre 1:4, considerando marginali gli altri aspetti coinvolti; nel confronto tra i gruppi della popolazione; secondo il disegno epidemiologico utilizzato.",
+              "Può essere 1:1 o utilizzare più controlli per caso; il numero appropriato dipende dal disegno e oltre circa 3-4 controlli il guadagno di efficienza è spesso limitato.",
+              "Ogni caso deve avere esattamente due controlli, nella popolazione e nel periodo considerati; nel confronto tra i gruppi della popolazione; tenendo distinti numeratore e denominatore.",
+              "Non è mai possibile utilizzare più di un controllo, attribuendo agli altri elementi un ruolo secondario; secondo il disegno epidemiologico utilizzato; nella popolazione e nel periodo considerati."
+            ],
+            "correct": 1,
+            "explanation": "Nei caso-controllo il rapporto casi-controlli non è fisso: può essere 1:1 o includere più controlli per caso, con beneficio statistico generalmente limitato oltre circa 3–4 controlli."
+          }
+        ]
+      }
+    ],
+    "ss-misure-associazione": [
+      {
+        "id": "ss-epidemiologia-misure-associazione",
+        "title": "Misure di associazione e rischio",
+        "subtitle": "Rischio relativo, odds ratio e rischio attribuibile",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          136,
+          140,
+          141,
+          142,
+          149,
+          150,
+          161,
+          162,
+          169
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare misure di associazione e rischio usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "La fallacia ecologica consiste nell'attribuire agli individui un'associazione osservata soltanto a livello di gruppi o popolazioni. Il rischio relativo confronta il rischio o l'incidenza dell'esito negli esposti con quello dei non esposti. Caso-controllo, coorte e trasversale hanno punti di forza diversi: malattie rare e OR per caso-controllo, incidenza e RR per coorte, prevalenza per trasversale."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Il rischio relativo si ottiene dividendo l'incidenza negli esposti per quella nei non esposti: 0,30/0,15 = 2.",
+              "Con 5 casi su 221 esposti e 8 su 369 non esposti, le incidenze sono circa 2,26% e 2,17%; il RR è circa 1,04 e la differenza assoluta circa 0,09 punti percentuali.",
+              "Negli studi caso-controllo la misura di associazione tipica è l'odds ratio, perché casi e controlli vengono selezionati in base all'esito e non permettono in genere il calcolo diretto del rischio.",
+              "Gli studi caso-controllo sono vulnerabili a bias di selezione e ricordo, non stimano direttamente incidenza o RR e sono poco efficienti quando l'esposizione è molto rara."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "La fallacia ecologica si verifica quando:",
+            "answer": "Un'associazione osservata su dati aggregati viene erroneamente interpretata come se descrivesse necessariamente l'associazione a livello individuale."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Il rischio relativo (RR):",
+            "options": [
+              "È la misura tipica direttamente calcolabile negli studi caso-controllo classici, tenendo distinti numeratore e denominatore.",
+              "È il rapporto tra prevalenza totale e popolazione, considerando la corretta sequenza temporale; secondo il disegno epidemiologico utilizzato.",
+              "È il rapporto tra rischio/incidenza negli esposti e rischio/incidenza nei non esposti ed è tipicamente stimabile negli studi di coorte.",
+              "È sempre uguale all'odds ratio, escludendo così altri fattori rilevanti; nel rapporto tra esposizione ed esito osservato."
+            ],
+            "correct": 2,
+            "explanation": "Il rischio relativo confronta il rischio o l'incidenza dell'esito negli esposti con quello dei non esposti."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale associazione tra disegno di studio e caratteristica è corretta?",
+            "options": [
+              "Malattie rare → studio di coorte; prevalenza → studio caso-controllo.",
+              "Odds ratio → studio di coorte; incidenza → studio trasversale, considerando la corretta sequenza temporale.",
+              "Rischio relativo → studio caso-controllo; prevalenza → studio di coorte.",
+              "Malattie rare e OR → caso-controllo; incidenza e RR → coorte; prevalenza → trasversale."
+            ],
+            "correct": 3,
+            "explanation": "Caso-controllo, coorte e trasversale hanno punti di forza diversi: malattie rare e OR per caso-controllo, incidenza e RR per coorte, prevalenza per trasversale."
+          }
+        ]
+      }
+    ],
+    "ss-bias-standardizzazione": [
+      {
+        "id": "ss-epidemiologia-bias-standardizzazione",
+        "title": "Bias, confondimento e standardizzazione",
+        "subtitle": "Errori sistematici, confondenti e confronti tra popolazioni",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          129,
+          137,
+          155,
+          156,
+          157,
+          138,
+          147,
+          161
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare bias, confondimento e standardizzazione usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "La standardizzazione diretta richiede tassi specifici per strato sufficientemente affidabili, che vengono applicati alla stessa popolazione standard. Per interpretare correttamente una relazione esposizione-esito bisogna considerare esposizione, frequenza dell'esito, confondenti e possibili modificatori d'effetto. La standardizzazione serve a rendere confrontabili popolazioni con diversa composizione, per esempio per età, eliminando l'effetto distorsivo della diversa struttura demografica."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "La standardizzazione indiretta è particolarmente utile quando i tassi specifici della popolazione studiata sono assenti o instabili, mentre sono disponibili tassi specifici affidabili di una popolazione standard.",
+              "La standardizzazione indiretta è frequente nelle popolazioni piccole o quando i tassi specifici per strato sono poco affidabili.",
+              "Gli studi trasversali fotografano esposizione ed esito nello stesso momento: sono utili per la prevalenza, ma limitati nel chiarire temporalità e per eventi rari o di breve durata.",
+              "La perdita di partecipanti durante il follow-up è un problema tipico degli studi di coorte perché può ridurre precisione e introdurre bias se non è casuale."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "La standardizzazione diretta è particolarmente appropriata quando:",
+            "answer": "Sono disponibili tassi specifici per strato delle popolazioni da confrontare sufficientemente affidabili, che vengono applicati a una stessa popolazione standard."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Nell'analisi epidemiologica di una relazione esposizione-esito è importante considerare:",
+            "options": [
+              "Solamente la frequenza dell'esito, attribuendo agli altri elementi un ruolo secondario; nel rapporto tra esposizione ed esito osservato.",
+              "Solamente il fattore di esposizione, escludendo così altri fattori rilevanti; in base alla misura epidemiologica richiesta.",
+              "Esclusivamente i bias di selezione, considerando marginali gli altri aspetti coinvolti.",
+              "Esposizione o determinante, frequenza dell'esito, possibili confondenti e modificatori d'effetto."
+            ],
+            "correct": 3,
+            "explanation": "Per interpretare correttamente una relazione esposizione-esito bisogna considerare esposizione, frequenza dell'esito, confondenti e possibili modificatori d'effetto."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Qual è lo scopo principale della standardizzazione epidemiologica?",
+            "options": [
+              "Trasformare automaticamente un'associazione in causalità, tenendo distinti numeratore e denominatore; considerando la corretta sequenza temporale; rispetto al gruppo di confronto previsto.",
+              "Eliminare tutti gli errori casuali, nel rapporto tra esposizione ed esito osservato; in base alla misura epidemiologica richiesta; considerando la corretta sequenza temporale; nel confronto tra i gruppi della popolazione.",
+              "Calcolare esclusivamente tassi grezzi, senza considerare le altre componenti del fenomeno; nel confronto tra i gruppi della popolazione; nella popolazione e nel periodo considerati.",
+              "Rendere più confrontabili popolazioni con diversa struttura rispetto a variabili come l'età, producendo misure aggiustate che non corrispondono necessariamente a tassi direttamente osservati."
+            ],
+            "correct": 3,
+            "explanation": "La standardizzazione serve a rendere confrontabili popolazioni con diversa composizione, per esempio per età, eliminando l'effetto distorsivo della diversa struttura demografica."
+          }
+        ]
+      }
+    ]
+  }
+}
