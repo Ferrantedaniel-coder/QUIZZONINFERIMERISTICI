@@ -1,0 +1,861 @@
+{
+  "disciplineId": "infermieristica-evoluzione-storica",
+  "chapters": {
+    "ss-normativa-formazione": [
+      {
+        "id": "ss-infermieristica-evoluzione-storica-normativa-formazione",
+        "title": "Normativa e formazione infermieristica",
+        "subtitle": "Scuole-convitto, Accordo di Strasburgo, università ed equipollenze",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare normativa e formazione infermieristica usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Il R.D.L. 15 agosto 1925, n. 1832 consentì l'istituzione delle Scuole-convitto professionali per infermiere. Il regolamento di esecuzione del R.D.L. n. 1832/1925 fu approvato con R.D. 21 novembre 1929, n. 2330. Il R.D.L. n. 1832/1925 consentì l'istituzione delle Scuole-convitto professionali per infermiere."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "La ratifica italiana dell'Accordo europeo sull'istruzione e la formazione delle infermiere fu autorizzata con la Legge 15 novembre 1973, n. 795.",
+              "L'Accordo europeo sull'istruzione e la formazione delle infermiere fu concluso a Strasburgo il 25 ottobre 1967.",
+              "L'Accordo europeo di Strasburgo del 1967 riguardava requisiti e standard dell'istruzione e della formazione infermieristica.",
+              "Per l'Italia l'Accordo europeo sulla formazione infermieristica entrò in vigore l'8 settembre 1974."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Quale fu la prima normativa statale italiana che consentì l'istituzione delle Scuole-convitto professionali per infermiere?",
+            "answer": "R.D.L. 15 agosto 1925, n. 1832"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale provvedimento approvò il regolamento di esecuzione del R.D.L. n. 1832/1925 relativo alle Scuole-convitto?",
+            "options": [
+              "DPR 225/1974",
+              "R.D. 1310/1940",
+              "R.D. 21 novembre 1929, n. 2330",
+              "Legge 562/1926"
+            ],
+            "correct": 2,
+            "explanation": "Il regolamento di esecuzione del R.D.L. n. 1832/1925 fu approvato con R.D. 21 novembre 1929, n. 2330."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale affermazione relativa al R.D.L. n. 1832/1925 è corretta?",
+            "options": [
+              "Istituì il Servizio Sanitario Nazionale, nell'evoluzione dei ruoli e delle responsabilità.",
+              "Ammise per la prima volta gli uomini alla professione infermieristica",
+              "Introdusse il diploma universitario in Scienze infermieristiche",
+              "Consentì l'istituzione delle Scuole-convitto professionali per infermiere"
+            ],
+            "correct": 3,
+            "explanation": "Il R.D.L. n. 1832/1925 consentì l'istituzione delle Scuole-convitto professionali per infermiere."
+          }
+        ]
+      }
+    ],
+    "ss-collegi-ordini": [
+      {
+        "id": "ss-infermieristica-evoluzione-storica-collegi-ordini",
+        "title": "Collegi, Ordini e rappresentanza professionale",
+        "subtitle": "IPASVI, FNOPI, Albo e funzioni ordinistiche",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          1,
+          2,
+          3,
+          36,
+          38,
+          44,
+          77,
+          80,
+          82
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare collegi, ordini e rappresentanza professionale usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Il primo Congresso nazionale della Federazione dei Collegi IPASVI si svolse nel 1965. Il primo Congresso nazionale IPASVI si tenne a Roma dal 31 maggio al 2 giugno 1965. I Collegi IPASVI furono istituiti dalla Legge 29 ottobre 1954, n. 1049."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Nel 1954 i Collegi IPASVI furono istituiti dalla Legge n. 1049/1954.",
+              "L'art. 1.1 del Codice deontologico del 1999 definiva l'infermiere come operatore sanitario abilitato e iscritto all'Albo, responsabile dell'assistenza generale infermieristica.",
+              "La potestà disciplinare professionale sull'infermiere iscritto all'Albo compete all'Ordine delle Professioni Infermieristiche.",
+              "L'International Council of Nurses è una federazione internazionale indipendente, non governativa e non partitica."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "In quale anno si svolse il primo Congresso nazionale della Federazione dei Collegi IPASVI?",
+            "answer": "1965"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quando e dove si svolse il primo Congresso nazionale della Federazione dei Collegi IPASVI?",
+            "options": [
+              "A Roma, dal 31 maggio al 2 giugno 1965",
+              "A Milano, dal 12 al 14 maggio 1960",
+              "A Roma, dal 25 al 27 febbraio 1971",
+              "A Firenze, dal 29 ottobre al 1° novembre 1954"
+            ],
+            "correct": 0,
+            "explanation": "Il primo Congresso nazionale IPASVI si tenne a Roma dal 31 maggio al 2 giugno 1965."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale provvedimento istituì i Collegi IPASVI?",
+            "options": [
+              "Legge 29 ottobre 1954, n. 1094",
+              "Legge 29 ottobre 1954, n. 1049",
+              "Legge 25 febbraio 1971, n. 124",
+              "DPR 14 marzo 1974, n. 225"
+            ],
+            "correct": 1,
+            "explanation": "I Collegi IPASVI furono istituiti dalla Legge 29 ottobre 1954, n. 1049."
+          }
+        ]
+      }
+    ],
+    "ss-profilo-autonomia": [
+      {
+        "id": "ss-infermieristica-evoluzione-storica-profilo-autonomia",
+        "title": "Profilo, mansionario, autonomia e responsabilità",
+        "subtitle": "Dal mansionario al profilo professionale e alla responsabilità assistenziale",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          16,
+          18,
+          22,
+          24,
+          25,
+          27,
+          28,
+          30,
+          35
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare profilo, mansionario, autonomia e responsabilità usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Il R.D. 2 maggio 1940, n. 1310 disciplinò le mansioni degli infermieri professionali ed è indicato come primo storico mansionario infermieristico. La Legge n. 251/2000 afferma l'autonomia professionale infermieristica nelle attività rivolte a prevenzione, cura e salvaguardia della salute. Secondo la Legge n. 42/1999, il campo proprio di attività e responsabilità infermieristica è definito da profilo professionale, ordinamenti didattici e Codice deontologico."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "La Legge 26 febbraio 1999, n. 42 determinò il superamento del mansionario infermieristico previsto dal DPR n. 225/1974.",
+              "La Legge n. 42/1999 eliminò la denominazione di professione sanitaria ausiliaria e ridefinì il campo professionale attraverso profilo, formazione e deontologia.",
+              "La Legge n. 42/1999 riconosce l'equipollenza dei titoli previgenti individuati dalla normativa ai diplomi universitari per esercizio professionale e accesso alla formazione post-base.",
+              "La Legge n. 251/2000 rafforzò autonomia e responsabilità professionale, riconoscendo la diretta responsabilità e gestione dell'assistenza infermieristica."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Il R.D. 2 maggio 1940, n. 1310 è storicamente importante perché:",
+            "answer": "Disciplinò le mansioni degli infermieri professionali, costituendo il primo storico mansionario infermieristico"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale principio viene affermato dalla Legge n. 251/2000 relativamente alle professioni infermieristiche?",
+            "options": [
+              "Dipendenza funzionale obbligatoria dal medico, secondo il modello organizzativo allora prevalente.",
+              "Ripristino del mansionario, nel rapporto tra cura, organizzazione e formazione; senza una specifica autonomia professionale.",
+              "Autonomia professionale nelle attività dirette alla prevenzione, cura e salvaguardia della salute",
+              "Abolizione della pianificazione assistenziale, con effetti sulla formazione del personale."
+            ],
+            "correct": 2,
+            "explanation": "La Legge n. 251/2000 afferma l'autonomia professionale infermieristica nelle attività rivolte a prevenzione, cura e salvaguardia della salute."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Secondo la Legge n. 42/1999, il campo proprio di attività e responsabilità dell'infermiere è determinato principalmente da:",
+            "options": [
+              "Solo dal mansionario, con compiti definiti dall'assetto sanitario del periodo.",
+              "Esclusivamente dalle prescrizioni mediche, escludendo così altri fattori rilevanti.",
+              "Profilo professionale, ordinamenti didattici della formazione e Codice deontologico",
+              "Solamente dal contratto collettivo di lavoro, attribuendo agli altri elementi un ruolo secondario."
+            ],
+            "correct": 2,
+            "explanation": "Secondo la Legge n. 42/1999, il campo proprio di attività e responsabilità infermieristica è definito da profilo professionale, ordinamenti didattici e Codice deontologico."
+          }
+        ]
+      }
+    ],
+    "ss-deontologia-bioetica": [
+      {
+        "id": "ss-infermieristica-evoluzione-storica-deontologia-bioetica",
+        "title": "Deontologia e bioetica",
+        "subtitle": "Codici, principi bioetici, consenso e rapporto con la persona assistita",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          19,
+          23,
+          26,
+          56,
+          57,
+          58,
+          59,
+          62,
+          63
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare deontologia e bioetica usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Il Patto infermiere-cittadino fu presentato il 12 maggio 1996. Il primo Codice deontologico delle infermiere italiane risale al 1960. Il Codice deontologico vigente deriva dal testo del 2019 aggiornato nel 2025, con aggiornamento entrato in vigore il 22 marzo 2025."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "La bioetica studia sistematicamente le questioni morali connesse alle scienze della vita, alla medicina e alla cura della salute.",
+              "La bioetica analizza problemi e dilemmi morali che emergono dalla medicina e dalle scienze della vita.",
+              "La bioetica è una disciplina interdisciplinare che affronta questioni morali individuali e collettive connesse alla biomedicina e alle scienze della vita.",
+              "Il termine bioetica richiama etimologicamente bios, vita, ed ethos, etica o comportamento."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "In quale anno fu presentato il “Patto infermiere-cittadino”?",
+            "answer": "1996"
+          },
+          {
+            "type": "checkpoint",
+            "question": "A quale anno risale il primo Codice deontologico delle infermiere italiane?",
+            "options": [
+              "1977",
+              "1960",
+              "1999",
+              "1954"
+            ],
+            "correct": 1,
+            "explanation": "Il primo Codice deontologico delle infermiere italiane risale al 1960."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Qual è la versione attualmente vigente del Codice deontologico delle professioni infermieristiche?",
+            "options": [
+              "Codice del 2016, senza una specifica autonomia professionale; nell'evoluzione dei ruoli e delle responsabilità.",
+              "Codice del 2019 nella versione aggiornata nel 2025, entrata in vigore il 22 marzo 2025",
+              "Codice del 1999 senza successive revisioni, senza una specifica autonomia professionale.",
+              "Codice del 1977, nel contesto assistenziale dell'epoca; con compiti definiti dall'assetto sanitario del periodo."
+            ],
+            "correct": 1,
+            "explanation": "Il Codice deontologico vigente deriva dal testo del 2019 aggiornato nel 2025, con aggiornamento entrato in vigore il 22 marzo 2025."
+          }
+        ]
+      }
+    ],
+    "ss-sicurezza-rischio": [
+      {
+        "id": "ss-infermieristica-evoluzione-storica-sicurezza-rischio",
+        "title": "Sicurezza delle cure e valutazione del rischio",
+        "subtitle": "Rischio clinico, eventi sentinella, near miss e scale assistenziali",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          50,
+          51,
+          52,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare sicurezza delle cure e valutazione del rischio usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Il rischio clinico è la possibilità che nel processo assistenziale si verifichi un evento capace di produrre danno al paziente. Un evento sentinella è un evento avverso di particolare gravità, potenzialmente evitabile, che può causare morte o grave danno e segnala un problema di sicurezza del sistema. Un near miss è un errore o una situazione potenzialmente dannosa che non provoca un evento avverso perché viene intercettata o per circostanze favorevoli."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Nella scala di Braden un punteggio pari o inferiore a 9 viene generalmente classificato come rischio molto elevato di lesioni da pressione.",
+              "La scala di Conley viene utilizzata per valutare il rischio di caduta del paziente.",
+              "Conley, STRATIFY e Tinetti sono strumenti impiegati per il rischio di caduta o per aspetti di equilibrio e mobilità correlati alle cadute.",
+              "La scala di Braden è una delle scale più diffuse per la valutazione del rischio di lesioni da pressione."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Con il termine “rischio clinico” si intende:",
+            "answer": "La possibilità o probabilità che nell'ambito dell'assistenza si verifichi un evento capace di produrre un danno al paziente"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Che cos'è un evento sentinella?",
+            "options": [
+              "Un evento avverso di particolare gravità, potenzialmente evitabile, che può comportare morte o grave danno e indica un serio problema di sicurezza del sistema",
+              "Qualunque evento amministrativo privo di conseguenze cliniche, con ricadute concrete sulla pratica assistenziale; senza una specifica autonomia professionale.",
+              "Un evento che per definizione non raggiunge mai il paziente, considerando marginali gli altri aspetti coinvolti; con ricadute concrete sulla pratica assistenziale.",
+              "Una normale complicanza che non necessita di analisi, escludendo così altri fattori rilevanti; nel rapporto tra cura, organizzazione e formazione."
+            ],
+            "correct": 0,
+            "explanation": "Un evento sentinella è un evento avverso di particolare gravità, potenzialmente evitabile, che può causare morte o grave danno e segnala un problema di sicurezza del sistema."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Che cosa si intende per “near miss” o quasi evento?",
+            "options": [
+              "Un evento che ha necessariamente provocato la morte del paziente, nell'evoluzione dei ruoli e delle responsabilità; senza una specifica autonomia professionale.",
+              "Un errore o una situazione potenzialmente dannosa intercettata prima di produrre un evento avverso, oppure che per circostanze favorevoli non provoca danno",
+              "Una reazione avversa da farmaco, nel rapporto tra cura, organizzazione e formazione; senza una specifica autonomia professionale; nell'evoluzione dei ruoli e delle responsabilità.",
+              "Un evento sentinella con grave danno già verificatosi, secondo il modello organizzativo allora prevalente; con ricadute concrete sulla pratica assistenziale."
+            ],
+            "correct": 1,
+            "explanation": "Un near miss è un errore o una situazione potenzialmente dannosa che non provoca un evento avverso perché viene intercettata o per circostanze favorevoli."
+          }
+        ]
+      }
+    ],
+    "ss-nightingale": [
+      {
+        "id": "ss-infermieristica-evoluzione-storica-nightingale",
+        "title": "Florence Nightingale e nascita del nursing moderno",
+        "subtitle": "Formazione, ambiente, osservazione e sviluppo del nursing moderno",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          31,
+          43,
+          72,
+          73,
+          83,
+          85,
+          95,
+          119,
+          120
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare florence nightingale e nascita del nursing moderno usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "La Nightingale Training School presso il St Thomas' Hospital di Londra aprì nel 1860. La teoria di Florence Nightingale attribuisce un ruolo centrale all'ambiente fisico e alle condizioni igienico-sanitarie. Le scuole ispirate al modello Nightingale erano caratterizzate da selezione rigorosa delle allieve, organizzazione strutturata e ruolo centrale della direttrice o Matron."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Il modello formativo di Florence Nightingale valorizzava istruzione, disciplina, organizzazione gerarchica, dedizione ed elevati standard di comportamento.",
+              "La scuola del St Thomas' Hospital ispirata a Nightingale prevedeva una formazione teorico-pratica strutturata, disciplina e supervisione delle allieve.",
+              "La Scuola-convitto Regina Elena di Roma si ispirò fortemente al modello Nightingale, con disciplina, organizzazione gerarchica e chiara distribuzione delle responsabilità.",
+              "Florence Nightingale concepiva storicamente l'infermieristica come unione di vocazione e formazione e, nel contesto ottocentesco, come professione prevalentemente femminile."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "In quale anno aprì la Nightingale Training School presso il St Thomas' Hospital di Londra?",
+            "answer": "1860"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Nella teoria di Florence Nightingale viene attribuita particolare importanza:",
+            "options": [
+              "Esclusivamente all'ambiente psicologico, escludendo così altri fattori rilevanti.",
+              "All'ambiente fisico e alle sue condizioni igienico-sanitarie",
+              "Esclusivamente all'ambiente sociale, escludendo così altri fattori rilevanti.",
+              "Alla prescrizione farmacologica, nel rapporto tra cura, organizzazione e formazione."
+            ],
+            "correct": 1,
+            "explanation": "La teoria di Florence Nightingale attribuisce un ruolo centrale all'ambiente fisico e alle condizioni igienico-sanitarie."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quali caratteristiche contraddistinguevano le scuole ispirate al modello di Florence Nightingale?",
+            "options": [
+              "Reclutamento indiscriminato e assenza di direzione infermieristica, secondo il modello organizzativo allora prevalente.",
+              "Accesso esclusivamente maschile, considerando marginali gli altri aspetti coinvolti; nel contesto assistenziale dell'epoca.",
+              "Assenza di disciplina e tirocinio, con compiti definiti dall'assetto sanitario del periodo; nel rapporto tra cura, organizzazione e formazione.",
+              "Rigida selezione delle allieve, organizzazione strutturata della scuola e ruolo centrale della direttrice o Matron"
+            ],
+            "correct": 3,
+            "explanation": "Le scuole ispirate al modello Nightingale erano caratterizzate da selezione rigorosa delle allieve, organizzazione strutturata e ruolo centrale della direttrice o Matron."
+          }
+        ]
+      }
+    ],
+    "ss-professionalizzazione": [
+      {
+        "id": "ss-infermieristica-evoluzione-storica-professionalizzazione",
+        "title": "Modelli di sviluppo e professionalizzazione",
+        "subtitle": "Modelli vocazionale, burocratico, paramedico e professionale",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          15,
+          49,
+          109,
+          116,
+          375,
+          379,
+          448,
+          449,
+          450
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare modelli di sviluppo e professionalizzazione usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Nel modello paramedico l'infermiere è concepito soprattutto come collaboratore del medico nell'esecuzione delle attività diagnostico-terapeutiche prescritte. Nel modello paramedico il ruolo infermieristico è concepito soprattutto come collaborazione con il medico e attuazione delle attività diagnostico-terapeutiche prescritte. Le istituzioni cristiane contribuirono fortemente all'assistenza, pur potendo alcuni modelli gerarchici e basati sull'obbedienza limitare autonomia e professionalizzazione del personale di cura."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Tra 1850 e 1914 industrializzazione, sviluppo scientifico e trasformazioni sociali favorirono la professionalizzazione dell'assistenza, con differenze importanti tra i Paesi.",
+              "Con la professionalizzazione della medicina il medico si concentra sempre più sulla sanitas corporis, cioè sulla salute e sulle malattie del corpo.",
+              "Nel modello di Wilensky la professionalizzazione procede dal lavoro a tempo pieno alla formazione specialistica, alle associazioni, al riconoscimento statale e infine alla formalizzazione etica.",
+              "Nel concetto di professione richiamato da Carlo Calamandrei è centrale il riconoscimento di un'identità e di un modello professionale condiviso da un gruppo."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Nel modello professionale definito “paramedico”, l'infermiere è concepito principalmente come:",
+            "answer": "Un collaboratore del medico orientato prevalentemente all'esecuzione delle attività diagnostico-terapeutiche prescritte"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Nel modello paramedico dell'assistenza infermieristica:",
+            "options": [
+              "L'infermiere formula autonomamente diagnosi mediche, con compiti definiti dall'assetto sanitario del periodo; nel rapporto tra cura, organizzazione e formazione.",
+              "Il ruolo infermieristico è prevalentemente concepito come collaborazione con il medico ed esecuzione delle attività diagnostico-terapeutiche prescritte",
+              "Non esiste collaborazione interprofessionale, considerando marginali gli altri aspetti coinvolti; nell'evoluzione dei ruoli e delle responsabilità.",
+              "L'infermiere svolge esclusivamente attività amministrative, attribuendo agli altri elementi un ruolo secondario; con ricadute concrete sulla pratica assistenziale."
+            ],
+            "correct": 1,
+            "explanation": "Nel modello paramedico il ruolo infermieristico è concepito soprattutto come collaborazione con il medico e attuazione delle attività diagnostico-terapeutiche prescritte."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale affermazione descrive in modo storicamente più equilibrato il rapporto tra istituzioni cristiane e sviluppo dell'assistenza?",
+            "options": [
+              "Il cristianesimo impedì completamente qualsiasi progresso assistenziale, con compiti definiti dall'assetto sanitario del periodo; nel contesto assistenziale dell'epoca; senza una specifica autonomia professionale.",
+              "Le istituzioni cristiane contribuirono fortemente all'assistenza, anche se alcuni modelli storici basati su rigida gerarchia e obbedienza potevano limitare autonomia e professionalizzazione del personale di cura.",
+              "Il cristianesimo non ebbe alcun ruolo negli ospedali europei, considerando marginali gli altri aspetti coinvolti; senza una specifica autonomia professionale; nel rapporto tra cura, organizzazione e formazione.",
+              "Le istituzioni religiose introdussero immediatamente l'autonomia infermieristica moderna, con ricadute concrete sulla pratica assistenziale; senza una specifica autonomia professionale; secondo il modello organizzativo allora prevalente."
+            ],
+            "correct": 1,
+            "explanation": "Le istituzioni cristiane contribuirono fortemente all'assistenza, pur potendo alcuni modelli gerarchici e basati sull'obbedienza limitare autonomia e professionalizzazione del personale di cura."
+          }
+        ]
+      }
+    ],
+    "ss-organizzazioni": [
+      {
+        "id": "ss-infermieristica-evoluzione-storica-organizzazioni",
+        "title": "Organizzazioni infermieristiche e umanitarie",
+        "subtitle": "ICN, CICIAMS, Croce Rossa e associazionismo internazionale",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          20,
+          33,
+          34,
+          37,
+          39,
+          71,
+          74,
+          75,
+          86
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare organizzazioni infermieristiche e umanitarie usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Il primo Comitato italiano da cui derivò la Croce Rossa Italiana nacque a Milano il 15 giugno 1864. L'International Council of Women fu fondato a Washington nel 1888. A Roma nel 1908 si svolse il primo Congresso nazionale delle donne italiane promosso dal CNDI."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Nel 1954 il CICIAMS fu ammesso alle relazioni ufficiali con l'Organizzazione Mondiale della Sanità.",
+              "La definizione ICN richiamata dalla domanda viene ricondotta al Congresso di Francoforte del 1965.",
+              "L'International Council of Nurses, fondato nel 1899, rappresenta a livello internazionale le associazioni infermieristiche nazionali.",
+              "Ethel Gordon Fenwick ebbe un ruolo fondamentale nella proposta e nella fondazione dell'International Council of Nurses nel 1899."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Quando nacque il primo Comitato italiano che diede origine alla Croce Rossa Italiana?",
+            "answer": "15 giugno 1864, a Milano"
+          },
+          {
+            "type": "checkpoint",
+            "question": "In quale anno fu fondato a Washington l'International Council of Women (ICW)?",
+            "options": [
+              "1896",
+              "1903",
+              "1888",
+              "1908"
+            ],
+            "correct": 2,
+            "explanation": "L'International Council of Women fu fondato a Washington nel 1888."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale importante evento relativo al movimento femminile italiano si svolse a Roma nel 1908?",
+            "options": [
+              "La fondazione dell'ICN, nel contesto assistenziale dell'epoca.",
+              "La fondazione dell'IPASVI, con compiti definiti dall'assetto sanitario del periodo.",
+              "La prima ammissione delle donne all'università, con compiti definiti dall'assetto sanitario del periodo.",
+              "Il primo Congresso nazionale delle donne italiane promosso dal CNDI"
+            ],
+            "correct": 3,
+            "explanation": "A Roma nel 1908 si svolse il primo Congresso nazionale delle donne italiane promosso dal CNDI."
+          }
+        ]
+      }
+    ],
+    "ss-cristianesimo-medioevo": [
+      {
+        "id": "ss-infermieristica-evoluzione-storica-cristianesimo-medioevo",
+        "title": "Assistenza tra cristianesimo e Medioevo",
+        "subtitle": "Istituzioni religiose, carità e trasformazioni dell’assistenza",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          107,
+          108,
+          110,
+          31,
+          83,
+          109
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare assistenza tra cristianesimo e medioevo usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Il cristianesimo ebbe una forte influenza storica sulla cura dei malati in Europa e contribuì allo sviluppo di istituzioni caritative e ospedaliere. In alcune concezioni cristiane medievali la malattia poteva essere interpretata anche come sofferenza, prova o penitenza, senza che questa fosse l'unica spiegazione esistente. Nel basso Medioevo l'assistenza coinvolse progressivamente anche autorità cittadine, confraternite, corporazioni e organizzazioni legate alle arti e ai mestieri."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "La Nightingale Training School presso il St Thomas' Hospital di Londra aprì nel 1860.",
+              "La scuola del St Thomas' Hospital ispirata a Nightingale prevedeva una formazione teorico-pratica strutturata, disciplina e supervisione delle allieve.",
+              "Le istituzioni cristiane contribuirono fortemente all'assistenza, pur potendo alcuni modelli gerarchici e basati sull'obbedienza limitare autonomia e professionalizzazione del personale di cura."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Quale affermazione descrive correttamente l'influenza storica del cristianesimo sull'assistenza in Europa?",
+            "answer": "Ebbe una notevole influenza sulla cura dei malati e contribuì allo sviluppo di istituzioni caritative e ospedaliere dedicate a poveri, malati e persone vulnerabili."
+          },
+          {
+            "type": "checkpoint",
+            "question": "In alcune concezioni cristiane medievali, la malattia poteva assumere anche quale significato?",
+            "options": [
+              "Era interpretata esclusivamente come fenomeno biologico, senza considerare le altre componenti del fenomeno; secondo il modello organizzativo allora prevalente.",
+              "Poteva essere interpretata in chiave religiosa come esperienza di sofferenza, prova o penitenza, pur non essendo questa l'unica concezione esistente.",
+              "Era sempre considerata una prova di colpevolezza individuale, attribuendo agli altri elementi un ruolo secondario; secondo il modello organizzativo allora prevalente.",
+              "Non possedeva alcun significato religioso, escludendo così altri fattori rilevanti; con compiti definiti dall'assetto sanitario del periodo."
+            ],
+            "correct": 1,
+            "explanation": "In alcune concezioni cristiane medievali la malattia poteva essere interpretata anche come sofferenza, prova o penitenza, senza che questa fosse l'unica spiegazione esistente."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Nel basso Medioevo l'assistenza sanitaria cominciò progressivamente a coinvolgere, oltre alle istituzioni religiose e caritative:",
+            "options": [
+              "Autorità cittadine, confraternite, corporazioni e organizzazioni legate alle arti e ai mestieri.",
+              "Esclusivamente le università, senza considerare le altre componenti del fenomeno; secondo il modello organizzativo allora prevalente.",
+              "Esclusivamente gli eserciti, considerando marginali gli altri aspetti coinvolti; secondo il modello organizzativo allora prevalente.",
+              "Solamente i medici di corte, considerando marginali gli altri aspetti coinvolti; senza una specifica autonomia professionale."
+            ],
+            "correct": 0,
+            "explanation": "Nel basso Medioevo l'assistenza coinvolse progressivamente anche autorità cittadine, confraternite, corporazioni e organizzazioni legate alle arti e ai mestieri."
+          }
+        ]
+      }
+    ],
+    "ss-scuole-italia": [
+      {
+        "id": "ss-infermieristica-evoluzione-storica-scuole-italia",
+        "title": "Scuole e formazione in Italia tra Ottocento e Novecento",
+        "subtitle": "Dalle prime esperienze organizzate alle scuole professionali",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          45,
+          88,
+          91,
+          393,
+          394,
+          4,
+          6,
+          7,
+          83
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare scuole e formazione in italia tra ottocento e novecento usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "La Scuola Croce Azzurra di Napoli è ricordata come una delle prime importanti esperienze italiane di formazione laica delle infermiere. La Scuola-convitto Victor De Marchi fu fondata a Milano nel 1912 da Adelina De Marchi insieme al medico Giulio Banfi. Nel Report on Nursing in Italy di Amy Turton, uno dei primi esempi italiani di formazione infermieristica organizzata è ricondotto all'esperienza di Francesco Durante con Amalia Prandi Ribeghini."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "La Scuola Convitto Regina Elena presso il Policlinico Umberto I di Roma fu inaugurata nel 1910 e rappresentò un passaggio importante nella formazione infermieristica italiana.",
+              "La Scuola Convitto Regina Elena si ispirava in larga misura al modello Nightingale, fondato su selezione, disciplina, organizzazione e formazione teorico-pratica.",
+              "Il R.D.L. 15 agosto 1925, n. 1832 consentì l'istituzione delle Scuole-convitto professionali per infermiere.",
+              "Il regolamento di esecuzione del R.D.L. n. 1832/1925 fu approvato con R.D. 21 novembre 1929, n. 2330."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "La Scuola “Croce Azzurra” di Napoli è storicamente ricordata come:",
+            "answer": "Una delle prime importanti scuole italiane per la formazione laica delle infermiere, con attività pratica presso l'Ospedale Gesù e Maria"
+          },
+          {
+            "type": "checkpoint",
+            "question": "La Scuola-convitto per infermiere Victor De Marchi fu fondata:",
+            "options": [
+              "A Milano nel 1912 da Adelina De Marchi insieme al medico Giulio Banfi",
+              "A Napoli nel 1896 da Florence Nightingale",
+              "A Roma nel 1954 dalla Federazione IPASVI",
+              "A Londra nel 1860"
+            ],
+            "correct": 0,
+            "explanation": "La Scuola-convitto Victor De Marchi fu fondata a Milano nel 1912 da Adelina De Marchi insieme al medico Giulio Banfi."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Secondo il “Report on Nursing in Italy” di Amy Turton, uno dei primi esempi italiani di formazione organizzata delle infermiere viene ricondotto:",
+            "options": [
+              "Alla Scuola-convitto Regina Elena, nel rapporto tra cura, organizzazione e formazione.",
+              "Alla Scuola Victor De Marchi, con effetti sulla formazione del personale.",
+              "Al Collegio IPASVI di Roma, nell'evoluzione dei ruoli e delle responsabilità.",
+              "All'esperienza del professor Francesco Durante con Amalia Prandi Ribeghini"
+            ],
+            "correct": 3,
+            "explanation": "Nel Report on Nursing in Italy di Amy Turton, uno dei primi esempi italiani di formazione infermieristica organizzata è ricondotto all'esperienza di Francesco Durante con Amalia Prandi Ribeghini."
+          }
+        ]
+      }
+    ],
+    "ss-teorie-nursing": [
+      {
+        "id": "ss-infermieristica-evoluzione-storica-teorie-nursing",
+        "title": "Teorie e modelli assistenziali",
+        "subtitle": "Concetti e autori che hanno contribuito alla costruzione disciplinare del nursing",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          94,
+          121,
+          402,
+          91
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare teorie e modelli assistenziali usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Nella teoria di Dorothea Orem, i requisiti di self-care sono distinti in universali, evolutivi o di sviluppo e correlati alle deviazioni dello stato di salute. Per Nightingale il nursing consiste soprattutto nel creare condizioni ambientali favorevoli — aria, luce, calore, pulizia, quiete e alimentazione — affinché i processi naturali di recupero possano agire nel modo più efficace possibile. Camillo de Lellis promosse un'assistenza continua e concreta alla persona malata, unendo cura dei bisogni corporei, dignità e conforto umano e spirituale."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Nel Report on Nursing in Italy di Amy Turton, uno dei primi esempi italiani di formazione infermieristica organizzata è ricondotto all'esperienza di Francesco Durante con Amalia Prandi Ribeghini."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Nella teoria dell'autoassistenza di Dorothea Orem, i requisiti di self-care vengono distinti in:",
+            "answer": "Universali, evolutivi o di sviluppo e correlati alle deviazioni dello stato di salute"
+          },
+          {
+            "type": "checkpoint",
+            "question": "In Notes on Nursing, Nightingale definisce il nursing soprattutto come:",
+            "options": [
+              "Esclusiva somministrazione di farmaci prescritti, con compiti definiti dall'assetto sanitario del periodo; senza una specifica autonomia professionale.",
+              "Diagnosi e cura autonoma della malattia, nell'evoluzione dei ruoli e delle responsabilità; nel contesto assistenziale dell'epoca.",
+              "Uso appropriato di aria, luce, calore, pulizia, quiete e alimentazione per favorire il processo naturale di recupero del paziente.",
+              "Attività esclusivamente subordinata alla terapia medica, attribuendo agli altri elementi un ruolo secondario; nel rapporto tra cura, organizzazione e formazione."
+            ],
+            "correct": 2,
+            "explanation": "Per Nightingale il nursing consiste soprattutto nel creare condizioni ambientali favorevoli — aria, luce, calore, pulizia, quiete e alimentazione — affinché i processi naturali di recupero possano agire nel modo più efficace possibile."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale principio caratterizzava particolarmente il modello assistenziale promosso da Camillo de Lellis?",
+            "options": [
+              "Esclusione del contatto diretto con il malato, senza una specifica autonomia professionale; nel rapporto tra cura, organizzazione e formazione.",
+              "Assistenza concreta e continua ai bisogni corporei del malato, associata anche al conforto umano e spirituale",
+              "Cura esclusivamente farmacologica, senza considerare le altre componenti del fenomeno; con ricadute concrete sulla pratica assistenziale.",
+              "Assistenza riservata soltanto ai ricchi, con ricadute concrete sulla pratica assistenziale; nell'evoluzione dei ruoli e delle responsabilità."
+            ],
+            "correct": 1,
+            "explanation": "Camillo de Lellis promosse un'assistenza continua e concreta alla persona malata, unendo cura dei bisogni corporei, dignità e conforto umano e spirituale."
+          }
+        ]
+      }
+    ],
+    "ss-ssn-riforme": [
+      {
+        "id": "ss-infermieristica-evoluzione-storica-ssn-riforme",
+        "title": "SSN e riforme sanitarie",
+        "subtitle": "Istituzione del SSN, aziendalizzazione e impatto sulle professioni sanitarie",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          21,
+          29,
+          90,
+          1
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare ssn e riforme sanitarie usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "La Legge 23 dicembre 1978, n. 833 istituì il Servizio Sanitario Nazionale. Il D.Lgs. 502/1992, modificato dal D.Lgs. 517/1993, introdusse l'aziendalizzazione e contribuì allo sviluppo universitario delle professioni sanitarie. Il D.Lgs. 502/1992, poi modificato dal D.Lgs. 517/1993, ebbe un ruolo centrale nella riforma sanitaria e nel trasferimento/consolidamento della formazione delle professioni sanitarie in ambito universitario."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Il primo Congresso nazionale della Federazione dei Collegi IPASVI si svolse nel 1965."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Che cosa istituì la Legge 23 dicembre 1978, n. 833?",
+            "answer": "Il Servizio Sanitario Nazionale"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale riforma sanitaria dei primi anni Novanta introdusse il processo di aziendalizzazione e contribuì allo sviluppo della formazione universitaria delle professioni sanitarie?",
+            "options": [
+              "Legge 42/1999, senza una specifica autonomia professionale.",
+              "DPR 225/1974, con effetti sulla formazione del personale.",
+              "Legge 833/1978, con effetti sulla formazione del personale; nel contesto assistenziale dell'epoca.",
+              "D.Lgs. 502/1992, successivamente modificato dal D.Lgs. 517/1993"
+            ],
+            "correct": 3,
+            "explanation": "Il D.Lgs. 502/1992, modificato dal D.Lgs. 517/1993, introdusse l'aziendalizzazione e contribuì allo sviluppo universitario delle professioni sanitarie."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale provvedimento, nell'ambito della riforma sanitaria degli anni Novanta, ebbe un ruolo fondamentale nel trasferimento e consolidamento della formazione delle professioni sanitarie in ambito universitario?",
+            "options": [
+              "DPR 225/1974, nell'evoluzione dei ruoli e delle responsabilità.",
+              "D.Lgs. 502/1992, successivamente modificato dal D.Lgs. 517/1993",
+              "R.D. 615/1909, nell'evoluzione dei ruoli e delle responsabilità.",
+              "Legge 124/1971, nel rapporto tra cura, organizzazione e formazione."
+            ],
+            "correct": 1,
+            "explanation": "Il D.Lgs. 502/1992, poi modificato dal D.Lgs. 517/1993, ebbe un ruolo centrale nella riforma sanitaria e nel trasferimento/consolidamento della formazione delle professioni sanitarie in ambito universitario."
+          }
+        ]
+      }
+    ]
+  }
+}
