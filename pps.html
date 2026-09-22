@@ -28,8 +28,8 @@
 <section id="result" class="result-card hidden"><h2>QUIZ COMPLETATO</h2><p id="resultText"></p><div id="breakdown" class="breakdown"></div><div class="action-line" style="justify-content:center"><button class="button primary" onclick="startQuiz()">Nuovo quiz</button><button class="button terracotta" id="retryBtn" onclick="retryErrors()">Ripassa errori</button><button class="button peach" onclick="location.href='index.html'">Torna alla Home</button></div></section>
 </main>
 <script>
-const DATA_FILES=["data/pps-v1.json?v=20260922-pps1"];
-const EXPLANATION_FILES=["data/pps-explanations-v1.json?v=20260922-pps1"];
+const DATA_FILES=["data/pps-001.json?v=20260922-pps1","data/pps-002.json?v=20260922-pps1"];
+const EXPLANATION_FILES=["data/pps-explanations-001.json?v=20260922-pps1","data/pps-explanations-002.json?v=20260922-pps1"];
 const STORAGE_KEY="studyhub_pps_v1",EXPECTED_QUESTIONS=80,EXPECTED_ADVANCED=80;
 const ADVANCED_EXPLANATIONS={};
 let QUESTIONS=[],randomOrder=true,session=[],index=0,wrongIds=[],currentStats={answered:0,correct:0},persisted=loadPersisted();
