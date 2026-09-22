@@ -1,0 +1,854 @@
+{
+  "disciplineId": "igiene-medicina-preventiva",
+  "chapters": {
+    "ss-sterilizzazione": [
+      {
+        "id": "ss-igiene-medicina-preventiva-sterilizzazione",
+        "title": "Disinfezione, sterilizzazione e autoclave",
+        "subtitle": "Livelli di decontaminazione, spore e principali metodi",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          177,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184,
+          185,
+          186
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare disinfezione, sterilizzazione e autoclave usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "La sterilizzazione elimina tutte le forme vitali microbiche, comprese le spore; la disinfezione riduce o elimina molti microrganismi ma non garantisce necessariamente l'eliminazione delle spore. La sterilizzazione è il processo che rende un materiale privo di microrganismi vitali, comprese le spore batteriche. La glutaraldeide appartiene alla classe chimica delle aldeidi ed è stata utilizzata come disinfettante di alto livello in applicazioni specifiche."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "L'ipoclorito di sodio è l'ipoclorito più comunemente usato come disinfettante in ambito sanitario e domestico.",
+              "Gli ipocloriti sono disinfettanti economici e ad ampio spettro, ma possono essere corrosivi e vengono inattivati in parte dalla materia organica.",
+              "Le spore batteriche sono molto più resistenti delle forme vegetative a calore, essiccamento e numerosi agenti chimici.",
+              "I sistemi di sterilizzazione a gas-plasma utilizzano comunemente perossido di idrogeno a bassa temperatura."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Qual è la principale differenza tra disinfezione e sterilizzazione?",
+            "answer": "La sterilizzazione elimina tutte le forme di vita microbica, comprese le spore, mentre la disinfezione non garantisce necessariamente l'eliminazione delle spore batteriche"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Come viene definito il processo capace di eliminare tutte le forme di vita microbica, comprese le spore?",
+            "options": [
+              "Sterilizzazione",
+              "Antisepsi",
+              "Detersione",
+              "Disinfezione di basso livello"
+            ],
+            "correct": 0,
+            "explanation": "La sterilizzazione è il processo che rende un materiale privo di microrganismi vitali, comprese le spore batteriche."
+          },
+          {
+            "type": "checkpoint",
+            "question": "A quale classe chimica appartiene la glutaraldeide, utilizzata come agente germicida ad alto livello in specifiche applicazioni?",
+            "options": [
+              "Alogeni",
+              "Ossidanti",
+              "Aldeidi",
+              "Ipocloriti"
+            ],
+            "correct": 2,
+            "explanation": "La glutaraldeide appartiene alla classe chimica delle aldeidi ed è stata utilizzata come disinfettante di alto livello in applicazioni specifiche."
+          }
+        ]
+      }
+    ],
+    "ss-fumo-cardiovascolare": [
+      {
+        "id": "ss-igiene-medicina-preventiva-fumo-cardiovascolare",
+        "title": "Fumo e prevenzione cardiovascolare",
+        "subtitle": "Esposizione tabagica, fattori di rischio e prevenzione",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          188,
+          189,
+          190,
+          191,
+          192,
+          193,
+          195,
+          196,
+          197
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare fumo e prevenzione cardiovascolare usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Tra i decessi attribuibili al fumo, le neoplasie — in particolare il carcinoma polmonare e altri tumori fumo-correlati — rappresentano una quota molto rilevante. L'uso esclusivo di sigarette tradizionali mostra un andamento in diminuzione, mentre la diffusione di sigarette elettroniche e prodotti a tabacco riscaldato mantiene rilevante l'uso complessivo di prodotti con nicotina. L'esposizione cumulativa al fumo è descritta meglio combinando intensità e durata, spesso mediante i pack-years."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Smettere di fumare riduce progressivamente il rischio cardiovascolare, respiratorio e oncologico rispetto a continuare a fumare.",
+              "Il diabete mellito è un importante fattore di rischio cardiovascolare modificabile attraverso prevenzione, controllo metabolico e trattamento.",
+              "L'età è un fattore di rischio cardiovascolare non modificabile, mentre fumo, sedentarietà e obesità sono modificabili.",
+              "Il rischio cardiovascolare cambia in modo continuo con la pressione arteriosa e con gli altri fattori di rischio; una soglia diagnostica non crea un punto biologico al di sotto del quale il rischio scompare."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Nelle stime italiane della mortalità attribuibile al fumo, quale gruppo comprende una quota particolarmente elevata di decessi?",
+            "answer": "Patologie neoplastiche, in particolare tumore del polmone e altri tumori fumo-correlati"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Qual è il trend recente dell'uso esclusivo di sigarette tradizionali in Italia?",
+            "options": [
+              "È in forte aumento, nelle normali procedure di controllo delle infezioni; secondo le precauzioni previste in assistenza; in relazione al livello di rischio del dispositivo.",
+              "È in diminuzione, anche se l'uso complessivo di prodotti contenenti nicotina è sostenuto dalla diffusione di dispositivi elettronici e tabacco riscaldato",
+              "È raddoppiato nell'ultimo decennio, come misura di prevenzione del rischio infettivo; in base al tipo di contatto con il paziente; nel rispetto delle procedure di igiene sanitaria.",
+              "Non esistono dati nazionali, senza considerare le altre componenti del fenomeno; in base al tipo di contatto con il paziente; nel rispetto delle procedure di igiene sanitaria."
+            ],
+            "correct": 1,
+            "explanation": "L'uso esclusivo di sigarette tradizionali mostra un andamento in diminuzione, mentre la diffusione di sigarette elettroniche e prodotti a tabacco riscaldato mantiene rilevante l'uso complessivo di prodotti con nicotina."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale parametro rappresenta meglio l'esposizione cumulativa al fumo e quindi il rischio di carcinoma polmonare in un fumatore?",
+            "options": [
+              "Durata complessiva dell'abitudine al fumo e quantità fumata, spesso sintetizzate nei pack-years",
+              "Quantità di catrame dichiarata su una singola confezione, nelle normali procedure di controllo delle infezioni.",
+              "Solo il numero di sigarette fumate nell'ultima settimana, tenendo conto della modalità di trasmissione.",
+              "Aver smesso una volta per pochi giorni, tenendo conto della modalità di trasmissione; in base al tipo di contatto con il paziente."
+            ],
+            "correct": 0,
+            "explanation": "L'esposizione cumulativa al fumo è descritta meglio combinando intensità e durata, spesso mediante i pack-years."
+          }
+        ]
+      }
+    ],
+    "ss-oncologia-stili-vita": [
+      {
+        "id": "ss-igiene-medicina-preventiva-oncologia-stili-vita",
+        "title": "Prevenzione oncologica e stili di vita",
+        "subtitle": "Fattori modificabili e riduzione del rischio",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          199,
+          200,
+          203,
+          204,
+          214,
+          188,
+          191,
+          193
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare prevenzione oncologica e stili di vita usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "La transizione epidemiologica nei Paesi industrializzati indica il passaggio da un predominio relativo di malattie infettive e acute a un maggiore peso di patologie cronico-degenerative. HAV non è riconosciuto come virus oncogeno umano; HBV, HCV e alcuni tipi di HPV sono invece associati causalmente a specifiche neoplasie. Dopo la diagnosi e il trattamento di una neoplasia, gli interventi diretti a limitare disabilità, complicanze e perdita di qualità di vita appartengono alla prevenzione terziaria."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Promuovere alimentazione corretta e stili di vita salutari per ridurre il rischio di tumore è prevenzione primaria, perché interviene prima dell'insorgenza della malattia.",
+              "Il carcinoma cervicale, il carcinoma anale e una quota dei carcinomi orofaringei sono classicamente HPV-correlati; l'adenocarcinoma del colon non lo è.",
+              "Tra i decessi attribuibili al fumo, le neoplasie — in particolare il carcinoma polmonare e altri tumori fumo-correlati — rappresentano una quota molto rilevante.",
+              "Smettere di fumare riduce progressivamente il rischio cardiovascolare, respiratorio e oncologico rispetto a continuare a fumare."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "La cosiddetta transizione o “rivoluzione epidemiologica” del XX secolo nei Paesi industrializzati è caratterizzata soprattutto da:",
+            "answer": "Riduzione relativa delle malattie infettive e crescente peso delle patologie cronico-degenerative, comprese cardiovascolari e neoplasie"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale dei seguenti virus NON è considerato un agente oncogeno umano riconosciuto?",
+            "options": [
+              "HBV",
+              "HCV",
+              "HAV",
+              "HPV"
+            ],
+            "correct": 2,
+            "explanation": "HAV non è riconosciuto come virus oncogeno umano; HBV, HCV e alcuni tipi di HPV sono invece associati causalmente a specifiche neoplasie."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Nell'ambito oncologico, un programma di attività fisica rivolto a persone già trattate per un tumore e finalizzato a ridurre disabilità, complicanze e migliorare la qualità di vita rientra principalmente nella:",
+            "options": [
+              "Prevenzione primordiale",
+              "Prevenzione primaria",
+              "Prevenzione secondaria",
+              "Prevenzione terziaria"
+            ],
+            "correct": 3,
+            "explanation": "Dopo la diagnosi e il trattamento di una neoplasia, gli interventi diretti a limitare disabilità, complicanze e perdita di qualità di vita appartengono alla prevenzione terziaria."
+          }
+        ]
+      }
+    ],
+    "ss-arbovirosi": [
+      {
+        "id": "ss-igiene-medicina-preventiva-arbovirosi",
+        "title": "Dengue, febbre gialla e arbovirosi",
+        "subtitle": "Vettori, incubazione e prevenzione",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          206,
+          207,
+          208,
+          209
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare dengue, febbre gialla e arbovirosi usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "La prevenzione della dengue combina controllo del vettore e protezione dalle punture con l'impiego di vaccini in popolazioni e contesti epidemiologici selezionati. Dopo la puntura di una zanzara infetta, l'incubazione della dengue nell'uomo è generalmente di circa 4-10 giorni, spesso intorno a 5-7 giorni. I vaccini inattivati non interferiscono con la risposta al vaccino vivo contro la febbre gialla e possono essere somministrati contemporaneamente o senza specifici intervalli temporali."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Gravidanza e allattamento sono generalmente precauzioni per il vaccino vivo anti-febbre gialla: la decisione dipende dal rischio reale di esposizione e dalla possibilità di rinviare o evitare il viaggio."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Quale affermazione sulla prevenzione della dengue è corretta?",
+            "answer": "Oltre al controllo delle zanzare, esistono vaccini vivi attenuati contro la dengue utilizzabili in specifiche popolazioni e contesti epidemiologici"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Qual è il periodo d'incubazione tipico della dengue nell'uomo?",
+            "options": [
+              "20–30 giorni, nelle normali procedure di controllo delle infezioni.",
+              "30–60 giorni, tenendo conto della modalità di trasmissione.",
+              "1–2 ore, nel rispetto delle procedure di igiene sanitaria.",
+              "Generalmente circa 4–10 giorni, spesso intorno a 5–7 giorni"
+            ],
+            "correct": 3,
+            "explanation": "Dopo la puntura di una zanzara infetta, l'incubazione della dengue nell'uomo è generalmente di circa 4-10 giorni, spesso intorno a 5-7 giorni."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Come si comportano i vaccini inattivati rispetto alla vaccinazione contro la febbre gialla?",
+            "options": [
+              "Sono sempre controindicati, attribuendo agli altri elementi un ruolo secondario; secondo le precauzioni previste in assistenza.",
+              "Devono essere distanziati di almeno sei mesi, nel rispetto delle procedure di igiene sanitaria; per ridurre il rischio di trasmissione al paziente.",
+              "Possono essere somministrati contemporaneamente o in qualsiasi momento prima o dopo il vaccino anti-febbre gialla",
+              "Annullano l'effetto del vaccino anti-febbre gialla, come misura di prevenzione del rischio infettivo."
+            ],
+            "correct": 2,
+            "explanation": "I vaccini inattivati non interferiscono con la risposta al vaccino vivo contro la febbre gialla e possono essere somministrati contemporaneamente o senza specifici intervalli temporali."
+          }
+        ]
+      }
+    ],
+    "ss-vaccini-immunita": [
+      {
+        "id": "ss-igiene-medicina-preventiva-vaccini-immunita",
+        "title": "Vaccini, risposta immunitaria e adiuvanti",
+        "subtitle": "Principi immunologici della vaccinazione e adiuvanti",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          215,
+          216,
+          217,
+          218,
+          219,
+          220,
+          274,
+          282,
+          286
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare vaccini, risposta immunitaria e adiuvanti usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Nell'epatite A acuta compaiono anticorpi anti-HAV IgM, che poi diminuiscono; le IgG anti-HAV compaiono e persistono a lungo, indicando immunità pregressa. MF59 è un adiuvante vaccinale in emulsione olio-in-acqua impiegato in alcuni vaccini per aumentare e modulare la risposta immunitaria all'antigene. Le IgG sono tipiche della risposta umorale maturata e della memoria immunologica e diventano particolarmente importanti nella risposta secondaria."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Una dose booster riattiva i linfociti memoria e genera una risposta secondaria più rapida, intensa e spesso caratterizzata da anticorpi ad alta affinità.",
+              "MPR è l'acronimo italiano del vaccino combinato contro morbillo, parotite e rosolia.",
+              "DTPa indica il vaccino combinato contro difterite, tetano e pertosse acellulare.",
+              "I polisaccaridi capsulari non coniugati inducono prevalentemente una risposta immunitaria T-indipendente, poco efficace nei bambini molto piccoli e caratterizzata da scarsa memoria immunologica."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Quale sequenza descrive meglio l'andamento sierologico dell'infezione acuta da HAV?",
+            "answer": "L'anti-HAV IgM compare nella fase acuta e successivamente diminuisce; l'anti-HAV IgG compare e persiste a lungo, generalmente per tutta la vita"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Che cos'è MF59?",
+            "options": [
+              "Un antivirale, nelle normali procedure di controllo delle infezioni; in relazione al livello di rischio del dispositivo.",
+              "Un anticorpo monoclonale, secondo le precauzioni previste in assistenza; per ridurre il rischio di trasmissione al paziente.",
+              "Un adiuvante a base di emulsione utilizzato in alcuni vaccini per potenziare la risposta immunitaria",
+              "Un codice che identifica il lotto vaccinale, in relazione al livello di rischio del dispositivo."
+            ],
+            "correct": 2,
+            "explanation": "MF59 è un adiuvante vaccinale in emulsione olio-in-acqua impiegato in alcuni vaccini per aumentare e modulare la risposta immunitaria all'antigene."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale affermazione descrive meglio il ruolo delle IgG nella risposta immunitaria adattativa?",
+            "options": [
+              "Compaiono esclusivamente nei primi minuti dell'infezione, escludendo così altri fattori rilevanti.",
+              "Sono caratteristiche della risposta umorale più tardiva e della memoria immunologica e possono persistere a lungo",
+              "Non partecipano alla risposta secondaria, senza considerare le altre componenti del fenomeno; nel rispetto delle procedure di igiene sanitaria.",
+              "Sono prodotte esclusivamente nelle infezioni batteriche, escludendo così altri fattori rilevanti; nel rispetto delle procedure di igiene sanitaria."
+            ],
+            "correct": 1,
+            "explanation": "Le IgG sono tipiche della risposta umorale maturata e della memoria immunologica e diventano particolarmente importanti nella risposta secondaria."
+          }
+        ]
+      }
+    ],
+    "ss-dpi-isolamento": [
+      {
+        "id": "ss-igiene-medicina-preventiva-dpi-isolamento",
+        "title": "Precauzioni standard, DPI e isolamento",
+        "subtitle": "Contatto, droplet, airborne, vestizione e protezione dell’operatore",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          275,
+          276,
+          277,
+          278,
+          279,
+          281,
+          300,
+          310,
+          314
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare precauzioni standard, dpi e isolamento usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Guanti, camice protettivo, protezione oculare e respiratore sono tutti dispositivi di protezione individuale utilizzabili per ridurre l'esposizione professionale a rischi biologici. Nella normale sequenza di vestizione con più DPI i guanti vengono generalmente indossati per ultimi, dopo camice e protezioni di volto e vie respiratorie. Le precauzioni airborne richiedono una protezione respiratoria filtrante adeguata, come FFP2/N95 o superiore secondo rischio, procedura e normativa applicabile."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Per un paziente con infezione trasmissibile per via airborne è preferibile una stanza singola per isolamento aereo, idealmente a pressione negativa e con adeguato ricambio d'aria.",
+              "Tubercolosi polmonare contagiosa, morbillo e varicella sono esempi classici di infezioni per le quali si applicano precauzioni per trasmissione airborne.",
+              "La chemioprofilassi dei contatti stretti di un caso di malattia meningococcica invasiva deve essere avviata il prima possibile, idealmente entro 24 ore dall'identificazione del caso indice.",
+              "La tubercolosi polmonare contagiosa è un’infezione trasmessa per via aerea; HBV e HIV sono invece soprattutto trasmessi mediante sangue, rapporti sessuali e/o via verticale, mentre HAV è fecale-orale."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Quale insieme comprende esclusivamente dispositivi di protezione individuale utilizzabili in ambito sanitario?",
+            "answer": "Guanti, camice protettivo, protezione oculare e dispositivo di protezione respiratoria"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Nella normale sequenza di vestizione con più DPI, i guanti vengono generalmente:",
+            "options": [
+              "Indossati per ultimi",
+              "Indossati per primi",
+              "Indossati prima del camice",
+              "Indossati dopo essere entrati nella stanza senza igiene delle mani"
+            ],
+            "correct": 0,
+            "explanation": "Nella normale sequenza di vestizione con più DPI i guanti vengono generalmente indossati per ultimi, dopo camice e protezioni di volto e vie respiratorie."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Per l'assistenza a un paziente sottoposto a precauzioni airborne, quale protezione respiratoria è appropriata per l'operatore?",
+            "options": [
+              "Nessuna protezione respiratoria, escludendo così altri fattori rilevanti; tenendo conto della modalità di trasmissione.",
+              "Una semplice mascherina di stoffa, in base al tipo di contatto con il paziente; tenendo conto della modalità di trasmissione.",
+              "Soltanto una visiera, nelle normali procedure di controllo delle infezioni; come misura di prevenzione del rischio infettivo.",
+              "Un respiratore appropriato, ad esempio FFP2/N95 o superiore secondo rischio, procedura e normativa applicabile"
+            ],
+            "correct": 3,
+            "explanation": "Le precauzioni airborne richiedono una protezione respiratoria filtrante adeguata, come FFP2/N95 o superiore secondo rischio, procedura e normativa applicabile."
+          }
+        ]
+      }
+    ],
+    "ss-calendari-vaccinali": [
+      {
+        "id": "ss-igiene-medicina-preventiva-calendari-vaccinali",
+        "title": "Vaccinazioni obbligatorie e calendari",
+        "subtitle": "Obblighi e schemi vaccinali di riferimento",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          290,
+          286,
+          177,
+          178
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare vaccinazioni obbligatorie e calendari usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "La vaccinazione pneumococcica coniugata è prevista nel calendario dell’infanzia italiano come vaccinazione raccomandata e gratuita, con dosi già nel primo anno di vita. La normativa italiana prevede dieci vaccinazioni obbligatorie per i minori da 0 a 16 anni, con applicazione concreta modulata anche in base alla coorte di nascita. La sterilizzazione elimina tutte le forme vitali microbiche, comprese le spore; la disinfezione riduce o elimina molti microrganismi ma non garantisce necessariamente l'eliminazione delle spore."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "L'anidride solforosa è fortemente limitata negli ambienti occupati dalla sua tossicità e dall'azione irritante sulle vie respiratorie e sulle mucose."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "In Italia, la vaccinazione antipneumococcica nel primo anno di vita è:",
+            "answer": "Raccomandata e offerta gratuitamente, con ciclo previsto dal calendario vaccinale"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Secondo la normativa italiana vigente, quante vaccinazioni sono obbligatorie nei minori da 0 a 16 anni, secondo le specifiche indicazioni per coorte di nascita?",
+            "options": [
+              "4",
+              "6",
+              "10",
+              "12"
+            ],
+            "correct": 2,
+            "explanation": "La normativa italiana prevede dieci vaccinazioni obbligatorie per i minori da 0 a 16 anni, con applicazione concreta modulata anche in base alla coorte di nascita."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Qual è la principale differenza tra disinfezione e sterilizzazione?",
+            "options": [
+              "La disinfezione riguarda esclusivamente i tessuti viventi, senza considerare le altre componenti del fenomeno; per ridurre il rischio di trasmissione al paziente.",
+              "La sterilizzazione elimina tutte le forme di vita microbica, comprese le spore, mentre la disinfezione non garantisce necessariamente l'eliminazione delle spore batteriche",
+              "La disinfezione e la sterilizzazione sono sinonimi, come misura di prevenzione del rischio infettivo; tenendo conto della modalità di trasmissione; secondo le precauzioni previste in assistenza.",
+              "La sterilizzazione elimina soltanto i microrganismi patogeni, per ridurre il rischio di trasmissione al paziente; in base al tipo di contatto con il paziente."
+            ],
+            "correct": 1,
+            "explanation": "La sterilizzazione elimina tutte le forme vitali microbiche, comprese le spore; la disinfezione riduce o elimina molti microrganismi ma non garantisce necessariamente l'eliminazione delle spore."
+          }
+        ]
+      }
+    ],
+    "ss-epatiti": [
+      {
+        "id": "ss-igiene-medicina-preventiva-epatiti",
+        "title": "Epatiti virali e rischio ematico",
+        "subtitle": "HBV, HCV, trasmissione parenterale e prevenzione",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          201,
+          287,
+          288,
+          289,
+          295,
+          302,
+          303,
+          305,
+          306
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare epatiti virali e rischio ematico usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "L'epatite A si trasmette principalmente per via fecale-orale, direttamente tra persone o attraverso acqua e alimenti contaminati. Uno schema classico del vaccino anti-HBV nell’adulto non precedentemente vaccinato prevede tre dosi ai tempi 0, 1 e 6 mesi. Gli operatori sanitari suscettibili hanno un rischio professionale significativo di esposizione a HBV; la vaccinazione è quindi fortemente raccomandata e offerta gratuitamente."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "La profilassi del neonato di madre HBsAg positiva deve iniziare rapidamente dopo il parto con vaccino anti-HBV e HBIG, somministrati in sedi anatomiche diverse.",
+              "Sono disponibili vaccini efficaci e di uso corrente contro epatite A ed epatite B; per l’epatite C non esiste attualmente un vaccino approvato.",
+              "L’epatite B ha un’incubazione relativamente lunga, generalmente nell’ordine di circa 60–150 giorni, con media intorno a tre mesi.",
+              "L’epatite A ha un periodo di incubazione di circa 15–50 giorni, mediamente vicino a 28 giorni."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Qual è la principale modalità di trasmissione dell'epatite A?",
+            "answer": "Via fecale-orale"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Qual è lo schema classico a tre dosi del vaccino anti-epatite B utilizzato, ad esempio, in molti adulti non precedentemente vaccinati?",
+            "options": [
+              "0, 2 e 4 mesi",
+              "0, 1 e 6 mesi",
+              "0, 6 e 12 mesi",
+              "Una sola dose"
+            ],
+            "correct": 1,
+            "explanation": "Uno schema classico del vaccino anti-HBV nell’adulto non precedentemente vaccinato prevede tre dosi ai tempi 0, 1 e 6 mesi."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale affermazione sulla vaccinazione anti-HBV negli operatori sanitari italiani è corretta?",
+            "options": [
+              "È fortemente raccomandata e offerta gratuitamente agli operatori sanitari suscettibili per il loro rischio professionale",
+              "È vietata agli operatori sanitari, tenendo conto della modalità di trasmissione; in base al tipo di contatto con il paziente.",
+              "È riservata soltanto ai neonati, nel rispetto delle procedure di igiene sanitaria; per ridurre il rischio di trasmissione al paziente.",
+              "Tutti gli operatori sanitari devono per legge ricevere necessariamente una dose ogni anno, per ridurre il rischio di trasmissione al paziente."
+            ],
+            "correct": 0,
+            "explanation": "Gli operatori sanitari suscettibili hanno un rischio professionale significativo di esposizione a HBV; la vaccinazione è quindi fortemente raccomandata e offerta gratuitamente."
+          }
+        ]
+      }
+    ],
+    "ss-influenza": [
+      {
+        "id": "ss-igiene-medicina-preventiva-influenza",
+        "title": "Influenza e infezioni respiratorie",
+        "subtitle": "Virus influenzali, incubazione e trasmissione respiratoria",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          283,
+          293,
+          297,
+          298,
+          299,
+          301,
+          313
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare influenza e infezioni respiratorie usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Un’infezione correlata all’assistenza è acquisita nel corso dell’assistenza e non era presente né in incubazione all’ingresso; la soglia di 48 ore è un criterio operativo frequente, non una definizione assoluta. Il vaccino antinfluenzale inattivato è raccomandato in gravidanza durante la stagione influenzale e può essere somministrato in qualsiasi trimestre. I virus influenzali A e B possiedono un genoma a RNA a singolo filamento, a polarità negativa e suddiviso in segmenti."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "L’influenza si trasmette soprattutto attraverso particelle respiratorie emesse da persone infette, comprese goccioline e aerosol, in particolare nei contatti ravvicinati.",
+              "L’influenza non complicata presenta tipicamente un esordio acuto con sintomi sistemici — febbre, cefalea, mialgie e malessere — associati a sintomi respiratori.",
+              "Il periodo di incubazione è l’intervallo che intercorre tra l’acquisizione dell’agente infettivo e la comparsa dei primi segni o sintomi della malattia.",
+              "La tubercolosi polmonare contagiosa si trasmette per via aerea tramite particelle respiratorie contenenti Mycobacterium tuberculosis, soprattutto in ambienti chiusi e con esposizione prolungata."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Quando un'infezione manifestatasi durante un ricovero viene comunemente considerata compatibile con un'infezione correlata all'assistenza?",
+            "answer": "Quando non era presente né in incubazione all'ammissione e compare in relazione all'assistenza; il limite di ≥48 ore dal ricovero è spesso utilizzato come criterio operativo"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale affermazione sulla vaccinazione antinfluenzale in gravidanza è corretta?",
+            "options": [
+              "È controindicata durante tutta la gravidanza, per ridurre il rischio di trasmissione al paziente; nelle normali procedure di controllo delle infezioni.",
+              "È raccomandata esclusivamente dopo il parto, considerando marginali gli altri aspetti coinvolti; nelle normali procedure di controllo delle infezioni.",
+              "Il vaccino antinfluenzale inattivato può essere somministrato in qualsiasi trimestre ed è raccomandato alle donne in gravidanza durante la stagione influenzale",
+              "Deve essere somministrato esclusivamente nel terzo trimestre, attribuendo agli altri elementi un ruolo secondario; in relazione al livello di rischio del dispositivo."
+            ],
+            "correct": 2,
+            "explanation": "Il vaccino antinfluenzale inattivato è raccomandato in gravidanza durante la stagione influenzale e può essere somministrato in qualsiasi trimestre."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Qual è il materiale genetico dei virus influenzali A e B?",
+            "options": [
+              "DNA bicatenario circolare",
+              "DNA monocatenario",
+              "RNA bicatenario",
+              "RNA a singolo filamento a polarità negativa, segmentato"
+            ],
+            "correct": 3,
+            "explanation": "I virus influenzali A e B possiedono un genoma a RNA a singolo filamento, a polarità negativa e suddiviso in segmenti."
+          }
+        ]
+      }
+    ],
+    "ss-tubercolosi": [
+      {
+        "id": "ss-igiene-medicina-preventiva-tubercolosi",
+        "title": "Tubercolosi: trasmissione, diagnosi e prevenzione",
+        "subtitle": "Contagio, test e profilassi",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          315,
+          320,
+          279,
+          300,
+          313,
+          314
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare tubercolosi: trasmissione, diagnosi e prevenzione usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "L’Italia è classificata tra i Paesi a bassa incidenza di tubercolosi, mentre a livello globale la TB continua a interessare ogni anno milioni di persone. L’isoniazide può causare epatotossicità: è controindicata nella malattia epatica acuta e richiede valutazione e monitoraggio più attenti nei soggetti con patologia epatica o fattori di rischio. Tubercolosi polmonare contagiosa, morbillo e varicella sono esempi classici di infezioni per le quali si applicano precauzioni per trasmissione airborne."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "La tubercolosi polmonare contagiosa è un’infezione trasmessa per via aerea; HBV e HIV sono invece soprattutto trasmessi mediante sangue, rapporti sessuali e/o via verticale, mentre HAV è fecale-orale.",
+              "La tubercolosi polmonare contagiosa si trasmette per via aerea tramite particelle respiratorie contenenti Mycobacterium tuberculosis, soprattutto in ambienti chiusi e con esposizione prolungata.",
+              "Morbillo, tubercolosi polmonare contagiosa e varicella sono esempi classici di infezioni per cui in ambito sanitario sono richieste precauzioni airborne."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Quale affermazione descrive più correttamente la situazione epidemiologica della tubercolosi?",
+            "answer": "L'Italia è un Paese a bassa incidenza, mentre a livello mondiale la tubercolosi continua a causare milioni di nuovi casi ogni anno"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale affermazione sull'isoniazide è corretta in relazione alla funzione epatica?",
+            "options": [
+              "È priva di potenziale epatotossico, nel rispetto delle procedure di igiene sanitaria; nelle normali procedure di controllo delle infezioni.",
+              "È controindicata in presenza di malattia epatica acuta e richiede particolare cautela e monitoraggio nei soggetti con epatopatia",
+              "È il farmaco preferito per trattare qualunque insufficienza epatica, per ridurre il rischio di trasmissione al paziente; in base al tipo di contatto con il paziente.",
+              "Non richiede mai il controllo della funzione epatica, considerando marginali gli altri aspetti coinvolti; nelle normali procedure di controllo delle infezioni."
+            ],
+            "correct": 1,
+            "explanation": "L’isoniazide può causare epatotossicità: è controindicata nella malattia epatica acuta e richiede valutazione e monitoraggio più attenti nei soggetti con patologia epatica o fattori di rischio."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale gruppo comprende patologie classicamente trasmesse per via airborne?",
+            "options": [
+              "Pertosse, influenza e meningite meningococcica",
+              "Tubercolosi polmonare contagiosa, morbillo e varicella",
+              "Epatite B, HIV e HCV",
+              "Salmonellosi, HAV e colera"
+            ],
+            "correct": 1,
+            "explanation": "Tubercolosi polmonare contagiosa, morbillo e varicella sono esempi classici di infezioni per le quali si applicano precauzioni per trasmissione airborne."
+          }
+        ]
+      }
+    ],
+    "ss-catena-trasmissione": [
+      {
+        "id": "ss-igiene-medicina-preventiva-catena-trasmissione",
+        "title": "Catena epidemiologica e trasmissione delle infezioni",
+        "subtitle": "Serbatoi, veicoli, vettori, vie e periodi di contagiosità",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          304,
+          307,
+          308,
+          312,
+          201,
+          206,
+          207,
+          279,
+          283
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare catena epidemiologica e trasmissione delle infezioni usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "Il periodo di contagiosità è la finestra temporale durante la quale una persona infetta può trasmettere l’agente ad altri soggetti suscettibili. L’HCV si trasmette prevalentemente attraverso sangue infetto e, nonostante l’efficacia delle attuali terapie antivirali, non esiste ancora un vaccino approvato. La trasmissione parenterale avviene quando un agente entra attraverso inoculazione o esposizione a sangue o materiali biologici, per esempio con aghi, strumenti contaminati o trasfusioni non sicure."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "La trasmissione fecale-orale può avvenire direttamente tra persone oppure indirettamente tramite acqua, alimenti, mani e superfici contaminati da materiale fecale.",
+              "L'epatite A si trasmette principalmente per via fecale-orale, direttamente tra persone o attraverso acqua e alimenti contaminati.",
+              "La prevenzione della dengue combina controllo del vettore e protezione dalle punture con l'impiego di vaccini in popolazioni e contesti epidemiologici selezionati.",
+              "Dopo la puntura di una zanzara infetta, l'incubazione della dengue nell'uomo è generalmente di circa 4-10 giorni, spesso intorno a 5-7 giorni."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Che cosa si intende per periodo di contagiosità?",
+            "answer": "L'intervallo nel quale una persona infetta è in grado di trasmettere l'agente infettivo ad altri"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale affermazione sull'epatite C è corretta?",
+            "options": [
+              "La principale via di trasmissione è fecale-orale, nel rispetto delle procedure di igiene sanitaria; in relazione al livello di rischio del dispositivo.",
+              "La trasmissione avviene soprattutto attraverso sangue infetto e attualmente non esiste un vaccino approvato per prevenirla",
+              "Si trasmette esclusivamente per via aerea, senza considerare le altre componenti del fenomeno; nelle normali procedure di controllo delle infezioni.",
+              "La vaccinazione anti-HCV è obbligatoria in Italia, nelle normali procedure di controllo delle infezioni; come misura di prevenzione del rischio infettivo."
+            ],
+            "correct": 1,
+            "explanation": "L’HCV si trasmette prevalentemente attraverso sangue infetto e, nonostante l’efficacia delle attuali terapie antivirali, non esiste ancora un vaccino approvato."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale affermazione descrive correttamente la trasmissione parenterale?",
+            "options": [
+              "È la trasmissione attraverso inoculazione o esposizione a sangue o altri materiali biologici, ad esempio mediante aghi, strumenti contaminati o trasfusioni non sicure",
+              "È sinonimo di trasmissione sessuale, per ridurre il rischio di trasmissione al paziente; in relazione al livello di rischio del dispositivo; come misura di prevenzione del rischio infettivo.",
+              "È una trasmissione esclusivamente respiratoria, escludendo così altri fattori rilevanti; nel rispetto delle procedure di igiene sanitaria; come misura di prevenzione del rischio infettivo.",
+              "È necessariamente mediata da un insetto, in relazione al livello di rischio del dispositivo; secondo le precauzioni previste in assistenza; per ridurre il rischio di trasmissione al paziente."
+            ],
+            "correct": 0,
+            "explanation": "La trasmissione parenterale avviene quando un agente entra attraverso inoculazione o esposizione a sangue o materiali biologici, per esempio con aghi, strumenti contaminati o trasfusioni non sicure."
+          }
+        ]
+      }
+    ],
+    "ss-ica": [
+      {
+        "id": "ss-igiene-medicina-preventiva-ica",
+        "title": "Prevenzione delle infezioni in ambito sanitario",
+        "subtitle": "Igiene delle mani, esposizioni professionali e infezioni correlate all’assistenza",
+        "duration": "10–15 min",
+        "source": "Banca Scienze della Salute · 459 quesiti",
+        "sourceUrl": "scienze-salute-app.html",
+        "sourceActionLabel": "Apri banca quiz",
+        "sourceQuestionIds": [
+          181,
+          275,
+          277,
+          283,
+          306,
+          314
+        ],
+        "blocks": [
+          {
+            "type": "intro",
+            "title": "Obiettivo della lezione",
+            "text": "Consolidare prevenzione delle infezioni in ambito sanitario usando esclusivamente concetti presenti nella banca d’esame di Scienze della Salute e nelle relative spiegazioni verificate."
+          },
+          {
+            "type": "text",
+            "title": "Quadro essenziale",
+            "text": "L'ipoclorito di sodio è l'ipoclorito più comunemente usato come disinfettante in ambito sanitario e domestico. Guanti, camice protettivo, protezione oculare e respiratore sono tutti dispositivi di protezione individuale utilizzabili per ridurre l'esposizione professionale a rischi biologici. Le precauzioni airborne richiedono una protezione respiratoria filtrante adeguata, come FFP2/N95 o superiore secondo rischio, procedura e normativa applicabile."
+          },
+          {
+            "type": "key",
+            "title": "Concetti chiave",
+            "items": [
+              "Un’infezione correlata all’assistenza è acquisita nel corso dell’assistenza e non era presente né in incubazione all’ingresso; la soglia di 48 ore è un criterio operativo frequente, non una definizione assoluta.",
+              "HBV, HCV e HIV sono i principali virus ematici considerati nel rischio occupazionale sanitario per esposizione a sangue e materiali biologici.",
+              "Morbillo, tubercolosi polmonare contagiosa e varicella sono esempi classici di infezioni per cui in ambito sanitario sono richieste precauzioni airborne."
+            ]
+          },
+          {
+            "type": "recall",
+            "question": "Qual è l'ipoclorito più comunemente utilizzato come disinfettante?",
+            "answer": "Ipoclorito di sodio"
+          },
+          {
+            "type": "checkpoint",
+            "question": "Quale insieme comprende esclusivamente dispositivi di protezione individuale utilizzabili in ambito sanitario?",
+            "options": [
+              "Termometro, fonendoscopio, guanti e mascherina, tenendo conto della modalità di trasmissione.",
+              "Guanti, camice protettivo, protezione oculare e dispositivo di protezione respiratoria",
+              "Guanti, sfigmomanometro, visiera e saturimetro, tenendo conto della modalità di trasmissione.",
+              "Camice, stetoscopio, respiratore e termometro, in base al tipo di contatto con il paziente."
+            ],
+            "correct": 1,
+            "explanation": "Guanti, camice protettivo, protezione oculare e respiratore sono tutti dispositivi di protezione individuale utilizzabili per ridurre l'esposizione professionale a rischi biologici."
+          },
+          {
+            "type": "checkpoint",
+            "question": "Per l'assistenza a un paziente sottoposto a precauzioni airborne, quale protezione respiratoria è appropriata per l'operatore?",
+            "options": [
+              "Nessuna protezione respiratoria, escludendo così altri fattori rilevanti; tenendo conto della modalità di trasmissione.",
+              "Una semplice mascherina di stoffa, in base al tipo di contatto con il paziente; tenendo conto della modalità di trasmissione.",
+              "Soltanto una visiera, nelle normali procedure di controllo delle infezioni; come misura di prevenzione del rischio infettivo.",
+              "Un respiratore appropriato, ad esempio FFP2/N95 o superiore secondo rischio, procedura e normativa applicabile"
+            ],
+            "correct": 3,
+            "explanation": "Le precauzioni airborne richiedono una protezione respiratoria filtrante adeguata, come FFP2/N95 o superiore secondo rischio, procedura e normativa applicabile."
+          }
+        ]
+      }
+    ]
+  }
+}
