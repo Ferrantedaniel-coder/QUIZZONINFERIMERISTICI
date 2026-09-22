@@ -18,15 +18,16 @@ Schema StudyHub obbligatorio:
 
 ## Copertura complessiva
 
-Sono attivi cinque percorsi completi:
+Sono attivi sei percorsi completi:
 
 - **Anatomia Patologica**: 63/63;
 - **Infermieristica nel Materno**: 62/62;
 - **Paziente chirurgico**: 60/60;
 - **MedChiruFarmaco**: 24/24;
-- **Scienze della Salute**: 49/49.
+- **Scienze della Salute**: 49/49;
+- **Infermieristica per problemi prioritari di salute (PPS)**: 18/18.
 
-Totale StudyHub Lezioni: **258 capitoli mappati / 258 lezioni interattive attive**.
+Totale StudyHub Lezioni: **276 capitoli mappati / 276 lezioni interattive attive**.
 
 ---
 
@@ -178,6 +179,30 @@ File:
 
 ---
 
+# 6. PPS — COMPLETO V1 18/18
+
+Percorso costruito esclusivamente sui quattro materiali PPS caricati.
+
+- Infermieristica nella gestione dei problemi di salute cronici: **2/2**;
+- Respiratorio / Pneumologia: **2/2**;
+- Cardiovascolare e Cardiochirurgia: **2/2**;
+- Ematologia: **2/2**;
+- Oncologia: **2/2**;
+- Neurologia: **2/2**;
+- Gastroenterologia: **2/2**;
+- Endocrinologia: **2/2**;
+- Malattie infettive: **2/2**.
+
+File:
+- `data/lezioni-pps.json`;
+- `data/lezioni-pps-pack-1.json`–`003.json`;
+- `lezioni-pps-loader.js`;
+- `PPS_PROGRESS.md`.
+
+Le lezioni rimandano alla Biblioteca PPS finché i quattro PDF originali non sono pubblicati come binari nel repository. Il titolo “Infermieristica nella gestione dei problemi di salute cronici” resta testo ordinario, senza sottolineatura.
+
+---
+
 ## Funzioni da preservare
 
 - breadcrumb su tutti i livelli;
@@ -201,5 +226,5 @@ File:
 
 ## Prossimo sviluppo
 
-- non rifare Anatomia 63/63, Materno 62/62, Paziente chirurgico 60/60, MedChiruFarmaco 24/24 o Scienze della Salute 49/49;
+- non rifare Anatomia 63/63, Materno 62/62, Paziente chirurgico 60/60, MedChiruFarmaco 24/24, Scienze della Salute 49/49 o PPS 18/18;
 - una futura espansione di MedChiruFarmaco potrà usare le raccolte aggiuntive di domande, mantenendo QA e fonti tracciate.
