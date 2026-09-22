@@ -18,7 +18,7 @@ Se un quesito storico è ambiguo, errato o obsoleto, la correzione va **tracciat
 
 ## 2. Stato generale
 
-StudyHub è una web app statica HTML/CSS/JavaScript con **7 esami attivi e 1.746 domande**:
+StudyHub è una web app statica HTML/CSS/JavaScript con **7 esami attivi e 2.026 domande**:
 
 | Esame | Domande | Sezioni |
 |---|---:|---|
@@ -28,7 +28,7 @@ StudyHub è una web app statica HTML/CSS/JavaScript con **7 esami attivi e 1.746
 | Paziente chirurgico | 462 | Diagnostica 76; Educazione terapeutica 54; Psicologia 66; Terapia 266 |
 | Diagnostica | 80 | Diagnostica (esame autonomo da banca fornita il 20/09/2026) |
 | MedChiruFarmaco | 65 | Medicina Generale 25; Chirurgia Generale 25; Farmacologia 15 |
-| Infermieristica per problemi prioritari di salute (PPS) | 80 | Infermieristica nella gestione dei problemi di salute cronici 40; Respiratorio/Pneumologia 5; Cardiovascolare e Cardiochirurgia 5; Ematologia 5; Oncologia 5; Neurologia 5; Gastroenterologia 5; Endocrinologia 5; Malattie infettive 5 |
+| Infermieristica per problemi prioritari di salute (PPS) | 360 | 9 sezioni da 40 domande: Infermieristica nella gestione dei problemi di salute cronici; Respiratorio/Pneumologia; Cardiovascolare e Cardiochirurgia; Ematologia; Oncologia; Neurologia; Gastroenterologia; Endocrinologia; Malattie infettive |
 
 StudyHub è organizzato in tre aree principali:
 
@@ -187,7 +187,7 @@ Pacchetti:
 - Endocrinologia: **2/2**;
 - Malattie infettive: **2/2**.
 
-Quiz V1: **80/80 domande + 80/80 spiegazioni avanzate**. Le incongruenze presenti nelle correzioni storiche non vengono corrette silenziosamente: gli item dubbi sono esclusi o tracciati in `PPS_PROGRESS.md`.
+Quiz PPS: **360/360 domande + 360/360 spiegazioni avanzate**. Le incongruenze presenti nelle correzioni storiche non vengono corrette silenziosamente: gli item dubbi sono esclusi o tracciati in `PPS_PROGRESS.md`.
 
 Materiali: quattro PDF catalogati; i binari non sono ancora pubblicati nel repository, quindi Lezioni rimanda alla scheda Materiali PPS senza creare link 404.
 
@@ -239,7 +239,7 @@ Stato:
 - Scienze della Salute: **459/459**;
 - Anatomia Patologica: **300/300**;
 - MedChiruFarmaco: **65/65**;
-- PPS: **80/80**;
+- PPS: **360/360**;
 - Infermieristica nel Materno: **240/300** (Infermieristica Pediatrica 137/137; Pediatria 55/55; Ostetricia 48/53; Ginecologia 0/55; ripresa da 241).
 
 ### MedChiruFarmaco QA
@@ -303,7 +303,7 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 ## 11. Roadmap immediata
 
 1. preservare intatti i sette esami attivi;
-2. PPS V1: **80/80 quiz + 80/80 spiegazioni + 18/18 lezioni** — non rifare; dettagli e QA in `PPS_PROGRESS.md`;
+2. PPS: **360/360 quiz + 360/360 spiegazioni + 18/18 lezioni** — non rifare; dettagli e QA in `PPS_PROGRESS.md`;
 3. MedChiruFarmaco V1: **65/65 quiz + 65/65 spiegazioni + 24/24 lezioni** — non rifare;
 4. possibile futura espansione MedChiruFarmaco usando le raccolte di domande aggiuntive, con QA separato;
 5. completare separatamente le spiegazioni quiz Materno da 241 a 300;
