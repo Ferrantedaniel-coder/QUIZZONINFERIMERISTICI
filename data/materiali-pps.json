@@ -15,9 +15,41 @@
     "Malattie infettive"
   ],
   "documents": [
-    {"id":"pps-compendio","type":"Compendio","title":"PPS · Compendio","sourceName":"Compendio.pdf","meta":"55 pagine · materiale del corso","file":"PPS_Compendio.pdf"},
-    {"id":"pps-completa","type":"Compendio","title":"PPS · Raccolta completa","sourceName":"PPS COMPLETA-convertito.pdf","meta":"73 pagine · banca e appunti del corso","file":"PPS_PPS_COMPLETA.pdf"},
-    {"id":"pps-esame-17-luglio","type":"Banca quiz","title":"Esame PPS · 17 luglio","sourceName":"Esame PPS 17 Luglio-convertito.pdf","meta":"11 pagine · prova d'esame","file":"PPS_Esame_PPS_17_Luglio.pdf"},
-    {"id":"pps-prova-esame","type":"Banca quiz","title":"Prova esame PPS","sourceName":"Prova esame PPS.pdf","meta":"7 pagine · prova d'esame con correzioni storiche","file":"PPS_Prova_esame_PPS.pdf"}
+    {
+      "id": "pps-compendio",
+      "type": "Compendio",
+      "title": "PPS · Compendio",
+      "sourceName": "Compendio.pdf",
+      "meta": "55 pagine · materiale del corso",
+      "file": null,
+      "plannedPath": "PPS_Compendio.pdf"
+    },
+    {
+      "id": "pps-completa",
+      "type": "Compendio",
+      "title": "PPS · Raccolta completa",
+      "sourceName": "PPS COMPLETA-convertito.pdf",
+      "meta": "73 pagine · banca e appunti del corso",
+      "file": null,
+      "plannedPath": "PPS_PPS_COMPLETA.pdf"
+    },
+    {
+      "id": "pps-esame-17-luglio",
+      "type": "Banca quiz",
+      "title": "Esame PPS · 17 luglio",
+      "sourceName": "Esame PPS 17 Luglio-convertito.pdf",
+      "meta": "11 pagine · prova d'esame",
+      "file": null,
+      "plannedPath": "PPS_Esame_PPS_17_Luglio.pdf"
+    },
+    {
+      "id": "pps-prova-esame",
+      "type": "Banca quiz",
+      "title": "Prova esame PPS",
+      "sourceName": "Prova esame PPS.pdf",
+      "meta": "7 pagine · prova d'esame con correzioni storiche",
+      "file": null,
+      "plannedPath": "PPS_Prova_esame_PPS.pdf"
+    }
   ]
 }
