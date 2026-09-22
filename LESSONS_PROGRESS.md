@@ -1,6 +1,6 @@
 # LESSONS_PROGRESS.md
 
-Ultimo aggiornamento: **16 settembre 2026**
+Ultimo aggiornamento: **22 settembre 2026**
 
 ## Stato
 
@@ -18,16 +18,15 @@ Schema StudyHub obbligatorio:
 
 ## Copertura complessiva
 
-Sono attivi quattro percorsi completi:
+Sono attivi cinque percorsi completi:
 
 - **Anatomia Patologica**: 63/63;
 - **Infermieristica nel Materno**: 62/62;
 - **Paziente chirurgico**: 60/60;
-- **MedChiruFarmaco**: 24/24.
+- **MedChiruFarmaco**: 24/24;
+- **Scienze della Salute**: 49/49.
 
-Totale StudyHub Lezioni: **209 capitoli mappati / 209 lezioni interattive attive**.
-
-Scienze della Salute resta predisposto per una successiva estensione quando saranno disponibili materiali reali sufficienti.
+Totale StudyHub Lezioni: **258 capitoli mappati / 258 lezioni interattive attive**.
 
 ---
 
@@ -158,6 +157,27 @@ Checkpoint dettagliato quiz/QA/materiali: `MEDCHIRUFARMACO_PROGRESS.md`.
 
 ---
 
+# 5. Scienze della Salute — COMPLETA 49/49
+
+- Infermieristica nell’evoluzione storica: **12/12**;
+- Epidemiologia: **8/8**;
+- Igiene e medicina preventiva: **12/12**;
+- Storia della medicina: **17/17**.
+
+Non risultano PDF universitari pubblicati per questo esame. Il percorso usa esclusivamente la banca reale da **459 quesiti** e le **459 spiegazioni avanzate** già verificate. Ogni lezione conserva gli ID delle domande sorgente in `sourceQuestionIds`; il pulsante fonte è etichettato **Apri banca quiz** e non viene presentato come PDF originale.
+
+File:
+
+- `data/lezioni-scienze-salute.json`;
+- `data/lezioni-scienze-salute-infermieristica.json`;
+- `data/lezioni-scienze-salute-epidemiologia.json`;
+- `data/lezioni-scienze-salute-igiene.json`;
+- `data/lezioni-scienze-salute-storia.json`;
+- `lezioni-scienze-salute-loader.js`;
+- `SCIENZE_SALUTE_PROGRESS.md`.
+
+---
+
 ## Funzioni da preservare
 
 - breadcrumb su tutti i livelli;
@@ -177,10 +197,9 @@ Checkpoint dettagliato quiz/QA/materiali: `MEDCHIRUFARMACO_PROGRESS.md`.
 
 ## Regola contenuti
 
-**Non inventare contenuti per riempire la roadmap.** Le lezioni devono derivare dai materiali reali del corso/progetto. Le fonti esterne possono integrare o correggere solo quando autorizzato e con provenienza distinta.
+**Non inventare contenuti per riempire la roadmap.** Le lezioni devono derivare dai materiali reali del corso/progetto o, quando esplicitamente usata come fonte didattica, dalla banca quiz verificata del progetto. Le fonti esterne possono integrare o correggere solo quando autorizzato e con provenienza distinta.
 
 ## Prossimo sviluppo
 
-- non rifare Anatomia 63/63, Materno 62/62, Paziente chirurgico 60/60 o MedChiruFarmaco 24/24;
-- Scienze della Salute resta il prossimo percorso naturale quando avrà materiali reali sufficienti;
+- non rifare Anatomia 63/63, Materno 62/62, Paziente chirurgico 60/60, MedChiruFarmaco 24/24 o Scienze della Salute 49/49;
 - una futura espansione di MedChiruFarmaco potrà usare le raccolte aggiuntive di domande, mantenendo QA e fonti tracciate.
