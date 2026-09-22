@@ -1,6 +1,6 @@
 # MATERIALI_PROGRESS.md
 
-Ultimo aggiornamento: **16 settembre 2026**
+Ultimo aggiornamento: **22 settembre 2026**
 
 ## Stato
 
@@ -12,11 +12,12 @@ File principali:
 - `materiali.css` — stile Apple-like coerente con `studyhub.css`;
 - `materiali.js` — ricerca, filtri, navigazione materia, lettore PDF, download e collegamento alle Lezioni;
 - `data/materiali.json` — catalogo base;
-- `data/materiali-medchirufarmaco.json` + `materiali-medchirufarmaco-loader.js` — estensione MedChiruFarmaco.
+- `data/materiali-medchirufarmaco.json` + `materiali-medchirufarmaco-loader.js` — estensione MedChiruFarmaco;
+- `data/materiali-pps.json` + `materiali-pps-loader.js` — estensione PPS.
 
 ## Stato documenti
 
-Sono pubblicati nel repository **16 PDF reali** su **22 documenti catalogati**.
+Sono pubblicati nel repository **16 PDF reali** su **26 documenti catalogati**.
 
 ### Anatomia Patologica — 6/6 attivi
 
@@ -71,6 +72,18 @@ Percorso **Studia come lezione**: `lezioni.html?esame=medchirufarmaco`.
 
 I quattro file originali sono stati usati per costruire quiz e lezioni ma **non risultano ancora pubblicati come binari nel repository del sito**. La Biblioteca li mostra quindi correttamente come catalogati con pulsanti Apri/Scarica disabilitati. `medchirufarmaco-source-guard.js` evita che le Lezioni aprano URL PDF inesistenti e rimanda alla scheda Materiali finché i binari non saranno disponibili.
 
+### PPS — 0 attivi, 4 catalogati
+
+1. `Compendio.pdf` — 55 pagine;
+2. `PPS COMPLETA-convertito.pdf` — 73 pagine;
+3. `Esame PPS 17 Luglio-convertito.pdf` — 11 pagine;
+4. `Prova esame PPS.pdf` — 7 pagine.
+
+Percorso **Studia come lezione**: `lezioni.html?esame=pps`.
+
+I quattro documenti sono catalogati e sono già stati usati come fonti per quiz e lezioni. I binari non sono ancora pubblicati nel repository: la Biblioteca mantiene quindi Apri/Scarica disabilitati per evitare URL non validi.
+
+
 ## Funzioni implementate
 
 - pagina Materiali separata dalla pagina Esami;
@@ -86,7 +99,7 @@ I quattro file originali sono stati usati per costruire quiz e lezioni ma **non 
 - stati `DISPONIBILE`, `PARZIALMENTE DISPONIBILE`, `CATALOGATO` o `IN CATALOGAZIONE` calcolati dai file realmente disponibili;
 - contatore distintivo tra documenti disponibili e catalogati;
 - pulsanti disabilitati quando il binario non è pubblicato;
-- collegamento **Materiali → Studia come lezione** per Anatomia Patologica, Infermieristica nel Materno, Paziente chirurgico e MedChiruFarmaco.
+- collegamento **Materiali → Studia come lezione** per Anatomia Patologica, Infermieristica nel Materno, Paziente chirurgico, MedChiruFarmaco e PPS.
 
 ## Regola di non regressione
 
