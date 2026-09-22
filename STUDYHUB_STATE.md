@@ -2,7 +2,7 @@
 
 > **Single source of truth operativo per StudyHub**
 >
-> Ultimo aggiornamento: **20 settembre 2026**  
+> Ultimo aggiornamento: **22 settembre 2026**  
 > Repository: **Ferrantedaniel-coder/QUIZZONINFERIMERISTICI**  
 > Branch operativo: **main**
 
@@ -95,7 +95,7 @@ Gerarchia:
 
 Schema didattico obbligatorio:
 
-**spiegazione → concetti chiave → active recall → checkpoint → materiale originale → quiz collegato**.
+**spiegazione → concetti chiave → active recall → checkpoint → fonte/materiale disponibile → quiz collegato**.
 
 ### Copertura globale
 
@@ -103,9 +103,10 @@ Schema didattico obbligatorio:
 - Infermieristica nel Materno: **62/62**;
 - Paziente chirurgico: **60/60**;
 - MedChiruFarmaco: **24/24**;
-- totale: **209 capitoli mappati / 209 lezioni attive**.
+- Scienze della Salute: **49/49**;
+- totale: **258 capitoli mappati / 258 lezioni attive**.
 
-Scienze della Salute resta il successivo percorso da strutturare quando saranno disponibili materiali universitari sufficienti.
+Scienze della Salute è stato strutturato sulla banca reale da 459 quesiti e sulle 459 spiegazioni verificate, poiché non risultano PDF universitari associati. La provenienza è dichiarata nell’interfaccia e tracciata in `SCIENZE_SALUTE_PROGRESS.md`.
 
 ### 4.1 Anatomia Patologica — COMPLETA 63/63
 
@@ -150,6 +151,25 @@ Pacchetti:
 - `lezioni-medchirufarmaco-loader.js`.
 
 Fonti primarie: `Medicina Generale.pdf.pdf`, `Chirurgia Definitivo.pdf`, `FARMACO SCHEMI.odt`.
+
+### 4.5 Scienze della Salute — COMPLETA 49/49
+
+- Infermieristica nell’evoluzione storica: **12/12**;
+- Epidemiologia: **8/8**;
+- Igiene e medicina preventiva: **12/12**;
+- Storia della medicina: **17/17**.
+
+Fonti del percorso: banca attiva da **459 domande** + **459/459 spiegazioni avanzate** già verificate in StudyHub. Non viene simulata la presenza di un PDF originale: il pulsante fonte apre la banca quiz e usa l’etichetta **“Banca quiz + spiegazioni verificate”**.
+
+Pacchetti:
+
+- `data/lezioni-scienze-salute.json`;
+- `data/lezioni-scienze-salute-infermieristica.json`;
+- `data/lezioni-scienze-salute-epidemiologia.json`;
+- `data/lezioni-scienze-salute-igiene.json`;
+- `data/lezioni-scienze-salute-storia.json`;
+- `lezioni-scienze-salute-loader.js`;
+- `SCIENZE_SALUTE_PROGRESS.md`.
 
 ## 5. Funzioni Lezioni da preservare
 
@@ -222,7 +242,7 @@ La banca `Diagnostica` da **80 domande** è un esame autonomo separato dal blocc
 - `materiali.html`, `materiali.css`, `materiali.js`, `data/materiali.json`;
 - `materiali-medchirufarmaco-loader.js`, `data/materiali-medchirufarmaco.json`;
 - `lezioni.html`, `lezioni.css`, `lezioni.js`, `data/lezioni.json`;
-- loader/pacchetti Anatomia, Materno, Paziente chirurgico e MedChiruFarmaco;
+- loader/pacchetti Anatomia, Materno, Paziente chirurgico, MedChiruFarmaco e Scienze della Salute;
 - `scienze-salute.html`, `scienze-salute-app.html`, `scienze-salute-explanations.js`;
 - `anatomia-patologica.html`, `anatomia-patologica-explanations.js`;
 - `infermieristica-materno.html`, `infermieristica-materno-plus.html`, `infermieristica-materno-explanations.js`;
@@ -263,5 +283,5 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 2. MedChiruFarmaco V1: **65/65 quiz + 65/65 spiegazioni + 24/24 lezioni** — non rifare;
 3. possibile futura espansione MedChiruFarmaco usando le raccolte di domande aggiuntive, con QA separato;
 4. completare separatamente le spiegazioni quiz Materno da 241 a 300;
-5. strutturare Lezioni Scienze della Salute quando saranno disponibili materiali reali sufficienti;
+5. Scienze della Salute: **459/459 quiz + 459/459 spiegazioni + 49/49 lezioni** — non rifare;
 6. pubblicare i quattro binari MedChiruFarmaco nella Biblioteca quando la pipeline di upload binario del repository sarà disponibile.
