@@ -6,8 +6,8 @@ Ultimo aggiornamento: **22 settembre 2026**
 
 Nuovo esame: **Infermieristica per problemi prioritari di salute (PPS)**.
 
-- banca quiz: **80/80 domande attive**;
-- spiegazioni avanzate: **80/80**;
+- banca quiz: **360/360 domande attive**;
+- spiegazioni avanzate: **360/360**;
 - sezioni quiz: **9**;
 - lezioni interattive: **18/18 V1**;
 - materiali PPS: **0/4 pubblicati · 4/4 catalogati**; i binari dei PDF caricati non sono ancora pubblicati nel repository;
@@ -17,14 +17,14 @@ Nuovo esame: **Infermieristica per problemi prioritari di salute (PPS)**.
 ## Sezioni
 
 1. Infermieristica nella gestione dei problemi di salute cronici — 40 domande
-2. Respiratorio / Pneumologia — 5
-3. Cardiovascolare e Cardiochirurgia — 5
-4. Ematologia — 5
-5. Oncologia — 5
-6. Neurologia — 5
-7. Gastroenterologia — 5
-8. Endocrinologia — 5
-9. Malattie infettive — 5
+2. Respiratorio / Pneumologia — 40
+3. Cardiovascolare e Cardiochirurgia — 40
+4. Ematologia — 40
+5. Oncologia — 40
+6. Neurologia — 40
+7. Gastroenterologia — 40
+8. Endocrinologia — 40
+9. Malattie infettive — 40
 
 Il titolo **Infermieristica nella gestione dei problemi di salute cronici** è presentato come testo ordinario, senza sottolineatura.
 
@@ -95,3 +95,14 @@ Schema di ogni lezione:
 ## Non regressione
 
 Nessuna banca, risposta, spiegazione o progressione dei sei esami precedenti viene modificata dal pacchetto PPS, salvo l'aggiunta dei collegamenti PPS a Home, Materiali e Lezioni e l'aggiornamento dei contatori globali.
+
+
+## Aggiornamento V2 — banca 360/360
+
+Il 22 settembre 2026 la banca PPS è stata estesa a **40 domande per ciascuna delle 9 sezioni**, mantenendo:
+- quattro alternative A/B/C/D;
+- randomizzazione StudyHub;
+- **360 spiegazioni avanzate**, con motivazione della corretta e dei tre distrattori;
+- tracciamento degli item storici dubbi separato dal quiz attivo.
+
+L'impaginazione delle alternative di risposta in `pps.html` è stata uniformata agli esami StudyHub principali: **label + radio button + testo A./B./C./D.**, con gli stessi stati visivi corretta/errata.
