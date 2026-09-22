@@ -10,7 +10,7 @@ Nuovo esame: **Infermieristica per problemi prioritari di salute (PPS)**.
 - spiegazioni avanzate: **80/80**;
 - sezioni quiz: **9**;
 - lezioni interattive: **18/18 V1**;
-- materiali PPS: **4/4 pubblicati** come copie web ottimizzate dei file caricati;
+- materiali PPS: **0/4 pubblicati · 4/4 catalogati**; i binari dei PDF caricati non sono ancora pubblicati nel repository;
 - progressi quiz: `studyhub_pps_v1`;
 - progressi lezioni: namespace generale `studyhub.lessons.progress.v1`.
 
@@ -30,12 +30,12 @@ Il titolo **Infermieristica nella gestione dei problemi di salute cronici** è p
 
 ## Fonti V1
 
-- `Compendio.pdf` → pubblicato come `PPS_Compendio.pdf`;
-- `PPS COMPLETA-convertito.pdf` → `PPS_PPS_COMPLETA.pdf`;
-- `Esame PPS 17 Luglio-convertito.pdf` → `PPS_Esame_PPS_17_Luglio.pdf`;
-- `Prova esame PPS.pdf` → `PPS_Prova_esame_PPS.pdf`.
+- `Compendio.pdf` → catalogato, percorso previsto `PPS_Compendio.pdf`;
+- `PPS COMPLETA-convertito.pdf` → catalogato, percorso previsto `PPS_PPS_COMPLETA.pdf`;
+- `Esame PPS 17 Luglio-convertito.pdf` → catalogato, percorso previsto `PPS_Esame_PPS_17_Luglio.pdf`;
+- `Prova esame PPS.pdf` → catalogato, percorso previsto `PPS_Prova_esame_PPS.pdf`.
 
-Le copie pubblicate sono ottimizzate per il web; il contenuto sorgente non è stato riscritto.
+I contenuti dei quattro file sono stati usati per banca e lezioni. Finché i binari non vengono pubblicati nel repository, la Biblioteca li mostra come **CATALOGATI** con Apri/Scarica disabilitati e le Lezioni rimandano alla scheda Materiali PPS, evitando link 404.
 
 ## Criterio banca
 
@@ -89,7 +89,7 @@ Schema di ogni lezione:
 - `materiali-pps-loader.js`
 - `data/lezioni-pps.json` + 3 pacchetti lezioni
 - `lezioni-pps-loader.js`
-- quattro PDF PPS ottimizzati per il web
+- catalogo dei quattro PDF PPS (binari ancora da pubblicare)
 - `PPS_PROGRESS.md`
 
 ## Non regressione
