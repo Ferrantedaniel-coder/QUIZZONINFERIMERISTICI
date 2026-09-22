@@ -18,7 +18,7 @@ Se un quesito storico è ambiguo, errato o obsoleto, la correzione va **tracciat
 
 ## 2. Stato generale
 
-StudyHub è una web app statica HTML/CSS/JavaScript con **6 esami attivi e 1.666 domande**:
+StudyHub è una web app statica HTML/CSS/JavaScript con **7 esami attivi e 1.746 domande**:
 
 | Esame | Domande | Sezioni |
 |---|---:|---|
@@ -28,6 +28,7 @@ StudyHub è una web app statica HTML/CSS/JavaScript con **6 esami attivi e 1.666
 | Paziente chirurgico | 462 | Diagnostica 76; Educazione terapeutica 54; Psicologia 66; Terapia 266 |
 | Diagnostica | 80 | Diagnostica (esame autonomo da banca fornita il 20/09/2026) |
 | MedChiruFarmaco | 65 | Medicina Generale 25; Chirurgia Generale 25; Farmacologia 15 |
+| Infermieristica per problemi prioritari di salute (PPS) | 80 | Infermieristica nella gestione dei problemi di salute cronici 40; Respiratorio/Pneumologia 5; Cardiovascolare e Cardiochirurgia 5; Ematologia 5; Oncologia 5; Neurologia 5; Gastroenterologia 5; Endocrinologia 5; Malattie infettive 5 |
 
 StudyHub è organizzato in tre aree principali:
 
@@ -57,16 +58,18 @@ Stato documenti:
 - Paziente chirurgico: **4 pubblicati + 2 catalogati**;
 - Infermieristica nel Materno: **6/6 pubblicati**;
 - Scienze della Salute: nessun PDF associato;
-- MedChiruFarmaco: **4 materiali catalogati, binari non ancora pubblicati nel repository**.
+- MedChiruFarmaco: **4 materiali catalogati, binari non ancora pubblicati nel repository**;
+- PPS: **4 materiali catalogati, binari non ancora pubblicati nel repository**.
 
-Totale: **16 documenti pubblicati / 22 catalogati**.
+Totale: **16 documenti pubblicati / 26 catalogati**.
 
 Percorsi **Studia come lezione** attivi dalla Biblioteca:
 
 - Anatomia Patologica;
 - Infermieristica nel Materno;
 - Paziente chirurgico;
-- MedChiruFarmaco.
+- MedChiruFarmaco;
+- PPS.
 
 Per MedChiruFarmaco i quattro originali catalogati sono:
 
@@ -104,7 +107,8 @@ Schema didattico obbligatorio:
 - Paziente chirurgico: **60/60**;
 - MedChiruFarmaco: **24/24**;
 - Scienze della Salute: **49/49**;
-- totale: **258 capitoli mappati / 258 lezioni attive**.
+- PPS: **18/18**;
+- totale: **276 capitoli mappati / 276 lezioni attive**.
 
 Scienze della Salute è stato strutturato sulla banca reale da 459 quesiti e sulle 459 spiegazioni verificate, poiché non risultano PDF universitari associati. La provenienza è dichiarata nell’interfaccia e tracciata in `SCIENZE_SALUTE_PROGRESS.md`.
 
@@ -171,6 +175,22 @@ Pacchetti:
 - `lezioni-scienze-salute-loader.js`;
 - `SCIENZE_SALUTE_PROGRESS.md`.
 
+### 4.6 PPS — COMPLETO V1 18/18
+
+- Infermieristica nella gestione dei problemi di salute cronici: **2/2**;
+- Respiratorio / Pneumologia: **2/2**;
+- Cardiovascolare e Cardiochirurgia: **2/2**;
+- Ematologia: **2/2**;
+- Oncologia: **2/2**;
+- Neurologia: **2/2**;
+- Gastroenterologia: **2/2**;
+- Endocrinologia: **2/2**;
+- Malattie infettive: **2/2**.
+
+Quiz V1: **80/80 domande + 80/80 spiegazioni avanzate**. Le incongruenze presenti nelle correzioni storiche non vengono corrette silenziosamente: gli item dubbi sono esclusi o tracciati in `PPS_PROGRESS.md`.
+
+Materiali: quattro PDF catalogati; i binari non sono ancora pubblicati nel repository, quindi Lezioni rimanda alla scheda Materiali PPS senza creare link 404.
+
 ## 5. Funzioni Lezioni da preservare
 
 - navigazione Home → Lezioni → esame → materia → capitolo → lezione;
@@ -219,6 +239,7 @@ Stato:
 - Scienze della Salute: **459/459**;
 - Anatomia Patologica: **300/300**;
 - MedChiruFarmaco: **65/65**;
+- PPS: **80/80**;
 - Infermieristica nel Materno: **240/300** (Infermieristica Pediatrica 137/137; Pediatria 55/55; Ostetricia 48/53; Ginecologia 0/55; ripresa da 241).
 
 ### MedChiruFarmaco QA
@@ -249,6 +270,8 @@ La banca `Diagnostica` da **80 domande** è un esame autonomo separato dal blocc
 - `paziente-chirurgico.html` + enhancer spiegazioni;
 - `diagnostica.html` + `data/diagnostica-001.json`–`004.json` — esame autonomo da 80 domande, feedback di sola correzione;
 - `medchirufarmaco.html` + sei pacchetti banca/spiegazioni;
+- `pps.html` + `data/pps-001.json`–`002.json` + spiegazioni PPS + loader Materiali/Lezioni;
+- `PPS_PROGRESS.md`;
 - `MEDCHIRUFARMACO_PROGRESS.md`;
 - `data/` — banche, spiegazioni, cataloghi e pacchetti Lezioni;
 - `.nojekyll`.
@@ -279,9 +302,10 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 
 ## 11. Roadmap immediata
 
-1. preservare intatti i sei esami attivi;
-2. MedChiruFarmaco V1: **65/65 quiz + 65/65 spiegazioni + 24/24 lezioni** — non rifare;
-3. possibile futura espansione MedChiruFarmaco usando le raccolte di domande aggiuntive, con QA separato;
-4. completare separatamente le spiegazioni quiz Materno da 241 a 300;
-5. Scienze della Salute: **459/459 quiz + 459/459 spiegazioni + 49/49 lezioni** — non rifare;
-6. pubblicare i quattro binari MedChiruFarmaco nella Biblioteca quando la pipeline di upload binario del repository sarà disponibile.
+1. preservare intatti i sette esami attivi;
+2. PPS V1: **80/80 quiz + 80/80 spiegazioni + 18/18 lezioni** — non rifare; dettagli e QA in `PPS_PROGRESS.md`;
+3. MedChiruFarmaco V1: **65/65 quiz + 65/65 spiegazioni + 24/24 lezioni** — non rifare;
+4. possibile futura espansione MedChiruFarmaco usando le raccolte di domande aggiuntive, con QA separato;
+5. completare separatamente le spiegazioni quiz Materno da 241 a 300;
+6. Scienze della Salute: **459/459 quiz + 459/459 spiegazioni + 49/49 lezioni** — non rifare;
+7. pubblicare i quattro binari MedChiruFarmaco e i quattro binari PPS nella Biblioteca quando la pipeline di upload binario del repository sarà disponibile.
