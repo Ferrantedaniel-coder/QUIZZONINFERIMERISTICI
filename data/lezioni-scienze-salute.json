@@ -1,0 +1,349 @@
+{
+  "version": "2026-09-22-scienze-salute-1",
+  "examId": "scienze-salute",
+  "name": "Scienze della Salute",
+  "description": "Percorso interattivo costruito sulla banca reale da 459 quesiti e sulle 459 spiegazioni verificate: infermieristica nell’evoluzione storica, epidemiologia, igiene e medicina preventiva, storia della medicina.",
+  "status": "active",
+  "examLink": "scienze-salute.html",
+  "materialsLink": "scienze-salute-app.html",
+  "disciplines": [
+    {
+      "id": "infermieristica-evoluzione-storica",
+      "name": "Infermieristica nell’evoluzione storica",
+      "description": "Dalla nascita dell’assistenza organizzata alla professionalizzazione infermieristica, con normativa, deontologia, modelli, sicurezza e formazione.",
+      "sourceLabel": "Banca quiz + spiegazioni verificate",
+      "sourceUrl": "scienze-salute-app.html",
+      "sourceActionLabel": "Apri banca quiz",
+      "status": "complete",
+      "chapters": [
+        {
+          "id": "ss-normativa-formazione",
+          "title": "Normativa e formazione infermieristica",
+          "subtitle": "Scuole-convitto, Accordo di Strasburgo, università ed equipollenze",
+          "lessons": []
+        },
+        {
+          "id": "ss-collegi-ordini",
+          "title": "Collegi, Ordini e rappresentanza professionale",
+          "subtitle": "IPASVI, FNOPI, Albo e funzioni ordinistiche",
+          "lessons": []
+        },
+        {
+          "id": "ss-profilo-autonomia",
+          "title": "Profilo, mansionario, autonomia e responsabilità",
+          "subtitle": "Dal mansionario al profilo professionale e alla responsabilità assistenziale",
+          "lessons": []
+        },
+        {
+          "id": "ss-deontologia-bioetica",
+          "title": "Deontologia e bioetica",
+          "subtitle": "Codici, principi bioetici, consenso e rapporto con la persona assistita",
+          "lessons": []
+        },
+        {
+          "id": "ss-sicurezza-rischio",
+          "title": "Sicurezza delle cure e valutazione del rischio",
+          "subtitle": "Rischio clinico, eventi sentinella, near miss e scale assistenziali",
+          "lessons": []
+        },
+        {
+          "id": "ss-nightingale",
+          "title": "Florence Nightingale e nascita del nursing moderno",
+          "subtitle": "Formazione, ambiente, osservazione e sviluppo del nursing moderno",
+          "lessons": []
+        },
+        {
+          "id": "ss-professionalizzazione",
+          "title": "Modelli di sviluppo e professionalizzazione",
+          "subtitle": "Modelli vocazionale, burocratico, paramedico e professionale",
+          "lessons": []
+        },
+        {
+          "id": "ss-organizzazioni",
+          "title": "Organizzazioni infermieristiche e umanitarie",
+          "subtitle": "ICN, CICIAMS, Croce Rossa e associazionismo internazionale",
+          "lessons": []
+        },
+        {
+          "id": "ss-cristianesimo-medioevo",
+          "title": "Assistenza tra cristianesimo e Medioevo",
+          "subtitle": "Istituzioni religiose, carità e trasformazioni dell’assistenza",
+          "lessons": []
+        },
+        {
+          "id": "ss-scuole-italia",
+          "title": "Scuole e formazione in Italia tra Ottocento e Novecento",
+          "subtitle": "Dalle prime esperienze organizzate alle scuole professionali",
+          "lessons": []
+        },
+        {
+          "id": "ss-teorie-nursing",
+          "title": "Teorie e modelli assistenziali",
+          "subtitle": "Concetti e autori che hanno contribuito alla costruzione disciplinare del nursing",
+          "lessons": []
+        },
+        {
+          "id": "ss-ssn-riforme",
+          "title": "SSN e riforme sanitarie",
+          "subtitle": "Istituzione del SSN, aziendalizzazione e impatto sulle professioni sanitarie",
+          "lessons": []
+        }
+      ]
+    },
+    {
+      "id": "epidemiologia",
+      "name": "Epidemiologia",
+      "description": "Misure di frequenza, disegni di studio, associazioni, bias e strumenti per valutare fenomeni e interventi di salute.",
+      "sourceLabel": "Banca quiz + spiegazioni verificate",
+      "sourceUrl": "scienze-salute-app.html",
+      "sourceActionLabel": "Apri banca quiz",
+      "status": "complete",
+      "chapters": [
+        {
+          "id": "ss-prevenzione-screening",
+          "title": "Prevenzione, screening e valutazione degli interventi",
+          "subtitle": "Livelli di prevenzione e valutazione epidemiologica",
+          "lessons": []
+        },
+        {
+          "id": "ss-misure-frequenza",
+          "title": "Incidenza, prevalenza, morbosità e mortalità",
+          "subtitle": "Le principali misure descrittive in popolazione",
+          "lessons": []
+        },
+        {
+          "id": "ss-tempo-persona-attacco",
+          "title": "Tempo-persona, densità d’incidenza e tasso d’attacco",
+          "subtitle": "Misure dinamiche del rischio e studio dei focolai",
+          "lessons": []
+        },
+        {
+          "id": "ss-trasversali-ecologici",
+          "title": "Studi trasversali ed ecologici",
+          "subtitle": "Prevalenza, dati aggregati e fallacia ecologica",
+          "lessons": []
+        },
+        {
+          "id": "ss-coorte",
+          "title": "Studi di coorte",
+          "subtitle": "Dall’esposizione all’esito e stima dell’incidenza",
+          "lessons": []
+        },
+        {
+          "id": "ss-caso-controllo",
+          "title": "Studi caso-controllo",
+          "subtitle": "Dall’esito all’esposizione e uso dei controlli",
+          "lessons": []
+        },
+        {
+          "id": "ss-misure-associazione",
+          "title": "Misure di associazione e rischio",
+          "subtitle": "Rischio relativo, odds ratio e rischio attribuibile",
+          "lessons": []
+        },
+        {
+          "id": "ss-bias-standardizzazione",
+          "title": "Bias, confondimento e standardizzazione",
+          "subtitle": "Errori sistematici, confondenti e confronti tra popolazioni",
+          "lessons": []
+        }
+      ]
+    },
+    {
+      "id": "igiene-medicina-preventiva",
+      "name": "Igiene e medicina preventiva",
+      "description": "Prevenzione delle infezioni e delle malattie croniche, sterilizzazione, vaccinazioni, DPI, trasmissione e principali rischi sanitari.",
+      "sourceLabel": "Banca quiz + spiegazioni verificate",
+      "sourceUrl": "scienze-salute-app.html",
+      "sourceActionLabel": "Apri banca quiz",
+      "status": "complete",
+      "chapters": [
+        {
+          "id": "ss-sterilizzazione",
+          "title": "Disinfezione, sterilizzazione e autoclave",
+          "subtitle": "Livelli di decontaminazione, spore e principali metodi",
+          "lessons": []
+        },
+        {
+          "id": "ss-fumo-cardiovascolare",
+          "title": "Fumo e prevenzione cardiovascolare",
+          "subtitle": "Esposizione tabagica, fattori di rischio e prevenzione",
+          "lessons": []
+        },
+        {
+          "id": "ss-oncologia-stili-vita",
+          "title": "Prevenzione oncologica e stili di vita",
+          "subtitle": "Fattori modificabili e riduzione del rischio",
+          "lessons": []
+        },
+        {
+          "id": "ss-arbovirosi",
+          "title": "Dengue, febbre gialla e arbovirosi",
+          "subtitle": "Vettori, incubazione e prevenzione",
+          "lessons": []
+        },
+        {
+          "id": "ss-vaccini-immunita",
+          "title": "Vaccini, risposta immunitaria e adiuvanti",
+          "subtitle": "Principi immunologici della vaccinazione e adiuvanti",
+          "lessons": []
+        },
+        {
+          "id": "ss-dpi-isolamento",
+          "title": "Precauzioni standard, DPI e isolamento",
+          "subtitle": "Contatto, droplet, airborne, vestizione e protezione dell’operatore",
+          "lessons": []
+        },
+        {
+          "id": "ss-calendari-vaccinali",
+          "title": "Vaccinazioni obbligatorie e calendari",
+          "subtitle": "Obblighi e schemi vaccinali di riferimento",
+          "lessons": []
+        },
+        {
+          "id": "ss-epatiti",
+          "title": "Epatiti virali e rischio ematico",
+          "subtitle": "HBV, HCV, trasmissione parenterale e prevenzione",
+          "lessons": []
+        },
+        {
+          "id": "ss-influenza",
+          "title": "Influenza e infezioni respiratorie",
+          "subtitle": "Virus influenzali, incubazione e trasmissione respiratoria",
+          "lessons": []
+        },
+        {
+          "id": "ss-tubercolosi",
+          "title": "Tubercolosi: trasmissione, diagnosi e prevenzione",
+          "subtitle": "Contagio, test e profilassi",
+          "lessons": []
+        },
+        {
+          "id": "ss-catena-trasmissione",
+          "title": "Catena epidemiologica e trasmissione delle infezioni",
+          "subtitle": "Serbatoi, veicoli, vettori, vie e periodi di contagiosità",
+          "lessons": []
+        },
+        {
+          "id": "ss-ica",
+          "title": "Prevenzione delle infezioni in ambito sanitario",
+          "subtitle": "Igiene delle mani, esposizioni professionali e infezioni correlate all’assistenza",
+          "lessons": []
+        }
+      ]
+    },
+    {
+      "id": "storia-medicina",
+      "name": "Storia della medicina",
+      "description": "Dalle concezioni antiche della malattia alla medicina scientifica e contemporanea, seguendo scoperte, istituzioni, epidemie e trasformazioni della cura.",
+      "sourceLabel": "Banca quiz + spiegazioni verificate",
+      "sourceUrl": "scienze-salute-app.html",
+      "sourceActionLabel": "Apri banca quiz",
+      "status": "complete",
+      "chapters": [
+        {
+          "id": "ss-origini-antiche",
+          "title": "Medicina antica: Egitto, Mesopotamia e origini",
+          "subtitle": "Prime pratiche, testi e concezioni della malattia",
+          "lessons": []
+        },
+        {
+          "id": "ss-grecia-ippocrate",
+          "title": "Grecia classica, Ippocrate e teoria umorale",
+          "subtitle": "Osservazione clinica, natura e quattro umori",
+          "lessons": []
+        },
+        {
+          "id": "ss-roma-galeno",
+          "title": "Roma antica, Galeno e sanità pubblica",
+          "subtitle": "Medici greci a Roma, diritto e infrastrutture sanitarie",
+          "lessons": []
+        },
+        {
+          "id": "ss-medioevo-salerno",
+          "title": "Medioevo, monasteri e Scuola Medica Salernitana",
+          "subtitle": "Trasmissione del sapere, università e assistenza medievale",
+          "lessons": []
+        },
+        {
+          "id": "ss-rinascimento-anatomia",
+          "title": "Rinascimento, anatomia e Vesalio",
+          "subtitle": "Dissezione, iconografia e superamento degli errori antichi",
+          "lessons": []
+        },
+        {
+          "id": "ss-microscopio-patologia",
+          "title": "Microscopio, fisiologia e patologia moderna",
+          "subtitle": "Harvey, Malpighi, Virchow e nuovi livelli di osservazione",
+          "lessons": []
+        },
+        {
+          "id": "ss-ospedali-riforme",
+          "title": "Ospedali, carità e riforme assistenziali",
+          "subtitle": "Evoluzione delle strutture ospedaliere e dell’organizzazione della cura",
+          "lessons": []
+        },
+        {
+          "id": "ss-peste-quarantena",
+          "title": "Peste, quarantena e magistrature sanitarie",
+          "subtitle": "Isolamento, lazzaretti e prime misure di sanità pubblica",
+          "lessons": []
+        },
+        {
+          "id": "ss-vaiolo-jenner",
+          "title": "Vaiolo, Jenner e storia della vaccinazione",
+          "subtitle": "Dalla vaccinazione all’eradicazione del vaiolo",
+          "lessons": []
+        },
+        {
+          "id": "ss-teoria-microbica",
+          "title": "Semmelweis, Pasteur, Koch e teoria microbica",
+          "subtitle": "Igiene delle mani, microbiologia e causalità infettiva",
+          "lessons": []
+        },
+        {
+          "id": "ss-chirurgia-moderna",
+          "title": "Antisepsi, anestesia e chirurgia moderna",
+          "subtitle": "Lister, anestesia e sviluppo della chirurgia",
+          "lessons": []
+        },
+        {
+          "id": "ss-endemie-italia",
+          "title": "Colera, malaria, pellagra e tubercolosi in Italia",
+          "subtitle": "Endemie, condizioni sociali e interventi di sanità pubblica",
+          "lessons": []
+        },
+        {
+          "id": "ss-industrializzazione",
+          "title": "Industrializzazione e salute nel Novecento",
+          "subtitle": "Urbanizzazione, lavoro, traffico e nuovi problemi sanitari",
+          "lessons": []
+        },
+        {
+          "id": "ss-infanzia-maternita",
+          "title": "Pediatria, maternità e salute dell’infanzia",
+          "subtitle": "Mortalità infantile, tutela materno-infantile e sviluppo della pediatria",
+          "lessons": []
+        },
+        {
+          "id": "ss-medicina-contemporanea",
+          "title": "Trapianti, antibiotici e medicina contemporanea",
+          "subtitle": "Antibiotici, trapianti e innovazioni del XX secolo",
+          "lessons": []
+        },
+        {
+          "id": "ss-etica-diritti",
+          "title": "Etica, diritti e definizione di salute",
+          "subtitle": "OMS, consenso, capacità decisionale e diritti della persona",
+          "lessons": []
+        },
+        {
+          "id": "ss-igiene-concezioni",
+          "title": "Pratiche igieniche e concezioni storiche della malattia",
+          "subtitle": "Miasmi, bagno, pori e interpretazioni pre-microbiologiche",
+          "lessons": []
+        }
+      ]
+    }
+  ]
+}
