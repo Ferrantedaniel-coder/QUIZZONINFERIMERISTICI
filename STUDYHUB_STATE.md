@@ -207,6 +207,7 @@ Motore:
 Funzioni attive:
 
 - registrazione microfono via browser;
+- input libero “Cosa stai registrando?” senza categorie/esami predefiniti;
 - timer, pausa/riprendi/termina;
 - salvataggio audio a chunk da 5 secondi;
 - recupero delle sessioni interrotte;
