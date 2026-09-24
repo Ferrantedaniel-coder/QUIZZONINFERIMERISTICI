@@ -143,3 +143,18 @@ Correzione del 24 settembre 2026:
 - l'anteprima non tenta più autoplay dopo letture asincrone IndexedDB: mostra il player e lascia all'utente il comando Play;
 - aggiunta diagnostica degli errori media/decodifica;
 - in assenza di consenso alla conservazione, dopo trascrizione riuscita vengono eliminati sia master sia eventuali chunk.
+
+
+## Eliminazione completa sessioni V4
+
+Dal 24 settembre 2026 il comando manuale di eliminazione ha semantica definitiva:
+
+- il pulsante è **Elimina registrazione**;
+- cancella master audio;
+- cancella eventuali chunk di recupero;
+- cancella il record della sessione da IndexedDB;
+- cancella eventuali appunti/trascrizione associati alla sessione;
+- la voce scompare immediatamente dall'archivio locale;
+- le vecchie sessioni con stato `audio_deleted` create dalla logica precedente vengono rimosse automaticamente all'avvio.
+
+Eccezione intenzionale: una lezione già trascritta senza consenso alla conservazione dell'audio resta nell'archivio con i suoi appunti anche dopo la cancellazione automatica dell'audio, perché in quel caso non è stata cancellata la lezione ma solo il file audio secondo la retention policy.
