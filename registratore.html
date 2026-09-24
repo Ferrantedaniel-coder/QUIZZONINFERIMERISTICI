@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#37b7b3">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Study Hub · Registratore lezioni</title>
+<link rel="stylesheet" href="studyhub.css">
+<link rel="stylesheet" href="registratore.css?v=20260924-v1">
+</head>
+<body>
+<main class="rec-shell">
+<header class="rec-topbar">
+  <a class="rec-brand" href="index.html"><span class="brandmark"></span><span><b>Study Hub</b><small>Registratore lezioni</small></span></a>
+  <nav class="rec-nav">
+    <a class="button peach" href="materiali.html">Materiali</a>
+    <a class="button terracotta" href="lezioni.html">Lezioni</a>
+    <a class="button primary" href="index.html">Home</a>
+  </nav>
+</header>
+
+<section class="rec-hero glass">
+  <div>
+    <div class="eyebrow">STUDYHUB RECORDER · BETA</div>
+    <h1>ASCOLTA.<br>GLI APPUNTI ARRIVANO DOPO.</h1>
+    <p>Registra la lezione dal browser. StudyHub salva l'audio a blocchi sul dispositivo per ridurre il rischio di perdita e prepara il flusso per trascrizione e riassunto automatici.</p>
+  </div>
+  <div class="privacy-chip"><span class="privacy-dot"></span><span><b>Privacy by default</b><small>L'audio non viene conservato oltre la trascrizione senza consenso esplicito.</small></span></div>
+</section>
+
+<section class="rec-grid">
+  <article class="rec-card glass">
+    <div class="card-kicker">NUOVA LEZIONE</div>
+    <h2>Prepara la registrazione</h2>
+    <div class="rec-fields">
+      <label class="rec-field"><span>Materia / esame</span>
+        <select id="subject">
+          <option value="">Seleziona…</option>
+          <option>Scienze della Salute</option>
+          <option>Anatomia Patologica</option>
+          <option>Infermieristica nel Materno</option>
+          <option>Paziente chirurgico</option>
+          <option>Diagnostica</option>
+          <option>MedChiruFarmaco</option>
+          <option>Infermieristica per problemi prioritari di salute (PPS)</option>
+        </select>
+      </label>
+      <label class="rec-field"><span>Titolo della lezione</span><input id="lessonTitle" type="text" maxlength="120" placeholder="Es. Infiammazione cronica"></label>
+      <label class="rec-field"><span>Docente <small>(facoltativo)</small></span><input id="teacher" type="text" maxlength="100" placeholder="Nome docente"></label>
+    </div>
+    <div class="support-line" id="supportLine">Controllo compatibilità del browser…</div>
+    <button class="rec-start" id="prepareBtn" type="button">Avvia nuova registrazione</button>
+  </article>
+
+  <article class="rec-card recorder-card glass" id="recorderCard">
+    <div class="rec-state-row"><span class="rec-state idle" id="recState"><i></i> PRONTO</span><span class="chunk-state" id="chunkState">Nessun audio salvato</span></div>
+    <div class="timer" id="timer">00:00:00</div>
+    <div class="meter" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="rec-actions">
+      <button class="button peach" id="pauseBtn" type="button" disabled>Pausa</button>
+      <button class="button terracotta" id="stopBtn" type="button" disabled>Termina</button>
+    </div>
+    <p class="rec-helper" id="recHelper">Prima di registrare verrà richiesto il consenso relativo alla registrazione e alla conservazione dell'audio.</p>
+  </article>
+</section>
+
+<section class="pipeline glass">
+  <div class="section-title"><div><span class="card-kicker">DOPO LA LEZIONE</span><h2>Trascrizione e appunti</h2></div><span class="beta-pill" id="aiBadge">BACKEND AI DA COLLEGARE</span></div>
+  <div class="pipeline-steps">
+    <div class="pipe-step"><b>01</b><span>Registra</span><small>Audio a blocchi sul dispositivo</small></div>
+    <div class="pipe-step"><b>02</b><span>Trascrivi</span><small>Audio → testo</small></div>
+    <div class="pipe-step"><b>03</b><span>Organizza</span><small>Riassunto, concetti, esempi</small></div>
+    <div class="pipe-step"><b>04</b><span>Archivia</span><small>Appunti StudyHub</small></div>
+  </div>
+  <div class="processing hidden" id="processingPanel">
+    <div class="processing-head"><div><span class="card-kicker">LEZIONE REGISTRATA</span><h3 id="processingTitle">Pronta per la trascrizione</h3></div><span class="status-badge" id="retentionBadge"></span></div>
+    <p id="processingText"></p>
+    <div class="processing-actions">
+      <button class="button primary" id="transcribeBtn" type="button">Trascrivi e crea appunti</button>
+      <button class="button peach" id="previewBtn" type="button">Ascolta audio temporaneo</button>
+      <button class="button terracotta" id="deleteBtn" type="button">Elimina audio</button>
+    </div>
+    <audio id="audioPreview" class="audio-preview hidden" controls></audio>
+  </div>
+</section>
+
+<section class="notes-panel glass hidden" id="notesPanel">
+  <div class="section-title"><div><span class="card-kicker">APPUNTI GENERATI</span><h2 id="notesTitle">Lezione</h2></div><span class="status-badge ok">TRASCRIZIONE COMPLETA</span></div>
+  <div class="notes-grid">
+    <article><h3>Riassunto</h3><div id="summaryText" class="notes-copy"></div></article>
+    <article><h3>Concetti chiave</h3><div id="keyPoints" class="notes-copy"></div></article>
+    <article><h3>Esempi del prof</h3><div id="profExamples" class="notes-copy"></div></article>
+    <article><h3>Possibili domande d'esame</h3><div id="examQuestions" class="notes-copy"></div></article>
+  </div>
+  <details class="transcript"><summary>Mostra trascrizione completa</summary><div id="transcriptText"></div></details>
+</section>
+
+<section class="archive glass">
+  <div class="section-title"><div><span class="card-kicker">RECUPERO LOCALE</span><h2>Sessioni sul dispositivo</h2></div><button class="button peach" id="refreshArchiveBtn" type="button">Aggiorna</button></div>
+  <p class="archive-intro">Qui compaiono le registrazioni non ancora elaborate e le lezioni conservate localmente. I dati restano nel browser di questo dispositivo.</p>
+  <div id="archiveList" class="archive-list"></div>
+</section>
+
+<p class="footer-note">StudyHub Recorder salva localmente i blocchi audio durante la registrazione. Non chiudere intenzionalmente il browser durante una lezione; il recupero locale riduce il rischio di perdita ma non sostituisce un backup cloud.</p>
+</main>
+
+<div class="consent-backdrop hidden" id="consentModal" role="dialog" aria-modal="true" aria-labelledby="consentTitle">
+  <div class="consent-modal glass">
+    <button class="modal-close" id="consentClose" type="button" aria-label="Chiudi">×</button>
+    <div class="card-kicker">PRIMA DI REGISTRARE</div>
+    <h2 id="consentTitle">Autorizzazione della lezione</h2>
+    <p>L'audio viene utilizzato per generare la trascrizione e gli appunti. La conservazione dell'audio è una scelta separata.</p>
+    <label class="consent-row required">
+      <input type="checkbox" id="recordingConsent">
+      <span><b>Confermo di avere l'autorizzazione necessaria a registrare la lezione.</b><small>Questa conferma è necessaria per attivare il microfono.</small></span>
+    </label>
+    <label class="consent-row">
+      <input type="checkbox" id="retentionConsent">
+      <span><b>Il docente autorizza la conservazione dell'audio oltre il tempo necessario alla trascrizione.</b><small>Opzionale e non selezionata di default. Se non autorizzata, StudyHub elimina l'audio dopo una trascrizione completata con successo.</small></span>
+    </label>
+    <div class="consent-note">StudyHub registra la scelta e la data/ora nella sessione locale. Il browser richiederà inoltre il proprio permesso per accedere al microfono.</div>
+    <div class="modal-actions">
+      <button class="button peach" id="consentCancel" type="button">Annulla</button>
+      <button class="button primary" id="consentConfirm" type="button" disabled>Conferma e avvia</button>
+    </div>
+  </div>
+</div>
+
+<script src="registratore-config.js?v=20260924-v1"></script>
+<script src="registratore.js?v=20260924-v1"></script>
+</body>
+</html>
