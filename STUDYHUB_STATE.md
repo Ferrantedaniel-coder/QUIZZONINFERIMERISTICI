@@ -2,7 +2,7 @@
 
 > **Single source of truth operativo per StudyHub**
 >
-> Ultimo aggiornamento: **22 settembre 2026**  
+> Ultimo aggiornamento: **24 settembre 2026**  
 > Repository: **Ferrantedaniel-coder/QUIZZONINFERIMERISTICI**  
 > Branch operativo: **main**
 
@@ -309,3 +309,4 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 5. completare separatamente le spiegazioni quiz Materno da 241 a 300;
 6. Scienze della Salute: **459/459 quiz + 459/459 spiegazioni + 49/49 lezioni** — non rifare;
 7. pubblicare i quattro binari MedChiruFarmaco e i quattro binari PPS nella Biblioteca quando la pipeline di upload binario del repository sarà disponibile.
+8. progettare e implementare il **Registratore lezioni**: registrazione dal browser → trascrizione → riassunto strutturato → salvataggio negli appunti StudyHub. Requisito privacy/retention: prima dell'avvio mostrare una finestra di consenso; la casella **“Il docente autorizza la conservazione dell’audio oltre il tempo necessario alla trascrizione”** deve essere non selezionata di default. Se non selezionata, l'audio è solo temporaneo e deve essere eliminato automaticamente dopo il completamento verificato della trascrizione; se selezionata, l'audio può essere conservato insieme alla lezione. Salvare con la lezione soltanto esito del consenso e data/ora. La mancata autorizzazione alla conservazione non deve impedire trascrizione e riassunto.
