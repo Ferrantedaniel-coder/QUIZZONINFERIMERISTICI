@@ -209,13 +209,14 @@ Funzioni attive:
 - registrazione microfono via browser;
 - input libero “Cosa stai registrando?” senza categorie/esami predefiniti;
 - timer, pausa/riprendi/termina;
-- salvataggio audio a chunk da 5 secondi;
+- salvataggio audio a chunk da 5 secondi durante la registrazione;
+- creazione e salvataggio di un master audio finale a registrazione completata;
 - recupero delle sessioni interrotte;
 - consenso obbligatorio alla registrazione;
 - consenso separato e opzionale alla conservazione dell'audio, disattivato di default;
 - eliminazione manuale dell'audio;
 - eliminazione automatica dei chunk locali dopo trascrizione riuscita quando la conservazione non è autorizzata;
-- archivio sessioni e anteprima audio locale;
+- archivio sessioni e anteprima audio locale dal master finale, con fallback recovery dai chunk;
 - accesso dalla Home.
 
 Il backend AI è implementato in `recorder-backend/` ma non è ancora pubblicato: `apiEndpoint` resta vuoto finché non esiste un endpoint HTTPS. Usa upload temporaneo, `gpt-transcribe` per speech-to-text e `gpt-5.6-terra` per appunti strutturati. Il file audio server-side viene sempre eliminato al termine dell'elaborazione; l'eventuale conservazione autorizzata resta nella copia locale del browser. Il frontend esegue un health check reale prima di abilitare la trascrizione. Nessuna chiave API deve essere inserita nel frontend o nel repository pubblico.
