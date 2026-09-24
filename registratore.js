@@ -16,6 +16,7 @@ var timerHandle = null;
 var elapsedBase = 0;
 var segmentStartedAt = 0;
 var previewUrl = null;
+var backendReady = false;
 
 var el = {};
 function $(id){ return document.getElementById(id); }
@@ -44,10 +45,7 @@ async function init(){
     el.prepareBtn.disabled = true;
   }
 
-  if (CONFIG.apiEndpoint) {
-    el.aiBadge.textContent = "BACKEND AI COLLEGATO";
-    el.aiBadge.classList.add("status-badge","ok");
-  }
+  await checkBackendHealth();
 }
 
 function bindEvents(){
@@ -83,6 +81,45 @@ function bindEvents(){
       try { mediaRecorder.requestData(); } catch (_) {}
     }
   });
+}
+
+async function checkBackendHealth(){
+  backendReady = false;
+
+  if (!CONFIG.apiEndpoint) {
+    el.aiBadge.textContent = "BACKEND AI DA PUBBLICARE";
+    el.aiBadge.classList.remove("ok");
+    return false;
+  }
+
+  el.aiBadge.textContent = "CONTROLLO AI…";
+  el.aiBadge.classList.remove("ok");
+
+  try {
+    var endpoint = new URL(CONFIG.apiEndpoint, window.location.href);
+    endpoint.pathname = endpoint.pathname.replace(/\/v1\/transcribe\/?$/, "/health");
+    endpoint.search = "";
+    endpoint.hash = "";
+
+    var response = await fetch(endpoint.toString(), {
+      method: "GET",
+      cache: "no-store"
+    });
+
+    if (!response.ok) throw new Error("HTTP " + response.status);
+    var data = await response.json();
+    if (!data || data.ok !== true) throw new Error("health check non valido");
+
+    backendReady = true;
+    el.aiBadge.textContent = "AI ONLINE";
+    el.aiBadge.classList.add("status-badge","ok");
+    return true;
+  } catch (_) {
+    backendReady = false;
+    el.aiBadge.textContent = "AI NON RAGGIUNGIBILE";
+    el.aiBadge.classList.remove("ok");
+    return false;
+  }
 }
 
 function checkSupport(){
@@ -435,12 +472,12 @@ async function showProcessing(session){
     return;
   }
 
-  el.transcribeBtn.textContent = CONFIG.apiEndpoint ? "Trascrivi e crea appunti" : "Backend AI da collegare";
-  el.transcribeBtn.disabled = !CONFIG.apiEndpoint;
+  el.transcribeBtn.textContent = backendReady ? "Trascrivi e crea appunti" : (CONFIG.apiEndpoint ? "AI non raggiungibile" : "Backend AI da pubblicare");
+  el.transcribeBtn.disabled = !backendReady;
   el.previewBtn.disabled = !!session.audioDeletedAt;
   el.deleteBtn.disabled = !!session.audioDeletedAt;
 
-  if (CONFIG.apiEndpoint) {
+  if (backendReady) {
     el.processingText.textContent = session.retentionConsent
       ? "Puoi avviare trascrizione e riassunto. Dopo l'elaborazione l'audio verrà conservato sul dispositivo."
       : "Puoi avviare trascrizione e riassunto. Dopo il completamento riuscito StudyHub eliminerà l'audio locale.";
@@ -469,7 +506,13 @@ async function previewAudio(sessionId){
 }
 
 async function transcribeSession(sessionId){
-  if (!CONFIG.apiEndpoint) return;
+  if (!backendReady) {
+    await checkBackendHealth();
+    if (!backendReady) {
+      el.processingText.textContent = "Il servizio AI non è disponibile. L'audio resta salvato localmente e puoi riprovare quando il backend torna online.";
+      return;
+    }
+  }
 
   el.transcribeBtn.disabled = true;
   el.transcribeBtn.textContent = "Elaborazione…";
