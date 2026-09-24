@@ -30,17 +30,19 @@ StudyHub è una web app statica HTML/CSS/JavaScript con **7 esami attivi e 2.026
 | MedChiruFarmaco | 65 | Medicina Generale 25; Chirurgia Generale 25; Farmacologia 15 |
 | Infermieristica per problemi prioritari di salute (PPS) | 360 | 9 sezioni da 40 domande: Infermieristica nella gestione dei problemi di salute cronici; Respiratorio/Pneumologia; Cardiovascolare e Cardiochirurgia; Ematologia; Oncologia; Neurologia; Gastroenterologia; Endocrinologia; Malattie infettive |
 
-StudyHub è organizzato in tre aree principali:
+StudyHub è organizzato in quattro aree principali:
 
 1. **Esami** — simulazioni, spiegazioni, error review e progressi;
 2. **Materiali** — sbobine, compendi e slide consultabili/scaricabili quando i binari sono presenti;
-3. **Lezioni** — percorsi interattivi costruiti sui materiali reali con active recall, checkpoint e collegamento ai quiz.
+3. **Lezioni** — percorsi interattivi costruiti sui materiali reali con active recall, checkpoint e collegamento ai quiz;
+4. **Registratore** — registrazione audio delle lezioni con salvataggio locale a blocchi, consenso separato per registrazione/conservazione e pipeline predisposta per trascrizione + appunti AI.
 
 Slogan correnti:
 
 - Esami: **“Scegli l'esame. Poi distruggilo.”**
 - Materiali: **“Meno cartelle. Più studio.”**
 - Lezioni: **“Leggi meno. Ricorda di più.”**
+- Registratore: **“Ascolta. Gli appunti arrivano dopo.”**
 
 ## 3. Materiali
 
@@ -191,6 +193,32 @@ Quiz PPS: **360/360 domande + 360/360 spiegazioni avanzate**. Le incongruenze pr
 
 Materiali: quattro PDF catalogati; i binari non sono ancora pubblicati nel repository, quindi Lezioni rimanda alla scheda Materiali PPS senza creare link 404.
 
+## 4.7 Registratore lezioni — V1 BETA ATTIVA
+
+Motore:
+
+- `registratore.html`;
+- `registratore.css`;
+- `registratore.js`;
+- `registratore-config.js`;
+- checkpoint `RECORDER_PROGRESS.md`;
+- storage locale IndexedDB: `studyhub-recorder-v1`.
+
+Funzioni attive:
+
+- registrazione microfono via browser;
+- timer, pausa/riprendi/termina;
+- salvataggio audio a chunk da 5 secondi;
+- recupero delle sessioni interrotte;
+- consenso obbligatorio alla registrazione;
+- consenso separato e opzionale alla conservazione dell'audio, disattivato di default;
+- eliminazione manuale dell'audio;
+- eliminazione automatica dei chunk locali dopo trascrizione riuscita quando la conservazione non è autorizzata;
+- archivio sessioni e anteprima audio locale;
+- accesso dalla Home.
+
+Il backend AI non è ancora attivo: `apiEndpoint` resta vuoto finché non esiste un endpoint server-side sicuro. Nessuna chiave API deve essere inserita nel frontend o nel repository pubblico.
+
 ## 5. Funzioni Lezioni da preservare
 
 - navigazione Home → Lezioni → esame → materia → capitolo → lezione;
@@ -273,10 +301,12 @@ La banca `Diagnostica` da **80 domande** è un esame autonomo separato dal blocc
 - `pps.html` + `data/pps-001.json`–`002.json` + spiegazioni PPS + loader Materiali/Lezioni;
 - `PPS_PROGRESS.md`;
 - `MEDCHIRUFARMACO_PROGRESS.md`;
+- `registratore.html`, `registratore.css`, `registratore.js`, `registratore-config.js` — StudyHub Recorder V1;
+- `RECORDER_PROGRESS.md` — checkpoint e contratto privacy/backend del Registratore;
 - `data/` — banche, spiegazioni, cataloghi e pacchetti Lezioni;
 - `.nojekyll`.
 
-I progressi utente restano locali al browser; non ci sono account, database remoto o sync cloud. Quiz e Lezioni usano namespace separati. MedChiruFarmaco usa `studyhub_medchirufarmaco_v1`.
+I progressi utente restano locali al browser; non ci sono account, database remoto o sync cloud. Quiz e Lezioni usano namespace separati. MedChiruFarmaco usa `studyhub_medchirufarmaco_v1`. Il Registratore usa IndexedDB `studyhub-recorder-v1` per sessioni e chunk audio locali.
 
 ## 9. Workflow obbligatorio
 
@@ -309,4 +339,4 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 5. completare separatamente le spiegazioni quiz Materno da 241 a 300;
 6. Scienze della Salute: **459/459 quiz + 459/459 spiegazioni + 49/49 lezioni** — non rifare;
 7. pubblicare i quattro binari MedChiruFarmaco e i quattro binari PPS nella Biblioteca quando la pipeline di upload binario del repository sarà disponibile.
-8. progettare e implementare il **Registratore lezioni**: registrazione dal browser → trascrizione → riassunto strutturato → salvataggio negli appunti StudyHub. Requisito privacy/retention: prima dell'avvio mostrare una finestra di consenso; la casella **“Il docente autorizza la conservazione dell’audio oltre il tempo necessario alla trascrizione”** deve essere non selezionata di default. Se non selezionata, l'audio è solo temporaneo e deve essere eliminato automaticamente dopo il completamento verificato della trascrizione; se selezionata, l'audio può essere conservato insieme alla lezione. Salvare con la lezione soltanto esito del consenso e data/ora. La mancata autorizzazione alla conservazione non deve impedire trascrizione e riassunto.
+8. **StudyHub Recorder V1 ATTIVO**: pagina, stile, registrazione browser, consenso, pause/riprendi, chunk da 5 s in IndexedDB, recupero locale, anteprima e cancellazione audio sono implementati. La casella **“Il docente autorizza la conservazione dell’audio oltre il tempo necessario alla trascrizione”** è non selezionata di default. Se non selezionata, l'audio è temporaneo e viene eliminato automaticamente solo dopo una trascrizione completata con successo. Il backend AI sicuro per trascrizione/riassunto è predisposto ma non ancora collegato; dettagli in `RECORDER_PROGRESS.md`.
