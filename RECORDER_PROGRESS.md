@@ -128,3 +128,18 @@ L'utente può descrivere liberamente il contenuto della registrazione.
 Il frontend non considera il backend “collegato” solo perché esiste un URL.
 All'avvio esegue un controllo `GET /health` e abilita **Trascrivi e crea appunti** solo se il servizio risponde correttamente.
 Stati UI: **BACKEND AI DA PUBBLICARE**, **CONTROLLO AI…**, **AI ONLINE**, **AI NON RAGGIUNGIBILE**.
+
+
+## Fix riproduzione audio V3
+
+Correzione del 24 settembre 2026:
+
+- IndexedDB aggiornato da V1 a V2;
+- nuovo store `recordings` per il master audio finale;
+- i chunk da 5 secondi sono usati come recovery durante la registrazione;
+- a registrazione terminata StudyHub crea un unico Blob master, lo salva e poi rimuove i chunk duplicati;
+- anteprima e trascrizione usano il master audio;
+- per registrazioni vecchie/interrotte resta un fallback che ricostruisce il master dai chunk;
+- l'anteprima non tenta più autoplay dopo letture asincrone IndexedDB: mostra il player e lascia all'utente il comando Play;
+- aggiunta diagnostica degli errori media/decodifica;
+- in assenza di consenso alla conservazione, dopo trascrizione riuscita vengono eliminati sia master sia eventuali chunk.
