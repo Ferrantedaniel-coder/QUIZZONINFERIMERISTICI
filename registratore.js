@@ -3,15 +3,17 @@
 
 var CONFIG = window.STUDYHUB_RECORDER_CONFIG || {};
 var DB_NAME = "studyhub-recorder-v1";
-var DB_VERSION = 1;
+var DB_VERSION = 2;
 var SESSIONS = "sessions";
 var CHUNKS = "chunks";
+var RECORDINGS = "recordings";
 
 var dbPromise = null;
 var mediaRecorder = null;
 var mediaStream = null;
 var currentSession = null;
 var pendingWrites = [];
+var liveChunks = [];
 var timerHandle = null;
 var elapsedBase = 0;
 var segmentStartedAt = 0;
@@ -68,6 +70,17 @@ function bindEvents(){
     if (currentSession) deleteAudioOnly(currentSession.id);
   });
   el.refreshArchiveBtn.addEventListener("click", refreshArchive);
+
+  el.audioPreview.addEventListener("error", function(){
+    var mediaError = el.audioPreview.error;
+    var code = mediaError ? mediaError.code : 0;
+    var label = code === 4
+      ? "formato audio non supportato dal browser"
+      : code === 3
+        ? "errore di decodifica audio"
+        : "errore di riproduzione";
+    el.processingText.textContent = "L'audio è stato registrato ma il player non riesce a riprodurlo: " + label + ". La registrazione resta salvata; prova a ricaricare la pagina o usa una nuova registrazione dopo questo aggiornamento.";
+  });
 
   el.consentModal.addEventListener("click", function(event){
     if (event.target === el.consentModal) closeConsent();
@@ -264,6 +277,7 @@ async function startRecording(){
 
     await putSession(currentSession);
     pendingWrites = [];
+    liveChunks = [];
     elapsedBase = 0;
     segmentStartedAt = Date.now();
 
@@ -312,6 +326,7 @@ function chooseMimeType(){
 function handleDataAvailable(event){
   if (!currentSession || !event.data || event.data.size === 0) return;
 
+  liveChunks.push(event.data);
   currentSession.chunkCount += 1;
   currentSession.lastUpdatedAt = new Date().toISOString();
   var seq = currentSession.chunkCount;
@@ -391,6 +406,27 @@ async function finalizeRecording(){
     await Promise.allSettled(pendingWrites);
     if (!currentSession) return;
 
+    if (liveChunks.length) {
+      var masterType = currentSession.mimeType || liveChunks[0].type || "audio/webm";
+      var masterBlob = new Blob(liveChunks, { type: masterType });
+      if (!masterBlob.size) throw new Error("Il file audio finale risulta vuoto");
+
+      await putRecording({
+        sessionId: currentSession.id,
+        blob: masterBlob,
+        mimeType: masterType,
+        size: masterBlob.size,
+        createdAt: new Date().toISOString()
+      });
+
+      currentSession.masterAudio = true;
+      currentSession.audioBytes = masterBlob.size;
+
+      // I chunk servono al recupero durante la registrazione. Dopo aver salvato
+      // il master verificato si possono rimuovere per evitare doppio spazio.
+      await deleteChunks(currentSession.id);
+    }
+
     currentSession.state = "recorded";
     currentSession.durationMs = elapsedBase;
     currentSession.lastUpdatedAt = new Date().toISOString();
@@ -408,6 +444,7 @@ async function finalizeRecording(){
   } finally {
     mediaRecorder = null;
     pendingWrites = [];
+    liveChunks = [];
   }
 }
 
@@ -489,20 +526,57 @@ async function showProcessing(session){
 async function previewAudio(sessionId){
   try {
     var session = await getSession(sessionId);
-    var chunks = await getChunks(sessionId);
-    if (!chunks.length) {
-      el.processingText.textContent = "Non risultano blocchi audio disponibili per questa sessione.";
+    var audio = await getAudioBlob(sessionId, session);
+
+    if (!audio || !audio.blob || !audio.blob.size) {
+      el.processingText.textContent = "Non risulta un file audio disponibile per questa sessione.";
       return;
     }
-    var blob = new Blob(chunks.map(function(item){ return item.blob; }), { type: session.mimeType || chunks[0].mimeType || "audio/webm" });
+
     if (previewUrl) URL.revokeObjectURL(previewUrl);
-    previewUrl = URL.createObjectURL(blob);
+    previewUrl = URL.createObjectURL(audio.blob);
+
+    el.audioPreview.pause();
+    el.audioPreview.removeAttribute("src");
     el.audioPreview.src = previewUrl;
     el.audioPreview.classList.remove("hidden");
-    el.audioPreview.play().catch(function(){});
+    el.audioPreview.load();
+
+    // Non avviare automaticamente: dopo una lettura IndexedDB asincrona
+    // Chrome può considerare perso il gesto dell'utente e bloccare play().
+    el.processingText.textContent = "Audio pronto. Premi ▶ nel player per ascoltare la registrazione.";
+    el.audioPreview.scrollIntoView({ behavior: "smooth", block: "nearest" });
   } catch (err) {
-    el.processingText.textContent = "Impossibile aprire l'audio: " + friendlyError(err);
+    el.processingText.textContent = "Impossibile preparare l'audio: " + friendlyError(err);
   }
+}
+
+async function getAudioBlob(sessionId, session){
+  var master = await getRecording(sessionId);
+  if (master && master.blob && master.blob.size) return master;
+
+  // Compatibilità e recupero per registrazioni precedenti o sessioni interrotte.
+  var chunks = await getChunks(sessionId);
+  if (!chunks.length) return null;
+
+  var mimeType = (session && session.mimeType) || chunks[0].mimeType || chunks[0].blob.type || "audio/webm";
+  var blob = new Blob(chunks.map(function(item){ return item.blob; }), { type: mimeType });
+
+  if (blob.size && session && session.state !== "recording" && session.state !== "paused") {
+    await putRecording({
+      sessionId: sessionId,
+      blob: blob,
+      mimeType: mimeType,
+      size: blob.size,
+      createdAt: new Date().toISOString(),
+      rebuiltFromRecoveryChunks: true
+    });
+    session.masterAudio = true;
+    session.audioBytes = blob.size;
+    await putSession(session);
+  }
+
+  return { sessionId: sessionId, blob: blob, mimeType: mimeType, size: blob.size };
 }
 
 async function transcribeSession(sessionId){
@@ -520,16 +594,14 @@ async function transcribeSession(sessionId){
 
   try {
     var session = await getSession(sessionId);
-    var chunks = await getChunks(sessionId);
-    if (!chunks.length) throw new Error("Audio non disponibile");
+    var audio = await getAudioBlob(sessionId, session);
+    if (!audio || !audio.blob || !audio.blob.size) throw new Error("Audio non disponibile");
 
     session.state = "processing";
     session.lastUpdatedAt = new Date().toISOString();
     await putSession(session);
 
-    var audioBlob = new Blob(chunks.map(function(item){ return item.blob; }), {
-      type: session.mimeType || chunks[0].mimeType || "audio/webm"
-    });
+    var audioBlob = audio.blob;
 
     var metadata = {
       sessionId: session.id,
@@ -582,7 +654,9 @@ async function transcribeSession(sessionId){
 
     if (!session.retentionConsent) {
       await deleteChunks(session.id);
+      await deleteRecording(session.id);
       session.audioDeletedAt = new Date().toISOString();
+      session.masterAudio = false;
     }
 
     await putSession(session);
@@ -654,7 +728,9 @@ async function deleteAudioOnly(sessionId){
   if (!confirmed) return;
 
   await deleteChunks(sessionId);
+  await deleteRecording(sessionId);
   session.audioDeletedAt = new Date().toISOString();
+  session.masterAudio = false;
   session.lastUpdatedAt = new Date().toISOString();
   if (session.state !== "transcribed") session.state = "audio_deleted";
   await putSession(session);
@@ -695,7 +771,11 @@ async function refreshArchive(){
     var meta = document.createElement("small");
     var when = session.createdAt ? new Date(session.createdAt).toLocaleString("it-IT") : "data non disponibile";
     var retention = session.retentionConsent ? "audio autorizzato alla conservazione" : "audio temporaneo";
-    var audioState = session.audioDeletedAt ? "audio eliminato" : (session.chunkCount ? session.chunkCount + " blocchi" : "nessun blocco");
+    var audioState = session.audioDeletedAt
+      ? "audio eliminato"
+      : session.masterAudio
+        ? "audio pronto"
+        : (session.chunkCount ? session.chunkCount + " blocchi di recupero" : "nessun audio");
     meta.textContent = when + " · " + formatDuration(session.durationMs || 0) + " · " + retention + " · " + audioState + " · " + humanState(session.state);
     main.appendChild(title);
     main.appendChild(meta);
@@ -716,7 +796,7 @@ async function refreshArchive(){
     });
     actions.appendChild(open);
 
-    if (!session.audioDeletedAt && session.chunkCount) {
+    if (!session.audioDeletedAt && (session.masterAudio || session.chunkCount)) {
       var wipe = document.createElement("button");
       wipe.type = "button";
       wipe.className = "mini-btn danger";
@@ -857,6 +937,9 @@ function openDb(){
         var store = db.createObjectStore(CHUNKS, { keyPath: "key" });
         store.createIndex("sessionId", "sessionId", { unique: false });
       }
+      if (!db.objectStoreNames.contains(RECORDINGS)) {
+        db.createObjectStore(RECORDINGS, { keyPath: "sessionId" });
+      }
     };
     request.onsuccess = function(){ resolve(request.result); };
     request.onerror = function(){ reject(request.error || new Error("IndexedDB non disponibile")); };
@@ -910,6 +993,21 @@ async function deleteChunks(sessionId){
     tx.onerror = function(){ reject(tx.error || new Error("Errore eliminazione audio")); };
     tx.onabort = function(){ reject(tx.error || new Error("Eliminazione audio annullata")); };
   });
+}
+
+async function putRecording(recording){
+  var db = await openDb();
+  return txPromise(db, RECORDINGS, "readwrite", function(store){ store.put(recording); });
+}
+
+async function getRecording(sessionId){
+  var db = await openDb();
+  return requestPromise(db.transaction(RECORDINGS,"readonly").objectStore(RECORDINGS).get(sessionId));
+}
+
+async function deleteRecording(sessionId){
+  var db = await openDb();
+  return txPromise(db, RECORDINGS, "readwrite", function(store){ store.delete(sessionId); });
 }
 
 function txPromise(db, storeName, mode, action){
