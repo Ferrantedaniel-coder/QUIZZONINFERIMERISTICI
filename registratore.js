@@ -41,6 +41,7 @@ async function init(){
   try {
     await openDb();
     await markInterruptedSessions();
+    await purgeLegacyDeletedSessions();
     await refreshArchive();
   } catch (err) {
     setSupport("Archiviazione locale non disponibile: " + friendlyError(err), false);
@@ -67,7 +68,7 @@ function bindEvents(){
     if (currentSession) previewAudio(currentSession.id);
   });
   el.deleteBtn.addEventListener("click", function(){
-    if (currentSession) deleteAudioOnly(currentSession.id);
+    if (currentSession) deleteSessionCompletely(currentSession.id);
   });
   el.refreshArchiveBtn.addEventListener("click", refreshArchive);
 
@@ -720,32 +721,52 @@ function renderList(target, values, emptyText){
   target.appendChild(ul);
 }
 
-async function deleteAudioOnly(sessionId){
+async function deleteSessionCompletely(sessionId){
   var session = await getSession(sessionId);
   if (!session) return;
 
-  var confirmed = window.confirm("Eliminare definitivamente l'audio locale di questa lezione? Trascrizione e metadati, se presenti, resteranno.");
+  var confirmed = window.confirm(
+    "Eliminare definitivamente questa registrazione? Verranno cancellati audio, dati della sessione e appunti eventualmente generati."
+  );
   if (!confirmed) return;
 
   await deleteChunks(sessionId);
   await deleteRecording(sessionId);
-  session.audioDeletedAt = new Date().toISOString();
-  session.masterAudio = false;
-  session.lastUpdatedAt = new Date().toISOString();
-  if (session.state !== "transcribed") session.state = "audio_deleted";
-  await putSession(session);
+  await deleteSession(sessionId);
 
   if (previewUrl) {
     URL.revokeObjectURL(previewUrl);
     previewUrl = null;
   }
+
   el.audioPreview.pause();
   el.audioPreview.removeAttribute("src");
   el.audioPreview.classList.add("hidden");
 
-  currentSession = session;
-  await showProcessing(session);
+  if (currentSession && currentSession.id === sessionId) {
+    currentSession = null;
+    el.processingPanel.classList.add("hidden");
+    el.notesPanel.classList.add("hidden");
+    el.timer.textContent = "00:00:00";
+    el.chunkState.textContent = "Nessun audio salvato";
+    setRecorderState("PRONTO", "idle");
+    el.recHelper.textContent = "Registrazione eliminata. Puoi avviare una nuova sessione.";
+  }
+
   await refreshArchive();
+}
+
+async function purgeLegacyDeletedSessions(){
+  var sessions = await getAllSessions();
+  var ghosts = sessions.filter(function(session){
+    return session && session.state === "audio_deleted";
+  });
+
+  for (var i = 0; i < ghosts.length; i++) {
+    await deleteChunks(ghosts[i].id).catch(function(){});
+    await deleteRecording(ghosts[i].id).catch(function(){});
+    await deleteSession(ghosts[i].id).catch(function(){});
+  }
 }
 
 async function refreshArchive(){
@@ -800,8 +821,8 @@ async function refreshArchive(){
       var wipe = document.createElement("button");
       wipe.type = "button";
       wipe.className = "mini-btn danger";
-      wipe.textContent = "Elimina audio";
-      wipe.addEventListener("click", function(){ deleteAudioOnly(session.id); });
+      wipe.textContent = "Elimina registrazione";
+      wipe.addEventListener("click", function(){ deleteSessionCompletely(session.id); });
       actions.appendChild(wipe);
     }
 
@@ -960,6 +981,11 @@ async function getSession(id){
 async function getAllSessions(){
   var db = await openDb();
   return requestPromise(db.transaction(SESSIONS,"readonly").objectStore(SESSIONS).getAll());
+}
+
+async function deleteSession(sessionId){
+  var db = await openDb();
+  return txPromise(db, SESSIONS, "readwrite", function(store){ store.delete(sessionId); });
 }
 
 async function putChunk(chunk){
