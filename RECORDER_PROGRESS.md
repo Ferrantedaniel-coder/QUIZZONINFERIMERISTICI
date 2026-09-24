@@ -29,7 +29,7 @@ Accesso dalla homepage tramite **Registra / Apri registratore**.
 - anteprima dell'audio registrato;
 - cancellazione manuale dell'audio;
 - archivio locale delle sessioni;
-- metadati: materia, titolo, docente facoltativo, data/ora consenso, retention policy, durata, stato.
+- metadati: descrizione libera di ciò che si sta registrando, titolo, docente facoltativo, data/ora consenso, retention policy, durata, stato.
 
 ## Regola privacy / retention
 
@@ -99,3 +99,10 @@ Non modificare domande, risposte, shuffle, spiegazioni o motori esistenti per sv
 4. salvataggio degli appunti nella Biblioteca/Lezioni;
 5. comando “Crea quiz da questa lezione”;
 6. test browser/mobile su registrazioni lunghe.
+
+
+## Input libero contenuto registrato
+
+Il campo iniziale **“Cosa stai registrando?”** è un input testuale libero.
+Non deve mostrare categorie, esami o materie predefinite e non deve imporre tassonomie fisse.
+L'utente può descrivere liberamente il contenuto della registrazione.
