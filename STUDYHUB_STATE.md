@@ -214,7 +214,7 @@ Funzioni attive:
 - recupero delle sessioni interrotte;
 - consenso obbligatorio alla registrazione;
 - consenso separato e opzionale alla conservazione dell'audio, disattivato di default;
-- eliminazione manuale dell'audio;
+- eliminazione manuale completa della registrazione: audio, chunk, sessione e relativi appunti spariscono dall'archivio;
 - eliminazione automatica dei chunk locali dopo trascrizione riuscita quando la conservazione non è autorizzata;
 - archivio sessioni e anteprima audio locale dal master finale, con fallback recovery dai chunk;
 - accesso dalla Home.
