@@ -1,0 +1,80 @@
+name: Deploy Pages after merge
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/configure-pages@v5
+      - name: Prepare static site
+        run: |
+          mkdir _site
+          rsync -a ./ _site/ --exclude='_site/' --exclude='.git/' --exclude='.github/' --exclude='recorder-backend/' --exclude='*.md'
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+          retention-days: 1
+      - uses: actions/deploy-pages@v4
+        id: deployment
+  cleanup:
+    needs: deploy
+    runs-on: ubuntu-latest
+    permissions:
+      deployments: write
+      actions: write
+      contents: read
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const repo = context.repo;
+            const deployments = await github.paginate(github.rest.repos.listDeployments, {
+              ...repo, environment: 'github-pages', per_page: 100
+            });
+            let keep;
+            for (const deployment of deployments) {
+              const {data: statuses} = await github.rest.repos.listDeploymentStatuses({
+                ...repo, deployment_id: deployment.id, per_page: 1
+              });
+              if (['queued', 'pending', 'in_progress'].includes(statuses[0]?.state)) {
+                throw new Error('Deployment still running; cleanup stopped.');
+              }
+              if (!keep && statuses[0]?.state === 'success') keep = deployment;
+            }
+            if (!keep) throw new Error('No successful deployment; cleanup stopped.');
+            let deleted = 0;
+            for (const deployment of deployments) {
+              if (deployment.id >= keep.id) continue;
+              await github.rest.repos.createDeploymentStatus({
+                ...repo, deployment_id: deployment.id, state: 'inactive', auto_inactive: false
+              });
+              await github.rest.repos.deleteDeployment({...repo, deployment_id: deployment.id});
+              deleted++;
+            }
+            const artifacts = await github.paginate(github.rest.actions.listArtifactsForRepo, {
+              ...repo, name: 'github-pages', per_page: 100
+            });
+            for (const artifact of artifacts) {
+              if (String(artifact.workflow_run?.id) === String(context.runId)) continue;
+              if (Date.parse(artifact.created_at) >= Date.parse(keep.created_at)) continue;
+              await github.rest.actions.deleteArtifact({...repo, artifact_id: artifact.id});
+            }
+            await core.summary.addRaw('Removed ' + deleted + ' previous deployments; retained ' + keep.id).write();
