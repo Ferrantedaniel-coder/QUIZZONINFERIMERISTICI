@@ -54,8 +54,24 @@ In caso di errore di trascrizione l'audio NON viene eliminato automaticamente, c
 
 ## Backend AI
 
-La UI e il client sono predisposti ma il backend AI sicuro **non è ancora collegato**.
-`registratore-config.js` mantiene `apiEndpoint: ""` finché non esiste un endpoint server-side.
+Il backend sicuro **è implementato nel repository** in `recorder-backend/`, ma non è ancora pubblicato su un hosting esterno.
+`registratore-config.js` mantiene `apiEndpoint: ""` finché il servizio non riceve un URL HTTPS pubblico.
+
+Backend V1:
+- Node.js 24+ / Express;
+- upload audio su file temporaneo, non in RAM;
+- limite audio configurabile, default 180 MB;
+- CORS limitato alle origini autorizzate;
+- rate limit;
+- endpoint `GET /health`;
+- endpoint `POST /v1/transcribe`;
+- speech-to-text con `gpt-transcribe`;
+- appunti strutturati con `gpt-5.6-terra`;
+- output: trascrizione, riassunto, concetti chiave, esempi del prof, possibili domande d'esame;
+- nessun contenuto della lezione scritto nei log;
+- file audio temporaneo server-side eliminato sempre in `finally`, sia in caso di successo sia in caso di errore.
+
+Il consenso alla conservazione governa quindi la copia locale sul dispositivo. Il backend non conserva permanentemente l'audio neppure quando la conservazione è autorizzata.
 
 Regola assoluta:
 **mai inserire chiavi API o segreti nel repository/frontend pubblico.**
@@ -93,12 +109,11 @@ Non modificare domande, risposte, shuffle, spiegazioni o motori esistenti per sv
 
 ## Prossimi step
 
-1. backend sicuro di upload temporaneo + speech-to-text;
-2. generazione appunti secondo standard StudyHub;
-3. retention server-side verificabile;
-4. salvataggio degli appunti nella Biblioteca/Lezioni;
-5. comando “Crea quiz da questa lezione”;
-6. test browser/mobile su registrazioni lunghe.
+1. pubblicare `recorder-backend/` su hosting HTTPS e impostare `apiEndpoint`;
+2. eseguire test end-to-end con una registrazione reale;
+3. test browser/mobile su registrazioni lunghe;
+4. integrare gli appunti generati nella Biblioteca/Lezioni;
+5. comando “Crea quiz da questa lezione”.
 
 
 ## Input libero contenuto registrato
@@ -106,3 +121,10 @@ Non modificare domande, risposte, shuffle, spiegazioni o motori esistenti per sv
 Il campo iniziale **“Cosa stai registrando?”** è un input testuale libero.
 Non deve mostrare categorie, esami o materie predefinite e non deve imporre tassonomie fisse.
 L'utente può descrivere liberamente il contenuto della registrazione.
+
+
+## Health check backend
+
+Il frontend non considera il backend “collegato” solo perché esiste un URL.
+All'avvio esegue un controllo `GET /health` e abilita **Trascrivi e crea appunti** solo se il servizio risponde correttamente.
+Stati UI: **BACKEND AI DA PUBBLICARE**, **CONTROLLO AI…**, **AI ONLINE**, **AI NON RAGGIUNGIBILE**.
