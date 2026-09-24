@@ -218,7 +218,7 @@ Funzioni attive:
 - archivio sessioni e anteprima audio locale;
 - accesso dalla Home.
 
-Il backend AI non è ancora attivo: `apiEndpoint` resta vuoto finché non esiste un endpoint server-side sicuro. Nessuna chiave API deve essere inserita nel frontend o nel repository pubblico.
+Il backend AI è implementato in `recorder-backend/` ma non è ancora pubblicato: `apiEndpoint` resta vuoto finché non esiste un endpoint HTTPS. Usa upload temporaneo, `gpt-transcribe` per speech-to-text e `gpt-5.6-terra` per appunti strutturati. Il file audio server-side viene sempre eliminato al termine dell'elaborazione; l'eventuale conservazione autorizzata resta nella copia locale del browser. Il frontend esegue un health check reale prima di abilitare la trascrizione. Nessuna chiave API deve essere inserita nel frontend o nel repository pubblico.
 
 ## 5. Funzioni Lezioni da preservare
 
@@ -340,4 +340,4 @@ Non sono automaticamente autorizzati mass delete, force update, modifiche distru
 5. completare separatamente le spiegazioni quiz Materno da 241 a 300;
 6. Scienze della Salute: **459/459 quiz + 459/459 spiegazioni + 49/49 lezioni** — non rifare;
 7. pubblicare i quattro binari MedChiruFarmaco e i quattro binari PPS nella Biblioteca quando la pipeline di upload binario del repository sarà disponibile.
-8. **StudyHub Recorder V1 ATTIVO**: pagina, stile, registrazione browser, consenso, pause/riprendi, chunk da 5 s in IndexedDB, recupero locale, anteprima e cancellazione audio sono implementati. La casella **“Il docente autorizza la conservazione dell’audio oltre il tempo necessario alla trascrizione”** è non selezionata di default. Se non selezionata, l'audio è temporaneo e viene eliminato automaticamente solo dopo una trascrizione completata con successo. Il backend AI sicuro per trascrizione/riassunto è predisposto ma non ancora collegato; dettagli in `RECORDER_PROGRESS.md`.
+8. **StudyHub Recorder V2 IN SVILUPPO**: registrazione browser, consenso, chunk da 5 s in IndexedDB, recupero locale, anteprima e cancellazione audio sono attivi. Backend AI Node implementato in `recorder-backend/` con upload temporaneo, speech-to-text, appunti strutturati, cancellazione server-side dell'audio e health check frontend. Resta da pubblicare il backend HTTPS e impostare `apiEndpoint`; dettagli in `RECORDER_PROGRESS.md`.
