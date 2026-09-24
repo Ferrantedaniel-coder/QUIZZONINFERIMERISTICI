@@ -33,6 +33,7 @@ async function init(){
 
   bindEvents();
   checkSupport();
+  await inspectMicrophonePermission();
 
   try {
     await openDb();
@@ -106,10 +107,47 @@ function setSupport(message, ok){
   el.supportLine.classList.toggle("bad", !ok);
 }
 
+async function inspectMicrophonePermission(){
+  if (!window.isSecureContext || !navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) return;
+
+  if (window.top !== window.self) {
+    var policyAllows = true;
+    try {
+      var policy = document.permissionsPolicy || document.featurePolicy;
+      if (policy && typeof policy.allowsFeature === "function") {
+        policyAllows = policy.allowsFeature("microphone");
+      }
+    } catch (_) {}
+    if (!policyAllows) {
+      setSupport("Microfono bloccato dalla pagina incorporata. Apri StudyHub direttamente in una nuova scheda.", false);
+      return;
+    }
+  }
+
+  if (!navigator.permissions || !navigator.permissions.query) return;
+  try {
+    var permission = await navigator.permissions.query({ name: "microphone" });
+    applyMicrophonePermissionState(permission.state);
+    permission.onchange = function(){ applyMicrophonePermissionState(permission.state); };
+  } catch (_) {
+    // Alcuni browser non espongono lo stato del microfono tramite Permissions API.
+  }
+}
+
+function applyMicrophonePermissionState(state){
+  if (state === "denied") {
+    setSupport("Il browser segnala il microfono come BLOCCATO. Controlla sia il permesso del sito sia il permesso Microfono di Chrome nelle impostazioni di macOS.", false);
+  } else if (state === "granted") {
+    setSupport("Permesso microfono del sito: autorizzato · salvataggio locale disponibile.", true);
+  } else if (state === "prompt") {
+    setSupport("Microfono disponibile · il browser chiederà l'autorizzazione al primo avvio.", true);
+  }
+}
+
 function openConsent(){
   if (!el.subject.value) {
     el.subject.focus();
-    setSupport("Seleziona prima la materia o l'esame.", false);
+    setSupport("Scrivi prima cosa stai registrando.", false);
     return;
   }
   if (!el.lessonTitle.value.trim()) {
@@ -217,7 +255,7 @@ async function startRecording(){
     mediaRecorder = null;
     el.prepareBtn.disabled = false;
     setRecorderState("PRONTO", "idle");
-    setSupport("Impossibile avviare il microfono: " + friendlyError(err), false);
+    setSupport(await microphoneErrorMessage(err), false);
   }
 }
 
@@ -715,9 +753,49 @@ function formatDuration(ms){
   return [h,m,s].map(function(v){ return String(v).padStart(2,"0"); }).join(":");
 }
 
+async function microphoneErrorMessage(err){
+  if (!err) return "Impossibile avviare il microfono: errore sconosciuto.";
+
+  if (err.name === "NotAllowedError" || err.name === "SecurityError") {
+    if (window.top !== window.self) {
+      try {
+        var policy = document.permissionsPolicy || document.featurePolicy;
+        if (policy && typeof policy.allowsFeature === "function" && !policy.allowsFeature("microphone")) {
+          return "Microfono bloccato dalla pagina incorporata. Apri StudyHub direttamente in una nuova scheda e riprova.";
+        }
+      } catch (_) {}
+    }
+
+    if (navigator.permissions && navigator.permissions.query) {
+      try {
+        var status = await navigator.permissions.query({ name: "microphone" });
+        if (status.state === "denied") {
+          return "Microfono bloccato. In Chrome consenti il Microfono nelle impostazioni del sito e, su Mac, verifica anche Impostazioni di Sistema → Privacy e sicurezza → Microfono → Google Chrome.";
+        }
+        if (status.state === "granted") {
+          return "Chrome segnala il sito come autorizzato, ma l'accesso al microfono è ancora bloccato. Su Mac verifica Impostazioni di Sistema → Privacy e sicurezza → Microfono → Google Chrome, poi chiudi e riapri Chrome.";
+        }
+      } catch (_) {}
+    }
+
+    return "Accesso al microfono bloccato dal browser o dal sistema operativo. Controlla il permesso del sito e il permesso Microfono di Chrome nelle impostazioni del dispositivo.";
+  }
+
+  if (err.name === "NotFoundError" || err.name === "DevicesNotFoundError") {
+    return "Nessun microfono rilevato dal dispositivo.";
+  }
+  if (err.name === "NotReadableError" || err.name === "TrackStartError") {
+    return "Il microfono è autorizzato ma non può essere aperto: potrebbe essere occupato da un'altra app. Chiudi eventuali app che lo stanno usando e riprova.";
+  }
+  if (err.name === "OverconstrainedError" || err.name === "ConstraintNotSatisfiedError") {
+    return "Il microfono è disponibile ma non supporta una delle impostazioni richieste. Riprova: StudyHub userà una configurazione più semplice.";
+  }
+  return "Impossibile avviare il microfono: " + (err.message || String(err));
+}
+
 function friendlyError(err){
   if (!err) return "errore sconosciuto";
-  if (err.name === "NotAllowedError") return "permesso microfono negato";
+  if (err.name === "NotAllowedError") return "accesso al microfono bloccato";
   if (err.name === "NotFoundError") return "nessun microfono disponibile";
   if (err.name === "NotReadableError") return "microfono occupato o non leggibile";
   return err.message || String(err);
