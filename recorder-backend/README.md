@@ -75,3 +75,22 @@ La chiave OpenAI resta esclusivamente sul server.
 È adatto a un servizio Node persistente/containerizzato (per esempio Railway) perché le lezioni possono produrre upload audio molto più grandi delle comuni funzioni serverless.
 
 Il limite applicativo predefinito è 180 MB ed è configurabile con `MAX_AUDIO_MB`.
+
+
+## Deploy Railway
+
+Configurazione prevista:
+- Repository: `Ferrantedaniel-coder/QUIZZONINFERIMERISTICI`
+- Root Directory del servizio: `/recorder-backend`
+- Config as Code: `/recorder-backend/railway.json`
+- Healthcheck: `/health`
+- Public Networking: HTTP/HTTPS abilitato
+- Variabile obbligatoria: `OPENAI_API_KEY`
+
+Variabili consigliate:
+- `OPENAI_TRANSCRIBE_MODEL=gpt-transcribe`
+- `OPENAI_SUMMARY_MODEL=gpt-5.6-terra`
+- `ALLOWED_ORIGINS=https://ferrantedaniel-coder.github.io`
+- `MAX_AUDIO_MB=180`
+
+Railway rileva il `Dockerfile` nella root del servizio. Non impostare manualmente `PORT`: il backend usa automaticamente la variabile `PORT` fornita dalla piattaforma.
